@@ -1,9 +1,9 @@
 #!/usr/bin/env ts-node-transpile-only
 
-import axios from 'axios';
 import cheerio from 'cheerio';
 import { promises as fs } from 'fs';
 import path from 'path';
+import { Logger, chunk, createLogger, getWebpage } from './utils';
 
 const SERVICE_DETAILS_OUT_DIR = './scraped/service-details';
 
@@ -22,37 +22,10 @@ interface ServiceDetails {
   name: string;
 }
 
-const client = axios.create({
-  baseURL: 'https://docs.aws.amazon.com/service-authorization/latest/reference/'
-});
-
-interface Logger {
-  log: typeof console['log'];
-  warn: typeof console['warn'];
-}
-
-const createLogger = (prefix: string): Logger => {
-  const formattedPrefix = `[${prefix}]:`;
-
-  return {
-    log(...messages: unknown[]) {
-      console.log(formattedPrefix, ...messages);
-    },
-    warn(...messages: unknown[]) {
-      console.warn(formattedPrefix, ...messages);
-    }
-  };
-};
-
-const chunk = <T>(arr: T[], size: number): T[][] =>
-  Array.from(Array(Math.ceil(arr.length / size))).map((_, i) =>
-    arr.slice(i * size, i * size + size)
-  );
-
 type ServiceTopicTuple = [name: string, url: string];
 
 const scrapeServiceTopics = async (): Promise<ServiceTopicTuple[]> => {
-  const { data } = await client.get<string>(
+  const data = await getWebpage(
     'reference_policies_actions-resources-contextkeys.html'
   );
 
@@ -275,7 +248,7 @@ const scrapeServiceDetails = async ([name, url]: ServiceTopicTuple): Promise<
 
   logger.log('scraping actions');
 
-  const { data } = await client.get<string>(url);
+  const data = await getWebpage(url);
 
   const $ = cheerio.load(data);
 
