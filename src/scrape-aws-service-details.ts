@@ -160,7 +160,7 @@ const scrapeServiceActions = (
 
   // const groupedRowElements = groupRowsBasedOnRowSpans($, rowElements);
   //
-  // return groupedRowElements.map(([start, ...group]) => {
+  // return groupedRowElements.map(([start, ...group], index) => {
   //   // const columnsSpanned = countColumnsSpanned($, start);
   //   const [nameElement, ...rest] = selectTagElements(start.children);
   //
@@ -173,7 +173,7 @@ const scrapeServiceActions = (
   //   ] = rest.map(ele => $(ele).text().trim());
   //
   //   const action: TopicAction = {
-  //     name: getActionName($, nameElement, logger),
+  //     name: getActionName($, nameElement, logger, index),
   //     description,
   //     accessLevel,
   //     resourceTypes: [resourceTypes].filter(s => !!s),
@@ -188,7 +188,7 @@ const scrapeServiceActions = (
   return rowElements
     .map(element => selectTagElements(element.children))
     .map(
-      ([nameElement, ...rest]): ServiceAction => {
+      ([nameElement, ...rest], index): ServiceAction => {
         const [
           description,
           accessLevel,
@@ -198,7 +198,7 @@ const scrapeServiceActions = (
         ] = rest.map(ele => $(ele).text().trim());
 
         return {
-          name: getActionName($, nameElement, logger),
+          name: getActionName($, nameElement, logger, index),
           description,
           accessLevel,
           resourceTypes: [resourceTypes].filter(s => !!s),
@@ -212,10 +212,11 @@ const scrapeServiceActions = (
 const getActionName = (
   $: cheerio.Root,
   tableRowElement: cheerio.Element,
-  logger: Logger
+  logger: Logger,
+  index: number
 ): string => {
   const [firstTag] = selectTagElements(tableRowElement.children);
-  const text = $(tableRowElement).text().trim() || `$${Date.now().toString()}`;
+  const text = $(tableRowElement).text().trim() || `$${index}`;
 
   // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
   if (!firstTag) {

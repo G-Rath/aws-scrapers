@@ -83,8 +83,8 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$1604344698377": {
-      "name": "$1604344698377",
+    "$10": {
+      "name": "$10",
       "description": "aws:ResourceTag/${TagKey}",
       "accessLevel": "",
       "resourceTypes": []
@@ -131,8 +131,8 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$1604344698378": {
-      "name": "$1604344698378",
+    "$16": {
+      "name": "$16",
       "description": "aws:ResourceTag/${TagKey}",
       "accessLevel": "",
       "resourceTypes": []
@@ -243,9 +243,9 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$1604344698380": {
-      "name": "$1604344698380",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+    "$30": {
+      "name": "$30",
+      "description": "aws:ResourceTag/${TagKey}",
       "accessLevel": "",
       "resourceTypes": []
     },
@@ -283,6 +283,12 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "$35": {
+      "name": "$35",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
     "UntagResource": {
       "name": "UntagResource",
       "description": "Untag a resource.",
@@ -293,9 +299,9 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$1604344698381": {
-      "name": "$1604344698381",
-      "description": "aws:ResourceTag/${TagKey}",
+    "$37": {
+      "name": "$37",
+      "description": "aws:TagKeys",
       "accessLevel": "",
       "resourceTypes": []
     },
@@ -332,6 +338,12 @@
       ],
       "conditionKeys": "",
       "dependentActions": "iam:CreateServiceLinkedRole"
+    },
+    "$42": {
+      "name": "$42",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
     },
     "UpdateResolver": {
       "name": "UpdateResolver",

@@ -21,8 +21,8 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$1604344686891": {
-      "name": "$1604344686891",
+    "$2": {
+      "name": "$2",
       "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
       "accessLevel": "",
       "resourceTypes": []
@@ -249,9 +249,9 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$1604344686901": {
-      "name": "$1604344686901",
-      "description": "events:TargetArn",
+    "$27": {
+      "name": "$27",
+      "description": "events:detail.userIdentity.principalId\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      events:detail-type\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      events:source\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      events:detail.service\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      events:detail.eventTypeCode\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
       "accessLevel": "",
       "resourceTypes": []
     },
@@ -264,6 +264,12 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
+    },
+    "$29": {
+      "name": "$29",
+      "description": "events:TargetArn",
+      "accessLevel": "",
+      "resourceTypes": []
     },
     "RemovePermission": {
       "name": "RemovePermission",
@@ -293,8 +299,8 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$1604344686902": {
-      "name": "$1604344686902",
+    "$34": {
+      "name": "$34",
       "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
       "accessLevel": "",
       "resourceTypes": []
@@ -317,8 +323,8 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$1604344686903": {
-      "name": "$1604344686903",
+    "$38": {
+      "name": "$38",
       "description": "aws:TagKeys",
       "accessLevel": "",
       "resourceTypes": []

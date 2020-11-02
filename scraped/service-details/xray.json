@@ -19,8 +19,8 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$1604344752720": {
-      "name": "$1604344752720",
+    "$2": {
+      "name": "$2",
       "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
       "accessLevel": "",
       "resourceTypes": []
@@ -35,9 +35,9 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$1604344752721": {
-      "name": "$1604344752721",
-      "description": "aws:ResourceTag/${TagKey}",
+    "$4": {
+      "name": "$4",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
       "accessLevel": "",
       "resourceTypes": []
     },
@@ -51,6 +51,12 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "$6": {
+      "name": "$6",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
     "DeleteSamplingRule": {
       "name": "DeleteSamplingRule",
       "description": "Grants permission to delete a sampling rule",
@@ -60,6 +66,12 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
+    },
+    "$8": {
+      "name": "$8",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
     },
     "GetEncryptionConfig": {
       "name": "GetEncryptionConfig",
@@ -79,8 +91,8 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$1604344752722": {
-      "name": "$1604344752722",
+    "$11": {
+      "name": "$11",
       "description": "aws:ResourceTag/${TagKey}",
       "accessLevel": "",
       "resourceTypes": []
@@ -231,9 +243,9 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$1604344752725": {
-      "name": "$1604344752725",
-      "description": "aws:TagKeys",
+    "$31": {
+      "name": "$31",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
       "accessLevel": "",
       "resourceTypes": []
     },
@@ -247,6 +259,12 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "$34": {
+      "name": "$34",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
     "UpdateGroup": {
       "name": "UpdateGroup",
       "description": "Grants permission to update a group resource",
@@ -257,8 +275,8 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$1604344752727": {
-      "name": "$1604344752727",
+    "$36": {
+      "name": "$36",
       "description": "aws:ResourceTag/${TagKey}",
       "accessLevel": "",
       "resourceTypes": []
@@ -272,6 +290,12 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
+    },
+    "$38": {
+      "name": "$38",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
     }
   },
   "name": "AWS X-Ray"

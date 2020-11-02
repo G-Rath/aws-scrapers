@@ -117,8 +117,8 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$1604344676805": {
-      "name": "$1604344676805",
+    "$13": {
+      "name": "$13",
       "description": "codestar-connections:PassedToService",
       "accessLevel": "",
       "resourceTypes": []
@@ -157,9 +157,9 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$1604344676807": {
-      "name": "$1604344676807",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+    "$18": {
+      "name": "$18",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
       "accessLevel": "",
       "resourceTypes": []
     },
@@ -173,6 +173,12 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "$20": {
+      "name": "$20",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
     "UpdateConnectionInstallation": {
       "name": "UpdateConnectionInstallation",
       "description": "Grants permission to update a Connection resource with an installation of the CodeStar\n                                                Connections App",
@@ -183,8 +189,8 @@
       "conditionKeys": "",
       "dependentActions": "codestar-connections:GetIndividualAccessToken\n                                                   \n                                                \n                                                \n                                                \n                                                   codestar-connections:GetInstallationUrl\n                                                   \n                                                \n                                                \n                                                \n                                                   codestar-connections:ListInstallationTargets\n                                                   \n                                                \n                                                \n                                                \n                                                   codestar-connections:StartOAuthHandshake"
     },
-    "$1604344676808": {
-      "name": "$1604344676808",
+    "$22": {
+      "name": "$22",
       "description": "codestar-connections:InstallationId",
       "accessLevel": "",
       "resourceTypes": []
@@ -199,8 +205,8 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$1604344676814": {
-      "name": "$1604344676814",
+    "$24": {
+      "name": "$24",
       "description": "codestar-connections:FullRepositoryId\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      codestar-connections:ProviderAction\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      codestar-connections:ProviderPermissionsRequired",
       "accessLevel": "",
       "resourceTypes": []
