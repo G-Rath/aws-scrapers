@@ -285,37 +285,18 @@ const writeToFile = async (details: ServiceDetails) => {
   );
 };
 
-const scrapeAndSaveTopic = async (topic: ServiceTopicTuple): Promise<void> => {
-  const details = await scrapeServiceDetails(topic);
-
-  await writeToFile(details);
-};
-
-const scrapeAndSaveDetails = async (
-  topics: ServiceTopicTuple[]
-): Promise<void> => {
-  await topics.reduce<Promise<unknown>>(
-    async (p, someTopic) => p.then(async () => scrapeAndSaveTopic(someTopic)),
-    Promise.resolve()
-  );
-};
-
-const scrapeAndSaveDetailsInBatch = async (
-  topics: ServiceTopicTuple[],
-  batches: number
-): Promise<void> => {
-  const chunkSize = topics.length / batches;
-  const chunks = chunk(topics, chunkSize);
-
-  await Promise.all(chunks.map(scrapeAndSaveDetails));
-};
-
 const scrapeDetailsInBatch = async (
   topics: ServiceTopicTuple[]
 ): Promise<ServiceDetails[]> =>
   topics.reduce<Promise<ServiceDetails[]>>(
-    async (p, someTopic) =>
-      p.then(async arr => arr.concat(await scrapeServiceDetails(someTopic))),
+    async (previousPromise, someTopic) => {
+      const collectedDetails = await previousPromise;
+      const scrapedDetails = await scrapeServiceDetails(someTopic);
+
+      await writeToFile(scrapedDetails);
+
+      return collectedDetails.concat(scrapedDetails);
+    },
     Promise.resolve([])
   );
 
@@ -348,13 +329,13 @@ const run = async () => {
 
   // topics.length = 10;
 
-  await scrapeAndSaveDetailsInBatch(topics, 5);
+  const details = await scapeDetailsInBatches(topics, 5);
 
   // const details = await scapeDetailsInBatches(topics, 5);
 
   // await Promise.all(details.map(writeToFile));
 
-  console.log('done');
+  console.log('done', '(scraped the details of', details.length, 'topics)');
 };
 
 run().catch(console.error);
