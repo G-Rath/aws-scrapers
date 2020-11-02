@@ -1,0 +1,652 @@
+{
+  "servicePrefix": "connect",
+  "actions": {
+    "AssociateRoutingProfileQueues": {
+      "name": "AssociateRoutingProfileQueues",
+      "description": "Grants permissions to associate queues with a routing profile in an Amazon Connect\n                                                instance.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "routing-profile*": {
+      "name": "routing-profile*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344694407": {
+      "name": "$1604344694407",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateContactFlow": {
+      "name": "CreateContactFlow",
+      "description": "Grants permissions to create a contact flow in an Amazon Connect instance.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact-flow*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateInstance": {
+      "name": "CreateInstance",
+      "description": "Grants permissions to create a new Amazon Connect instance. The associated required\n                                                actions grant permissions to configure instance settings.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "ds:CreateAlias\n                                                   \n                                                \n                                                \n                                                \n                                                   ds:DeleteDirectory\n                                                   \n                                                \n                                                \n                                                \n                                                   ds:DescribeDirectories\n                                                   \n                                                \n                                                \n                                                \n                                                   firehose:DescribeDeliveryStream\n                                                   \n                                                \n                                                \n                                                \n                                                   firehose:ListDeliveryStreams\n                                                   \n                                                \n                                                \n                                                \n                                                   iam:CreateServiceLinkedRole\n                                                   \n                                                \n                                                \n                                                \n                                                   kinesis:DescribeStream\n                                                   \n                                                \n                                                \n                                                \n                                                   kinesis:ListStreams\n                                                   \n                                                \n                                                \n                                                \n                                                   kms:CreateGrant\n                                                   \n                                                \n                                                \n                                                \n                                                   kms:DescribeKey\n                                                   \n                                                \n                                                \n                                                \n                                                   kms:ListAliases\n                                                   \n                                                \n                                                \n                                                \n                                                   kms:RetireGrant\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:CreateBucket\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:GetBucketLocation\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:ListAllMyBuckets"
+    },
+    "CreateRoutingProfile": {
+      "name": "CreateRoutingProfile",
+      "description": "Grants permission to create a routing profile in an Amazon Connect instance.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344694408": {
+      "name": "$1604344694408",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateUser": {
+      "name": "CreateUser",
+      "description": "Grants permission to create a user for the specified Amazon Connect instance.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "routing-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "security-profile*": {
+      "name": "security-profile*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "user*": {
+      "name": "user*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "hierarchy-group": {
+      "name": "hierarchy-group",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344694409": {
+      "name": "$1604344694409",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteUser": {
+      "name": "DeleteUser",
+      "description": "Grants permissions to delete a user in an Amazon Connect instance.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344694410": {
+      "name": "$1604344694410",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DescribeContactFlow": {
+      "name": "DescribeContactFlow",
+      "description": "Grants permissions to describe a contact flow in an Amazon Connect instance.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "contact-flow*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeInstance": {
+      "name": "DescribeInstance",
+      "description": "Grants permissions to view details of an Amazon Connect instance. This is required\n                                                to create an instance.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "firehose:DescribeDeliveryStream\n                                                   \n                                                \n                                                \n                                                \n                                                   firehose:ListDeliveryStreams\n                                                   \n                                                \n                                                \n                                                \n                                                   kinesis:DescribeStream\n                                                   \n                                                \n                                                \n                                                \n                                                   kinesis:ListStreams\n                                                   \n                                                \n                                                \n                                                \n                                                   kms:DescribeKey\n                                                   \n                                                \n                                                \n                                                \n                                                   kms:ListAliases\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:ListAllMyBuckets"
+    },
+    "DescribeRoutingProfile": {
+      "name": "DescribeRoutingProfile",
+      "description": "Grants permissions to describe a routing profile in an Amazon Connect instance.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "routing-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344694411": {
+      "name": "$1604344694411",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DescribeUser": {
+      "name": "DescribeUser",
+      "description": "Grants permissions to describe a user in an Amazon Connect instance.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeUserHierarchyGroup": {
+      "name": "DescribeUserHierarchyGroup",
+      "description": "Grants permissions to describe a hierarchy group for an Amazon Connect instance.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "hierarchy-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeUserHierarchyStructure": {
+      "name": "DescribeUserHierarchyStructure",
+      "description": "Grants permissions to describe the hierarchy structure for an Amazon Connect instance.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DestroyInstance": {
+      "name": "DestroyInstance",
+      "description": "Grants permissions to delete an Amazon Connect instance. When you remove an instance,\n                                                the link to an existing AWS directory is also removed.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateRoutingProfileQueues": {
+      "name": "DisassociateRoutingProfileQueues",
+      "description": "Grants permissions to disassociate queues from a routing profile in an Amazon Connect\n                                                instance.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "routing-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344694412": {
+      "name": "$1604344694412",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetContactAttributes": {
+      "name": "GetContactAttributes",
+      "description": "Grants permissions to retrieve the contact attributes for the specified contact.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "contact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetCurrentMetricData": {
+      "name": "GetCurrentMetricData",
+      "description": "Grants permissions to retrieve current metric data for the queues in an Amazon Connect\n                                                instance.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFederationToken": {
+      "name": "GetFederationToken",
+      "description": "Allows federation into an instance when using SAML-based authentication for identity\n                                                management.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFederationTokens": {
+      "name": "GetFederationTokens",
+      "description": "Grants permissions to federate in to an Amazon Connect instance (Log in as administrator\n                                                functionality in the AWS console).",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "connect:DescribeInstance\n                                                   \n                                                \n                                                \n                                                \n                                                   connect:ListInstances\n                                                   \n                                                \n                                                \n                                                \n                                                   ds:DescribeDirectories"
+    },
+    "GetMetricData": {
+      "name": "GetMetricData",
+      "description": "Grants permissions to retrieve historical metric data for queues in an Amazon Connect\n                                                instance.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListContactFlows": {
+      "name": "ListContactFlows",
+      "description": "Grants permissions to list contact flow resources in an Amazon Connect instance.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListHoursOfOperations": {
+      "name": "ListHoursOfOperations",
+      "description": "Grants permissions to list hours of operation resources in an Amazon Connect instance.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListInstances": {
+      "name": "ListInstances",
+      "description": "Grants permissions to view the Amazon Connect instances associated with an AWS account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPhoneNumbers": {
+      "name": "ListPhoneNumbers",
+      "description": "Grants permissions to list phone number resources in an Amazon Connect instance.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPrompts": {
+      "name": "ListPrompts",
+      "description": "Grants permissions to list prompt resources in an Amazon Connect instance.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListQueues": {
+      "name": "ListQueues",
+      "description": "Grants permissions to list queue resources in an Amazon Connect instance.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRoutingProfileQueues": {
+      "name": "ListRoutingProfileQueues",
+      "description": "Grants permissions to list queue resources in a routing profile in an Amazon Connect\n                                                instance.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "routing-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344694413": {
+      "name": "$1604344694413",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ListRoutingProfiles": {
+      "name": "ListRoutingProfiles",
+      "description": "Grants permissions to list routing profile resources in an Amazon Connect instance.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSecurityProfiles": {
+      "name": "ListSecurityProfiles",
+      "description": "Grants permissions to list security profile resources in an Amazon Connect instance.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permissions to list tags for an Amazon Connect resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "contact-flow"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "routing-profile": {
+      "name": "routing-profile",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "user": {
+      "name": "user",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344694415": {
+      "name": "$1604344694415",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ListUserHierarchyGroups": {
+      "name": "ListUserHierarchyGroups",
+      "description": "Grants permissions to list the hierarchy group resources in an Amazon Connect instance.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListUsers": {
+      "name": "ListUsers",
+      "description": "Grants permissions to list user resources in an Amazon Connect instance.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ModifyInstance": {
+      "name": "ModifyInstance",
+      "description": "Grants permissions to modify configuration settings for an existing Amazon Connect\n                                                instance. The associated required actions grant permission modify the settings for\n                                                the instance.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "firehose:DescribeDeliveryStream\n                                                   \n                                                \n                                                \n                                                \n                                                   firehose:ListDeliveryStreams\n                                                   \n                                                \n                                                \n                                                \n                                                   kinesis:DescribeStream\n                                                   \n                                                \n                                                \n                                                \n                                                   kinesis:ListStreams\n                                                   \n                                                \n                                                \n                                                \n                                                   kms:CreateGrant\n                                                   \n                                                \n                                                \n                                                \n                                                   kms:DescribeKey\n                                                   \n                                                \n                                                \n                                                \n                                                   kms:ListAliases\n                                                   \n                                                \n                                                \n                                                \n                                                   kms:RetireGrant\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:CreateBucket\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:GetBucketLocation\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:ListAllMyBuckets"
+    },
+    "ResumeContactRecording": {
+      "name": "ResumeContactRecording",
+      "description": "Grants permissions to resume recording for the specified contact.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartChatContact": {
+      "name": "StartChatContact",
+      "description": "Grants permissions to initiate a chat using the Amazon Connect API.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact-flow*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartContactRecording": {
+      "name": "StartContactRecording",
+      "description": "Grants permissions to start recording for the specified contact.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartOutboundVoiceContact": {
+      "name": "StartOutboundVoiceContact",
+      "description": "Grants permissions to initiate outbound calls using the Amazon Connect API.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopContact": {
+      "name": "StopContact",
+      "description": "Grants permissions to stop contacts that were initiated using the Amazon Connect API.\n                                                If you use this operation on an active contact the contact ends, even if the agent\n                                                is active on a call with a customer.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopContactRecording": {
+      "name": "StopContactRecording",
+      "description": "Grants permissions to stop recording for the specified contact.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SuspendContactRecording": {
+      "name": "SuspendContactRecording",
+      "description": "Grants permissions to suspend recording for the specified contact.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permissions to tag an Amazon Connect resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "contact-flow"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344694418": {
+      "name": "$1604344694418",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permissions to untag an Amazon Connect resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "contact-flow"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344694419": {
+      "name": "$1604344694419",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateContactAttributes": {
+      "name": "UpdateContactAttributes",
+      "description": "Grants permissions to create or update the contact attributes associated with the\n                                                specified contact.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateContactFlowContent": {
+      "name": "UpdateContactFlowContent",
+      "description": "Grants permissions to update contact flow content in an Amazon Connect instance.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact-flow*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateContactFlowName": {
+      "name": "UpdateContactFlowName",
+      "description": "Grants permissions to update the name and description of a contact flow in an Amazon\n                                                Connect instance.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact-flow*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344694420": {
+      "name": "$1604344694420",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateRoutingProfileConcurrency": {
+      "name": "UpdateRoutingProfileConcurrency",
+      "description": "Grants permissions to update the concurrency in a routing profile in an Amazon Connect\n                                                instance.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "routing-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRoutingProfileDefaultOutboundQueue": {
+      "name": "UpdateRoutingProfileDefaultOutboundQueue",
+      "description": "Grants permissions to update the outbound queue in a routing profile in an Amazon\n                                                Connect instance.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRoutingProfileName": {
+      "name": "UpdateRoutingProfileName",
+      "description": "Grants permissions to update a routing profile name and description in an Amazon Connect\n                                                instance.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "routing-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344694421": {
+      "name": "$1604344694421",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateRoutingProfileQueues": {
+      "name": "UpdateRoutingProfileQueues",
+      "description": "Grants permissions to update the queues in routing profile in an Amazon Connect instance.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "routing-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateUserHierarchy": {
+      "name": "UpdateUserHierarchy",
+      "description": "Grants permissions to update a hierarchy group for a user in an Amazon Connect instance.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344694422": {
+      "name": "$1604344694422",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateUserIdentityInfo": {
+      "name": "UpdateUserIdentityInfo",
+      "description": "Grants permissions to update identity information for a user in an Amazon Connect\n                                                instance.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateUserPhoneConfig": {
+      "name": "UpdateUserPhoneConfig",
+      "description": "Grants permissions to update phone configuration settings for a user in an Amazon\n                                                Connect instance.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateUserRoutingProfile": {
+      "name": "UpdateUserRoutingProfile",
+      "description": "Grants permissions to update a routing profile for a user in an Amazon Connect instance.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "routing-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344694423": {
+      "name": "$1604344694423",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateUserSecurityProfiles": {
+      "name": "UpdateUserSecurityProfiles",
+      "description": "Grants permissions to update security profiles for a user in an Amazon Connect instance.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "security-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Connect"
+}

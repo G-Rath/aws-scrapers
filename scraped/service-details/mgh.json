@@ -1,0 +1,182 @@
+{
+  "servicePrefix": "mgh",
+  "actions": {
+    "AssociateCreatedArtifact": {
+      "name": "AssociateCreatedArtifact",
+      "description": "Associate a given AWS artifact to a MigrationTask",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "migrationTask*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociateDiscoveredResource": {
+      "name": "AssociateDiscoveredResource",
+      "description": "Associate a given ADS resource to a MigrationTask",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "migrationTask*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateHomeRegionControl": {
+      "name": "CreateHomeRegionControl",
+      "description": "Create a Migration Hub Home Region Control",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateProgressUpdateStream": {
+      "name": "CreateProgressUpdateStream",
+      "description": "Create a ProgressUpdateStream",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "progressUpdateStream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteProgressUpdateStream": {
+      "name": "DeleteProgressUpdateStream",
+      "description": "Delete a ProgressUpdateStream",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "progressUpdateStream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeApplicationState": {
+      "name": "DescribeApplicationState",
+      "description": "Get an Application Discovery Service Application's state",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeHomeRegionControls": {
+      "name": "DescribeHomeRegionControls",
+      "description": "List Home Region Controls",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeMigrationTask": {
+      "name": "DescribeMigrationTask",
+      "description": "Describe a MigrationTask",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "migrationTask*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateCreatedArtifact": {
+      "name": "DisassociateCreatedArtifact",
+      "description": "Disassociate a given AWS artifact from a MigrationTask",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "migrationTask*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateDiscoveredResource": {
+      "name": "DisassociateDiscoveredResource",
+      "description": "Disassociate a given ADS resource from a MigrationTask",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "migrationTask*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetHomeRegion": {
+      "name": "GetHomeRegion",
+      "description": "Get the Migration Hub Home Region",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ImportMigrationTask": {
+      "name": "ImportMigrationTask",
+      "description": "Import a MigrationTask",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "migrationTask*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListCreatedArtifacts": {
+      "name": "ListCreatedArtifacts",
+      "description": "List associated created artifacts for a MigrationTask",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "migrationTask*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDiscoveredResources": {
+      "name": "ListDiscoveredResources",
+      "description": "List associated ADS resources from MigrationTask",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "migrationTask*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMigrationTasks": {
+      "name": "ListMigrationTasks",
+      "description": "List MigrationTasks",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProgressUpdateStreams": {
+      "name": "ListProgressUpdateStreams",
+      "description": "List ProgressUpdateStreams",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "NotifyApplicationState": {
+      "name": "NotifyApplicationState",
+      "description": "Update an Application Discovery Service Application's state",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "NotifyMigrationTaskState": {
+      "name": "NotifyMigrationTaskState",
+      "description": "Notify latest MigrationTask state",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "migrationTask*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutResourceAttributes": {
+      "name": "PutResourceAttributes",
+      "description": "Put ResourceAttributes",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "migrationTask*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Migration Hub"
+}

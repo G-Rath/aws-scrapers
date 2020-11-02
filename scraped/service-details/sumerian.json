@@ -1,0 +1,24 @@
+{
+  "servicePrefix": "sumerian",
+  "actions": {
+    "Login": {
+      "name": "Login",
+      "description": "Grant login access to the Sumerian console.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ViewRelease": {
+      "name": "ViewRelease",
+      "description": "Grant access to view a project release.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Sumerian"
+}

@@ -1,0 +1,334 @@
+{
+  "servicePrefix": "iotthingsgraph",
+  "actions": {
+    "AssociateEntityToThing": {
+      "name": "AssociateEntityToThing",
+      "description": "Associates a device with a concrete thing that is in the user's registry. A thing\n                                                can be associated with only one device at a time. If you associate a thing with a\n                                                new device id, its previous association will be removed.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "iot:DescribeThing\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:DescribeThingGroup"
+    },
+    "CreateFlowTemplate": {
+      "name": "CreateFlowTemplate",
+      "description": "Creates a workflow template. Workflows can be created only in the user's namespace.\n                                                (The public namespace contains only entities.) The workflow can contain only entities\n                                                in the specified namespace. The workflow is validated against the entities in the\n                                                latest version of the user's namespace unless another namespace version is specified\n                                                in the request.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateSystemInstance": {
+      "name": "CreateSystemInstance",
+      "description": "Creates an instance of a system with specified configurations and Things.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateSystemTemplate": {
+      "name": "CreateSystemTemplate",
+      "description": "Creates a system. The system is validated against the entities in the latest version\n                                                of the user's namespace unless another namespace version is specified in the request.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteFlowTemplate": {
+      "name": "DeleteFlowTemplate",
+      "description": "Deletes a workflow. Any new system or system instance that contains this workflow\n                                                will fail to update or deploy. Existing system instances that contain the workflow\n                                                will continue to run (since they use a snapshot of the workflow taken at the time\n                                                of deploying the system instance).",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Workflow*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteNamespace": {
+      "name": "DeleteNamespace",
+      "description": "Deletes the specified namespace. This action deletes all of the entities in the namespace.\n                                                Delete the systems and flows in the namespace before performing this action.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSystemInstance": {
+      "name": "DeleteSystemInstance",
+      "description": "Deletes a system instance. Only instances that have never been deployed, or that have\n                                                been undeployed from the target can be deleted. Users can create a new system instance\n                                                that has the same ID as a deleted system instance.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SystemInstance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSystemTemplate": {
+      "name": "DeleteSystemTemplate",
+      "description": "Deletes a system. New system instances can't contain the system after its deletion.\n                                                Existing system instances that contain the system will continue to work because they\n                                                use a snapshot of the system that is taken when it is deployed.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "System*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeploySystemInstance": {
+      "name": "DeploySystemInstance",
+      "description": "Deploys the system instance to the target specified in CreateSystemInstance.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SystemInstance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeprecateFlowTemplate": {
+      "name": "DeprecateFlowTemplate",
+      "description": "Deprecates the specified workflow. This action marks the workflow for deletion. Deprecated\n                                                flows can't be deployed, but existing system instances that use the flow will continue\n                                                to run.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Workflow*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeprecateSystemTemplate": {
+      "name": "DeprecateSystemTemplate",
+      "description": "Deprecates the specified system.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "System*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeNamespace": {
+      "name": "DescribeNamespace",
+      "description": "Gets the latest version of the user's namespace and the public version that it is\n                                                tracking.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DissociateEntityFromThing": {
+      "name": "DissociateEntityFromThing",
+      "description": "Dissociates a device entity from a concrete thing. The action takes only the type\n                                                of the entity that you need to dissociate because only one entity of a particular\n                                                type can be associated with a thing.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "iot:DescribeThing\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:DescribeThingGroup"
+    },
+    "GetEntities": {
+      "name": "GetEntities",
+      "description": "Gets descriptions of the specified entities. Uses the latest version of the user's\n                                                namespace by default.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFlowTemplate": {
+      "name": "GetFlowTemplate",
+      "description": "Gets the latest version of the DefinitionDocument and FlowTemplateSummary for the\n                                                specified workflow.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Workflow*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFlowTemplateRevisions": {
+      "name": "GetFlowTemplateRevisions",
+      "description": "Gets revisions of the specified workflow. Only the last 100 revisions are stored.\n                                                If the workflow has been deprecated, this action will return revisions that occurred\n                                                before the deprecation. This action won't work for workflows that have been deleted.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Workflow*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetNamespaceDeletionStatus": {
+      "name": "GetNamespaceDeletionStatus",
+      "description": "Gets the status of a namespace deletion task.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSystemInstance": {
+      "name": "GetSystemInstance",
+      "description": "Gets a system instance.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "SystemInstance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSystemTemplate": {
+      "name": "GetSystemTemplate",
+      "description": "Gets a system.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "System*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSystemTemplateRevisions": {
+      "name": "GetSystemTemplateRevisions",
+      "description": "Gets revisions made to the specified system template. Only the previous 100 revisions\n                                                are stored. If the system has been deprecated, this action will return the revisions\n                                                that occurred before its deprecation. This action won't work with systems that have\n                                                been deleted.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "System*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetUploadStatus": {
+      "name": "GetUploadStatus",
+      "description": "Gets the status of the specified upload.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFlowExecutionMessages": {
+      "name": "ListFlowExecutionMessages",
+      "description": "Lists details of a single workflow execution",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Lists all tags for a given resource",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "SystemInstance"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchEntities": {
+      "name": "SearchEntities",
+      "description": "Searches for entities of the specified type. You can search for entities in your namespace\n                                                and the public namespace that you're tracking.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchFlowExecutions": {
+      "name": "SearchFlowExecutions",
+      "description": "Searches for workflow executions of a system instance",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "SystemInstance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchFlowTemplates": {
+      "name": "SearchFlowTemplates",
+      "description": "Searches for summary information about workflows.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchSystemInstances": {
+      "name": "SearchSystemInstances",
+      "description": "Searches for system instances in the user's account.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchSystemTemplates": {
+      "name": "SearchSystemTemplates",
+      "description": "Searches for summary information about systems in the user's account. You can filter\n                                                by the ID of a workflow to return only systems that use the specified workflow.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchThings": {
+      "name": "SearchThings",
+      "description": "Searches for things associated with the specified entity. You can search by both device\n                                                and device model.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Tag a specified resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "SystemInstance"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344739578": {
+      "name": "$1604344739578",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UndeploySystemInstance": {
+      "name": "UndeploySystemInstance",
+      "description": "Removes the system instance and associated triggers from the target.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SystemInstance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Untag a specified resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "SystemInstance"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344739579": {
+      "name": "$1604344739579",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateFlowTemplate": {
+      "name": "UpdateFlowTemplate",
+      "description": "Updates the specified workflow. All deployed systems and system instances that use\n                                                the workflow will see the changes in the flow when it is redeployed. The workflow\n                                                can contain only entities in the specified namespace.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Workflow*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSystemTemplate": {
+      "name": "UpdateSystemTemplate",
+      "description": "Updates the specified system. You don't need to run this action after updating a workflow.\n                                                Any system instance that uses the system will see the changes in the system when it\n                                                is redeployed.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "System*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UploadEntityDefinitions": {
+      "name": "UploadEntityDefinitions",
+      "description": "Asynchronously uploads one or more entity definitions to the user's namespace.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS IoT Things Graph"
+}

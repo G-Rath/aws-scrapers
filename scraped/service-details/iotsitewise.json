@@ -1,0 +1,602 @@
+{
+  "servicePrefix": "iotsitewise",
+  "actions": {
+    "AssociateAssets": {
+      "name": "AssociateAssets",
+      "description": "Grants permission to associate a child asset to a parent asset by a hierarchy",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "asset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchAssociateProjectAssets": {
+      "name": "BatchAssociateProjectAssets",
+      "description": "Grants permission to associate assets to a project",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchDisassociateProjectAssets": {
+      "name": "BatchDisassociateProjectAssets",
+      "description": "Grants permission to disassociate assets from a project",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchPutAssetPropertyValue": {
+      "name": "BatchPutAssetPropertyValue",
+      "description": "Grants permission to put property values for asset properties",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "asset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAccessPolicy": {
+      "name": "CreateAccessPolicy",
+      "description": "Grants permission to create an access policy for a portal or a project",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "portal"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "project": {
+      "name": "project",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344737308": {
+      "name": "$1604344737308",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateAsset": {
+      "name": "CreateAsset",
+      "description": "Grants permission to create an asset from an asset model",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "asset-model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344737309": {
+      "name": "$1604344737309",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateAssetModel": {
+      "name": "CreateAssetModel",
+      "description": "Grants permission to create an asset model",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateDashboard": {
+      "name": "CreateDashboard",
+      "description": "Grants permission to create a dashboard in a project",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateGateway": {
+      "name": "CreateGateway",
+      "description": "Grants permission to create a gateway",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreatePortal": {
+      "name": "CreatePortal",
+      "description": "Grants permission to create a portal",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": "sso:CreateManagedApplicationInstance\n                                                   \n                                                \n                                                \n                                                \n                                                   sso:DescribeRegisteredRegions"
+    },
+    "CreateProject": {
+      "name": "CreateProject",
+      "description": "Grants permission to create a project in a portal",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "portal*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344737310": {
+      "name": "$1604344737310",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteAccessPolicy": {
+      "name": "DeleteAccessPolicy",
+      "description": "Grants permission to delete an access policy",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "access-policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAsset": {
+      "name": "DeleteAsset",
+      "description": "Grants permission to delete an asset",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "asset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAssetModel": {
+      "name": "DeleteAssetModel",
+      "description": "Grants permission to delete an asset model",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "asset-model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDashboard": {
+      "name": "DeleteDashboard",
+      "description": "Grants permission to delete a dashboard",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dashboard*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteGateway": {
+      "name": "DeleteGateway",
+      "description": "Grants permission to delete a gateway",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeletePortal": {
+      "name": "DeletePortal",
+      "description": "Grants permission to delete a portal",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "portal*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "sso:DeleteManagedApplicationInstance"
+    },
+    "DeleteProject": {
+      "name": "DeleteProject",
+      "description": "Grants permission to delete a project",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAccessPolicy": {
+      "name": "DescribeAccessPolicy",
+      "description": "Grants permission to describe an access policy",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "access-policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAsset": {
+      "name": "DescribeAsset",
+      "description": "Grants permission to describe an asset",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "asset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAssetModel": {
+      "name": "DescribeAssetModel",
+      "description": "Grants permission to describe an asset model",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "asset-model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAssetProperty": {
+      "name": "DescribeAssetProperty",
+      "description": "Grants permission to describe an asset property",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "asset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDashboard": {
+      "name": "DescribeDashboard",
+      "description": "Grants permission to describe a dashboard",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "dashboard*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeGateway": {
+      "name": "DescribeGateway",
+      "description": "Grants permission to describe a gateway",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeGatewayCapabilityConfiguration": {
+      "name": "DescribeGatewayCapabilityConfiguration",
+      "description": "Grants permission to describe a capability configuration for a gateway",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeLoggingOptions": {
+      "name": "DescribeLoggingOptions",
+      "description": "Grants permission to describe logging options for the AWS account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribePortal": {
+      "name": "DescribePortal",
+      "description": "Grants permission to describe a portal",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "portal*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeProject": {
+      "name": "DescribeProject",
+      "description": "Grants permission to describe a project",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateAssets": {
+      "name": "DisassociateAssets",
+      "description": "Grants permission to disassociate a child asset from a parent asset by a hierarchy",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "asset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAssetPropertyAggregates": {
+      "name": "GetAssetPropertyAggregates",
+      "description": "Grants permission to retrieve computed aggregates for an asset property",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "asset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAssetPropertyValue": {
+      "name": "GetAssetPropertyValue",
+      "description": "Grants permission to retrieve the latest value for an asset property",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "asset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAssetPropertyValueHistory": {
+      "name": "GetAssetPropertyValueHistory",
+      "description": "Grants permission to retrieve the value history for an asset property",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "asset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAccessPolicies": {
+      "name": "ListAccessPolicies",
+      "description": "Grants permission to list all access policies for an identity or a resource",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "portal"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAssetModels": {
+      "name": "ListAssetModels",
+      "description": "Grants permission to list all asset models",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAssets": {
+      "name": "ListAssets",
+      "description": "Grants permission to list all assets",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "asset-model"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAssociatedAssets": {
+      "name": "ListAssociatedAssets",
+      "description": "Grants permission to list all assets associated to an asset by a hierarchy",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "asset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDashboards": {
+      "name": "ListDashboards",
+      "description": "Grants permission to list all dashboards in a project",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGateways": {
+      "name": "ListGateways",
+      "description": "Grants permission to list all gateways",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPortals": {
+      "name": "ListPortals",
+      "description": "Grants permission to list all portals",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProjectAssets": {
+      "name": "ListProjectAssets",
+      "description": "Grants permission to list all assets associated with a project",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProjects": {
+      "name": "ListProjects",
+      "description": "Grants permission to list all projects in a portal",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "portal*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permission to list all tags for a resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "access-policy"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "asset": {
+      "name": "asset",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "asset-model": {
+      "name": "asset-model",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "dashboard": {
+      "name": "dashboard",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "gateway": {
+      "name": "gateway",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "portal": {
+      "name": "portal",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344737318": {
+      "name": "$1604344737318",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutLoggingOptions": {
+      "name": "PutLoggingOptions",
+      "description": "Grants permission to set logging options for the AWS account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permission to tag a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "access-policy"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344737321": {
+      "name": "$1604344737321",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permission to untag a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "access-policy"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344737324": {
+      "name": "$1604344737324",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateAccessPolicy": {
+      "name": "UpdateAccessPolicy",
+      "description": "Grants permission to update an access policy",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "access-policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAsset": {
+      "name": "UpdateAsset",
+      "description": "Grants permission to update an asset",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "asset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAssetModel": {
+      "name": "UpdateAssetModel",
+      "description": "Grants permission to update an asset model",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "asset-model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAssetProperty": {
+      "name": "UpdateAssetProperty",
+      "description": "Grants permission to update an asset property",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "asset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDashboard": {
+      "name": "UpdateDashboard",
+      "description": "Grants permission to update a dashboard",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dashboard*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateGateway": {
+      "name": "UpdateGateway",
+      "description": "Grants permission to update a gateway",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateGatewayCapabilityConfiguration": {
+      "name": "UpdateGatewayCapabilityConfiguration",
+      "description": "Grants permission to update a capability configuration for a gateway",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdatePortal": {
+      "name": "UpdatePortal",
+      "description": "Grants permission to update a portal",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "portal*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateProject": {
+      "name": "UpdateProject",
+      "description": "Grants permission to update a project",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS IoT SiteWise"
+}

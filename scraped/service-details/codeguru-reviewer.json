@@ -1,0 +1,126 @@
+{
+  "servicePrefix": "codeguru-reviewer",
+  "actions": {
+    "AssociateRepository": {
+      "name": "AssociateRepository",
+      "description": "Grants permission to associates a repository with Amazon CodeGuru Reviewer.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "repository"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "codecommit:ListRepositories\n                                                   \n                                                \n                                                \n                                                \n                                                   codecommit:TagResource\n                                                   \n                                                \n                                                \n                                                \n                                                   events:PutRule\n                                                   \n                                                \n                                                \n                                                \n                                                   events:PutTargets\n                                                   \n                                                \n                                                \n                                                \n                                                   iam:CreateServiceLinkedRole"
+    },
+    "CreateConnectionToken": {
+      "name": "CreateConnectionToken",
+      "description": "Grants permission to perform webbased oauth handshake for 3rd party providers.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeCodeReview": {
+      "name": "DescribeCodeReview",
+      "description": "Grants permission to describe a code review.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "codereview*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeRecommendationFeedback": {
+      "name": "DescribeRecommendationFeedback",
+      "description": "Grants permission to describe a recommendation feedback on a code review.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "codereview*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeRepositoryAssociation": {
+      "name": "DescribeRepositoryAssociation",
+      "description": "Grants permission to describe a repository association.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "association*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateRepository": {
+      "name": "DisassociateRepository",
+      "description": "Grants permission to disassociate a repository with Amazon CodeGuru Reviewer.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "association*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "codecommit:UntagResource\n                                                   \n                                                \n                                                \n                                                \n                                                   events:DeleteRule\n                                                   \n                                                \n                                                \n                                                \n                                                   events:RemoveTargets"
+    },
+    "GetMetricsData": {
+      "name": "GetMetricsData",
+      "description": "Grants permission to view pull request metrics in console.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListCodeReviews": {
+      "name": "ListCodeReviews",
+      "description": "Grants permission to list summary of code reviews.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRecommendationFeedback": {
+      "name": "ListRecommendationFeedback",
+      "description": "Grants permission to list summary of recommendation feedback on a code review.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "codereview*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRecommendations": {
+      "name": "ListRecommendations",
+      "description": "Grants permission to list summary of recommendations on a code review",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "codereview*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRepositoryAssociations": {
+      "name": "ListRepositoryAssociations",
+      "description": "Grants permission to list summary of repository associations.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListThirdPartyRepositories": {
+      "name": "ListThirdPartyRepositories",
+      "description": "Grants permission to list 3rd party providers repositories in console.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutRecommendationFeedback": {
+      "name": "PutRecommendationFeedback",
+      "description": "Grants permission to put feedback for a recommendation on a code review.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "codereview*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon CodeGuru Reviewer"
+}

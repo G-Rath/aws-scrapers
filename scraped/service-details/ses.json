@@ -1,0 +1,430 @@
+{
+  "servicePrefix": "ses",
+  "actions": {
+    "CreateConfigurationSet": {
+      "name": "CreateConfigurationSet",
+      "description": "Create a configuration set. Configuration sets are groups of rules that you can apply\n                                                to the emails you send using Amazon Pinpoint",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "configuration-set*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344721345": {
+      "name": "$1604344721345",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateConfigurationSetEventDestination": {
+      "name": "CreateConfigurationSetEventDestination",
+      "description": "Create an event destination",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "configuration-set*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDedicatedIpPool": {
+      "name": "CreateDedicatedIpPool",
+      "description": "Create a new pool of dedicated IP addresses",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dedicated-ip-pool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDeliverabilityTestReport": {
+      "name": "CreateDeliverabilityTestReport",
+      "description": "Create a new predictive inbox placement test.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344721346": {
+      "name": "$1604344721346",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateEmailIdentity": {
+      "name": "CreateEmailIdentity",
+      "description": "Verifies an email identity for use with Amazon Pinpoint",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteConfigurationSet": {
+      "name": "DeleteConfigurationSet",
+      "description": "Delete an existing configuration set",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "configuration-set*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteConfigurationSetEventDestination": {
+      "name": "DeleteConfigurationSetEventDestination",
+      "description": "Delete an event destination",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "configuration-set*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDedicatedIpPool": {
+      "name": "DeleteDedicatedIpPool",
+      "description": "Delete a dedicated IP pool",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dedicated-ip-pool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteEmailIdentity": {
+      "name": "DeleteEmailIdentity",
+      "description": "Deletes an email identity that you previously verified for use with Amazon Pinpoint",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAccount": {
+      "name": "GetAccount",
+      "description": "Obtain information about the email-sending status and capabilities",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBlacklistReports": {
+      "name": "GetBlacklistReports",
+      "description": "Retrieve a list of the blacklists that your dedicated IP addresses appear on",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetConfigurationSet": {
+      "name": "GetConfigurationSet",
+      "description": "Get information about an existing configuration set",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "configuration-set*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetConfigurationSetEventDestinations": {
+      "name": "GetConfigurationSetEventDestinations",
+      "description": "Retrieve a list of event destinations that are associated with a configuration set",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "configuration-set*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDedicatedIp": {
+      "name": "GetDedicatedIp",
+      "description": "Get information about a dedicated IP address",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDedicatedIps": {
+      "name": "GetDedicatedIps",
+      "description": "List the dedicated IP addresses that are associated with your Amazon Pinpoint account",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "dedicated-ip-pool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDeliverabilityDashboardOptions": {
+      "name": "GetDeliverabilityDashboardOptions",
+      "description": "Show the status of the Deliverability dashboard",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDeliverabilityTestReport": {
+      "name": "GetDeliverabilityTestReport",
+      "description": "Retrieve the results of a predictive inbox placement test",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "deliverability-test-report*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDomainStatisticsReport": {
+      "name": "GetDomainStatisticsReport",
+      "description": "Retrieve inbox placement and engagement rates for the domains that you use to send\n                                                email",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEmailIdentity": {
+      "name": "GetEmailIdentity",
+      "description": "Provides information about a specific identity associated with your Amazon Pinpoint\n                                                account",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListConfigurationSets": {
+      "name": "ListConfigurationSets",
+      "description": "List all of the configuration sets associated with your Amazon Pinpoint account in\n                                                the current region",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDedicatedIpPools": {
+      "name": "ListDedicatedIpPools",
+      "description": "List all of the dedicated IP pools that exist in your Amazon Pinpoint account in the\n                                                current AWS Region",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDeliverabilityTestReports": {
+      "name": "ListDeliverabilityTestReports",
+      "description": "Show a list of the predictive inbox placement tests that you've performed, regardless\n                                                of their statuses",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEmailIdentities": {
+      "name": "ListEmailIdentities",
+      "description": "Returns a list of all of the email identities that are associated with your Amazon\n                                                Pinpoint account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Retrieve a list of the tags (keys and values) that are associated with a specific\n                                                resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "configuration-set"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "dedicated-ip-pool": {
+      "name": "dedicated-ip-pool",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "deliverability-test-report": {
+      "name": "deliverability-test-report",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "identity": {
+      "name": "identity",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutAccountDedicatedIpWarmupAttributes": {
+      "name": "PutAccountDedicatedIpWarmupAttributes",
+      "description": "Enable or disable the automatic warm-up feature for dedicated IP addresses",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutAccountSendingAttributes": {
+      "name": "PutAccountSendingAttributes",
+      "description": "Enable or disable the ability of your account to send email",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutConfigurationSetDeliveryOptions": {
+      "name": "PutConfigurationSetDeliveryOptions",
+      "description": "Associate a configuration set with a dedicated IP pool",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "configuration-set*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutConfigurationSetReputationOptions": {
+      "name": "PutConfigurationSetReputationOptions",
+      "description": "Enable or disable collection of reputation metrics for emails that you send using\n                                                a particular configuration set in a specific AWS Region",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "configuration-set*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutConfigurationSetSendingOptions": {
+      "name": "PutConfigurationSetSendingOptions",
+      "description": "Enable or disable email sending for messages that use a particular configuration set\n                                                in a specific AWS Region",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "configuration-set*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutConfigurationSetTrackingOptions": {
+      "name": "PutConfigurationSetTrackingOptions",
+      "description": "Specify a custom domain to use for open and click tracking elements in email that\n                                                you send using Amazon Pinpoint",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "configuration-set*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutDedicatedIpInPool": {
+      "name": "PutDedicatedIpInPool",
+      "description": "Move a dedicated IP address to an existing dedicated IP pool",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dedicated-ip-pool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutDedicatedIpWarmupAttributes": {
+      "name": "PutDedicatedIpWarmupAttributes",
+      "description": "Put Dedicated IP warm up attributes",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutDeliverabilityDashboardOption": {
+      "name": "PutDeliverabilityDashboardOption",
+      "description": "Enable or disable the Deliverability dashboard",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutEmailIdentityDkimAttributes": {
+      "name": "PutEmailIdentityDkimAttributes",
+      "description": "Used to enable or disable DKIM authentication for an email identity",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutEmailIdentityFeedbackAttributes": {
+      "name": "PutEmailIdentityFeedbackAttributes",
+      "description": "Used to enable or disable feedback forwarding for an identity",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutEmailIdentityMailFromAttributes": {
+      "name": "PutEmailIdentityMailFromAttributes",
+      "description": "Used to enable or disable the custom Mail-From domain configuration for an email identity",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendEmail": {
+      "name": "SendEmail",
+      "description": "Sends an email message",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344721351": {
+      "name": "$1604344721351",
+      "description": "ses:FeedbackAddress\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ses:FromAddress\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ses:FromDisplayName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ses:Recipients",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Add one or more tags (keys and values) to a specified resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "configuration-set"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344721353": {
+      "name": "$1604344721353",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Remove one or more tags (keys and values) from a specified resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "configuration-set"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344721355": {
+      "name": "$1604344721355",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateConfigurationSetEventDestination": {
+      "name": "UpdateConfigurationSetEventDestination",
+      "description": "Update the configuration of an event destination for a configuration set",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "configuration-set*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Pinpoint Email Service"
+}

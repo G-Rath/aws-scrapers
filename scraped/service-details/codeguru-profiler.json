@@ -1,0 +1,242 @@
+{
+  "servicePrefix": "codeguru-profiler",
+  "actions": {
+    "AddNotificationChannels": {
+      "name": "AddNotificationChannels",
+      "description": "Grants permission to add up to 2 topic ARNs of existing AWS SNS topics to publish\n                                                notifications",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ProfilingGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchGetFrameMetricData": {
+      "name": "BatchGetFrameMetricData",
+      "description": "Grants permission to get the frame metric data for a Profiling Group",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "ProfilingGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ConfigureAgent": {
+      "name": "ConfigureAgent",
+      "description": "Grants permission for an agent to register with the orchestration service and retrieve\n                                                profiling configuration information",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ProfilingGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateProfilingGroup": {
+      "name": "CreateProfilingGroup",
+      "description": "Grants permission to create a profiling group",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "dependentActions": ""
+    },
+    "DeleteProfilingGroup": {
+      "name": "DeleteProfilingGroup",
+      "description": "Grants permission to delete a profiling group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ProfilingGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeProfilingGroup": {
+      "name": "DescribeProfilingGroup",
+      "description": "Grants permission to describe a profiling group",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ProfilingGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFindingsReportAccountSummary": {
+      "name": "GetFindingsReportAccountSummary",
+      "description": "Grants permission to get a summary of recent recommendations for each profiling group\n                                                in the account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetNotificationConfiguration": {
+      "name": "GetNotificationConfiguration",
+      "description": "Grants permission to get the notification configuration",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ProfilingGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPolicy": {
+      "name": "GetPolicy",
+      "description": "Grants permission to get the resource policy associated with the specified Profiling\n                                                Group.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ProfilingGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetProfile": {
+      "name": "GetProfile",
+      "description": "Grants permission to get aggregated profiles for a specific profiling group",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ProfilingGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRecommendations": {
+      "name": "GetRecommendations",
+      "description": "Grants permission to get recommendations",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ProfilingGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFindingsReports": {
+      "name": "ListFindingsReports",
+      "description": "Grants permission to list the available recommendations reports for a specific profiling\n                                                group",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "ProfilingGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProfileTimes": {
+      "name": "ListProfileTimes",
+      "description": "Grants permission to list the start times of the available aggregated profiles for\n                                                a specific profiling group",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "ProfilingGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProfilingGroups": {
+      "name": "ListProfilingGroups",
+      "description": "Grants permission to list profiling groups in the account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permission to list tags for a Profiling Group",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "ProfilingGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PostAgentProfile": {
+      "name": "PostAgentProfile",
+      "description": "Grants permission to submit a profile collected by an agent belonging to a specific\n                                                profiling group for aggregation",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ProfilingGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutPermission": {
+      "name": "PutPermission",
+      "description": "Grants permission to update the list of principals allowed for an action group in\n                                                the resource policy associated with the specified Profiling Group.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "ProfilingGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemoveNotificationChannel": {
+      "name": "RemoveNotificationChannel",
+      "description": "Grants permission to delete an already configured SNStopic arn from the notification\n                                                configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ProfilingGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemovePermission": {
+      "name": "RemovePermission",
+      "description": "Grants permission to remove the permission of specified Action Group from the resource\n                                                policy associated with the specified Profiling Group.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "ProfilingGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SubmitFeedback": {
+      "name": "SubmitFeedback",
+      "description": "Grants permission to submit user feedback for useful or non useful anomaly",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ProfilingGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permission to add or overwrite tags to a Profiling Group",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "ProfilingGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344747779": {
+      "name": "$1604344747779",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permission to remove tags from a Profiling Group",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "ProfilingGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344747780": {
+      "name": "$1604344747780",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateProfilingGroup": {
+      "name": "UpdateProfilingGroup",
+      "description": "Grants permission to update a specific profiling group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ProfilingGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon CodeGuru Profiler"
+}

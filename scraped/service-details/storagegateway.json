@@ -1,0 +1,768 @@
+{
+  "servicePrefix": "storagegateway",
+  "actions": {
+    "ActivateGateway": {
+      "name": "ActivateGateway",
+      "description": "This operation activates the gateway you previously deployed on your host.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "AddCache": {
+      "name": "AddCache",
+      "description": "This operation configures one or more gateway local disks as cache for a cached-volume\n                                                gateway.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AddTagsToResource": {
+      "name": "AddTagsToResource",
+      "description": "This operation adds one or more tags to the specified resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "gateway"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "share": {
+      "name": "share",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "tape": {
+      "name": "tape",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "volume": {
+      "name": "volume",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344718680": {
+      "name": "$1604344718680",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "AddUploadBuffer": {
+      "name": "AddUploadBuffer",
+      "description": "This operation configures one or more gateway local disks as upload buffer for a specified\n                                                gateway.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AddWorkingStorage": {
+      "name": "AddWorkingStorage",
+      "description": "This operation configures one or more gateway local disks as working storage for a\n                                                gateway.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AttachVolume": {
+      "name": "AttachVolume",
+      "description": "This operation connects a volume to an iSCSI connection and then attaches the volume\n                                                to the specified gateway.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "volume*": {
+      "name": "volume*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CancelArchival": {
+      "name": "CancelArchival",
+      "description": "Cancels archiving of a virtual tape to the virtual tape shelf (VTS) after the archiving\n                                                process is initiated.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "tape*": {
+      "name": "tape*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CancelRetrieval": {
+      "name": "CancelRetrieval",
+      "description": "Cancels retrieval of a virtual tape from the virtual tape shelf (VTS) to a gateway\n                                                after the retrieval process is initiated.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateCachediSCSIVolume": {
+      "name": "CreateCachediSCSIVolume",
+      "description": "This operation creates a cached volume on a specified cached gateway. This operation\n                                                is supported only for the gateway-cached volume architecture.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344718683": {
+      "name": "$1604344718683",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateNFSFileShare": {
+      "name": "CreateNFSFileShare",
+      "description": "This operation creates a NFS file share on an existing file gateway.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateSMBFileShare": {
+      "name": "CreateSMBFileShare",
+      "description": "This operation creates a SMB file share on an existing file gateway.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateSnapshot": {
+      "name": "CreateSnapshot",
+      "description": "This operation initiates a snapshot of a volume.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "volume*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateSnapshotFromVolumeRecoveryPoint": {
+      "name": "CreateSnapshotFromVolumeRecoveryPoint",
+      "description": "This operation initiates a snapshot of a gateway from a volume recovery point.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "volume*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateStorediSCSIVolume": {
+      "name": "CreateStorediSCSIVolume",
+      "description": "This operation creates a volume on a specified gateway.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344718684": {
+      "name": "$1604344718684",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateTapeWithBarcode": {
+      "name": "CreateTapeWithBarcode",
+      "description": "Creates a virtual tape by using your own barcode.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateTapes": {
+      "name": "CreateTapes",
+      "description": "Creates one or more virtual tapes. You write data to the virtual tapes and then archive\n                                                the tapes.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344718685": {
+      "name": "$1604344718685",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteBandwidthRateLimit": {
+      "name": "DeleteBandwidthRateLimit",
+      "description": "This operation deletes the bandwidth rate limits of a gateway.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteChapCredentials": {
+      "name": "DeleteChapCredentials",
+      "description": "This operation deletes Challenge-Handshake Authentication Protocol (CHAP) credentials\n                                                for a specified iSCSI target and initiator pair.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "target*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteFileShare": {
+      "name": "DeleteFileShare",
+      "description": "This operation deletes a file share from a file gateway.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "share*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteGateway": {
+      "name": "DeleteGateway",
+      "description": "This operation deletes a gateway.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSnapshotSchedule": {
+      "name": "DeleteSnapshotSchedule",
+      "description": "This operation deletes a snapshot of a volume.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "volume*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteTape": {
+      "name": "DeleteTape",
+      "description": "Deletes the specified virtual tape.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteTapeArchive": {
+      "name": "DeleteTapeArchive",
+      "description": "Deletes the specified virtual tape from the virtual tape shelf (VTS).",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteVolume": {
+      "name": "DeleteVolume",
+      "description": "This operation deletes the specified gateway volume that you previously created using\n                                                the CreateCachediSCSIVolume or CreateStorediSCSIVolume API.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "volume*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeBandwidthRateLimit": {
+      "name": "DescribeBandwidthRateLimit",
+      "description": "This operation returns the bandwidth rate limits of a gateway.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeCache": {
+      "name": "DescribeCache",
+      "description": "This operation returns information about the cache of a gateway. This operation is\n                                                supported only for the gateway-cached volume architecture.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeCachediSCSIVolumes": {
+      "name": "DescribeCachediSCSIVolumes",
+      "description": "This operation returns a description of the gateway volumes specified in the request.\n                                                This operation is supported only for the gateway-cached volume architecture.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "volume*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeChapCredentials": {
+      "name": "DescribeChapCredentials",
+      "description": "This operation returns an array of Challenge-Handshake Authentication Protocol (CHAP)\n                                                credentials information for a specified iSCSI target, one for each target-initiator\n                                                pair.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "target*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeGatewayInformation": {
+      "name": "DescribeGatewayInformation",
+      "description": "This operation returns metadata about a gateway such as its name, network interfaces,\n                                                configured time zone, and the state (whether the gateway is running or not).",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeMaintenanceStartTime": {
+      "name": "DescribeMaintenanceStartTime",
+      "description": "This operation returns your gateway's weekly maintenance start time including the\n                                                day and time of the week.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeNFSFileShares": {
+      "name": "DescribeNFSFileShares",
+      "description": "This operation gets a description for one or more file shares from a file gateway.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "share*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeSMBFileShares": {
+      "name": "DescribeSMBFileShares",
+      "description": "This operation gets a description for one or more file shares from a file gateway.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "share*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeSMBSettings": {
+      "name": "DescribeSMBSettings",
+      "description": "This operation gets a description of a Server Message Block (SMB) file share settings\n                                                from a file gateway.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeSnapshotSchedule": {
+      "name": "DescribeSnapshotSchedule",
+      "description": "This operation describes the snapshot schedule for the specified gateway volume.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "volume*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeStorediSCSIVolumes": {
+      "name": "DescribeStorediSCSIVolumes",
+      "description": "This operation returns the description of the gateway volumes specified in the request.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "volume*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTapeArchives": {
+      "name": "DescribeTapeArchives",
+      "description": "Returns a description of specified virtual tapes in the virtual tape shelf (VTS).",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTapeRecoveryPoints": {
+      "name": "DescribeTapeRecoveryPoints",
+      "description": "Returns a list of virtual tape recovery points that are available for the specified\n                                                gateway-VTL.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTapes": {
+      "name": "DescribeTapes",
+      "description": "Returns a description of the specified Amazon Resource Name (ARN) of virtual tapes.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeUploadBuffer": {
+      "name": "DescribeUploadBuffer",
+      "description": "This operation returns information about the upload buffer of a gateway.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeVTLDevices": {
+      "name": "DescribeVTLDevices",
+      "description": "Returns a description of virtual tape library (VTL) devices for the specified gateway.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeWorkingStorage": {
+      "name": "DescribeWorkingStorage",
+      "description": "This operation returns information about the working storage of a gateway.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DetachVolume": {
+      "name": "DetachVolume",
+      "description": "This operation disconnects a volume from an iSCSI connection and then detaches the\n                                                volume from the specified gateway.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "volume*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisableGateway": {
+      "name": "DisableGateway",
+      "description": "Disables a gateway when the gateway is no longer functioning.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "JoinDomain": {
+      "name": "JoinDomain",
+      "description": "This operation enables you to join an Active Directory Domain.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFileShares": {
+      "name": "ListFileShares",
+      "description": "This operation gets a list of the file shares for a specific file gateway, or the\n                                                list of file shares that belong to the calling user account.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGateways": {
+      "name": "ListGateways",
+      "description": "This operation lists gateways owned by an AWS account in a region specified in the\n                                                request. The returned list is ordered by gateway Amazon Resource Name (ARN).",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListLocalDisks": {
+      "name": "ListLocalDisks",
+      "description": "This operation returns a list of the gateway's local disks.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "This operation lists the tags that have been added to the specified resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "gateway"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTapes": {
+      "name": "ListTapes",
+      "description": "Lists virtual tapes in your virtual tape library (VTL) and your virtual tape shelf\n                                                (VTS).",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "tape*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListVolumeInitiators": {
+      "name": "ListVolumeInitiators",
+      "description": "This operation lists iSCSI initiators that are connected to a volume.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "volume*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListVolumeRecoveryPoints": {
+      "name": "ListVolumeRecoveryPoints",
+      "description": "This operation lists the recovery points for a specified gateway.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListVolumes": {
+      "name": "ListVolumes",
+      "description": "This operation lists the iSCSI stored volumes of a gateway.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "NotifyWhenUploaded": {
+      "name": "NotifyWhenUploaded",
+      "description": "This action sends you a notification through CloudWatch Events when all files written\n                                                to your NFS file share have been uploaded to Amazon S3.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "share*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RefreshCache": {
+      "name": "RefreshCache",
+      "description": "This operation refreshes the cache for the specified file share.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "share*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemoveTagsFromResource": {
+      "name": "RemoveTagsFromResource",
+      "description": "This operation removes one or more tags from the specified resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "gateway"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344718693": {
+      "name": "$1604344718693",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ResetCache": {
+      "name": "ResetCache",
+      "description": "This operation resets all cache disks that have encountered a error and makes the\n                                                disks available for reconfiguration as cache storage.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RetrieveTapeArchive": {
+      "name": "RetrieveTapeArchive",
+      "description": "Retrieves an archived virtual tape from the virtual tape shelf (VTS) to a gateway-VTL.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RetrieveTapeRecoveryPoint": {
+      "name": "RetrieveTapeRecoveryPoint",
+      "description": "Retrieves the recovery point for the specified virtual tape.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetLocalConsolePassword": {
+      "name": "SetLocalConsolePassword",
+      "description": "Sets the password for your VM local console.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetSMBGuestPassword": {
+      "name": "SetSMBGuestPassword",
+      "description": "Sets the password for SMB Guest user.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ShutdownGateway": {
+      "name": "ShutdownGateway",
+      "description": "This operation shuts down a gateway.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartGateway": {
+      "name": "StartGateway",
+      "description": "This operation starts a gateway that you previously shut down.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateBandwidthRateLimit": {
+      "name": "UpdateBandwidthRateLimit",
+      "description": "This operation updates the bandwidth rate limits of a gateway.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateChapCredentials": {
+      "name": "UpdateChapCredentials",
+      "description": "This operation updates the Challenge-Handshake Authentication Protocol (CHAP) credentials\n                                                for a specified iSCSI target.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "target*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateGatewayInformation": {
+      "name": "UpdateGatewayInformation",
+      "description": "This operation updates a gateway's metadata, which includes the gateway's name and\n                                                time zone.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateGatewaySoftwareNow": {
+      "name": "UpdateGatewaySoftwareNow",
+      "description": "This operation updates the gateway virtual machine (VM) software.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateMaintenanceStartTime": {
+      "name": "UpdateMaintenanceStartTime",
+      "description": "This operation updates a gateway's weekly maintenance start time information, including\n                                                day and time of the week. The maintenance time is the time in your gateway's time\n                                                zone.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateNFSFileShare": {
+      "name": "UpdateNFSFileShare",
+      "description": "This operation updates a NFS file share.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "share*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSMBFileShare": {
+      "name": "UpdateSMBFileShare",
+      "description": "This operation updates a SMB file share.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "share*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSnapshotSchedule": {
+      "name": "UpdateSnapshotSchedule",
+      "description": "This operation updates a snapshot schedule configured for a gateway volume.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "volume*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateVTLDeviceType": {
+      "name": "UpdateVTLDeviceType",
+      "description": "This operation updates the type of medium changer in a gateway-VTL.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Storage Gateway"
+}

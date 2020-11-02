@@ -1,0 +1,316 @@
+{
+  "servicePrefix": "datasync",
+  "actions": {
+    "CancelTaskExecution": {
+      "name": "CancelTaskExecution",
+      "description": "Cancels execution of a sync task.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "taskexecution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAgent": {
+      "name": "CreateAgent",
+      "description": "Activates an agent that you have deployed on your host.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateLocationEfs": {
+      "name": "CreateLocationEfs",
+      "description": "Creates an endpoint for an Amazon EFS file system.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateLocationFsxWindows": {
+      "name": "CreateLocationFsxWindows",
+      "description": "Creates an endpoint for an Amazon FSx Windows File Server file system.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateLocationNfs": {
+      "name": "CreateLocationNfs",
+      "description": "Creates an endpoint for a NFS file system.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateLocationObjectStorage": {
+      "name": "CreateLocationObjectStorage",
+      "description": "Creates an endpoint for a self-managed object storage bucket.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateLocationS3": {
+      "name": "CreateLocationS3",
+      "description": "Creates an endpoint for an Amazon S3 bucket.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateLocationSmb": {
+      "name": "CreateLocationSmb",
+      "description": "Creates an endpoint for an SMB file system.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateTask": {
+      "name": "CreateTask",
+      "description": "Creates a sync task.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "DeleteAgent": {
+      "name": "DeleteAgent",
+      "description": "Deletes an agent.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "agent*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteLocation": {
+      "name": "DeleteLocation",
+      "description": "Deletes the configuration of a location used by AWS DataSync.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "location*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteTask": {
+      "name": "DeleteTask",
+      "description": "Deletes a sync task.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "task*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAgent": {
+      "name": "DescribeAgent",
+      "description": "Returns metadata such as name, network interfaces, and the status (that is, whether\n                                                the agent is running or not) about a sync agent.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "agent*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeLocationEfs": {
+      "name": "DescribeLocationEfs",
+      "description": "Returns metadata, such as the path information about an Amazon EFS sync location.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "location*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeLocationFsxWindows": {
+      "name": "DescribeLocationFsxWindows",
+      "description": "Returns metadata, such as the path information about an Amazon FSx Windows sync location.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "location*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeLocationNfs": {
+      "name": "DescribeLocationNfs",
+      "description": "Returns metadata, such as the path information, about a NFS sync location.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "location*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeLocationObjectStorage": {
+      "name": "DescribeLocationObjectStorage",
+      "description": "Returns metadata about a self-managed object storage server location.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "location*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeLocationS3": {
+      "name": "DescribeLocationS3",
+      "description": "Returns metadata, such as bucket name, about an Amazon S3 bucket sync location.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "location*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeLocationSmb": {
+      "name": "DescribeLocationSmb",
+      "description": "Returns metadata, such as the path information, about an SMB sync location.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "location*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTask": {
+      "name": "DescribeTask",
+      "description": "Returns metadata about a sync task.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "task*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTaskExecution": {
+      "name": "DescribeTaskExecution",
+      "description": "Returns detailed metadata about a sync task that is being executed.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "taskexecution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAgents": {
+      "name": "ListAgents",
+      "description": "Returns a list of agents owned by an AWS account in a region specified in the request.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListLocations": {
+      "name": "ListLocations",
+      "description": "Returns a lists of source and destination sync locations.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "This operation lists the tags that have been added to the specified resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "agent"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "location": {
+      "name": "location",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "task": {
+      "name": "task",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ListTaskExecutions": {
+      "name": "ListTaskExecutions",
+      "description": "Returns a list of executed sync tasks.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTasks": {
+      "name": "ListTasks",
+      "description": "Returns a list of all the sync tasks.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartTaskExecution": {
+      "name": "StartTaskExecution",
+      "description": "Starts a specific invocation of a sync task.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "task*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Applies a key-value pair to an AWS resource.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "agent"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344707400": {
+      "name": "$1604344707400",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "This operation removes one or more tags from the specified resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "agent"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344707402": {
+      "name": "$1604344707402",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateAgent": {
+      "name": "UpdateAgent",
+      "description": "Updates the name of an agent.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "agent*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateTask": {
+      "name": "UpdateTask",
+      "description": "Updates the metadata associated with a sync task.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "task*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "DataSync"
+}

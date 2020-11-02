@@ -1,0 +1,86 @@
+{
+  "servicePrefix": "elemental-appliances-software",
+  "actions": {
+    "CreateQuote": {
+      "name": "CreateQuote",
+      "description": "Create a quote",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "quote*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344757336": {
+      "name": "$1604344757336",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetQuote": {
+      "name": "GetQuote",
+      "description": "Describe a quote",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "quote*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListQuotes": {
+      "name": "ListQuotes",
+      "description": "List the quotes in the user account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "This action lists tags for an AWS Elemental Appliances and Software resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "quote"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "This action tags an AWS Elemental Appliances and Software resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "quote"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344757337": {
+      "name": "$1604344757337",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "This action removes a tag from an AWS Elemental Appliances and Software resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "quote"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateQuote": {
+      "name": "UpdateQuote",
+      "description": "Modify a quote",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "quote*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Elemental Appliances and Software"
+}

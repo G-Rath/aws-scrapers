@@ -1,0 +1,562 @@
+{
+  "servicePrefix": "frauddetector",
+  "actions": {
+    "BatchCreateVariable": {
+      "name": "BatchCreateVariable",
+      "description": "Creates a batch of variables.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "BatchGetVariable": {
+      "name": "BatchGetVariable",
+      "description": "Gets a batch of variables.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "variable"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDetectorVersion": {
+      "name": "CreateDetectorVersion",
+      "description": "Creates a detector version. The detector version starts in a DRAFT status.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344694356": {
+      "name": "$1604344694356",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateModel": {
+      "name": "CreateModel",
+      "description": "Creates a model using the specified model type.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344694357": {
+      "name": "$1604344694357",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateModelVersion": {
+      "name": "CreateModelVersion",
+      "description": "Creates a version of the model using the specified model type and model id.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344694358": {
+      "name": "$1604344694358",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateRule": {
+      "name": "CreateRule",
+      "description": "Creates a rule for use with the specified detector.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344694359": {
+      "name": "$1604344694359",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateVariable": {
+      "name": "CreateVariable",
+      "description": "Creates a variable.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "DeleteDetector": {
+      "name": "DeleteDetector",
+      "description": "Deletes the detector. Before deleting a detector, you must first delete all detector\n                                                versions and rule versions associated with the detector.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDetectorVersion": {
+      "name": "DeleteDetectorVersion",
+      "description": "Deletes the detector version. You cannot delete detector versions that are in ACTIVE\n                                                status.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector-version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteEvent": {
+      "name": "DeleteEvent",
+      "description": "Deletes the specified event.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRule": {
+      "name": "DeleteRule",
+      "description": "Deletes the rule. You cannot delete a rule if it is used by an ACTIVE or INACTIVE\n                                                detector version.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDetector": {
+      "name": "DescribeDetector",
+      "description": "Gets all versions for a specified detector.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeModelVersions": {
+      "name": "DescribeModelVersions",
+      "description": "Gets all of the model versions for the specified model type or for the specified model\n                                                type and model ID. You can also get details for a single, specified model version.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "model-version"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDetectorVersion": {
+      "name": "GetDetectorVersion",
+      "description": "Gets a particular detector version.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "detector-version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDetectors": {
+      "name": "GetDetectors",
+      "description": "Gets all detectors or a single detector if a detectorId is specified. This is a paginated\n                                                API. If you provide a null maxResults, this action retrieves a maximum of 10 records\n                                                per page. If you provide a maxResults, the value must be between 5 and 10. To get\n                                                the next page results, provide the pagination token from the GetDetectorsResponse\n                                                as part of your request. A null pagination token fetches the records from the beginning.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "detector"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEntityTypes": {
+      "name": "GetEntityTypes",
+      "description": "Gets all entity types or a specific entity type if a name is specified. This is a\n                                                paginated API. If you provide a null maxResults, this action retrieves a maximum of\n                                                10 records per page. If you provide a maxResults, the value must be between 5 and\n                                                10. To get the next page results, provide the pagination token from the GetEntityTypesResponse\n                                                as part of your request. A null pagination token fetches the records from the beginning.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "entity-type"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEventPrediction": {
+      "name": "GetEventPrediction",
+      "description": "Evaluates an event against a detector version. If a version ID is not provided, the\n                                                detector’s (ACTIVE) version is used.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEventTypes": {
+      "name": "GetEventTypes",
+      "description": "Gets all event types or a specific event type if name is provided. This is a paginated\n                                                API. If you provide a null maxResults, this action retrieves a maximum of 10 records\n                                                per page. If you provide a maxResults, the value must be between 5 and 10. To get\n                                                the next page results, provide the pagination token from the GetEventTypesResponse\n                                                as part of your request. A null pagination token fetches the records from the beginning.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "event-type"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetExternalModels": {
+      "name": "GetExternalModels",
+      "description": "Gets the details for one or more Amazon SageMaker models that have been imported into\n                                                the service. This is a paginated API. If you provide a null maxResults, this actions\n                                                retrieves a maximum of 10 records per page. If you provide a maxResults, the value\n                                                must be between 5 and 10. To get the next page results, provide the pagination token\n                                                from the GetExternalModelsResult as part of your request. A null pagination token\n                                                fetches the records from the beginning.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "external-model"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetKMSEncryptionKey": {
+      "name": "GetKMSEncryptionKey",
+      "description": "Gets the encryption key if a Key Management Service (KMS) customer master key (CMK)\n                                                has been specified to be used to encrypt content in Amazon Fraud Detector.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLabels": {
+      "name": "GetLabels",
+      "description": "Gets all labels or a specific label if name is provided. This is a paginated API.\n                                                If you provide a null maxResults, this action retrieves a maximum of 50 records per\n                                                page. If you provide a maxResults, the value must be between 10 and 50. To get the\n                                                next page results, provide the pagination token from the GetGetLabelsResponse as part\n                                                of your request. A null pagination token fetches the records from the beginning.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "label"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetModelVersion": {
+      "name": "GetModelVersion",
+      "description": "Gets the details of the specified model version.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "model-version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetModels": {
+      "name": "GetModels",
+      "description": "Gets one or more models. Gets all models for the AWS account if no model type and\n                                                no model id provided. Gets all models for the AWS account and model type, if the model\n                                                type is specified but model id is not provided. Gets a specific model if (model type,\n                                                model id) tuple is specified.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "model"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetOutcomes": {
+      "name": "GetOutcomes",
+      "description": "Gets one or more outcomes. This is a paginated API. If you provide a null maxResults,\n                                                this actions retrieves a maximum of 100 records per page. If you provide a maxResults,\n                                                the value must be between 50 and 100. To get the next page results, provide the pagination\n                                                token from the GetOutcomesResult as part of your request. A null pagination token\n                                                fetches the records from the beginning.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "outcome"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRules": {
+      "name": "GetRules",
+      "description": "Get all rules for a detector (paginated) if ruleId and ruleVersion are not specified.\n                                                Gets all rules for the detector and the ruleId if present (paginated). Gets a specific\n                                                rule if both the ruleId and the ruleVersion are specified.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "rule"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetVariables": {
+      "name": "GetVariables",
+      "description": "Gets all of the variables or the specific variable. This is a paginated API. Providing\n                                                null maxSizePerPage results in retrieving maximum of 100 records per page. If you\n                                                provide maxSizePerPage the value must be between 50 and 100. To get the next page\n                                                result, a provide a pagination token from GetVariablesResult as part of your request.\n                                                Null pagination token fetches the records from the beginning.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "variable"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Lists all tags associated with the resource. This is a paginated API. To get the next\n                                                page results, provide the pagination token from the response as part of your request.\n                                                A null pagination token fetches the records from the beginning.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "detector"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "detector-version": {
+      "name": "detector-version",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "entity-type": {
+      "name": "entity-type",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "event-type": {
+      "name": "event-type",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "external-model": {
+      "name": "external-model",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "label": {
+      "name": "label",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "model": {
+      "name": "model",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "model-version": {
+      "name": "model-version",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "outcome": {
+      "name": "outcome",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "rule": {
+      "name": "rule",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "variable": {
+      "name": "variable",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutDetector": {
+      "name": "PutDetector",
+      "description": "Creates or updates a detector.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344694367": {
+      "name": "$1604344694367",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutEntityType": {
+      "name": "PutEntityType",
+      "description": "Creates or updates an entity type. An entity represents who is performing the event.\n                                                As part of a fraud prediction, you pass the entity ID to indicate the specific entity\n                                                who performed the event. An entity type classifies the entity. Example classifications\n                                                include customer, merchant, or account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "entity-type*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutEventType": {
+      "name": "PutEventType",
+      "description": "Creates or updates an event type. An event is a business activity that is evaluated\n                                                for fraud risk. With Amazon Fraud Detector, you generate fraud predictions for events.\n                                                An event type defines the structure for an event sent to Amazon Fraud Detector. This\n                                                includes the variables sent as part of the event, the entity performing the event\n                                                (such as a customer), and the labels that classify the event. Example event types\n                                                include online payment transactions, account registrations, and authentications.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "event-type*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344694368": {
+      "name": "$1604344694368",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutExternalModel": {
+      "name": "PutExternalModel",
+      "description": "Creates or updates an Amazon SageMaker model endpoint. You can also use this action\n                                                to update the configuration of the model endpoint, including the IAM role and/or the\n                                                mapped variables.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "external-model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutKMSEncryptionKey": {
+      "name": "PutKMSEncryptionKey",
+      "description": "Specifies the Key Management Service (KMS) customer master key (CMK) to be used to\n                                                encrypt content in Amazon Fraud Detector.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutLabel": {
+      "name": "PutLabel",
+      "description": "Creates or updates label. A label classifies an event as fraudulent or legitimate.\n                                                Labels are associated with event types and used to train supervised machine learning\n                                                models in Amazon Fraud Detector.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "label*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344694369": {
+      "name": "$1604344694369",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutOutcome": {
+      "name": "PutOutcome",
+      "description": "Creates or updates an outcome.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "outcome*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Assigns tags to a resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "detector"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344694373": {
+      "name": "$1604344694373",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Removes tags from a resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "detector"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344694378": {
+      "name": "$1604344694378",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateDetectorVersion": {
+      "name": "UpdateDetectorVersion",
+      "description": "Updates a detector version. The detector version attributes that you can update include\n                                                models, external model endpoints, rules, rule execution mode, and description. You\n                                                can only update a DRAFT detector version.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDetectorVersionMetadata": {
+      "name": "UpdateDetectorVersionMetadata",
+      "description": "Updates the detector version's description. You can update the metadata for any detector\n                                                version (DRAFT, ACTIVE, or INACTIVE).",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector-version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDetectorVersionStatus": {
+      "name": "UpdateDetectorVersionStatus",
+      "description": "Updates the detector version’s status. You can perform the following promotions or\n                                                demotions using UpdateDetectorVersionStatus: DRAFT to ACTIVE, ACTIVE to INACTIVE,\n                                                and INACTIVE to ACTIVE.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector-version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateModel": {
+      "name": "UpdateModel",
+      "description": "Updates a model. You can update the description attribute using this action.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateModelVersion": {
+      "name": "UpdateModelVersion",
+      "description": "Updates a model version. Updating a model version retrains an existing model version\n                                                using updated training data and produces a new minor version of the model. You can\n                                                update the training data set location and data access role attributes using this action.\n                                                This action creates and trains a new minor version of the model, for example version\n                                                1.01, 1.02, 1.03.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344694379": {
+      "name": "$1604344694379",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateModelVersionStatus": {
+      "name": "UpdateModelVersionStatus",
+      "description": "Updates the status of a model version.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRuleMetadata": {
+      "name": "UpdateRuleMetadata",
+      "description": "Updates a rule's metadata. The description attribute can be updated.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRuleVersion": {
+      "name": "UpdateRuleVersion",
+      "description": "Updates a rule version resulting in a new rule version. Updates a rule version resulting\n                                                in a new rule version (version 1, 2, 3 ...).",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateVariable": {
+      "name": "UpdateVariable",
+      "description": "Updates a variable.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "variable*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Fraud Detector"
+}

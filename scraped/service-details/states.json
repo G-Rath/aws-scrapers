@@ -1,0 +1,246 @@
+{
+  "servicePrefix": "states",
+  "actions": {
+    "CreateActivity": {
+      "name": "CreateActivity",
+      "description": "Creates an activity. Activities must poll Step Functions using the GetActivityTask\n                                                and respond using SendTask* API calls.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "activity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344717236": {
+      "name": "$1604344717236",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateStateMachine": {
+      "name": "CreateStateMachine",
+      "description": "Creates a state machine.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "statemachine*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteActivity": {
+      "name": "DeleteActivity",
+      "description": "Deletes an activity.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "activity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteStateMachine": {
+      "name": "DeleteStateMachine",
+      "description": "Deletes a state machine.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "statemachine*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeActivity": {
+      "name": "DescribeActivity",
+      "description": "Describes an activity.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "activity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeExecution": {
+      "name": "DescribeExecution",
+      "description": "Describes an execution.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "execution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeStateMachine": {
+      "name": "DescribeStateMachine",
+      "description": "Describes a state machine.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "statemachine*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeStateMachineForExecution": {
+      "name": "DescribeStateMachineForExecution",
+      "description": "Describes state machine for an execution.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "execution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetActivityTask": {
+      "name": "GetActivityTask",
+      "description": "Used by workers to retrieve a task (with the specified activity ARN) which has been\n                                                scheduled for execution by a running state machine.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "activity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetExecutionHistory": {
+      "name": "GetExecutionHistory",
+      "description": "Returns the history of the specified execution as a list of events. By default, the\n                                                results are returned in ascending order of the timeStamp of the events.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "execution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListActivities": {
+      "name": "ListActivities",
+      "description": "Lists the existing activities. The results may be split into multiple pages.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListExecutions": {
+      "name": "ListExecutions",
+      "description": "Lists the executions of a state machine that meet the filtering criteria. The results\n                                                may be split into multiple pages.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "statemachine*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListStateMachines": {
+      "name": "ListStateMachines",
+      "description": "Lists the existing state machines. The results may be split into multiple pages.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "This action lists tags for an AWS Step Functions resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "activity"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "statemachine": {
+      "name": "statemachine",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "SendTaskFailure": {
+      "name": "SendTaskFailure",
+      "description": "Used by workers to report that the task identified by the taskToken failed.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendTaskHeartbeat": {
+      "name": "SendTaskHeartbeat",
+      "description": "Used by workers to report to the service that the task represented by the specified\n                                                taskToken is still making progress.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendTaskSuccess": {
+      "name": "SendTaskSuccess",
+      "description": "Used by workers to report that the task identified by the taskToken completed successfully.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartExecution": {
+      "name": "StartExecution",
+      "description": "Starts a state machine execution.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "statemachine*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopExecution": {
+      "name": "StopExecution",
+      "description": "Stops an execution.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "execution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "This action tags an AWS Step Functions resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "activity"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344717239": {
+      "name": "$1604344717239",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "This action removes a tag from an AWS Step Functions resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "activity"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344717240": {
+      "name": "$1604344717240",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateStateMachine": {
+      "name": "UpdateStateMachine",
+      "description": "Updates a state machine.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "statemachine*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344717241": {
+      "name": "$1604344717241",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    }
+  },
+  "name": "AWS Step Functions"
+}

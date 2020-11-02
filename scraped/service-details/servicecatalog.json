@@ -1,0 +1,764 @@
+{
+  "servicePrefix": "servicecatalog",
+  "actions": {
+    "AcceptPortfolioShare": {
+      "name": "AcceptPortfolioShare",
+      "description": "Grants permission to accept a portfolio that has been shared with you",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Portfolio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociateBudgetWithResource": {
+      "name": "AssociateBudgetWithResource",
+      "description": "Grants permission to associate a budget with a resource",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociatePrincipalWithPortfolio": {
+      "name": "AssociatePrincipalWithPortfolio",
+      "description": "Grants permission to associate an IAM principal with a portfolio, giving the specified\n                                                principal access to any products associated with the specified portfolio",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Portfolio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociateProductWithPortfolio": {
+      "name": "AssociateProductWithPortfolio",
+      "description": "Grants permission to associate a product with a portfolio",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociateServiceActionWithProvisioningArtifact": {
+      "name": "AssociateServiceActionWithProvisioningArtifact",
+      "description": "Grants permission to associate an action with a provisioning artifact",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Product*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociateTagOptionWithResource": {
+      "name": "AssociateTagOptionWithResource",
+      "description": "Grants permission to associate the specified TagOption with the specified portfolio\n                                                or product",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Portfolio"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "Product": {
+      "name": "Product",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "BatchAssociateServiceActionWithProvisioningArtifact": {
+      "name": "BatchAssociateServiceActionWithProvisioningArtifact",
+      "description": "Grants permission to associate multiple self-service actions with provisioning artifacts",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchDisassociateServiceActionFromProvisioningArtifact": {
+      "name": "BatchDisassociateServiceActionFromProvisioningArtifact",
+      "description": "Grants permission to disassociate a batch of self-service actions from the specified\n                                                provisioning artifact",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CopyProduct": {
+      "name": "CopyProduct",
+      "description": "Grants permission to copy the specified source product to the specified target product\n                                                or a new product",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateConstraint": {
+      "name": "CreateConstraint",
+      "description": "Grants permission to create a constraint on an associated product and portfolio",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Product*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreatePortfolio": {
+      "name": "CreatePortfolio",
+      "description": "Grants permission to create a portfolio",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Portfolio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344699269": {
+      "name": "$1604344699269",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreatePortfolioShare": {
+      "name": "CreatePortfolioShare",
+      "description": "Grants permission to share a portfolio you own with another AWS account",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "Portfolio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateProduct": {
+      "name": "CreateProduct",
+      "description": "Grants permission to create a product and that product's first provisioning artifact",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Product*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344699271": {
+      "name": "$1604344699271",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateProvisionedProductPlan": {
+      "name": "CreateProvisionedProductPlan",
+      "description": "Grants permission to add a new provisioned product plan",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateProvisioningArtifact": {
+      "name": "CreateProvisioningArtifact",
+      "description": "Grants permission to add a new provisioning artifact to an existing product",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Product*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateServiceAction": {
+      "name": "CreateServiceAction",
+      "description": "Grants permission to create a self-service action",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateTagOption": {
+      "name": "CreateTagOption",
+      "description": "Grants permission to create a TagOption",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteConstraint": {
+      "name": "DeleteConstraint",
+      "description": "Grants permission to remove and delete an existing constraint from an associated product\n                                                and portfolio",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeletePortfolio": {
+      "name": "DeletePortfolio",
+      "description": "Grants permission to delete a portfolio if all associations and shares have been removed\n                                                from the portfolio",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Portfolio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeletePortfolioShare": {
+      "name": "DeletePortfolioShare",
+      "description": "Grants permission to unshare a portfolio you own from an AWS account you previously\n                                                shared the portfolio with",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "Portfolio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteProduct": {
+      "name": "DeleteProduct",
+      "description": "Grants permission to delete a product if all associations have been removed from the\n                                                product",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Product*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteProvisionedProductPlan": {
+      "name": "DeleteProvisionedProductPlan",
+      "description": "Grants permission to delete a provisioned product plan",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteProvisioningArtifact": {
+      "name": "DeleteProvisioningArtifact",
+      "description": "Grants permission to delete a provisioning artifact from a product",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Product*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteServiceAction": {
+      "name": "DeleteServiceAction",
+      "description": "Grants permission to delete a self-service action",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteTagOption": {
+      "name": "DeleteTagOption",
+      "description": "Grants permission to delete the specified TagOption",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeConstraint": {
+      "name": "DescribeConstraint",
+      "description": "Grants permission to describe a constraint",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeCopyProductStatus": {
+      "name": "DescribeCopyProductStatus",
+      "description": "Grants permission to get the status of the specified copy product operation",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribePortfolio": {
+      "name": "DescribePortfolio",
+      "description": "Grants permission to describe a portfolio",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Portfolio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribePortfolioShareStatus": {
+      "name": "DescribePortfolioShareStatus",
+      "description": "Grants permission to get the status of the specified portfolio share operation",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeProduct": {
+      "name": "DescribeProduct",
+      "description": "Grants permission to describe a product as an end-user",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Product*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeProductAsAdmin": {
+      "name": "DescribeProductAsAdmin",
+      "description": "Grants permission to describe a product as an admin",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Product*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeProductView": {
+      "name": "DescribeProductView",
+      "description": "Grants permission to describe a product as an end-user",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeProvisionedProduct": {
+      "name": "DescribeProvisionedProduct",
+      "description": "Grants permission to describe a provisioned product",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeProvisionedProductPlan": {
+      "name": "DescribeProvisionedProductPlan",
+      "description": "Grants permission to describe a provisioned product plan",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeProvisioningArtifact": {
+      "name": "DescribeProvisioningArtifact",
+      "description": "Grants permission to describe a provisioning artifact",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Product*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeProvisioningParameters": {
+      "name": "DescribeProvisioningParameters",
+      "description": "Grants permission to describe the parameters that you need to specify to successfully\n                                                provision a specified provisioning artifact",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Product*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeRecord": {
+      "name": "DescribeRecord",
+      "description": "Grants permission to describe a record and lists any outputs",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "servicecatalog:accountLevel\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      servicecatalog:roleLevel\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      servicecatalog:userLevel",
+      "dependentActions": ""
+    },
+    "DescribeServiceAction": {
+      "name": "DescribeServiceAction",
+      "description": "Grants permission to describe a self-service action",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeServiceActionExecutionParameters": {
+      "name": "DescribeServiceActionExecutionParameters",
+      "description": "Grants permission to get the default parameters if you executed the specified Service\n                                                Action on the specified Provisioned Product",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTagOption": {
+      "name": "DescribeTagOption",
+      "description": "Grants permission to get information about the specified TagOption",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisableAWSOrganizationsAccess": {
+      "name": "DisableAWSOrganizationsAccess",
+      "description": "Grants permission to disable portfolio sharing through AWS Organizations feature",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateBudgetFromResource": {
+      "name": "DisassociateBudgetFromResource",
+      "description": "Grants permission to disassociate a budget from a resource",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociatePrincipalFromPortfolio": {
+      "name": "DisassociatePrincipalFromPortfolio",
+      "description": "Grants permission to disassociate an IAM principal from a portfolio",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Portfolio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateProductFromPortfolio": {
+      "name": "DisassociateProductFromPortfolio",
+      "description": "Grants permission to disassociate a product from a portfolio",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateServiceActionFromProvisioningArtifact": {
+      "name": "DisassociateServiceActionFromProvisioningArtifact",
+      "description": "Grants permission to disassociate the specified self-service action association from\n                                                the specified provisioning artifact",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Product*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateTagOptionFromResource": {
+      "name": "DisassociateTagOptionFromResource",
+      "description": "Grants permission to disassociate the specified TagOption from the specified resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Portfolio"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "EnableAWSOrganizationsAccess": {
+      "name": "EnableAWSOrganizationsAccess",
+      "description": "Grants permission to enable portfolio sharing feature through AWS Organizations",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ExecuteProvisionedProductPlan": {
+      "name": "ExecuteProvisionedProductPlan",
+      "description": "Grants permission to execute a provisioned product plan",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ExecuteProvisionedProductServiceAction": {
+      "name": "ExecuteProvisionedProductServiceAction",
+      "description": "Grants permission to executes a provisioned product plan",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAWSOrganizationsAccessStatus": {
+      "name": "GetAWSOrganizationsAccessStatus",
+      "description": "Grants permission to get the access status of AWS Organization portfolio share feature",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAcceptedPortfolioShares": {
+      "name": "ListAcceptedPortfolioShares",
+      "description": "Grants permission to list the portfolios that have been shared with you and you have\n                                                accepted",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListBudgetsForResource": {
+      "name": "ListBudgetsForResource",
+      "description": "Grants permission to list all the budgets associated to a resource",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListConstraintsForPortfolio": {
+      "name": "ListConstraintsForPortfolio",
+      "description": "Grants permission to list constraints associated with a given portfolio",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListLaunchPaths": {
+      "name": "ListLaunchPaths",
+      "description": "Grants permission to list the different ways to launch a given product as an end-user",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "Product*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListOrganizationPortfolioAccess": {
+      "name": "ListOrganizationPortfolioAccess",
+      "description": "Grants permission to list the organization nodes that have access to the specified\n                                                portfolio",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPortfolioAccess": {
+      "name": "ListPortfolioAccess",
+      "description": "Grants permission to list the AWS accounts you have shared a given portfolio with",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "Portfolio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPortfolios": {
+      "name": "ListPortfolios",
+      "description": "Grants permission to list the portfolios in your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPortfoliosForProduct": {
+      "name": "ListPortfoliosForProduct",
+      "description": "Grants permission to list the portfolios associated with a given product",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "Product*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPrincipalsForPortfolio": {
+      "name": "ListPrincipalsForPortfolio",
+      "description": "Grants permission to list the IAM principals associated with a given portfolio",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "Portfolio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProvisionedProductPlans": {
+      "name": "ListProvisionedProductPlans",
+      "description": "Grants permission to list the provisioned product plans",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProvisioningArtifacts": {
+      "name": "ListProvisioningArtifacts",
+      "description": "Grants permission to list the provisioning artifacts associated with a given product",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "Product*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProvisioningArtifactsForServiceAction": {
+      "name": "ListProvisioningArtifactsForServiceAction",
+      "description": "Grants permission to list all provisioning artifacts for the specified self-service\n                                                action",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRecordHistory": {
+      "name": "ListRecordHistory",
+      "description": "Grants permission to list all the records in your account or all the records related\n                                                to a given provisioned product",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "servicecatalog:accountLevel\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      servicecatalog:roleLevel\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      servicecatalog:userLevel",
+      "dependentActions": ""
+    },
+    "ListResourcesForTagOption": {
+      "name": "ListResourcesForTagOption",
+      "description": "Grants permission to list the resources associated with the specified TagOption",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListServiceActions": {
+      "name": "ListServiceActions",
+      "description": "Grants permission to list all self-service actions",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListServiceActionsForProvisioningArtifact": {
+      "name": "ListServiceActionsForProvisioningArtifact",
+      "description": "Grants permission to list all the service actions associated with the specified provisioning\n                                                artifact in your account",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "Product*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListStackInstancesForProvisionedProduct": {
+      "name": "ListStackInstancesForProvisionedProduct",
+      "description": "Grants permission to list account, region and status of each stack instances that\n                                                are associated with a CFN_STACKSET type provisioned product",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagOptions": {
+      "name": "ListTagOptions",
+      "description": "Grants permission to list the specified TagOptions or all TagOptions",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ProvisionProduct": {
+      "name": "ProvisionProduct",
+      "description": "Grants permission to provision a product with a specified provisioning artifact and\n                                                launch parameters",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Product*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RejectPortfolioShare": {
+      "name": "RejectPortfolioShare",
+      "description": "Grants permission to reject a portfolio that has been shared with you that you previously\n                                                accepted",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Portfolio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ScanProvisionedProducts": {
+      "name": "ScanProvisionedProducts",
+      "description": "Grants permission to list all the provisioned products in your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "servicecatalog:accountLevel\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      servicecatalog:roleLevel\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      servicecatalog:userLevel",
+      "dependentActions": ""
+    },
+    "SearchProducts": {
+      "name": "SearchProducts",
+      "description": "Grants permission to list the products available to you as an end-user",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchProductsAsAdmin": {
+      "name": "SearchProductsAsAdmin",
+      "description": "Grants permission to list all the products in your account or all the products associated\n                                                with a given portfolio",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchProvisionedProducts": {
+      "name": "SearchProvisionedProducts",
+      "description": "Grants permission to list all the provisioned products in your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "servicecatalog:accountLevel\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      servicecatalog:roleLevel\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      servicecatalog:userLevel",
+      "dependentActions": ""
+    },
+    "TerminateProvisionedProduct": {
+      "name": "TerminateProvisionedProduct",
+      "description": "Grants permission to terminate an existing provisioned product",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "servicecatalog:accountLevel\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      servicecatalog:roleLevel\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      servicecatalog:userLevel",
+      "dependentActions": ""
+    },
+    "UpdateConstraint": {
+      "name": "UpdateConstraint",
+      "description": "Grants permission to update the metadata fields of an existing constraint",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdatePortfolio": {
+      "name": "UpdatePortfolio",
+      "description": "Grants permission to update the metadata fields and/or tags of an existing portfolio",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Portfolio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344699278": {
+      "name": "$1604344699278",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateProduct": {
+      "name": "UpdateProduct",
+      "description": "Grants permission to update the metadata fields and/or tags of an existing product",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Product*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344699279": {
+      "name": "$1604344699279",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateProvisionedProduct": {
+      "name": "UpdateProvisionedProduct",
+      "description": "Grants permission to update an existing provisioned product",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "servicecatalog:accountLevel\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      servicecatalog:roleLevel\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      servicecatalog:userLevel",
+      "dependentActions": ""
+    },
+    "UpdateProvisionedProductProperties": {
+      "name": "UpdateProvisionedProductProperties",
+      "description": "Grants permission to update the properties of an existing provisioned product",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateProvisioningArtifact": {
+      "name": "UpdateProvisioningArtifact",
+      "description": "Grants permission to update the metadata fields of an existing provisioning artifact",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Product*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateServiceAction": {
+      "name": "UpdateServiceAction",
+      "description": "Grants permission to update a self-service action",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateTagOption": {
+      "name": "UpdateTagOption",
+      "description": "Grants permission to update the specified TagOption",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Service Catalog"
+}

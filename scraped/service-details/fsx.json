@@ -1,0 +1,194 @@
+{
+  "servicePrefix": "fsx",
+  "actions": {
+    "CancelDataRepositoryTask": {
+      "name": "CancelDataRepositoryTask",
+      "description": "This action cancels a data repository task",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "task*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateBackup": {
+      "name": "CreateBackup",
+      "description": "This action creates a new backup.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "backup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "file-system*": {
+      "name": "file-system*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344697282": {
+      "name": "$1604344697282",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateDataRepositoryTask": {
+      "name": "CreateDataRepositoryTask",
+      "description": "This action creates a new task.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "task*": {
+      "name": "task*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344697283": {
+      "name": "$1604344697283",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateFileSystem": {
+      "name": "CreateFileSystem",
+      "description": "This action creates a new, empty, Amazon FSx file system",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateFileSystemFromBackup": {
+      "name": "CreateFileSystemFromBackup",
+      "description": "This action creates a new Amazon FSx file system from an existing backup.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "backup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344697284": {
+      "name": "$1604344697284",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteBackup": {
+      "name": "DeleteBackup",
+      "description": "This action deletes a backup, deleting its contents. After deletion, the backup no\n                                                longer exists, and its data is gone.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteFileSystem": {
+      "name": "DeleteFileSystem",
+      "description": "This action deletes a file system, deleting its contents.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeBackups": {
+      "name": "DescribeBackups",
+      "description": "This action returns the description of specific Amazon FSx backups, if one or more\n                                                BackupIds are provided for that backup. Otherwise, it returns all backups owned by\n                                                your AWS account in the AWS Region of the endpoint that you're calling.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDataRepositoryTasks": {
+      "name": "DescribeDataRepositoryTasks",
+      "description": "This action returns the description of specific Amazon FSx data repository task, if\n                                                one or more TaskIds are provided for that data repository task. Otherwise, it returns\n                                                all data repository task owned by your AWS account in the AWS Region of the endpoint\n                                                that you're calling.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeFileSystems": {
+      "name": "DescribeFileSystems",
+      "description": "This action returns the description of specific Amazon FSx file systems, if a FileSystemIds\n                                                value is provided for that file system. Otherwise, it returns descriptions of all\n                                                file systems owned by your AWS account in the AWS Region of the endpoint that you're\n                                                calling.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "This action lists tags for an Amazon FSx resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "backup"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "file-system": {
+      "name": "file-system",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "task": {
+      "name": "task",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "This action tags an Amazon FSx resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "backup"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344697286": {
+      "name": "$1604344697286",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "This action removes a tag from an Amazon FSx resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "backup"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344697287": {
+      "name": "$1604344697287",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateFileSystem": {
+      "name": "UpdateFileSystem",
+      "description": "This action updates file system configuration.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon FSx"
+}

@@ -1,0 +1,484 @@
+{
+  "servicePrefix": "macie2",
+  "actions": {
+    "AcceptInvitation": {
+      "name": "AcceptInvitation",
+      "description": "Grants permission to accept an Amazon Macie membership invitation",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ArchiveFindings": {
+      "name": "ArchiveFindings",
+      "description": "Grants permission to archive one or more findings",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchGetCustomDataIdentifiers": {
+      "name": "BatchGetCustomDataIdentifiers",
+      "description": "Grants permission to retrieve information about one or more custom data identifiers",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "CustomDataIdentifier*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateClassificationJob": {
+      "name": "CreateClassificationJob",
+      "description": "Grants permission to create and define the settings for a classification job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ClassificationJob*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344686277": {
+      "name": "$1604344686277",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateCustomDataIdentifier": {
+      "name": "CreateCustomDataIdentifier",
+      "description": "Grants permission to create and define the settings for a custom data identifier",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "CustomDataIdentifier*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344686278": {
+      "name": "$1604344686278",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateFindingsFilter": {
+      "name": "CreateFindingsFilter",
+      "description": "Grants permission to create and define the settings for a findings filter",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "FindingsFilter*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344686279": {
+      "name": "$1604344686279",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateInvitations": {
+      "name": "CreateInvitations",
+      "description": "Grants permission to send an Amazon Macie membership invitation",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateMember": {
+      "name": "CreateMember",
+      "description": "Grants permission to associate an account with an Amazon Macie master account",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Member*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateSampleFindings": {
+      "name": "CreateSampleFindings",
+      "description": "Grants permission to create sample findings",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeclineInvitations": {
+      "name": "DeclineInvitations",
+      "description": "Grants permission to decline Amazon Macie membership invitations",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteCustomDataIdentifier": {
+      "name": "DeleteCustomDataIdentifier",
+      "description": "Grants permission to delete a custom data identifier",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "CustomDataIdentifier*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteFindingsFilter": {
+      "name": "DeleteFindingsFilter",
+      "description": "Grants permission to delete a findings filter",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "FindingsFilter*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteInvitations": {
+      "name": "DeleteInvitations",
+      "description": "Grants permission to delete Amazon Macie membership invitations",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteMember": {
+      "name": "DeleteMember",
+      "description": "Grants permission to delete the association between an Amazon Macie master account\n                                                and an account",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Member*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeBuckets": {
+      "name": "DescribeBuckets",
+      "description": "Grants permission to retrieve statistical and other data about S3 buckets that Amazon\n                                                Macie monitors and analyzes",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeClassificationJob": {
+      "name": "DescribeClassificationJob",
+      "description": "Grants permission to retrieve information about the status and settings for a classification\n                                                job",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ClassificationJob*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeOrganizationConfiguration": {
+      "name": "DescribeOrganizationConfiguration",
+      "description": "Grants permission to retrieve information about the Amazon Macie configuration settings\n                                                for an AWS organization",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisableMacie": {
+      "name": "DisableMacie",
+      "description": "Grants permission to disable an Amazon Macie account, which also deletes Macie resources\n                                                for the account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisableOrganizationAdminAccount": {
+      "name": "DisableOrganizationAdminAccount",
+      "description": "Grants permission to disable an account as a delegated administrator of Amazon Macie\n                                                for an AWS organization",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateFromMasterAccount": {
+      "name": "DisassociateFromMasterAccount",
+      "description": "Grants an Amazon Macie member account with permission to disassociate from its master\n                                                account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateMember": {
+      "name": "DisassociateMember",
+      "description": "Grants an Amazon Macie master account with permission to disassociate from a member\n                                                account",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Member*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "EnableMacie": {
+      "name": "EnableMacie",
+      "description": "Grants permission to enable and specify the configuration settings for a new Amazon\n                                                Macie account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "EnableOrganizationAdminAccount": {
+      "name": "EnableOrganizationAdminAccount",
+      "description": "Grants permission to enable an account as a delegated administrator of Amazon Macie\n                                                for an AWS organization",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBucketStatistics": {
+      "name": "GetBucketStatistics",
+      "description": "Grants permission to retrieve aggregated statistical data for all the S3 buckets that\n                                                Amazon Macie monitors and analyzes",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetClassificationExportConfiguration": {
+      "name": "GetClassificationExportConfiguration",
+      "description": "Grants permission to retrieve the settings for exporting data classification results",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetCustomDataIdentifier": {
+      "name": "GetCustomDataIdentifier",
+      "description": "Grants permission to retrieve information about the settings for a custom data identifier",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "CustomDataIdentifier*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFindingStatistics": {
+      "name": "GetFindingStatistics",
+      "description": "Grants permission to retrieve aggregated statistical data about findings",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFindings": {
+      "name": "GetFindings",
+      "description": "Grants permission to retrieve information about one or more findings",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFindingsFilter": {
+      "name": "GetFindingsFilter",
+      "description": "Grants permission to retrieve information about the settings for a findings filter",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "FindingsFilter*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetInvitationsCount": {
+      "name": "GetInvitationsCount",
+      "description": "Grants permission to retrieve the count of Amazon Macie membership invitations that\n                                                were received by an account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMacieSession": {
+      "name": "GetMacieSession",
+      "description": "Grants permission to retrieve information about the status and configuration settings\n                                                for an Amazon Macie account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMasterAccount": {
+      "name": "GetMasterAccount",
+      "description": "Grants permission to retrieve information about the Amazon Macie master account for\n                                                an account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMember": {
+      "name": "GetMember",
+      "description": "Grants permission to retrieve information about an account that's associated with\n                                                an Amazon Macie master account",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Member*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetUsageStatistics": {
+      "name": "GetUsageStatistics",
+      "description": "Grants permission to retrieve quotas and aggregated usage data for one or more accounts",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetUsageTotals": {
+      "name": "GetUsageTotals",
+      "description": "Grants permission to retrieve aggregated usage data for an account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListClassificationJobs": {
+      "name": "ListClassificationJobs",
+      "description": "Grants permission to retrieve information about the status and settings for one or\n                                                more classification jobs",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListCustomDataIdentifiers": {
+      "name": "ListCustomDataIdentifiers",
+      "description": "Grants permission to retrieve information about all custom data identifiers",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFindings": {
+      "name": "ListFindings",
+      "description": "Grants permission to retrieve a subset of information about one or more findings",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFindingsFilters": {
+      "name": "ListFindingsFilters",
+      "description": "Grants permission to retrieve information about all findings filters",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListInvitations": {
+      "name": "ListInvitations",
+      "description": "Grants permission to retrieve information about all the Amazon Macie membership invitations\n                                                that were received by an account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMembers": {
+      "name": "ListMembers",
+      "description": "Grants permission to retrieve information about all the accounts that are associated\n                                                with an Amazon Macie master account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListOrganizationAdminAccounts": {
+      "name": "ListOrganizationAdminAccounts",
+      "description": "Grants permission to retrieve information about the delegated, Amazon Macie administrator\n                                                account for an AWS organization",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResources": {
+      "name": "ListTagsForResources",
+      "description": "Grants permission to retrieve the tags for an Amazon Macie resource or member account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutClassificationExportConfiguration": {
+      "name": "PutClassificationExportConfiguration",
+      "description": "Grants permission to create or update the settings for exporting data classification\n                                                results",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permission to add or update the tags for an Amazon Macie resource or member\n                                                account",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "TestCustomDataIdentifier": {
+      "name": "TestCustomDataIdentifier",
+      "description": "Grants permission to test a custom data identifier",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UnarchiveFindings": {
+      "name": "UnarchiveFindings",
+      "description": "Grants permission to reactivate (unarchive) one or more findings",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permission to remove tags from an Amazon Macie resource or member account",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "aws:TagKeys",
+      "dependentActions": ""
+    },
+    "UpdateClassificationJob": {
+      "name": "UpdateClassificationJob",
+      "description": "Grants permission to cancel a classification job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ClassificationJob*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344686283": {
+      "name": "$1604344686283",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateFindingsFilter": {
+      "name": "UpdateFindingsFilter",
+      "description": "Grants permission to update the settings for a findings filter",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "FindingsFilter*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateMacieSession": {
+      "name": "UpdateMacieSession",
+      "description": "Grants permission to suspend or re-enable an Amazon Macie account, or update the configuration\n                                                settings for a Macie account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateMemberSession": {
+      "name": "UpdateMemberSession",
+      "description": "Grants an Amazon Macie master account with permission to suspend or re-enable a member\n                                                account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateOrganizationConfiguration": {
+      "name": "UpdateOrganizationConfiguration",
+      "description": "Grants permission to update Amazon Macie configuration settings for an AWS organization",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Macie"
+}

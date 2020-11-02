@@ -1,0 +1,272 @@
+{
+  "servicePrefix": "fms",
+  "actions": {
+    "AssociateAdminAccount": {
+      "name": "AssociateAdminAccount",
+      "description": "Sets the AWS Firewall Manager administrator account and enables the service in all\n                                                organization accounts",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAppsList": {
+      "name": "DeleteAppsList",
+      "description": "Grants permission to permanently deletes an AWS Firewall Manager applications list.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "applications-list*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteNotificationChannel": {
+      "name": "DeleteNotificationChannel",
+      "description": "Deletes an AWS Firewall Manager association with the IAM role and the Amazon Simple\n                                                Notification Service (SNS) topic that is used to notify the FM administrator about\n                                                major FM events and errors across the organization.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeletePolicy": {
+      "name": "DeletePolicy",
+      "description": "Permanently deletes an AWS Firewall Manager policy.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344690734": {
+      "name": "$1604344690734",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteProtocolsList": {
+      "name": "DeleteProtocolsList",
+      "description": "Grants permission to permanently deletes an AWS Firewall Manager protocols list.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "protocols-list*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateAdminAccount": {
+      "name": "DisassociateAdminAccount",
+      "description": "Disassociates the account that has been set as the AWS Firewall Manager administrator\n                                                account and and disables the service in all organization accounts",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAdminAccount": {
+      "name": "GetAdminAccount",
+      "description": "Returns the AWS Organizations master account that is associated with AWS Firewall\n                                                Manager as the AWS Firewall Manager administrator.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAppsList": {
+      "name": "GetAppsList",
+      "description": "Grants permission to return information about the specified AWS Firewall Manager applications\n                                                list.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "applications-list*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetComplianceDetail": {
+      "name": "GetComplianceDetail",
+      "description": "Returns detailed compliance information about the specified member account. Details\n                                                include resources that are in and out of compliance with the specified policy.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetNotificationChannel": {
+      "name": "GetNotificationChannel",
+      "description": "Returns information about the Amazon Simple Notification Service (SNS) topic that\n                                                is used to record AWS Firewall Manager SNS logs.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPolicy": {
+      "name": "GetPolicy",
+      "description": "Returns information about the specified AWS Firewall Manager policy.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetProtectionStatus": {
+      "name": "GetProtectionStatus",
+      "description": "Returns policy-level attack summary information in the event of a potential DDoS attack.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetProtocolsList": {
+      "name": "GetProtocolsList",
+      "description": "Grants permission to return information about the specified AWS Firewall Manager protocols\n                                                list.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "protocols-list*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAppsLists": {
+      "name": "ListAppsLists",
+      "description": "Grants permission to return an array of AppsListDataSummary objects.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListComplianceStatus": {
+      "name": "ListComplianceStatus",
+      "description": "Returns an array of PolicyComplianceStatus objects in the response. Use PolicyComplianceStatus\n                                                to get a summary of which member accounts are protected by the specified policy.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMemberAccounts": {
+      "name": "ListMemberAccounts",
+      "description": "Returns an array of member account ids if the caller is FMS admin account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPolicies": {
+      "name": "ListPolicies",
+      "description": "Returns an array of PolicySummary objects in the response.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProtocolsLists": {
+      "name": "ListProtocolsLists",
+      "description": "Grants permission to return an array of ProtocolsListDataSummary objects.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Lists the Tags for a given resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutAppsList": {
+      "name": "PutAppsList",
+      "description": "Grants permission to create an AWS Firewall Manager applications list.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "applications-list*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344690736": {
+      "name": "$1604344690736",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutNotificationChannel": {
+      "name": "PutNotificationChannel",
+      "description": "Designates the IAM role and Amazon Simple Notification Service (SNS) topic that AWS\n                                                Firewall Manager (FM) could use to notify the FM administrator about major FM events\n                                                and errors across the organization.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutPolicy": {
+      "name": "PutPolicy",
+      "description": "Creates an AWS Firewall Manager policy.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344690738": {
+      "name": "$1604344690738",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutProtocolsList": {
+      "name": "PutProtocolsList",
+      "description": "Grants permission to creates an AWS Firewall Manager protocols list.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "protocols-list*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344690739": {
+      "name": "$1604344690739",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Adds a Tag to a given resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344690740": {
+      "name": "$1604344690740",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Removes a Tag from a given resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344690741": {
+      "name": "$1604344690741",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    }
+  },
+  "name": "AWS Firewall Manager"
+}

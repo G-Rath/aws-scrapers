@@ -1,0 +1,382 @@
+{
+  "servicePrefix": "appmesh-preview",
+  "actions": {
+    "CreateGatewayRoute": {
+      "name": "CreateGatewayRoute",
+      "description": "Creates a gateway route that is associated with a virtual gateway.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gatewayRoute*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "virtualService": {
+      "name": "virtualService",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateMesh": {
+      "name": "CreateMesh",
+      "description": "Creates a service mesh.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "mesh*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateRoute": {
+      "name": "CreateRoute",
+      "description": "Creates a route that is associated with a virtual router.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "route*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "virtualNode": {
+      "name": "virtualNode",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateVirtualGateway": {
+      "name": "CreateVirtualGateway",
+      "description": "Creates a virtual gateway within a service mesh.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "virtualGateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateVirtualNode": {
+      "name": "CreateVirtualNode",
+      "description": "Creates a virtual node within a service mesh.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "virtualNode*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateVirtualRouter": {
+      "name": "CreateVirtualRouter",
+      "description": "Creates a virtual router within a service mesh.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "virtualRouter*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateVirtualService": {
+      "name": "CreateVirtualService",
+      "description": "Creates a virtual service within a service mesh.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "virtualService*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "virtualRouter": {
+      "name": "virtualRouter",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteGatewayRoute": {
+      "name": "DeleteGatewayRoute",
+      "description": "Deletes an existing gateway route.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gatewayRoute*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteMesh": {
+      "name": "DeleteMesh",
+      "description": "Deletes an existing service mesh.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "mesh*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRoute": {
+      "name": "DeleteRoute",
+      "description": "Deletes an existing route.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "route*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteVirtualGateway": {
+      "name": "DeleteVirtualGateway",
+      "description": "Deletes an existing virtual gateway.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "virtualGateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteVirtualNode": {
+      "name": "DeleteVirtualNode",
+      "description": "Deletes an existing virtual node.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "virtualNode*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteVirtualRouter": {
+      "name": "DeleteVirtualRouter",
+      "description": "Deletes an existing virtual router.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "virtualRouter*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteVirtualService": {
+      "name": "DeleteVirtualService",
+      "description": "Deletes an existing virtual service.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "virtualService*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeGatewayRoute": {
+      "name": "DescribeGatewayRoute",
+      "description": "Describes an existing gateway route.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "gatewayRoute*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeMesh": {
+      "name": "DescribeMesh",
+      "description": "Describes an existing service mesh.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "mesh*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeRoute": {
+      "name": "DescribeRoute",
+      "description": "Describes an existing route.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "route*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeVirtualGateway": {
+      "name": "DescribeVirtualGateway",
+      "description": "Describes an existing virtual gateway.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "virtualGateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeVirtualNode": {
+      "name": "DescribeVirtualNode",
+      "description": "Describes an existing virtual node.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "virtualNode*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeVirtualRouter": {
+      "name": "DescribeVirtualRouter",
+      "description": "Describes an existing virtual router.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "virtualRouter*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeVirtualService": {
+      "name": "DescribeVirtualService",
+      "description": "Describes an existing virtual service.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "virtualService*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGatewayRoutes": {
+      "name": "ListGatewayRoutes",
+      "description": "Returns a list of existing gateway routes in a service mesh.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "virtualGateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMeshes": {
+      "name": "ListMeshes",
+      "description": "Returns a list of existing service meshes.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRoutes": {
+      "name": "ListRoutes",
+      "description": "Returns a list of existing routes in a service mesh.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "virtualRouter*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListVirtualGateways": {
+      "name": "ListVirtualGateways",
+      "description": "Returns a list of existing virtual gateways in a service mesh.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "mesh*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListVirtualNodes": {
+      "name": "ListVirtualNodes",
+      "description": "Returns a list of existing virtual nodes.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "mesh*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListVirtualRouters": {
+      "name": "ListVirtualRouters",
+      "description": "Returns a list of existing virtual routers in a service mesh.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "mesh*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListVirtualServices": {
+      "name": "ListVirtualServices",
+      "description": "Returns a list of existing virtual services in a service mesh.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "mesh*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StreamAggregatedResources": {
+      "name": "StreamAggregatedResources",
+      "description": "Allows an Envoy Proxy to receive streamed resources for an App Mesh endpoint (VirtualNode/VirtualGateway).",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "virtualGateway"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateGatewayRoute": {
+      "name": "UpdateGatewayRoute",
+      "description": "Updates an existing gateway route for a specified service mesh and virtual gateway.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gatewayRoute*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateMesh": {
+      "name": "UpdateMesh",
+      "description": "Updates an existing service mesh.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "mesh*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRoute": {
+      "name": "UpdateRoute",
+      "description": "Updates an existing route for a specified service mesh and virtual router.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "route*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateVirtualGateway": {
+      "name": "UpdateVirtualGateway",
+      "description": "Updates an existing virtual gateway in a specified service mesh.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "virtualGateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateVirtualNode": {
+      "name": "UpdateVirtualNode",
+      "description": "Updates an existing virtual node in a specified service mesh.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "virtualNode*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateVirtualRouter": {
+      "name": "UpdateVirtualRouter",
+      "description": "Updates an existing virtual router in a specified service mesh.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "virtualRouter*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateVirtualService": {
+      "name": "UpdateVirtualService",
+      "description": "Updates an existing virtual service in a specified service mesh.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "mesh*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS App Mesh Preview"
+}

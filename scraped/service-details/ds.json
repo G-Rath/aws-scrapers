@@ -1,0 +1,628 @@
+{
+  "servicePrefix": "ds",
+  "actions": {
+    "AcceptSharedDirectory": {
+      "name": "AcceptSharedDirectory",
+      "description": "Accepts a directory sharing request that was sent from the directory owner account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AddIpRoutes": {
+      "name": "AddIpRoutes",
+      "description": "Adds a CIDR address block to correctly route traffic to and from your Microsoft AD\n                                                on Amazon Web Services",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "ec2:AuthorizeSecurityGroupEgress\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:AuthorizeSecurityGroupIngress\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeSecurityGroups"
+    },
+    "AddTagsToResource": {
+      "name": "AddTagsToResource",
+      "description": "Adds or overwrites one or more tags for the specified Amazon Directory Services directory.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "ec2:CreateTags"
+    },
+    "$1604344719935": {
+      "name": "$1604344719935",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "AuthorizeApplication": {
+      "name": "AuthorizeApplication",
+      "description": "Authorizes an application for your AWS Directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CancelSchemaExtension": {
+      "name": "CancelSchemaExtension",
+      "description": "Cancels an in-progress schema extension to a Microsoft AD directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CheckAlias": {
+      "name": "CheckAlias",
+      "description": "Verifies that the alias is available for use.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ConnectDirectory": {
+      "name": "ConnectDirectory",
+      "description": "Creates an AD Connector to connect to an on-premises directory.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": "ec2:AuthorizeSecurityGroupEgress\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:AuthorizeSecurityGroupIngress\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:CreateNetworkInterface\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:CreateSecurityGroup\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:CreateTags\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeNetworkInterfaces\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeSubnets\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeVpcs"
+    },
+    "CreateAlias": {
+      "name": "CreateAlias",
+      "description": "Creates an alias for a directory and assigns the alias to the directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateComputer": {
+      "name": "CreateComputer",
+      "description": "Creates a computer account in the specified directory, and joins the computer to the\n                                                directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateConditionalForwarder": {
+      "name": "CreateConditionalForwarder",
+      "description": "Creates a conditional forwarder associated with your AWS directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDirectory": {
+      "name": "CreateDirectory",
+      "description": "Creates a Simple AD directory.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": "ec2:AuthorizeSecurityGroupEgress\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:AuthorizeSecurityGroupIngress\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:CreateNetworkInterface\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:CreateSecurityGroup\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:CreateTags\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeNetworkInterfaces\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeSubnets\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeVpcs"
+    },
+    "CreateIdentityPoolDirectory": {
+      "name": "CreateIdentityPoolDirectory",
+      "description": "Creates a IdentityPool Directory in the AWS cloud.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateLogSubscription": {
+      "name": "CreateLogSubscription",
+      "description": "Creates a subscription to forward real time Directory Service domain controller security\n                                                logs to the specified CloudWatch log group in your AWS account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateMicrosoftAD": {
+      "name": "CreateMicrosoftAD",
+      "description": "Creates a Microsoft AD in the AWS cloud.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": "ec2:AuthorizeSecurityGroupEgress\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:AuthorizeSecurityGroupIngress\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:CreateNetworkInterface\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:CreateSecurityGroup\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:CreateTags\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeNetworkInterfaces\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeSubnets\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeVpcs"
+    },
+    "CreateSnapshot": {
+      "name": "CreateSnapshot",
+      "description": "Creates a snapshot of a Simple AD or Microsoft AD directory in the AWS cloud.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateTrust": {
+      "name": "CreateTrust",
+      "description": "Initiates the creation of the AWS side of a trust relationship between a Microsoft\n                                                AD in the AWS cloud and an external domain.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteConditionalForwarder": {
+      "name": "DeleteConditionalForwarder",
+      "description": "Deletes a conditional forwarder that has been set up for your AWS directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDirectory": {
+      "name": "DeleteDirectory",
+      "description": "Deletes an AWS Directory Service directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "ec2:DeleteNetworkInterface\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DeleteSecurityGroup\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeNetworkInterfaces\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:RevokeSecurityGroupEgress\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:RevokeSecurityGroupIngress"
+    },
+    "DeleteLogSubscription": {
+      "name": "DeleteLogSubscription",
+      "description": "Deletes the specified log subscription.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSnapshot": {
+      "name": "DeleteSnapshot",
+      "description": "Deletes a directory snapshot.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteTrust": {
+      "name": "DeleteTrust",
+      "description": "Deletes an existing trust relationship between your Microsoft AD in the AWS cloud\n                                                and an external domain.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeregisterCertificate": {
+      "name": "DeregisterCertificate",
+      "description": "Deletes from the system the certificate that was registered for a secured LDAP connection.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeregisterEventTopic": {
+      "name": "DeregisterEventTopic",
+      "description": "Removes the specified directory as a publisher to the specified SNS topic.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeCertificate": {
+      "name": "DescribeCertificate",
+      "description": "Displays information about the certificate registered for a secured LDAP connection.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeConditionalForwarders": {
+      "name": "DescribeConditionalForwarders",
+      "description": "Obtains information about the conditional forwarders for this account.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDirectories": {
+      "name": "DescribeDirectories",
+      "description": "Obtains information about the directories that belong to this account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDomainControllers": {
+      "name": "DescribeDomainControllers",
+      "description": "Provides information about any domain controllers in your directory.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeEventTopics": {
+      "name": "DescribeEventTopics",
+      "description": "Obtains information about which SNS topics receive status messages from the specified\n                                                directory.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeLDAPSSettings": {
+      "name": "DescribeLDAPSSettings",
+      "description": "Describes the status of LDAP security for the specified directory.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeSharedDirectories": {
+      "name": "DescribeSharedDirectories",
+      "description": "Returns the shared directories in your account.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeSnapshots": {
+      "name": "DescribeSnapshots",
+      "description": "Obtains information about the directory snapshots that belong to this account.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTrusts": {
+      "name": "DescribeTrusts",
+      "description": "Obtains information about the trust relationships for this account.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisableLDAPS": {
+      "name": "DisableLDAPS",
+      "description": "Deactivates LDAP secure calls for the specified directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisableRadius": {
+      "name": "DisableRadius",
+      "description": "Disables multi-factor authentication (MFA) with the Remote Authentication Dial In\n                                                User Service (RADIUS) server for an AD Connector directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisableSso": {
+      "name": "DisableSso",
+      "description": "Disables single-sign on for a directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "EnableLDAPS": {
+      "name": "EnableLDAPS",
+      "description": "Activates the switch for the specific directory to always use LDAP secure calls.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "EnableRadius": {
+      "name": "EnableRadius",
+      "description": "Enables multi-factor authentication (MFA) with the Remote Authentication Dial In User\n                                                Service (RADIUS) server for an AD Connector directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "EnableSso": {
+      "name": "EnableSso",
+      "description": "Enables single-sign on for a directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAuthorizedApplicationDetails": {
+      "name": "GetAuthorizedApplicationDetails",
+      "description": "",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDirectoryLimits": {
+      "name": "GetDirectoryLimits",
+      "description": "Obtains directory limit information for the current region.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSnapshotLimits": {
+      "name": "GetSnapshotLimits",
+      "description": "Obtains the manual snapshot limits for a directory.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAuthorizedApplications": {
+      "name": "ListAuthorizedApplications",
+      "description": "Obtains the aws applications authorized for a directory.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListCertificates": {
+      "name": "ListCertificates",
+      "description": "For the specified directory, lists all the certificates registered for a secured LDAP\n                                                connection.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListIpRoutes": {
+      "name": "ListIpRoutes",
+      "description": "Lists the address blocks that you have added to a directory.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListLogSubscriptions": {
+      "name": "ListLogSubscriptions",
+      "description": "Lists the active log subscriptions for the AWS account.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSchemaExtensions": {
+      "name": "ListSchemaExtensions",
+      "description": "Lists all schema extensions applied to a Microsoft AD Directory.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Lists all tags on an Amazon Directory Services directory.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterCertificate": {
+      "name": "RegisterCertificate",
+      "description": "Registers a certificate for secured LDAP connection.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterEventTopic": {
+      "name": "RegisterEventTopic",
+      "description": "Associates a directory with an SNS topic.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "sns:GetTopicAttributes"
+    },
+    "RejectSharedDirectory": {
+      "name": "RejectSharedDirectory",
+      "description": "Rejects a directory sharing request that was sent from the directory owner account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemoveIpRoutes": {
+      "name": "RemoveIpRoutes",
+      "description": "Removes IP address blocks from a directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemoveTagsFromResource": {
+      "name": "RemoveTagsFromResource",
+      "description": "Removes tags from an Amazon Directory Services directory.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "ec2:DeleteTags"
+    },
+    "$1604344719940": {
+      "name": "$1604344719940",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ResetUserPassword": {
+      "name": "ResetUserPassword",
+      "description": "Resets the password for any user in your AWS Managed Microsoft AD or Simple AD directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RestoreFromSnapshot": {
+      "name": "RestoreFromSnapshot",
+      "description": "Restores a directory using an existing directory snapshot.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ShareDirectory": {
+      "name": "ShareDirectory",
+      "description": "Shares a specified directory in your AWS account (directory owner) with another AWS\n                                                account (directory consumer). With this operation you can use your directory from\n                                                any AWS account and from any Amazon VPC within an AWS Region.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartSchemaExtension": {
+      "name": "StartSchemaExtension",
+      "description": "Applies a schema extension to a Microsoft AD directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UnauthorizeApplication": {
+      "name": "UnauthorizeApplication",
+      "description": "Unauthorizes an application from your AWS Directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UnshareDirectory": {
+      "name": "UnshareDirectory",
+      "description": "Stops the directory sharing between the directory owner and consumer accounts.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateConditionalForwarder": {
+      "name": "UpdateConditionalForwarder",
+      "description": "Updates a conditional forwarder that has been set up for your AWS directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateNumberOfDomainControllers": {
+      "name": "UpdateNumberOfDomainControllers",
+      "description": "Adds or removes domain controllers to or from the directory. Based on the difference\n                                                between current value and new value (provided through this API call), domain controllers\n                                                will be added or removed. It may take up to 45 minutes for any new domain controllers\n                                                to become fully active once the requested number of domain controllers is updated.\n                                                During this time, you cannot make another update request.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRadius": {
+      "name": "UpdateRadius",
+      "description": "Updates the Remote Authentication Dial In User Service (RADIUS) server information\n                                                for an AD Connector directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateTrust": {
+      "name": "UpdateTrust",
+      "description": "Updates the trust that has been set up between your AWS Managed Microsoft AD directory\n                                                and an on-premises Active Directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "VerifyTrust": {
+      "name": "VerifyTrust",
+      "description": "Verifies a trust relationship between your Microsoft AD in the AWS cloud and an external\n                                                domain.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Directory Service"
+}

@@ -1,0 +1,238 @@
+{
+  "servicePrefix": "iotevents",
+  "actions": {
+    "BatchPutMessage": {
+      "name": "BatchPutMessage",
+      "description": "Sends a set of messages to the AWS IoT Events system.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "input*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchUpdateDetector": {
+      "name": "BatchUpdateDetector",
+      "description": "Update an detector within the AWS IoT Events system.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "input*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDetectorModel": {
+      "name": "CreateDetectorModel",
+      "description": "Creates a detector model.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detectorModel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344732949": {
+      "name": "$1604344732949",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateInput": {
+      "name": "CreateInput",
+      "description": "Creates an input.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "input*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344732950": {
+      "name": "$1604344732950",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteDetectorModel": {
+      "name": "DeleteDetectorModel",
+      "description": "Deletes a detector model.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detectorModel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteInput": {
+      "name": "DeleteInput",
+      "description": "Deletes an input.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "input*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDetector": {
+      "name": "DescribeDetector",
+      "description": "Returns information about the specified detector (instance).",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "detectorModel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDetectorModel": {
+      "name": "DescribeDetectorModel",
+      "description": "Describes a detector model.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "detectorModel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeInput": {
+      "name": "DescribeInput",
+      "description": "Describes an input.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "input*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeLoggingOptions": {
+      "name": "DescribeLoggingOptions",
+      "description": "Retrieves the current settings of the AWS IoT Events logging options.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDetectorModelVersions": {
+      "name": "ListDetectorModelVersions",
+      "description": "Lists all the versions of a detector model. Only the metadata associated with each\n                                                detector model version is returned.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "detectorModel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDetectorModels": {
+      "name": "ListDetectorModels",
+      "description": "Lists the detector models you have created. Only the metadata associated with each\n                                                detector model is returned.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDetectors": {
+      "name": "ListDetectors",
+      "description": "Lists detectors (the instances of a detector model).",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "detectorModel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListInputs": {
+      "name": "ListInputs",
+      "description": "Lists the inputs you have created.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Lists the tags (metadata) which you have assigned to the resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "detectorModel"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "input": {
+      "name": "input",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutLoggingOptions": {
+      "name": "PutLoggingOptions",
+      "description": "Sets or updates the AWS IoT Events logging options.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Adds to or modifies the tags of the given resource. Tags are metadata which can be\n                                                used to manage a resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "detectorModel"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344732952": {
+      "name": "$1604344732952",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Removes the given tags (metadata) from the resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "detectorModel"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344732953": {
+      "name": "$1604344732953",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateDetectorModel": {
+      "name": "UpdateDetectorModel",
+      "description": "Updates a detector model.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detectorModel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateInput": {
+      "name": "UpdateInput",
+      "description": "Updates an input.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "input*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateInputRouting": {
+      "name": "UpdateInputRouting",
+      "description": "Updates input routing.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "input*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS IoT Events"
+}

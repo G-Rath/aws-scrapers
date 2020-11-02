@@ -1,0 +1,646 @@
+{
+  "servicePrefix": "directconnect",
+  "actions": {
+    "AcceptDirectConnectGatewayAssociationProposal": {
+      "name": "AcceptDirectConnectGatewayAssociationProposal",
+      "description": "Accepts a proposal request to attach a virtual private gateway to a Direct Connect\n                                                gateway.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dx-gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AllocateConnectionOnInterconnect": {
+      "name": "AllocateConnectionOnInterconnect",
+      "description": "Creates a hosted connection on an interconnect.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxcon*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AllocateHostedConnection": {
+      "name": "AllocateHostedConnection",
+      "description": "Creates a new hosted connection between a AWS Direct Connect partner's network and\n                                                a specific AWS Direct Connect location.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxcon"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "dxlag": {
+      "name": "dxlag",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344717292": {
+      "name": "$1604344717292",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "AllocatePrivateVirtualInterface": {
+      "name": "AllocatePrivateVirtualInterface",
+      "description": "Provisions a private virtual interface to be owned by a different customer.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxcon"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344717293": {
+      "name": "$1604344717293",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "AllocatePublicVirtualInterface": {
+      "name": "AllocatePublicVirtualInterface",
+      "description": "Provisions a public virtual interface to be owned by a different customer.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxcon"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344717294": {
+      "name": "$1604344717294",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "AllocateTransitVirtualInterface": {
+      "name": "AllocateTransitVirtualInterface",
+      "description": "Provisions a transit virtual interface to be owned by a different customer.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxcon"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344717295": {
+      "name": "$1604344717295",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "AssociateConnectionWithLag": {
+      "name": "AssociateConnectionWithLag",
+      "description": "Associates a connection with a LAG.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxcon*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "dxlag*": {
+      "name": "dxlag*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "AssociateHostedConnection": {
+      "name": "AssociateHostedConnection",
+      "description": "Associates a hosted connection and its virtual interfaces with a link aggregation\n                                                group (LAG) or interconnect.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxcon*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "dxcon": {
+      "name": "dxcon",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "AssociateVirtualInterface": {
+      "name": "AssociateVirtualInterface",
+      "description": "Associates a virtual interface with a specified link aggregation group (LAG) or connection.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxvif*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ConfirmConnection": {
+      "name": "ConfirmConnection",
+      "description": "Confirm the creation of a hosted connection on an interconnect.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxcon*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ConfirmPrivateVirtualInterface": {
+      "name": "ConfirmPrivateVirtualInterface",
+      "description": "Accept ownership of a private virtual interface created by another customer.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxvif*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ConfirmPublicVirtualInterface": {
+      "name": "ConfirmPublicVirtualInterface",
+      "description": "Accept ownership of a public virtual interface created by another customer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxvif*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ConfirmTransitVirtualInterface": {
+      "name": "ConfirmTransitVirtualInterface",
+      "description": "Accept ownership of a transit virtual interface created by another customer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxvif*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateBGPPeer": {
+      "name": "CreateBGPPeer",
+      "description": "Creates a BGP peer on the specified virtual interface.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxvif*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateConnection": {
+      "name": "CreateConnection",
+      "description": "Creates a new connection between the customer network and a specific AWS Direct Connect\n                                                location.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxlag"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344717297": {
+      "name": "$1604344717297",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateDirectConnectGateway": {
+      "name": "CreateDirectConnectGateway",
+      "description": "Creates a Direct Connect gateway, which is an intermediate object that enables you\n                                                to connect a set of virtual interfaces and virtual private gateways.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDirectConnectGatewayAssociation": {
+      "name": "CreateDirectConnectGatewayAssociation",
+      "description": "Creates an association between a Direct Connect gateway and a virtual private gateway.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dx-gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDirectConnectGatewayAssociationProposal": {
+      "name": "CreateDirectConnectGatewayAssociationProposal",
+      "description": "Creates a proposal to associate the specified virtual private gateway with the specified\n                                                Direct Connect gateway.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dx-gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateInterconnect": {
+      "name": "CreateInterconnect",
+      "description": "Creates a new interconnect between a AWS Direct Connect partner's network and a specific\n                                                AWS Direct Connect location.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxlag"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344717298": {
+      "name": "$1604344717298",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateLag": {
+      "name": "CreateLag",
+      "description": "Creates a link aggregation group (LAG) with the specified number of bundled physical\n                                                connections between the customer network and a specific AWS Direct Connect location.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxcon"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreatePrivateVirtualInterface": {
+      "name": "CreatePrivateVirtualInterface",
+      "description": "Creates a new private virtual interface.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxcon"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344717299": {
+      "name": "$1604344717299",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreatePublicVirtualInterface": {
+      "name": "CreatePublicVirtualInterface",
+      "description": "Creates a new public virtual interface.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxcon"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344717300": {
+      "name": "$1604344717300",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateTransitVirtualInterface": {
+      "name": "CreateTransitVirtualInterface",
+      "description": "Creates a new transit virtual interface.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxcon"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344717302": {
+      "name": "$1604344717302",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteBGPPeer": {
+      "name": "DeleteBGPPeer",
+      "description": "Deletes the specified BGP peer on the specified virtual interface with the specified\n                                                customer address and ASN.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxvif*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteConnection": {
+      "name": "DeleteConnection",
+      "description": "Deletes the connection.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxcon*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDirectConnectGateway": {
+      "name": "DeleteDirectConnectGateway",
+      "description": "Deletes the specified Direct Connect gateway.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dx-gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDirectConnectGatewayAssociation": {
+      "name": "DeleteDirectConnectGatewayAssociation",
+      "description": "Deletes the association between the specified Direct Connect gateway and virtual private\n                                                gateway.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dx-gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDirectConnectGatewayAssociationProposal": {
+      "name": "DeleteDirectConnectGatewayAssociationProposal",
+      "description": "Deletes the association proposal request between the specified Direct Connect gateway\n                                                and virtual private gateway.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteInterconnect": {
+      "name": "DeleteInterconnect",
+      "description": "Deletes the specified interconnect.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxcon*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteLag": {
+      "name": "DeleteLag",
+      "description": "Deletes the specified link aggregation group (LAG).",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxlag*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteVirtualInterface": {
+      "name": "DeleteVirtualInterface",
+      "description": "Deletes a virtual interface.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxvif*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeConnectionLoa": {
+      "name": "DescribeConnectionLoa",
+      "description": "Returns the LOA-CFA for a Connection.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "dxcon*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeConnections": {
+      "name": "DescribeConnections",
+      "description": "Displays all connections in this region.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "dxcon"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeConnectionsOnInterconnect": {
+      "name": "DescribeConnectionsOnInterconnect",
+      "description": "Return a list of connections that have been provisioned on the given interconnect.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "dxcon*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDirectConnectGatewayAssociationProposals": {
+      "name": "DescribeDirectConnectGatewayAssociationProposals",
+      "description": "Describes one or more association proposals for connection between a virtual private\n                                                gateway and a Direct Connect gateway.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "dx-gateway"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDirectConnectGatewayAssociations": {
+      "name": "DescribeDirectConnectGatewayAssociations",
+      "description": "Lists the associations between your Direct Connect gateways and virtual private gateways.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "dx-gateway"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDirectConnectGatewayAttachments": {
+      "name": "DescribeDirectConnectGatewayAttachments",
+      "description": "Lists the attachments between your Direct Connect gateways and virtual interfaces.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "dx-gateway"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDirectConnectGateways": {
+      "name": "DescribeDirectConnectGateways",
+      "description": "Lists all your Direct Connect gateways or only the specified Direct Connect gateway.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "dx-gateway"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeHostedConnections": {
+      "name": "DescribeHostedConnections",
+      "description": "Lists the hosted connections that have been provisioned on the specified interconnect\n                                                or link aggregation group (LAG).",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "dxcon"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeInterconnectLoa": {
+      "name": "DescribeInterconnectLoa",
+      "description": "Returns the LOA-CFA for an Interconnect.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "dxcon*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeInterconnects": {
+      "name": "DescribeInterconnects",
+      "description": "Returns a list of interconnects owned by the AWS account.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "dxcon"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeLags": {
+      "name": "DescribeLags",
+      "description": "Describes all your link aggregation groups (LAG) or the specified LAG.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "dxlag"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeLoa": {
+      "name": "DescribeLoa",
+      "description": "Gets the LOA-CFA for a connection, interconnect, or link aggregation group (LAG).",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "dxcon"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeLocations": {
+      "name": "DescribeLocations",
+      "description": "Returns the list of AWS Direct Connect locations in the current AWS region.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTags": {
+      "name": "DescribeTags",
+      "description": "Describes the tags associated with the specified AWS Direct Connect resources.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "dxcon"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "dxvif": {
+      "name": "dxvif",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DescribeVirtualGateways": {
+      "name": "DescribeVirtualGateways",
+      "description": "Returns a list of virtual private gateways owned by the AWS account.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeVirtualInterfaces": {
+      "name": "DescribeVirtualInterfaces",
+      "description": "Displays all virtual interfaces for an AWS account.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "dxcon"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateConnectionFromLag": {
+      "name": "DisassociateConnectionFromLag",
+      "description": "Disassociates a connection from a link aggregation group (LAG).",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxcon*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListVirtualInterfaceTestHistory": {
+      "name": "ListVirtualInterfaceTestHistory",
+      "description": "Lists the virtual interface failover test history.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "dxvif*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartBgpFailoverTest": {
+      "name": "StartBgpFailoverTest",
+      "description": "Starts the virtual interface failover test that verifies your configuration meets\n                                                your resiliency requirements by placing the BGP peering session in the DOWN state.\n                                                You can then send traffic to verify that there are no outages.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxvif*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopBgpFailoverTest": {
+      "name": "StopBgpFailoverTest",
+      "description": "Stops the virtual interface failover test.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxvif*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Adds the specified tags to the specified AWS Direct Connect resource. Each resource\n                                                can have a maximum of 50 tags.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "dxcon"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344717307": {
+      "name": "$1604344717307",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Removes one or more tags from the specified AWS Direct Connect resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "dxcon"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344717308": {
+      "name": "$1604344717308",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateDirectConnectGatewayAssociation": {
+      "name": "UpdateDirectConnectGatewayAssociation",
+      "description": "Updates the specified attributes of the Direct Connect gateway association.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateLag": {
+      "name": "UpdateLag",
+      "description": "Updates the attributes of the specified link aggregation group (LAG).",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxlag*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateVirtualInterfaceAttributes": {
+      "name": "UpdateVirtualInterfaceAttributes",
+      "description": "Updates the specified attributes of the specified virtual private interface.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dxvif*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Direct Connect"
+}

@@ -1,0 +1,278 @@
+{
+  "servicePrefix": "xray",
+  "actions": {
+    "BatchGetTraces": {
+      "name": "BatchGetTraces",
+      "description": "Grants permission to retrieve a list of traces specified by ID. Each trace is a collection\n                                                of segment documents that originates from a single request. Use GetTraceSummaries\n                                                to get a list of trace IDs",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateGroup": {
+      "name": "CreateGroup",
+      "description": "Grants permission to create a group resource with a name and a filter expression",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344752720": {
+      "name": "$1604344752720",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateSamplingRule": {
+      "name": "CreateSamplingRule",
+      "description": "Grants permission to create a rule to control sampling behavior for instrumented applications",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "sampling-rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344752721": {
+      "name": "$1604344752721",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteGroup": {
+      "name": "DeleteGroup",
+      "description": "Grants permission to delete a group resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSamplingRule": {
+      "name": "DeleteSamplingRule",
+      "description": "Grants permission to delete a sampling rule",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "sampling-rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEncryptionConfig": {
+      "name": "GetEncryptionConfig",
+      "description": "Grants permission to retrieve the current encryption configuration for X-Ray data",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetGroup": {
+      "name": "GetGroup",
+      "description": "Grants permission to retrieve group resource details",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344752722": {
+      "name": "$1604344752722",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetGroups": {
+      "name": "GetGroups",
+      "description": "Grants permission to retrieve all active group details",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetInsight": {
+      "name": "GetInsight",
+      "description": "Grants permission to retrieve the details of a specific insight",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetInsightEvents": {
+      "name": "GetInsightEvents",
+      "description": "Grants permission to retrieve the events of a specific insight",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetInsightImpactGraph": {
+      "name": "GetInsightImpactGraph",
+      "description": "Grants permission to retrieve the part of the service graph which is impacted for\n                                                a specific insight",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetInsightSummaries": {
+      "name": "GetInsightSummaries",
+      "description": "Grants permission to retrieve the summary of all insights for a group and time range\n                                                with optional filters",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSamplingRules": {
+      "name": "GetSamplingRules",
+      "description": "Grants permission to retrieve all sampling rules",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSamplingStatisticSummaries": {
+      "name": "GetSamplingStatisticSummaries",
+      "description": "Grants permission to retrieve information about recent sampling results for all sampling\n                                                rules",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSamplingTargets": {
+      "name": "GetSamplingTargets",
+      "description": "Grants permission to request a sampling quota for rules that the service is using\n                                                to sample requests",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetServiceGraph": {
+      "name": "GetServiceGraph",
+      "description": "Grants permission to retrieve a document that describes services that process incoming\n                                                requests, and downstream services that they call as a result",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetTimeSeriesServiceStatistics": {
+      "name": "GetTimeSeriesServiceStatistics",
+      "description": "Grants permission to retrieve an aggregation of service statistics defined by a specific\n                                                time range bucketed into time intervals",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetTraceGraph": {
+      "name": "GetTraceGraph",
+      "description": "Grants permission to retrieve a service graph for one or more specific trace IDs",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetTraceSummaries": {
+      "name": "GetTraceSummaries",
+      "description": "Grants permission to retrieve IDs and metadata for traces available for a specified\n                                                time frame using an optional filter. To get the full traces, pass the trace IDs to\n                                                BatchGetTraces",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permission to list tags for an X-Ray resource",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "group"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "sampling-rule": {
+      "name": "sampling-rule",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutEncryptionConfig": {
+      "name": "PutEncryptionConfig",
+      "description": "Grants permission to update the encryption configuration for X-Ray data",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutTelemetryRecords": {
+      "name": "PutTelemetryRecords",
+      "description": "Grants permission to send AWS X-Ray daemon telemetry to the service",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutTraceSegments": {
+      "name": "PutTraceSegments",
+      "description": "Grants permission to upload segment documents to AWS X-Ray. The X-Ray SDK generates\n                                                segment documents and sends them to the X-Ray daemon, which uploads them in batches",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permission to add tags to an X-Ray resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "group"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344752725": {
+      "name": "$1604344752725",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permission to remove tags from an X-Ray resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "group"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateGroup": {
+      "name": "UpdateGroup",
+      "description": "Grants permission to update a group resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344752727": {
+      "name": "$1604344752727",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateSamplingRule": {
+      "name": "UpdateSamplingRule",
+      "description": "Grants permission to modify a sampling rule's configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "sampling-rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS X-Ray"
+}

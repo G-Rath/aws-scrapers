@@ -1,0 +1,290 @@
+{
+  "servicePrefix": "iot1click",
+  "actions": {
+    "AssociateDeviceWithPlacement": {
+      "name": "AssociateDeviceWithPlacement",
+      "description": "Associate a device to a placement",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ClaimDevicesByClaimCode": {
+      "name": "ClaimDevicesByClaimCode",
+      "description": "Claim a batch of devices with a claim code.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreatePlacement": {
+      "name": "CreatePlacement",
+      "description": "Create a new placement in a project",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateProject": {
+      "name": "CreateProject",
+      "description": "Create a new project",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344728761": {
+      "name": "$1604344728761",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeletePlacement": {
+      "name": "DeletePlacement",
+      "description": "Delete a placement from a project",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteProject": {
+      "name": "DeleteProject",
+      "description": "Delete a project",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDevice": {
+      "name": "DescribeDevice",
+      "description": "Describe a device",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribePlacement": {
+      "name": "DescribePlacement",
+      "description": "Describe a placement",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeProject": {
+      "name": "DescribeProject",
+      "description": "Describe a project",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateDeviceFromPlacement": {
+      "name": "DisassociateDeviceFromPlacement",
+      "description": "Disassociate a device from a placement",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "FinalizeDeviceClaim": {
+      "name": "FinalizeDeviceClaim",
+      "description": "Finalize a device claim",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344728762": {
+      "name": "$1604344728762",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetDeviceMethods": {
+      "name": "GetDeviceMethods",
+      "description": "Get available methods of a device",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDevicesInPlacement": {
+      "name": "GetDevicesInPlacement",
+      "description": "Get devices associated to a placement",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "InitiateDeviceClaim": {
+      "name": "InitiateDeviceClaim",
+      "description": "Initialize a device claim",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "InvokeDeviceMethod": {
+      "name": "InvokeDeviceMethod",
+      "description": "Invoke a device method",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDeviceEvents": {
+      "name": "ListDeviceEvents",
+      "description": "List past events published by a device",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDevices": {
+      "name": "ListDevices",
+      "description": "List all devices",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPlacements": {
+      "name": "ListPlacements",
+      "description": "List placements in a project",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProjects": {
+      "name": "ListProjects",
+      "description": "List all projects",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Lists the tags (metadata) which you have assigned to the resource.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "device"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "project": {
+      "name": "project",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Adds to or modifies the tags of the given resource. Tags are metadata which can be\n                                                used to manage a resource.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "device"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344728764": {
+      "name": "$1604344728764",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UnclaimDevice": {
+      "name": "UnclaimDevice",
+      "description": "Unclaim a device",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Removes the given tags (metadata) from the resource.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "device"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344728765": {
+      "name": "$1604344728765",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateDeviceState": {
+      "name": "UpdateDeviceState",
+      "description": "Update device state",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdatePlacement": {
+      "name": "UpdatePlacement",
+      "description": "Update a placement",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateProject": {
+      "name": "UpdateProject",
+      "description": "Update a project",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS IoT 1-Click"
+}

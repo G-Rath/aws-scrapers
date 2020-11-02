@@ -1,0 +1,528 @@
+{
+  "servicePrefix": "dynamodb",
+  "actions": {
+    "BatchGetItem": {
+      "name": "BatchGetItem",
+      "description": "Returns the attributes of one or more items from one or more tables",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344721655": {
+      "name": "$1604344721655",
+      "description": "dynamodb:Attributes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:LeadingKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:ReturnConsumedCapacity\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:Select",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "BatchWriteItem": {
+      "name": "BatchWriteItem",
+      "description": "Puts or deletes multiple items in one or more tables",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344721656": {
+      "name": "$1604344721656",
+      "description": "dynamodb:Attributes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:LeadingKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:ReturnConsumedCapacity\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:ReturnValues",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ConditionCheckItem": {
+      "name": "ConditionCheckItem",
+      "description": "The ConditionCheckItem operation checks the existence of a set of attributes for the\n                                                item with the given primary key",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateBackup": {
+      "name": "CreateBackup",
+      "description": "Creates a backup for an existing table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateGlobalTable": {
+      "name": "CreateGlobalTable",
+      "description": "Enables the user to create a global table from an existing table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "global-table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "table*": {
+      "name": "table*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateTable": {
+      "name": "CreateTable",
+      "description": "The CreateTable operation adds a new table to your account",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateTableReplica": {
+      "name": "CreateTableReplica",
+      "description": "Adds a new replica table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteBackup": {
+      "name": "DeleteBackup",
+      "description": "Deletes an existing backup of a table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteItem": {
+      "name": "DeleteItem",
+      "description": "Deletes a single item in a table by primary key",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344721657": {
+      "name": "$1604344721657",
+      "description": "dynamodb:Attributes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:EnclosingOperation\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:LeadingKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:ReturnConsumedCapacity\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:ReturnValues",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteTable": {
+      "name": "DeleteTable",
+      "description": "The DeleteTable operation deletes a table and all of its items",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteTableReplica": {
+      "name": "DeleteTableReplica",
+      "description": "Deletes a replica table and all of its items",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeBackup": {
+      "name": "DescribeBackup",
+      "description": "Describes an existing backup of a table",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "backup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeContinuousBackups": {
+      "name": "DescribeContinuousBackups",
+      "description": "Checks the status of the backup restore settings on the specified table",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeContributorInsights": {
+      "name": "DescribeContributorInsights",
+      "description": "Describes the contributor insights status and related details for a given table or\n                                                global secondary index",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "index": {
+      "name": "index",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DescribeGlobalTable": {
+      "name": "DescribeGlobalTable",
+      "description": "Returns information about the specified global table",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "global-table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeGlobalTableSettings": {
+      "name": "DescribeGlobalTableSettings",
+      "description": "Returns settings information about the specified global table",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "global-table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeLimits": {
+      "name": "DescribeLimits",
+      "description": "Returns the current provisioned-capacity limits for your AWS account in a region,\n                                                both for the region as a whole and for any one DynamoDB table that you create there",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeReservedCapacity": {
+      "name": "DescribeReservedCapacity",
+      "description": "Describes one or more of the Reserved Capacity purchased",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeReservedCapacityOfferings": {
+      "name": "DescribeReservedCapacityOfferings",
+      "description": "Describes Reserved Capacity offerings that are available for purchase",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeStream": {
+      "name": "DescribeStream",
+      "description": "Returns information about a stream, including the current status of the stream, its\n                                                Amazon Resource Name (ARN), the composition of its shards, and its corresponding DynamoDB\n                                                table",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTable": {
+      "name": "DescribeTable",
+      "description": "Returns information about the table",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTableReplicaAutoScaling": {
+      "name": "DescribeTableReplicaAutoScaling",
+      "description": "Describes the auto scaling settings across all replicas of the global table",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTimeToLive": {
+      "name": "DescribeTimeToLive",
+      "description": "Gives a description of the Time to Live (TTL) status on the specified table.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetItem": {
+      "name": "GetItem",
+      "description": "The GetItem operation returns a set of attributes for the item with the given primary\n                                                key",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344721659": {
+      "name": "$1604344721659",
+      "description": "dynamodb:Attributes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:EnclosingOperation\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:LeadingKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:ReturnConsumedCapacity\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:Select",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetRecords": {
+      "name": "GetRecords",
+      "description": "Retrieves the stream records from a given shard",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetShardIterator": {
+      "name": "GetShardIterator",
+      "description": "Returns a shard iterator",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListBackups": {
+      "name": "ListBackups",
+      "description": "List backups associated with the account and endpoint",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListContributorInsights": {
+      "name": "ListContributorInsights",
+      "description": "Lists the ContributorInsightsSummary for all tables and global secondary indexes associated\n                                                with the current account and endpoint",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGlobalTables": {
+      "name": "ListGlobalTables",
+      "description": "Lists all global tables that have a replica in the specified region",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListStreams": {
+      "name": "ListStreams",
+      "description": "Returns an array of stream ARNs associated with the current account and endpoint",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTables": {
+      "name": "ListTables",
+      "description": "Returns an array of table names associated with the current account and endpoint",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsOfResource": {
+      "name": "ListTagsOfResource",
+      "description": "List all tags on an Amazon DynamoDB resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PurchaseReservedCapacityOfferings": {
+      "name": "PurchaseReservedCapacityOfferings",
+      "description": "Purchases Reserved Capacity for use with your account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutItem": {
+      "name": "PutItem",
+      "description": "Creates a new item, or replaces an old item with a new item",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344721660": {
+      "name": "$1604344721660",
+      "description": "dynamodb:Attributes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:EnclosingOperation\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:LeadingKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:ReturnConsumedCapacity\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:ReturnValues",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "Query": {
+      "name": "Query",
+      "description": "Uses the primary key of a table or a secondary index to directly access items from\n                                                that table or index",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344721661": {
+      "name": "$1604344721661",
+      "description": "dynamodb:Attributes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:LeadingKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:ReturnConsumedCapacity\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:ReturnValues\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:Select",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "RestoreTableFromBackup": {
+      "name": "RestoreTableFromBackup",
+      "description": "Creates a new table from an existing backup",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RestoreTableToPointInTime": {
+      "name": "RestoreTableToPointInTime",
+      "description": "Restores a table to a point in time",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "Scan": {
+      "name": "Scan",
+      "description": "Returns one or more items and item attributes by accessing every item in a table or\n                                                a secondary index",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344721663": {
+      "name": "$1604344721663",
+      "description": "dynamodb:Attributes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:ReturnConsumedCapacity\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:ReturnValues\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:Select",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Associate a set of tags with an Amazon DynamoDB resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Removes the association of tags from an Amazon DynamoDB resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateContinuousBackups": {
+      "name": "UpdateContinuousBackups",
+      "description": "Enables or disables continuous backups",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateContributorInsights": {
+      "name": "UpdateContributorInsights",
+      "description": "Updates the status for contributor insights for a specific table or global secondary\n                                                index",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateGlobalTable": {
+      "name": "UpdateGlobalTable",
+      "description": "Enables the user to add or remove replicas in the specified global table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "global-table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateGlobalTableSettings": {
+      "name": "UpdateGlobalTableSettings",
+      "description": "Enables the user to update settings of the specified global table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "global-table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateItem": {
+      "name": "UpdateItem",
+      "description": "Edits an existing item's attributes, or adds a new item to the table if it does not\n                                                already exist",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344721665": {
+      "name": "$1604344721665",
+      "description": "dynamodb:Attributes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:EnclosingOperation\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:LeadingKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:ReturnConsumedCapacity\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dynamodb:ReturnValues",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateTable": {
+      "name": "UpdateTable",
+      "description": "Modifies the provisioned throughput settings, global secondary indexes, or DynamoDB\n                                                Streams settings for a given table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateTableReplicaAutoScaling": {
+      "name": "UpdateTableReplicaAutoScaling",
+      "description": "Updates auto scaling settings on your replica table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateTimeToLive": {
+      "name": "UpdateTimeToLive",
+      "description": "Enables or disables TTL for the specified table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon DynamoDB"
+}

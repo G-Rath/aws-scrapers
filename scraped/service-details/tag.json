@@ -1,0 +1,70 @@
+{
+  "servicePrefix": "tag",
+  "actions": {
+    "DescribeReportCreation": {
+      "name": "DescribeReportCreation",
+      "description": "Describe the status of the StartReportCreation operation.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetComplianceSummary": {
+      "name": "GetComplianceSummary",
+      "description": "Get a table that shows counts of resources that are noncompliant with their effective\n                                                tag policies.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetResources": {
+      "name": "GetResources",
+      "description": "Get tagged AWS resources that match the given tag filters",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetTagKeys": {
+      "name": "GetTagKeys",
+      "description": "Get all tagKeys for the account in the specific region",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetTagValues": {
+      "name": "GetTagValues",
+      "description": "Get all tagValues for the account in the specific region",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartReportCreation": {
+      "name": "StartReportCreation",
+      "description": "Generate a report that lists all tagged resources in accounts across your organization,\n                                                and whether each resource is compliant with the effective tag policy.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResources": {
+      "name": "TagResources",
+      "description": "Add tags to AWS resources",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResources": {
+      "name": "UntagResources",
+      "description": "Remove tags from AWS resources",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Resource Group Tagging API"
+}

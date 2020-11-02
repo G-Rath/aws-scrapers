@@ -1,0 +1,464 @@
+{
+  "servicePrefix": "personalize",
+  "actions": {
+    "CreateBatchInferenceJob": {
+      "name": "CreateBatchInferenceJob",
+      "description": "Creates a batch inference job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "batchInferenceJob*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateCampaign": {
+      "name": "CreateCampaign",
+      "description": "Creates a campaign",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "campaign*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDataset": {
+      "name": "CreateDataset",
+      "description": "Creates a dataset",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDatasetGroup": {
+      "name": "CreateDatasetGroup",
+      "description": "Creates a dataset group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "datasetGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDatasetImportJob": {
+      "name": "CreateDatasetImportJob",
+      "description": "Creates a dataset import job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "datasetImportJob*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateEventTracker": {
+      "name": "CreateEventTracker",
+      "description": "Creates an event tracker",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "eventTracker*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateFilter": {
+      "name": "CreateFilter",
+      "description": "Creates a filter",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "filter*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateSchema": {
+      "name": "CreateSchema",
+      "description": "Creates a schema",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "schema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateSolution": {
+      "name": "CreateSolution",
+      "description": "Creates a solution",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "solution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateSolutionVersion": {
+      "name": "CreateSolutionVersion",
+      "description": "Creates a solution version",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "solution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteCampaign": {
+      "name": "DeleteCampaign",
+      "description": "Deletes a campaign",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "campaign*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDataset": {
+      "name": "DeleteDataset",
+      "description": "Deletes a dataset",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDatasetGroup": {
+      "name": "DeleteDatasetGroup",
+      "description": "Deletes a dataset group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "datasetGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteEventTracker": {
+      "name": "DeleteEventTracker",
+      "description": "Deletes an event tracker",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "eventTracker*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteFilter": {
+      "name": "DeleteFilter",
+      "description": "Deletes a filter",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "filter*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSchema": {
+      "name": "DeleteSchema",
+      "description": "Deletes a schema",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "schema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSolution": {
+      "name": "DeleteSolution",
+      "description": "Deletes a solution including all versions of the solution",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "solution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAlgorithm": {
+      "name": "DescribeAlgorithm",
+      "description": "Describes an algorithm",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "algorithm*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeBatchInferenceJob": {
+      "name": "DescribeBatchInferenceJob",
+      "description": "Describes a batch inference job",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "batchInferenceJob*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeCampaign": {
+      "name": "DescribeCampaign",
+      "description": "Describes a campaign",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "campaign*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDataset": {
+      "name": "DescribeDataset",
+      "description": "Describes a dataset",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDatasetGroup": {
+      "name": "DescribeDatasetGroup",
+      "description": "Describes a dataset group",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "datasetGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDatasetImportJob": {
+      "name": "DescribeDatasetImportJob",
+      "description": "Describes a dataset import job",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "datasetImportJob*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeEventTracker": {
+      "name": "DescribeEventTracker",
+      "description": "Describes an event tracker",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "eventTracker*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeFeatureTransformation": {
+      "name": "DescribeFeatureTransformation",
+      "description": "Describes a feature transformation",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "featureTransformation*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeFilter": {
+      "name": "DescribeFilter",
+      "description": "Describes a filter",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "filter*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeRecipe": {
+      "name": "DescribeRecipe",
+      "description": "Describes a recipe",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "recipe*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeSchema": {
+      "name": "DescribeSchema",
+      "description": "Describes a schema",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "schema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeSolution": {
+      "name": "DescribeSolution",
+      "description": "Describes a solution",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "solution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeSolutionVersion": {
+      "name": "DescribeSolutionVersion",
+      "description": "Describes a version of a solution",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "solution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPersonalizedRanking": {
+      "name": "GetPersonalizedRanking",
+      "description": "Gets a re-ranked list of recommendations",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "campaign*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRecommendations": {
+      "name": "GetRecommendations",
+      "description": "Gets a list of recommendations from a campaign",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "campaign*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSolutionMetrics": {
+      "name": "GetSolutionMetrics",
+      "description": "Gets metrics for a solution version",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "solution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListBatchInferenceJobs": {
+      "name": "ListBatchInferenceJobs",
+      "description": "Lists batch inference jobs",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListCampaigns": {
+      "name": "ListCampaigns",
+      "description": "Lists campaigns",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDatasetGroups": {
+      "name": "ListDatasetGroups",
+      "description": "Lists dataset groups",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDatasetImportJobs": {
+      "name": "ListDatasetImportJobs",
+      "description": "Lists dataset import jobs",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDatasets": {
+      "name": "ListDatasets",
+      "description": "Lists datasets",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEventTrackers": {
+      "name": "ListEventTrackers",
+      "description": "Lists event trackers",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFilters": {
+      "name": "ListFilters",
+      "description": "Lists filters",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRecipes": {
+      "name": "ListRecipes",
+      "description": "Lists recipes",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSchemas": {
+      "name": "ListSchemas",
+      "description": "Lists schemas",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSolutionVersions": {
+      "name": "ListSolutionVersions",
+      "description": "Lists versions of a solution",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSolutions": {
+      "name": "ListSolutions",
+      "description": "Lists solutions",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutEvents": {
+      "name": "PutEvents",
+      "description": "Records real time event data",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "eventTracker*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutItems": {
+      "name": "PutItems",
+      "description": "Ingest Items data",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutUsers": {
+      "name": "PutUsers",
+      "description": "Ingest Users data",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateCampaign": {
+      "name": "UpdateCampaign",
+      "description": "Updates a campaign",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "campaign*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Personalize"
+}

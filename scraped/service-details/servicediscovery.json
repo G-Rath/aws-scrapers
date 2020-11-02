@@ -1,0 +1,224 @@
+{
+  "servicePrefix": "servicediscovery",
+  "actions": {
+    "CreateHttpNamespace": {
+      "name": "CreateHttpNamespace",
+      "description": "Creates an HTTP namespace.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "dependentActions": ""
+    },
+    "CreatePrivateDnsNamespace": {
+      "name": "CreatePrivateDnsNamespace",
+      "description": "Creates a private namespace based on DNS, which will be visible only inside a specified\n                                                Amazon VPC.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "dependentActions": ""
+    },
+    "CreatePublicDnsNamespace": {
+      "name": "CreatePublicDnsNamespace",
+      "description": "Creates a public namespace based on DNS, which will be visible on the internet.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "dependentActions": ""
+    },
+    "CreateService": {
+      "name": "CreateService",
+      "description": "Creates a service.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "namespace*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344720710": {
+      "name": "$1604344720710",
+      "description": "servicediscovery:NamespaceArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteNamespace": {
+      "name": "DeleteNamespace",
+      "description": "Deletes a specified namespace.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "namespace*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteService": {
+      "name": "DeleteService",
+      "description": "Deletes a specified service.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeregisterInstance": {
+      "name": "DeregisterInstance",
+      "description": "Deletes the records and the health check, if any, that Amazon Route 53 created for\n                                                the specified instance.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344720711": {
+      "name": "$1604344720711",
+      "description": "servicediscovery:ServiceArn",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DiscoverInstances": {
+      "name": "DiscoverInstances",
+      "description": "Discovers registered instances for a specified namespace and service.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "servicediscovery:NamespaceName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      servicediscovery:ServiceName",
+      "dependentActions": ""
+    },
+    "GetInstance": {
+      "name": "GetInstance",
+      "description": "Gets information about a specified instance.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "servicediscovery:ServiceArn",
+      "dependentActions": ""
+    },
+    "GetInstancesHealthStatus": {
+      "name": "GetInstancesHealthStatus",
+      "description": "Gets the current health status (Healthy, Unhealthy, or Unknown) of one or more instances.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "servicediscovery:ServiceArn",
+      "dependentActions": ""
+    },
+    "GetNamespace": {
+      "name": "GetNamespace",
+      "description": "Gets information about a namespace.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "namespace*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetOperation": {
+      "name": "GetOperation",
+      "description": "Gets information about a specific operation.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetService": {
+      "name": "GetService",
+      "description": "Gets the settings for a specified service.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "service*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListInstances": {
+      "name": "ListInstances",
+      "description": "Gets summary information about the instances that were registered with a specified\n                                                service.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "servicediscovery:ServiceArn",
+      "dependentActions": ""
+    },
+    "ListNamespaces": {
+      "name": "ListNamespaces",
+      "description": "Gets information about the namespaces.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListOperations": {
+      "name": "ListOperations",
+      "description": "Lists operations that match the criteria that you specify.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListServices": {
+      "name": "ListServices",
+      "description": "Gets settings for all the services that match specified filters.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Lists tags for the specified resource.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterInstance": {
+      "name": "RegisterInstance",
+      "description": "Registers an instance based on the settings in a specified service.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344720713": {
+      "name": "$1604344720713",
+      "description": "servicediscovery:ServiceArn",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Adds one or more tags to the specified resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Removes one or more tags from the specified resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "dependentActions": ""
+    },
+    "UpdateInstanceCustomHealthStatus": {
+      "name": "UpdateInstanceCustomHealthStatus",
+      "description": "Updates the current health status for an instance that has a custom health check.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "servicediscovery:ServiceArn",
+      "dependentActions": ""
+    },
+    "UpdateService": {
+      "name": "UpdateService",
+      "description": "Updates the settings in a specified service.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Cloud Map"
+}

@@ -1,0 +1,274 @@
+{
+  "servicePrefix": "ivs",
+  "actions": {
+    "BatchGetChannel": {
+      "name": "BatchGetChannel",
+      "description": "Grants permission to get multiple channels simultaneously by channel ARN.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchGetStreamKey": {
+      "name": "BatchGetStreamKey",
+      "description": "Grants permission to get multiple stream keys simultaneously by stream key ARN.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Stream-Key*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateChannel": {
+      "name": "CreateChannel",
+      "description": "Grants permission to create a new channel and an associated stream key.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "Stream-Key*": {
+      "name": "Stream-Key*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344721689": {
+      "name": "$1604344721689",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateStreamKey": {
+      "name": "CreateStreamKey",
+      "description": "Grants permission to create a stream key.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Stream-Key*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteChannel": {
+      "name": "DeleteChannel",
+      "description": "Grants permission to delete a channel and channel's stream keys.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeletePlaybackKeyPair": {
+      "name": "DeletePlaybackKeyPair",
+      "description": "Grants permission to delete the playback key pair for a specified ARN",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Playback-Key-Pair*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteStreamKey": {
+      "name": "DeleteStreamKey",
+      "description": "Grants permission to delete the stream key for a specified ARN",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Stream-Key*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetChannel": {
+      "name": "GetChannel",
+      "description": "Grants permission to get the channel configuration for a specified channel ARN",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPlaybackKeyPair": {
+      "name": "GetPlaybackKeyPair",
+      "description": "Grants permission to get the playback keypair information for a specified ARN",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Playback-Key-Pair*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetStream": {
+      "name": "GetStream",
+      "description": "Grants permission to get information about the active (live) stream on a specified\n                                                channel",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetStreamKey": {
+      "name": "GetStreamKey",
+      "description": "Grants permission to get stream-key information for a specified ARN",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Stream-Key*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ImportPlaybackKeyPair": {
+      "name": "ImportPlaybackKeyPair",
+      "description": "Grants permission to import the public key.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Playback-Key-Pair*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344721690": {
+      "name": "$1604344721690",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ListChannels": {
+      "name": "ListChannels",
+      "description": "Grants permission to get summary information about channels",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "Channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPlaybackKeyPairs": {
+      "name": "ListPlaybackKeyPairs",
+      "description": "Grants permission to get summary information about playback key pairs",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "Playback-Key-Pair*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListStreamKeys": {
+      "name": "ListStreamKeys",
+      "description": "Grants permission to get summary information about stream keys",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "Channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListStreams": {
+      "name": "ListStreams",
+      "description": "Grants permission to get summary information about live streams",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "Channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permission to get information about the tags for a specified ARN",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "Channel"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "Playback-Key-Pair": {
+      "name": "Playback-Key-Pair",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "Stream-Key": {
+      "name": "Stream-Key",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344721693": {
+      "name": "$1604344721693",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutMetadata": {
+      "name": "PutMetadata",
+      "description": "Grants permission to insert metadata into an RTMP stream for a specified channel",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopStream": {
+      "name": "StopStream",
+      "description": "Grants permission to disconnect a streamer on a specified channel",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permission to add or update tags for a resource with a specified ARN",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "Channel"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344721694": {
+      "name": "$1604344721694",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permission to remove tags for a resource with a specified ARN",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "Channel"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344721695": {
+      "name": "$1604344721695",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateChannel": {
+      "name": "UpdateChannel",
+      "description": "Grants permission to update a channel's configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Interactive Video Service"
+}

@@ -1,0 +1,354 @@
+{
+  "servicePrefix": "appsync",
+  "actions": {
+    "CreateApiKey": {
+      "name": "CreateApiKey",
+      "description": "Creates a unique key that you can distribute to clients who are executing your API.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDataSource": {
+      "name": "CreateDataSource",
+      "description": "Creates a DataSource object.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateFunction": {
+      "name": "CreateFunction",
+      "description": "Create a new Function object.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateGraphqlApi": {
+      "name": "CreateGraphqlApi",
+      "description": "Creates a GraphqlApi object, which is the top level AppSync resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": "iam:CreateServiceLinkedRole"
+    },
+    "CreateResolver": {
+      "name": "CreateResolver",
+      "description": "Creates a Resolver object. A resolver converts incoming requests into a format that\n                                                a data source can understand, and converts the data source's responses into GraphQL.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateType": {
+      "name": "CreateType",
+      "description": "Creates a Type object.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteApiKey": {
+      "name": "DeleteApiKey",
+      "description": "Deletes an API key.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDataSource": {
+      "name": "DeleteDataSource",
+      "description": "Deletes a DataSource object.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteFunction": {
+      "name": "DeleteFunction",
+      "description": "Deletes a Function object.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteGraphqlApi": {
+      "name": "DeleteGraphqlApi",
+      "description": "Deletes a GraphqlApi object. This will also clean up every AppSync resource below\n                                                that API.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "graphqlapi*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344698377": {
+      "name": "$1604344698377",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteResolver": {
+      "name": "DeleteResolver",
+      "description": "Deletes a Resolver object.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteType": {
+      "name": "DeleteType",
+      "description": "Deletes a Type object.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDataSource": {
+      "name": "GetDataSource",
+      "description": "Retrieves a DataSource object.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFunction": {
+      "name": "GetFunction",
+      "description": "Retrieves a Function object.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetGraphqlApi": {
+      "name": "GetGraphqlApi",
+      "description": "Retrieves a GraphqlApi object.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "graphqlapi*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344698378": {
+      "name": "$1604344698378",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetIntrospectionSchema": {
+      "name": "GetIntrospectionSchema",
+      "description": "Retrieves the introspection schema for a GraphQL API.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetResolver": {
+      "name": "GetResolver",
+      "description": "Retrieves a Resolver object.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSchemaCreationStatus": {
+      "name": "GetSchemaCreationStatus",
+      "description": "Retrieves the current status of a schema creation operation.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetType": {
+      "name": "GetType",
+      "description": "Retrieves a Type object.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GraphQL": {
+      "name": "GraphQL",
+      "description": "Sends a GraphQL query to a GraphQL API.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "field*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "graphqlapi*": {
+      "name": "graphqlapi*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ListApiKeys": {
+      "name": "ListApiKeys",
+      "description": "Lists the API keys for a given API.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDataSources": {
+      "name": "ListDataSources",
+      "description": "Lists the data sources for a given API.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFunctions": {
+      "name": "ListFunctions",
+      "description": "Lists the functions for a given API.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGraphqlApis": {
+      "name": "ListGraphqlApis",
+      "description": "Lists your GraphQL APIs.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListResolvers": {
+      "name": "ListResolvers",
+      "description": "Lists the resolvers for a given API and type.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListResolversByFunction": {
+      "name": "ListResolversByFunction",
+      "description": "List the resolvers that are associated with a specific function.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "List the tags for a resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "graphqlapi"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344698380": {
+      "name": "$1604344698380",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ListTypes": {
+      "name": "ListTypes",
+      "description": "Lists the types for a given API.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetWebACL": {
+      "name": "SetWebACL",
+      "description": "Gives WebAcl permissions to WAF.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartSchemaCreation": {
+      "name": "StartSchemaCreation",
+      "description": "Adds a new schema to your GraphQL API. This operation is asynchronous - GetSchemaCreationStatus\n                                                can show when it has completed.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Tag a resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "graphqlapi"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Untag a resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "graphqlapi"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344698381": {
+      "name": "$1604344698381",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateApiKey": {
+      "name": "UpdateApiKey",
+      "description": "Updates an API key for a given API.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDataSource": {
+      "name": "UpdateDataSource",
+      "description": "Updates a DataSource object.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateFunction": {
+      "name": "UpdateFunction",
+      "description": "Updates an existing Function object.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateGraphqlApi": {
+      "name": "UpdateGraphqlApi",
+      "description": "Updates a GraphqlApi object.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "graphqlapi*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:CreateServiceLinkedRole"
+    },
+    "UpdateResolver": {
+      "name": "UpdateResolver",
+      "description": "Updates a Resolver object.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateType": {
+      "name": "UpdateType",
+      "description": "Updates a Type object.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS AppSync"
+}

@@ -1,0 +1,1402 @@
+{
+  "servicePrefix": "chime",
+  "actions": {
+    "AcceptDelegate": {
+      "name": "AcceptDelegate",
+      "description": "Grants permission to accept the delegate invitation to share management of an Amazon\n                                                Chime account with another AWS Account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ActivateUsers": {
+      "name": "ActivateUsers",
+      "description": "Grants permission to activate users in an Amazon Chime Enterprise account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AddDomain": {
+      "name": "AddDomain",
+      "description": "Grants permission to add a domain to your Amazon Chime account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AddOrUpdateGroups": {
+      "name": "AddOrUpdateGroups",
+      "description": "Grants permission to add new or update existing Active Directory or Okta user groups\n                                                associated with your Amazon Chime Enterprise account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociatePhoneNumberWithUser": {
+      "name": "AssociatePhoneNumberWithUser",
+      "description": "Grants permission to associate a phone number with an Amazon Chime user",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociatePhoneNumbersWithVoiceConnector": {
+      "name": "AssociatePhoneNumbersWithVoiceConnector",
+      "description": "Grants permission to associate multiple phone numbers with an Amazon Chime Voice Connector",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociatePhoneNumbersWithVoiceConnectorGroup": {
+      "name": "AssociatePhoneNumbersWithVoiceConnectorGroup",
+      "description": "Grants permission to associate multiple phone numbers with an Amazon Chime Voice Connector\n                                                Group",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociateSigninDelegateGroupsWithAccount": {
+      "name": "AssociateSigninDelegateGroupsWithAccount",
+      "description": "Grants permission to associate the specified sign-in delegate groups with the specified\n                                                Amazon Chime account.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AuthorizeDirectory": {
+      "name": "AuthorizeDirectory",
+      "description": "Grants permission to authorize an Active Directory for your Amazon Chime Enterprise\n                                                account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchCreateAttendee": {
+      "name": "BatchCreateAttendee",
+      "description": "Grants permission to create new attendees for an active Amazon Chime SDK meeting",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "meeting*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchCreateRoomMembership": {
+      "name": "BatchCreateRoomMembership",
+      "description": "Grants permission to batch add room members",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchDeletePhoneNumber": {
+      "name": "BatchDeletePhoneNumber",
+      "description": "Grants permission to move up to 50 phone numbers to the deletion queue",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchSuspendUser": {
+      "name": "BatchSuspendUser",
+      "description": "Grants permission to suspend up to 50 users from a Team or EnterpriseLWA Amazon Chime\n                                                account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchUnsuspendUser": {
+      "name": "BatchUnsuspendUser",
+      "description": "Grants permission to remove the suspension from up to 50 previously suspended users\n                                                for the specified Amazon Chime EnterpriseLWA account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchUpdatePhoneNumber": {
+      "name": "BatchUpdatePhoneNumber",
+      "description": "Grants permission to update phone number details within the UpdatePhoneNumberRequestItem\n                                                object for up to 50 phone numbers",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchUpdateUser": {
+      "name": "BatchUpdateUser",
+      "description": "Grants permission to update user details within the UpdateUserRequestItem object for\n                                                up to 20 users for the specified Amazon Chime account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ConnectDirectory": {
+      "name": "ConnectDirectory",
+      "description": "Grants permission to connect an Active Directory to your Amazon Chime Enterprise account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "ds:ConnectDirectory"
+    },
+    "CreateAccount": {
+      "name": "CreateAccount",
+      "description": "Grants permission to create an Amazon Chime account under the administrator's AWS\n                                                account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateApiKey": {
+      "name": "CreateApiKey",
+      "description": "Grants permission to create a new SCIM access key for your Amazon Chime account and\n                                                Okta configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAttendee": {
+      "name": "CreateAttendee",
+      "description": "Grants permission to create a new attendee for an active Amazon Chime SDK meeting",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "meeting*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateBot": {
+      "name": "CreateBot",
+      "description": "Grants permission to create a bot for an Amazon Chime Enterprise account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateBotMembership": {
+      "name": "CreateBotMembership",
+      "description": "Grants permission to add a bot to a chat room in your Amazon Chime Enterprise account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateCDRBucket": {
+      "name": "CreateCDRBucket",
+      "description": "Grants permission to create a new Call Detail Record S3 bucket",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "s3:CreateBucket\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:ListAllMyBuckets"
+    },
+    "CreateMeeting": {
+      "name": "CreateMeeting",
+      "description": "Grants permission to create a new Amazon Chime SDK meeting in the specified media\n                                                Region, with no initial attendees",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateMeetingWithAttendees": {
+      "name": "CreateMeetingWithAttendees",
+      "description": "Grants permission to create a new Amazon Chime SDK meeting in the specified media\n                                                Region, with a set of attendees",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreatePhoneNumberOrder": {
+      "name": "CreatePhoneNumberOrder",
+      "description": "Grants permission to create a phone number order with the Carriers",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateProxySession": {
+      "name": "CreateProxySession",
+      "description": "Grants permission to create a proxy session for the specified Amazon Chime Voice Connector",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateRoom": {
+      "name": "CreateRoom",
+      "description": "Grants permission to create a room",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateRoomMembership": {
+      "name": "CreateRoomMembership",
+      "description": "Grants permission to add a room member",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateUser": {
+      "name": "CreateUser",
+      "description": "Grants permission to create a user under the specified Amazon Chime account.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateVoiceConnector": {
+      "name": "CreateVoiceConnector",
+      "description": "Grants permission to create a Amazon Chime Voice Connector under the administrator's\n                                                AWS account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateVoiceConnectorGroup": {
+      "name": "CreateVoiceConnectorGroup",
+      "description": "Grants permission to create a Amazon Chime Voice Connector Group under the administrator's\n                                                AWS account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAccount": {
+      "name": "DeleteAccount",
+      "description": "Grants permission to delete the specified Amazon Chime account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAccountOpenIdConfig": {
+      "name": "DeleteAccountOpenIdConfig",
+      "description": "Grants permission to delete the OpenIdConfig attributes from your Amazon Chime account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteApiKey": {
+      "name": "DeleteApiKey",
+      "description": "Grants permission to delete the specified SCIM access key associated with your Amazon\n                                                Chime account and Okta configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAttendee": {
+      "name": "DeleteAttendee",
+      "description": "Grants permission to delete the specified attendee from an Amazon Chime SDK meeting",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "meeting*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteCDRBucket": {
+      "name": "DeleteCDRBucket",
+      "description": "Grants permission to delete a Call Detail Record S3 bucket from your Amazon Chime\n                                                account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "s3:DeleteBucket"
+    },
+    "DeleteDelegate": {
+      "name": "DeleteDelegate",
+      "description": "Grants permission to delete delegated AWS account management from your Amazon Chime\n                                                account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDomain": {
+      "name": "DeleteDomain",
+      "description": "Grants permission to delete a domain from your Amazon Chime account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteEventsConfiguration": {
+      "name": "DeleteEventsConfiguration",
+      "description": "Grants permission to delete an events configuration for a bot to receive outgoing\n                                                events",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteGroups": {
+      "name": "DeleteGroups",
+      "description": "Grants permission to delete Active Directory or Okta user groups from your Amazon\n                                                Chime Enterprise account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteMeeting": {
+      "name": "DeleteMeeting",
+      "description": "Grants permission to delete the specified Amazon Chime SDK meeting",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "meeting*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeletePhoneNumber": {
+      "name": "DeletePhoneNumber",
+      "description": "Grants permission to move a phone number to the deletion queue",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteProxySession": {
+      "name": "DeleteProxySession",
+      "description": "Grants permission to delete a proxy session for the specified Amazon Chime Voice Connector",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRoom": {
+      "name": "DeleteRoom",
+      "description": "Grants permission to delete a room",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRoomMembership": {
+      "name": "DeleteRoomMembership",
+      "description": "Grants permission to remove a room member",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteVoiceConnector": {
+      "name": "DeleteVoiceConnector",
+      "description": "Grants permission to delete the specified Amazon Chime Voice Connector",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteVoiceConnectorEmergencyCallingConfiguration": {
+      "name": "DeleteVoiceConnectorEmergencyCallingConfiguration",
+      "description": "Grants permission to delete emergency calling configuration for the specified Amazon\n                                                Chime Voice Connector",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteVoiceConnectorGroup": {
+      "name": "DeleteVoiceConnectorGroup",
+      "description": "Grants permission to delete the specified Amazon Chime Voice Connector Group",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteVoiceConnectorOrigination": {
+      "name": "DeleteVoiceConnectorOrigination",
+      "description": "Grants permission to delete the origination settings for the specified Amazon Chime\n                                                Voice Connector",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteVoiceConnectorProxy": {
+      "name": "DeleteVoiceConnectorProxy",
+      "description": "Grants permission to delete proxy configuration for the specified Amazon Chime Voice\n                                                Connector",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteVoiceConnectorStreamingConfiguration": {
+      "name": "DeleteVoiceConnectorStreamingConfiguration",
+      "description": "Grants permission to delete streaming configuration for the specified Amazon Chime\n                                                Voice Connector",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteVoiceConnectorTermination": {
+      "name": "DeleteVoiceConnectorTermination",
+      "description": "Grants permission to delete the termination settings for the specified Amazon Chime\n                                                Voice Connector",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteVoiceConnectorTerminationCredentials": {
+      "name": "DeleteVoiceConnectorTerminationCredentials",
+      "description": "Grants permission to delete SIP termination credentials for the specified Amazon Chime\n                                                Voice Connector",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociatePhoneNumberFromUser": {
+      "name": "DisassociatePhoneNumberFromUser",
+      "description": "Grants permission to disassociate the primary provisioned number from the specified\n                                                Amazon Chime user",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociatePhoneNumbersFromVoiceConnector": {
+      "name": "DisassociatePhoneNumbersFromVoiceConnector",
+      "description": "Grants permission to disassociate multiple phone numbers from the specified Amazon\n                                                Chime Voice Connector",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociatePhoneNumbersFromVoiceConnectorGroup": {
+      "name": "DisassociatePhoneNumbersFromVoiceConnectorGroup",
+      "description": "Grants permission to disassociate multiple phone numbers from the specified Amazon\n                                                Chime Voice Connector Group",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateSigninDelegateGroupsFromAccount": {
+      "name": "DisassociateSigninDelegateGroupsFromAccount",
+      "description": "Grants permission to disassociate the specified sign-in delegate groups from the specified\n                                                Amazon Chime account.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisconnectDirectory": {
+      "name": "DisconnectDirectory",
+      "description": "Grants permission to disconnect the Active Directory from your Amazon Chime Enterprise\n                                                account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAccount": {
+      "name": "GetAccount",
+      "description": "Grants permission to get details for the specified Amazon Chime account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAccountResource": {
+      "name": "GetAccountResource",
+      "description": "Grants permission to get details for the account resource associated with your Amazon\n                                                Chime account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAccountSettings": {
+      "name": "GetAccountSettings",
+      "description": "Grants permission to get account settings for the specified Amazon Chime account ID",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAccountWithOpenIdConfig": {
+      "name": "GetAccountWithOpenIdConfig",
+      "description": "Grants permission to get the account details and OpenIdConfig attributes for your\n                                                Amazon Chime account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAttendee": {
+      "name": "GetAttendee",
+      "description": "Grants permission to get attendee details for a specified meeting ID and attendee\n                                                ID",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "meeting*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBot": {
+      "name": "GetBot",
+      "description": "Grants permission to retrieve details for the specified bot",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetCDRBucket": {
+      "name": "GetCDRBucket",
+      "description": "Grants permission to get details of a Call Detail Record S3 bucket associated with\n                                                your Amazon Chime account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "s3:GetBucketAcl\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:GetBucketLocation\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:GetBucketLogging\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:GetBucketVersioning\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:GetBucketWebsite"
+    },
+    "GetDomain": {
+      "name": "GetDomain",
+      "description": "Grants permission to get domain details for a domain associated with your Amazon Chime\n                                                account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEventsConfiguration": {
+      "name": "GetEventsConfiguration",
+      "description": "Grants permission to retrieve details for an events configuration for a bot to receive\n                                                outgoing events",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetGlobalSettings": {
+      "name": "GetGlobalSettings",
+      "description": "Grants permission to get global settings related to Amazon Chime for the AWS account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMeeting": {
+      "name": "GetMeeting",
+      "description": "Grants permission to get the meeting record for a specified meeting ID",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "meeting*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMeetingDetail": {
+      "name": "GetMeetingDetail",
+      "description": "Grants permission to get attendee, connection, and other details for a meeting",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPhoneNumber": {
+      "name": "GetPhoneNumber",
+      "description": "Grants permission to get details for the specified phone number",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPhoneNumberOrder": {
+      "name": "GetPhoneNumberOrder",
+      "description": "Grants permission to get details for the specified phone number order",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPhoneNumberSettings": {
+      "name": "GetPhoneNumberSettings",
+      "description": "Grants permission to get phone number settings related to Amazon Chime for the AWS\n                                                account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetProxySession": {
+      "name": "GetProxySession",
+      "description": "Grants permission to get details of the specified proxy session for the specified\n                                                Amazon Chime Voice Connector",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRetentionSettings": {
+      "name": "GetRetentionSettings",
+      "description": "Gets the retention settings for the specified Amazon Chime account.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRoom": {
+      "name": "GetRoom",
+      "description": "Grants permission to retrieve a room",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetTelephonyLimits": {
+      "name": "GetTelephonyLimits",
+      "description": "Grants permission to get telephony limits for the AWS account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetUser": {
+      "name": "GetUser",
+      "description": "Grants permission to get details for the specified user ID",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetUserActivityReportData": {
+      "name": "GetUserActivityReportData",
+      "description": "Grants permission to get a summary of user activity on the user details page",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetUserByEmail": {
+      "name": "GetUserByEmail",
+      "description": "Grants permission to get user details for an Amazon Chime user based on the email\n                                                address in an Amazon Chime Enterprise or Team account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetUserSettings": {
+      "name": "GetUserSettings",
+      "description": "Grants permission to get user settings related to the specified Amazon Chime user",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetVoiceConnector": {
+      "name": "GetVoiceConnector",
+      "description": "Grants permission to get details for the specified Amazon Chime Voice Connector",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetVoiceConnectorEmergencyCallingConfiguration": {
+      "name": "GetVoiceConnectorEmergencyCallingConfiguration",
+      "description": "Grants permission to get details of the emergency calling configuration for the specified\n                                                Amazon Chime Voice Connector",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetVoiceConnectorGroup": {
+      "name": "GetVoiceConnectorGroup",
+      "description": "Grants permission to get details for the specified Amazon Chime Voice Connector Group",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetVoiceConnectorLoggingConfiguration": {
+      "name": "GetVoiceConnectorLoggingConfiguration",
+      "description": "Grants permission to get details of the logging configuration for the specified Amazon\n                                                Chime Voice Connector",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetVoiceConnectorOrigination": {
+      "name": "GetVoiceConnectorOrigination",
+      "description": "Grants permission to get details of the origination settings for the specified Amazon\n                                                Chime Voice Connector",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetVoiceConnectorProxy": {
+      "name": "GetVoiceConnectorProxy",
+      "description": "Grants permission to get details of the proxy configuration for the specified Amazon\n                                                Chime Voice Connector",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetVoiceConnectorStreamingConfiguration": {
+      "name": "GetVoiceConnectorStreamingConfiguration",
+      "description": "Grants permission to get details of the streaming configuration for the specified\n                                                Amazon Chime Voice Connector",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetVoiceConnectorTermination": {
+      "name": "GetVoiceConnectorTermination",
+      "description": "Grants permission to get details of the termination settings for the specified Amazon\n                                                Chime Voice Connector",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetVoiceConnectorTerminationHealth": {
+      "name": "GetVoiceConnectorTerminationHealth",
+      "description": "Grants permission to get details of the termination health for the specified Amazon\n                                                Chime Voice Connector",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "InviteDelegate": {
+      "name": "InviteDelegate",
+      "description": "Grants permission to send an invitation to accept a request for AWS account delegation\n                                                for an Amazon Chime account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "InviteUsers": {
+      "name": "InviteUsers",
+      "description": "Grants permission to invite as many as 50 users to the specified Amazon Chime account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "InviteUsersFromProvider": {
+      "name": "InviteUsersFromProvider",
+      "description": "Grants permission to invite users from a third party provider to your Amazon Chime\n                                                account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAccountUsageReportData": {
+      "name": "ListAccountUsageReportData",
+      "description": "Grants permission to list Amazon Chime account usage reporting data",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAccounts": {
+      "name": "ListAccounts",
+      "description": "Grants permission to list the Amazon Chime accounts under the administrator's AWS\n                                                account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListApiKeys": {
+      "name": "ListApiKeys",
+      "description": "Grants permission to list the SCIM access keys defined for your Amazon Chime account\n                                                and Okta configuration",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAttendeeTags": {
+      "name": "ListAttendeeTags",
+      "description": "Grants permission to list the tags applied to an Amazon Chime SDK attendee resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "meeting*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAttendees": {
+      "name": "ListAttendees",
+      "description": "Grants permission to list up to 100 attendees for a specified Amazon Chime SDK meeting",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "meeting*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListBots": {
+      "name": "ListBots",
+      "description": "Grants permission to list the bots associated with the administrator's Amazon Chime\n                                                Enterprise account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListCDRBucket": {
+      "name": "ListCDRBucket",
+      "description": "Grants permission to list Call Detail Record S3 buckets",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "s3:ListAllMyBuckets\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:ListBucket"
+    },
+    "ListCallingRegions": {
+      "name": "ListCallingRegions",
+      "description": "Grants permission to list the calling regions available for the administrator's AWS\n                                                account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDelegates": {
+      "name": "ListDelegates",
+      "description": "Grants permission to list account delegate information associated with your Amazon\n                                                Chime account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDirectories": {
+      "name": "ListDirectories",
+      "description": "Grants permission to list active Active Directories hosted in the Directory Service\n                                                of your AWS account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDomains": {
+      "name": "ListDomains",
+      "description": "Grants permission to list domains associated with your Amazon Chime account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGroups": {
+      "name": "ListGroups",
+      "description": "Grants permission to list Active Directory or Okta user groups associated with your\n                                                Amazon Chime Enterprise account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMeetingEvents": {
+      "name": "ListMeetingEvents",
+      "description": "Grants permission to list all events that occurred for a specified meeting",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMeetingTags": {
+      "name": "ListMeetingTags",
+      "description": "Grants permission to list the tags applied to an Amazon Chime SDK meeting resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "meeting*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMeetings": {
+      "name": "ListMeetings",
+      "description": "Grants permission to list up to 100 active Amazon Chime SDK meetings",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMeetingsReportData": {
+      "name": "ListMeetingsReportData",
+      "description": "Grants permission to list meetings ended during the specified date range",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPhoneNumberOrders": {
+      "name": "ListPhoneNumberOrders",
+      "description": "Grants permission to list the phone number orders under the administrator's AWS account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPhoneNumbers": {
+      "name": "ListPhoneNumbers",
+      "description": "Grants permission to list the phone numbers under the administrator's AWS account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProxySessions": {
+      "name": "ListProxySessions",
+      "description": "Grants permission to list proxy sessions for the specified Amazon Chime Voice Connector",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRoomMemberships": {
+      "name": "ListRoomMemberships",
+      "description": "Grants permission to list all room members",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRooms": {
+      "name": "ListRooms",
+      "description": "Grants permission to list rooms",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permission to list the tags applied to an Amazon Chime SDK meeting resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "meeting"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListUsers": {
+      "name": "ListUsers",
+      "description": "Grants permission to list the users that belong to the specified Amazon Chime account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListVoiceConnectorGroups": {
+      "name": "ListVoiceConnectorGroups",
+      "description": "Grants permission to list the Amazon Chime Voice Connector Groups under the administrator's\n                                                AWS account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListVoiceConnectorTerminationCredentials": {
+      "name": "ListVoiceConnectorTerminationCredentials",
+      "description": "Grants permission to list the SIP termination credentials for the specified Amazon\n                                                Chime Voice Connector",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListVoiceConnectors": {
+      "name": "ListVoiceConnectors",
+      "description": "Grants permission to list the Amazon Chime Voice Connectors under the administrator's\n                                                AWS account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "LogoutUser": {
+      "name": "LogoutUser",
+      "description": "Grants permission to log out the specified user from all of the devices they are currently\n                                                logged into",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutEventsConfiguration": {
+      "name": "PutEventsConfiguration",
+      "description": "Grants permission to update details for an events configuration for a bot to receive\n                                                outgoing events",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutRetentionSettings": {
+      "name": "PutRetentionSettings",
+      "description": "Puts retention settings for the specified Amazon Chime account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutVoiceConnectorEmergencyCallingConfiguration": {
+      "name": "PutVoiceConnectorEmergencyCallingConfiguration",
+      "description": "Grants permission to add emergency calling configuration for the specified Amazon\n                                                Chime Voice Connector",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutVoiceConnectorLoggingConfiguration": {
+      "name": "PutVoiceConnectorLoggingConfiguration",
+      "description": "Grants permission to add logging configuration for the specified Amazon Chime Voice\n                                                Connector",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "logs:CreateLogDelivery\n                                                   \n                                                \n                                                \n                                                \n                                                   logs:CreateLogGroup\n                                                   \n                                                \n                                                \n                                                \n                                                   logs:DeleteLogDelivery\n                                                   \n                                                \n                                                \n                                                \n                                                   logs:DescribeLogGroups\n                                                   \n                                                \n                                                \n                                                \n                                                   logs:GetLogDelivery\n                                                   \n                                                \n                                                \n                                                \n                                                   logs:ListLogDeliveries"
+    },
+    "PutVoiceConnectorOrigination": {
+      "name": "PutVoiceConnectorOrigination",
+      "description": "Grants permission to update the origination settings for the specified Amazon Chime\n                                                Voice Connector",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutVoiceConnectorProxy": {
+      "name": "PutVoiceConnectorProxy",
+      "description": "Grants permission to add proxy configuration for the specified Amazon Chime Voice\n                                                Connector",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutVoiceConnectorStreamingConfiguration": {
+      "name": "PutVoiceConnectorStreamingConfiguration",
+      "description": "Grants permission to add streaming configuration for the specified Amazon Chime Voice\n                                                Connector",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutVoiceConnectorTermination": {
+      "name": "PutVoiceConnectorTermination",
+      "description": "Grants permission to update the termination settings for the specified Amazon Chime\n                                                Voice Connector",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutVoiceConnectorTerminationCredentials": {
+      "name": "PutVoiceConnectorTerminationCredentials",
+      "description": "Grants permission to add SIP termination credentials for the specified Amazon Chime\n                                                Voice Connector",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RedactConversationMessage": {
+      "name": "RedactConversationMessage",
+      "description": "Redacts the specified Chime conversation Message",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RedactRoomMessage": {
+      "name": "RedactRoomMessage",
+      "description": "Redacts the specified Chime room Message",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegenerateSecurityToken": {
+      "name": "RegenerateSecurityToken",
+      "description": "Grants permission to regenerate the security token for the specified bot",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RenameAccount": {
+      "name": "RenameAccount",
+      "description": "Grants permission to modify the account name for your Amazon Chime Enterprise or Team\n                                                account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RenewDelegate": {
+      "name": "RenewDelegate",
+      "description": "Grants permission to renew the delegation request associated with an Amazon Chime\n                                                account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ResetAccountResource": {
+      "name": "ResetAccountResource",
+      "description": "Grants permission to reset the account resource in your Amazon Chime account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ResetPersonalPIN": {
+      "name": "ResetPersonalPIN",
+      "description": "Grants permission to reset the personal meeting PIN for the specified user on an Amazon\n                                                Chime account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RestorePhoneNumber": {
+      "name": "RestorePhoneNumber",
+      "description": "Grants permission to restore the specified phone number from the deltion queue back\n                                                to the phone number inventory",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RetrieveDataExports": {
+      "name": "RetrieveDataExports",
+      "description": "Grants permission to download the file containing links to all user attachments returned\n                                                as part of the \"Request attachments\" action",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchAvailablePhoneNumbers": {
+      "name": "SearchAvailablePhoneNumbers",
+      "description": "Grants permission to search phone numbers that can be ordered from the carrier",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartDataExport": {
+      "name": "StartDataExport",
+      "description": "Grants permission to submit the \"Request attachments\" request",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SubmitSupportRequest": {
+      "name": "SubmitSupportRequest",
+      "description": "Grants permission to submit a customer service support request",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SuspendUsers": {
+      "name": "SuspendUsers",
+      "description": "Grants permission to suspend users from an Amazon Chime Enterprise account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagAttendee": {
+      "name": "TagAttendee",
+      "description": "Grants permission to apply the specified tags to the specified Amazon Chime SDK attendee",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "meeting*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagMeeting": {
+      "name": "TagMeeting",
+      "description": "Grants permission to apply the specified tags to the specified Amazon Chime SDK meeting.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "meeting*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344717916": {
+      "name": "$1604344717916",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permission to apply the specified tags to the specified Amazon Chime SDK meeting\n                                                resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "meeting"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344717917": {
+      "name": "$1604344717917",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UnauthorizeDirectory": {
+      "name": "UnauthorizeDirectory",
+      "description": "Grants permission to unauthorize an Active Directory from your Amazon Chime Enterprise\n                                                account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagAttendee": {
+      "name": "UntagAttendee",
+      "description": "Grants permission to untag the specified tags from the specified Amazon Chime SDK\n                                                attendee.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "meeting*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagMeeting": {
+      "name": "UntagMeeting",
+      "description": "Grants permission to untag the specified tags from the specified Amazon Chime SDK\n                                                meeting.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "meeting*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permission to untag the specified tags from the specified Amazon Chime SDK\n                                                meeting resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "meeting"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAccount": {
+      "name": "UpdateAccount",
+      "description": "Grants permission to update account details for the specified Amazon Chime account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAccountOpenIdConfig": {
+      "name": "UpdateAccountOpenIdConfig",
+      "description": "Grants permission to update the OpenIdConfig attributes for your Amazon Chime account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAccountResource": {
+      "name": "UpdateAccountResource",
+      "description": "Grants permission to update the account resource in your Amazon Chime account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAccountSettings": {
+      "name": "UpdateAccountSettings",
+      "description": "Grants permission to update the settings for the specified Amazon Chime account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateBot": {
+      "name": "UpdateBot",
+      "description": "Grants permission to update the status of the specified bot",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateCDRSettings": {
+      "name": "UpdateCDRSettings",
+      "description": "Grants permission to update your Call Detail Record S3 bucket",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "s3:CreateBucket\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:DeleteBucket\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:ListAllMyBuckets"
+    },
+    "UpdateGlobalSettings": {
+      "name": "UpdateGlobalSettings",
+      "description": "Grants permission to update the global settings related to Amazon Chime for the AWS\n                                                account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdatePhoneNumber": {
+      "name": "UpdatePhoneNumber",
+      "description": "Grants permission to update phone number details for the specified phone number",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdatePhoneNumberSettings": {
+      "name": "UpdatePhoneNumberSettings",
+      "description": "Grants permission to update phone number settings related to Amazon Chime for the\n                                                AWS account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateProxySession": {
+      "name": "UpdateProxySession",
+      "description": "Grants permission to update a proxy session for the specified Amazon Chime Voice Connector",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRoom": {
+      "name": "UpdateRoom",
+      "description": "Grants permission to update a room",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRoomMembership": {
+      "name": "UpdateRoomMembership",
+      "description": "Grants permission to update room membership role",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSupportedLicenses": {
+      "name": "UpdateSupportedLicenses",
+      "description": "Grants permission to update the supported license tiers available for users in your\n                                                Amazon Chime account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateUser": {
+      "name": "UpdateUser",
+      "description": "Grants permission to update user details for a specified user ID",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateUserLicenses": {
+      "name": "UpdateUserLicenses",
+      "description": "Grants permission to update the licenses for your Amazon Chime users",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateUserSettings": {
+      "name": "UpdateUserSettings",
+      "description": "Grants permission to update user settings related to the specified Amazon Chime user",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateVoiceConnector": {
+      "name": "UpdateVoiceConnector",
+      "description": "Grants permission to update Amazon Chime Voice Connector details for the specified\n                                                Amazon Chime Voice Connector",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateVoiceConnectorGroup": {
+      "name": "UpdateVoiceConnectorGroup",
+      "description": "Grants permission to update Amazon Chime Voice Connector Group details for the specified\n                                                Amazon Chime Voice Connector Group",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ValidateAccountResource": {
+      "name": "ValidateAccountResource",
+      "description": "Grants permission to validate the account resource in your Amazon Chime account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Chime"
+}

@@ -1,0 +1,168 @@
+{
+  "servicePrefix": "detective",
+  "actions": {
+    "AcceptInvitation": {
+      "name": "AcceptInvitation",
+      "description": "Grants permission to accept an invitation to become a member of a behavior graph",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Graph*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateGraph": {
+      "name": "CreateGraph",
+      "description": "Grants permission to create a behavior graph and begin to aggregate security information",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateMembers": {
+      "name": "CreateMembers",
+      "description": "Grants permission to request the membership of one or more accounts in a behavior\n                                                graph managed by this account",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Graph*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteGraph": {
+      "name": "DeleteGraph",
+      "description": "Grants permission to delete a behavior graph and stop aggregating security information",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Graph*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteMembers": {
+      "name": "DeleteMembers",
+      "description": "Grants permission to remove member accounts from a behavior graph managed by this\n                                                account",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Graph*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateMembership": {
+      "name": "DisassociateMembership",
+      "description": "Grants permission to remove the association of this account with a behavior graph",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Graph*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFreeTrialEligibility": {
+      "name": "GetFreeTrialEligibility",
+      "description": "Grants permission to retrieve a behavior graph's eligibility for a free trial period",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Graph*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetGraphIngestState": {
+      "name": "GetGraphIngestState",
+      "description": "Grants permission to retrieve the data ingestion state of a behavior graph",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Graph*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMembers": {
+      "name": "GetMembers",
+      "description": "Grants permission to retrieve details on specified members of a behavior graph",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Graph*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPricingInformation": {
+      "name": "GetPricingInformation",
+      "description": "Grants permission to retrieve information about Amazon Detective's pricing",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetUsageInformation": {
+      "name": "GetUsageInformation",
+      "description": "Grants permission to list usage information of a behavior graph",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Graph*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGraphs": {
+      "name": "ListGraphs",
+      "description": "Grants permission to list behavior graphs managed by this account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListInvitations": {
+      "name": "ListInvitations",
+      "description": "Grants permission to retrieve details on the behavior graphs to which this account\n                                                has been invited to join",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMembers": {
+      "name": "ListMembers",
+      "description": "Grants permission to retrieve details on all members of a behavior graph",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "Graph*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RejectInvitation": {
+      "name": "RejectInvitation",
+      "description": "Grants permission to reject an invitation to become a member of a behavior graph",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Graph*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchGraph": {
+      "name": "SearchGraph",
+      "description": "Grants permission to search the data stored in a behavior graph",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Graph*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartMonitoringMember": {
+      "name": "StartMonitoringMember",
+      "description": "Grants permission to start data ingest for a member account that has a status of ACCEPTED_BUT_DISABLED.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Graph*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Detective"
+}

@@ -1,0 +1,338 @@
+{
+  "servicePrefix": "glacier",
+  "actions": {
+    "AbortMultipartUpload": {
+      "name": "AbortMultipartUpload",
+      "description": "Aborts a multipart upload identified by the upload ID",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AbortVaultLock": {
+      "name": "AbortVaultLock",
+      "description": "Aborts the vault locking process if the vault lock is not in the Locked state",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AddTagsToVault": {
+      "name": "AddTagsToVault",
+      "description": "Adds the specified tags to a vault",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CompleteMultipartUpload": {
+      "name": "CompleteMultipartUpload",
+      "description": "Completes a multipart upload process",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CompleteVaultLock": {
+      "name": "CompleteVaultLock",
+      "description": "Completes the vault locking process",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateVault": {
+      "name": "CreateVault",
+      "description": "Creates a new vault with the specified name",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteArchive": {
+      "name": "DeleteArchive",
+      "description": "Deletes an archive from a vault",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344701706": {
+      "name": "$1604344701706",
+      "description": "glacier:ArchiveAgeInDays",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteVault": {
+      "name": "DeleteVault",
+      "description": "Deletes a vault",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteVaultAccessPolicy": {
+      "name": "DeleteVaultAccessPolicy",
+      "description": "Deletes the access policy associated with the specified vault",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteVaultNotifications": {
+      "name": "DeleteVaultNotifications",
+      "description": "Deletes the notification configuration set for a vault",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeJob": {
+      "name": "DescribeJob",
+      "description": "Returns information about a job you previously initiated",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeVault": {
+      "name": "DescribeVault",
+      "description": "Returns information about a vault",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDataRetrievalPolicy": {
+      "name": "GetDataRetrievalPolicy",
+      "description": "Returns the current data retrieval policy for the account and region specified in\n                                                the GET request",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetJobOutput": {
+      "name": "GetJobOutput",
+      "description": "Downloads the output of the job you initiated",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetVaultAccessPolicy": {
+      "name": "GetVaultAccessPolicy",
+      "description": "Retrieves the access-policy subresource set on the vault",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetVaultLock": {
+      "name": "GetVaultLock",
+      "description": "Retrieves attributes from the lock-policy subresource set on the specified vault",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetVaultNotifications": {
+      "name": "GetVaultNotifications",
+      "description": "Retrieves the notification-configuration subresource set on the vault",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "InitiateJob": {
+      "name": "InitiateJob",
+      "description": "Initiates a job of the specified type",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344701707": {
+      "name": "$1604344701707",
+      "description": "glacier:ArchiveAgeInDays",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "InitiateMultipartUpload": {
+      "name": "InitiateMultipartUpload",
+      "description": "Initiates a multipart upload",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "InitiateVaultLock": {
+      "name": "InitiateVaultLock",
+      "description": "Initiates the vault locking process",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListJobs": {
+      "name": "ListJobs",
+      "description": "Lists jobs for a vault that are in-progress and jobs that have recently finished",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMultipartUploads": {
+      "name": "ListMultipartUploads",
+      "description": "Lists in-progress multipart uploads for the specified vault",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListParts": {
+      "name": "ListParts",
+      "description": "Lists the parts of an archive that have been uploaded in a specific multipart upload",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProvisionedCapacity": {
+      "name": "ListProvisionedCapacity",
+      "description": "This operation lists the provisioned capacity for the specified AWS account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForVault": {
+      "name": "ListTagsForVault",
+      "description": "Lists all the tags attached to a vault",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListVaults": {
+      "name": "ListVaults",
+      "description": "Lists all vaults",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PurchaseProvisionedCapacity": {
+      "name": "PurchaseProvisionedCapacity",
+      "description": "This operation purchases a provisioned capacity unit for an AWS account.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemoveTagsFromVault": {
+      "name": "RemoveTagsFromVault",
+      "description": "Removes one or more tags from the set of tags attached to a vault",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetDataRetrievalPolicy": {
+      "name": "SetDataRetrievalPolicy",
+      "description": "Sets and then enacts a data retrieval policy in the region specified in the PUT request",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetVaultAccessPolicy": {
+      "name": "SetVaultAccessPolicy",
+      "description": "Configures an access policy for a vault and will overwrite an existing policy",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetVaultNotifications": {
+      "name": "SetVaultNotifications",
+      "description": "Configures vault notifications",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UploadArchive": {
+      "name": "UploadArchive",
+      "description": "Adds an archive to a vault",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UploadMultipartPart": {
+      "name": "UploadMultipartPart",
+      "description": "Uploads a part of an archive",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "vault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Glacier"
+}

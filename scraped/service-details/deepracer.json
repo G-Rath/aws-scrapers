@@ -1,0 +1,260 @@
+{
+  "servicePrefix": "deepracer",
+  "actions": {
+    "CloneReinforcementLearningModel": {
+      "name": "CloneReinforcementLearningModel",
+      "description": "Grants permission to clone existing DeepRacer models",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "reinforcement_learning_model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "track*": {
+      "name": "track*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateAccountResources": {
+      "name": "CreateAccountResources",
+      "description": "Grants permission to create resources needed by DeepRacer on behalf of the user",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateLeaderboardSubmission": {
+      "name": "CreateLeaderboardSubmission",
+      "description": "Grants permission to submit DeepRacer models to be evaluated for leaderboards",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "leaderboard*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "reinforcement_learning_model*": {
+      "name": "reinforcement_learning_model*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateReinforcementLearningModel": {
+      "name": "CreateReinforcementLearningModel",
+      "description": "Grants permission to create reinforcement learning models for DeepRacer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "track*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAccountResources": {
+      "name": "DeleteAccountResources",
+      "description": "Grants permission to delete resources created by DeepRacer on behalf of the user",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteModel": {
+      "name": "DeleteModel",
+      "description": "Grants permission to delete DeepRacer models",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "reinforcement_learning_model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAccountResources": {
+      "name": "GetAccountResources",
+      "description": "Grants permission to retrieve the resources created by DeepRacer on behalf of the\n                                                user",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAlias": {
+      "name": "GetAlias",
+      "description": "Grants permission to retrieve the user's alias for submitting DeepRacer models to\n                                                leaderboards",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEvaluation": {
+      "name": "GetEvaluation",
+      "description": "Grants permission to retrieve information about existing DeepRacer models' evaluation\n                                                jobs",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "evaluation_job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLatestUserSubmission": {
+      "name": "GetLatestUserSubmission",
+      "description": "Grants permission to retrieve information about how the latest submitted DeepRacer\n                                                model for a user performed on a leaderboard",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "leaderboard*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLeaderboard": {
+      "name": "GetLeaderboard",
+      "description": "Grants permission to retrieve information about leaderboards",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "leaderboard*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetModel": {
+      "name": "GetModel",
+      "description": "Grants permission to retrieve information about existing DeepRacer models",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "reinforcement_learning_model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRankedUserSubmission": {
+      "name": "GetRankedUserSubmission",
+      "description": "Grants permission to retrieve information about the performance of a user's DeepRacer\n                                                model that got placed on a leaderboard",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "leaderboard*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetTrack": {
+      "name": "GetTrack",
+      "description": "Grants permission to retrieve information about DeepRacer tracks",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "track*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetTrainingJob": {
+      "name": "GetTrainingJob",
+      "description": "Grants permission to retrieve information about existing DeepRacer models' training\n                                                job",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "training_job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEvaluations": {
+      "name": "ListEvaluations",
+      "description": "Grants permission to list DeepRacer models' evaluation jobs",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "reinforcement_learning_model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListLeaderboardSubmissions": {
+      "name": "ListLeaderboardSubmissions",
+      "description": "Grants permission to list all the submissions of DeepRacer models of a user on a leaderboard",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "leaderboard*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListLeaderboards": {
+      "name": "ListLeaderboards",
+      "description": "Grants permission to list all the available leaderboards",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListModels": {
+      "name": "ListModels",
+      "description": "Grants permission to list all existing DeepRacer models",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTracks": {
+      "name": "ListTracks",
+      "description": "Grants permission to list all DeepRacer tracks",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTrainingJobs": {
+      "name": "ListTrainingJobs",
+      "description": "Grants permission to list DeepRacer models' training jobs",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "reinforcement_learning_model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetAlias": {
+      "name": "SetAlias",
+      "description": "Grants permission to set the user's alias for submitting DeepRacer models to leaderboards",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartEvaluation": {
+      "name": "StartEvaluation",
+      "description": "Grants permission to evaluate DeepRacer models in a simulated environment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "reinforcement_learning_model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopEvaluation": {
+      "name": "StopEvaluation",
+      "description": "Grants permission to stop DeepRacer model evaluations",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "evaluation_job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopTrainingReinforcementLearningModel": {
+      "name": "StopTrainingReinforcementLearningModel",
+      "description": "Grants permission to stop training DeepRacer models",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "reinforcement_learning_model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TestRewardFunction": {
+      "name": "TestRewardFunction",
+      "description": "Grants permission to test reward functions for correctness",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS DeepRacer"
+}

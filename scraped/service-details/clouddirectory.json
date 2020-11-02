@@ -1,0 +1,628 @@
+{
+  "servicePrefix": "clouddirectory",
+  "actions": {
+    "AddFacetToObject": {
+      "name": "AddFacetToObject",
+      "description": "Adds a new Facet to an object.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ApplySchema": {
+      "name": "ApplySchema",
+      "description": "Copies input published schema into Directory with same name and version as that of\n                                                published schema.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "publishedSchema*": {
+      "name": "publishedSchema*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "AttachObject": {
+      "name": "AttachObject",
+      "description": "Attaches an existing object to another existing object.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AttachPolicy": {
+      "name": "AttachPolicy",
+      "description": "Attaches a policy object to any other object.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AttachToIndex": {
+      "name": "AttachToIndex",
+      "description": "Attaches the specified object to the specified index.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AttachTypedLink": {
+      "name": "AttachTypedLink",
+      "description": "Attaches a typed link b/w a source & target object reference.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchRead": {
+      "name": "BatchRead",
+      "description": "Performs all the read operations in a batch. Each individual operation inside BatchRead\n                                                needs to be granted permissions explicitly.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchWrite": {
+      "name": "BatchWrite",
+      "description": "Performs all the write operations in a batch. Each individual operation inside BatchWrite\n                                                needs to be granted permissions explicitly.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDirectory": {
+      "name": "CreateDirectory",
+      "description": "Creates a Directory by copying the published schema into the directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "publishedSchema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateFacet": {
+      "name": "CreateFacet",
+      "description": "Creates a new Facet in a schema.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "appliedSchema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "developmentSchema*": {
+      "name": "developmentSchema*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateIndex": {
+      "name": "CreateIndex",
+      "description": "Creates an index object.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateObject": {
+      "name": "CreateObject",
+      "description": "Creates an object in a Directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateSchema": {
+      "name": "CreateSchema",
+      "description": "Creates a new schema in a development state.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateTypedLinkFacet": {
+      "name": "CreateTypedLinkFacet",
+      "description": "Creates a new Typed Link facet in a schema.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "appliedSchema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDirectory": {
+      "name": "DeleteDirectory",
+      "description": "Deletes a directory. Only disabled directories can be deleted.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteFacet": {
+      "name": "DeleteFacet",
+      "description": "Deletes a given Facet. All attributes and Rules associated with the facet will be\n                                                deleted.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "developmentSchema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteObject": {
+      "name": "DeleteObject",
+      "description": "Deletes an object and its associated attributes.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSchema": {
+      "name": "DeleteSchema",
+      "description": "Deletes a given schema.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "developmentSchema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteTypedLinkFacet": {
+      "name": "DeleteTypedLinkFacet",
+      "description": "Deletes a given TypedLink Facet. All attributes and Rules associated with the facet\n                                                will be deleted.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "developmentSchema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DetachFromIndex": {
+      "name": "DetachFromIndex",
+      "description": "Detaches the specified object from the specified index.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DetachObject": {
+      "name": "DetachObject",
+      "description": "Detaches a given object from the parent object.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DetachPolicy": {
+      "name": "DetachPolicy",
+      "description": "Detaches a policy from an object.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DetachTypedLink": {
+      "name": "DetachTypedLink",
+      "description": "Detaches a given typed link b/w given source and target object reference.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisableDirectory": {
+      "name": "DisableDirectory",
+      "description": "Disables the specified directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "EnableDirectory": {
+      "name": "EnableDirectory",
+      "description": "Enables the specified directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDirectory": {
+      "name": "GetDirectory",
+      "description": "Retrieves metadata about a directory.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFacet": {
+      "name": "GetFacet",
+      "description": "Gets details of the Facet, such as Facet Name, Attributes, Rules, or ObjectType.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "appliedSchema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLinkAttributes": {
+      "name": "GetLinkAttributes",
+      "description": "Retrieves attributes that are associated with a typed link.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetObjectAttributes": {
+      "name": "GetObjectAttributes",
+      "description": "Retrieves attributes within a facet that are associated with an object.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetObjectInformation": {
+      "name": "GetObjectInformation",
+      "description": "Retrieves metadata about an object.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSchemaAsJson": {
+      "name": "GetSchemaAsJson",
+      "description": "Retrieves a JSON representation of the schema.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "appliedSchema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetTypedLinkFacetInformation": {
+      "name": "GetTypedLinkFacetInformation",
+      "description": "Returns identity attributes order information associated with a given typed link facet.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "appliedSchema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAppliedSchemaArns": {
+      "name": "ListAppliedSchemaArns",
+      "description": "Lists schemas applied to a directory.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAttachedIndices": {
+      "name": "ListAttachedIndices",
+      "description": "Lists indices attached to an object.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDevelopmentSchemaArns": {
+      "name": "ListDevelopmentSchemaArns",
+      "description": "Retrieves the ARNs of schemas in the development state.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDirectories": {
+      "name": "ListDirectories",
+      "description": "Lists directories created within an account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFacetAttributes": {
+      "name": "ListFacetAttributes",
+      "description": "Retrieves attributes attached to the facet.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "appliedSchema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFacetNames": {
+      "name": "ListFacetNames",
+      "description": "Retrieves the names of facets that exist in a schema.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "appliedSchema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListIncomingTypedLinks": {
+      "name": "ListIncomingTypedLinks",
+      "description": "Returns a paginated list of all incoming TypedLinks for a given object.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListIndex": {
+      "name": "ListIndex",
+      "description": "Lists objects attached to the specified index.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListObjectAttributes": {
+      "name": "ListObjectAttributes",
+      "description": "Lists all attributes associated with an object.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListObjectChildren": {
+      "name": "ListObjectChildren",
+      "description": "Returns a paginated list of child objects associated with a given object.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListObjectParentPaths": {
+      "name": "ListObjectParentPaths",
+      "description": "Retrieves all available parent paths for any object type such as node, leaf node,\n                                                policy node, and index node objects.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListObjectParents": {
+      "name": "ListObjectParents",
+      "description": "Lists parent objects associated with a given object in pagination fashion.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListObjectPolicies": {
+      "name": "ListObjectPolicies",
+      "description": "Returns policies attached to an object in pagination fashion.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListOutgoingTypedLinks": {
+      "name": "ListOutgoingTypedLinks",
+      "description": "Returns a paginated list of all outgoing TypedLinks for a given object.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPolicyAttachments": {
+      "name": "ListPolicyAttachments",
+      "description": "Returns all of the ObjectIdentifiers to which a given policy is attached.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPublishedSchemaArns": {
+      "name": "ListPublishedSchemaArns",
+      "description": "Retrieves published schema ARNs.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Returns tags for a resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTypedLinkFacetAttributes": {
+      "name": "ListTypedLinkFacetAttributes",
+      "description": "Returns a paginated list of attributes associated with typed link facet.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "appliedSchema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTypedLinkFacetNames": {
+      "name": "ListTypedLinkFacetNames",
+      "description": "Returns a paginated list of typed link facet names that exist in a schema.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "appliedSchema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "LookupPolicy": {
+      "name": "LookupPolicy",
+      "description": "Lists all policies from the root of the Directory to the object specified.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PublishSchema": {
+      "name": "PublishSchema",
+      "description": "Publishes a development schema with a version.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "developmentSchema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutSchemaFromJson": {
+      "name": "PutSchemaFromJson",
+      "description": "Allows a schema to be updated using JSON upload. Only available for development schemas.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemoveFacetFromObject": {
+      "name": "RemoveFacetFromObject",
+      "description": "Removes the specified facet from the specified object.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Adds tags to a resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Removes tags from a resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateFacet": {
+      "name": "UpdateFacet",
+      "description": "Adds/Updates/Deletes existing Attributes, Rules, or ObjectType of a Facet.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "appliedSchema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateLinkAttributes": {
+      "name": "UpdateLinkAttributes",
+      "description": "Updates a given typed link’s attributes. Attributes to be updated must not contribute\n                                                to the typed link’s identity, as defined by its IdentityAttributeOrder.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateObjectAttributes": {
+      "name": "UpdateObjectAttributes",
+      "description": "Updates a given object's attributes.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSchema": {
+      "name": "UpdateSchema",
+      "description": "Updates the schema name with a new name.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "developmentSchema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateTypedLinkFacet": {
+      "name": "UpdateTypedLinkFacet",
+      "description": "Adds/Updates/Deletes existing Attributes, Rules, identity attribute order of a TypedLink\n                                                Facet.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "developmentSchema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Cloud Directory"
+}

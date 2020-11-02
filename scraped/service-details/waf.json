@@ -1,0 +1,790 @@
+{
+  "servicePrefix": "waf",
+  "actions": {
+    "CreateByteMatchSet": {
+      "name": "CreateByteMatchSet",
+      "description": "Creates a ByteMatchSet.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bytematchset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateGeoMatchSet": {
+      "name": "CreateGeoMatchSet",
+      "description": "Creates a GeoMatchSet, which you use to specify which web requests you want to allow\n                                                or block based on the country that the requests originate from.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "geomatchset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateIPSet": {
+      "name": "CreateIPSet",
+      "description": "Creates an IPSet, which you use to specify which web requests you want to allow or\n                                                block based on the IP addresses that the requests originate from.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ipset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateRateBasedRule": {
+      "name": "CreateRateBasedRule",
+      "description": "Creates a RateBasedRule, which contains a RateLimit specifying the maximum number\n                                                of requests that AWS WAF allows from a specified IP address in a five-minute period.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ratebasedrule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344735574": {
+      "name": "$1604344735574",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateRegexMatchSet": {
+      "name": "CreateRegexMatchSet",
+      "description": "Creates a RegexMatchSet, which you use to specify which web requests you want to allow\n                                                or block based on the regex patterns you specified in a RegexPatternSet.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "regexmatchset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateRegexPatternSet": {
+      "name": "CreateRegexPatternSet",
+      "description": "Creates a RegexPatternSet, which you use to specify the regular expression (regex)\n                                                pattern that you want AWS WAF to search for.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "regexpatternset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateRule": {
+      "name": "CreateRule",
+      "description": "Creates a Rule, which contains the IPSet objects, ByteMatchSet objects, and other\n                                                predicates that identify the requests that you want to block.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateRuleGroup": {
+      "name": "CreateRuleGroup",
+      "description": "Creates a RuleGroup. A rule group is a collection of predefined rules that you add\n                                                to a WebACL.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "rulegroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344735575": {
+      "name": "$1604344735575",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateSizeConstraintSet": {
+      "name": "CreateSizeConstraintSet",
+      "description": "Creates a SizeConstraintSet, which you use to identify the part of a web request that\n                                                you want to check for length.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "sizeconstraintset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateSqlInjectionMatchSet": {
+      "name": "CreateSqlInjectionMatchSet",
+      "description": "Creates a SqlInjectionMatchSet, which you use to allow, block, or count requests that\n                                                contain snippets of SQL code in a specified part of web requests.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "sqlinjectionmatchset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateWebACL": {
+      "name": "CreateWebACL",
+      "description": "Creates a WebACL, which contains the Rules that identify the CloudFront web requests\n                                                that you want to allow, block, or count.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "webacl*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344735576": {
+      "name": "$1604344735576",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateWebACLMigrationStack": {
+      "name": "CreateWebACLMigrationStack",
+      "description": "Create and store a CloudFormation tempalte that creates an equivalent WAF v2 WebACL\n                                                from the given WAF Classic WebACL in the given S3 bucket.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "webacl*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "s3:PutObject"
+    },
+    "CreateXssMatchSet": {
+      "name": "CreateXssMatchSet",
+      "description": "Creates an XssMatchSet, which you use to allow, block, or count requests that contain\n                                                cross-site scripting attacks in the specified part of web requests.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "xssmatchset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteByteMatchSet": {
+      "name": "DeleteByteMatchSet",
+      "description": "Permanently deletes a ByteMatchSet.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bytematchset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteGeoMatchSet": {
+      "name": "DeleteGeoMatchSet",
+      "description": "Permanently deletes an GeoMatchSet.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "geomatchset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteIPSet": {
+      "name": "DeleteIPSet",
+      "description": "Permanently deletes an IPSet.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ipset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteLoggingConfiguration": {
+      "name": "DeleteLoggingConfiguration",
+      "description": "Permanently deletes the LoggingConfiguration from the specified web ACL.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "webacl*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeletePermissionPolicy": {
+      "name": "DeletePermissionPolicy",
+      "description": "Permanently deletes an IAM policy from the specified RuleGroup.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "rulegroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRateBasedRule": {
+      "name": "DeleteRateBasedRule",
+      "description": "Permanently deletes a RateBasedRule.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ratebasedrule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRegexMatchSet": {
+      "name": "DeleteRegexMatchSet",
+      "description": "Permanently deletes an RegexMatchSet.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "regexmatchset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRegexPatternSet": {
+      "name": "DeleteRegexPatternSet",
+      "description": "Permanently deletes an RegexPatternSet.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "regexpatternset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRule": {
+      "name": "DeleteRule",
+      "description": "Permanently deletes a Rule.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRuleGroup": {
+      "name": "DeleteRuleGroup",
+      "description": "Permanently deletes a RuleGroup.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "rulegroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSizeConstraintSet": {
+      "name": "DeleteSizeConstraintSet",
+      "description": "Permanently deletes a SizeConstraintSet.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "sizeconstraintset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSqlInjectionMatchSet": {
+      "name": "DeleteSqlInjectionMatchSet",
+      "description": "Permanently deletes a SqlInjectionMatchSet.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "sqlinjectionmatchset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteWebACL": {
+      "name": "DeleteWebACL",
+      "description": "Permanently deletes a WebACL.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "webacl*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteXssMatchSet": {
+      "name": "DeleteXssMatchSet",
+      "description": "Permanently deletes an XssMatchSet.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "xssmatchset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetByteMatchSet": {
+      "name": "GetByteMatchSet",
+      "description": "Returns the ByteMatchSet specified by ByteMatchSetId.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bytematchset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetChangeToken": {
+      "name": "GetChangeToken",
+      "description": "When you want to create, update, or delete AWS WAF objects, get a change token and\n                                                include the change token in the create, update, or delete request.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetChangeTokenStatus": {
+      "name": "GetChangeTokenStatus",
+      "description": "Returns the status of a ChangeToken that you got by calling GetChangeToken.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetGeoMatchSet": {
+      "name": "GetGeoMatchSet",
+      "description": "Returns the GeoMatchSet specified by GeoMatchSetId.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "geomatchset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetIPSet": {
+      "name": "GetIPSet",
+      "description": "Returns the IPSet that is specified by IPSetId.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ipset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLoggingConfiguration": {
+      "name": "GetLoggingConfiguration",
+      "description": "Returns the LoggingConfiguration for the specified web ACL.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "webacl*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPermissionPolicy": {
+      "name": "GetPermissionPolicy",
+      "description": "Returns the IAM policy attached to the RuleGroup.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "rulegroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRateBasedRule": {
+      "name": "GetRateBasedRule",
+      "description": "Returns the RateBasedRule that is specified by the RuleId that you included in the\n                                                GetRateBasedRule request.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ratebasedrule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRateBasedRuleManagedKeys": {
+      "name": "GetRateBasedRuleManagedKeys",
+      "description": "Returns an array of IP addresses currently being blocked by the RateBasedRule that\n                                                is specified by the RuleId.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ratebasedrule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRegexMatchSet": {
+      "name": "GetRegexMatchSet",
+      "description": "Returns the RegexMatchSet specified by RegexMatchSetId.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "regexmatchset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRegexPatternSet": {
+      "name": "GetRegexPatternSet",
+      "description": "Returns the RegexPatternSet specified by RegexPatternSetId.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "regexpatternset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRule": {
+      "name": "GetRule",
+      "description": "Returns the Rule that is specified by the RuleId that you included in the GetRule\n                                                request.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRuleGroup": {
+      "name": "GetRuleGroup",
+      "description": "Returns the RuleGroup that is specified by the RuleGroupId that you included in the\n                                                GetRuleGroup request.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "rulegroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSampledRequests": {
+      "name": "GetSampledRequests",
+      "description": "Gets detailed information about a specified number of requests--a sample--that AWS\n                                                WAF randomly selects from among the first 5,000 requests that your AWS resource received\n                                                during a time range that you choose.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "rule"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "webacl": {
+      "name": "webacl",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetSizeConstraintSet": {
+      "name": "GetSizeConstraintSet",
+      "description": "Returns the SizeConstraintSet specified by SizeConstraintSetId.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "sizeconstraintset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSqlInjectionMatchSet": {
+      "name": "GetSqlInjectionMatchSet",
+      "description": "Returns the SqlInjectionMatchSet that is specified by SqlInjectionMatchSetId.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "sqlinjectionmatchset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetWebACL": {
+      "name": "GetWebACL",
+      "description": "Returns the WebACL that is specified by WebACLId.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "webacl*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetXssMatchSet": {
+      "name": "GetXssMatchSet",
+      "description": "Returns the XssMatchSet that is specified by XssMatchSetId.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "xssmatchset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListActivatedRulesInRuleGroup": {
+      "name": "ListActivatedRulesInRuleGroup",
+      "description": "Returns an array of ActivatedRule objects.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListByteMatchSets": {
+      "name": "ListByteMatchSets",
+      "description": "Returns an array of ByteMatchSetSummary objects.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGeoMatchSets": {
+      "name": "ListGeoMatchSets",
+      "description": "Returns an array of GeoMatchSetSummary objects.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListIPSets": {
+      "name": "ListIPSets",
+      "description": "Returns an array of IPSetSummary objects in the response.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListLoggingConfigurations": {
+      "name": "ListLoggingConfigurations",
+      "description": "Returns an array of LoggingConfiguration objects.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRateBasedRules": {
+      "name": "ListRateBasedRules",
+      "description": "Returns an array of RuleSummary objects.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRegexMatchSets": {
+      "name": "ListRegexMatchSets",
+      "description": "Returns an array of RegexMatchSetSummary objects.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRegexPatternSets": {
+      "name": "ListRegexPatternSets",
+      "description": "Returns an array of RegexPatternSetSummary objects.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRuleGroups": {
+      "name": "ListRuleGroups",
+      "description": "Returns an array of RuleGroup objects.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRules": {
+      "name": "ListRules",
+      "description": "Returns an array of RuleSummary objects.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSizeConstraintSets": {
+      "name": "ListSizeConstraintSets",
+      "description": "Returns an array of SizeConstraintSetSummary objects.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSqlInjectionMatchSets": {
+      "name": "ListSqlInjectionMatchSets",
+      "description": "Returns an array of SqlInjectionMatchSet objects.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSubscribedRuleGroups": {
+      "name": "ListSubscribedRuleGroups",
+      "description": "Returns an array of RuleGroup objects that you are subscribed to.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Lists the Tags for a given resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ratebasedrule"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "rule": {
+      "name": "rule",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "rulegroup": {
+      "name": "rulegroup",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ListWebACLs": {
+      "name": "ListWebACLs",
+      "description": "Returns an array of WebACLSummary objects in the response.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListXssMatchSets": {
+      "name": "ListXssMatchSets",
+      "description": "Returns an array of XssMatchSet objects.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutLoggingConfiguration": {
+      "name": "PutLoggingConfiguration",
+      "description": "Associates a LoggingConfiguration with a specified web ACL.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "webacl*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:CreateServiceLinkedRole"
+    },
+    "PutPermissionPolicy": {
+      "name": "PutPermissionPolicy",
+      "description": "Attaches a IAM policy to the specified resource. The only supported use for this action\n                                                is to share a RuleGroup across accounts.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "rulegroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Adds a Tag to a given resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "ratebasedrule"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344735596": {
+      "name": "$1604344735596",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Removes a Tag from a given resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "ratebasedrule"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344735597": {
+      "name": "$1604344735597",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateByteMatchSet": {
+      "name": "UpdateByteMatchSet",
+      "description": "Inserts or deletes ByteMatchTuple objects (filters) in a ByteMatchSet.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bytematchset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateGeoMatchSet": {
+      "name": "UpdateGeoMatchSet",
+      "description": "Inserts or deletes GeoMatchConstraint objects in a GeoMatchSet.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "geomatchset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateIPSet": {
+      "name": "UpdateIPSet",
+      "description": "Inserts or deletes IPSetDescriptor objects in an IPSet.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ipset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRateBasedRule": {
+      "name": "UpdateRateBasedRule",
+      "description": "Inserts or deletes Predicate objects in a rule and updates the RateLimit in the rule.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ratebasedrule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRegexMatchSet": {
+      "name": "UpdateRegexMatchSet",
+      "description": "Inserts or deletes RegexMatchTuple objects (filters) in a RegexMatchSet.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "regexmatchset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRegexPatternSet": {
+      "name": "UpdateRegexPatternSet",
+      "description": "Inserts or deletes RegexPatternStrings in a RegexPatternSet.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "regexpatternset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRule": {
+      "name": "UpdateRule",
+      "description": "Inserts or deletes Predicate objects in a Rule.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRuleGroup": {
+      "name": "UpdateRuleGroup",
+      "description": "Inserts or deletes ActivatedRule objects in a RuleGroup.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "rulegroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSizeConstraintSet": {
+      "name": "UpdateSizeConstraintSet",
+      "description": "Inserts or deletes SizeConstraint objects (filters) in a SizeConstraintSet.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "sizeconstraintset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSqlInjectionMatchSet": {
+      "name": "UpdateSqlInjectionMatchSet",
+      "description": "Inserts or deletes SqlInjectionMatchTuple objects (filters) in a SqlInjectionMatchSet.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "sqlinjectionmatchset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateWebACL": {
+      "name": "UpdateWebACL",
+      "description": "Inserts or deletes ActivatedRule objects in a WebACL.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "webacl*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateXssMatchSet": {
+      "name": "UpdateXssMatchSet",
+      "description": "Inserts or deletes XssMatchTuple objects (filters) in an XssMatchSet.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "xssmatchset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS WAF"
+}

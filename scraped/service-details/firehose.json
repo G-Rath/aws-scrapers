@@ -1,0 +1,142 @@
+{
+  "servicePrefix": "firehose",
+  "actions": {
+    "CreateDeliveryStream": {
+      "name": "CreateDeliveryStream",
+      "description": "Creates a delivery stream.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "deliverystream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344751214": {
+      "name": "$1604344751214",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteDeliveryStream": {
+      "name": "DeleteDeliveryStream",
+      "description": "Deletes a delivery stream and its data.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "deliverystream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDeliveryStream": {
+      "name": "DescribeDeliveryStream",
+      "description": "Describes the specified delivery stream and gets the status.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "deliverystream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDeliveryStreams": {
+      "name": "ListDeliveryStreams",
+      "description": "Lists your delivery streams.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForDeliveryStream": {
+      "name": "ListTagsForDeliveryStream",
+      "description": "Lists the tags for the specified delivery stream.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "deliverystream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutRecord": {
+      "name": "PutRecord",
+      "description": "Writes a single data record into an Amazon Kinesis Firehose delivery stream.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "deliverystream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutRecordBatch": {
+      "name": "PutRecordBatch",
+      "description": "Writes multiple data records into a delivery stream in a single call, which can achieve\n                                                higher throughput per producer than when writing single records.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "deliverystream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartDeliveryStreamEncryption": {
+      "name": "StartDeliveryStreamEncryption",
+      "description": "Enables server-side encryption (SSE) for the delivery stream.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "deliverystream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopDeliveryStreamEncryption": {
+      "name": "StopDeliveryStreamEncryption",
+      "description": "Disables the specified destination of the specified delivery stream.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "deliverystream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagDeliveryStream": {
+      "name": "TagDeliveryStream",
+      "description": "Adds or updates tags for the specified delivery stream.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "deliverystream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344751215": {
+      "name": "$1604344751215",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagDeliveryStream": {
+      "name": "UntagDeliveryStream",
+      "description": "Removes tags from the specified delivery stream.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "deliverystream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344751216": {
+      "name": "$1604344751216",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateDestination": {
+      "name": "UpdateDestination",
+      "description": "Updates the specified destination of the specified delivery stream.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "deliverystream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Kinesis Firehose"
+}

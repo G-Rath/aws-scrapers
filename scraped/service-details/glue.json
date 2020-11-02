@@ -1,0 +1,1180 @@
+{
+  "servicePrefix": "glue",
+  "actions": {
+    "BatchCreatePartition": {
+      "name": "BatchCreatePartition",
+      "description": "Grants permission to create one or more partitions",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "database*": {
+      "name": "database*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "table*": {
+      "name": "table*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "BatchDeleteConnection": {
+      "name": "BatchDeleteConnection",
+      "description": "Grants permission to delete one or more connections",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "connection*": {
+      "name": "connection*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "BatchDeletePartition": {
+      "name": "BatchDeletePartition",
+      "description": "Grants permission to delete one or more partitions",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchDeleteTable": {
+      "name": "BatchDeleteTable",
+      "description": "Grants permission to delete one or more tables",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchDeleteTableVersion": {
+      "name": "BatchDeleteTableVersion",
+      "description": "Grants permission to delete one or more versions of a table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "tableversion*": {
+      "name": "tableversion*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "BatchGetCrawlers": {
+      "name": "BatchGetCrawlers",
+      "description": "Grants permission to retrieve one or more crawlers",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchGetDevEndpoints": {
+      "name": "BatchGetDevEndpoints",
+      "description": "Grants permission to retrieve one or more development endpoints",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchGetJobs": {
+      "name": "BatchGetJobs",
+      "description": "Grants permission to retrieve one or more jobs",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchGetPartition": {
+      "name": "BatchGetPartition",
+      "description": "Grants permission to retrieve one or more partitions",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchGetTriggers": {
+      "name": "BatchGetTriggers",
+      "description": "Grants permission to retrieve one or more triggers",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchGetWorkflows": {
+      "name": "BatchGetWorkflows",
+      "description": "Grants permission to retrieve one or more workflows",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchStopJobRun": {
+      "name": "BatchStopJobRun",
+      "description": "Grants permission to stop one or more job runs for a job",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CancelMLTaskRun": {
+      "name": "CancelMLTaskRun",
+      "description": "Grants permission to stop a running ML Task Run",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "mlTransform*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateClassifier": {
+      "name": "CreateClassifier",
+      "description": "Grants permission to create a classifier",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateConnection": {
+      "name": "CreateConnection",
+      "description": "Grants permission to create a connection",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateCrawler": {
+      "name": "CreateCrawler",
+      "description": "Grants permission to create a crawler",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateDatabase": {
+      "name": "CreateDatabase",
+      "description": "Grants permission to create a database",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDevEndpoint": {
+      "name": "CreateDevEndpoint",
+      "description": "Grants permission to create a development endpoint",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateJob": {
+      "name": "CreateJob",
+      "description": "Grants permission to create a job",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateMLTransform": {
+      "name": "CreateMLTransform",
+      "description": "Grants permission to create an ML Transform",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreatePartition": {
+      "name": "CreatePartition",
+      "description": "Grants permission to create a partition",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateScript": {
+      "name": "CreateScript",
+      "description": "Grants permission to create a script",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateSecurityConfiguration": {
+      "name": "CreateSecurityConfiguration",
+      "description": "Grants permission to create a security configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateTable": {
+      "name": "CreateTable",
+      "description": "Grants permission to create a table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateTrigger": {
+      "name": "CreateTrigger",
+      "description": "Grants permission to create a trigger",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateUserDefinedFunction": {
+      "name": "CreateUserDefinedFunction",
+      "description": "Grants permission to create a function definition",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "userdefinedfunction*": {
+      "name": "userdefinedfunction*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateWorkflow": {
+      "name": "CreateWorkflow",
+      "description": "Grants permission to create a workflow",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "DeleteClassifier": {
+      "name": "DeleteClassifier",
+      "description": "Grants permission to delete a classifier",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteConnection": {
+      "name": "DeleteConnection",
+      "description": "Grants permission to delete a connection",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteCrawler": {
+      "name": "DeleteCrawler",
+      "description": "Grants permission to delete a crawler",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDatabase": {
+      "name": "DeleteDatabase",
+      "description": "Grants permission to delete a database",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDevEndpoint": {
+      "name": "DeleteDevEndpoint",
+      "description": "Grants permission to delete a development endpoint",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteJob": {
+      "name": "DeleteJob",
+      "description": "Grants permission to delete a job",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteMLTransform": {
+      "name": "DeleteMLTransform",
+      "description": "Grants permission to delete an ML Transform",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "mlTransform*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeletePartition": {
+      "name": "DeletePartition",
+      "description": "Grants permission to delete a partition",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteResourcePolicy": {
+      "name": "DeleteResourcePolicy",
+      "description": "Grants permission to delete a resource policy",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSecurityConfiguration": {
+      "name": "DeleteSecurityConfiguration",
+      "description": "Grants permission to delete a security configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteTable": {
+      "name": "DeleteTable",
+      "description": "Grants permission to delete a table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteTableVersion": {
+      "name": "DeleteTableVersion",
+      "description": "Grants permission to delete a version of a table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteTrigger": {
+      "name": "DeleteTrigger",
+      "description": "Grants permission to delete a trigger",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteUserDefinedFunction": {
+      "name": "DeleteUserDefinedFunction",
+      "description": "Grants permission to delete a function definition",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteWorkflow": {
+      "name": "DeleteWorkflow",
+      "description": "Grants permission to delete a workflow",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetCatalogImportStatus": {
+      "name": "GetCatalogImportStatus",
+      "description": "Grants permission to retrieve the catalog import status",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetClassifier": {
+      "name": "GetClassifier",
+      "description": "Grants permission to retrieve a classifier",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetClassifiers": {
+      "name": "GetClassifiers",
+      "description": "Grants permission to list all classifiers",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetConnection": {
+      "name": "GetConnection",
+      "description": "Grants permission to retrieve a connection",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetConnections": {
+      "name": "GetConnections",
+      "description": "Grants permission to retrieve a list of connections",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetCrawler": {
+      "name": "GetCrawler",
+      "description": "Grants permission to retrieve a crawler",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetCrawlerMetrics": {
+      "name": "GetCrawlerMetrics",
+      "description": "Grants permission to retrieve metrics about crawlers",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetCrawlers": {
+      "name": "GetCrawlers",
+      "description": "Grants permission to retrieve all crawlers",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDataCatalogEncryptionSettings": {
+      "name": "GetDataCatalogEncryptionSettings",
+      "description": "Grants permission to retrieve catalog encryption settings",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDatabase": {
+      "name": "GetDatabase",
+      "description": "Grants permission to retrieve a database",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDatabases": {
+      "name": "GetDatabases",
+      "description": "Grants permission to retrieve all databases",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDataflowGraph": {
+      "name": "GetDataflowGraph",
+      "description": "Grants permission to transform a script into a directed acyclic graph (DAG)",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDevEndpoint": {
+      "name": "GetDevEndpoint",
+      "description": "Grants permission to retrieve a development endpoint",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDevEndpoints": {
+      "name": "GetDevEndpoints",
+      "description": "Grants permission to retrieve all development endpoints",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetJob": {
+      "name": "GetJob",
+      "description": "Grants permission to retrieve a job",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetJobBookmark": {
+      "name": "GetJobBookmark",
+      "description": "Grants permission to retrieve a job bookmark",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetJobRun": {
+      "name": "GetJobRun",
+      "description": "Grants permission to retrieve a job run",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetJobRuns": {
+      "name": "GetJobRuns",
+      "description": "Grants permission to retrieve all job runs of a job",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetJobs": {
+      "name": "GetJobs",
+      "description": "Grants permission to retrieve all current jobs",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMLTaskRun": {
+      "name": "GetMLTaskRun",
+      "description": "Grants permission to retrieve an ML Task Run",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "mlTransform*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMLTaskRuns": {
+      "name": "GetMLTaskRuns",
+      "description": "Grants permission to retrieve all ML Task Runs",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "mlTransform*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMLTransform": {
+      "name": "GetMLTransform",
+      "description": "Grants permission to retrieve an ML Transform",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "mlTransform*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMLTransforms": {
+      "name": "GetMLTransforms",
+      "description": "Grants permission to retrieve all ML Transforms",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMapping": {
+      "name": "GetMapping",
+      "description": "Grants permission to create a mapping",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPartition": {
+      "name": "GetPartition",
+      "description": "Grants permission to retrieve a partition",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPartitions": {
+      "name": "GetPartitions",
+      "description": "Grants permission to retrieve the partitions of a table",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPlan": {
+      "name": "GetPlan",
+      "description": "Grants permission to retrieve a mapping for a script",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetResourcePolicy": {
+      "name": "GetResourcePolicy",
+      "description": "Grants permission to retrieve a resource policy",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSecurityConfiguration": {
+      "name": "GetSecurityConfiguration",
+      "description": "Grants permission to retrieve a security configuration",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSecurityConfigurations": {
+      "name": "GetSecurityConfigurations",
+      "description": "Grants permission to retrieve one or more security configurations",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetTable": {
+      "name": "GetTable",
+      "description": "Grants permission to retrieve a table",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetTableVersion": {
+      "name": "GetTableVersion",
+      "description": "Grants permission to retrieve a version of a table",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetTableVersions": {
+      "name": "GetTableVersions",
+      "description": "Grants permission to retrieve a list of versions of a table",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetTables": {
+      "name": "GetTables",
+      "description": "Grants permission to retrieve the tables in a database",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetTags": {
+      "name": "GetTags",
+      "description": "Grants permission to retrieve all tags associated with a resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "crawler"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "devendpoint": {
+      "name": "devendpoint",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "job": {
+      "name": "job",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "trigger": {
+      "name": "trigger",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "workflow": {
+      "name": "workflow",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetTrigger": {
+      "name": "GetTrigger",
+      "description": "Grants permission to retrieve a trigger",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetTriggers": {
+      "name": "GetTriggers",
+      "description": "Grants permission to retrieve the triggers associated with a job",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetUserDefinedFunction": {
+      "name": "GetUserDefinedFunction",
+      "description": "Grants permission to retrieve a function definition.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetUserDefinedFunctions": {
+      "name": "GetUserDefinedFunctions",
+      "description": "Grants permission to retrieve multiple function definitions",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetWorkflow": {
+      "name": "GetWorkflow",
+      "description": "Grants permission to retrieve a workflow",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetWorkflowRun": {
+      "name": "GetWorkflowRun",
+      "description": "Grants permission to retrieve a workflow run",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetWorkflowRunProperties": {
+      "name": "GetWorkflowRunProperties",
+      "description": "Grants permission to retrieve workflow run properties",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetWorkflowRuns": {
+      "name": "GetWorkflowRuns",
+      "description": "Grants permission to retrieve all runs of a workflow",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ImportCatalogToGlue": {
+      "name": "ImportCatalogToGlue",
+      "description": "Grants permission to import an Athena data catalog into AWS Glue",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListCrawlers": {
+      "name": "ListCrawlers",
+      "description": "Grants permission to retrieve all crawlers",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDevEndpoints": {
+      "name": "ListDevEndpoints",
+      "description": "Grants permission to retrieve all development endpoints",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListJobs": {
+      "name": "ListJobs",
+      "description": "Grants permission to retrieve all current jobs",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMLTransforms": {
+      "name": "ListMLTransforms",
+      "description": "Grants permission to retrieve all ML Transforms",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTriggers": {
+      "name": "ListTriggers",
+      "description": "Grants permission to retrieve all triggers",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListWorkflows": {
+      "name": "ListWorkflows",
+      "description": "Grants permission to retrieve all workflows",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutDataCatalogEncryptionSettings": {
+      "name": "PutDataCatalogEncryptionSettings",
+      "description": "Grants permission to update catalog encryption settings",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutResourcePolicy": {
+      "name": "PutResourcePolicy",
+      "description": "Grants permission to update a resource policy",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutWorkflowRunProperties": {
+      "name": "PutWorkflowRunProperties",
+      "description": "Grants permission to update workflow run properties",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ResetJobBookmark": {
+      "name": "ResetJobBookmark",
+      "description": "Grants permission to reset a job bookmark",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchTables": {
+      "name": "SearchTables",
+      "description": "Grants permission to retrieve the tables in the catalog",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartCrawler": {
+      "name": "StartCrawler",
+      "description": "Grants permission to start a crawler",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartCrawlerSchedule": {
+      "name": "StartCrawlerSchedule",
+      "description": "Grants permission to change the schedule state of a crawler to SCHEDULED",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartExportLabelsTaskRun": {
+      "name": "StartExportLabelsTaskRun",
+      "description": "Grants permission to start an Export Labels ML Task Run",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "mlTransform*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartImportLabelsTaskRun": {
+      "name": "StartImportLabelsTaskRun",
+      "description": "Grants permission to start an Import Labels ML Task Run",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "mlTransform*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartJobRun": {
+      "name": "StartJobRun",
+      "description": "Grants permission to start running a job",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartMLEvaluationTaskRun": {
+      "name": "StartMLEvaluationTaskRun",
+      "description": "Grants permission to start an Evaluation ML Task Run",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "mlTransform*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartMLLabelingSetGenerationTaskRun": {
+      "name": "StartMLLabelingSetGenerationTaskRun",
+      "description": "Grants permission to start a Labeling Set Generation ML Task Run",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "mlTransform*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartTrigger": {
+      "name": "StartTrigger",
+      "description": "Grants permission to start a trigger",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartWorkflowRun": {
+      "name": "StartWorkflowRun",
+      "description": "Grants permission to start running a workflow",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopCrawler": {
+      "name": "StopCrawler",
+      "description": "Grants permission to stop a running crawler",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopCrawlerSchedule": {
+      "name": "StopCrawlerSchedule",
+      "description": "Grants permission to set the schedule state of a crawler to NOT_SCHEDULED",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopTrigger": {
+      "name": "StopTrigger",
+      "description": "Grants permission to stop a trigger",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permission to add tags to a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "crawler"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344707094": {
+      "name": "$1604344707094",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permission to remove tags associated with a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "crawler"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344707099": {
+      "name": "$1604344707099",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateClassifier": {
+      "name": "UpdateClassifier",
+      "description": "Grants permission to update a classifier",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateConnection": {
+      "name": "UpdateConnection",
+      "description": "Grants permission to update a connection",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateCrawler": {
+      "name": "UpdateCrawler",
+      "description": "Grants permission to update a crawler",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateCrawlerSchedule": {
+      "name": "UpdateCrawlerSchedule",
+      "description": "Grants permission to update the schedule of a crawler",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDatabase": {
+      "name": "UpdateDatabase",
+      "description": "Grants permission to update a database",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDevEndpoint": {
+      "name": "UpdateDevEndpoint",
+      "description": "Grants permission to update a development endpoint",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateJob": {
+      "name": "UpdateJob",
+      "description": "Grants permission to update a job",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateMLTransform": {
+      "name": "UpdateMLTransform",
+      "description": "Grants permission to update an ML Transform",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "mlTransform*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdatePartition": {
+      "name": "UpdatePartition",
+      "description": "Grants permission to update a partition",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateTable": {
+      "name": "UpdateTable",
+      "description": "Grants permission to update a table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateTrigger": {
+      "name": "UpdateTrigger",
+      "description": "Grants permission to update a trigger",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateUserDefinedFunction": {
+      "name": "UpdateUserDefinedFunction",
+      "description": "Grants permission to update a function definition",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateWorkflow": {
+      "name": "UpdateWorkflow",
+      "description": "Grants permission to update a workflow",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UseMLTransforms": {
+      "name": "UseMLTransforms",
+      "description": "Grants permission to use an ML Transform from within a Glue ETL Script",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "mlTransform*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Glue"
+}

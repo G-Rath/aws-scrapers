@@ -1,0 +1,306 @@
+{
+  "servicePrefix": "ecr",
+  "actions": {
+    "BatchCheckLayerAvailability": {
+      "name": "BatchCheckLayerAvailability",
+      "description": "Grants permission to check the availability of multiple image layers in a specified\n                                                registry and repository",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchDeleteImage": {
+      "name": "BatchDeleteImage",
+      "description": "Grants permission to delete a list of specified images within a specified repository",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchGetImage": {
+      "name": "BatchGetImage",
+      "description": "Grants permission to get detailed information for specified images within a specified\n                                                repository",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CompleteLayerUpload": {
+      "name": "CompleteLayerUpload",
+      "description": "Grants permission to inform Amazon ECR that the image layer upload for a specified\n                                                registry, repository name, and upload ID, has completed",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateRepository": {
+      "name": "CreateRepository",
+      "description": "Grants permission to create an image repository",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344737830": {
+      "name": "$1604344737830",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteLifecyclePolicy": {
+      "name": "DeleteLifecyclePolicy",
+      "description": "Grants permission to delete the specified lifecycle policy",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRepository": {
+      "name": "DeleteRepository",
+      "description": "Grants permission to delete an existing image repository",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRepositoryPolicy": {
+      "name": "DeleteRepositoryPolicy",
+      "description": "Grants permission to delete the repository policy from a specified repository",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeImageScanFindings": {
+      "name": "DescribeImageScanFindings",
+      "description": "Grants permission to describe the image scan findings for the specified image",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeImages": {
+      "name": "DescribeImages",
+      "description": "Grants permission to get metadata about the images in a repository, including image\n                                                size, image tags, and creation date",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeRepositories": {
+      "name": "DescribeRepositories",
+      "description": "Grants permission to describe image repositories in a registry",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "repository"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAuthorizationToken": {
+      "name": "GetAuthorizationToken",
+      "description": "Grants permission to retrieve a token that is valid for a specified registry for 12\n                                                hours",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDownloadUrlForLayer": {
+      "name": "GetDownloadUrlForLayer",
+      "description": "Grants permission to retrieve the download URL corresponding to an image layer",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLifecyclePolicy": {
+      "name": "GetLifecyclePolicy",
+      "description": "Grants permission to retrieve the specified lifecycle policy",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLifecyclePolicyPreview": {
+      "name": "GetLifecyclePolicyPreview",
+      "description": "Grants permission to retrieve the results of the specified lifecycle policy preview\n                                                request",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRepositoryPolicy": {
+      "name": "GetRepositoryPolicy",
+      "description": "Grants permission to retrieve the repository policy for a specified repository",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "InitiateLayerUpload": {
+      "name": "InitiateLayerUpload",
+      "description": "Grants permission to notify Amazon ECR that you intend to upload an image layer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListImages": {
+      "name": "ListImages",
+      "description": "Grants permission to list all the image IDs for a given repository",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permission to list the tags for an Amazon ECR resource",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutImage": {
+      "name": "PutImage",
+      "description": "Grants permission to create or update the image manifest associated with an image",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutImageScanningConfiguration": {
+      "name": "PutImageScanningConfiguration",
+      "description": "Grants permission to update the image scanning configuration for a repository",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutImageTagMutability": {
+      "name": "PutImageTagMutability",
+      "description": "Grants permission to update the image tag mutability settings for a repository",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutLifecyclePolicy": {
+      "name": "PutLifecyclePolicy",
+      "description": "Grants permission to create or update a lifecycle policy",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetRepositoryPolicy": {
+      "name": "SetRepositoryPolicy",
+      "description": "Grants permission to apply a repository policy on a specified repository to control\n                                                access permissions",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartImageScan": {
+      "name": "StartImageScan",
+      "description": "Grants permission to start an image scan",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartLifecyclePolicyPreview": {
+      "name": "StartLifecyclePolicyPreview",
+      "description": "Grants permission to start a preview of the specified lifecycle policy",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permission to tag an Amazon ECR resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344737832": {
+      "name": "$1604344737832",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permission to untag an Amazon ECR resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UploadLayerPart": {
+      "name": "UploadLayerPart",
+      "description": "Grants permission to upload an image layer part to Amazon ECR",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Elastic Container Registry"
+}

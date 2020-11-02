@@ -1,0 +1,194 @@
+{
+  "servicePrefix": "cognito-sync",
+  "actions": {
+    "BulkPublish": {
+      "name": "BulkPublish",
+      "description": "Initiates a bulk publish of all existing datasets for an Identity Pool to the configured\n                                                stream.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "identitypool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDataset": {
+      "name": "DeleteDataset",
+      "description": "Deletes the specific dataset.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDataset": {
+      "name": "DescribeDataset",
+      "description": "Gets meta data about a dataset by identity and dataset name.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeIdentityPoolUsage": {
+      "name": "DescribeIdentityPoolUsage",
+      "description": "Gets usage details (for example, data storage) about a particular identity pool.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "identitypool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeIdentityUsage": {
+      "name": "DescribeIdentityUsage",
+      "description": "Gets usage information for an identity, including number of datasets and data usage.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBulkPublishDetails": {
+      "name": "GetBulkPublishDetails",
+      "description": "Get the status of the last BulkPublish operation for an identity pool.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "identitypool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetCognitoEvents": {
+      "name": "GetCognitoEvents",
+      "description": "Gets the events and the corresponding Lambda functions associated with an identity\n                                                pool.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "identitypool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetIdentityPoolConfiguration": {
+      "name": "GetIdentityPoolConfiguration",
+      "description": "Gets the configuration settings of an identity pool.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "identitypool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDatasets": {
+      "name": "ListDatasets",
+      "description": "Lists datasets for an identity.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListIdentityPoolUsage": {
+      "name": "ListIdentityPoolUsage",
+      "description": "Gets a list of identity pools registered with Cognito.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "identitypool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRecords": {
+      "name": "ListRecords",
+      "description": "Gets paginated records, optionally changed after a particular sync count for a dataset\n                                                and identity.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "QueryRecords": {
+      "name": "QueryRecords",
+      "description": "A permission that grants the ability to query records.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterDevice": {
+      "name": "RegisterDevice",
+      "description": "Registers a device to receive push sync notifications.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetCognitoEvents": {
+      "name": "SetCognitoEvents",
+      "description": "Sets the AWS Lambda function for a given event type for an identity pool.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "identitypool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetDatasetConfiguration": {
+      "name": "SetDatasetConfiguration",
+      "description": "A permission that grants ability to configure datasets.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetIdentityPoolConfiguration": {
+      "name": "SetIdentityPoolConfiguration",
+      "description": "Sets the necessary configuration for push sync.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "identitypool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SubscribeToDataset": {
+      "name": "SubscribeToDataset",
+      "description": "Subscribes to receive notifications when a dataset is modified by another device.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UnsubscribeFromDataset": {
+      "name": "UnsubscribeFromDataset",
+      "description": "Unsubscribes from receiving notifications when a dataset is modified by another device.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRecords": {
+      "name": "UpdateRecords",
+      "description": "Posts updates to records and adds and deletes records for a dataset and user.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Cognito Sync"
+}

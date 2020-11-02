@@ -1,0 +1,454 @@
+{
+  "servicePrefix": "securityhub",
+  "actions": {
+    "AcceptInvitation": {
+      "name": "AcceptInvitation",
+      "description": "Grants permission to accept Security Hub invitations to become a member account",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchDisableStandards": {
+      "name": "BatchDisableStandards",
+      "description": "Grants permission to disable standards in Security Hub",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchEnableStandards": {
+      "name": "BatchEnableStandards",
+      "description": "Grants permission to enable standards in Security Hub",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchImportFindings": {
+      "name": "BatchImportFindings",
+      "description": "Grants permission to import findings into Security Hub from an integrated product",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "product*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344693917": {
+      "name": "$1604344693917",
+      "description": "securityhub:TargetAccount",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "BatchUpdateFindings": {
+      "name": "BatchUpdateFindings",
+      "description": "Grants permission to update customer-controlled fields for a selected set of Security\n                                                Hub findings",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344693918": {
+      "name": "$1604344693918",
+      "description": "securityhub:ASFFSyntaxPath/${ASFFSyntaxPath}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateActionTarget": {
+      "name": "CreateActionTarget",
+      "description": "Grants permission to create custom actions in Security Hub",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateInsight": {
+      "name": "CreateInsight",
+      "description": "Grants permission to create insights in Security Hub. Insights are collections of\n                                                related findings",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateMembers": {
+      "name": "CreateMembers",
+      "description": "Grants permission to create member accounts in Security Hub",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeclineInvitations": {
+      "name": "DeclineInvitations",
+      "description": "Grants permission to decline Security Hub invitations to become a member account",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteActionTarget": {
+      "name": "DeleteActionTarget",
+      "description": "Grants permission to delete custom actions in Security Hub",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteInsight": {
+      "name": "DeleteInsight",
+      "description": "Grants permission to delete insights from Security Hub",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteInvitations": {
+      "name": "DeleteInvitations",
+      "description": "Grants permission to delete Security Hub invitations to become a member account",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteMembers": {
+      "name": "DeleteMembers",
+      "description": "Grants permission to delete Security Hub member accounts",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeActionTargets": {
+      "name": "DescribeActionTargets",
+      "description": "Grants permission to retrieve a list of custom actions using the API",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeHub": {
+      "name": "DescribeHub",
+      "description": "Grants permission to retrieve information about the hub resource in your account",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeProducts": {
+      "name": "DescribeProducts",
+      "description": "Grants permission to retrieve information about the available Security Hub product\n                                                integrations",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeStandards": {
+      "name": "DescribeStandards",
+      "description": "Grants permission to retrieve information about Security Hub standards",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeStandardsControls": {
+      "name": "DescribeStandardsControls",
+      "description": "Grants permission to retrieve information about Security Hub standards controls",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisableImportFindingsForProduct": {
+      "name": "DisableImportFindingsForProduct",
+      "description": "Grants permission to disable the findings importing for a Security Hub integrated\n                                                product",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisableSecurityHub": {
+      "name": "DisableSecurityHub",
+      "description": "Grants permission to disable Security Hub",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateFromMasterAccount": {
+      "name": "DisassociateFromMasterAccount",
+      "description": "Grants permission to a Security Hub member account to disassociate from the associated\n                                                master account",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateMembers": {
+      "name": "DisassociateMembers",
+      "description": "Grants permission to disassociate Security Hub member accounts from the associated\n                                                master account",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "EnableImportFindingsForProduct": {
+      "name": "EnableImportFindingsForProduct",
+      "description": "Grants permission to enable the findings importing for a Security Hub integrated product",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "EnableSecurityHub": {
+      "name": "EnableSecurityHub",
+      "description": "Grants permission to enable Security Hub",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344693920": {
+      "name": "$1604344693920",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetEnabledStandards": {
+      "name": "GetEnabledStandards",
+      "description": "Grants permission to retrieve a list of the standards that are enabled in Security\n                                                Hub",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFindings": {
+      "name": "GetFindings",
+      "description": "Grants permission to retrieve a list of findings from Security Hub",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetInsightResults": {
+      "name": "GetInsightResults",
+      "description": "Grants permission to retrieve insight results from Security Hub",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetInsights": {
+      "name": "GetInsights",
+      "description": "Grants permission to retrieve Security Hub insights",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetInvitationsCount": {
+      "name": "GetInvitationsCount",
+      "description": "Grants permission to retrieve the count of Security Hub membership invitations sent\n                                                to the account",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMasterAccount": {
+      "name": "GetMasterAccount",
+      "description": "Grants permission to retrieve details about the Security Hub master account",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMembers": {
+      "name": "GetMembers",
+      "description": "Grants permission to retrieve the details of Security Hub member accounts",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "InviteMembers": {
+      "name": "InviteMembers",
+      "description": "Grants permission to invite other AWS accounts to become Security Hub member accounts",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEnabledProductsForImport": {
+      "name": "ListEnabledProductsForImport",
+      "description": "Grants permission to retrieve the Security Hub integrated products that are currently\n                                                enabled",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListInvitations": {
+      "name": "ListInvitations",
+      "description": "Grants permission to retrieve the Security Hub invitations sent to the account",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMembers": {
+      "name": "ListMembers",
+      "description": "Grants permission to retrieve details about Security Hub member accounts associated\n                                                with the master account",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permission to list of tags associated with a resource",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "hub*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permission to add tags to a Security Hub resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permission to remove tags from a Security Hub resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateActionTarget": {
+      "name": "UpdateActionTarget",
+      "description": "Grants permission to update custom actions in Security Hub",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateFindings": {
+      "name": "UpdateFindings",
+      "description": "Grants permission to update Security Hub findings",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateInsight": {
+      "name": "UpdateInsight",
+      "description": "Grants permission to update insights in Security Hub",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSecurityHubConfiguration": {
+      "name": "UpdateSecurityHubConfiguration",
+      "description": "Grants permission to update Security Hub configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateStandardsControl": {
+      "name": "UpdateStandardsControl",
+      "description": "Grants permission to update Security Hub standards controls",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Security Hub"
+}

@@ -1,0 +1,2284 @@
+{
+  "servicePrefix": "iot",
+  "actions": {
+    "AcceptCertificateTransfer": {
+      "name": "AcceptCertificateTransfer",
+      "description": "Accepts a pending certificate transfer.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cert*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AddThingToBillingGroup": {
+      "name": "AddThingToBillingGroup",
+      "description": "Adds a thing to the specified billing group.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "billinggroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "thing*": {
+      "name": "thing*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "AddThingToThingGroup": {
+      "name": "AddThingToThingGroup",
+      "description": "Adds a thing to the specified thing group.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "thing*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "thinggroup*": {
+      "name": "thinggroup*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "AssociateTargetsWithJob": {
+      "name": "AssociateTargetsWithJob",
+      "description": "Associates a group with a continuous job.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AttachPolicy": {
+      "name": "AttachPolicy",
+      "description": "Attaches a policy to the specified target.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "cert"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "thinggroup": {
+      "name": "thinggroup",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "AttachPrincipalPolicy": {
+      "name": "AttachPrincipalPolicy",
+      "description": "Attaches the specified policy to the specified principal (certificate or other credential).",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "cert"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AttachSecurityProfile": {
+      "name": "AttachSecurityProfile",
+      "description": "Associates a Device Defender security profile with a thing group or with this account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "securityprofile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "dimension": {
+      "name": "dimension",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "AttachThingPrincipal": {
+      "name": "AttachThingPrincipal",
+      "description": "Attaches the specified principal to the specified thing.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CancelAuditMitigationActionsTask": {
+      "name": "CancelAuditMitigationActionsTask",
+      "description": "Cancels a mitigation action task that is in progress.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CancelAuditTask": {
+      "name": "CancelAuditTask",
+      "description": "Cancels an audit that is in progress. The audit can be either scheduled or on-demand.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CancelCertificateTransfer": {
+      "name": "CancelCertificateTransfer",
+      "description": "Cancels a pending transfer for the specified certificate.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cert*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CancelJob": {
+      "name": "CancelJob",
+      "description": "Cancels a job.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CancelJobExecution": {
+      "name": "CancelJobExecution",
+      "description": "Cancels a job execution on a particular device.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ClearDefaultAuthorizer": {
+      "name": "ClearDefaultAuthorizer",
+      "description": "Clears the default authorizer.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CloseTunnel": {
+      "name": "CloseTunnel",
+      "description": "Closes a tunnel.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "tunnel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344726836": {
+      "name": "$1604344726836",
+      "description": "iot:Delete",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "Connect": {
+      "name": "Connect",
+      "description": "Connect as the specified client",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "client*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAuditSuppression": {
+      "name": "CreateAuditSuppression",
+      "description": "Creates a Device Defender audit suppression.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAuthorizer": {
+      "name": "CreateAuthorizer",
+      "description": "Creates an authorizer.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "authorizer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344726837": {
+      "name": "$1604344726837",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateBillingGroup": {
+      "name": "CreateBillingGroup",
+      "description": "Creates a billing group.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "billinggroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344726840": {
+      "name": "$1604344726840",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateCertificateFromCsr": {
+      "name": "CreateCertificateFromCsr",
+      "description": "Creates an X.509 certificate using the specified certificate signing request.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDimension": {
+      "name": "CreateDimension",
+      "description": "Defines a dimension that can be used to to limit the scope of a metric used in a security\n                                                profile.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dimension*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344726841": {
+      "name": "$1604344726841",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateDomainConfiguration": {
+      "name": "CreateDomainConfiguration",
+      "description": "Creates a domain configuration.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domainconfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344726842": {
+      "name": "$1604344726842",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateDynamicThingGroup": {
+      "name": "CreateDynamicThingGroup",
+      "description": "Creates a Dynamic Thing Group",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "dynamicthinggroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateJob": {
+      "name": "CreateJob",
+      "description": "Creates a job.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344726844": {
+      "name": "$1604344726844",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateKeysAndCertificate": {
+      "name": "CreateKeysAndCertificate",
+      "description": "Creates a 2048 bit RSA key pair and issues an X.509 certificate using the issued public\n                                                key.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateMitigationAction": {
+      "name": "CreateMitigationAction",
+      "description": "Defines an action that can be applied to audit findings by using StartAuditMitigationActionsTask.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "mitigationaction*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344726845": {
+      "name": "$1604344726845",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateOTAUpdate": {
+      "name": "CreateOTAUpdate",
+      "description": "Creates an OTA update job.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "otaupdate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344726846": {
+      "name": "$1604344726846",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreatePolicy": {
+      "name": "CreatePolicy",
+      "description": "Creates an AWS IoT policy.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344726847": {
+      "name": "$1604344726847",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreatePolicyVersion": {
+      "name": "CreatePolicyVersion",
+      "description": "Creates a new version of the specified AWS IoT policy.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateProvisioningClaim": {
+      "name": "CreateProvisioningClaim",
+      "description": "Creates a provisioning claim.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "provisioningtemplate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateProvisioningTemplate": {
+      "name": "CreateProvisioningTemplate",
+      "description": "Creates a fleet provisioning template.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "provisioningtemplate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateProvisioningTemplateVersion": {
+      "name": "CreateProvisioningTemplateVersion",
+      "description": "Creates a new version of a fleet provisioning template.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "provisioningtemplate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateRoleAlias": {
+      "name": "CreateRoleAlias",
+      "description": "Creates a role alias.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "rolealias*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344726848": {
+      "name": "$1604344726848",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateScheduledAudit": {
+      "name": "CreateScheduledAudit",
+      "description": "Creates a scheduled audit that is run at a specified time interval.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "scheduledaudit*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344726850": {
+      "name": "$1604344726850",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateSecurityProfile": {
+      "name": "CreateSecurityProfile",
+      "description": "Creates a Device Defender security profile.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "securityprofile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344726851": {
+      "name": "$1604344726851",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateStream": {
+      "name": "CreateStream",
+      "description": "Creates a new AWS IoT stream",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344726852": {
+      "name": "$1604344726852",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateThing": {
+      "name": "CreateThing",
+      "description": "Creates a thing in the thing registry.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "thing*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "billinggroup": {
+      "name": "billinggroup",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateThingGroup": {
+      "name": "CreateThingGroup",
+      "description": "Creates a thing group.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "thinggroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344726854": {
+      "name": "$1604344726854",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateThingType": {
+      "name": "CreateThingType",
+      "description": "Creates a new thing type.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "thingtype*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344726855": {
+      "name": "$1604344726855",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateTopicRule": {
+      "name": "CreateTopicRule",
+      "description": "Creates a rule.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAccountAuditConfiguration": {
+      "name": "DeleteAccountAuditConfiguration",
+      "description": "Deletes the audit configuration associated with the account.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAuditSuppression": {
+      "name": "DeleteAuditSuppression",
+      "description": "Deletes a Device Defender audit suppression.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAuthorizer": {
+      "name": "DeleteAuthorizer",
+      "description": "Deletes the specified authorizer.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "authorizer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteBillingGroup": {
+      "name": "DeleteBillingGroup",
+      "description": "Deletes the specified billing group.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "billinggroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteCACertificate": {
+      "name": "DeleteCACertificate",
+      "description": "Deletes a registered CA certificate.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cacert*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteCertificate": {
+      "name": "DeleteCertificate",
+      "description": "Deletes the specified certificate.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cert*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDimension": {
+      "name": "DeleteDimension",
+      "description": "Removes the specified dimension from your AWS account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dimension*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDomainConfiguration": {
+      "name": "DeleteDomainConfiguration",
+      "description": "Deletes a domain configuration.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domainconfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDynamicThingGroup": {
+      "name": "DeleteDynamicThingGroup",
+      "description": "Deletes the specified Dynamic Thing Group",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "dynamicthinggroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteJob": {
+      "name": "DeleteJob",
+      "description": "Deletes a job and its related job executions.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteJobExecution": {
+      "name": "DeleteJobExecution",
+      "description": "Deletes a job execution.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteMitigationAction": {
+      "name": "DeleteMitigationAction",
+      "description": "Deletes a defined mitigation action from your AWS account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "mitigationaction*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteOTAUpdate": {
+      "name": "DeleteOTAUpdate",
+      "description": "Deletes an OTA update job.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "otaupdate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeletePolicy": {
+      "name": "DeletePolicy",
+      "description": "Deletes the specified policy.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeletePolicyVersion": {
+      "name": "DeletePolicyVersion",
+      "description": "Deletes the specified version of the specified policy.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteProvisioningTemplate": {
+      "name": "DeleteProvisioningTemplate",
+      "description": "Deletes a fleet provisioning template.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "provisioningtemplate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteProvisioningTemplateVersion": {
+      "name": "DeleteProvisioningTemplateVersion",
+      "description": "Deletes a fleet provisioning template version.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "provisioningtemplate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRegistrationCode": {
+      "name": "DeleteRegistrationCode",
+      "description": "Deletes a CA certificate registration code.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRoleAlias": {
+      "name": "DeleteRoleAlias",
+      "description": "Deletes the specified role alias.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "rolealias*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteScheduledAudit": {
+      "name": "DeleteScheduledAudit",
+      "description": "Deletes a scheduled audit.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "scheduledaudit*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSecurityProfile": {
+      "name": "DeleteSecurityProfile",
+      "description": "Deletes a Device Defender security profile.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "securityprofile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteStream": {
+      "name": "DeleteStream",
+      "description": "Deletes a specified stream.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteThing": {
+      "name": "DeleteThing",
+      "description": "Deletes the specified thing.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "thing*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteThingGroup": {
+      "name": "DeleteThingGroup",
+      "description": "Deletes the specified thing group.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "thinggroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteThingShadow": {
+      "name": "DeleteThingShadow",
+      "description": "Deletes the specified thing shadow.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "thing*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteThingType": {
+      "name": "DeleteThingType",
+      "description": "Deletes the specified thing type.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "thingtype*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteTopicRule": {
+      "name": "DeleteTopicRule",
+      "description": "Deletes the specified rule.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteV2LoggingLevel": {
+      "name": "DeleteV2LoggingLevel",
+      "description": "Deletes the specified v2 logging level.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeprecateThingType": {
+      "name": "DeprecateThingType",
+      "description": "Deprecates the specified thing type.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "thingtype*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAccountAuditConfiguration": {
+      "name": "DescribeAccountAuditConfiguration",
+      "description": "Gets information about audit configurations for the account.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAuditFinding": {
+      "name": "DescribeAuditFinding",
+      "description": "Gets information about a single audit finding. Properties include the reason for noncompliance,\n                                                the severity of the issue, and when the audit that returned the finding was started.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAuditMitigationActionsTask": {
+      "name": "DescribeAuditMitigationActionsTask",
+      "description": "Gets information about an audit mitigation task that is used to apply mitigation actions\n                                                to a set of audit findings.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAuditSuppression": {
+      "name": "DescribeAuditSuppression",
+      "description": "Gets information about a Device Defender audit suppression.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAuditTask": {
+      "name": "DescribeAuditTask",
+      "description": "Gets information about a Device Defender audit.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAuthorizer": {
+      "name": "DescribeAuthorizer",
+      "description": "Describes an authorizer.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "authorizer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeBillingGroup": {
+      "name": "DescribeBillingGroup",
+      "description": "Gets information about the specified billing group.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "billinggroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeCACertificate": {
+      "name": "DescribeCACertificate",
+      "description": "Describes a registered CA certificate.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "cacert*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeCertificate": {
+      "name": "DescribeCertificate",
+      "description": "Gets information about the specified certificate.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "cert*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDefaultAuthorizer": {
+      "name": "DescribeDefaultAuthorizer",
+      "description": "Describes the default authorizer.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDimension": {
+      "name": "DescribeDimension",
+      "description": "Provides details about a dimension that is defined in your AWS account.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "dimension*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDomainConfiguration": {
+      "name": "DescribeDomainConfiguration",
+      "description": "Gets information about the domain configuration.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "domainconfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeEndpoint": {
+      "name": "DescribeEndpoint",
+      "description": "Returns a unique endpoint specific to the AWS account making the call.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeEventConfigurations": {
+      "name": "DescribeEventConfigurations",
+      "description": "Returns account event configurations.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeIndex": {
+      "name": "DescribeIndex",
+      "description": "Gets information about the specified index.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeJob": {
+      "name": "DescribeJob",
+      "description": "Describes a job.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeJobExecution": {
+      "name": "DescribeJobExecution",
+      "description": "Describes a job execution.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "job"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "thing": {
+      "name": "thing",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DescribeMitigationAction": {
+      "name": "DescribeMitigationAction",
+      "description": "Gets information about a mitigation action.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "mitigationaction*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeProvisioningTemplate": {
+      "name": "DescribeProvisioningTemplate",
+      "description": "Returns information about a fleet provisioning template.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "provisioningtemplate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeProvisioningTemplateVersion": {
+      "name": "DescribeProvisioningTemplateVersion",
+      "description": "Returns information about a fleet provisioning template version.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "provisioningtemplate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeRoleAlias": {
+      "name": "DescribeRoleAlias",
+      "description": "Describes a role alias.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "rolealias*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeScheduledAudit": {
+      "name": "DescribeScheduledAudit",
+      "description": "Gets information about a scheduled audit.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "scheduledaudit*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeSecurityProfile": {
+      "name": "DescribeSecurityProfile",
+      "description": "Gets information about a Device Defender security profile.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "securityprofile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeStream": {
+      "name": "DescribeStream",
+      "description": "Gets information about the specified stream.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeThing": {
+      "name": "DescribeThing",
+      "description": "Gets information about the specified thing.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "thing*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeThingGroup": {
+      "name": "DescribeThingGroup",
+      "description": "Gets information about the specified thing group.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "thinggroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeThingRegistrationTask": {
+      "name": "DescribeThingRegistrationTask",
+      "description": "Gets information about the bulk thing registration task.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeThingType": {
+      "name": "DescribeThingType",
+      "description": "Gets information about the specified thing type.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "thingtype*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTunnel": {
+      "name": "DescribeTunnel",
+      "description": "Describes a tunnel.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "tunnel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DetachPolicy": {
+      "name": "DetachPolicy",
+      "description": "Detaches a policy from the specified target.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "cert"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DetachPrincipalPolicy": {
+      "name": "DetachPrincipalPolicy",
+      "description": "Removes the specified policy from the specified certificate.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "cert"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DetachSecurityProfile": {
+      "name": "DetachSecurityProfile",
+      "description": "Disassociates a Device Defender security profile from a thing group or from this account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "securityprofile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DetachThingPrincipal": {
+      "name": "DetachThingPrincipal",
+      "description": "Detaches the specified principal from the specified thing.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisableTopicRule": {
+      "name": "DisableTopicRule",
+      "description": "Disables the specified rule.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "EnableTopicRule": {
+      "name": "EnableTopicRule",
+      "description": "Enables the specified rule.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetCardinality": {
+      "name": "GetCardinality",
+      "description": "Get cardinality for IoT fleet index",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEffectivePolicies": {
+      "name": "GetEffectivePolicies",
+      "description": "Gets effective policies.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "cert"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetIndexingConfiguration": {
+      "name": "GetIndexingConfiguration",
+      "description": "Gets current fleet indexing configuration",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetJobDocument": {
+      "name": "GetJobDocument",
+      "description": "Gets a job document.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLoggingOptions": {
+      "name": "GetLoggingOptions",
+      "description": "Gets the logging options.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetOTAUpdate": {
+      "name": "GetOTAUpdate",
+      "description": "Gets the information about the OTA update job.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "otaupdate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPendingJobExecutions": {
+      "name": "GetPendingJobExecutions",
+      "description": "Gets the list of all jobs for a thing that are not in a terminal state.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "thing*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPercentiles": {
+      "name": "GetPercentiles",
+      "description": "Get percentiles for IoT fleet index",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPolicy": {
+      "name": "GetPolicy",
+      "description": "Gets information about the specified policy with the policy document of the default\n                                                version.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPolicyVersion": {
+      "name": "GetPolicyVersion",
+      "description": "Gets information about the specified policy version.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRegistrationCode": {
+      "name": "GetRegistrationCode",
+      "description": "Gets a registration code used to register a CA certificate with AWS IoT.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetStatistics": {
+      "name": "GetStatistics",
+      "description": "Get statistics for IoT fleet index",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetThingShadow": {
+      "name": "GetThingShadow",
+      "description": "Gets the thing shadow.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "thing*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetTopicRule": {
+      "name": "GetTopicRule",
+      "description": "Gets information about the specified rule.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetV2LoggingOptions": {
+      "name": "GetV2LoggingOptions",
+      "description": "Gets v2 logging options.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListActiveViolations": {
+      "name": "ListActiveViolations",
+      "description": "Lists the active violations for a given Device Defender security profile or Thing.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "securityprofile"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAttachedPolicies": {
+      "name": "ListAttachedPolicies",
+      "description": "Lists the policies attached to the specified thing group.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAuditFindings": {
+      "name": "ListAuditFindings",
+      "description": "Lists the findings (results) of a Device Defender audit or of the audits performed\n                                                during a specified time period.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAuditMitigationActionsExecutions": {
+      "name": "ListAuditMitigationActionsExecutions",
+      "description": "Gets the status of audit mitigation action tasks that were executed.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAuditMitigationActionsTasks": {
+      "name": "ListAuditMitigationActionsTasks",
+      "description": "Gets a list of audit mitigation action tasks that match the specified filters.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAuditSuppressions": {
+      "name": "ListAuditSuppressions",
+      "description": "Lists your Device Defender audit suppressions.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAuditTasks": {
+      "name": "ListAuditTasks",
+      "description": "Lists the Device Defender audits that have been performed during a given time period.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAuthorizers": {
+      "name": "ListAuthorizers",
+      "description": "Lists the authorizers registered in your account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListBillingGroups": {
+      "name": "ListBillingGroups",
+      "description": "Lists all billing groups.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListCACertificates": {
+      "name": "ListCACertificates",
+      "description": "Lists the CA certificates registered for your AWS account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListCertificates": {
+      "name": "ListCertificates",
+      "description": "Lists your certificates.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListCertificatesByCA": {
+      "name": "ListCertificatesByCA",
+      "description": "List the device certificates signed by the specified CA certificate.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDimensions": {
+      "name": "ListDimensions",
+      "description": "Lists the dimensions that are defined for your AWS account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDomainConfigurations": {
+      "name": "ListDomainConfigurations",
+      "description": "Lists the domain configuration created by your AWS account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListIndices": {
+      "name": "ListIndices",
+      "description": "Lists all indices for fleet index",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListJobExecutionsForJob": {
+      "name": "ListJobExecutionsForJob",
+      "description": "Lists the job executions for a job.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListJobExecutionsForThing": {
+      "name": "ListJobExecutionsForThing",
+      "description": "Lists the job executions for the specified thing.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "thing*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListJobs": {
+      "name": "ListJobs",
+      "description": "Lists jobs.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMitigationActions": {
+      "name": "ListMitigationActions",
+      "description": "Gets a list of all mitigation actions that match the specified filter criteria.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListNamedShadowsForThing": {
+      "name": "ListNamedShadowsForThing",
+      "description": "Lists all named shadows for a given thing.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "thing*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListOTAUpdates": {
+      "name": "ListOTAUpdates",
+      "description": "Lists OTA update jobs in the account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListOutgoingCertificates": {
+      "name": "ListOutgoingCertificates",
+      "description": "Lists certificates that are being transfered but not yet accepted.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPolicies": {
+      "name": "ListPolicies",
+      "description": "Lists your policies.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPolicyPrincipals": {
+      "name": "ListPolicyPrincipals",
+      "description": "Lists the principals associated with the specified policy.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPolicyVersions": {
+      "name": "ListPolicyVersions",
+      "description": "Lists the versions of the specified policy, and identifies the default version.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPrincipalPolicies": {
+      "name": "ListPrincipalPolicies",
+      "description": "Lists the policies attached to the specified principal. If you use an Amazon Cognito\n                                                identity, the ID needs to be in Amazon Cognito Identity format.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPrincipalThings": {
+      "name": "ListPrincipalThings",
+      "description": "Lists the things associated with the specified principal.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProvisioningTemplateVersions": {
+      "name": "ListProvisioningTemplateVersions",
+      "description": "A list of fleet provisioning template versions.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "provisioningtemplate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProvisioningTemplates": {
+      "name": "ListProvisioningTemplates",
+      "description": "Lists the fleet provisioning templates in your AWS account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRoleAliases": {
+      "name": "ListRoleAliases",
+      "description": "Lists role aliases.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListScheduledAudits": {
+      "name": "ListScheduledAudits",
+      "description": "Lists all of your scheduled audits.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSecurityProfiles": {
+      "name": "ListSecurityProfiles",
+      "description": "Lists the Device Defender security profiles you have created.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "dimension"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSecurityProfilesForTarget": {
+      "name": "ListSecurityProfilesForTarget",
+      "description": "Lists the Device Defender security profiles attached to a target.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "thinggroup"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListStreams": {
+      "name": "ListStreams",
+      "description": "Lists the streams in your account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Lists all tags for a given resource.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "authorizer"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "cacert": {
+      "name": "cacert",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "domainconfiguration": {
+      "name": "domainconfiguration",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "dynamicthinggroup": {
+      "name": "dynamicthinggroup",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "job": {
+      "name": "job",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "mitigationaction": {
+      "name": "mitigationaction",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "otaupdate": {
+      "name": "otaupdate",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "policy": {
+      "name": "policy",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "provisioningtemplate": {
+      "name": "provisioningtemplate",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "rolealias": {
+      "name": "rolealias",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "rule": {
+      "name": "rule",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "scheduledaudit": {
+      "name": "scheduledaudit",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "securityprofile": {
+      "name": "securityprofile",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "stream": {
+      "name": "stream",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "thingtype": {
+      "name": "thingtype",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ListTargetsForPolicy": {
+      "name": "ListTargetsForPolicy",
+      "description": "List targets for the specified policy.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTargetsForSecurityProfile": {
+      "name": "ListTargetsForSecurityProfile",
+      "description": "Lists the targets associated with a given Device Defender security profile.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "securityprofile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListThingGroups": {
+      "name": "ListThingGroups",
+      "description": "Lists all thing groups.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListThingGroupsForThing": {
+      "name": "ListThingGroupsForThing",
+      "description": "List thing groups to which the specified thing belongs.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "thing*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListThingPrincipals": {
+      "name": "ListThingPrincipals",
+      "description": "Lists the principals associated with the specified thing.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListThingRegistrationTaskReports": {
+      "name": "ListThingRegistrationTaskReports",
+      "description": "Lists information about bulk thing registration tasks.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListThingRegistrationTasks": {
+      "name": "ListThingRegistrationTasks",
+      "description": "Lists bulk thing registration tasks.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListThingTypes": {
+      "name": "ListThingTypes",
+      "description": "Lists all thing types.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListThings": {
+      "name": "ListThings",
+      "description": "Lists all things.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListThingsInBillingGroup": {
+      "name": "ListThingsInBillingGroup",
+      "description": "Lists all things in the specified billing group.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "billinggroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListThingsInThingGroup": {
+      "name": "ListThingsInThingGroup",
+      "description": "Lists all things in the specified thing group.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "thinggroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTopicRules": {
+      "name": "ListTopicRules",
+      "description": "Lists the rules for the specific topic.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTunnels": {
+      "name": "ListTunnels",
+      "description": "Lists tunnels.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListV2LoggingLevels": {
+      "name": "ListV2LoggingLevels",
+      "description": "Lists the v2 logging levels.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListViolationEvents": {
+      "name": "ListViolationEvents",
+      "description": "Lists the Device Defender security profile violations discovered during the given\n                                                time period.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "securityprofile"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "OpenTunnel": {
+      "name": "OpenTunnel",
+      "description": "Opens a tunnel.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      iot:ThingGroupArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      iot:TunnelDestinationService",
+      "dependentActions": ""
+    },
+    "Publish": {
+      "name": "Publish",
+      "description": "Publish to the specified topic.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "topic*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "Receive": {
+      "name": "Receive",
+      "description": "Receive from the specified topic.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "topic*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterCACertificate": {
+      "name": "RegisterCACertificate",
+      "description": "Registers a CA certificate with AWS IoT.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "RegisterCertificate": {
+      "name": "RegisterCertificate",
+      "description": "Registers a device certificate with AWS IoT.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterCertificateWithoutCA": {
+      "name": "RegisterCertificateWithoutCA",
+      "description": "Registers a device certificate with AWS IoT without a registered CA (certificate authority).",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterThing": {
+      "name": "RegisterThing",
+      "description": "Registers your thing.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RejectCertificateTransfer": {
+      "name": "RejectCertificateTransfer",
+      "description": "Rejects a pending certificate transfer.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cert*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemoveThingFromBillingGroup": {
+      "name": "RemoveThingFromBillingGroup",
+      "description": "Removes thing from the specified billing group.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "billinggroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemoveThingFromThingGroup": {
+      "name": "RemoveThingFromThingGroup",
+      "description": "Removes thing from the specified thing group.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "thing*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ReplaceTopicRule": {
+      "name": "ReplaceTopicRule",
+      "description": "Replaces the specified rule.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchIndex": {
+      "name": "SearchIndex",
+      "description": "Search IoT fleet index",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetDefaultAuthorizer": {
+      "name": "SetDefaultAuthorizer",
+      "description": "Sets the default authorizer. This will be used if a websocket connection is made without\n                                                specifying an authorizer.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "authorizer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetDefaultPolicyVersion": {
+      "name": "SetDefaultPolicyVersion",
+      "description": "Sets the specified version of the specified policy as the policy's default (operative)\n                                                version.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetLoggingOptions": {
+      "name": "SetLoggingOptions",
+      "description": "Sets the logging options.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetV2LoggingLevel": {
+      "name": "SetV2LoggingLevel",
+      "description": "Sets the v2 logging level.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetV2LoggingOptions": {
+      "name": "SetV2LoggingOptions",
+      "description": "Sets the v2 logging options.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartAuditMitigationActionsTask": {
+      "name": "StartAuditMitigationActionsTask",
+      "description": "Starts a task that applies a set of mitigation actions to the specified target.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartNextPendingJobExecution": {
+      "name": "StartNextPendingJobExecution",
+      "description": "Gets and starts the next pending job execution for a thing.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "thing*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartOnDemandAuditTask": {
+      "name": "StartOnDemandAuditTask",
+      "description": "Starts an on-demand Device Defender audit.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartThingRegistrationTask": {
+      "name": "StartThingRegistrationTask",
+      "description": "Starts a bulk thing registration task.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopThingRegistrationTask": {
+      "name": "StopThingRegistrationTask",
+      "description": "Stops a bulk thing registration task.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "Subscribe": {
+      "name": "Subscribe",
+      "description": "Subscribe to the specified TopicFilter.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "topicfilter*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Tag a specified resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "authorizer"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344726897": {
+      "name": "$1604344726897",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "TestAuthorization": {
+      "name": "TestAuthorization",
+      "description": "Test the policies evaluation for group policies",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "cert"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TestInvokeAuthorizer": {
+      "name": "TestInvokeAuthorizer",
+      "description": "Invoke the specified custom authorizer for testing purposes.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "authorizer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TransferCertificate": {
+      "name": "TransferCertificate",
+      "description": "Transfers the specified certificate to the specified AWS account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cert*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Untag a specified resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "authorizer"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344726902": {
+      "name": "$1604344726902",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateAccountAuditConfiguration": {
+      "name": "UpdateAccountAuditConfiguration",
+      "description": "Configures or reconfigures the Device Defender audit settings for this account.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAuditSuppression": {
+      "name": "UpdateAuditSuppression",
+      "description": "Updates a Device Defender audit suppression.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAuthorizer": {
+      "name": "UpdateAuthorizer",
+      "description": "Updates an authorizer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "authorizer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateBillingGroup": {
+      "name": "UpdateBillingGroup",
+      "description": "Updates information associated with the specified billing group.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "billinggroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateCACertificate": {
+      "name": "UpdateCACertificate",
+      "description": "Updates a registered CA certificate.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cacert*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateCertificate": {
+      "name": "UpdateCertificate",
+      "description": "Updates the status of the specified certificate. This operation is idempotent.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cert*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDimension": {
+      "name": "UpdateDimension",
+      "description": "Updates the definition for a dimension.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dimension*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDomainConfiguration": {
+      "name": "UpdateDomainConfiguration",
+      "description": "Updates a domain configuration.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domainconfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDynamicThingGroup": {
+      "name": "UpdateDynamicThingGroup",
+      "description": "Updates a Dynamic Thing Group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dynamicthinggroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateEventConfigurations": {
+      "name": "UpdateEventConfigurations",
+      "description": "Updates event configurations.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateIndexingConfiguration": {
+      "name": "UpdateIndexingConfiguration",
+      "description": "Updates fleet indexing configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateJob": {
+      "name": "UpdateJob",
+      "description": "Updates a job.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateJobExecution": {
+      "name": "UpdateJobExecution",
+      "description": "Updates a job execution.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "thing*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateMitigationAction": {
+      "name": "UpdateMitigationAction",
+      "description": "Updates the definition for the specified mitigation action.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "mitigationaction*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateProvisioningTemplate": {
+      "name": "UpdateProvisioningTemplate",
+      "description": "Updates a fleet provisioning template.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "provisioningtemplate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRoleAlias": {
+      "name": "UpdateRoleAlias",
+      "description": "Updates the role alias",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "rolealias*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateScheduledAudit": {
+      "name": "UpdateScheduledAudit",
+      "description": "Updates a scheduled audit, including what checks are performed and how often the audit\n                                                takes place.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "scheduledaudit*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSecurityProfile": {
+      "name": "UpdateSecurityProfile",
+      "description": "Updates a Device Defender security profile.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "securityprofile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateStream": {
+      "name": "UpdateStream",
+      "description": "Updates the data for a stream.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateThing": {
+      "name": "UpdateThing",
+      "description": "Updates information associated with the specified thing.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "thing*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateThingGroup": {
+      "name": "UpdateThingGroup",
+      "description": "Updates information associated with the specified thing group.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "thinggroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateThingGroupsForThing": {
+      "name": "UpdateThingGroupsForThing",
+      "description": "Updates the thing groups to which the thing belongs.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "thing*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateThingShadow": {
+      "name": "UpdateThingShadow",
+      "description": "Updates the thing shadow.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "thing*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ValidateSecurityProfileBehaviors": {
+      "name": "ValidateSecurityProfileBehaviors",
+      "description": "Validates a Device Defender security profile behaviors specification.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS IoT"
+}

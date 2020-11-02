@@ -1,0 +1,1620 @@
+{
+  "servicePrefix": "sagemaker",
+  "actions": {
+    "AddTags": {
+      "name": "AddTags",
+      "description": "Adds or overwrites one or more tags for the specified Amazon SageMaker resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "app"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "automl-job": {
+      "name": "automl-job",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "domain": {
+      "name": "domain",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "endpoint": {
+      "name": "endpoint",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "endpoint-config": {
+      "name": "endpoint-config",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "experiment": {
+      "name": "experiment",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "experiment-trial": {
+      "name": "experiment-trial",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "experiment-trial-component": {
+      "name": "experiment-trial-component",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "flow-definition": {
+      "name": "flow-definition",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "human-task-ui": {
+      "name": "human-task-ui",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "hyper-parameter-tuning-job": {
+      "name": "hyper-parameter-tuning-job",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "labeling-job": {
+      "name": "labeling-job",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "model": {
+      "name": "model",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "monitoring-schedule": {
+      "name": "monitoring-schedule",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "notebook-instance": {
+      "name": "notebook-instance",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "processing-job": {
+      "name": "processing-job",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "training-job": {
+      "name": "training-job",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "transform-job": {
+      "name": "transform-job",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "user-profile": {
+      "name": "user-profile",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "workteam": {
+      "name": "workteam",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344688301": {
+      "name": "$1604344688301",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "AssociateTrialComponent": {
+      "name": "AssociateTrialComponent",
+      "description": "Associate a trial component with a trial.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "experiment-trial*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "experiment-trial-component*": {
+      "name": "experiment-trial-component*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "BatchGetMetrics": {
+      "name": "BatchGetMetrics",
+      "description": "Retrieve metrics associated with SageMaker Resources such as Training Jobs. This API\n                                                is not publicly exposed at this point, however admins can control this action",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "training-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchPutMetrics": {
+      "name": "BatchPutMetrics",
+      "description": "Publish metrics associated with a SageMaker Resource such as a Training Job. This\n                                                API is not publicly exposed at this point, however admins can control this action",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "training-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAlgorithm": {
+      "name": "CreateAlgorithm",
+      "description": "Create an algorithm.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "algorithm*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateApp": {
+      "name": "CreateApp",
+      "description": "Grants permission to create an App for a SageMaker Studio UserProfile",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344688302": {
+      "name": "$1604344688302",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InstanceTypes",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateAutoMLJob": {
+      "name": "CreateAutoMLJob",
+      "description": "Creates automl job.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "automl-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "$1604344688312": {
+      "name": "$1604344688312",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:AppNetworkAccessType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSubnets\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:DomainSharingOutputKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:HomeEfsFileSystemKmsKey",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateCodeRepository": {
+      "name": "CreateCodeRepository",
+      "description": "Create a code repository.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "code-repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateCompilationJob": {
+      "name": "CreateCompilationJob",
+      "description": "Create a compilation job.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "compilation-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "CreateDomain": {
+      "name": "CreateDomain",
+      "description": "Grants permission to create a Domain for SageMaker Studio",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:CreateServiceLinkedRole\n                                                   \n                                                \n                                                \n                                                \n                                                   iam:PassRole"
+    },
+    "CreateEndpoint": {
+      "name": "CreateEndpoint",
+      "description": "Creates an endpoint using the endpoint configuration specified in the request.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "endpoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344688313": {
+      "name": "$1604344688313",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:AcceleratorTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:ModelArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VolumeKmsKey",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateEndpointConfig": {
+      "name": "CreateEndpointConfig",
+      "description": "Creates an endpoint configuration that can be deployed using Amazon SageMaker hosting\n                                                services.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "endpoint-config*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateExperiment": {
+      "name": "CreateExperiment",
+      "description": "Create an experiment.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "experiment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344688314": {
+      "name": "$1604344688314",
+      "description": "sagemaker:WorkteamArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:WorkteamType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateFlowDefinition": {
+      "name": "CreateFlowDefinition",
+      "description": "Creates a flow definition, which defines settings for a human workflow.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "flow-definition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "CreateHumanTaskUi": {
+      "name": "CreateHumanTaskUi",
+      "description": "Defines the settings you will use for the human review workflow user interface.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "human-task-ui*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344688315": {
+      "name": "$1604344688315",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:FileSystemAccessMode\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:FileSystemDirectoryPath\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:FileSystemId\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:FileSystemType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InterContainerTrafficEncryption\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:MaxRuntimeInSeconds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:NetworkIsolation\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:OutputKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VolumeKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSubnets",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateHyperParameterTuningJob": {
+      "name": "CreateHyperParameterTuningJob",
+      "description": "Creates hyper parameter tuning job that can be deployed using Amazon SageMaker.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hyper-parameter-tuning-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "CreateLabelingJob": {
+      "name": "CreateLabelingJob",
+      "description": "Starts a labeling job. A labeling job takes unlabeled data in and produces labeled\n                                                data as output, which can be used for training SageMaker models.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "labeling-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "$1604344688316": {
+      "name": "$1604344688316",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:NetworkIsolation\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSubnets",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateModel": {
+      "name": "CreateModel",
+      "description": "Creates a model in Amazon SageMaker. In the request, you specify a name for the model\n                                                and describe one or more containers.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "CreateModelPackage": {
+      "name": "CreateModelPackage",
+      "description": "Create a model package.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model-package*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateMonitoringSchedule": {
+      "name": "CreateMonitoringSchedule",
+      "description": "Creates a monitoring schedule.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "monitoring-schedule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "$1604344688317": {
+      "name": "$1604344688317",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:AcceleratorTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:DirectInternetAccess\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:RootAccess\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VolumeKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSubnets",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateNotebookInstance": {
+      "name": "CreateNotebookInstance",
+      "description": "Creates an Amazon SageMaker notebook instance. A notebook instance is an Amazon EC2\n                                                instance running on a Jupyter Notebook.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "notebook-instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "CreateNotebookInstanceLifecycleConfig": {
+      "name": "CreateNotebookInstanceLifecycleConfig",
+      "description": "Creates an notebook instance lifecycle configuration that can be deployed using Amazon\n                                                SageMaker.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "notebook-instance-lifecycle-config*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreatePresignedDomainUrl": {
+      "name": "CreatePresignedDomainUrl",
+      "description": "Grants permission to return a URL that you can use from your browser to connect to\n                                                the Domain as a specified UserProfile when AuthMode is 'IAM'",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreatePresignedNotebookInstanceUrl": {
+      "name": "CreatePresignedNotebookInstanceUrl",
+      "description": "Returns a URL that you can use from your browser to connect to the Notebook Instance.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "notebook-instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateProcessingJob": {
+      "name": "CreateProcessingJob",
+      "description": "Starts a processing job. After processing completes, Amazon SageMaker saves the resulting\n                                                artifacts and other optional output to an Amazon S3 location that you specify.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "processing-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "$1604344688318": {
+      "name": "$1604344688318",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:FileSystemAccessMode\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:FileSystemDirectoryPath\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:FileSystemId\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:FileSystemType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InterContainerTrafficEncryption\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:MaxRuntimeInSeconds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:NetworkIsolation\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:OutputKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VolumeKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSubnets",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateTrainingJob": {
+      "name": "CreateTrainingJob",
+      "description": "Starts a model training job. After training completes, Amazon SageMaker saves the\n                                                resulting model artifacts and other optional output to an Amazon S3 location that\n                                                you specify.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "training-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "CreateTransformJob": {
+      "name": "CreateTransformJob",
+      "description": "Starts a transform job. After the results are obtained, Amazon SageMaker saves them\n                                                to an Amazon S3 location that you specify.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "transform-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344688319": {
+      "name": "$1604344688319",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateTrial": {
+      "name": "CreateTrial",
+      "description": "Create a trial.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "experiment-trial*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateTrialComponent": {
+      "name": "CreateTrialComponent",
+      "description": "Create a trial component.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "experiment-trial-component*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344688320": {
+      "name": "$1604344688320",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateUserProfile": {
+      "name": "CreateUserProfile",
+      "description": "Grants permission to create a UserProfile for a SageMaker Studio Domain",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "CreateWorkforce": {
+      "name": "CreateWorkforce",
+      "description": "Create a workforce.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workforce*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateWorkteam": {
+      "name": "CreateWorkteam",
+      "description": "Create a workteam.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workteam*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344688321": {
+      "name": "$1604344688321",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteAlgorithm": {
+      "name": "DeleteAlgorithm",
+      "description": "Deletes an algorithm.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "algorithm*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteApp": {
+      "name": "DeleteApp",
+      "description": "Grants permission to delete an App",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteCodeRepository": {
+      "name": "DeleteCodeRepository",
+      "description": "Deletes a code repository.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "code-repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDomain": {
+      "name": "DeleteDomain",
+      "description": "Grants permission to delete a Domain",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteEndpoint": {
+      "name": "DeleteEndpoint",
+      "description": "Deletes an endpoint. Amazon SageMaker frees up all the resources that were deployed\n                                                when the endpoint was created.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "endpoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteEndpointConfig": {
+      "name": "DeleteEndpointConfig",
+      "description": "Deletes the endpoint configuration created using the CreateEndpointConfig API. The\n                                                DeleteEndpointConfig API deletes only the specified configuration. It does not delete\n                                                any endpoints created using the configuration.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "endpoint-config*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteExperiment": {
+      "name": "DeleteExperiment",
+      "description": "Deletes an experiment.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "experiment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteFlowDefinition": {
+      "name": "DeleteFlowDefinition",
+      "description": "Deltes the specified flow definition.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "flow-definition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteHumanLoop": {
+      "name": "DeleteHumanLoop",
+      "description": "Deletes the specified human loop.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "human-loop*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteModel": {
+      "name": "DeleteModel",
+      "description": "Deletes a model created using the CreateModel API. The DeleteModel API deletes only\n                                                the model entry in Amazon SageMaker that you created by calling the CreateModel API.\n                                                It does not delete model artifacts, inference code, or the IAM role that you specified\n                                                when creating the model.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteModelPackage": {
+      "name": "DeleteModelPackage",
+      "description": "Deletes a model package.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model-package*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteMonitoringSchedule": {
+      "name": "DeleteMonitoringSchedule",
+      "description": "Deletes a monitoring schedule. Amazon SageMaker will no longer run the scheduled monitoring.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "monitoring-schedule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteNotebookInstance": {
+      "name": "DeleteNotebookInstance",
+      "description": "Deletes an Amazon SageMaker notebook instance. Before you can delete a notebook instance,\n                                                you must call the StopNotebookInstance API.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "notebook-instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteNotebookInstanceLifecycleConfig": {
+      "name": "DeleteNotebookInstanceLifecycleConfig",
+      "description": "Deletes an notebook instance lifecycle configuration that can be deployed using Amazon\n                                                SageMaker.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "notebook-instance-lifecycle-config*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteTags": {
+      "name": "DeleteTags",
+      "description": "Deletes the specified set of tags from an Amazon SageMaker resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "app"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "compilation-job": {
+      "name": "compilation-job",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344688327": {
+      "name": "$1604344688327",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteTrial": {
+      "name": "DeleteTrial",
+      "description": "Deletes a trial.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "experiment-trial*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteTrialComponent": {
+      "name": "DeleteTrialComponent",
+      "description": "Deletes a trial component.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "experiment-trial-component*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteUserProfile": {
+      "name": "DeleteUserProfile",
+      "description": "Grants permission to delete a UserProfile",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteWorkforce": {
+      "name": "DeleteWorkforce",
+      "description": "Deletes a workforce.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workforce*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteWorkteam": {
+      "name": "DeleteWorkteam",
+      "description": "Deletes a workteam.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workteam*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAlgorithm": {
+      "name": "DescribeAlgorithm",
+      "description": "Returns information about an algorithm.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "algorithm*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeApp": {
+      "name": "DescribeApp",
+      "description": "Grants permission to describe an App",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "app*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAutoMLJob": {
+      "name": "DescribeAutoMLJob",
+      "description": "Describes an automl job that was created via CreateAutoMLJob API.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "automl-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeCodeRepository": {
+      "name": "DescribeCodeRepository",
+      "description": "Returns information about a code repository.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "code-repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeCompilationJob": {
+      "name": "DescribeCompilationJob",
+      "description": "Returns information about a compilation job.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "compilation-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDomain": {
+      "name": "DescribeDomain",
+      "description": "Grants permission to describe a Domain",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeEndpoint": {
+      "name": "DescribeEndpoint",
+      "description": "Returns the description of an endpoint.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "endpoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeEndpointConfig": {
+      "name": "DescribeEndpointConfig",
+      "description": "Returns the description of an endpoint configuration, which was created using the\n                                                CreateEndpointConfig API.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "endpoint-config*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeExperiment": {
+      "name": "DescribeExperiment",
+      "description": "Returns information about an experiment.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "experiment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeFlowDefinition": {
+      "name": "DescribeFlowDefinition",
+      "description": "Returns detailed information about the specified flow definition.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "flow-definition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeHumanLoop": {
+      "name": "DescribeHumanLoop",
+      "description": "Returns detailed information about the specified human loop.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "human-loop*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeHumanTaskUi": {
+      "name": "DescribeHumanTaskUi",
+      "description": "Returns detailed information about the specified human review workflow user interface.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "human-task-ui*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeHyperParameterTuningJob": {
+      "name": "DescribeHyperParameterTuningJob",
+      "description": "Describes a hyper parameter tuning job that was created via CreateHyperParameterTuningJob\n                                                API.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "hyper-parameter-tuning-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeLabelingJob": {
+      "name": "DescribeLabelingJob",
+      "description": "Returns information about a labeling job.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "labeling-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeModel": {
+      "name": "DescribeModel",
+      "description": "Describes a model that you created using the CreateModel API.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeModelPackage": {
+      "name": "DescribeModelPackage",
+      "description": "Returns information about a model package.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "model-package*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeMonitoringSchedule": {
+      "name": "DescribeMonitoringSchedule",
+      "description": "Returns information about a monitoring schedule.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "monitoring-schedule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeNotebookInstance": {
+      "name": "DescribeNotebookInstance",
+      "description": "Returns information about a notebook instance.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "notebook-instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeNotebookInstanceLifecycleConfig": {
+      "name": "DescribeNotebookInstanceLifecycleConfig",
+      "description": "Describes an notebook instance lifecycle configuration that was created via CreateNotebookInstanceLifecycleConfig\n                                                API.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "notebook-instance-lifecycle-config*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeProcessingJob": {
+      "name": "DescribeProcessingJob",
+      "description": "Returns information about a processing job.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "processing-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeSubscribedWorkteam": {
+      "name": "DescribeSubscribedWorkteam",
+      "description": "Returns information about a subscribed workteam.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "workteam*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTrainingJob": {
+      "name": "DescribeTrainingJob",
+      "description": "Returns information about a training job.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "training-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTransformJob": {
+      "name": "DescribeTransformJob",
+      "description": "Returns information about a transform job.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "transform-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTrial": {
+      "name": "DescribeTrial",
+      "description": "Returns information about a trial.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "experiment-trial*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTrialComponent": {
+      "name": "DescribeTrialComponent",
+      "description": "Returns information about a trial component.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "experiment-trial-component*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeUserProfile": {
+      "name": "DescribeUserProfile",
+      "description": "Grants permission to describe a UserProfile",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "user-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeWorkforce": {
+      "name": "DescribeWorkforce",
+      "description": "Returns information about a workforce.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "workforce*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeWorkteam": {
+      "name": "DescribeWorkteam",
+      "description": "Returns information about a workteam.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "workteam*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateTrialComponent": {
+      "name": "DisassociateTrialComponent",
+      "description": "Disassociate a trial component with a trial.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "experiment-trial*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "processing-job*": {
+      "name": "processing-job*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetSearchSuggestions": {
+      "name": "GetSearchSuggestions",
+      "description": "Get search suggestions when provided with keyword.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "InvokeEndpoint": {
+      "name": "InvokeEndpoint",
+      "description": "After you deploy a model into production using Amazon SageMaker hosting services,\n                                                your client applications use this API to get inferences from the model hosted at the\n                                                specified endpoint.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "endpoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344688331": {
+      "name": "$1604344688331",
+      "description": "sagemaker:TargetModel",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ListAlgorithms": {
+      "name": "ListAlgorithms",
+      "description": "Lists algorithms.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListApps": {
+      "name": "ListApps",
+      "description": "Grants permission to list the Apps in your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAutoMLJobs": {
+      "name": "ListAutoMLJobs",
+      "description": "Lists automl jobs created via the CreateAutoMLJob.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListCandidatesForAutoMLJob": {
+      "name": "ListCandidatesForAutoMLJob",
+      "description": "Lists candidates for automl job created via the CreateAutoMLJob.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListCodeRepositories": {
+      "name": "ListCodeRepositories",
+      "description": "Lists code repositories.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListCompilationJobs": {
+      "name": "ListCompilationJobs",
+      "description": "Lists compilation jobs.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDomains": {
+      "name": "ListDomains",
+      "description": "Grants permission to list the Domains in your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEndpointConfigs": {
+      "name": "ListEndpointConfigs",
+      "description": "Lists endpoint configurations.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEndpoints": {
+      "name": "ListEndpoints",
+      "description": "Lists endpoints.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListExperiments": {
+      "name": "ListExperiments",
+      "description": "Lists experiments.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFlowDefinitions": {
+      "name": "ListFlowDefinitions",
+      "description": "Returns summary information about flow definitions, given the specified parameters.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListHumanLoops": {
+      "name": "ListHumanLoops",
+      "description": "Returns summary information about human loops, given the specified parameters.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListHumanTaskUis": {
+      "name": "ListHumanTaskUis",
+      "description": "Returns summary information about human review workflow user interfaces, given the\n                                                specified parameters.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListHyperParameterTuningJobs": {
+      "name": "ListHyperParameterTuningJobs",
+      "description": "Lists hyper parameter tuning jobs that was created using Amazon SageMaker.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListLabelingJobs": {
+      "name": "ListLabelingJobs",
+      "description": "Lists labeling jobs.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListLabelingJobsForWorkteam": {
+      "name": "ListLabelingJobsForWorkteam",
+      "description": "Lists labeling jobs for workteam.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "workteam*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListModelPackages": {
+      "name": "ListModelPackages",
+      "description": "Lists model packages.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListModels": {
+      "name": "ListModels",
+      "description": "Lists the models created with the CreateModel API.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMonitoringExecutions": {
+      "name": "ListMonitoringExecutions",
+      "description": "Lists monitoring executions.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMonitoringSchedules": {
+      "name": "ListMonitoringSchedules",
+      "description": "Lists monitoring schedules.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListNotebookInstanceLifecycleConfigs": {
+      "name": "ListNotebookInstanceLifecycleConfigs",
+      "description": "Lists notebook instance lifecycle configurations that can be deployed using Amazon\n                                                SageMaker.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListNotebookInstances": {
+      "name": "ListNotebookInstances",
+      "description": "Returns a list of the Amazon SageMaker notebook instances in the requester's account\n                                                in an AWS Region.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProcessingJobs": {
+      "name": "ListProcessingJobs",
+      "description": "Lists processing jobs.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSubscribedWorkteams": {
+      "name": "ListSubscribedWorkteams",
+      "description": "Lists subscribed workteams.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTags": {
+      "name": "ListTags",
+      "description": "Returns the tag set associated with the specified resource.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "app"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTrainingJobs": {
+      "name": "ListTrainingJobs",
+      "description": "Lists training jobs.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTrainingJobsForHyperParameterTuningJob": {
+      "name": "ListTrainingJobsForHyperParameterTuningJob",
+      "description": "Lists training jobs for a hyper parameter tuning job that was created using Amazon\n                                                SageMaker.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "hyper-parameter-tuning-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTransformJobs": {
+      "name": "ListTransformJobs",
+      "description": "Lists transform jobs.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTrialComponents": {
+      "name": "ListTrialComponents",
+      "description": "Lists trial components.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTrials": {
+      "name": "ListTrials",
+      "description": "Lists trials.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListUserProfiles": {
+      "name": "ListUserProfiles",
+      "description": "Grants permission to list the UserProfiles in your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListWorkforces": {
+      "name": "ListWorkforces",
+      "description": "Lists workforces.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListWorkteams": {
+      "name": "ListWorkteams",
+      "description": "Lists workteams.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RenderUiTemplate": {
+      "name": "RenderUiTemplate",
+      "description": "Render a UI template used for a human annotation task.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "Search": {
+      "name": "Search",
+      "description": "Search for SageMaker objects.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartHumanLoop": {
+      "name": "StartHumanLoop",
+      "description": "Starts a human loop.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "flow-definition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartMonitoringSchedule": {
+      "name": "StartMonitoringSchedule",
+      "description": "Starts a monitoring schedule.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "monitoring-schedule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartNotebookInstance": {
+      "name": "StartNotebookInstance",
+      "description": "Launches an EC2 instance with the latest version of the libraries and attaches your\n                                                EBS volume.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "notebook-instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopAutoMLJob": {
+      "name": "StopAutoMLJob",
+      "description": "Stops a running automl job created via the CreateAutoMLJob.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "automl-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopCompilationJob": {
+      "name": "StopCompilationJob",
+      "description": "Stops a compilation job.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "compilation-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopHumanLoop": {
+      "name": "StopHumanLoop",
+      "description": "Stops the specified human loop.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "human-loop*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopHyperParameterTuningJob": {
+      "name": "StopHyperParameterTuningJob",
+      "description": "Stops a running hyper parameter tuning job create via the CreateHyperParameterTuningJob.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hyper-parameter-tuning-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopLabelingJob": {
+      "name": "StopLabelingJob",
+      "description": "Stops a labeling job. Any labels already generated will be exported before stopping.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "labeling-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopMonitoringSchedule": {
+      "name": "StopMonitoringSchedule",
+      "description": "Stops a monitoring schedule.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "monitoring-schedule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopNotebookInstance": {
+      "name": "StopNotebookInstance",
+      "description": "Terminates the EC2 instance. Before terminating the instance, Amazon SageMaker disconnects\n                                                the EBS volume from it. Amazon SageMaker preserves the EBS volume.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "notebook-instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopProcessingJob": {
+      "name": "StopProcessingJob",
+      "description": "Stops a processing job. To stop a job, Amazon SageMaker sends the algorithm the SIGTERM\n                                                signal, which delays job termination for 120 seconds.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "processing-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopTrainingJob": {
+      "name": "StopTrainingJob",
+      "description": "Stops a training job. To stop a job, Amazon SageMaker sends the algorithm the SIGTERM\n                                                signal, which delays job termination for 120 seconds.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "training-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopTransformJob": {
+      "name": "StopTransformJob",
+      "description": "Stops a transform job.  When Amazon SageMaker receives a StopTransformJob request,\n                                                the status of the job changes to Stopping.  After Amazon SageMaker stops the job,\n                                                the status is set to Stopped",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "transform-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateCodeRepository": {
+      "name": "UpdateCodeRepository",
+      "description": "Updates a code repository.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "code-repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDomain": {
+      "name": "UpdateDomain",
+      "description": "Grants permission to update a Domain",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344688344": {
+      "name": "$1604344688344",
+      "description": "sagemaker:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:DomainSharingOutputKmsKey",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateEndpoint": {
+      "name": "UpdateEndpoint",
+      "description": "Updates an endpoint to use the endpoint configuration specified in the request.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "endpoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateEndpointWeightsAndCapacities": {
+      "name": "UpdateEndpointWeightsAndCapacities",
+      "description": "Updates variant weight, capacity, or both of one or more variants associated with\n                                                an endpoint.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "endpoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateExperiment": {
+      "name": "UpdateExperiment",
+      "description": "Updates an experiment.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "experiment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateMonitoringSchedule": {
+      "name": "UpdateMonitoringSchedule",
+      "description": "Updates a monitoring schedule.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "monitoring-schedule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "$1604344688345": {
+      "name": "$1604344688345",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:MaxRuntimeInSeconds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:NetworkIsolation\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:OutputKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VolumeKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSubnets",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateNotebookInstance": {
+      "name": "UpdateNotebookInstance",
+      "description": "Updates a notebook instance. Notebook instance updates include upgrading or downgrading\n                                                the EC2 instance used for your notebook instance to accommodate changes in your workload\n                                                requirements. You can also update the VPC security groups.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "notebook-instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344688346": {
+      "name": "$1604344688346",
+      "description": "sagemaker:AcceleratorTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:RootAccess",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateNotebookInstanceLifecycleConfig": {
+      "name": "UpdateNotebookInstanceLifecycleConfig",
+      "description": "Updates a notebook instance lifecycle configuration created with the CreateNotebookInstanceLifecycleConfig\n                                                API.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "notebook-instance-lifecycle-config*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateTrial": {
+      "name": "UpdateTrial",
+      "description": "Updates a trial.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "experiment-trial*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateTrialComponent": {
+      "name": "UpdateTrialComponent",
+      "description": "Updates a trial component.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "experiment-trial-component*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateUserProfile": {
+      "name": "UpdateUserProfile",
+      "description": "Grants permission to update a UserProfile",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344688347": {
+      "name": "$1604344688347",
+      "description": "sagemaker:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:DomainSharingOutputKmsKey",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateWorkforce": {
+      "name": "UpdateWorkforce",
+      "description": "Updates a workforce.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workforce*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateWorkteam": {
+      "name": "UpdateWorkteam",
+      "description": "Updates a workteam.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workteam*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon SageMaker"
+}

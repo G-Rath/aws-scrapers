@@ -1,0 +1,210 @@
+{
+  "servicePrefix": "cognito-identity",
+  "actions": {
+    "CreateIdentityPool": {
+      "name": "CreateIdentityPool",
+      "description": "Creates a new identity pool.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
+      "dependentActions": ""
+    },
+    "DeleteIdentities": {
+      "name": "DeleteIdentities",
+      "description": "Deletes identities from an identity pool. You can specify a list of 1-60 identities\n                                                that you want to delete.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteIdentityPool": {
+      "name": "DeleteIdentityPool",
+      "description": "Deletes a user pool. Once a pool is deleted, users will not be able to authenticate\n                                                with the pool.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "identitypool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeIdentity": {
+      "name": "DescribeIdentity",
+      "description": "Returns metadata related to the given identity, including when the identity was created\n                                                and any associated linked logins.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeIdentityPool": {
+      "name": "DescribeIdentityPool",
+      "description": "Gets details about a particular identity pool, including the pool name, ID description,\n                                                creation date, and current number of users.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "identitypool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetCredentialsForIdentity": {
+      "name": "GetCredentialsForIdentity",
+      "description": "Returns credentials for the provided identity ID.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetId": {
+      "name": "GetId",
+      "description": "Generates (or retrieves) a Cognito ID. Supplying multiple logins will create an implicit\n                                                linked account.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetIdentityPoolRoles": {
+      "name": "GetIdentityPoolRoles",
+      "description": "Gets the roles for an identity pool.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "identitypool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetOpenIdToken": {
+      "name": "GetOpenIdToken",
+      "description": "Gets an OpenID token, using a known Cognito ID.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetOpenIdTokenForDeveloperIdentity": {
+      "name": "GetOpenIdTokenForDeveloperIdentity",
+      "description": "Registers (or retrieves) a Cognito IdentityId and an OpenID Connect token for a user\n                                                authenticated by your backend authentication process.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "identitypool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListIdentities": {
+      "name": "ListIdentities",
+      "description": "Lists the identities in a pool.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "identitypool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListIdentityPools": {
+      "name": "ListIdentityPools",
+      "description": "Lists all of the Cognito identity pools registered for your account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Lists the tags that are assigned to an Amazon Cognito identity pool.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "identitypool"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344679898": {
+      "name": "$1604344679898",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "LookupDeveloperIdentity": {
+      "name": "LookupDeveloperIdentity",
+      "description": "Retrieves the IdentityID associated with a DeveloperUserIdentifier or the list of\n                                                DeveloperUserIdentifiers associated with an IdentityId for an existing identity.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "identitypool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "MergeDeveloperIdentities": {
+      "name": "MergeDeveloperIdentities",
+      "description": "Merges two users having different IdentityIds, existing in the same identity pool,\n                                                and identified by the same developer provider.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "identitypool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetIdentityPoolRoles": {
+      "name": "SetIdentityPoolRoles",
+      "description": "Sets the roles for an identity pool. These roles are used when making calls to GetCredentialsForIdentity\n                                                action.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Assigns a set of tags to an Amazon Cognito identity pool.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "identitypool"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344679899": {
+      "name": "$1604344679899",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UnlinkDeveloperIdentity": {
+      "name": "UnlinkDeveloperIdentity",
+      "description": "Unlinks a DeveloperUserIdentifier from an existing identity.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "identitypool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UnlinkIdentity": {
+      "name": "UnlinkIdentity",
+      "description": "Unlinks a federated identity from an existing account.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Removes the specified tags from an Amazon Cognito identity pool.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "identitypool"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateIdentityPool": {
+      "name": "UpdateIdentityPool",
+      "description": "Updates a user pool.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "identitypool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Cognito Identity"
+}

@@ -1,0 +1,16 @@
+{
+  "servicePrefix": "workmailmessageflow",
+  "actions": {
+    "GetRawMessageContent": {
+      "name": "GetRawMessageContent",
+      "description": "Grants permission to read the content of email messages with the specified message\n                                                ID",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "RawMessage*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon WorkMail Message Flow"
+}

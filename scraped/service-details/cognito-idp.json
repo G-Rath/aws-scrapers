@@ -1,0 +1,964 @@
+{
+  "servicePrefix": "cognito-idp",
+  "actions": {
+    "AddCustomAttributes": {
+      "name": "AddCustomAttributes",
+      "description": "Adds additional user attributes to the user pool schema.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminAddUserToGroup": {
+      "name": "AdminAddUserToGroup",
+      "description": "Adds the specified user to the specified group.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminConfirmSignUp": {
+      "name": "AdminConfirmSignUp",
+      "description": "Confirms user registration as an admin without using a confirmation code. Works on\n                                                any user.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminCreateUser": {
+      "name": "AdminCreateUser",
+      "description": "Creates a new user in the specified user pool and sends a welcome message via email\n                                                or phone (SMS).",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminDeleteUser": {
+      "name": "AdminDeleteUser",
+      "description": "Deletes a user as an administrator. Works on any user.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminDeleteUserAttributes": {
+      "name": "AdminDeleteUserAttributes",
+      "description": "Deletes the user attributes in a user pool as an administrator. Works on any user.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminDisableProviderForUser": {
+      "name": "AdminDisableProviderForUser",
+      "description": "Disables the user from signing in with the specified external (SAML or social) identity\n                                                provider.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminDisableUser": {
+      "name": "AdminDisableUser",
+      "description": "Disables the specified user as an administrator. Works on any user.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminEnableUser": {
+      "name": "AdminEnableUser",
+      "description": "Enables the specified user as an administrator. Works on any user.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminForgetDevice": {
+      "name": "AdminForgetDevice",
+      "description": "Forgets the device, as an administrator.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminGetDevice": {
+      "name": "AdminGetDevice",
+      "description": "Gets the device, as an administrator.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminGetUser": {
+      "name": "AdminGetUser",
+      "description": "Gets the specified user by user name in a user pool as an administrator. Works on\n                                                any user.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminInitiateAuth": {
+      "name": "AdminInitiateAuth",
+      "description": "Authenticates a user in a user pool as an administrator. Works on any user.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminLinkProviderForUser": {
+      "name": "AdminLinkProviderForUser",
+      "description": "Links an existing user account in a user pool (DestinationUser) to an identity from\n                                                an external identity provider (SourceUser) based on a specified attribute name and\n                                                value from the external identity provider.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminListDevices": {
+      "name": "AdminListDevices",
+      "description": "Lists devices, as an administrator.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminListGroupsForUser": {
+      "name": "AdminListGroupsForUser",
+      "description": "Lists the groups that the user belongs to.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminListUserAuthEvents": {
+      "name": "AdminListUserAuthEvents",
+      "description": "Lists the authentication events for the user.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminRemoveUserFromGroup": {
+      "name": "AdminRemoveUserFromGroup",
+      "description": "Removes the specified user from the specified group.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminResetUserPassword": {
+      "name": "AdminResetUserPassword",
+      "description": "Resets the specified user's password in a user pool as an administrator. Works on\n                                                any user.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminRespondToAuthChallenge": {
+      "name": "AdminRespondToAuthChallenge",
+      "description": "Responds to an authentication challenge, as an administrator.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminSetUserMFAPreference": {
+      "name": "AdminSetUserMFAPreference",
+      "description": "Sets MFA preference for the user in the userpool",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminSetUserPassword": {
+      "name": "AdminSetUserPassword",
+      "description": "Sets the specified user's password in a user pool as an administrator. Works on any\n                                                user.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminSetUserSettings": {
+      "name": "AdminSetUserSettings",
+      "description": "Sets all the user settings for a specified user name. Works on any user.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminUpdateAuthEventFeedback": {
+      "name": "AdminUpdateAuthEventFeedback",
+      "description": "Updates the feedback for the user authentication event",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminUpdateDeviceStatus": {
+      "name": "AdminUpdateDeviceStatus",
+      "description": "Updates the device status as an administrator.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminUpdateUserAttributes": {
+      "name": "AdminUpdateUserAttributes",
+      "description": "Updates the specified user's attributes, including developer attributes, as an administrator.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AdminUserGlobalSignOut": {
+      "name": "AdminUserGlobalSignOut",
+      "description": "Signs out users from all devices, as an administrator.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociateSoftwareToken": {
+      "name": "AssociateSoftwareToken",
+      "description": "Returns a unique generated shared secret key code for the user account.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ChangePassword": {
+      "name": "ChangePassword",
+      "description": "Changes the password for a specified user in a user pool.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ConfirmDevice": {
+      "name": "ConfirmDevice",
+      "description": "Confirms tracking of the device. This API call is the call that begins device tracking.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ConfirmForgotPassword": {
+      "name": "ConfirmForgotPassword",
+      "description": "Allows a user to enter a confirmation code to reset a forgotten password.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ConfirmSignUp": {
+      "name": "ConfirmSignUp",
+      "description": "Confirms registration of a user and handles the existing alias from a previous user.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateGroup": {
+      "name": "CreateGroup",
+      "description": "Creates a new group in the specified user pool.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateIdentityProvider": {
+      "name": "CreateIdentityProvider",
+      "description": "Creates an identity provider for a user pool.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateResourceServer": {
+      "name": "CreateResourceServer",
+      "description": "Creates a new OAuth2.0 resource server and defines custom scopes in it.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateUserImportJob": {
+      "name": "CreateUserImportJob",
+      "description": "Creates the user import job.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateUserPool": {
+      "name": "CreateUserPool",
+      "description": "Creates a new Amazon Cognito user pool and sets the password policy for the pool.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
+      "dependentActions": ""
+    },
+    "CreateUserPoolClient": {
+      "name": "CreateUserPoolClient",
+      "description": "Creates the user pool client.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateUserPoolDomain": {
+      "name": "CreateUserPoolDomain",
+      "description": "Creates a new domain for a user pool.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteGroup": {
+      "name": "DeleteGroup",
+      "description": "Deletes a group. Currently only groups with no members can be deleted.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteIdentityProvider": {
+      "name": "DeleteIdentityProvider",
+      "description": "Deletes an identity provider for a user pool.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteResourceServer": {
+      "name": "DeleteResourceServer",
+      "description": "Deletes a resource server.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteUser": {
+      "name": "DeleteUser",
+      "description": "Allows a user to delete one's self.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteUserAttributes": {
+      "name": "DeleteUserAttributes",
+      "description": "Deletes the attributes for a user.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteUserPool": {
+      "name": "DeleteUserPool",
+      "description": "Deletes the specified Amazon Cognito user pool.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteUserPoolClient": {
+      "name": "DeleteUserPoolClient",
+      "description": "Allows the developer to delete the user pool client.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteUserPoolDomain": {
+      "name": "DeleteUserPoolDomain",
+      "description": "Deletes a domain for a user pool.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeIdentityProvider": {
+      "name": "DescribeIdentityProvider",
+      "description": "Gets information about a specific identity provider.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeResourceServer": {
+      "name": "DescribeResourceServer",
+      "description": "Describes a resource server.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeRiskConfiguration": {
+      "name": "DescribeRiskConfiguration",
+      "description": "Describes the risk configuration setting for the userpool / userpool client",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeUserImportJob": {
+      "name": "DescribeUserImportJob",
+      "description": "Describes the user import job.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeUserPool": {
+      "name": "DescribeUserPool",
+      "description": "Returns the configuration information and metadata of the specified user pool.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeUserPoolClient": {
+      "name": "DescribeUserPoolClient",
+      "description": "Client method for returning the configuration information and metadata of the specified\n                                                user pool client.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeUserPoolDomain": {
+      "name": "DescribeUserPoolDomain",
+      "description": "Gets information about a domain.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ForgetDevice": {
+      "name": "ForgetDevice",
+      "description": "Forgets the specified device.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ForgotPassword": {
+      "name": "ForgotPassword",
+      "description": "Calling this API causes a message to be sent to the end user with a confirmation code\n                                                that is required to change the user's password.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetCSVHeader": {
+      "name": "GetCSVHeader",
+      "description": "Gets the header information for the .csv file to be used as input for the user import\n                                                job.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDevice": {
+      "name": "GetDevice",
+      "description": "Gets the device.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetGroup": {
+      "name": "GetGroup",
+      "description": "Gets a group.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetIdentityProviderByIdentifier": {
+      "name": "GetIdentityProviderByIdentifier",
+      "description": "Gets the specified identity provider.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSigningCertificate": {
+      "name": "GetSigningCertificate",
+      "description": "Returns the signing certificate.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetUICustomization": {
+      "name": "GetUICustomization",
+      "description": "Gets the UI Customization information for a particular app client's app UI, if there\n                                                is something set.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetUser": {
+      "name": "GetUser",
+      "description": "Gets the user attributes and metadata for a user.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetUserAttributeVerificationCode": {
+      "name": "GetUserAttributeVerificationCode",
+      "description": "Gets the user attribute verification code for the specified attribute name.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetUserPoolMfaConfig": {
+      "name": "GetUserPoolMfaConfig",
+      "description": "Gets the MFA configuration for the userpool",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GlobalSignOut": {
+      "name": "GlobalSignOut",
+      "description": "Signs out users from all devices.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "InitiateAuth": {
+      "name": "InitiateAuth",
+      "description": "Initiates the authentication flow.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDevices": {
+      "name": "ListDevices",
+      "description": "Lists the devices.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGroups": {
+      "name": "ListGroups",
+      "description": "Lists the groups associated with a user pool.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListIdentityProviders": {
+      "name": "ListIdentityProviders",
+      "description": "Lists information about all identity providers for a user pool.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListResourceServers": {
+      "name": "ListResourceServers",
+      "description": "Lists the resource servers for a user pool.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Lists the tags that are assigned to an Amazon Cognito user pool.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "userpool"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListUserImportJobs": {
+      "name": "ListUserImportJobs",
+      "description": "Lists the user import jobs..",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListUserPoolClients": {
+      "name": "ListUserPoolClients",
+      "description": "Lists the clients that have been created for the specified user pool.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListUserPools": {
+      "name": "ListUserPools",
+      "description": "Lists the user pools associated with an AWS account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListUsers": {
+      "name": "ListUsers",
+      "description": "Lists the users in the Amazon Cognito user pool.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListUsersInGroup": {
+      "name": "ListUsersInGroup",
+      "description": "Lists the users in the specified group.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ResendConfirmationCode": {
+      "name": "ResendConfirmationCode",
+      "description": "Resends the confirmation (for confirmation of registration) to a specific user in\n                                                the user pool.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RespondToAuthChallenge": {
+      "name": "RespondToAuthChallenge",
+      "description": "Responds to the authentication challenge.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetRiskConfiguration": {
+      "name": "SetRiskConfiguration",
+      "description": "sets the risk configuration setting for the userpool / userpool client",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetUICustomization": {
+      "name": "SetUICustomization",
+      "description": "Sets the UI customization information for a user pool's built-in app UI.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetUserMFAPreference": {
+      "name": "SetUserMFAPreference",
+      "description": "Sets MFA preference for the user in the userpool",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetUserPoolMfaConfig": {
+      "name": "SetUserPoolMfaConfig",
+      "description": "Sets the MFA configuration for the userpool",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetUserSettings": {
+      "name": "SetUserSettings",
+      "description": "Sets the user settings like multi-factor authentication (MFA).",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SignUp": {
+      "name": "SignUp",
+      "description": "Registers the user in the specified user pool and creates a user name, password, and\n                                                user attributes.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartUserImportJob": {
+      "name": "StartUserImportJob",
+      "description": "Starts the user import.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopUserImportJob": {
+      "name": "StopUserImportJob",
+      "description": "Stops the user import job.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Assigns a set of tags to an Amazon Cognito user pool.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "userpool"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344684518": {
+      "name": "$1604344684518",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Removes the specified tags from an Amazon Cognito user pool.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "userpool"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAuthEventFeedback": {
+      "name": "UpdateAuthEventFeedback",
+      "description": "Updates the feedback for the user authentication event",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDeviceStatus": {
+      "name": "UpdateDeviceStatus",
+      "description": "Updates the device status.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateGroup": {
+      "name": "UpdateGroup",
+      "description": "Updates the specified group with the specified attributes.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateIdentityProvider": {
+      "name": "UpdateIdentityProvider",
+      "description": "Updates identity provider information for a user pool.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateResourceServer": {
+      "name": "UpdateResourceServer",
+      "description": "Updates the name and scopes of resource server.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateUserAttributes": {
+      "name": "UpdateUserAttributes",
+      "description": "Allows a user to update a specific attribute (one at a time).",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateUserPool": {
+      "name": "UpdateUserPool",
+      "description": "Updates the specified user pool with the specified attributes.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344684519": {
+      "name": "$1604344684519",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateUserPoolClient": {
+      "name": "UpdateUserPoolClient",
+      "description": "Allows the developer to update the specified user pool client and password policy.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateUserPoolDomain": {
+      "name": "UpdateUserPoolDomain",
+      "description": "Updates the Secure Sockets Layer (SSL) certificate for the custom domain for your\n                                                user pool.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "userpool*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "VerifySoftwareToken": {
+      "name": "VerifySoftwareToken",
+      "description": "Registers a user's entered TOTP code and mark the user's software token MFA status\n                                                as verified if successful.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "VerifyUserAttribute": {
+      "name": "VerifyUserAttribute",
+      "description": "Verifies a user attribute using a one time verification code.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Cognito User Pools"
+}

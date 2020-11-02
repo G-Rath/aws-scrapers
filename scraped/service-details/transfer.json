@@ -1,0 +1,200 @@
+{
+  "servicePrefix": "transfer",
+  "actions": {
+    "CreateServer": {
+      "name": "CreateServer",
+      "description": "Enables the caller to create a server.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "dependentActions": "iam:PassRole"
+    },
+    "CreateUser": {
+      "name": "CreateUser",
+      "description": "Enables the caller to add a user associated with a server.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "server*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "$1604344730084": {
+      "name": "$1604344730084",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteServer": {
+      "name": "DeleteServer",
+      "description": "Enables the caller to delete a server.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "server*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSshPublicKey": {
+      "name": "DeleteSshPublicKey",
+      "description": "Enables the caller to delete an SSH public key from a user.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteUser": {
+      "name": "DeleteUser",
+      "description": "Enables the caller to delete a user associated with a server.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeServer": {
+      "name": "DescribeServer",
+      "description": "Enables the caller to describe a server.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "server*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeUser": {
+      "name": "DescribeUser",
+      "description": "Enables the caller to describe a user associated with a server.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ImportSshPublicKey": {
+      "name": "ImportSshPublicKey",
+      "description": "Enables the caller to add an SSH public key to a user.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListServers": {
+      "name": "ListServers",
+      "description": "Enables the caller to list servers",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Enables the caller to list tags for a server or a user.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "server"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "user": {
+      "name": "user",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ListUsers": {
+      "name": "ListUsers",
+      "description": "Enables the caller to list users associated with a server.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "server*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartServer": {
+      "name": "StartServer",
+      "description": "Enables the caller to start a server.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "server*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopServer": {
+      "name": "StopServer",
+      "description": "Enables the caller to stop a server.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "server*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Enables the caller to tag a server or a user.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "server"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344730086": {
+      "name": "$1604344730086",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "TestIdentityProvider": {
+      "name": "TestIdentityProvider",
+      "description": "Enables the caller to test a server's custom identity provider.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Enables the caller to untag a server or a user.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "server"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateServer": {
+      "name": "UpdateServer",
+      "description": "Enables the caller to update the configuration of a server",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "server*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "UpdateUser": {
+      "name": "UpdateUser",
+      "description": "Enables the caller to update the configuration of a user",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    }
+  },
+  "name": "AWS Transfer for SFTP"
+}

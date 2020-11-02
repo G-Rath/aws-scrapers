@@ -1,0 +1,492 @@
+{
+  "servicePrefix": "backup",
+  "actions": {
+    "CopyIntoBackupVault": {
+      "name": "CopyIntoBackupVault",
+      "description": "Copy into a backup vault",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateBackupPlan": {
+      "name": "CreateBackupPlan",
+      "description": "Creates a new backup plan",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backupPlan*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344703720": {
+      "name": "$1604344703720",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateBackupSelection": {
+      "name": "CreateBackupSelection",
+      "description": "Creates a new resource assignment in a backup plan.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backupPlan*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "CreateBackupVault": {
+      "name": "CreateBackupVault",
+      "description": "Creates a new backup vault.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backupVault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteBackupPlan": {
+      "name": "DeleteBackupPlan",
+      "description": "Deletes a backup plan.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backupPlan*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteBackupSelection": {
+      "name": "DeleteBackupSelection",
+      "description": "Deletes a resource assignment from a backup plan.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backupPlan*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteBackupVault": {
+      "name": "DeleteBackupVault",
+      "description": "Deletes a backup vault.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backupVault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteBackupVaultAccessPolicy": {
+      "name": "DeleteBackupVaultAccessPolicy",
+      "description": "Deletes backup vault access policy.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backupVault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteBackupVaultNotifications": {
+      "name": "DeleteBackupVaultNotifications",
+      "description": "Remove notifications from backup vault.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backupVault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRecoveryPoint": {
+      "name": "DeleteRecoveryPoint",
+      "description": "Deletes a recovery point from a backup vault.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "recoveryPoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeBackupJob": {
+      "name": "DescribeBackupJob",
+      "description": "Describes a backup job",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeBackupVault": {
+      "name": "DescribeBackupVault",
+      "description": "Creates a new backup vault with the specified name.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "backupVault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeCopyJob": {
+      "name": "DescribeCopyJob",
+      "description": "Describes a copy job",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "DescribeProtectedResource": {
+      "name": "DescribeProtectedResource",
+      "description": "Describes a protected resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeRecoveryPoint": {
+      "name": "DescribeRecoveryPoint",
+      "description": "Describes a recovery point.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "recoveryPoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeRegionSettings": {
+      "name": "DescribeRegionSettings",
+      "description": "Describes region settings",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeRestoreJob": {
+      "name": "DescribeRestoreJob",
+      "description": "Describes a restore job.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ExportBackupPlanTemplate": {
+      "name": "ExportBackupPlanTemplate",
+      "description": "Exports a backup plan as a JSON.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBackupPlan": {
+      "name": "GetBackupPlan",
+      "description": "Gets a backup plan.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "backupPlan*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBackupPlanFromJSON": {
+      "name": "GetBackupPlanFromJSON",
+      "description": "Transforms a JSON to a backup plan.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBackupPlanFromTemplate": {
+      "name": "GetBackupPlanFromTemplate",
+      "description": "Transforms a template to a backup plan.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBackupSelection": {
+      "name": "GetBackupSelection",
+      "description": "Gets a backup plan resource assignment.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "backupPlan*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBackupVaultAccessPolicy": {
+      "name": "GetBackupVaultAccessPolicy",
+      "description": "Gets backup vault access policy.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "backupVault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBackupVaultNotifications": {
+      "name": "GetBackupVaultNotifications",
+      "description": "Gets backup vault notifications.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "backupVault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRecoveryPointRestoreMetadata": {
+      "name": "GetRecoveryPointRestoreMetadata",
+      "description": "Gets recovery point restore metadata.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "recoveryPoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSupportedResourceTypes": {
+      "name": "GetSupportedResourceTypes",
+      "description": "Gets supported resource types.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListBackupJobs": {
+      "name": "ListBackupJobs",
+      "description": "Lists backup jobs.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListBackupPlanTemplates": {
+      "name": "ListBackupPlanTemplates",
+      "description": "Lists backup plan templates provided by AWS Backup.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListBackupPlanVersions": {
+      "name": "ListBackupPlanVersions",
+      "description": "Lists backup plan versions.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "backupPlan*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListBackupPlans": {
+      "name": "ListBackupPlans",
+      "description": "Lists backup plans.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListBackupSelections": {
+      "name": "ListBackupSelections",
+      "description": "Lists resource assignments for a specific backup plan.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "backupPlan*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListBackupVaults": {
+      "name": "ListBackupVaults",
+      "description": "Lists backup vaults.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListCopyJobs": {
+      "name": "ListCopyJobs",
+      "description": "List copy jobs",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProtectedResources": {
+      "name": "ListProtectedResources",
+      "description": "Lists protected resources by AWS Backup.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRecoveryPointsByBackupVault": {
+      "name": "ListRecoveryPointsByBackupVault",
+      "description": "Lists recovery points inside a backup vault.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "backupVault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRecoveryPointsByResource": {
+      "name": "ListRecoveryPointsByResource",
+      "description": "Lists recovery points for a resource.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRestoreJobs": {
+      "name": "ListRestoreJobs",
+      "description": "Lists restore jobs.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTags": {
+      "name": "ListTags",
+      "description": "Lists tags for a resource.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "backupPlan"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "backupVault": {
+      "name": "backupVault",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "recoveryPoint": {
+      "name": "recoveryPoint",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutBackupVaultAccessPolicy": {
+      "name": "PutBackupVaultAccessPolicy",
+      "description": "Adds an access policy to the backup vault.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backupVault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutBackupVaultNotifications": {
+      "name": "PutBackupVaultNotifications",
+      "description": "Adds an SNS topic to the backup vault.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backupVault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartBackupJob": {
+      "name": "StartBackupJob",
+      "description": "Starts a new backup job.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backupVault*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "StartCopyJob": {
+      "name": "StartCopyJob",
+      "description": "Copy a backup from a source region to a destination region.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "recoveryPoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "$1604344703728": {
+      "name": "$1604344703728",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "StartRestoreJob": {
+      "name": "StartRestoreJob",
+      "description": "Starts a new restore job.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "recoveryPoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "StopBackupJob": {
+      "name": "StopBackupJob",
+      "description": "Stops a backup job.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Tags a resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "backupPlan"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344703730": {
+      "name": "$1604344703730",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Untags a resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "backupPlan"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344703733": {
+      "name": "$1604344703733",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateBackupPlan": {
+      "name": "UpdateBackupPlan",
+      "description": "Updates a backup plan.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backupPlan*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRecoveryPointLifecycle": {
+      "name": "UpdateRecoveryPointLifecycle",
+      "description": "Updates the lifecycle of the recovery point.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "recoveryPoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRegionSettings": {
+      "name": "UpdateRegionSettings",
+      "description": "Describes region settings",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Backup"
+}

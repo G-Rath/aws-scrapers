@@ -1,0 +1,280 @@
+{
+  "servicePrefix": "ram",
+  "actions": {
+    "AcceptResourceShareInvitation": {
+      "name": "AcceptResourceShareInvitation",
+      "description": "Accept the specified resource share invitation",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "resource-share-invitation*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344743923": {
+      "name": "$1604344743923",
+      "description": "aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:ResourceShareName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:AllowsExternalPrincipals\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:Principal\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:RequestedResourceType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:ResourceArn",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "AssociateResourceShare": {
+      "name": "AssociateResourceShare",
+      "description": "Associates resource(s) and/or principal(s) to a resource share",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "resource-share*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociateResourceSharePermission": {
+      "name": "AssociateResourceSharePermission",
+      "description": "Associate a Permission with a Resource Share",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "permission*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "resource-share*": {
+      "name": "resource-share*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344743924": {
+      "name": "$1604344743924",
+      "description": "aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:AllowsExternalPrincipals\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:ResourceShareName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:PermissionArn",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateResourceShare": {
+      "name": "CreateResourceShare",
+      "description": "Create resource share with provided resource(s) and/or principal(s)",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:RequestedResourceType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:ResourceArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:RequestedAllowsExternalPrincipals\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:Principal",
+      "dependentActions": ""
+    },
+    "DeleteResourceShare": {
+      "name": "DeleteResourceShare",
+      "description": "Delete resource share",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "resource-share*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344743925": {
+      "name": "$1604344743925",
+      "description": "aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:ResourceShareName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:AllowsExternalPrincipals",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DisassociateResourceShare": {
+      "name": "DisassociateResourceShare",
+      "description": "Disassociates resource(s) and/or principal(s) from a resource share",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "resource-share*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344743926": {
+      "name": "$1604344743926",
+      "description": "aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:ResourceShareName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:AllowsExternalPrincipals\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:Principal\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:RequestedResourceType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:ResourceArn",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DisassociateResourceSharePermission": {
+      "name": "DisassociateResourceSharePermission",
+      "description": "Disassociate a Permission from a Resource Share",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "permission*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344743927": {
+      "name": "$1604344743927",
+      "description": "ram:PermissionArn",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "EnableSharingWithAwsOrganization": {
+      "name": "EnableSharingWithAwsOrganization",
+      "description": "Grants permission to access customer's organization and create a SLR in the customer's\n                                                account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPermission": {
+      "name": "GetPermission",
+      "description": "Gets the contents of an AWS RAM permission",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "permission*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetResourcePolicies": {
+      "name": "GetResourcePolicies",
+      "description": "Gets the policies for the specified resources that you own and have shared",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetResourceShareAssociations": {
+      "name": "GetResourceShareAssociations",
+      "description": "Get a set of resource share associations from a provided list or with a specified\n                                                status of the specified type",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetResourceShareInvitations": {
+      "name": "GetResourceShareInvitations",
+      "description": "Get resource share invitations by the specified invitation arn or those for the resource\n                                                share",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetResourceShares": {
+      "name": "GetResourceShares",
+      "description": "Get a set of resource shares from a provided list or with a specified status",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPendingInvitationResources": {
+      "name": "ListPendingInvitationResources",
+      "description": "Lists the resources in a resource share that is shared with you but that the invitation\n                                                is still pending for",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "resource-share-invitation*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPermissions": {
+      "name": "ListPermissions",
+      "description": "Lists the AWS RAM permissions",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPrincipals": {
+      "name": "ListPrincipals",
+      "description": "Lists the principals that you have shared resources with or that have shared resources\n                                                with you",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListResourceSharePermissions": {
+      "name": "ListResourceSharePermissions",
+      "description": "List the Permissions associated with a Resource Share",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "resource-share*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344743928": {
+      "name": "$1604344743928",
+      "description": "aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:ResourceShareName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:AllowsExternalPrincipals",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ListResourceTypes": {
+      "name": "ListResourceTypes",
+      "description": "Lists the shareable resource types supported by AWS RAM",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListResources": {
+      "name": "ListResources",
+      "description": "Lists the resources that you added to a resource shares or the resources that are\n                                                shared with you",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PromoteResourceShareCreatedFromPolicy": {
+      "name": "PromoteResourceShareCreatedFromPolicy",
+      "description": "Use this API action to promote the resource share",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "resource-share*"
+      ],
+      "conditionKeys": "aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:ResourceShareName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:AllowsExternalPrincipals",
+      "dependentActions": ""
+    },
+    "RejectResourceShareInvitation": {
+      "name": "RejectResourceShareInvitation",
+      "description": "Reject the specified resource share invitation",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "resource-share-invitation*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344743929": {
+      "name": "$1604344743929",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Tag the specified resources share",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "resource-share*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Untag the specified resource share",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "resource-share*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344743930": {
+      "name": "$1604344743930",
+      "description": "aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:ResourceShareName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:AllowsExternalPrincipals\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:RequestedAllowsExternalPrincipals",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateResourceShare": {
+      "name": "UpdateResourceShare",
+      "description": "Update attributes of the resource share",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "resource-share*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Resource Access Manager"
+}

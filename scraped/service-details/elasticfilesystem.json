@@ -1,0 +1,336 @@
+{
+  "servicePrefix": "elasticfilesystem",
+  "actions": {
+    "Backup": {
+      "name": "Backup",
+      "description": "Starts a backup job for an existing file system.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ClientMount": {
+      "name": "ClientMount",
+      "description": "Permission for allowing read-access to a file system.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344743489": {
+      "name": "$1604344743489",
+      "description": "elasticfilesystem:AccessPointArn",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ClientRootAccess": {
+      "name": "ClientRootAccess",
+      "description": "Permission for allowing root-access to a file system.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344743490": {
+      "name": "$1604344743490",
+      "description": "elasticfilesystem:AccessPointArn",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ClientWrite": {
+      "name": "ClientWrite",
+      "description": "Permission for allowing write-access to a file system.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAccessPoint": {
+      "name": "CreateAccessPoint",
+      "description": "Creates an access point for the specified file system.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateFileSystem": {
+      "name": "CreateFileSystem",
+      "description": "Creates a new, empty file system.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticfilesystem:Encrypted",
+      "dependentActions": ""
+    },
+    "CreateMountTarget": {
+      "name": "CreateMountTarget",
+      "description": "Creates a mount target for a file system.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateTags": {
+      "name": "CreateTags",
+      "description": "Creates or overwrites tags associated with a file system.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344743491": {
+      "name": "$1604344743491",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteAccessPoint": {
+      "name": "DeleteAccessPoint",
+      "description": "Deletes the specified access point.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "access-point*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteFileSystem": {
+      "name": "DeleteFileSystem",
+      "description": "Deletes a file system, permanently severing access to its contents.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteFileSystemPolicy": {
+      "name": "DeleteFileSystemPolicy",
+      "description": "Clears the resource-level policy for a given file system.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteMountTarget": {
+      "name": "DeleteMountTarget",
+      "description": "Deletes the specified mount target.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteTags": {
+      "name": "DeleteTags",
+      "description": "Deletes the specified tags from a file system.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344743492": {
+      "name": "$1604344743492",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DescribeAccessPoints": {
+      "name": "DescribeAccessPoints",
+      "description": "Returns the descriptions of Amazon EFS access points.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "access-point"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "file-system": {
+      "name": "file-system",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DescribeBackupPolicy": {
+      "name": "DescribeBackupPolicy",
+      "description": "Returns the current BackupPolicy object for the specified Amazon EFS file system.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeFileSystemPolicy": {
+      "name": "DescribeFileSystemPolicy",
+      "description": "Returns the current resource-level policy for a given file system.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "file-system"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeFileSystems": {
+      "name": "DescribeFileSystems",
+      "description": "Returns the description of a specific Amazon EFS file system if either the file system\n                                                CreationToken or the FileSystemId is provided; otherwise, returns descriptions of\n                                                all file systems owned by the caller's AWS account in the AWS region of the endpoint\n                                                that you're calling.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "file-system"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeLifecycleConfiguration": {
+      "name": "DescribeLifecycleConfiguration",
+      "description": "Returns the current LifecycleConfiguration object for the specified Amazon EFS file\n                                                system.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeMountTargetSecurityGroups": {
+      "name": "DescribeMountTargetSecurityGroups",
+      "description": "Returns the security groups currently in effect for a mount target.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeMountTargets": {
+      "name": "DescribeMountTargets",
+      "description": "Returns the descriptions of all the current mount targets, or a specific mount target,\n                                                for a file system.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "access-point": {
+      "name": "access-point",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DescribeTags": {
+      "name": "DescribeTags",
+      "description": "Returns the tags associated with a file system.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Returns the tags associated with the specified Amazon EFS resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "access-point"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ModifyMountTargetSecurityGroups": {
+      "name": "ModifyMountTargetSecurityGroups",
+      "description": "Modifies the set of security groups in effect for a mount target.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutBackupPolicy": {
+      "name": "PutBackupPolicy",
+      "description": "Enables automatic backups with AWS Backup by creating a new BackupPolicy object.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutFileSystemPolicy": {
+      "name": "PutFileSystemPolicy",
+      "description": "Apply a resource-level policy granting and/or restricting actions from given actors\n                                                for the specified file system.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutLifecycleConfiguration": {
+      "name": "PutLifecycleConfiguration",
+      "description": "Enables lifecycle management by creating a new LifecycleConfiguration object.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "Restore": {
+      "name": "Restore",
+      "description": "Starts a restore job for an existing file system.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Creates or overwrites tags associated with the specified Amazon EFS resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "access-point"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Deletes the specified tags from a specified Amazon EFS resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "access-point"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateFileSystem": {
+      "name": "UpdateFileSystem",
+      "description": "Updates the throughput mode or the amount of provisioned throughput of an existing\n                                                file system.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Elastic File System"
+}

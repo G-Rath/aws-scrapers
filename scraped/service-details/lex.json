@@ -1,0 +1,470 @@
+{
+  "servicePrefix": "lex",
+  "actions": {
+    "CreateBotVersion": {
+      "name": "CreateBotVersion",
+      "description": "Creates a new version based on the $LATEST version of the specified bot.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateIntentVersion": {
+      "name": "CreateIntentVersion",
+      "description": "Creates a new version based on the $LATEST version of the specified intent.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "intent version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateSlotTypeVersion": {
+      "name": "CreateSlotTypeVersion",
+      "description": "Creates a new version based on the $LATEST version of the specified slot type.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "slottype version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteBot": {
+      "name": "DeleteBot",
+      "description": "Deletes all versions of a bot.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteBotAlias": {
+      "name": "DeleteBotAlias",
+      "description": "Deletes an alias for a specific bot.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot alias*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteBotChannelAssociation": {
+      "name": "DeleteBotChannelAssociation",
+      "description": "Deletes the association between a Amazon Lex bot alias and a messaging platform.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteBotVersion": {
+      "name": "DeleteBotVersion",
+      "description": "Deletes a specific version of a bot.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteIntent": {
+      "name": "DeleteIntent",
+      "description": "Deletes all versions of an intent.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "intent version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteIntentVersion": {
+      "name": "DeleteIntentVersion",
+      "description": "Deletes a specific version of an intent.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "intent version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSession": {
+      "name": "DeleteSession",
+      "description": "Removes session information for a specified bot, alias, and user ID.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot alias"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "bot version": {
+      "name": "bot version",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteSlotType": {
+      "name": "DeleteSlotType",
+      "description": "Deletes all versions of a slot type.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "slottype version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSlotTypeVersion": {
+      "name": "DeleteSlotTypeVersion",
+      "description": "Deletes a specific version of a slot type.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "slottype version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteUtterances": {
+      "name": "DeleteUtterances",
+      "description": "Deletes the information Amazon Lex maintains for utterances on a specific bot and\n                                                userId.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBot": {
+      "name": "GetBot",
+      "description": "Returns information for a specific bot. In addition to the bot name, the bot version\n                                                or alias is required.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bot alias"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBotAlias": {
+      "name": "GetBotAlias",
+      "description": "Returns information about a Amazon Lex bot alias.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bot alias*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBotAliases": {
+      "name": "GetBotAliases",
+      "description": "Returns a list of aliases for a given Amazon Lex bot.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBotChannelAssociation": {
+      "name": "GetBotChannelAssociation",
+      "description": "Returns information about the association between a Amazon Lex bot and a messaging\n                                                platform.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBotChannelAssociations": {
+      "name": "GetBotChannelAssociations",
+      "description": "Returns a list of all of the channels associated with a single bot.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBotVersions": {
+      "name": "GetBotVersions",
+      "description": "Returns information for all versions of a specific bot.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "bot version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBots": {
+      "name": "GetBots",
+      "description": "Returns information for the $LATEST version of all bots, subject to filters provided\n                                                by the client.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBuiltinIntent": {
+      "name": "GetBuiltinIntent",
+      "description": "Returns information about a built-in intent.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBuiltinIntents": {
+      "name": "GetBuiltinIntents",
+      "description": "Gets a list of built-in intents that meet the specified criteria.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBuiltinSlotTypes": {
+      "name": "GetBuiltinSlotTypes",
+      "description": "Gets a list of built-in slot types that meet the specified criteria.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetExport": {
+      "name": "GetExport",
+      "description": "Exports Amazon Lex Resource in a requested format.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bot version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetImport": {
+      "name": "GetImport",
+      "description": "Gets information about an import job started with StartImport.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetIntent": {
+      "name": "GetIntent",
+      "description": "Returns information for a specific intent. In addition to the intent name, you must\n                                                also specify the intent version.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "intent version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetIntentVersions": {
+      "name": "GetIntentVersions",
+      "description": "Returns information for all versions of a specific intent.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "intent version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetIntents": {
+      "name": "GetIntents",
+      "description": "Returns information for the $LATEST version of all intents, subject to filters provided\n                                                by the client.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSession": {
+      "name": "GetSession",
+      "description": "Returns session information for a specified bot, alias, and user ID.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bot alias"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSlotType": {
+      "name": "GetSlotType",
+      "description": "Returns information about a specific version of a slot type. In addition to specifying\n                                                the slot type name, you must also specify the slot type version.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "slottype version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSlotTypeVersions": {
+      "name": "GetSlotTypeVersions",
+      "description": "Returns information for all versions of a specific slot type.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "slottype version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSlotTypes": {
+      "name": "GetSlotTypes",
+      "description": "Returns information for the $LATEST version of all slot types, subject to filters\n                                                provided by the client.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetUtterancesView": {
+      "name": "GetUtterancesView",
+      "description": "Returns a view of aggregate utterance data for versions of a bot for a recent time\n                                                period.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "bot version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Lists tags for a Lex resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bot"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "bot alias": {
+      "name": "bot alias",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "channel": {
+      "name": "channel",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PostContent": {
+      "name": "PostContent",
+      "description": "Sends user input (text or speech) to Amazon Lex.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot alias"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PostText": {
+      "name": "PostText",
+      "description": "Sends user input (text-only) to Amazon Lex.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot alias"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutBot": {
+      "name": "PutBot",
+      "description": "Creates or updates the $LATEST version of a Amazon Lex conversational bot.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344679055": {
+      "name": "$1604344679055",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutBotAlias": {
+      "name": "PutBotAlias",
+      "description": "Creates or updates an alias for the specific bot.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot alias*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344679056": {
+      "name": "$1604344679056",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutIntent": {
+      "name": "PutIntent",
+      "description": "Creates or updates the $LATEST version of an intent.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "intent version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutSession": {
+      "name": "PutSession",
+      "description": "Creates a new session or modifies an existing session with an Amazon Lex bot.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot alias"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutSlotType": {
+      "name": "PutSlotType",
+      "description": "Creates or updates the $LATEST version of a slot type.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "slottype version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartImport": {
+      "name": "StartImport",
+      "description": "Starts a job to import a resource to Amazon Lex.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Adds or overwrites tags to a Lex resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "bot"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344679060": {
+      "name": "$1604344679060",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Removes tags from a Lex resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "bot"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344679061": {
+      "name": "$1604344679061",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    }
+  },
+  "name": "Amazon Lex"
+}

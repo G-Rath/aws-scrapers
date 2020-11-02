@@ -1,0 +1,16 @@
+{
+  "servicePrefix": "rds-db",
+  "actions": {
+    "connect": {
+      "name": "connect",
+      "description": "Allows IAM role or user to connect to RDS database",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "db-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon RDS IAM Authentication"
+}

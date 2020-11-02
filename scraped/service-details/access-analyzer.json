@@ -1,0 +1,208 @@
+{
+  "servicePrefix": "access-analyzer",
+  "actions": {
+    "CreateAnalyzer": {
+      "name": "CreateAnalyzer",
+      "description": "Grants permission to create an analyzer.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Analyzer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344715047": {
+      "name": "$1604344715047",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateArchiveRule": {
+      "name": "CreateArchiveRule",
+      "description": "Grants permission to create an archive rule for the specified analyzer.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Analyzer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ArchiveRule*": {
+      "name": "ArchiveRule*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteAnalyzer": {
+      "name": "DeleteAnalyzer",
+      "description": "Grants permission to delete the specified analyzer.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Analyzer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344715048": {
+      "name": "$1604344715048",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteArchiveRule": {
+      "name": "DeleteArchiveRule",
+      "description": "Grants permission to delete archive rules for the specified analyzer.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Analyzer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAnalyzedResource": {
+      "name": "GetAnalyzedResource",
+      "description": "Grants permission to retrieve information about an analyzed resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAnalyzer": {
+      "name": "GetAnalyzer",
+      "description": "Grants permission to retrieve information about analyzers.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Analyzer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344715049": {
+      "name": "$1604344715049",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetArchiveRule": {
+      "name": "GetArchiveRule",
+      "description": "Grants permission to retrieve information about archive rules for the specified analyzer.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Analyzer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFinding": {
+      "name": "GetFinding",
+      "description": "Grants permission to retrieve findings.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAnalyzedResources": {
+      "name": "ListAnalyzedResources",
+      "description": "Grants permission to retrieve a list of resources that have been analyzed.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAnalyzers": {
+      "name": "ListAnalyzers",
+      "description": "Grants permission to retrieves a list of analyzers.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListArchiveRules": {
+      "name": "ListArchiveRules",
+      "description": "Grants permission to retrieve a list of archive rules from an analyzer.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "Analyzer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFindings": {
+      "name": "ListFindings",
+      "description": "Grants permission to retrieve a list of findings from an analyzer.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permission to retrieve a list of tags applied to a resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Analyzer"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartResourceScan": {
+      "name": "StartResourceScan",
+      "description": "Grants permission to start a scan of the policies applied to a resource.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permission to add a tag to a resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "Analyzer"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344715051": {
+      "name": "$1604344715051",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permission to remove a tag from a resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "Analyzer"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344715052": {
+      "name": "$1604344715052",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateArchiveRule": {
+      "name": "UpdateArchiveRule",
+      "description": "Grants permission to modify an archive rule.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Analyzer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateFindings": {
+      "name": "UpdateFindings",
+      "description": "Grants permission to modify findings.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "IAM Access Analyzer"
+}

@@ -1,0 +1,156 @@
+{
+  "servicePrefix": "mediapackage",
+  "actions": {
+    "CreateChannel": {
+      "name": "CreateChannel",
+      "description": "Grants permission to create a channel in AWS Elemental MediaPackage.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateOriginEndpoint": {
+      "name": "CreateOriginEndpoint",
+      "description": "Grants permission to create an endpoint in AWS Elemental MediaPackage.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "DeleteChannel": {
+      "name": "DeleteChannel",
+      "description": "Grants permission to delete a channel in AWS Elemental MediaPackage.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "channels*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteOriginEndpoint": {
+      "name": "DeleteOriginEndpoint",
+      "description": "Grants permission to delete an endpoint in AWS Elemental MediaPackage.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "origin_endpoints*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeChannel": {
+      "name": "DescribeChannel",
+      "description": "Grants permission to view the details of a channel in AWS Elemental MediaPackage.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "channels*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeOriginEndpoint": {
+      "name": "DescribeOriginEndpoint",
+      "description": "Grants permission to view the details of an endpoint in AWS Elemental MediaPackage.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "origin_endpoints*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListChannels": {
+      "name": "ListChannels",
+      "description": "Grants permission to view a list of channels in AWS Elemental MediaPackage.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListOriginEndpoints": {
+      "name": "ListOriginEndpoints",
+      "description": "Grants permission to view a list of endpoints in AWS Elemental MediaPackage.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permission to list the tags assigned to a Channel or OriginEndpoint.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "channels"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "origin_endpoints": {
+      "name": "origin_endpoints",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "RotateIngestEndpointCredentials": {
+      "name": "RotateIngestEndpointCredentials",
+      "description": "Grants permission to rotate IngestEndpoint credentials for a Channel in AWS Elemental\n                                                MediaPackage.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "channels*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permission to assign tags to a Channel or OriginEndpoint.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "channels"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344680724": {
+      "name": "$1604344680724",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permission to delete tags to a Channel or OriginEndpoint.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "channels"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344680725": {
+      "name": "$1604344680725",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateChannel": {
+      "name": "UpdateChannel",
+      "description": "Grants permission to make changes to a channel in AWS Elemental MediaPackage.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "channels*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateOriginEndpoint": {
+      "name": "UpdateOriginEndpoint",
+      "description": "Grants permission to make changes to an endpoint in AWS Elemental MediaPackage.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "origin_endpoints*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Elemental MediaPackage"
+}

@@ -1,0 +1,284 @@
+{
+  "servicePrefix": "kendra",
+  "actions": {
+    "BatchDeleteDocument": {
+      "name": "BatchDeleteDocument",
+      "description": "Batch Delete document",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchPutDocument": {
+      "name": "BatchPutDocument",
+      "description": "Batch put document",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDataSource": {
+      "name": "CreateDataSource",
+      "description": "Create a data source",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344743467": {
+      "name": "$1604344743467",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateFaq": {
+      "name": "CreateFaq",
+      "description": "Create an Faq",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344743468": {
+      "name": "$1604344743468",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateIndex": {
+      "name": "CreateIndex",
+      "description": "Create an Index",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "DeleteDataSource": {
+      "name": "DeleteDataSource",
+      "description": "Delete a data source",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "data-source*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "index*": {
+      "name": "index*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteFaq": {
+      "name": "DeleteFaq",
+      "description": "Delete an Faq",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "faq*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteIndex": {
+      "name": "DeleteIndex",
+      "description": "Delete an Index",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDataSource": {
+      "name": "DescribeDataSource",
+      "description": "Describe a data source",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "data-source*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeFaq": {
+      "name": "DescribeFaq",
+      "description": "Describe an Faq",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "faq*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeIndex": {
+      "name": "DescribeIndex",
+      "description": "Describe an Index",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDataSourceSyncJobs": {
+      "name": "ListDataSourceSyncJobs",
+      "description": "Get Data Source sync job history",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "data-source*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDataSources": {
+      "name": "ListDataSources",
+      "description": "List the data sources",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFaqs": {
+      "name": "ListFaqs",
+      "description": "List the Faqs",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListIndices": {
+      "name": "ListIndices",
+      "description": "List the indexes",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Lists tags for a resource",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "data-source"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "faq": {
+      "name": "faq",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "index": {
+      "name": "index",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "Query": {
+      "name": "Query",
+      "description": "Query documents and Faqs",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartDataSourceSyncJob": {
+      "name": "StartDataSourceSyncJob",
+      "description": "Start Data Source sync job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "data-source*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopDataSourceSyncJob": {
+      "name": "StopDataSourceSyncJob",
+      "description": "Stop Data Source sync job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "data-source*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SubmitFeedback": {
+      "name": "SubmitFeedback",
+      "description": "Send feedback about a query results",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Tags a resource with given key value pairs",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "data-source"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344743478": {
+      "name": "$1604344743478",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Removes the tag with the given key from a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "data-source"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344743479": {
+      "name": "$1604344743479",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateDataSource": {
+      "name": "UpdateDataSource",
+      "description": "Update a data source",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "data-source*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateIndex": {
+      "name": "UpdateIndex",
+      "description": "Update an Index",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Kendra"
+}

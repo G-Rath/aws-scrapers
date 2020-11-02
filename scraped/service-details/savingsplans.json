@@ -1,0 +1,114 @@
+{
+  "servicePrefix": "savingsplans",
+  "actions": {
+    "CreateSavingsPlan": {
+      "name": "CreateSavingsPlan",
+      "description": "Grants permission to create a savings plan",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "DeleteQueuedSavingsPlan": {
+      "name": "DeleteQueuedSavingsPlan",
+      "description": "Grants permission to delete the queued savings plan associated with customers account",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "savingsplan*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344689504": {
+      "name": "$1604344689504",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DescribeSavingsPlanRates": {
+      "name": "DescribeSavingsPlanRates",
+      "description": "Grants permission to describe the rates associated with customers savings plan",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "savingsplan*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344689505": {
+      "name": "$1604344689505",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DescribeSavingsPlans": {
+      "name": "DescribeSavingsPlans",
+      "description": "Grants permission to describe the savings plans associated with customers account",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "savingsplan*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344689507": {
+      "name": "$1604344689507",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DescribeSavingsPlansOfferingRates": {
+      "name": "DescribeSavingsPlansOfferingRates",
+      "description": "Grants permission to describe the rates assciated with savings plans offerings",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeSavingsPlansOfferings": {
+      "name": "DescribeSavingsPlansOfferings",
+      "description": "Grants permission to describe the savings plans offerings that customer is eligible\n                                                to purchase",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permission to list tags for a savings plan",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "savingsplan*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permission to tag a savings plan",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "savingsplan*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344689508": {
+      "name": "$1604344689508",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permission to untag a savings plan",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "savingsplan*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Savings Plans"
+}

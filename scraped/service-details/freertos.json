@@ -1,0 +1,108 @@
+{
+  "servicePrefix": "freertos",
+  "actions": {
+    "CreateSoftwareConfiguration": {
+      "name": "CreateSoftwareConfiguration",
+      "description": "Creates a software configuration.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "configuration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344695676": {
+      "name": "$1604344695676",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteSoftwareConfiguration": {
+      "name": "DeleteSoftwareConfiguration",
+      "description": "Deletes the software configuration.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "configuration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeHardwarePlatform": {
+      "name": "DescribeHardwarePlatform",
+      "description": "Describes the hardware platform.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeSoftwareConfiguration": {
+      "name": "DescribeSoftwareConfiguration",
+      "description": "Describes the software configuration.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "configuration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSoftwareURL": {
+      "name": "GetSoftwareURL",
+      "description": "Get the URL for Amazon FreeRTOS software download.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSoftwareURLForConfiguration": {
+      "name": "GetSoftwareURLForConfiguration",
+      "description": "Get the URL for Amazon FreeRTOS software download based on the configuration.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFreeRTOSVersions": {
+      "name": "ListFreeRTOSVersions",
+      "description": "Lists versions of AmazonFreeRTOS.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListHardwarePlatforms": {
+      "name": "ListHardwarePlatforms",
+      "description": "Lists the hardware platforms.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListHardwareVendors": {
+      "name": "ListHardwareVendors",
+      "description": "Lists the hardware vendors.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSoftwareConfigurations": {
+      "name": "ListSoftwareConfigurations",
+      "description": "Lists the software configurations.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSoftwareConfiguration": {
+      "name": "UpdateSoftwareConfiguration",
+      "description": "Updates the software configuration.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "configuration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon FreeRTOS"
+}

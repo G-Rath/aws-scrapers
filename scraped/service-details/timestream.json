@@ -1,0 +1,210 @@
+{
+  "servicePrefix": "timestream",
+  "actions": {
+    "CancelQuery": {
+      "name": "CancelQuery",
+      "description": "Grants Permission to cancel queries in your account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDatabase": {
+      "name": "CreateDatabase",
+      "description": "Grants permissions to create a database in your account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "database*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344726726": {
+      "name": "$1604344726726",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateTable": {
+      "name": "CreateTable",
+      "description": "Grants permissions to create a table in your account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344726727": {
+      "name": "$1604344726727",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteDatabase": {
+      "name": "DeleteDatabase",
+      "description": "Grants permissions to delete a database in your account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "database*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteTable": {
+      "name": "DeleteTable",
+      "description": "Grants permissions to delete a table in your account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDatabase": {
+      "name": "DescribeDatabase",
+      "description": "Grants permissions to describe a database in your account.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "database*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeEndpoints": {
+      "name": "DescribeEndpoints",
+      "description": "Grants permissions to describe timestream endpoints.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTable": {
+      "name": "DescribeTable",
+      "description": "Grants Permissions to describe a table in your account",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDatabases": {
+      "name": "ListDatabases",
+      "description": "Grants Permission to list databases in your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMeasures": {
+      "name": "ListMeasures",
+      "description": "Grants Permissions to list measures of a table in your account",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTables": {
+      "name": "ListTables",
+      "description": "Grants Permission to list tables in your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permissions to list tags of a resource in your account.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "database*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "table*": {
+      "name": "table*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "Select": {
+      "name": "Select",
+      "description": "Grants Permission to issue 'select from table' queries",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SelectValues": {
+      "name": "SelectValues",
+      "description": "Grants Permissions to issue 'select 1' queries",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permissions to add tags to a resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "database*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344726729": {
+      "name": "$1604344726729",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permissions to remove a tag from a resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "database*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDatabase": {
+      "name": "UpdateDatabase",
+      "description": "Grants permissions to update a database in your account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "database*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateTable": {
+      "name": "UpdateTable",
+      "description": "Grants permissions to update a table in your account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "WriteRecords": {
+      "name": "WriteRecords",
+      "description": "Grants permissions to ingest data to a table in your account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Timestream"
+}

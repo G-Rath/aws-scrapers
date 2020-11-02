@@ -1,0 +1,38 @@
+{
+  "servicePrefix": "ssmmessages",
+  "actions": {
+    "CreateControlChannel": {
+      "name": "CreateControlChannel",
+      "description": "Registers a control channel for an instance to send control messages to Systems Manager\n                                                service.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDataChannel": {
+      "name": "CreateDataChannel",
+      "description": "Registers a data channel for an instance to send data messages to Systems Manager\n                                                service.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "OpenControlChannel": {
+      "name": "OpenControlChannel",
+      "description": "Opens a websocket connection for a registered control channel stream from an instance\n                                                to Systems Manager service.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "OpenDataChannel": {
+      "name": "OpenDataChannel",
+      "description": "Opens a websocket connection for a registered data channel stream from an instance\n                                                to Systems Manager service.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Session Manager Message Gateway Service"
+}

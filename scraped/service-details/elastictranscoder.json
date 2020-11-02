@@ -1,0 +1,174 @@
+{
+  "servicePrefix": "elastictranscoder",
+  "actions": {
+    "CancelJob": {
+      "name": "CancelJob",
+      "description": "Cancel a job that Elastic Transcoder has not begun to process",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateJob": {
+      "name": "CreateJob",
+      "description": "Create a job.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "pipeline*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "preset*": {
+      "name": "preset*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreatePipeline": {
+      "name": "CreatePipeline",
+      "description": "Create a pipeline",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "pipeline*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreatePreset": {
+      "name": "CreatePreset",
+      "description": "Create a preset.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "preset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeletePipeline": {
+      "name": "DeletePipeline",
+      "description": "Delete a pipeline",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "pipeline*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeletePreset": {
+      "name": "DeletePreset",
+      "description": "Delete a preset",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "preset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListJobsByPipeline": {
+      "name": "ListJobsByPipeline",
+      "description": "Get a list of the jobs that you assigned to a pipeline",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "pipeline*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListJobsByStatus": {
+      "name": "ListJobsByStatus",
+      "description": "Get information about all of the jobs associated with the current AWS account that\n                                                have a specified status",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPipelines": {
+      "name": "ListPipelines",
+      "description": "Get a list of the pipelines associated with the current AWS account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPresets": {
+      "name": "ListPresets",
+      "description": "Get a list of all presets associated with the current AWS account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ReadJob": {
+      "name": "ReadJob",
+      "description": "Get detailed information about a job",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ReadPipeline": {
+      "name": "ReadPipeline",
+      "description": "Get detailed information about a pipeline",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "pipeline*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ReadPreset": {
+      "name": "ReadPreset",
+      "description": "Get detailed information about a preset.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "preset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TestRole": {
+      "name": "TestRole",
+      "description": "Test the settings for a pipeline to ensure that Elastic Transcoder can create and\n                                                process jobs",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdatePipeline": {
+      "name": "UpdatePipeline",
+      "description": "Update settings for a pipeline",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "pipeline*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdatePipelineNotifications": {
+      "name": "UpdatePipelineNotifications",
+      "description": "Update only Amazon Simple Notification Service (Amazon SNS) notifications for a pipeline",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "pipeline*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdatePipelineStatus": {
+      "name": "UpdatePipelineStatus",
+      "description": "Pause or reactivate a pipeline, so the pipeline stops or restarts processing jobs,\n                                                update the status for the pipeline.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "pipeline*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Elastic Transcoder"
+}

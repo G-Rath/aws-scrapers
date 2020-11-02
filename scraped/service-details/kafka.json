@@ -1,0 +1,226 @@
+{
+  "servicePrefix": "kafka",
+  "actions": {
+    "BatchAssociateScramSecret": {
+      "name": "BatchAssociateScramSecret",
+      "description": "Grants permission to associate one or more Scram Secrets with an Amazon MSK cluster.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "kms:CreateGrant\n                                                   \n                                                \n                                                \n                                                \n                                                   kms:RetireGrant"
+    },
+    "BatchDisassociateScramSecret": {
+      "name": "BatchDisassociateScramSecret",
+      "description": "Grants permission to disassociate one or more Scram Secrets from an Amazon MSK cluster.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "kms:RetireGrant"
+    },
+    "CreateCluster": {
+      "name": "CreateCluster",
+      "description": "Grants permission to create a cluster",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": "ec2:DescribeSecurityGroups\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeSubnets\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeVpcs\n                                                   \n                                                \n                                                \n                                                \n                                                   iam:AttachRolePolicy\n                                                   \n                                                \n                                                \n                                                \n                                                   iam:CreateServiceLinkedRole\n                                                   \n                                                \n                                                \n                                                \n                                                   iam:PutRolePolicy\n                                                   \n                                                \n                                                \n                                                \n                                                   kms:CreateGrant\n                                                   \n                                                \n                                                \n                                                \n                                                   kms:DescribeKey"
+    },
+    "CreateConfiguration": {
+      "name": "CreateConfiguration",
+      "description": "Grants permission to create a configuration.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteCluster": {
+      "name": "DeleteCluster",
+      "description": "Grants permission to delete a cluster.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteConfiguration": {
+      "name": "DeleteConfiguration",
+      "description": "Grants permission to delete the specified MSK configuration.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeCluster": {
+      "name": "DescribeCluster",
+      "description": "Grants permission to describe a cluster.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeClusterOperation": {
+      "name": "DescribeClusterOperation",
+      "description": "Returns a description of the cluster operation specified by the ARN.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeConfiguration": {
+      "name": "DescribeConfiguration",
+      "description": "Grants permission to describe a configuration.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeConfigurationRevision": {
+      "name": "DescribeConfigurationRevision",
+      "description": "Grants permission to describe a configuration revision.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBootstrapBrokers": {
+      "name": "GetBootstrapBrokers",
+      "description": "Grants permission to get connection details for the broker nodes in a cluster.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetCompatibleKafkaVersions": {
+      "name": "GetCompatibleKafkaVersions",
+      "description": "Returns a list of the Apache Kafka versions to which you can update this cluster.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListClusterOperations": {
+      "name": "ListClusterOperations",
+      "description": "Returns a list of all the operations that have been performed on the specified MSK\n                                                cluster.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListClusters": {
+      "name": "ListClusters",
+      "description": "Grants permission to return a list of all clusters in the current account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListConfigurations": {
+      "name": "ListConfigurations",
+      "description": "Grants permission to return a list of all configurations in the current account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListNodes": {
+      "name": "ListNodes",
+      "description": "Grants permission to return a list of nodes in a cluster.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListScramSecrets": {
+      "name": "ListScramSecrets",
+      "description": "Grants permission to return a list of the Scram Secrets associated with an Amazon\n                                                MSK cluster.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permission to list tags of a MSK resource.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "cluster"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permission to tag a MSK resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "cluster"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344690818": {
+      "name": "$1604344690818",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permission to remove tags from a MSK resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "cluster"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateBrokerCount": {
+      "name": "UpdateBrokerCount",
+      "description": "Updates the number of broker nodes of the cluster.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateBrokerStorage": {
+      "name": "UpdateBrokerStorage",
+      "description": "Updates the storage size of the broker nodes of the cluster",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateClusterConfiguration": {
+      "name": "UpdateClusterConfiguration",
+      "description": "Update Kafka configuration running on a cluster.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateClusterKafkaVersion": {
+      "name": "UpdateClusterKafkaVersion",
+      "description": "Updates the cluster to the specified Apache Kafka version.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateConfiguration": {
+      "name": "UpdateConfiguration",
+      "description": "Grants permission to create a new revision of the configuration.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateMonitoring": {
+      "name": "UpdateMonitoring",
+      "description": "Updates the monitoring settings for the cluster.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Managed Streaming for Apache Kafka"
+}

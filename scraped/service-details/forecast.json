@@ -1,0 +1,360 @@
+{
+  "servicePrefix": "forecast",
+  "actions": {
+    "CreateDataset": {
+      "name": "CreateDataset",
+      "description": "Creates a dataset",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344692971": {
+      "name": "$1604344692971",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateDatasetGroup": {
+      "name": "CreateDatasetGroup",
+      "description": "Creates a dataset group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "datasetGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDatasetImportJob": {
+      "name": "CreateDatasetImportJob",
+      "description": "Creates a dataset import job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "datasetImportJob*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344692972": {
+      "name": "$1604344692972",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateForecast": {
+      "name": "CreateForecast",
+      "description": "Creates a forecast",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "predictor*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateForecastExportJob": {
+      "name": "CreateForecastExportJob",
+      "description": "Creates a forecast export job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "forecast*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreatePredictor": {
+      "name": "CreatePredictor",
+      "description": "Creates a predictor",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "datasetGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344692973": {
+      "name": "$1604344692973",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteDataset": {
+      "name": "DeleteDataset",
+      "description": "Deletes a dataset",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDatasetGroup": {
+      "name": "DeleteDatasetGroup",
+      "description": "Deletes a dataset group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "datasetGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDatasetImportJob": {
+      "name": "DeleteDatasetImportJob",
+      "description": "Deletes a dataset import job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "datasetImportJob*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteForecast": {
+      "name": "DeleteForecast",
+      "description": "Deletes a forecast",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "forecast*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteForecastExportJob": {
+      "name": "DeleteForecastExportJob",
+      "description": "Deletes a forecast export job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "forecastExport*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeletePredictor": {
+      "name": "DeletePredictor",
+      "description": "Deletes a predictor",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "predictor*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDataset": {
+      "name": "DescribeDataset",
+      "description": "Describes a dataset",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDatasetGroup": {
+      "name": "DescribeDatasetGroup",
+      "description": "Describes a dataset group",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "datasetGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDatasetImportJob": {
+      "name": "DescribeDatasetImportJob",
+      "description": "Describes a dataset import job",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "datasetImportJob*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeForecast": {
+      "name": "DescribeForecast",
+      "description": "Describes a forecast",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "forecast*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeForecastExportJob": {
+      "name": "DescribeForecastExportJob",
+      "description": "Describes a forecast export job",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "forecastExport*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribePredictor": {
+      "name": "DescribePredictor",
+      "description": "Describes a predictor",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "predictor*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAccuracyMetrics": {
+      "name": "GetAccuracyMetrics",
+      "description": "Gets Accuracy Metrics for a predictor",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "predictor*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDatasetGroups": {
+      "name": "ListDatasetGroups",
+      "description": "Lists dataset groups",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDatasetImportJobs": {
+      "name": "ListDatasetImportJobs",
+      "description": "Lists dataset import jobs",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDatasets": {
+      "name": "ListDatasets",
+      "description": "Lists datasets",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListForecastExportJobs": {
+      "name": "ListForecastExportJobs",
+      "description": "Lists forecast export jobs",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListForecasts": {
+      "name": "ListForecasts",
+      "description": "Lists forecasts",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPredictors": {
+      "name": "ListPredictors",
+      "description": "Lists predictors",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Lists the tags for an Amazon Forecast resource",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "dataset"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "datasetGroup": {
+      "name": "datasetGroup",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "datasetImportJob": {
+      "name": "datasetImportJob",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "forecast": {
+      "name": "forecast",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "forecastExport": {
+      "name": "forecastExport",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "predictor": {
+      "name": "predictor",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "QueryForecast": {
+      "name": "QueryForecast",
+      "description": "Retrieves a forecast for a single item",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "forecast*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Associates the specified tags to a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "dataset"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344692978": {
+      "name": "$1604344692978",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Deletes the specified tags for a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "dataset"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344692980": {
+      "name": "$1604344692980",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateDatasetGroup": {
+      "name": "UpdateDatasetGroup",
+      "description": "Updates a dataset group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "datasetGroup*": {
+      "name": "datasetGroup*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    }
+  },
+  "name": "Amazon Forecast"
+}

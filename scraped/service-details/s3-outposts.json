@@ -1,0 +1,408 @@
+{
+  "servicePrefix": "s3-outposts",
+  "actions": {
+    "AbortMultipartUpload": {
+      "name": "AbortMultipartUpload",
+      "description": "Grants permission to abort a multipart upload",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344686459": {
+      "name": "$1604344686459",
+      "description": "s3-outposts:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateAccessPoint": {
+      "name": "CreateAccessPoint",
+      "description": "Grants permission to create a new access point",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "accesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344686460": {
+      "name": "$1604344686460",
+      "description": "s3-outposts:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateBucket": {
+      "name": "CreateBucket",
+      "description": "Grants permission to create a new bucket",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344686461": {
+      "name": "$1604344686461",
+      "description": "s3-outposts:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateEndpoint": {
+      "name": "CreateEndpoint",
+      "description": "Grants permission to create a new endpoint",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "endpoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAccessPoint": {
+      "name": "DeleteAccessPoint",
+      "description": "Grants permission to delete the access point named in the URI",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "accesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAccessPointPolicy": {
+      "name": "DeleteAccessPointPolicy",
+      "description": "Grants permission to delete the policy on a specified access point",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "accesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344686462": {
+      "name": "$1604344686462",
+      "description": "s3-outposts:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteBucket": {
+      "name": "DeleteBucket",
+      "description": "Grants permission to delete the bucket named in the URI",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteBucketPolicy": {
+      "name": "DeleteBucketPolicy",
+      "description": "Grants permission to delete the policy on a specified bucket",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344686463": {
+      "name": "$1604344686463",
+      "description": "s3-outposts:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteEndpoint": {
+      "name": "DeleteEndpoint",
+      "description": "Grants permission to delete the endpoint named in the URI",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "endpoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteObject": {
+      "name": "DeleteObject",
+      "description": "Grants permission to remove the null version of an object and insert a delete marker,\n                                                which becomes the current version of the object",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteObjectTagging": {
+      "name": "DeleteObjectTagging",
+      "description": "Grants permission to use the tagging subresource to remove the entire tag set from\n                                                the specified object",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344686464": {
+      "name": "$1604344686464",
+      "description": "s3-outposts:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetAccessPoint": {
+      "name": "GetAccessPoint",
+      "description": "Grants permission to return configuration information about the specified access point",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "s3-outposts:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:x-amz-content-sha256",
+      "dependentActions": ""
+    },
+    "GetAccessPointPolicy": {
+      "name": "GetAccessPointPolicy",
+      "description": "Grants permission to returns the access point policy associated with the specified\n                                                access point",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "accesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBucket": {
+      "name": "GetBucket",
+      "description": "Grants permission to return the bucket configuration associated with an Amazon S3\n                                                bucket",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344686465": {
+      "name": "$1604344686465",
+      "description": "s3-outposts:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetBucketPolicy": {
+      "name": "GetBucketPolicy",
+      "description": "Grants permission to return the policy of the specified bucket",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBucketTagging": {
+      "name": "GetBucketTagging",
+      "description": "Grants permission to return the tag set associated with an Amazon S3 bucket",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLifecycleConfiguration": {
+      "name": "GetLifecycleConfiguration",
+      "description": "Grants permission to return the lifecycle configuration information set on an Amazon\n                                                S3 bucket",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344686466": {
+      "name": "$1604344686466",
+      "description": "s3-outposts:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:ExistingObjectTag/<key>\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetObject": {
+      "name": "GetObject",
+      "description": "Grants permission to retrieve objects from Amazon S3",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetObjectTagging": {
+      "name": "GetObjectTagging",
+      "description": "Grants permission to return the tag set of an object",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344686467": {
+      "name": "$1604344686467",
+      "description": "s3-outposts:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:delimiter\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:max-keys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:prefix\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ListAccessPoints": {
+      "name": "ListAccessPoints",
+      "description": "Grants permission to list access points",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "s3-outposts:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:x-amz-content-sha256",
+      "dependentActions": ""
+    },
+    "ListBucket": {
+      "name": "ListBucket",
+      "description": "Grants permission to list some or all of the objects in an Amazon S3 bucket (up to\n                                                1000)",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "accesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "bucket*": {
+      "name": "bucket*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ListBucketMultipartUploads": {
+      "name": "ListBucketMultipartUploads",
+      "description": "Grants permission to list in-progress multipart uploads",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "accesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344686468": {
+      "name": "$1604344686468",
+      "description": "s3-outposts:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ListEndpoints": {
+      "name": "ListEndpoints",
+      "description": "Grants permission to list endpoints",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMultipartUploadParts": {
+      "name": "ListMultipartUploadParts",
+      "description": "Grants permission to list the parts that have been uploaded for a specific multipart\n                                                upload",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344686470": {
+      "name": "$1604344686470",
+      "description": "s3-outposts:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ListRegionalBuckets": {
+      "name": "ListRegionalBuckets",
+      "description": "Grants permission to list all buckets owned by the authenticated sender of the request",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "s3-outposts:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:x-amz-content-sha256",
+      "dependentActions": ""
+    },
+    "PutAccessPointPolicy": {
+      "name": "PutAccessPointPolicy",
+      "description": "Grants permission to associate an access policy with a specified access point",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "accesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutBucketPolicy": {
+      "name": "PutBucketPolicy",
+      "description": "Grants permission to add or replace a bucket policy on a bucket",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344686471": {
+      "name": "$1604344686471",
+      "description": "s3-outposts:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutBucketTagging": {
+      "name": "PutBucketTagging",
+      "description": "Grants permission to add a set of tags to an existing Amazon S3 bucket",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutLifecycleConfiguration": {
+      "name": "PutLifecycleConfiguration",
+      "description": "Grants permission to create a new lifecycle configuration for the bucket or replace\n                                                an existing lifecycle configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344686472": {
+      "name": "$1604344686472",
+      "description": "s3-outposts:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:ExistingObjectTag/<key>\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:x-amz-acl\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:x-amz-content-sha256\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:x-amz-storage-class",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutObject": {
+      "name": "PutObject",
+      "description": "Grants permission to add an object to a bucket",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutObjectAcl": {
+      "name": "PutObjectAcl",
+      "description": "Grants permission to set the access control list (ACL) permissions for an object that\n                                                already exists in a bucket",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutObjectTagging": {
+      "name": "PutObjectTagging",
+      "description": "Grants permission to set the supplied tag-set to an object that already exists in\n                                                a bucket",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344686473": {
+      "name": "$1604344686473",
+      "description": "s3-outposts:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:ExistingObjectTag/<key>\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:RequestObjectTag/<key>\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:RequestObjectTagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3-outposts:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    }
+  },
+  "name": "Amazon S3 on Outposts"
+}

@@ -1,0 +1,736 @@
+{
+  "servicePrefix": "config",
+  "actions": {
+    "BatchGetAggregateResourceConfig": {
+      "name": "BatchGetAggregateResourceConfig",
+      "description": "Returns the current configuration items for resources that are present in your AWS\n                                                Config aggregator",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ConfigurationAggregator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchGetResourceConfig": {
+      "name": "BatchGetResourceConfig",
+      "description": "Returns the current configuration for one or more requested resources",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAggregationAuthorization": {
+      "name": "DeleteAggregationAuthorization",
+      "description": "Deletes the authorization granted to the specified configuration aggregator account\n                                                in a specified region",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "AggregationAuthorization*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteConfigRule": {
+      "name": "DeleteConfigRule",
+      "description": "Deletes the specified AWS Config rule and all of its evaluation results",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ConfigRule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteConfigurationAggregator": {
+      "name": "DeleteConfigurationAggregator",
+      "description": "Deletes the specified configuration aggregator and the aggregated data associated\n                                                with the aggregator",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ConfigurationAggregator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteConfigurationRecorder": {
+      "name": "DeleteConfigurationRecorder",
+      "description": "Deletes the configuration recorder",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteConformancePack": {
+      "name": "DeleteConformancePack",
+      "description": "Deletes the specified conformance pack and all the AWS Config rules and all evaluation\n                                                results within that conformance pack.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDeliveryChannel": {
+      "name": "DeleteDeliveryChannel",
+      "description": "Deletes the delivery channel",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteEvaluationResults": {
+      "name": "DeleteEvaluationResults",
+      "description": "Deletes the evaluation results for the specified Config rule",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ConfigRule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteOrganizationConfigRule": {
+      "name": "DeleteOrganizationConfigRule",
+      "description": "Deletes the specified organization config rule and all of its evaluation results from\n                                                all member accounts in that organization.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteOrganizationConformancePack": {
+      "name": "DeleteOrganizationConformancePack",
+      "description": "Deletes the specified organization conformance pack and all of its evaluation results\n                                                from all member accounts in that organization.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeletePendingAggregationRequest": {
+      "name": "DeletePendingAggregationRequest",
+      "description": "Deletes pending authorization requests for a specified aggregator account in a specified\n                                                region",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRemediationConfiguration": {
+      "name": "DeleteRemediationConfiguration",
+      "description": "Deletes the remediation configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "RemediationConfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRemediationExceptions": {
+      "name": "DeleteRemediationExceptions",
+      "description": "Deletes one or more remediation exceptions for specific resource keys for a specific\n                                                AWS Config Rule.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteResourceConfig": {
+      "name": "DeleteResourceConfig",
+      "description": "Records the configuration state for a custom resource that has been deleted.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRetentionConfiguration": {
+      "name": "DeleteRetentionConfiguration",
+      "description": "Deletes the retention configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeliverConfigSnapshot": {
+      "name": "DeliverConfigSnapshot",
+      "description": "Schedules delivery of a configuration snapshot to the Amazon S3 bucket in the specified\n                                                delivery channel",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAggregateComplianceByConfigRules": {
+      "name": "DescribeAggregateComplianceByConfigRules",
+      "description": "Returns a list of compliant and noncompliant rules with the number of resources for\n                                                compliant and noncompliant rules",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "ConfigurationAggregator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAggregationAuthorizations": {
+      "name": "DescribeAggregationAuthorizations",
+      "description": "Returns a list of authorizations granted to various aggregator accounts and regions",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeComplianceByConfigRule": {
+      "name": "DescribeComplianceByConfigRule",
+      "description": "Indicates whether the specified AWS Config rules are compliant",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "ConfigRule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeComplianceByResource": {
+      "name": "DescribeComplianceByResource",
+      "description": "Indicates whether the specified AWS resources are compliant",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeConfigRuleEvaluationStatus": {
+      "name": "DescribeConfigRuleEvaluationStatus",
+      "description": "Returns status information for each of your AWS managed Config rules",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "ConfigRule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeConfigRules": {
+      "name": "DescribeConfigRules",
+      "description": "Returns details about your AWS Config rules",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "ConfigRule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeConfigurationAggregatorSourcesStatus": {
+      "name": "DescribeConfigurationAggregatorSourcesStatus",
+      "description": "Returns status information for sources within an aggregator",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "ConfigurationAggregator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeConfigurationAggregators": {
+      "name": "DescribeConfigurationAggregators",
+      "description": "Returns the details of one or more configuration aggregators",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeConfigurationRecorderStatus": {
+      "name": "DescribeConfigurationRecorderStatus",
+      "description": "Returns the current status of the specified configuration recorder",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeConfigurationRecorders": {
+      "name": "DescribeConfigurationRecorders",
+      "description": "Returns the name of one or more specified configuration recorders",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeConformancePackCompliance": {
+      "name": "DescribeConformancePackCompliance",
+      "description": "Returns compliance information for each rule in that conformance pack.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeConformancePackStatus": {
+      "name": "DescribeConformancePackStatus",
+      "description": "Provides one or more conformance packs deployment status.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeConformancePacks": {
+      "name": "DescribeConformancePacks",
+      "description": "Returns a list of one or more conformance packs.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDeliveryChannelStatus": {
+      "name": "DescribeDeliveryChannelStatus",
+      "description": "Returns the current status of the specified delivery channel",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDeliveryChannels": {
+      "name": "DescribeDeliveryChannels",
+      "description": "Returns details about the specified delivery channel",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeOrganizationConfigRuleStatuses": {
+      "name": "DescribeOrganizationConfigRuleStatuses",
+      "description": "Provides organization config rule deployment status for an organization.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeOrganizationConfigRules": {
+      "name": "DescribeOrganizationConfigRules",
+      "description": "Returns a list of organization config rules.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeOrganizationConformancePackStatuses": {
+      "name": "DescribeOrganizationConformancePackStatuses",
+      "description": "Provides organization conformance pack deployment status for an organization.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeOrganizationConformancePacks": {
+      "name": "DescribeOrganizationConformancePacks",
+      "description": "Returns a list of organization conformance packs.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribePendingAggregationRequests": {
+      "name": "DescribePendingAggregationRequests",
+      "description": "Returns a list of all pending aggregation requests",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeRemediationConfigurations": {
+      "name": "DescribeRemediationConfigurations",
+      "description": "Returns the details of one or more remediation configurations",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "RemediationConfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeRemediationExceptions": {
+      "name": "DescribeRemediationExceptions",
+      "description": "Returns the details of one or more remediation exceptions.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeRemediationExecutionStatus": {
+      "name": "DescribeRemediationExecutionStatus",
+      "description": "Provides a detailed view of a Remediation Execution for a set of resources including\n                                                state, timestamps and any error messages for steps that have failed",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "RemediationConfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeRetentionConfigurations": {
+      "name": "DescribeRetentionConfigurations",
+      "description": "Returns the details of one or more retention configurations",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAggregateComplianceDetailsByConfigRule": {
+      "name": "GetAggregateComplianceDetailsByConfigRule",
+      "description": "Returns the evaluation results for the specified AWS Config rule for a specific resource\n                                                in a rule",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ConfigurationAggregator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAggregateConfigRuleComplianceSummary": {
+      "name": "GetAggregateConfigRuleComplianceSummary",
+      "description": "Returns the number of compliant and noncompliant rules for one or more accounts and\n                                                regions in an aggregator",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ConfigurationAggregator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAggregateDiscoveredResourceCounts": {
+      "name": "GetAggregateDiscoveredResourceCounts",
+      "description": "Returns the resource counts across accounts and regions that are present in your AWS\n                                                Config aggregator",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ConfigurationAggregator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAggregateResourceConfig": {
+      "name": "GetAggregateResourceConfig",
+      "description": "Returns configuration item that is aggregated for your specific resource in a specific\n                                                source account and region",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ConfigurationAggregator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetComplianceDetailsByConfigRule": {
+      "name": "GetComplianceDetailsByConfigRule",
+      "description": "Returns the evaluation results for the specified AWS Config rule",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ConfigRule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetComplianceDetailsByResource": {
+      "name": "GetComplianceDetailsByResource",
+      "description": "Returns the evaluation results for the specified AWS resource",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetComplianceSummaryByConfigRule": {
+      "name": "GetComplianceSummaryByConfigRule",
+      "description": "Returns the number of AWS Config rules that are compliant and noncompliant, up to\n                                                a maximum of 25 for each",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetComplianceSummaryByResourceType": {
+      "name": "GetComplianceSummaryByResourceType",
+      "description": "Returns the number of resources that are compliant and the number that are noncompliant",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetConformancePackComplianceDetails": {
+      "name": "GetConformancePackComplianceDetails",
+      "description": "Returns compliance details of a conformance pack for all AWS resources that are monitered\n                                                by conformance pack.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetConformancePackComplianceSummary": {
+      "name": "GetConformancePackComplianceSummary",
+      "description": "Provides compliance summary for one or more conformance packs.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDiscoveredResourceCounts": {
+      "name": "GetDiscoveredResourceCounts",
+      "description": "Returns the resource types, the number of each resource type, and the total number\n                                                of resources that AWS Config is recording in this region for your AWS account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetOrganizationConfigRuleDetailedStatus": {
+      "name": "GetOrganizationConfigRuleDetailedStatus",
+      "description": "Returns detailed status for each member account within an organization for a given\n                                                organization config rule.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetOrganizationConformancePackDetailedStatus": {
+      "name": "GetOrganizationConformancePackDetailedStatus",
+      "description": "Returns detailed status for each member account within an organization for a given\n                                                organization conformance pack.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetResourceConfigHistory": {
+      "name": "GetResourceConfigHistory",
+      "description": "Returns a list of configuration items for the specified resource",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAggregateDiscoveredResources": {
+      "name": "ListAggregateDiscoveredResources",
+      "description": "Accepts a resource type and returns a list of resource identifiers that are aggregated\n                                                for a specific resource type across accounts and regions",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "ConfigurationAggregator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDiscoveredResources": {
+      "name": "ListDiscoveredResources",
+      "description": "Accepts a resource type and returns a list of resource identifiers for the resources\n                                                of that type",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "List the tags for AWS Config resource",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "AggregationAuthorization"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ConfigRule": {
+      "name": "ConfigRule",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ConfigurationAggregator": {
+      "name": "ConfigurationAggregator",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutAggregationAuthorization": {
+      "name": "PutAggregationAuthorization",
+      "description": "Authorizes the aggregator account and region to collect data from the source account\n                                                and region",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "AggregationAuthorization*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344691441": {
+      "name": "$1604344691441",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutConfigRule": {
+      "name": "PutConfigRule",
+      "description": "Adds or updates an AWS Config rule for evaluating whether your AWS resources comply\n                                                with your desired configurations",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ConfigRule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344691442": {
+      "name": "$1604344691442",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutConfigurationAggregator": {
+      "name": "PutConfigurationAggregator",
+      "description": "Creates and updates the configuration aggregator with the selected source accounts\n                                                and regions",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ConfigurationAggregator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutConfigurationRecorder": {
+      "name": "PutConfigurationRecorder",
+      "description": "Creates a new configuration recorder to record the selected resource configurations",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutConformancePack": {
+      "name": "PutConformancePack",
+      "description": "Creates or updates a conformance pack.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutDeliveryChannel": {
+      "name": "PutDeliveryChannel",
+      "description": "Creates a delivery channel object to deliver configuration information to an Amazon\n                                                S3 bucket and Amazon SNS topic",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutEvaluations": {
+      "name": "PutEvaluations",
+      "description": "Used by an AWS Lambda function to deliver evaluation results to AWS Config",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutOrganizationConfigRule": {
+      "name": "PutOrganizationConfigRule",
+      "description": "Adds or updates organization config rule for your entire organization evaluating whether\n                                                your AWS resources comply with your desired configurations.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutOrganizationConformancePack": {
+      "name": "PutOrganizationConformancePack",
+      "description": "Adds or updates organization conformance pack for your entire organization evaluating\n                                                whether your AWS resources comply with your desired configurations.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutRemediationConfigurations": {
+      "name": "PutRemediationConfigurations",
+      "description": "Adds or updates the remediation configuration with a specific AWS Config rule with\n                                                the selected target or action",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "RemediationConfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutRemediationExceptions": {
+      "name": "PutRemediationExceptions",
+      "description": "Adds or updates remediation exceptions for specific resources for a specific AWS Config\n                                                rule.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutResourceConfig": {
+      "name": "PutResourceConfig",
+      "description": "Records the configuration state for the resource provided in the request.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutRetentionConfiguration": {
+      "name": "PutRetentionConfiguration",
+      "description": "Creates and updates the retention configuration with details about retention period\n                                                (number of days) that AWS Config stores your historical information",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SelectAggregateResourceConfig": {
+      "name": "SelectAggregateResourceConfig",
+      "description": "Accepts a structured query language (SQL) SELECT command and an aggregator to query\n                                                configuration state of AWS resources across multiple accounts and regions, performs\n                                                the corresponding search, and returns resource configurations matching the properties.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SelectResourceConfig": {
+      "name": "SelectResourceConfig",
+      "description": "Accepts a structured query language (SQL) SELECT command, performs the corresponding\n                                                search, and returns resource configurations matching the properties",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartConfigRulesEvaluation": {
+      "name": "StartConfigRulesEvaluation",
+      "description": "Evaluates your resources against the specified Config rules",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ConfigRule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartConfigurationRecorder": {
+      "name": "StartConfigurationRecorder",
+      "description": "Starts recording configurations of the AWS resources you have selected to record in\n                                                your AWS account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartRemediationExecution": {
+      "name": "StartRemediationExecution",
+      "description": "Runs an on-demand remediation for the specified AWS Config rules against the last\n                                                known remediation configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "RemediationConfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopConfigurationRecorder": {
+      "name": "StopConfigurationRecorder",
+      "description": "Stops recording configurations of the AWS resources you have selected to record in\n                                                your AWS account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Associates the specified tags to a resource with the specified resourceArn",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "AggregationAuthorization"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ConformancePack": {
+      "name": "ConformancePack",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344691458": {
+      "name": "$1604344691458",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Deletes specified tags from a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "AggregationAuthorization"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344691462": {
+      "name": "$1604344691462",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    }
+  },
+  "name": "AWS Config"
+}

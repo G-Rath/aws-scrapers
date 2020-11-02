@@ -1,0 +1,610 @@
+{
+  "servicePrefix": "guardduty",
+  "actions": {
+    "AcceptInvitation": {
+      "name": "AcceptInvitation",
+      "description": "Grants permission to accept invitations to become a GuardDuty member account",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ArchiveFindings": {
+      "name": "ArchiveFindings",
+      "description": "Grants permission to archive GuardDuty findings",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDetector": {
+      "name": "CreateDetector",
+      "description": "Grants permission to create a detector",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateFilter": {
+      "name": "CreateFilter",
+      "description": "Grants permission to create GuardDuty filters. A filters defines finding attributes\n                                                and conditions used to filter findings",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344711408": {
+      "name": "$1604344711408",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateIPSet": {
+      "name": "CreateIPSet",
+      "description": "Grants permission to create an IPSet",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344711409": {
+      "name": "$1604344711409",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateMembers": {
+      "name": "CreateMembers",
+      "description": "Grants permission to create GuardDuty member accounts, where the account used to create\n                                                a member becomes the GuardDuty administrator account",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreatePublishingDestination": {
+      "name": "CreatePublishingDestination",
+      "description": "Grants permission to create a publishing destination",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "s3:GetObject\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:ListBucket"
+    },
+    "CreateSampleFindings": {
+      "name": "CreateSampleFindings",
+      "description": "Grants permission to create sample findings",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateThreatIntelSet": {
+      "name": "CreateThreatIntelSet",
+      "description": "Grants permission to create GuardDuty ThreatIntelSets, where a ThreatIntelSet consists\n                                                of known malicious IP addresses used by GuardDuty to generate findings",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344711410": {
+      "name": "$1604344711410",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeclineInvitations": {
+      "name": "DeclineInvitations",
+      "description": "Grants permission to decline invitations to become a GuardDuty member account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDetector": {
+      "name": "DeleteDetector",
+      "description": "Grants permission to delete GuardDuty detectors",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteFilter": {
+      "name": "DeleteFilter",
+      "description": "Grants permission to delete GuardDuty filters",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "filter*": {
+      "name": "filter*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteIPSet": {
+      "name": "DeleteIPSet",
+      "description": "Grants permission to delete GuardDuty IPSets",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ipset*": {
+      "name": "ipset*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteInvitations": {
+      "name": "DeleteInvitations",
+      "description": "Grants permission to delete invitations to become a GuardDuty member account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteMembers": {
+      "name": "DeleteMembers",
+      "description": "Grants permission to delete GuardDuty member accounts",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeletePublishingDestination": {
+      "name": "DeletePublishingDestination",
+      "description": "Grants permission to delete a publishing destination",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "publishingDestination*": {
+      "name": "publishingDestination*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteThreatIntelSet": {
+      "name": "DeleteThreatIntelSet",
+      "description": "Grants permission to delete GuardDuty ThreatIntelSets",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "threatintelset*": {
+      "name": "threatintelset*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DescribeOrganizationConfiguration": {
+      "name": "DescribeOrganizationConfiguration",
+      "description": "Grants permission to retrieve details about the delegated administrator associated\n                                                with a GuardDuty detector",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribePublishingDestination": {
+      "name": "DescribePublishingDestination",
+      "description": "Grants permission to retrieve details about a publishing destination",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisableOrganizationAdminAccount": {
+      "name": "DisableOrganizationAdminAccount",
+      "description": "Grants permission to disable the organization delegated administrator for GuardDuty",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateFromMasterAccount": {
+      "name": "DisassociateFromMasterAccount",
+      "description": "Grants permission to disassociate a GuardDuty member account from its GuardDuty master\n                                                account",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateMembers": {
+      "name": "DisassociateMembers",
+      "description": "Grants permission to disassociate GuardDuty member accounts from their master GuardDuty\n                                                account",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "EnableOrganizationAdminAccount": {
+      "name": "EnableOrganizationAdminAccount",
+      "description": "Grants permission to enable an organization delegated administrator for GuardDuty",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDetector": {
+      "name": "GetDetector",
+      "description": "Grants permission to retrieve GuardDuty detectors",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFilter": {
+      "name": "GetFilter",
+      "description": "Grants permission to retrieve GuardDuty filters",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFindings": {
+      "name": "GetFindings",
+      "description": "Grants permission to retrieve GuardDuty findings",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFindingsStatistics": {
+      "name": "GetFindingsStatistics",
+      "description": "Grants permission to retrieve a list of GuardDuty finding statistics",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetIPSet": {
+      "name": "GetIPSet",
+      "description": "Grants permsission to retrieve GuardDuty IPSets",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetInvitationsCount": {
+      "name": "GetInvitationsCount",
+      "description": "Grants permission to retrieve the count of all GuardDuty invitations sent to a specified\n                                                account, which does not include the accepted invitation",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMasterAccount": {
+      "name": "GetMasterAccount",
+      "description": "Grants permission to retrieve details of the GuardDuty master account associated with\n                                                a member account",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMembers": {
+      "name": "GetMembers",
+      "description": "Grants permission to retrieve the member accounts associated with a master account",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetThreatIntelSet": {
+      "name": "GetThreatIntelSet",
+      "description": "Grants permission to retrieve GuardDuty ThreatIntelSets",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "InviteMembers": {
+      "name": "InviteMembers",
+      "description": "Grants permission to invite other AWS accounts to enable GuardDuty and become GuardDuty\n                                                member accounts",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDetectors": {
+      "name": "ListDetectors",
+      "description": "Grants permission to retrieve a list of GuardDuty detectors",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFilters": {
+      "name": "ListFilters",
+      "description": "Grants permission to retrieve a list of GuardDuty filters",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFindings": {
+      "name": "ListFindings",
+      "description": "Grants permission to retrieve a list of GuardDuty findings",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListIPSets": {
+      "name": "ListIPSets",
+      "description": "Grants permission to retrieve a list of GuardDuty IPSets",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListInvitations": {
+      "name": "ListInvitations",
+      "description": "Grants permission to retrieve a lists of all of the GuardDuty membership invitations\n                                                that were sent to an AWS account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMembers": {
+      "name": "ListMembers",
+      "description": "Grants permission to retrierve a lsit of GuardDuty member accounts associated with\n                                                a master account",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListOrganizationAdminAccounts": {
+      "name": "ListOrganizationAdminAccounts",
+      "description": "Grants permission to list details about the organization delegated administrator for\n                                                GuardDuty",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPublishingDestinations": {
+      "name": "ListPublishingDestinations",
+      "description": "Grants permission to retrieve a list of publishing destinations",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permission to retrieve a list of tags associated with a GuardDuty resource",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "detector"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "filter": {
+      "name": "filter",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ipset": {
+      "name": "ipset",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "threatintelset": {
+      "name": "threatintelset",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ListThreatIntelSets": {
+      "name": "ListThreatIntelSets",
+      "description": "Grants permission to retrieve a list of GuardDuty ThreatIntelSets",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartMonitoringMembers": {
+      "name": "StartMonitoringMembers",
+      "description": "Grants permission to a GuardDuty administrator account to monitor findings from GuardDuty\n                                                member accounts",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopMonitoringMembers": {
+      "name": "StopMonitoringMembers",
+      "description": "Grants permission to disable monitoring findings from member accounts",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permission to add tags to a GuardDuty resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344711422": {
+      "name": "$1604344711422",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UnarchiveFindings": {
+      "name": "UnarchiveFindings",
+      "description": "Grants permission to unarchive GuardDuty findings",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permission to remove tags from a GuardDuty resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344711424": {
+      "name": "$1604344711424",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateDetector": {
+      "name": "UpdateDetector",
+      "description": "Grants permission to update GuardDuty detectors",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateFilter": {
+      "name": "UpdateFilter",
+      "description": "Grants permission to updates GuardDuty filters",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateFindingsFeedback": {
+      "name": "UpdateFindingsFeedback",
+      "description": "Grants permission to update findings feedback to mark GuardDuty findings as useful\n                                                or not useful",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateIPSet": {
+      "name": "UpdateIPSet",
+      "description": "Grants permission to update GuardDuty IPSets",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateOrganizationConfiguration": {
+      "name": "UpdateOrganizationConfiguration",
+      "description": "Grants permission to update the delegated administrator configuration associated with\n                                                a GuardDuty detector",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdatePublishingDestination": {
+      "name": "UpdatePublishingDestination",
+      "description": "Grants permission to update a publishing destination",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "s3:GetObject\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:ListBucket"
+    },
+    "UpdateThreatIntelSet": {
+      "name": "UpdateThreatIntelSet",
+      "description": "Grants permission to updates the GuardDuty ThreatIntelSets",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon GuardDuty"
+}

@@ -1,0 +1,266 @@
+{
+  "servicePrefix": "kinesisanalytics",
+  "actions": {
+    "AddApplicationCloudWatchLoggingOption": {
+      "name": "AddApplicationCloudWatchLoggingOption",
+      "description": "Adds cloudwatch logging option to the application.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AddApplicationInput": {
+      "name": "AddApplicationInput",
+      "description": "Adds input to the application.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AddApplicationInputProcessingConfiguration": {
+      "name": "AddApplicationInputProcessingConfiguration",
+      "description": "Adds input processing configuration to the application.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AddApplicationOutput": {
+      "name": "AddApplicationOutput",
+      "description": "Adds output to the application.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AddApplicationReferenceDataSource": {
+      "name": "AddApplicationReferenceDataSource",
+      "description": "Adds reference data source to the application.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AddApplicationVpcConfiguration": {
+      "name": "AddApplicationVpcConfiguration",
+      "description": "Adds VPC configuration to the application.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateApplication": {
+      "name": "CreateApplication",
+      "description": "Creates an application.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateApplicationSnapshot": {
+      "name": "CreateApplicationSnapshot",
+      "description": "Creates a snapshot for an application.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteApplication": {
+      "name": "DeleteApplication",
+      "description": "Deletes the application.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteApplicationCloudWatchLoggingOption": {
+      "name": "DeleteApplicationCloudWatchLoggingOption",
+      "description": "Deletes the specified cloudwatch logging option of the application.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteApplicationInputProcessingConfiguration": {
+      "name": "DeleteApplicationInputProcessingConfiguration",
+      "description": "Deletes the specified input processing configuration of the application.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteApplicationOutput": {
+      "name": "DeleteApplicationOutput",
+      "description": "Deletes the specified output of the application.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteApplicationReferenceDataSource": {
+      "name": "DeleteApplicationReferenceDataSource",
+      "description": "Deletes the specified reference data source of the application.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteApplicationSnapshot": {
+      "name": "DeleteApplicationSnapshot",
+      "description": "Deletes a snapshot for an application.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteApplicationVpcConfiguration": {
+      "name": "DeleteApplicationVpcConfiguration",
+      "description": "Deletes the specified VPC configuration of the application.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeApplication": {
+      "name": "DescribeApplication",
+      "description": "Describes the specified application.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeApplicationSnapshot": {
+      "name": "DescribeApplicationSnapshot",
+      "description": "Describes an application snapshot.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DiscoverInputSchema": {
+      "name": "DiscoverInputSchema",
+      "description": "Discovers the input schema for the application.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListApplicationSnapshots": {
+      "name": "ListApplicationSnapshots",
+      "description": "Lists the snapshots for an application.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListApplications": {
+      "name": "ListApplications",
+      "description": "List applications for the account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Fetch the tags associated with the application.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartApplication": {
+      "name": "StartApplication",
+      "description": "Starts the application.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopApplication": {
+      "name": "StopApplication",
+      "description": "Stops the application.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Add tags to the application.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344749850": {
+      "name": "$1604344749850",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Remove the specified tags from the application.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateApplication": {
+      "name": "UpdateApplication",
+      "description": "Updates the application.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Kinesis Analytics V2"
+}

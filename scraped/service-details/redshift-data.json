@@ -1,0 +1,78 @@
+{
+  "servicePrefix": "redshift-data",
+  "actions": {
+    "CancelStatement": {
+      "name": "CancelStatement",
+      "description": "Grants permission to cancel a running query",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeStatement": {
+      "name": "DescribeStatement",
+      "description": "Grants permission to retrieve detailed information about a statement execution",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTable": {
+      "name": "DescribeTable",
+      "description": "Grants permission to retrieve metadata about a particular table",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ExecuteStatement": {
+      "name": "ExecuteStatement",
+      "description": "Grants permission to execute a query",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetStatementResult": {
+      "name": "GetStatementResult",
+      "description": "Grants permission to fetch the result of a query",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDatabases": {
+      "name": "ListDatabases",
+      "description": "Grants permission to list databases for a given cluster",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSchemas": {
+      "name": "ListSchemas",
+      "description": "Grants permission to list schemas for a given cluster",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListStatements": {
+      "name": "ListStatements",
+      "description": "Grants permission to list queries for a given principal",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTables": {
+      "name": "ListTables",
+      "description": "Grants permission to list tables for a given cluster",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Redshift Data API"
+}

@@ -1,0 +1,494 @@
+{
+  "servicePrefix": "imagebuilder",
+  "actions": {
+    "CancelImageCreation": {
+      "name": "CancelImageCreation",
+      "description": "Cancel an image creation",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "image*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateComponent": {
+      "name": "CreateComponent",
+      "description": "Create a new component",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "component*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "kmsKey": {
+      "name": "kmsKey",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344731632": {
+      "name": "$1604344731632",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateDistributionConfiguration": {
+      "name": "CreateDistributionConfiguration",
+      "description": "Create a new distribution configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "distributionConfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateImage": {
+      "name": "CreateImage",
+      "description": "Create a new image",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "image*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "imagebuilder:GetImageRecipe\n                                                   \n                                                \n                                                \n                                                \n                                                   imagebuilder:GetInfrastructureConfiguration"
+    },
+    "$1604344731633": {
+      "name": "$1604344731633",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateImagePipeline": {
+      "name": "CreateImagePipeline",
+      "description": "Create a new image pipeline",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "imagePipeline*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "imagebuilder:GetImageRecipe"
+    },
+    "CreateImageRecipe": {
+      "name": "CreateImageRecipe",
+      "description": "Create a new Image Recipe",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "imageRecipe*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "imagebuilder:GetComponent"
+    },
+    "$1604344731634": {
+      "name": "$1604344731634",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateInfrastructureConfiguration": {
+      "name": "CreateInfrastructureConfiguration",
+      "description": "Create a new infrastructure configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "infrastructureConfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "$1604344731635": {
+      "name": "$1604344731635",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      imagebuilder:CreatedResourceTagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      imagebuilder:CreatedResourceTag/<key>",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteComponent": {
+      "name": "DeleteComponent",
+      "description": "Delete a component",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "component*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDistributionConfiguration": {
+      "name": "DeleteDistributionConfiguration",
+      "description": "Delete a distribution configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "distributionConfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteImage": {
+      "name": "DeleteImage",
+      "description": "Delete an image",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "image*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteImagePipeline": {
+      "name": "DeleteImagePipeline",
+      "description": "Delete an image pipeline",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "imagePipeline*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteImageRecipe": {
+      "name": "DeleteImageRecipe",
+      "description": "Grants permission to delete an image recipe",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "imageRecipe*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteInfrastructureConfiguration": {
+      "name": "DeleteInfrastructureConfiguration",
+      "description": "Delete an infrastructure configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "infrastructureConfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetComponent": {
+      "name": "GetComponent",
+      "description": "View details about a component",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "component*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetComponentPolicy": {
+      "name": "GetComponentPolicy",
+      "description": "View the resource policy associated with a component",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "component*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDistributionConfiguration": {
+      "name": "GetDistributionConfiguration",
+      "description": "View details about a distribution configuration",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "distributionConfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetImage": {
+      "name": "GetImage",
+      "description": "View details about an image",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "image*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344731636": {
+      "name": "$1604344731636",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetImagePipeline": {
+      "name": "GetImagePipeline",
+      "description": "View details about an image pipeline",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "imagePipeline*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetImagePolicy": {
+      "name": "GetImagePolicy",
+      "description": "View the resource policy associated with an image",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "image*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetImageRecipe": {
+      "name": "GetImageRecipe",
+      "description": "View details about an image recipe",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "imageRecipe*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetImageRecipePolicy": {
+      "name": "GetImageRecipePolicy",
+      "description": "View the resource policy associated with an image recipe",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "imageRecipe*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetInfrastructureConfiguration": {
+      "name": "GetInfrastructureConfiguration",
+      "description": "View details about an infrastructure configuration",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "infrastructureConfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListComponentBuildVersions": {
+      "name": "ListComponentBuildVersions",
+      "description": "List the component build versions in your account",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "componentVersion*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListComponents": {
+      "name": "ListComponents",
+      "description": "List the component versions owned by or shared with your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDistributionConfigurations": {
+      "name": "ListDistributionConfigurations",
+      "description": "List the distribution configurations in your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListImageBuildVersions": {
+      "name": "ListImageBuildVersions",
+      "description": "List the image build versions in your account",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "imageVersion*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListImagePipelineImages": {
+      "name": "ListImagePipelineImages",
+      "description": "Returns a list of images created by the specified pipeline",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "imagePipeline*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListImagePipelines": {
+      "name": "ListImagePipelines",
+      "description": "List the image pipelines in your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListImageRecipes": {
+      "name": "ListImageRecipes",
+      "description": "List the image recipes owned by or shared with your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListImages": {
+      "name": "ListImages",
+      "description": "List the image versions owned by or shared with your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListInfrastructureConfigurations": {
+      "name": "ListInfrastructureConfigurations",
+      "description": "List the infrastructure configurations in your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "List tag for an Image Builder resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "component"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "distributionConfiguration": {
+      "name": "distributionConfiguration",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "image": {
+      "name": "image",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "imagePipeline": {
+      "name": "imagePipeline",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "imageRecipe": {
+      "name": "imageRecipe",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "infrastructureConfiguration": {
+      "name": "infrastructureConfiguration",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344731639": {
+      "name": "$1604344731639",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutComponentPolicy": {
+      "name": "PutComponentPolicy",
+      "description": "Set the resource policy associated with a component",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "component*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutImagePolicy": {
+      "name": "PutImagePolicy",
+      "description": "Set the resource policy associated with an image",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "image*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutImageRecipePolicy": {
+      "name": "PutImageRecipePolicy",
+      "description": "Set the resource policy associated with an image recipe",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "imageRecipe*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartImagePipelineExecution": {
+      "name": "StartImagePipelineExecution",
+      "description": "Create a new image from a pipeline",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "imagePipeline*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "imagebuilder:GetImagePipeline"
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Tag an Image Builder resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "component"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344731642": {
+      "name": "$1604344731642",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Untag an Image Builder resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "component"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344731646": {
+      "name": "$1604344731646",
+      "description": "aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateDistributionConfiguration": {
+      "name": "UpdateDistributionConfiguration",
+      "description": "Update an existing distribution configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "distributionConfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateImagePipeline": {
+      "name": "UpdateImagePipeline",
+      "description": "Update an existing image pipeline",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "imagePipeline*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateInfrastructureConfiguration": {
+      "name": "UpdateInfrastructureConfiguration",
+      "description": "Update an existing infrastructure configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "infrastructureConfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "$1604344731652": {
+      "name": "$1604344731652",
+      "description": "aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      imagebuilder:CreatedResourceTagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      imagebuilder:CreatedResourceTag/<key>",
+      "accessLevel": "",
+      "resourceTypes": []
+    }
+  },
+  "name": "Amazon EC2 Image Builder"
+}

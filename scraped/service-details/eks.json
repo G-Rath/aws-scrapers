@@ -1,0 +1,248 @@
+{
+  "servicePrefix": "eks",
+  "actions": {
+    "CreateCluster": {
+      "name": "CreateCluster",
+      "description": "Creates an Amazon EKS cluster.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateFargateProfile": {
+      "name": "CreateFargateProfile",
+      "description": "Creates an AWS Fargate profile.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344741395": {
+      "name": "$1604344741395",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateNodegroup": {
+      "name": "CreateNodegroup",
+      "description": "Creates an Amazon EKS Nodegroup.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344741396": {
+      "name": "$1604344741396",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteCluster": {
+      "name": "DeleteCluster",
+      "description": "Deletes an Amazon EKS cluster.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteFargateProfile": {
+      "name": "DeleteFargateProfile",
+      "description": "Deletes an AWS Fargate profile.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "fargateprofile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteNodegroup": {
+      "name": "DeleteNodegroup",
+      "description": "Deletes an Amazon EKS Nodegroup.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "nodegroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeCluster": {
+      "name": "DescribeCluster",
+      "description": "Returns descriptive information about an Amazon EKS cluster.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "cluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeFargateProfile": {
+      "name": "DescribeFargateProfile",
+      "description": "Returns descriptive information about an AWS Fargate profile associated with a cluster.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "fargateprofile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeNodegroup": {
+      "name": "DescribeNodegroup",
+      "description": "Returns descriptive information about an Amazon EKS nodegroup.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "nodegroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeUpdate": {
+      "name": "DescribeUpdate",
+      "description": "Describes a given update for a given Amazon EKS cluster/nodegroup (in the specified\n                                                or default region).",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "cluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "nodegroup": {
+      "name": "nodegroup",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ListClusters": {
+      "name": "ListClusters",
+      "description": "Lists the Amazon EKS clusters in your AWS account (in the specified or default region).",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFargateProfiles": {
+      "name": "ListFargateProfiles",
+      "description": "Lists the AWS Fargate profiles in your AWS account (in the specified or default region)\n                                                associated with a given cluster.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "cluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListNodegroups": {
+      "name": "ListNodegroups",
+      "description": "Lists the Amazon EKS nodegroups in your AWS account (in the specified or default region)\n                                                attached to given cluster.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "cluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "List tags for the specified resource.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "cluster"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "fargateprofile": {
+      "name": "fargateprofile",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ListUpdates": {
+      "name": "ListUpdates",
+      "description": "Lists the updates for a given Amazon EKS cluster/nodegroup (in the specified or default\n                                                region).",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "cluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Tags the specified resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "cluster"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344741400": {
+      "name": "$1604344741400",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Untags the specified resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "cluster"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344741401": {
+      "name": "$1604344741401",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateClusterConfig": {
+      "name": "UpdateClusterConfig",
+      "description": "Update Amazon EKS cluster configurations (eg: API server endpoint access).",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateClusterVersion": {
+      "name": "UpdateClusterVersion",
+      "description": "Update the Kubernetes version of an Amazon EKS cluster.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateNodegroupConfig": {
+      "name": "UpdateNodegroupConfig",
+      "description": "Update Amazon EKS nodegroup configurations (eg: min/max/desired capacity or labels).",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "nodegroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateNodegroupVersion": {
+      "name": "UpdateNodegroupVersion",
+      "description": "Update the Kubernetes version of an Amazon EKS nodegroup.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "nodegroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Elastic Container Service for Kubernetes"
+}

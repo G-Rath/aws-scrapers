@@ -1,0 +1,118 @@
+{
+  "servicePrefix": "lakeformation",
+  "actions": {
+    "BatchGrantPermissions": {
+      "name": "BatchGrantPermissions",
+      "description": "Grants data lake permissions to one or more principals in a batch.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchRevokePermissions": {
+      "name": "BatchRevokePermissions",
+      "description": "Revokes data lake permissions from one or more principals in a batch.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeregisterResource": {
+      "name": "DeregisterResource",
+      "description": "Deregisters a registered location.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeResource": {
+      "name": "DescribeResource",
+      "description": "Describes a registered location.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDataAccess": {
+      "name": "GetDataAccess",
+      "description": "Grants virtual data lake access permissions.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDataLakeSettings": {
+      "name": "GetDataLakeSettings",
+      "description": "Retrieves data lake settings such as the list of data lake administrators and database\n                                                and table default permissions.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEffectivePermissionsForPath": {
+      "name": "GetEffectivePermissionsForPath",
+      "description": "Retrieves permissions attached to resources in the given path.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GrantPermissions": {
+      "name": "GrantPermissions",
+      "description": "Grants data lake permissions to a principal.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPermissions": {
+      "name": "ListPermissions",
+      "description": "Lists permissions filtered by principal or resource.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListResources": {
+      "name": "ListResources",
+      "description": "Lists registered locations.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutDataLakeSettings": {
+      "name": "PutDataLakeSettings",
+      "description": "Overwrites data lake settings such as the list of data lake administrators and database\n                                                and table default permissions.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterResource": {
+      "name": "RegisterResource",
+      "description": "Registers a new location to be managed by Lake Formation.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RevokePermissions": {
+      "name": "RevokePermissions",
+      "description": "Revokes data lake permissions from a principal.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateResource": {
+      "name": "UpdateResource",
+      "description": "Updates a registered location.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Lake Formation"
+}

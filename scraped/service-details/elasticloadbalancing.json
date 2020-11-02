@@ -1,0 +1,406 @@
+{
+  "servicePrefix": "elasticloadbalancing",
+  "actions": {
+    "AddListenerCertificates": {
+      "name": "AddListenerCertificates",
+      "description": "Adds the specified certificates to the specified secure listener",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "listener/app*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "listener/net*": {
+      "name": "listener/net*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "AddTags": {
+      "name": "AddTags",
+      "description": "Adds the specified tags to the specified load balancer. Each load balancer can have\n                                                a maximum of 10 tags",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "listener-rule/app"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "listener-rule/net": {
+      "name": "listener-rule/net",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "listener/app": {
+      "name": "listener/app",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "listener/net": {
+      "name": "listener/net",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "loadbalancer/app/": {
+      "name": "loadbalancer/app/",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "loadbalancer/net/": {
+      "name": "loadbalancer/net/",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "targetgroup": {
+      "name": "targetgroup",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344748199": {
+      "name": "$1604344748199",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateListener": {
+      "name": "CreateListener",
+      "description": "Creates a listener for the specified Application Load Balancer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "loadbalancer/app/"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateLoadBalancer": {
+      "name": "CreateLoadBalancer",
+      "description": "Creates a load balancer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "loadbalancer/app/"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344748200": {
+      "name": "$1604344748200",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateRule": {
+      "name": "CreateRule",
+      "description": "Creates a rule for the specified listener",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "listener/app*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateTargetGroup": {
+      "name": "CreateTargetGroup",
+      "description": "Creates a target group.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "targetgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344748201": {
+      "name": "$1604344748201",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteListener": {
+      "name": "DeleteListener",
+      "description": "Deletes the specified listener",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "listener/app*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteLoadBalancer": {
+      "name": "DeleteLoadBalancer",
+      "description": "Deletes the specified load balancer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "loadbalancer/app/"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRule": {
+      "name": "DeleteRule",
+      "description": "Deletes the specified rule",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "listener-rule/app*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "listener-rule/net*": {
+      "name": "listener-rule/net*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteTargetGroup": {
+      "name": "DeleteTargetGroup",
+      "description": "Deletes the specified target group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "targetgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeregisterTargets": {
+      "name": "DeregisterTargets",
+      "description": "Deregisters the specified targets from the specified target group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "targetgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAccountLimits": {
+      "name": "DescribeAccountLimits",
+      "description": "Describes the Elastic Load Balancing resource limits for the AWS account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeListenerCertificates": {
+      "name": "DescribeListenerCertificates",
+      "description": "Describes the certificates for the specified secure listener",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeListeners": {
+      "name": "DescribeListeners",
+      "description": "Describes the specified listeners or the listeners for the specified Application Load\n                                                Balancer",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeLoadBalancerAttributes": {
+      "name": "DescribeLoadBalancerAttributes",
+      "description": "Describes the attributes for the specified load balancer",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeLoadBalancers": {
+      "name": "DescribeLoadBalancers",
+      "description": "Describes the specified the load balancers. If no load balancers are specified, the\n                                                call describes all of your load balancers",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeRules": {
+      "name": "DescribeRules",
+      "description": "Describes the specified rules or the rules for the specified listener",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeSSLPolicies": {
+      "name": "DescribeSSLPolicies",
+      "description": "Describes the specified policies or all policies used for SSL negotiation",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTags": {
+      "name": "DescribeTags",
+      "description": "Describes the tags associated with the specified resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "listener-rule/app"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTargetGroupAttributes": {
+      "name": "DescribeTargetGroupAttributes",
+      "description": "Describes the attributes for the specified target group",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTargetGroups": {
+      "name": "DescribeTargetGroups",
+      "description": "Describes the specified target groups or all of your target groups",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTargetHealth": {
+      "name": "DescribeTargetHealth",
+      "description": "Describes the health of the specified targets or all of your targets",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ModifyListener": {
+      "name": "ModifyListener",
+      "description": "Modifies the specified properties of the specified listener",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "listener/app*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ModifyLoadBalancerAttributes": {
+      "name": "ModifyLoadBalancerAttributes",
+      "description": "Modifies the attributes of the specified load balancer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "loadbalancer/app/"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ModifyRule": {
+      "name": "ModifyRule",
+      "description": "Modifies the specified rule",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "listener-rule/app*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ModifyTargetGroup": {
+      "name": "ModifyTargetGroup",
+      "description": "Modifies the health checks used when evaluating the health state of the targets in\n                                                the specified target group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "targetgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ModifyTargetGroupAttributes": {
+      "name": "ModifyTargetGroupAttributes",
+      "description": "Modifies the specified attributes of the specified target group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "targetgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterTargets": {
+      "name": "RegisterTargets",
+      "description": "Registers the specified targets with the specified target group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "targetgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemoveListenerCertificates": {
+      "name": "RemoveListenerCertificates",
+      "description": "Removes the specified certificates of the specified secure listener",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "listener/app*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemoveTags": {
+      "name": "RemoveTags",
+      "description": "Removes one or more tags from the specified load balancer",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "listener-rule/app"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344748206": {
+      "name": "$1604344748206",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "SetIpAddressType": {
+      "name": "SetIpAddressType",
+      "description": "Not found",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "loadbalancer/app/"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetRulePriorities": {
+      "name": "SetRulePriorities",
+      "description": "Sets the priorities of the specified rules",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "listener-rule/app*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetSecurityGroups": {
+      "name": "SetSecurityGroups",
+      "description": "Associates the specified security groups with the specified load balancer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "loadbalancer/app/"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetSubnets": {
+      "name": "SetSubnets",
+      "description": "Enables the Availability Zone for the specified subnets for the specified load balancer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "loadbalancer/app/"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetWebAcl": {
+      "name": "SetWebAcl",
+      "description": "Gives WebAcl permission to WAF",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Elastic Load Balancing V2"
+}

@@ -1,0 +1,254 @@
+{
+  "servicePrefix": "globalaccelerator",
+  "actions": {
+    "AdvertiseByoipCidr": {
+      "name": "AdvertiseByoipCidr",
+      "description": "Advertises an IPv4 address range that is provisioned for use with your accelerator\n                                                through bring your own IP addresses (BYOIP).",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAccelerator": {
+      "name": "CreateAccelerator",
+      "description": "Create an accelerator.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateEndpointGroup": {
+      "name": "CreateEndpointGroup",
+      "description": "Add an endpoint group.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "listener*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateListener": {
+      "name": "CreateListener",
+      "description": "Add a listener.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "accelerator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAccelerator": {
+      "name": "DeleteAccelerator",
+      "description": "Delete the accelerator.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "accelerator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteEndpointGroup": {
+      "name": "DeleteEndpointGroup",
+      "description": "Delete the endpoint group.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "endpointgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteListener": {
+      "name": "DeleteListener",
+      "description": "Delete the listener.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "listener*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeprovisionByoipCidr": {
+      "name": "DeprovisionByoipCidr",
+      "description": "Releases the specified address range that you provisioned for use with your accelerator\n                                                through bring your own IP addresses (BYOIP) and deletes the corresponding address\n                                                pool.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAccelerator": {
+      "name": "DescribeAccelerator",
+      "description": "Describe the accelerator.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "accelerator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAcceleratorAttributes": {
+      "name": "DescribeAcceleratorAttributes",
+      "description": "Describe the accelerator Attributes.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "accelerator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeEndpointGroup": {
+      "name": "DescribeEndpointGroup",
+      "description": "Describe the endpoint group.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "endpointgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeListener": {
+      "name": "DescribeListener",
+      "description": "Describe the listener.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "listener*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAccelerators": {
+      "name": "ListAccelerators",
+      "description": "List the accelerators.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListByoipCidrs": {
+      "name": "ListByoipCidrs",
+      "description": "List the byoip cidrs.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEndpointGroups": {
+      "name": "ListEndpointGroups",
+      "description": "List the endpoint groups.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "listener*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListListeners": {
+      "name": "ListListeners",
+      "description": "List the listeners.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "accelerator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "List tags for a globalaccelerator resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "accelerator"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ProvisionByoipCidr": {
+      "name": "ProvisionByoipCidr",
+      "description": "Provisions an address range for use with your accelerator through bring your own IP\n                                                addresses (BYOIP) and creates a corresponding address pool.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Add tags to globalaccelerator resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "accelerator"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344702883": {
+      "name": "$1604344702883",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Remove tags from globalaccelerator resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "accelerator"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344702884": {
+      "name": "$1604344702884",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateAccelerator": {
+      "name": "UpdateAccelerator",
+      "description": "Update the accelerator.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "accelerator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAcceleratorAttributes": {
+      "name": "UpdateAcceleratorAttributes",
+      "description": "Update the accelerator attributes.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "accelerator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateEndpointGroup": {
+      "name": "UpdateEndpointGroup",
+      "description": "Update the endpoint group.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "endpointgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateListener": {
+      "name": "UpdateListener",
+      "description": "Update the listener.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "listener*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "WithdrawByoipCidr": {
+      "name": "WithdrawByoipCidr",
+      "description": "Stops advertising an IPv4 address range that is provisioned as an address pool.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Global Accelerator"
+}

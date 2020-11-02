@@ -1,0 +1,74 @@
+{
+  "servicePrefix": "elemental-activations",
+  "actions": {
+    "DownloadSoftware": {
+      "name": "DownloadSoftware",
+      "description": "Download the Software files for AWS Elemental Appliances and Software Purchases",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GenerateLicenses": {
+      "name": "GenerateLicenses",
+      "description": "Generate Software Licenses for AWS Elemental Appliances and Software Purchases",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetActivation": {
+      "name": "GetActivation",
+      "description": "Describe an activation",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "activation*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "This action lists tags for an AWS Elemental Activations resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "activation"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "This action adds a tag for an AWS Elemental Activations resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "activation"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344756318": {
+      "name": "$1604344756318",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "This action removes a tag from an AWS Elemental Activations resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "activation"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344756319": {
+      "name": "$1604344756319",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    }
+  },
+  "name": "Elemental Activations"
+}

@@ -1,0 +1,214 @@
+{
+  "servicePrefix": "mediastore",
+  "actions": {
+    "CreateContainer": {
+      "name": "CreateContainer",
+      "description": "Grants permission to create containers.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteContainer": {
+      "name": "DeleteContainer",
+      "description": "Grants permission to delete any container in the current account.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteContainerPolicy": {
+      "name": "DeleteContainerPolicy",
+      "description": "Grants permission to delete the access policy of any container in the current account.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteCorsPolicy": {
+      "name": "DeleteCorsPolicy",
+      "description": "Grants permission to delete the CORS policy from any container in the current account.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteLifecyclePolicy": {
+      "name": "DeleteLifecyclePolicy",
+      "description": "Grants permission to delete the lifecycle policy from any container in the current\n                                                account.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteMetricPolicy": {
+      "name": "DeleteMetricPolicy",
+      "description": "Grants permission to delete the metric policy from any container in the current account.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteObject": {
+      "name": "DeleteObject",
+      "description": "Grants permission to delete objects.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeContainer": {
+      "name": "DescribeContainer",
+      "description": "Grants permission to retrieve details on any container in the current account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeObject": {
+      "name": "DescribeObject",
+      "description": "Grants permission to retrieve object metadata.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetContainerPolicy": {
+      "name": "GetContainerPolicy",
+      "description": "Grants permission to retrieve the access policy of any container in the current account.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetCorsPolicy": {
+      "name": "GetCorsPolicy",
+      "description": "Grants permission to retrieve the CORS policy of any container in the current account.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLifecyclePolicy": {
+      "name": "GetLifecyclePolicy",
+      "description": "Grants permission to retrieve the lifecycle policy that is assigned to any container\n                                                in the current account.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMetricPolicy": {
+      "name": "GetMetricPolicy",
+      "description": "Grants permission to retrieve the metric policy that is assigned to any container\n                                                in the current account.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetObject": {
+      "name": "GetObject",
+      "description": "Grants permission to retrieve objects.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListContainers": {
+      "name": "ListContainers",
+      "description": "Grants permission to retrieve a list of containers in the current account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListItems": {
+      "name": "ListItems",
+      "description": "Grants permission to retrieve a list of objects and folders in the current account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permission to list tags on any container in the current account.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutContainerPolicy": {
+      "name": "PutContainerPolicy",
+      "description": "Grants permission to create or replace the access policy of any container in the current\n                                                account.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutCorsPolicy": {
+      "name": "PutCorsPolicy",
+      "description": "Grants permission to add or modify the CORS policy of any container in the current\n                                                account.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutLifecyclePolicy": {
+      "name": "PutLifecyclePolicy",
+      "description": "Grants permission to add or modify the lifecycle policy that is assigned to any container\n                                                in the current account.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutMetricPolicy": {
+      "name": "PutMetricPolicy",
+      "description": "Grants permission to add or modify the metric policy that is assigned to any container\n                                                in the current account.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutObject": {
+      "name": "PutObject",
+      "description": "Grants permission to upload objects.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartAccessLogging": {
+      "name": "StartAccessLogging",
+      "description": "Grants permission to enable access logging on any container in the current account.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopAccessLogging": {
+      "name": "StopAccessLogging",
+      "description": "Grants permission to disable access logging on any container in the current account.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permission to add tags to any container in the current account.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permission to remove tags from any container in the current account.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Elemental MediaStore"
+}

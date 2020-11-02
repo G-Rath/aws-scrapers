@@ -1,0 +1,150 @@
+{
+  "servicePrefix": "opsworks-cm",
+  "actions": {
+    "AssociateNode": {
+      "name": "AssociateNode",
+      "description": "Associate a node to a configuration management server.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateBackup": {
+      "name": "CreateBackup",
+      "description": "Create a backup for the specified server.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateServer": {
+      "name": "CreateServer",
+      "description": "Create a new server.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteBackup": {
+      "name": "DeleteBackup",
+      "description": "Delete the specified backup and possibly its S3 bucket.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteServer": {
+      "name": "DeleteServer",
+      "description": "Deletes the specified server with his corresponding CF stack and possibly the S3 bucket.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAccountAttributes": {
+      "name": "DescribeAccountAttributes",
+      "description": "Describe the service limits for the user's account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeBackups": {
+      "name": "DescribeBackups",
+      "description": "Describe a single backup, all backups of a specified server or all backups of the\n                                                user's account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeEvents": {
+      "name": "DescribeEvents",
+      "description": "Describe all events of the specified server.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeNodeAssociationStatus": {
+      "name": "DescribeNodeAssociationStatus",
+      "description": "Describe the association status for the specified node token and the specified server.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeServers": {
+      "name": "DescribeServers",
+      "description": "Describes the specified server or all servers of the user's account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateNode": {
+      "name": "DisassociateNode",
+      "description": "Disassociates a specified node from a server.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "List the tags that are applied to the specified server or backup.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RestoreServer": {
+      "name": "RestoreServer",
+      "description": "Applies a backup to specified server. Possibly swaps out the ec2-instance if specified.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartMaintenance": {
+      "name": "StartMaintenance",
+      "description": "Start the server maintenance immediately.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Applies tags to the specified server or backup.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Removes tags from the specified server or backup.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateServer": {
+      "name": "UpdateServer",
+      "description": "Update general server settings.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateServerEngineAttributes": {
+      "name": "UpdateServerEngineAttributes",
+      "description": "Update server settings specific to the configuration management type.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS OpsWorks Configuration Management"
+}

@@ -1,0 +1,126 @@
+{
+  "servicePrefix": "health",
+  "actions": {
+    "DescribeAffectedAccountsForOrganization": {
+      "name": "DescribeAffectedAccountsForOrganization",
+      "description": "Gets a list of accounts that have been affected by the specified events in organization.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "organizations:ListAccounts"
+    },
+    "DescribeAffectedEntities": {
+      "name": "DescribeAffectedEntities",
+      "description": "Gets a list of entities that have been affected by the specified events.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "event*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344712771": {
+      "name": "$1604344712771",
+      "description": "health:eventTypeCode\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      health:service",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DescribeAffectedEntitiesForOrganization": {
+      "name": "DescribeAffectedEntitiesForOrganization",
+      "description": "Gets a list of entities that have been affected by the specified events and accounts\n                                                in organization.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "organizations:ListAccounts"
+    },
+    "DescribeEntityAggregates": {
+      "name": "DescribeEntityAggregates",
+      "description": "Returns the number of entities that are affected by each of the specified events.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeEventAggregates": {
+      "name": "DescribeEventAggregates",
+      "description": "Returns the number of events of each event type (issue, scheduled change, and account\n                                                notification).",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeEventDetails": {
+      "name": "DescribeEventDetails",
+      "description": "Returns detailed information about one or more specified events.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "event*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344712772": {
+      "name": "$1604344712772",
+      "description": "health:eventTypeCode\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      health:service",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DescribeEventDetailsForOrganization": {
+      "name": "DescribeEventDetailsForOrganization",
+      "description": "Returns detailed information about one or more specified events for provided accounts\n                                                in organization.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "organizations:ListAccounts"
+    },
+    "DescribeEventTypes": {
+      "name": "DescribeEventTypes",
+      "description": "Returns the event types that meet the specified filter criteria.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeEvents": {
+      "name": "DescribeEvents",
+      "description": "Returns information about events that meet the specified filter criteria.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeEventsForOrganization": {
+      "name": "DescribeEventsForOrganization",
+      "description": "Returns information about events that meet the specified filter criteria in organization.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "organizations:ListAccounts"
+    },
+    "DescribeHealthServiceStatusForOrganization": {
+      "name": "DescribeHealthServiceStatusForOrganization",
+      "description": "Returns the status of enabling or disabling the Organizational View feature",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "organizations:ListAccounts"
+    },
+    "DisableHealthServiceAccessForOrganization": {
+      "name": "DisableHealthServiceAccessForOrganization",
+      "description": "Disables the Organizational View feature.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "organizations:DisableAWSServiceAccess\n                                                   \n                                                \n                                                \n                                                \n                                                   organizations:ListAccounts"
+    },
+    "EnableHealthServiceAccessForOrganization": {
+      "name": "EnableHealthServiceAccessForOrganization",
+      "description": "Enables the Organizational View feature.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "iam:CreateServiceLinkedRole\n                                                   \n                                                \n                                                \n                                                \n                                                   organizations:EnableAWSServiceAccess\n                                                   \n                                                \n                                                \n                                                \n                                                   organizations:ListAccounts"
+    }
+  },
+  "name": "AWS Health APIs and Notifications"
+}

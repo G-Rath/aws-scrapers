@@ -1,0 +1,72 @@
+{
+  "servicePrefix": "ebs",
+  "actions": {
+    "CompleteSnapshot": {
+      "name": "CompleteSnapshot",
+      "description": "Grants permission to seal and complete the snapshot after all of the required blocks\n                                                of data have been written to it.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "snapshot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSnapshotBlock": {
+      "name": "GetSnapshotBlock",
+      "description": "Grants permission to return the data of a block in an Amazon Elastic Block Store (EBS)\n                                                snapshot",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "snapshot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListChangedBlocks": {
+      "name": "ListChangedBlocks",
+      "description": "Grants permission to list the blocks that are different between two Amazon Elastic\n                                                Block Store (EBS) snapshots of the same volume/snapshot lineage",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "snapshot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSnapshotBlocks": {
+      "name": "ListSnapshotBlocks",
+      "description": "Grants permission to list the blocks in an Amazon Elastic Block Store (EBS) snapshot.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "snapshot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutSnapshotBlock": {
+      "name": "PutSnapshotBlock",
+      "description": "Grants permission to write a block of data to a snapshot created by the StartSnapshot\n                                                operation.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "snapshot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartSnapshot": {
+      "name": "StartSnapshot",
+      "description": "Grants permission to create a new EBS snapshot.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "snapshot"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344735861": {
+      "name": "$1604344735861",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    }
+  },
+  "name": "Amazon Elastic Block Store"
+}

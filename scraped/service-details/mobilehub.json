@@ -1,0 +1,202 @@
+{
+  "servicePrefix": "mobilehub",
+  "actions": {
+    "CreateProject": {
+      "name": "CreateProject",
+      "description": "Create a project",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateServiceRole": {
+      "name": "CreateServiceRole",
+      "description": "Enable AWS Mobile Hub in the account by creating the required service role",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteProject": {
+      "name": "DeleteProject",
+      "description": "Delete the specified project",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteProjectSnapshot": {
+      "name": "DeleteProjectSnapshot",
+      "description": "Delete a saved snapshot of project configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeployToStage": {
+      "name": "DeployToStage",
+      "description": "Deploy changes to the specified stage",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeBundle": {
+      "name": "DescribeBundle",
+      "description": "Describe the download bundle",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ExportBundle": {
+      "name": "ExportBundle",
+      "description": "Export the download bundle",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ExportProject": {
+      "name": "ExportProject",
+      "description": "Export the project configuration",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GenerateProjectParameters": {
+      "name": "GenerateProjectParameters",
+      "description": "Generate project parameters required for code generation",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetProject": {
+      "name": "GetProject",
+      "description": "Get project configuration and resources",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetProjectSnapshot": {
+      "name": "GetProjectSnapshot",
+      "description": "Fetch the previously exported project configuration snapshot",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ImportProject": {
+      "name": "ImportProject",
+      "description": "Create a new project from the previously exported project configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "InstallBundle": {
+      "name": "InstallBundle",
+      "description": "Install a bundle in the project deployments S3 bucket",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAvailableConnectors": {
+      "name": "ListAvailableConnectors",
+      "description": "List the available SaaS (Software as a Service) connectors",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAvailableFeatures": {
+      "name": "ListAvailableFeatures",
+      "description": "List available features",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAvailableRegions": {
+      "name": "ListAvailableRegions",
+      "description": "List available regions for projects",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListBundles": {
+      "name": "ListBundles",
+      "description": "List the available download bundles",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProjectSnapshots": {
+      "name": "ListProjectSnapshots",
+      "description": "List saved snapshots of project configuration",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProjects": {
+      "name": "ListProjects",
+      "description": "List projects",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SynchronizeProject": {
+      "name": "SynchronizeProject",
+      "description": "Synchronize state of resources into project",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateProject": {
+      "name": "UpdateProject",
+      "description": "Update project",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ValidateProject": {
+      "name": "ValidateProject",
+      "description": "Validate a mobile hub project.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "VerifyServiceRole": {
+      "name": "VerifyServiceRole",
+      "description": "Verify AWS Mobile Hub is enabled in the account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Mobile Hub"
+}

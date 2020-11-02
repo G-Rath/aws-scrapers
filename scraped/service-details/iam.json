@@ -1,0 +1,1466 @@
+{
+  "servicePrefix": "iam",
+  "actions": {
+    "AddClientIDToOpenIDConnectProvider": {
+      "name": "AddClientIDToOpenIDConnectProvider",
+      "description": "Grants permission to add a new client ID (audience) to the list of registered IDs\n                                                for the specified IAM OpenID Connect (OIDC) provider resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "oidc-provider*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AddRoleToInstanceProfile": {
+      "name": "AddRoleToInstanceProfile",
+      "description": "Grants permission to add an IAM role to the specified instance profile",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "instance-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "AddUserToGroup": {
+      "name": "AddUserToGroup",
+      "description": "Grants permission to add an IAM user to the specified IAM group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AttachGroupPolicy": {
+      "name": "AttachGroupPolicy",
+      "description": "Grants permission to attach a managed policy to the specified IAM group",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344716704": {
+      "name": "$1604344716704",
+      "description": "iam:PolicyARN\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      iam:PermissionsBoundary",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "AttachRolePolicy": {
+      "name": "AttachRolePolicy",
+      "description": "Grants permission to attach a managed policy to the specified IAM role",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AttachUserPolicy": {
+      "name": "AttachUserPolicy",
+      "description": "Grants permission to attach a managed policy to the specified IAM user",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344716705": {
+      "name": "$1604344716705",
+      "description": "iam:PolicyARN\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      iam:PermissionsBoundary",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ChangePassword": {
+      "name": "ChangePassword",
+      "description": "Grants permission for an IAM user to to change their own password",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAccessKey": {
+      "name": "CreateAccessKey",
+      "description": "Grants permission to create access key and secret access key for the specified IAM\n                                                user",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAccountAlias": {
+      "name": "CreateAccountAlias",
+      "description": "Grants permission to create an alias for your AWS account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateGroup": {
+      "name": "CreateGroup",
+      "description": "Grants permission to create a new group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateInstanceProfile": {
+      "name": "CreateInstanceProfile",
+      "description": "Grants permission to create a new instance profile",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "instance-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateLoginProfile": {
+      "name": "CreateLoginProfile",
+      "description": "Grants permission to create a password for the specified IAM user",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateOpenIDConnectProvider": {
+      "name": "CreateOpenIDConnectProvider",
+      "description": "Grants permission to create an IAM resource that describes an identity provider (IdP)\n                                                that supports OpenID Connect (OIDC)",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "oidc-provider*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreatePolicy": {
+      "name": "CreatePolicy",
+      "description": "Grants permission to create a new managed policy",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreatePolicyVersion": {
+      "name": "CreatePolicyVersion",
+      "description": "Grants permission to create a new version of the specified managed policy",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateRole": {
+      "name": "CreateRole",
+      "description": "Grants permission to create a new role",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344716706": {
+      "name": "$1604344716706",
+      "description": "iam:PermissionsBoundary",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateSAMLProvider": {
+      "name": "CreateSAMLProvider",
+      "description": "Grants permission to create an IAM resource that describes an identity provider (IdP)\n                                                that supports SAML 2.0",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "saml-provider*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateServiceLinkedRole": {
+      "name": "CreateServiceLinkedRole",
+      "description": "Grants permission to create an IAM role that allows an AWS service to perform actions\n                                                on your behalf",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344716707": {
+      "name": "$1604344716707",
+      "description": "iam:AWSServiceName",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateServiceSpecificCredential": {
+      "name": "CreateServiceSpecificCredential",
+      "description": "Grants permission to create a new service-specific credential for an IAM user",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateUser": {
+      "name": "CreateUser",
+      "description": "Grants permission to create a new IAM user",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344716708": {
+      "name": "$1604344716708",
+      "description": "iam:PermissionsBoundary",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateVirtualMFADevice": {
+      "name": "CreateVirtualMFADevice",
+      "description": "Grants permission to create a new virtual MFA device",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "mfa*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeactivateMFADevice": {
+      "name": "DeactivateMFADevice",
+      "description": "Grants permission to deactivate the specified MFA device and remove its association\n                                                with the IAM user for which it was originally enabled",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAccessKey": {
+      "name": "DeleteAccessKey",
+      "description": "Grants permission to delete the access key pair that is associated with the specified\n                                                IAM user",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAccountAlias": {
+      "name": "DeleteAccountAlias",
+      "description": "Grants permission to delete the specified AWS account alias",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAccountPasswordPolicy": {
+      "name": "DeleteAccountPasswordPolicy",
+      "description": "Grants permission to delete the password policy for the AWS account",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteGroup": {
+      "name": "DeleteGroup",
+      "description": "Grants permission to delete the specified IAM group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteGroupPolicy": {
+      "name": "DeleteGroupPolicy",
+      "description": "Grants permission to delete the specified inline policy from its group",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteInstanceProfile": {
+      "name": "DeleteInstanceProfile",
+      "description": "Grants permission to delete the specified instance profile",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "instance-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteLoginProfile": {
+      "name": "DeleteLoginProfile",
+      "description": "Grants permission to delete the password for the specified IAM user",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteOpenIDConnectProvider": {
+      "name": "DeleteOpenIDConnectProvider",
+      "description": "Grants permission to delete an OpenID Connect identity provider (IdP) resource object\n                                                in IAM",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "oidc-provider*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeletePolicy": {
+      "name": "DeletePolicy",
+      "description": "Grants permission to delete the specified managed policy and remove it from any IAM\n                                                entities (users, groups, or roles) to which it is attached",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeletePolicyVersion": {
+      "name": "DeletePolicyVersion",
+      "description": "Grants permission to delete a version from the specified managed policy",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRole": {
+      "name": "DeleteRole",
+      "description": "Grants permission to delete the specified role",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRolePermissionsBoundary": {
+      "name": "DeleteRolePermissionsBoundary",
+      "description": "Grants permission to remove the permissions boundary from a role",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344716710": {
+      "name": "$1604344716710",
+      "description": "iam:PermissionsBoundary",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteRolePolicy": {
+      "name": "DeleteRolePolicy",
+      "description": "Grants permission to delete the specified inline policy from the specified role",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSAMLProvider": {
+      "name": "DeleteSAMLProvider",
+      "description": "Grants permission to delete a SAML provider resource in IAM",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "saml-provider*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSSHPublicKey": {
+      "name": "DeleteSSHPublicKey",
+      "description": "Grants permission to delete the specified SSH public key",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteServerCertificate": {
+      "name": "DeleteServerCertificate",
+      "description": "Grants permission to delete the specified server certificate",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "server-certificate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteServiceLinkedRole": {
+      "name": "DeleteServiceLinkedRole",
+      "description": "Grants permission to delete an IAM role that is linked to a specific AWS service,\n                                                if the service is no longer using it",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteServiceSpecificCredential": {
+      "name": "DeleteServiceSpecificCredential",
+      "description": "Grants permission to delete the specified service-specific credential for an IAM user",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSigningCertificate": {
+      "name": "DeleteSigningCertificate",
+      "description": "Grants permission to delete a signing certificate that is associated with the specified\n                                                IAM user",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteUser": {
+      "name": "DeleteUser",
+      "description": "Grants permission to delete the specified IAM user",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteUserPermissionsBoundary": {
+      "name": "DeleteUserPermissionsBoundary",
+      "description": "Grants permission to remove the permissions boundary from the specified IAM user",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344716711": {
+      "name": "$1604344716711",
+      "description": "iam:PermissionsBoundary",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteUserPolicy": {
+      "name": "DeleteUserPolicy",
+      "description": "Grants permission to delete the specified inline policy from an IAM user",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteVirtualMFADevice": {
+      "name": "DeleteVirtualMFADevice",
+      "description": "Grants permission to delete a virtual MFA device",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "mfa"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "sms-mfa": {
+      "name": "sms-mfa",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DetachGroupPolicy": {
+      "name": "DetachGroupPolicy",
+      "description": "Grants permission to detach a managed policy from the specified IAM group",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344716713": {
+      "name": "$1604344716713",
+      "description": "iam:PolicyARN\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      iam:PermissionsBoundary",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DetachRolePolicy": {
+      "name": "DetachRolePolicy",
+      "description": "Grants permission to detach a managed policy from the specified role",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DetachUserPolicy": {
+      "name": "DetachUserPolicy",
+      "description": "Grants permission to detach a managed policy from the specified IAM user",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344716714": {
+      "name": "$1604344716714",
+      "description": "iam:PolicyARN\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      iam:PermissionsBoundary",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "EnableMFADevice": {
+      "name": "EnableMFADevice",
+      "description": "Grants permission to enable an MFA device and associate it with the specified IAM\n                                                user",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GenerateCredentialReport": {
+      "name": "GenerateCredentialReport",
+      "description": "Grants permission to generate a credential report for the AWS account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GenerateOrganizationsAccessReport": {
+      "name": "GenerateOrganizationsAccessReport",
+      "description": "Grants permission to generate an access report for an AWS Organizations entity",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "access-report*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "organizations:DescribePolicy\n                                                   \n                                                \n                                                \n                                                \n                                                   organizations:ListChildren\n                                                   \n                                                \n                                                \n                                                \n                                                   organizations:ListParents\n                                                   \n                                                \n                                                \n                                                \n                                                   organizations:ListPoliciesForTarget\n                                                   \n                                                \n                                                \n                                                \n                                                   organizations:ListRoots\n                                                   \n                                                \n                                                \n                                                \n                                                   organizations:ListTargetsForPolicy"
+    },
+    "$1604344716716": {
+      "name": "$1604344716716",
+      "description": "iam:OrganizationsPolicyId",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GenerateServiceLastAccessedDetails": {
+      "name": "GenerateServiceLastAccessedDetails",
+      "description": "Grants permission to generate a service last accessed data report for an IAM resource",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAccessKeyLastUsed": {
+      "name": "GetAccessKeyLastUsed",
+      "description": "Grants permission to retrieve information about when the specified access key was\n                                                last used",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAccountAuthorizationDetails": {
+      "name": "GetAccountAuthorizationDetails",
+      "description": "Grants permission to retrieve information about all IAM users, groups, roles, and\n                                                policies in your AWS account, including their relationships to one another",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAccountPasswordPolicy": {
+      "name": "GetAccountPasswordPolicy",
+      "description": "Grants permission to retrieve the password policy for the AWS account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAccountSummary": {
+      "name": "GetAccountSummary",
+      "description": "Grants permission to retrieve information about IAM entity usage and IAM quotas in\n                                                the AWS account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetContextKeysForCustomPolicy": {
+      "name": "GetContextKeysForCustomPolicy",
+      "description": "Grants permission to retrieve a list of all of the context keys that are referenced\n                                                in the specified policy",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetContextKeysForPrincipalPolicy": {
+      "name": "GetContextKeysForPrincipalPolicy",
+      "description": "Grants permission to retrieve a list of all context keys that are referenced in all\n                                                IAM policies that are attached to the specified IAM identity (user, group, or role)",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "group"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "role": {
+      "name": "role",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "user": {
+      "name": "user",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetCredentialReport": {
+      "name": "GetCredentialReport",
+      "description": "Grants permission to retrieve a credential report for the AWS account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetGroup": {
+      "name": "GetGroup",
+      "description": "Grants permission to retrieve a list of IAM users in the specified IAM group",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetGroupPolicy": {
+      "name": "GetGroupPolicy",
+      "description": "Grants permission to retrieve an inline policy document that is embedded in the specified\n                                                IAM group",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetInstanceProfile": {
+      "name": "GetInstanceProfile",
+      "description": "Grants permission to retrieve information about the specified instance profile, including\n                                                the instance profile's path, GUID, ARN, and role",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "instance-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLoginProfile": {
+      "name": "GetLoginProfile",
+      "description": "Grants permission to retrieve the user name and password creation date for the specified\n                                                IAM user",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetOpenIDConnectProvider": {
+      "name": "GetOpenIDConnectProvider",
+      "description": "Grants permission to retrieve information about the specified OpenID Connect (OIDC)\n                                                provider resource in IAM",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "oidc-provider*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetOrganizationsAccessReport": {
+      "name": "GetOrganizationsAccessReport",
+      "description": "Grants permission to retrieve an AWS Organizations access report",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPolicy": {
+      "name": "GetPolicy",
+      "description": "Grants permission to retrieve information about the specified managed policy, including\n                                                the policy's default version and the total number of identities to which the policy\n                                                is attached",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPolicyVersion": {
+      "name": "GetPolicyVersion",
+      "description": "Grants permission to retrieve information about a version of the specified managed\n                                                policy, including the policy document",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRole": {
+      "name": "GetRole",
+      "description": "Grants permission to retrieve information about the specified role, including the\n                                                role's path, GUID, ARN, and the role's trust policy",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRolePolicy": {
+      "name": "GetRolePolicy",
+      "description": "Grants permission to retrieve an inline policy document that is embedded with the\n                                                specified IAM role",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSAMLProvider": {
+      "name": "GetSAMLProvider",
+      "description": "Grants permission to retrieve the SAML provider metadocument that was uploaded when\n                                                the IAM SAML provider resource was created or updated",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "saml-provider*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSSHPublicKey": {
+      "name": "GetSSHPublicKey",
+      "description": "Grants permission to retrieve the specified SSH public key, including metadata about\n                                                the key",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetServerCertificate": {
+      "name": "GetServerCertificate",
+      "description": "Grants permission to retrieve information about the specified server certificate stored\n                                                in IAM",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "server-certificate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetServiceLastAccessedDetails": {
+      "name": "GetServiceLastAccessedDetails",
+      "description": "Grants permission to retrieve information about the service last accessed data report",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetServiceLastAccessedDetailsWithEntities": {
+      "name": "GetServiceLastAccessedDetailsWithEntities",
+      "description": "Grants permission to retrieve information about the entities from the service last\n                                                accessed data report",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetServiceLinkedRoleDeletionStatus": {
+      "name": "GetServiceLinkedRoleDeletionStatus",
+      "description": "Grants permission to retrieve an IAM service-linked role deletion status",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetUser": {
+      "name": "GetUser",
+      "description": "Grants permission to retrieve information about the specified IAM user, including\n                                                the user's creation date, path, unique ID, and ARN",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetUserPolicy": {
+      "name": "GetUserPolicy",
+      "description": "Grants permission to retrieve an inline policy document that is embedded in the specified\n                                                IAM user",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAccessKeys": {
+      "name": "ListAccessKeys",
+      "description": "Grants permission to list information about the access key IDs that are associated\n                                                with the specified IAM user",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAccountAliases": {
+      "name": "ListAccountAliases",
+      "description": "Grants permission to list the account alias that is associated with the AWS account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAttachedGroupPolicies": {
+      "name": "ListAttachedGroupPolicies",
+      "description": "Grants permission to list all managed policies that are attached to the specified\n                                                IAM group",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAttachedRolePolicies": {
+      "name": "ListAttachedRolePolicies",
+      "description": "Grants permission to list all managed policies that are attached to the specified\n                                                IAM role",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAttachedUserPolicies": {
+      "name": "ListAttachedUserPolicies",
+      "description": "Grants permission to list all managed policies that are attached to the specified\n                                                IAM user",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEntitiesForPolicy": {
+      "name": "ListEntitiesForPolicy",
+      "description": "Grants permission to list all IAM identities to which the specified managed policy\n                                                is attached",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGroupPolicies": {
+      "name": "ListGroupPolicies",
+      "description": "Grants permission to list the names of the inline policies that are embedded in the\n                                                specified IAM group",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGroups": {
+      "name": "ListGroups",
+      "description": "Grants permission to list the IAM groups that have the specified path prefix",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGroupsForUser": {
+      "name": "ListGroupsForUser",
+      "description": "Grants permission to list the IAM groups that the specified IAM user belongs to",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListInstanceProfiles": {
+      "name": "ListInstanceProfiles",
+      "description": "Grants permission to list the instance profiles that have the specified path prefix",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "instance-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListInstanceProfilesForRole": {
+      "name": "ListInstanceProfilesForRole",
+      "description": "Grants permission to list the instance profiles that have the specified associated\n                                                IAM role",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMFADevices": {
+      "name": "ListMFADevices",
+      "description": "Grants permission to list the MFA devices for an IAM user",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "user"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListOpenIDConnectProviders": {
+      "name": "ListOpenIDConnectProviders",
+      "description": "Grants permission to list information about the IAM OpenID Connect (OIDC) provider\n                                                resource objects that are defined in the AWS account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPolicies": {
+      "name": "ListPolicies",
+      "description": "Grants permission to list all managed policies",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPoliciesGrantingServiceAccess": {
+      "name": "ListPoliciesGrantingServiceAccess",
+      "description": "Grants permission to list information about the policies that grant an entity access\n                                                to a specific service",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPolicyVersions": {
+      "name": "ListPolicyVersions",
+      "description": "Grants permission to list information about the versions of the specified managed\n                                                policy, including the version that is currently set as the policy's default version",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRolePolicies": {
+      "name": "ListRolePolicies",
+      "description": "Grants permission to list the names of the inline policies that are embedded in the\n                                                specified IAM role",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRoleTags": {
+      "name": "ListRoleTags",
+      "description": "Grants permission to list the tags that are attached to the specified IAM role.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRoles": {
+      "name": "ListRoles",
+      "description": "Grants permission to list the IAM roles that have the specified path prefix",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSAMLProviders": {
+      "name": "ListSAMLProviders",
+      "description": "Grants permission to list the SAML provider resources in IAM",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSSHPublicKeys": {
+      "name": "ListSSHPublicKeys",
+      "description": "Grants permission to list information about the SSH public keys that are associated\n                                                with the specified IAM user",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListServerCertificates": {
+      "name": "ListServerCertificates",
+      "description": "Grants permission to list the server certificates that have the specified path prefix",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListServiceSpecificCredentials": {
+      "name": "ListServiceSpecificCredentials",
+      "description": "Grants permission to list the service-specific credentials that are associated with\n                                                the specified IAM user",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSigningCertificates": {
+      "name": "ListSigningCertificates",
+      "description": "Grants permission to list information about the signing certificates that are associated\n                                                with the specified IAM user",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListUserPolicies": {
+      "name": "ListUserPolicies",
+      "description": "Grants permission to list the names of the inline policies that are embedded in the\n                                                specified IAM user",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListUserTags": {
+      "name": "ListUserTags",
+      "description": "Grants permission to list the tags that are attached to the specified IAM user.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListUsers": {
+      "name": "ListUsers",
+      "description": "Grants permission to list the IAM users that have the specified path prefix",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListVirtualMFADevices": {
+      "name": "ListVirtualMFADevices",
+      "description": "Grants permission to list virtual MFA devices by assignment status",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PassRole": {
+      "name": "PassRole",
+      "description": "Grants permission to pass a role to a service",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344716732": {
+      "name": "$1604344716732",
+      "description": "iam:AssociatedResourceArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      iam:PassedToService",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutGroupPolicy": {
+      "name": "PutGroupPolicy",
+      "description": "Grants permission to create or update an inline policy document that is embedded in\n                                                the specified IAM group",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutRolePermissionsBoundary": {
+      "name": "PutRolePermissionsBoundary",
+      "description": "Grants permission to set a managed policy as a permissions boundary for a role",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344716733": {
+      "name": "$1604344716733",
+      "description": "iam:PermissionsBoundary",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutRolePolicy": {
+      "name": "PutRolePolicy",
+      "description": "Grants permission to create or update an inline policy document that is embedded in\n                                                the specified IAM role",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344716734": {
+      "name": "$1604344716734",
+      "description": "iam:PermissionsBoundary",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutUserPermissionsBoundary": {
+      "name": "PutUserPermissionsBoundary",
+      "description": "Grants permission to set a managed policy as a permissions boundary for an IAM user",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutUserPolicy": {
+      "name": "PutUserPolicy",
+      "description": "Grants permission to create or update an inline policy document that is embedded in\n                                                the specified IAM user",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344716735": {
+      "name": "$1604344716735",
+      "description": "iam:PermissionsBoundary",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "RemoveClientIDFromOpenIDConnectProvider": {
+      "name": "RemoveClientIDFromOpenIDConnectProvider",
+      "description": "Grants permission to remove the client ID (audience) from the list of client IDs in\n                                                the specified IAM OpenID Connect (OIDC) provider resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "oidc-provider*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemoveRoleFromInstanceProfile": {
+      "name": "RemoveRoleFromInstanceProfile",
+      "description": "Grants permission to remove an IAM role from the specified EC2 instance profile",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "instance-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemoveUserFromGroup": {
+      "name": "RemoveUserFromGroup",
+      "description": "Grants permission to remove an IAM user from the specified group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ResetServiceSpecificCredential": {
+      "name": "ResetServiceSpecificCredential",
+      "description": "Grants permission to reset the password for an existing service-specific credential\n                                                for an IAM user",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ResyncMFADevice": {
+      "name": "ResyncMFADevice",
+      "description": "Grants permission to synchronize the specified MFA device with its IAM entity (user\n                                                or role)",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetDefaultPolicyVersion": {
+      "name": "SetDefaultPolicyVersion",
+      "description": "Grants permission to set the version of the specified policy as the policy's default\n                                                version",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetSecurityTokenServicePreferences": {
+      "name": "SetSecurityTokenServicePreferences",
+      "description": "Grants permission to set the STS global endpoint token version",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SimulateCustomPolicy": {
+      "name": "SimulateCustomPolicy",
+      "description": "Grants permission to simulate whether an identity-based policy or resource-based policy\n                                                provides permissions for specific API operations and resources",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SimulatePrincipalPolicy": {
+      "name": "SimulatePrincipalPolicy",
+      "description": "Grants permission to simulate whether an identity-based policy that is attached to\n                                                a specified IAM entity (user or role) provides permissions for specific API operations\n                                                and resources",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "group"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagRole": {
+      "name": "TagRole",
+      "description": "Grants permission to add tags to an IAM role.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagUser": {
+      "name": "TagUser",
+      "description": "Grants permission to add tags to an IAM user.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagRole": {
+      "name": "UntagRole",
+      "description": "Grants permission to remove the specified tags from the role.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagUser": {
+      "name": "UntagUser",
+      "description": "Grants permission to remove the specified tags from the user.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAccessKey": {
+      "name": "UpdateAccessKey",
+      "description": "Grants permission to update the status of the specified access key as Active or Inactive",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAccountPasswordPolicy": {
+      "name": "UpdateAccountPasswordPolicy",
+      "description": "Grants permission to update the password policy settings for the AWS account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAssumeRolePolicy": {
+      "name": "UpdateAssumeRolePolicy",
+      "description": "Grants permission to update the policy that grants an IAM entity permission to assume\n                                                a role",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateGroup": {
+      "name": "UpdateGroup",
+      "description": "Grants permission to update the name or path of the specified IAM group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateLoginProfile": {
+      "name": "UpdateLoginProfile",
+      "description": "Grants permission to change the password for the specified IAM user",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateOpenIDConnectProviderThumbprint": {
+      "name": "UpdateOpenIDConnectProviderThumbprint",
+      "description": "Grants permission to update the entire list of server certificate thumbprints that\n                                                are associated with an OpenID Connect (OIDC) provider resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "oidc-provider*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRole": {
+      "name": "UpdateRole",
+      "description": "Grants permission to update the description or maximum session duration setting of\n                                                a role",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRoleDescription": {
+      "name": "UpdateRoleDescription",
+      "description": "Grants permission to update only the description of a role",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSAMLProvider": {
+      "name": "UpdateSAMLProvider",
+      "description": "Grants permission to update the metadata document for an existing SAML provider resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "saml-provider*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSSHPublicKey": {
+      "name": "UpdateSSHPublicKey",
+      "description": "Grants permission to update the status of an IAM user's SSH public key to active or\n                                                inactive",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateServerCertificate": {
+      "name": "UpdateServerCertificate",
+      "description": "Grants permission to update the name or the path of the specified server certificate\n                                                stored in IAM",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "server-certificate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateServiceSpecificCredential": {
+      "name": "UpdateServiceSpecificCredential",
+      "description": "Grants permission to update the status of a service-specific credential to active\n                                                or inactive for an IAM user",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSigningCertificate": {
+      "name": "UpdateSigningCertificate",
+      "description": "Grants permission to update the status of the specified user signing certificate to\n                                                active or disabled",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateUser": {
+      "name": "UpdateUser",
+      "description": "Grants permission to update the name or the path of the specified IAM user",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UploadSSHPublicKey": {
+      "name": "UploadSSHPublicKey",
+      "description": "Grants permission to upload an SSH public key and associate it with the specified\n                                                IAM user",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UploadServerCertificate": {
+      "name": "UploadServerCertificate",
+      "description": "Grants permission to upload a server certificate entity for the AWS account",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "server-certificate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UploadSigningCertificate": {
+      "name": "UploadSigningCertificate",
+      "description": "Grants permission to upload an X.509 signing certificate and associate it with the\n                                                specified IAM user",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Identity And Access Management"
+}

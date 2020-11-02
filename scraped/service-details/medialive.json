@@ -1,0 +1,558 @@
+{
+  "servicePrefix": "medialive",
+  "actions": {
+    "BatchDelete": {
+      "name": "BatchDelete",
+      "description": "Grants permission to delete channels, inputs, input security groups, and multiplexes.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "channel"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "input": {
+      "name": "input",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "input-security-group": {
+      "name": "input-security-group",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "multiplex": {
+      "name": "multiplex",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "BatchStart": {
+      "name": "BatchStart",
+      "description": "Grants permission to start channels and multiplexes.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "channel"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchStop": {
+      "name": "BatchStop",
+      "description": "Grants permission to stop channels and multiplexes.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "channel"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchUpdateSchedule": {
+      "name": "BatchUpdateSchedule",
+      "description": "Grants permission to add and remove actions from a channel's schedule.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateChannel": {
+      "name": "CreateChannel",
+      "description": "Grants permission to create a channel",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "input*": {
+      "name": "input*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344679243": {
+      "name": "$1604344679243",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateInput": {
+      "name": "CreateInput",
+      "description": "Grants permission to create an input",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "input*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "input-security-group*": {
+      "name": "input-security-group*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344679244": {
+      "name": "$1604344679244",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateInputSecurityGroup": {
+      "name": "CreateInputSecurityGroup",
+      "description": "Grants permission to create an input security group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "input-security-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344679245": {
+      "name": "$1604344679245",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateMultiplex": {
+      "name": "CreateMultiplex",
+      "description": "Grants permission to create a multiplex",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "multiplex*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateMultiplexProgram": {
+      "name": "CreateMultiplexProgram",
+      "description": "Grants permission to create a multiplex program",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "multiplex*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateTags": {
+      "name": "CreateTags",
+      "description": "Grants permission to create tags for channels, inputs, input security groups, multiplexes,\n                                                and reservations.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "channel"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "reservation": {
+      "name": "reservation",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344679248": {
+      "name": "$1604344679248",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteChannel": {
+      "name": "DeleteChannel",
+      "description": "Grants permission to delete a channel",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteInput": {
+      "name": "DeleteInput",
+      "description": "Grants permission to delete an input",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "input*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteInputSecurityGroup": {
+      "name": "DeleteInputSecurityGroup",
+      "description": "Grants permission to delete an input security group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "input-security-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteMultiplex": {
+      "name": "DeleteMultiplex",
+      "description": "Grants permission to delete a multiplex",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "multiplex*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteMultiplexProgram": {
+      "name": "DeleteMultiplexProgram",
+      "description": "Grants permission to delete a multiplex program",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "multiplex*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteReservation": {
+      "name": "DeleteReservation",
+      "description": "Grants permission to delete an expired reservation",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "reservation*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteTags": {
+      "name": "DeleteTags",
+      "description": "Grants permission to delete tags from channels, inputs, input security groups, multiplexes,\n                                                and reservations.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "channel"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344679252": {
+      "name": "$1604344679252",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DescribeChannel": {
+      "name": "DescribeChannel",
+      "description": "Grants permission to get details about a channel",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeInput": {
+      "name": "DescribeInput",
+      "description": "Grants permission to describe an input",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "input*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeInputDevice": {
+      "name": "DescribeInputDevice",
+      "description": "Grants permission to describe an input device",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "input-device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeInputDeviceThumbnail": {
+      "name": "DescribeInputDeviceThumbnail",
+      "description": "Grants permission to describe an input device thumbnail",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "input-device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeInputSecurityGroup": {
+      "name": "DescribeInputSecurityGroup",
+      "description": "Grants permission to describe an input security group",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "input-security-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeMultiplex": {
+      "name": "DescribeMultiplex",
+      "description": "Grants permission to describe a multiplex",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "multiplex*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeMultiplexProgram": {
+      "name": "DescribeMultiplexProgram",
+      "description": "Grants permission to describe a multiplex program",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "multiplex*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeOffering": {
+      "name": "DescribeOffering",
+      "description": "Grants permission to get details about a reservation offering",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "offering*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeReservation": {
+      "name": "DescribeReservation",
+      "description": "Grants permission to get details about a reservation",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "reservation*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeSchedule": {
+      "name": "DescribeSchedule",
+      "description": "Grants permission to view a list of actions scheduled on a channel.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListChannels": {
+      "name": "ListChannels",
+      "description": "Grants permission to list channels",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListInputDevices": {
+      "name": "ListInputDevices",
+      "description": "Grants permission to list input devices",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListInputSecurityGroups": {
+      "name": "ListInputSecurityGroups",
+      "description": "Grants permission to list input security groups",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListInputs": {
+      "name": "ListInputs",
+      "description": "Grants permission to list inputs",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMultiplexPrograms": {
+      "name": "ListMultiplexPrograms",
+      "description": "Grants permission to list multiplex programs",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMultiplexes": {
+      "name": "ListMultiplexes",
+      "description": "Grants permission to list multiplexes",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListOfferings": {
+      "name": "ListOfferings",
+      "description": "Grants permission to list reservation offerings",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListReservations": {
+      "name": "ListReservations",
+      "description": "Grants permission to list reservations",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permission to list tags for channels, inputs, input security groups, multiplexes,\n                                                and reservations.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "channel"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PurchaseOffering": {
+      "name": "PurchaseOffering",
+      "description": "Grants permission to purchase a reservation offering",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "offering*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "reservation*": {
+      "name": "reservation*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344679259": {
+      "name": "$1604344679259",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "StartChannel": {
+      "name": "StartChannel",
+      "description": "Grants permission to start a channel",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartMultiplex": {
+      "name": "StartMultiplex",
+      "description": "Grants permission to start a multiplex",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "multiplex*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopChannel": {
+      "name": "StopChannel",
+      "description": "Grants permission to stop a channel",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopMultiplex": {
+      "name": "StopMultiplex",
+      "description": "Grants permission to stop a multiplex",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "multiplex*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateChannel": {
+      "name": "UpdateChannel",
+      "description": "Grants permission to update a channel",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateChannelClass": {
+      "name": "UpdateChannelClass",
+      "description": "Grants permission to update the class of a channel",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateInput": {
+      "name": "UpdateInput",
+      "description": "Grants permission to update an input",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "input*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateInputDevice": {
+      "name": "UpdateInputDevice",
+      "description": "Grants permission to update an input device",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "input-device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateInputSecurityGroup": {
+      "name": "UpdateInputSecurityGroup",
+      "description": "Grants permission to update an input security group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "input-security-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateMultiplex": {
+      "name": "UpdateMultiplex",
+      "description": "Grants permission to update a multiplex",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "multiplex*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateMultiplexProgram": {
+      "name": "UpdateMultiplexProgram",
+      "description": "Grants permission to update a multiplex program",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "multiplex*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateReservation": {
+      "name": "UpdateReservation",
+      "description": "Grants permission to update a reservation",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "reservation*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Elemental MediaLive"
+}

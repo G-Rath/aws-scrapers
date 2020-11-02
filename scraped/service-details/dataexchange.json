@@ -1,0 +1,242 @@
+{
+  "servicePrefix": "dataexchange",
+  "actions": {
+    "CancelJob": {
+      "name": "CancelJob",
+      "description": "Grants permissions to cancel a job.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "jobs*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAsset": {
+      "name": "CreateAsset",
+      "description": "Grants permission to create an asset (for example, in a Job).",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateDataSet": {
+      "name": "CreateDataSet",
+      "description": "Grants permission to create a data set.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateJob": {
+      "name": "CreateJob",
+      "description": "Grants permissions to create a job to import or export assets.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "jobs*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateRevision": {
+      "name": "CreateRevision",
+      "description": "Grants permission to create a revision.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "DeleteAsset": {
+      "name": "DeleteAsset",
+      "description": "Grants permissions to delete an asset.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "assets*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDataSet": {
+      "name": "DeleteDataSet",
+      "description": "Grants permissions to delete a data set.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "data-sets*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRevision": {
+      "name": "DeleteRevision",
+      "description": "Grants permissions to delete a revision.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "revisions*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAsset": {
+      "name": "GetAsset",
+      "description": "Grants permissions to get information about an asset and to export it (for example,\n                                                in a Job).",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "assets*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDataSet": {
+      "name": "GetDataSet",
+      "description": "Grants permission to get information about a data set.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "data-sets*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetJob": {
+      "name": "GetJob",
+      "description": "Grants permissions to get information about a job.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "jobs*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRevision": {
+      "name": "GetRevision",
+      "description": "Grants permission to get information about a revision.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "revisions*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDataSetRevisions": {
+      "name": "ListDataSetRevisions",
+      "description": "Grants permissions to list the revisions of a data set.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "revisions*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDataSets": {
+      "name": "ListDataSets",
+      "description": "Grants permission to list data sets for the account.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "data-sets*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListJobs": {
+      "name": "ListJobs",
+      "description": "Grants permissions to list jobs for the account.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "jobs*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRevisionAssets": {
+      "name": "ListRevisionAssets",
+      "description": "Grants permissions to get list the assets of a revision.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "assets*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permission to list the tags that you associated with the specified resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "data-sets"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "revisions": {
+      "name": "revisions",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "StartJob": {
+      "name": "StartJob",
+      "description": "Grants permissions to start a job.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "jobs*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permission to add one or more tags to a specified resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "data-sets"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344699291": {
+      "name": "$1604344699291",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permission to remove one or more tags from a specified resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "data-sets"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAsset": {
+      "name": "UpdateAsset",
+      "description": "Grants permissions to get update information about an asset.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "assets*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDataSet": {
+      "name": "UpdateDataSet",
+      "description": "Grants permissions to update information about a data set.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "data-sets*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRevision": {
+      "name": "UpdateRevision",
+      "description": "Grants permissions to update information about a revision.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "revisions*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Data Exchange"
+}

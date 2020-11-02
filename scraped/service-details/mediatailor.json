@@ -1,0 +1,74 @@
+{
+  "servicePrefix": "mediatailor",
+  "actions": {
+    "DeletePlaybackConfiguration": {
+      "name": "DeletePlaybackConfiguration",
+      "description": "Deletes the playback configuration for the specified name",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "playbackConfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPlaybackConfiguration": {
+      "name": "GetPlaybackConfiguration",
+      "description": "Grants permission to retrieve the configuration for the specified name",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "playbackConfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPlaybackConfigurations": {
+      "name": "ListPlaybackConfigurations",
+      "description": "Grants permission to retrieve the list of available configurations",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Returns a list of the tags assigned to the specified playback configuration resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutPlaybackConfiguration": {
+      "name": "PutPlaybackConfiguration",
+      "description": "Grants permission to add a new configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "playbackConfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344684749": {
+      "name": "$1604344684749",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Adds tags to the specified playback configuration resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Removes tags from the specified playback configuration resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Elemental MediaTailor"
+}

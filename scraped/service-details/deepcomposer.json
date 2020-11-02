@@ -1,0 +1,206 @@
+{
+  "servicePrefix": "deepcomposer",
+  "actions": {
+    "AssociateCoupon": {
+      "name": "AssociateCoupon",
+      "description": "Associates a DeepComposer coupon (or DSN) with the account associated with the sender\n                                                of the request.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAudio": {
+      "name": "CreateAudio",
+      "description": "Creates an audio file by converting the midi composition into a wav or mp3 file.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "composition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateComposition": {
+      "name": "CreateComposition",
+      "description": "Creates a multi-track midi composition.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateModel": {
+      "name": "CreateModel",
+      "description": "Starts creating/training a generative-model that is able to perform inference against\n                                                the user-provided piano-melody to create a multi-track midi composition.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "DeleteComposition": {
+      "name": "DeleteComposition",
+      "description": "Deletes the composition.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "composition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteModel": {
+      "name": "DeleteModel",
+      "description": "Deletes the model.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetComposition": {
+      "name": "GetComposition",
+      "description": "Returns information about the composition.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "composition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344708547": {
+      "name": "$1604344708547",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetModel": {
+      "name": "GetModel",
+      "description": "Returns information about the model.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344708548": {
+      "name": "$1604344708548",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetSampleModel": {
+      "name": "GetSampleModel",
+      "description": "Returns information about the sample/pre-trained DeepComposer model.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListCompositions": {
+      "name": "ListCompositions",
+      "description": "Returns a list of all the compositions owned by the sender of the request.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListModels": {
+      "name": "ListModels",
+      "description": "Returns a list of all the models owned by the sender of the request.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSampleModels": {
+      "name": "ListSampleModels",
+      "description": "Returns a list of all the sample/pre-trained models provided by the DeepComposer service.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permission to lists tag for a resource.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "composition"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "model": {
+      "name": "model",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344708549": {
+      "name": "$1604344708549",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ListTrainingTopics": {
+      "name": "ListTrainingTopics",
+      "description": "Returns a list of all the training options or topic for creating/training a model.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permission to tag a resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "composition"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344708550": {
+      "name": "$1604344708550",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permission to untag a resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "composition"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344708551": {
+      "name": "$1604344708551",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateComposition": {
+      "name": "UpdateComposition",
+      "description": "Modifies the mutable properties associated with a composition.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "composition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateModel": {
+      "name": "UpdateModel",
+      "description": "Modifies the mutable properties associated with a model.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS DeepComposer"
+}

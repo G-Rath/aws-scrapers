@@ -1,0 +1,150 @@
+{
+  "servicePrefix": "license-manager",
+  "actions": {
+    "CreateLicenseConfiguration": {
+      "name": "CreateLicenseConfiguration",
+      "description": "Creates a new license configuration",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "DeleteLicenseConfiguration": {
+      "name": "DeleteLicenseConfiguration",
+      "description": "Permanently deletes a license configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "license-configuration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLicenseConfiguration": {
+      "name": "GetLicenseConfiguration",
+      "description": "Gets a license configuration",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "license-configuration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetServiceSettings": {
+      "name": "GetServiceSettings",
+      "description": "Gets service settings",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAssociationsForLicenseConfiguration": {
+      "name": "ListAssociationsForLicenseConfiguration",
+      "description": "Lists associations for a selected license configuration",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "license-configuration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListLicenseConfigurations": {
+      "name": "ListLicenseConfigurations",
+      "description": "Lists license configurations",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListLicenseSpecificationsForResource": {
+      "name": "ListLicenseSpecificationsForResource",
+      "description": "Lists license specifications associated with a selected resource",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListResourceInventory": {
+      "name": "ListResourceInventory",
+      "description": "Lists resource inventory",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Lists tags for a selected resource",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "license-configuration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListUsageForLicenseConfiguration": {
+      "name": "ListUsageForLicenseConfiguration",
+      "description": "Lists usage records for selected license configuration",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "license-configuration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Tags a selected resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "license-configuration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344680454": {
+      "name": "$1604344680454",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Untags a selected resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "license-configuration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateLicenseConfiguration": {
+      "name": "UpdateLicenseConfiguration",
+      "description": "Updates an existing license configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "license-configuration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateLicenseSpecificationsForResource": {
+      "name": "UpdateLicenseSpecificationsForResource",
+      "description": "Updates license specifications for a selected resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "license-configuration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateServiceSettings": {
+      "name": "UpdateServiceSettings",
+      "description": "Updates service settings",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS License Manager"
+}

@@ -1,0 +1,230 @@
+{
+  "servicePrefix": "batch",
+  "actions": {
+    "CancelJob": {
+      "name": "CancelJob",
+      "description": "Cancels a job in an AWS Batch job queue.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateComputeEnvironment": {
+      "name": "CreateComputeEnvironment",
+      "description": "Creates an AWS Batch compute environment.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateJobQueue": {
+      "name": "CreateJobQueue",
+      "description": "Creates an AWS Batch job queue.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "compute-environment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344706606": {
+      "name": "$1604344706606",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteComputeEnvironment": {
+      "name": "DeleteComputeEnvironment",
+      "description": "Deletes an AWS Batch compute environment.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "compute-environment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteJobQueue": {
+      "name": "DeleteJobQueue",
+      "description": "Deletes the specified job queue.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "job-queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeregisterJobDefinition": {
+      "name": "DeregisterJobDefinition",
+      "description": "Deregisters an AWS Batch job definition.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "job-definition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeComputeEnvironments": {
+      "name": "DescribeComputeEnvironments",
+      "description": "Describes one or more of your compute environments.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeJobDefinitions": {
+      "name": "DescribeJobDefinitions",
+      "description": "Describes a list of job definitions.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeJobQueues": {
+      "name": "DescribeJobQueues",
+      "description": "Describes one or more of your job queues.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeJobs": {
+      "name": "DescribeJobs",
+      "description": "Describes a list of AWS Batch jobs.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListJobs": {
+      "name": "ListJobs",
+      "description": "Returns a list of task jobs for a specified job queue.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "List tags for the specified resource.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "compute-environment"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "job": {
+      "name": "job",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "job-definition": {
+      "name": "job-definition",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "job-queue": {
+      "name": "job-queue",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "RegisterJobDefinition": {
+      "name": "RegisterJobDefinition",
+      "description": "Registers an AWS Batch job definition.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "batch:User\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      batch:Privileged\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      batch:Image\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      batch:LogDriver\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      batch:AWSLogsGroup\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      batch:AWSLogsRegion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      batch:AWSLogsStreamPrefix\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      batch:AWSLogsCreateGroup\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "SubmitJob": {
+      "name": "SubmitJob",
+      "description": "Submits an AWS Batch job from a job definition.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "job-definition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "job-queue*": {
+      "name": "job-queue*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344706609": {
+      "name": "$1604344706609",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Tags the specified resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "compute-environment"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344706610": {
+      "name": "$1604344706610",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "TerminateJob": {
+      "name": "TerminateJob",
+      "description": "Terminates a job in an AWS Batch job queue.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Untags the specified resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "compute-environment"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344706611": {
+      "name": "$1604344706611",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateComputeEnvironment": {
+      "name": "UpdateComputeEnvironment",
+      "description": "Updates an AWS Batch compute environment.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "compute-environment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateJobQueue": {
+      "name": "UpdateJobQueue",
+      "description": "Updates a job queue.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "job-queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Batch"
+}

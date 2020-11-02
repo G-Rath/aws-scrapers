@@ -1,0 +1,204 @@
+{
+  "servicePrefix": "sqs",
+  "actions": {
+    "AddPermission": {
+      "name": "AddPermission",
+      "description": "Adds a permission to a queue for a specific principal.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ChangeMessageVisibility": {
+      "name": "ChangeMessageVisibility",
+      "description": "Changes the visibility timeout of a specified message in a queue to a new value.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ChangeMessageVisibilityBatch": {
+      "name": "ChangeMessageVisibilityBatch",
+      "description": "Changes the visibility timeout of multiple messages.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateQueue": {
+      "name": "CreateQueue",
+      "description": "Creates a new queue, or returns the URL of an existing one.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteMessage": {
+      "name": "DeleteMessage",
+      "description": "Deletes the specified message from the specified queue.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteMessageBatch": {
+      "name": "DeleteMessageBatch",
+      "description": "Deletes up to ten messages from the specified queue.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteQueue": {
+      "name": "DeleteQueue",
+      "description": "Deletes the queue specified by the queue URL, regardless of whether the queue is empty.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetQueueAttributes": {
+      "name": "GetQueueAttributes",
+      "description": "Gets attributes for the specified queue.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetQueueUrl": {
+      "name": "GetQueueUrl",
+      "description": "Returns the URL of an existing queue.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDeadLetterSourceQueues": {
+      "name": "ListDeadLetterSourceQueues",
+      "description": "Returns a list of your queues that have the RedrivePolicy queue attribute configured\n                                                with a dead letter queue.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListQueueTags": {
+      "name": "ListQueueTags",
+      "description": "Lists tags added to an SQS queue.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListQueues": {
+      "name": "ListQueues",
+      "description": "Returns a list of your queues.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PurgeQueue": {
+      "name": "PurgeQueue",
+      "description": "Deletes the messages in a queue specified by the queue URL.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ReceiveMessage": {
+      "name": "ReceiveMessage",
+      "description": "Retrieves one or more messages, with a maximum limit of 10 messages, from the specified\n                                                queue.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemovePermission": {
+      "name": "RemovePermission",
+      "description": "Revokes any permissions in the queue policy that matches the specified Label parameter.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendMessage": {
+      "name": "SendMessage",
+      "description": "Delivers a message to the specified queue.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendMessageBatch": {
+      "name": "SendMessageBatch",
+      "description": "Delivers up to ten messages to the specified queue.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetQueueAttributes": {
+      "name": "SetQueueAttributes",
+      "description": "Sets the value of one or more queue attributes.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagQueue": {
+      "name": "TagQueue",
+      "description": "Add tags to the specified SQS queue.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagQueue": {
+      "name": "UntagQueue",
+      "description": "Remove tags from the specified SQS queue.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "queue*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon SQS"
+}

@@ -1,0 +1,578 @@
+{
+  "servicePrefix": "elasticbeanstalk",
+  "actions": {
+    "AbortEnvironmentUpdate": {
+      "name": "AbortEnvironmentUpdate",
+      "description": "Grants permission to cancel in-progress environment configuration update or application\n                                                version deployment.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment*"
+      ],
+      "conditionKeys": "elasticbeanstalk:InApplication",
+      "dependentActions": ""
+    },
+    "AddTags": {
+      "name": "AddTags",
+      "description": "Grants permission to add tags to an Elastic Beanstalk resource and to update tag values.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "application"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "applicationversion": {
+      "name": "applicationversion",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "configurationtemplate": {
+      "name": "configurationtemplate",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "environment": {
+      "name": "environment",
+      "description": "elasticbeanstalk:InApplication",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "platform": {
+      "name": "platform",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344734630": {
+      "name": "$1604344734630",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ApplyEnvironmentManagedAction": {
+      "name": "ApplyEnvironmentManagedAction",
+      "description": "Grants permission to apply a scheduled managed action immediately.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment*"
+      ],
+      "conditionKeys": "elasticbeanstalk:InApplication",
+      "dependentActions": ""
+    },
+    "AssociateEnvironmentOperationsRole": {
+      "name": "AssociateEnvironmentOperationsRole",
+      "description": "Grants permission to associate an operations role with an environment.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CheckDNSAvailability": {
+      "name": "CheckDNSAvailability",
+      "description": "Grants permission to check CNAME availability.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ComposeEnvironments": {
+      "name": "ComposeEnvironments",
+      "description": "Grants permission to create or update a group of environments, each running a separate\n                                                component of a single application.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "applicationversion*": {
+      "name": "applicationversion*",
+      "description": "elasticbeanstalk:InApplication",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateApplication": {
+      "name": "CreateApplication",
+      "description": "Grants permission to create a new application.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344734631": {
+      "name": "$1604344734631",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateApplicationVersion": {
+      "name": "CreateApplicationVersion",
+      "description": "Grants permission to create an application version for an application.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344734632": {
+      "name": "$1604344734632",
+      "description": "elasticbeanstalk:FromApplication\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromApplicationVersion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromConfigurationTemplate\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromEnvironment\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromSolutionStack\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromPlatform\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateConfigurationTemplate": {
+      "name": "CreateConfigurationTemplate",
+      "description": "Grants permission to create a configuration template.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "configurationtemplate*"
+      ],
+      "conditionKeys": "elasticbeanstalk:InApplication",
+      "dependentActions": ""
+    },
+    "CreateEnvironment": {
+      "name": "CreateEnvironment",
+      "description": "Grants permission to launch an environment for an application.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment*"
+      ],
+      "conditionKeys": "elasticbeanstalk:InApplication",
+      "dependentActions": ""
+    },
+    "$1604344734633": {
+      "name": "$1604344734633",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreatePlatformVersion": {
+      "name": "CreatePlatformVersion",
+      "description": "Grants permission to create a new version of a custom platform.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "platform*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateStorageLocation": {
+      "name": "CreateStorageLocation",
+      "description": "Grants permission to create the Amazon S3 storage location for the account.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteApplication": {
+      "name": "DeleteApplication",
+      "description": "Grants permission to delete an application along with all associated versions and\n                                                configurations.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteApplicationVersion": {
+      "name": "DeleteApplicationVersion",
+      "description": "Grants permission to delete an application version from an application.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "applicationversion*"
+      ],
+      "conditionKeys": "elasticbeanstalk:InApplication",
+      "dependentActions": ""
+    },
+    "DeleteConfigurationTemplate": {
+      "name": "DeleteConfigurationTemplate",
+      "description": "Grants permission to delete a configuration template.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "configurationtemplate*"
+      ],
+      "conditionKeys": "elasticbeanstalk:InApplication",
+      "dependentActions": ""
+    },
+    "DeleteEnvironmentConfiguration": {
+      "name": "DeleteEnvironmentConfiguration",
+      "description": "Grants permission to delete the draft configuration associated with the running environment.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment*"
+      ],
+      "conditionKeys": "elasticbeanstalk:InApplication",
+      "dependentActions": ""
+    },
+    "DeletePlatformVersion": {
+      "name": "DeletePlatformVersion",
+      "description": "Grants permission to delete a version of a custom platform.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "platform*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAccountAttributes": {
+      "name": "DescribeAccountAttributes",
+      "description": "Grants permission to retrieve a list of account attributes, including resource quotas.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeApplicationVersions": {
+      "name": "DescribeApplicationVersions",
+      "description": "Grants permission to retrieve a list of application versions stored in an AWS Elastic\n                                                Beanstalk storage bucket.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "applicationversion"
+      ],
+      "conditionKeys": "elasticbeanstalk:InApplication",
+      "dependentActions": ""
+    },
+    "DescribeApplications": {
+      "name": "DescribeApplications",
+      "description": "Grants permission to retrieve the descriptions of existing applications.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "application"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeConfigurationOptions": {
+      "name": "DescribeConfigurationOptions",
+      "description": "Grants permission to retrieve descriptions of environment configuration options.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "configurationtemplate"
+      ],
+      "conditionKeys": "elasticbeanstalk:InApplication",
+      "dependentActions": ""
+    },
+    "solutionstack": {
+      "name": "solutionstack",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DescribeConfigurationSettings": {
+      "name": "DescribeConfigurationSettings",
+      "description": "Grants permission to retrieve a description of the settings for a configuration set.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "configurationtemplate"
+      ],
+      "conditionKeys": "elasticbeanstalk:InApplication",
+      "dependentActions": ""
+    },
+    "DescribeEnvironmentHealth": {
+      "name": "DescribeEnvironmentHealth",
+      "description": "Grants permission to retrieve information about the overall health of an environment.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "environment"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeEnvironmentManagedActionHistory": {
+      "name": "DescribeEnvironmentManagedActionHistory",
+      "description": "Grants permission to retrieve a list of an environment's completed and failed managed\n                                                actions.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "environment"
+      ],
+      "conditionKeys": "elasticbeanstalk:InApplication",
+      "dependentActions": ""
+    },
+    "DescribeEnvironmentManagedActions": {
+      "name": "DescribeEnvironmentManagedActions",
+      "description": "Grants permission to retrieve a list of an environment's upcoming and in-progress\n                                                managed actions.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "environment"
+      ],
+      "conditionKeys": "elasticbeanstalk:InApplication",
+      "dependentActions": ""
+    },
+    "DescribeEnvironmentResources": {
+      "name": "DescribeEnvironmentResources",
+      "description": "Grants permission to retrieve a list of AWS resources for an environment.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "environment"
+      ],
+      "conditionKeys": "elasticbeanstalk:InApplication",
+      "dependentActions": ""
+    },
+    "DescribeEnvironments": {
+      "name": "DescribeEnvironments",
+      "description": "Grants permission to retrieve descriptions for existing environments.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "environment"
+      ],
+      "conditionKeys": "elasticbeanstalk:InApplication",
+      "dependentActions": ""
+    },
+    "DescribeEvents": {
+      "name": "DescribeEvents",
+      "description": "Grants permission to retrieve a list of event descriptions matching a set of criteria.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "application"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeInstancesHealth": {
+      "name": "DescribeInstancesHealth",
+      "description": "Grants permission to retrieve more detailed information about the health of environment\n                                                instances.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "environment"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribePlatformVersion": {
+      "name": "DescribePlatformVersion",
+      "description": "Grants permission to retrieve a description of a platform version.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "platform"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateEnvironmentOperationsRole": {
+      "name": "DisassociateEnvironmentOperationsRole",
+      "description": "Grants permission to disassociate an operations role with an environment.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAvailableSolutionStacks": {
+      "name": "ListAvailableSolutionStacks",
+      "description": "Grants permission to retrieve a list of the available solution stack names.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "solutionstack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPlatformBranches": {
+      "name": "ListPlatformBranches",
+      "description": "Grants permission to retrieve a list of the available platform branches.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPlatformVersions": {
+      "name": "ListPlatformVersions",
+      "description": "Grants permission to retrieve a list of the available platforms.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "platform"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permission to retrieve a list of tags of an Elastic Beanstalk resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "application"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutInstanceStatistics": {
+      "name": "PutInstanceStatistics",
+      "description": "Grants permission to submit instance statistics for enhanced health.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "environment*": {
+      "name": "environment*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "RebuildEnvironment": {
+      "name": "RebuildEnvironment",
+      "description": "Grants permission to delete and recreate all of the AWS resources for an environment\n                                                and to force a restart.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment*"
+      ],
+      "conditionKeys": "elasticbeanstalk:InApplication",
+      "dependentActions": ""
+    },
+    "RemoveTags": {
+      "name": "RemoveTags",
+      "description": "Grants permission to remove tags from an Elastic Beanstalk resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "application"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344734643": {
+      "name": "$1604344734643",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "RequestEnvironmentInfo": {
+      "name": "RequestEnvironmentInfo",
+      "description": "Grants permission to initiate a request to compile information of the deployed environment.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "environment*"
+      ],
+      "conditionKeys": "elasticbeanstalk:InApplication",
+      "dependentActions": ""
+    },
+    "RestartAppServer": {
+      "name": "RestartAppServer",
+      "description": "Grants permission to request an environment to restart the application container server\n                                                running on each Amazon EC2 instance.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment*"
+      ],
+      "conditionKeys": "elasticbeanstalk:InApplication",
+      "dependentActions": ""
+    },
+    "RetrieveEnvironmentInfo": {
+      "name": "RetrieveEnvironmentInfo",
+      "description": "Grants permission to retrieve the compiled information from a RequestEnvironmentInfo\n                                                request.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "environment*"
+      ],
+      "conditionKeys": "elasticbeanstalk:InApplication",
+      "dependentActions": ""
+    },
+    "SwapEnvironmentCNAMEs": {
+      "name": "SwapEnvironmentCNAMEs",
+      "description": "Grants permission to swap the CNAMEs of two environments.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment*"
+      ],
+      "conditionKeys": "elasticbeanstalk:InApplication",
+      "dependentActions": ""
+    },
+    "$1604344734644": {
+      "name": "$1604344734644",
+      "description": "elasticbeanstalk:FromEnvironment",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "TerminateEnvironment": {
+      "name": "TerminateEnvironment",
+      "description": "Grants permission to terminate an environment.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment*"
+      ],
+      "conditionKeys": "elasticbeanstalk:InApplication",
+      "dependentActions": ""
+    },
+    "UpdateApplication": {
+      "name": "UpdateApplication",
+      "description": "Grants permission to update an application with specified properties.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateApplicationResourceLifecycle": {
+      "name": "UpdateApplicationResourceLifecycle",
+      "description": "Grants permission to update the application version lifecycle policy associated with\n                                                the application.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateApplicationVersion": {
+      "name": "UpdateApplicationVersion",
+      "description": "Grants permission to update an application version with specified properties.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "applicationversion*"
+      ],
+      "conditionKeys": "elasticbeanstalk:InApplication",
+      "dependentActions": ""
+    },
+    "UpdateConfigurationTemplate": {
+      "name": "UpdateConfigurationTemplate",
+      "description": "Grants permission to update a configuration template with specified properties or\n                                                configuration option values.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "configurationtemplate*"
+      ],
+      "conditionKeys": "elasticbeanstalk:InApplication",
+      "dependentActions": ""
+    },
+    "$1604344734645": {
+      "name": "$1604344734645",
+      "description": "elasticbeanstalk:FromApplication\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromApplicationVersion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromConfigurationTemplate\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromEnvironment\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromSolutionStack\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromPlatform",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateEnvironment": {
+      "name": "UpdateEnvironment",
+      "description": "Grants permission to update an environment.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment*"
+      ],
+      "conditionKeys": "elasticbeanstalk:InApplication",
+      "dependentActions": ""
+    },
+    "$1604344734646": {
+      "name": "$1604344734646",
+      "description": "elasticbeanstalk:FromApplicationVersion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromConfigurationTemplate\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromSolutionStack\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromPlatform",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ValidateConfigurationSettings": {
+      "name": "ValidateConfigurationSettings",
+      "description": "Grants permission to check the validity of a set of configuration settings for a configuration\n                                                template or an environment.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "configurationtemplate"
+      ],
+      "conditionKeys": "elasticbeanstalk:InApplication",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Elastic Beanstalk"
+}

@@ -1,0 +1,300 @@
+{
+  "servicePrefix": "workspaces",
+  "actions": {
+    "AssociateIpGroups": {
+      "name": "AssociateIpGroups",
+      "description": "Associates the specified IP access control group with the specified directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AuthorizeIpRules": {
+      "name": "AuthorizeIpRules",
+      "description": "Adds one or more rules to the specified IP access control group.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workspaceipgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateIpGroup": {
+      "name": "CreateIpGroup",
+      "description": "Creates an IP access control group.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateTags": {
+      "name": "CreateTags",
+      "description": "Creates tags for a WorkSpace.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateWorkspaces": {
+      "name": "CreateWorkspaces",
+      "description": "Creates one or more WorkSpaces.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directoryid*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "workspacebundle*": {
+      "name": "workspacebundle*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteIpGroup": {
+      "name": "DeleteIpGroup",
+      "description": "Deletes the specified IP access control group.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workspaceipgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteTags": {
+      "name": "DeleteTags",
+      "description": "Deletes tags from a Workspace.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteWorkspaceImage": {
+      "name": "DeleteWorkspaceImage",
+      "description": "Deletes the specified workspace image.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAccount": {
+      "name": "DescribeAccount",
+      "description": "Retrieves a list that describes the configuration of bring your own license (BYOL)\n                                                for the specified account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAccountModifications": {
+      "name": "DescribeAccountModifications",
+      "description": "Retrieves a list that describes modifications to the configuration of bring your own\n                                                license (BYOL) for the specified account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeClientProperties": {
+      "name": "DescribeClientProperties",
+      "description": "Describe client properties about the specified resources.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "directoryid*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeIpGroups": {
+      "name": "DescribeIpGroups",
+      "description": "Retrieves information about the IP access control groups of your account in the region.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "workspaceipgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTags": {
+      "name": "DescribeTags",
+      "description": "Describes tags for a WorkSpace.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeWorkspaceBundles": {
+      "name": "DescribeWorkspaceBundles",
+      "description": "Obtains information about the WorkSpace bundles that are available to your account\n                                                in the specified region.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "workspacebundle*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeWorkspaceDirectories": {
+      "name": "DescribeWorkspaceDirectories",
+      "description": "Retrieves information about the AWS Directory Service directories in the region that\n                                                are registered with Amazon WorkSpaces and are available to your account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeWorkspaceImages": {
+      "name": "DescribeWorkspaceImages",
+      "description": "Retrieves a list that describes one or more specified images.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeWorkspaces": {
+      "name": "DescribeWorkspaces",
+      "description": "Obtains information about the specified WorkSpaces.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeWorkspacesConnectionStatus": {
+      "name": "DescribeWorkspacesConnectionStatus",
+      "description": "Describes the connection status of a specified WorkSpace.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateIpGroups": {
+      "name": "DisassociateIpGroups",
+      "description": "Disassociates the specified IP access control group from the specified directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ImportWorkspaceImage": {
+      "name": "ImportWorkspaceImage",
+      "description": "Import a licensed EC2 image to into Amazon WorkSpaces.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAvailableManagementCidrRanges": {
+      "name": "ListAvailableManagementCidrRanges",
+      "description": "List available CIDR ranges for a CIDR range constraint.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ModifyAccount": {
+      "name": "ModifyAccount",
+      "description": "Modify the configuration of bring your own license (BYOL) for the specified account.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ModifyClientProperties": {
+      "name": "ModifyClientProperties",
+      "description": "Modify the client properties of a specified resource.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directoryid*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ModifyWorkspaceProperties": {
+      "name": "ModifyWorkspaceProperties",
+      "description": "Modifies the WorkSpace properties, including the running mode and AutoStop time.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workspaceid*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ModifyWorkspaceState": {
+      "name": "ModifyWorkspaceState",
+      "description": "Modify the state of specified WorkSpaces.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workspaceid*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RebootWorkspaces": {
+      "name": "RebootWorkspaces",
+      "description": "Reboots the specified WorkSpaces.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workspaceid*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RebuildWorkspaces": {
+      "name": "RebuildWorkspaces",
+      "description": "Rebuilds the specified WorkSpaces.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workspaceid*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RevokeIpRules": {
+      "name": "RevokeIpRules",
+      "description": "Removes one or more rules from the specified IP access control group.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workspaceipgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartWorkspaces": {
+      "name": "StartWorkspaces",
+      "description": "Starts the specified WorkSpaces.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workspaceid*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopWorkspaces": {
+      "name": "StopWorkspaces",
+      "description": "Stops the specified WorkSpaces.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workspaceid*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TerminateWorkspaces": {
+      "name": "TerminateWorkspaces",
+      "description": "Terminates the specified WorkSpaces.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workspaceid*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRulesOfIpGroup": {
+      "name": "UpdateRulesOfIpGroup",
+      "description": "Replaces the current rules of the specified IP access control group with the specified\n                                                rules.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workspaceipgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon WorkSpaces"
+}

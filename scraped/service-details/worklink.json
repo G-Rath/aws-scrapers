@@ -1,0 +1,350 @@
+{
+  "servicePrefix": "worklink",
+  "actions": {
+    "AssociateDomain": {
+      "name": "AssociateDomain",
+      "description": "Grants permission to associate a domain with an Amazon WorkLink fleet",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociateWebsiteAuthorizationProvider": {
+      "name": "AssociateWebsiteAuthorizationProvider",
+      "description": "Grants permission to associate a website authorization provider with an Amazon WorkLink\n                                                fleet",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociateWebsiteCertificateAuthority": {
+      "name": "AssociateWebsiteCertificateAuthority",
+      "description": "Grants permission to associate a website certificate authority with an Amazon WorkLink\n                                                fleet",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateFleet": {
+      "name": "CreateFleet",
+      "description": "Grants permission to create an Amazon WorkLink fleet",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "DeleteFleet": {
+      "name": "DeleteFleet",
+      "description": "Grants permission to delete an Amazon WorkLink fleet",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344744614": {
+      "name": "$1604344744614",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DescribeAuditStreamConfiguration": {
+      "name": "DescribeAuditStreamConfiguration",
+      "description": "Grants permission to describe the audit stream configuration for an Amazon WorkLink\n                                                fleet",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeCompanyNetworkConfiguration": {
+      "name": "DescribeCompanyNetworkConfiguration",
+      "description": "Grants permission to describe the company network configuration for an Amazon WorkLink\n                                                fleet",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDevice": {
+      "name": "DescribeDevice",
+      "description": "Grants permission to describe details of a device associated with an Amazon WorkLink\n                                                fleet",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDevicePolicyConfiguration": {
+      "name": "DescribeDevicePolicyConfiguration",
+      "description": "Grants permission to describe the device policy configuration for an Amazon WorkLink\n                                                fleet",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDomain": {
+      "name": "DescribeDomain",
+      "description": "Grants permission to describe details about a domain associated with an Amazon WorkLink\n                                                fleet",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeFleetMetadata": {
+      "name": "DescribeFleetMetadata",
+      "description": "Grants permission to describe metadata of an Amazon WorkLink fleet",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344744615": {
+      "name": "$1604344744615",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DescribeIdentityProviderConfiguration": {
+      "name": "DescribeIdentityProviderConfiguration",
+      "description": "Grants permission to describe the identity provider configuration for an Amazon WorkLink\n                                                fleet",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeWebsiteCertificateAuthority": {
+      "name": "DescribeWebsiteCertificateAuthority",
+      "description": "Grants permission to describe a website certificate authority associated with an Amazon\n                                                WorkLink fleet",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateDomain": {
+      "name": "DisassociateDomain",
+      "description": "Grants permission to disassociate a domain from an Amazon WorkLink fleet",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateWebsiteAuthorizationProvider": {
+      "name": "DisassociateWebsiteAuthorizationProvider",
+      "description": "Grants permission to disassociate a website authorization provider from an Amazon\n                                                WorkLink fleet",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateWebsiteCertificateAuthority": {
+      "name": "DisassociateWebsiteCertificateAuthority",
+      "description": "Grants permission to disassociate a website certificate authority from an Amazon WorkLink\n                                                fleet",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDevices": {
+      "name": "ListDevices",
+      "description": "Grants permission to list the devices associated with an Amazon WorkLink fleet",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDomains": {
+      "name": "ListDomains",
+      "description": "Grants permission to list the associated domains for an Amazon WorkLink fleet",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFleets": {
+      "name": "ListFleets",
+      "description": "Grants permission to list the Amazon WorkLink fleets associated with the account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permission to list tags for a resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListWebsiteAuthorizationProviders": {
+      "name": "ListWebsiteAuthorizationProviders",
+      "description": "Grants permission to list the website authorization providers for an Amazon WorkLink\n                                                fleet",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListWebsiteCertificateAuthorities": {
+      "name": "ListWebsiteCertificateAuthorities",
+      "description": "Grants permission to list the website certificate authorities associated with an Amazon\n                                                WorkLink fleet",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RestoreDomainAccess": {
+      "name": "RestoreDomainAccess",
+      "description": "Grants permission to restore access to a domain associated with an Amazon WorkLink\n                                                fleet",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RevokeDomainAccess": {
+      "name": "RevokeDomainAccess",
+      "description": "Grants permission to revoke access to a domain associated with an Amazon WorkLink\n                                                fleet",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SignOutUser": {
+      "name": "SignOutUser",
+      "description": "Grants permission to sign out a user from an Amazon WorkLink fleet",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permission to add one or more tags to a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344744617": {
+      "name": "$1604344744617",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permission to remove one or more tags from a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAuditStreamConfiguration": {
+      "name": "UpdateAuditStreamConfiguration",
+      "description": "Grants permission to update the audit stream configuration for an Amazon WorkLink\n                                                fleet",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateCompanyNetworkConfiguration": {
+      "name": "UpdateCompanyNetworkConfiguration",
+      "description": "Grants permission to update the company network configuration for an Amazon WorkLink\n                                                fleet",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDevicePolicyConfiguration": {
+      "name": "UpdateDevicePolicyConfiguration",
+      "description": "Grants permission to update the device policy configuration for an Amazon WorkLink\n                                                fleet",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDomainMetadata": {
+      "name": "UpdateDomainMetadata",
+      "description": "Grants permission to update the metadata for a domain associated with an Amazon WorkLink\n                                                fleet",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateFleetMetadata": {
+      "name": "UpdateFleetMetadata",
+      "description": "Grants permission to update the metadata of an Amazon WorkLink fleet",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateIdentityProviderConfiguration": {
+      "name": "UpdateIdentityProviderConfiguration",
+      "description": "Grants permission to update the identity provider configuration for an Amazon WorkLink\n                                                fleet",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon WorkLink"
+}

@@ -1,0 +1,1292 @@
+{
+  "servicePrefix": "s3",
+  "actions": {
+    "AbortMultipartUpload": {
+      "name": "AbortMultipartUpload",
+      "description": "Grants permission to abort a multipart upload",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344684968": {
+      "name": "$1604344684968",
+      "description": "s3:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "BypassGovernanceRetention": {
+      "name": "BypassGovernanceRetention",
+      "description": "Grants permission to allow circumvention of governance-mode object retention settings",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344684982": {
+      "name": "$1604344684982",
+      "description": "s3:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:RequestObjectTag/<key>\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:RequestObjectTagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-acl\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-copy-source\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-grant-full-control\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-grant-read\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-grant-read-acp\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-grant-write\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-grant-write-acp\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-metadata-directive\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-server-side-encryption\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-server-side-encryption-aws-kms-key-id\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-storage-class\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-website-redirect-location\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:object-lock-mode\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:object-lock-retain-until-date\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:object-lock-remaining-retention-days\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:object-lock-legal-hold",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateAccessPoint": {
+      "name": "CreateAccessPoint",
+      "description": "Grants permission to create a new access point",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "accesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344684986": {
+      "name": "$1604344684986",
+      "description": "s3:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:locationconstraint\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-acl\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateBucket": {
+      "name": "CreateBucket",
+      "description": "Grants permission to create a new bucket",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344684988": {
+      "name": "$1604344684988",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:locationconstraint\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-acl\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-grant-full-control\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-grant-read\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-grant-read-acp\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-grant-write\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-grant-write-acp",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateJob": {
+      "name": "CreateJob",
+      "description": "Grants permission to create a new Amazon S3 Batch Operations job",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:RequestJobPriority\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:RequestJobOperation\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "dependentActions": "iam:PassRole"
+    },
+    "DeleteAccessPoint": {
+      "name": "DeleteAccessPoint",
+      "description": "Grants permission to delete the access point named in the URI",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "accesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344684990": {
+      "name": "$1604344684990",
+      "description": "s3:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteAccessPointPolicy": {
+      "name": "DeleteAccessPointPolicy",
+      "description": "Grants permission to delete the policy on a specified access point",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "accesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344684992": {
+      "name": "$1604344684992",
+      "description": "s3:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteBucket": {
+      "name": "DeleteBucket",
+      "description": "Grants permission to delete the bucket named in the URI",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344684993": {
+      "name": "$1604344684993",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteBucketOwnershipControls": {
+      "name": "DeleteBucketOwnershipControls",
+      "description": "Grants permission to delete ownership controls on a bucket",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344684994": {
+      "name": "$1604344684994",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteBucketPolicy": {
+      "name": "DeleteBucketPolicy",
+      "description": "Grants permission to delete the policy on a specified bucket",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344684995": {
+      "name": "$1604344684995",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteBucketWebsite": {
+      "name": "DeleteBucketWebsite",
+      "description": "Grants permission to remove the website configuration for a bucket",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344684996": {
+      "name": "$1604344684996",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteJobTagging": {
+      "name": "DeleteJobTagging",
+      "description": "Grants permission to remove tags from an existing Amazon S3 Batch Operations job",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344684997": {
+      "name": "$1604344684997",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:ExistingJobPriority\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:ExistingJobOperation",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteObject": {
+      "name": "DeleteObject",
+      "description": "Grants permission to remove the null version of an object and insert a delete marker,\n                                                which becomes the current version of the object",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344684998": {
+      "name": "$1604344684998",
+      "description": "s3:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteObjectTagging": {
+      "name": "DeleteObjectTagging",
+      "description": "Grants permission to use the tagging subresource to remove the entire tag set from\n                                                the specified object",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344684999": {
+      "name": "$1604344684999",
+      "description": "s3:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:versionid\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteObjectVersion": {
+      "name": "DeleteObjectVersion",
+      "description": "Grants permission to remove a specific version of an object",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteObjectVersionTagging": {
+      "name": "DeleteObjectVersionTagging",
+      "description": "Grants permission to remove the entire tag set for a specific version of the object",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685001": {
+      "name": "$1604344685001",
+      "description": "s3:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:ExistingObjectTag/<key>\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:versionid\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DescribeJob": {
+      "name": "DescribeJob",
+      "description": "Grants permission to retrieve the configuration parameters and status for a batch\n                                                operations job",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685002": {
+      "name": "$1604344685002",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetAccelerateConfiguration": {
+      "name": "GetAccelerateConfiguration",
+      "description": "Grants permission to uses the accelerate subresource to return the Transfer Acceleration\n                                                state of a bucket, which is either Enabled or Suspended",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685004": {
+      "name": "$1604344685004",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetAccessPoint": {
+      "name": "GetAccessPoint",
+      "description": "Grants permission to return configuration information about the specified access point",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "s3:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "dependentActions": ""
+    },
+    "GetAccessPointPolicy": {
+      "name": "GetAccessPointPolicy",
+      "description": "Grants permission to returns the access point policy associated with the specified\n                                                access point",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "accesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685006": {
+      "name": "$1604344685006",
+      "description": "s3:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetAccessPointPolicyStatus": {
+      "name": "GetAccessPointPolicyStatus",
+      "description": "Grants permission to return the policy status for a specific access point policy",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "accesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685007": {
+      "name": "$1604344685007",
+      "description": "s3:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetAccountPublicAccessBlock": {
+      "name": "GetAccountPublicAccessBlock",
+      "description": "Grants permission to retrieve the PublicAccessBlock configuration for an AWS account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "dependentActions": ""
+    },
+    "GetAnalyticsConfiguration": {
+      "name": "GetAnalyticsConfiguration",
+      "description": "Grants permission to get an analytics configuration from an Amazon S3 bucket, identified\n                                                by the analytics configuration ID",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685008": {
+      "name": "$1604344685008",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetBucketAcl": {
+      "name": "GetBucketAcl",
+      "description": "Grants permission to use the acl subresource to return the access control list (ACL)\n                                                of an Amazon S3 bucket",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685009": {
+      "name": "$1604344685009",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetBucketCORS": {
+      "name": "GetBucketCORS",
+      "description": "Grants permission to return the CORS configuration information set for an Amazon S3\n                                                bucket",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685010": {
+      "name": "$1604344685010",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetBucketLocation": {
+      "name": "GetBucketLocation",
+      "description": "Grants permission to return the Region that an Amazon S3 bucket resides in",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBucketLogging": {
+      "name": "GetBucketLogging",
+      "description": "Grants permission to return the logging status of an Amazon S3 bucket and the permissions\n                                                users have to view or modify that status",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685011": {
+      "name": "$1604344685011",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetBucketNotification": {
+      "name": "GetBucketNotification",
+      "description": "Grants permission to get the notification configuration of an Amazon S3 bucket",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBucketObjectLockConfiguration": {
+      "name": "GetBucketObjectLockConfiguration",
+      "description": "Grants permission to get the Object Lock configuration of an Amazon S3 bucket",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685012": {
+      "name": "$1604344685012",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetBucketOwnershipControls": {
+      "name": "GetBucketOwnershipControls",
+      "description": "Grants permission to retrieve ownership controls on a bucket",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685013": {
+      "name": "$1604344685013",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetBucketPolicy": {
+      "name": "GetBucketPolicy",
+      "description": "Grants permission to return the policy of the specified bucket",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685014": {
+      "name": "$1604344685014",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetBucketPolicyStatus": {
+      "name": "GetBucketPolicyStatus",
+      "description": "Grants permission to retrieve the policy status for a specific Amazon S3 bucket, which\n                                                indicates whether the bucket is public",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBucketPublicAccessBlock": {
+      "name": "GetBucketPublicAccessBlock",
+      "description": "Grants permission to retrieve the PublicAccessBlock configuration for an Amazon S3\n                                                bucket",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685015": {
+      "name": "$1604344685015",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetBucketRequestPayment": {
+      "name": "GetBucketRequestPayment",
+      "description": "Grants permission to return the request payment configuration for an Amazon S3 bucket",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBucketTagging": {
+      "name": "GetBucketTagging",
+      "description": "Grants permission to return the tag set associated with an Amazon S3 bucket",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685016": {
+      "name": "$1604344685016",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetBucketVersioning": {
+      "name": "GetBucketVersioning",
+      "description": "Grants permission to return the versioning state of an Amazon S3 bucket",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685017": {
+      "name": "$1604344685017",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetBucketWebsite": {
+      "name": "GetBucketWebsite",
+      "description": "Grants permission to return the website configuration for an Amazon S3 bucket",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685019": {
+      "name": "$1604344685019",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetEncryptionConfiguration": {
+      "name": "GetEncryptionConfiguration",
+      "description": "Grants permission to return the default encryption configuration an Amazon S3 bucket",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685021": {
+      "name": "$1604344685021",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetInventoryConfiguration": {
+      "name": "GetInventoryConfiguration",
+      "description": "Grants permission to return an inventory configuration from an Amazon S3 bucket, identified\n                                                by the inventory configuration ID",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetJobTagging": {
+      "name": "GetJobTagging",
+      "description": "Grants permission to return the tag set of an existing Amazon S3 Batch Operations\n                                                job",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685022": {
+      "name": "$1604344685022",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetLifecycleConfiguration": {
+      "name": "GetLifecycleConfiguration",
+      "description": "Grants permission to return the lifecycle configuration information set on an Amazon\n                                                S3 bucket",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMetricsConfiguration": {
+      "name": "GetMetricsConfiguration",
+      "description": "Grants permission to get a metrics configuration from an Amazon S3 bucket",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetObject": {
+      "name": "GetObject",
+      "description": "Grants permission to retrieve objects from Amazon S3",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685023": {
+      "name": "$1604344685023",
+      "description": "s3:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetObjectAcl": {
+      "name": "GetObjectAcl",
+      "description": "Grants permission to return the access control list (ACL) of an object",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetObjectLegalHold": {
+      "name": "GetObjectLegalHold",
+      "description": "Grants permission to get an object's current Legal Hold status",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetObjectRetention": {
+      "name": "GetObjectRetention",
+      "description": "Grants permission to retrieve the retention settings for an object",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685024": {
+      "name": "$1604344685024",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetObjectTagging": {
+      "name": "GetObjectTagging",
+      "description": "Grants permission to return the tag set of an object",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetObjectTorrent": {
+      "name": "GetObjectTorrent",
+      "description": "Grants permission to return torrent files from an Amazon S3 bucket",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetObjectVersion": {
+      "name": "GetObjectVersion",
+      "description": "Grants permission to retrieve a specific version of an object",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685025": {
+      "name": "$1604344685025",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetObjectVersionAcl": {
+      "name": "GetObjectVersionAcl",
+      "description": "Grants permission to return the access control list (ACL) of a specific object version",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetObjectVersionForReplication": {
+      "name": "GetObjectVersionForReplication",
+      "description": "Grants permission to replicate both unencrypted objects and objects encrypted with\n                                                SSE-S3 or SSE-KMS",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetObjectVersionTagging": {
+      "name": "GetObjectVersionTagging",
+      "description": "Grants permission to return the tag set for a specific version of the object",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685026": {
+      "name": "$1604344685026",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetObjectVersionTorrent": {
+      "name": "GetObjectVersionTorrent",
+      "description": "Grants permission to get Torrent files about a different version using the versionId\n                                                subresource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetReplicationConfiguration": {
+      "name": "GetReplicationConfiguration",
+      "description": "Grants permission to get the replication configuration information set on an Amazon\n                                                S3 bucket",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAccessPoints": {
+      "name": "ListAccessPoints",
+      "description": "Grants permission to list access points",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "dependentActions": ""
+    },
+    "ListAllMyBuckets": {
+      "name": "ListAllMyBuckets",
+      "description": "Grants permission to list all buckets owned by the authenticated sender of the request",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "dependentActions": ""
+    },
+    "ListBucket": {
+      "name": "ListBucket",
+      "description": "Grants permission to list some or all of the objects in an Amazon S3 bucket (up to\n                                                1000)",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685027": {
+      "name": "$1604344685027",
+      "description": "s3:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ListBucketMultipartUploads": {
+      "name": "ListBucketMultipartUploads",
+      "description": "Grants permission to list in-progress multipart uploads",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListBucketVersions": {
+      "name": "ListBucketVersions",
+      "description": "Grants permission to list metadata about all the versions of objects in an Amazon\n                                                S3 bucket",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685028": {
+      "name": "$1604344685028",
+      "description": "s3:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:delimiter\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:max-keys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:prefix\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ListJobs": {
+      "name": "ListJobs",
+      "description": "Grants permission to list current jobs and jobs that have ended recently",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "dependentActions": ""
+    },
+    "ListMultipartUploadParts": {
+      "name": "ListMultipartUploadParts",
+      "description": "Grants permission to list the parts that have been uploaded for a specific multipart\n                                                upload",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685029": {
+      "name": "$1604344685029",
+      "description": "s3:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ObjectOwnerOverrideToBucketOwner": {
+      "name": "ObjectOwnerOverrideToBucketOwner",
+      "description": "Grants permission to change replica ownership",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutAccelerateConfiguration": {
+      "name": "PutAccelerateConfiguration",
+      "description": "Grants permission to use the accelerate subresource to set the Transfer Acceleration\n                                                state of an existing S3 bucket",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutAccessPointPolicy": {
+      "name": "PutAccessPointPolicy",
+      "description": "Grants permission to associate an access policy with a specified access point",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "accesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutAccountPublicAccessBlock": {
+      "name": "PutAccountPublicAccessBlock",
+      "description": "Grants permission to create or modify the PublicAccessBlock configuration for an AWS\n                                                account",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [],
+      "conditionKeys": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "dependentActions": ""
+    },
+    "PutAnalyticsConfiguration": {
+      "name": "PutAnalyticsConfiguration",
+      "description": "Grants permission to set an analytics configuration for the bucket, specified by the\n                                                analytics configuration ID",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685030": {
+      "name": "$1604344685030",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-acl\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-grant-full-control\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-grant-read\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-grant-read-acp\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-grant-write\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-grant-write-acp",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutBucketAcl": {
+      "name": "PutBucketAcl",
+      "description": "Grants permission to set the permissions on an existing bucket using access control\n                                                lists (ACLs)",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutBucketCORS": {
+      "name": "PutBucketCORS",
+      "description": "Grants permission to set the CORS configuration for an Amazon S3 bucket",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685031": {
+      "name": "$1604344685031",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutBucketLogging": {
+      "name": "PutBucketLogging",
+      "description": "Grants permission to set the logging parameters for an Amazon S3 bucket",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutBucketNotification": {
+      "name": "PutBucketNotification",
+      "description": "Grants permission to receive notifications when certain events happen in an Amazon\n                                                S3 bucket",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685032": {
+      "name": "$1604344685032",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutBucketObjectLockConfiguration": {
+      "name": "PutBucketObjectLockConfiguration",
+      "description": "Grants permission to put Object Lock configuration on a specific bucket",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutBucketOwnershipControls": {
+      "name": "PutBucketOwnershipControls",
+      "description": "Grants permission to add or replace ownership controls on a bucket",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutBucketPolicy": {
+      "name": "PutBucketPolicy",
+      "description": "Grants permission to add or replace a bucket policy on a bucket",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685033": {
+      "name": "$1604344685033",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutBucketPublicAccessBlock": {
+      "name": "PutBucketPublicAccessBlock",
+      "description": "Grants permission to create or modify the PublicAccessBlock configuration for a specific\n                                                Amazon S3 bucket",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutBucketRequestPayment": {
+      "name": "PutBucketRequestPayment",
+      "description": "Grants permission to set the request payment configuration of a bucket",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutBucketTagging": {
+      "name": "PutBucketTagging",
+      "description": "Grants permission to add a set of tags to an existing Amazon S3 bucket",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685034": {
+      "name": "$1604344685034",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutBucketVersioning": {
+      "name": "PutBucketVersioning",
+      "description": "Grants permission to set the versioning state of an existing Amazon S3 bucket",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutBucketWebsite": {
+      "name": "PutBucketWebsite",
+      "description": "Grants permission to set the configuration of the website that is specified in the\n                                                website subresource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685035": {
+      "name": "$1604344685035",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutEncryptionConfiguration": {
+      "name": "PutEncryptionConfiguration",
+      "description": "Grants permission to set the encryption configuration for an Amazon S3 bucket",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutInventoryConfiguration": {
+      "name": "PutInventoryConfiguration",
+      "description": "Grants permission to add an inventory configuration to the bucket, identified by the\n                                                inventory ID",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685036": {
+      "name": "$1604344685036",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:ExistingJobPriority\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:ExistingJobOperation\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutJobTagging": {
+      "name": "PutJobTagging",
+      "description": "Grants permission to replace tags on an existing Amazon S3 Batch Operations job",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutLifecycleConfiguration": {
+      "name": "PutLifecycleConfiguration",
+      "description": "Grants permission to create a new lifecycle configuration for the bucket or replace\n                                                an existing lifecycle configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685037": {
+      "name": "$1604344685037",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutMetricsConfiguration": {
+      "name": "PutMetricsConfiguration",
+      "description": "Grants permission to set or update a metrics configuration for the CloudWatch request\n                                                metrics from an Amazon S3 bucket",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685038": {
+      "name": "$1604344685038",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutObject": {
+      "name": "PutObject",
+      "description": "Grants permission to add an object to a bucket",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685039": {
+      "name": "$1604344685039",
+      "description": "s3:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:RequestObjectTag/<key>\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:RequestObjectTagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-acl\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-copy-source\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-grant-full-control\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-grant-read\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-grant-read-acp\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-grant-write\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-grant-write-acp\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-metadata-directive\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-server-side-encryption\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-server-side-encryption-aws-kms-key-id\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-storage-class\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-website-redirect-location\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:object-lock-mode\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:object-lock-retain-until-date\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:object-lock-remaining-retention-days\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:object-lock-legal-hold",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutObjectAcl": {
+      "name": "PutObjectAcl",
+      "description": "Grants permission to set the access control list (ACL) permissions for new or existing\n                                                objects in an S3 bucket.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685040": {
+      "name": "$1604344685040",
+      "description": "s3:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:ExistingObjectTag/<key>\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-acl\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-grant-full-control\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-grant-read\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-grant-read-acp\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-grant-write\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-grant-write-acp\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-storage-class",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutObjectLegalHold": {
+      "name": "PutObjectLegalHold",
+      "description": "Grants permission to apply a Legal Hold configuration to the specified object",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685041": {
+      "name": "$1604344685041",
+      "description": "s3:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:object-lock-legal-hold",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutObjectRetention": {
+      "name": "PutObjectRetention",
+      "description": "Grants permission to place an Object Retention configuration on an object",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685042": {
+      "name": "$1604344685042",
+      "description": "s3:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:ExistingObjectTag/<key>\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:RequestObjectTag/<key>\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:RequestObjectTagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutObjectTagging": {
+      "name": "PutObjectTagging",
+      "description": "Grants permission to set the supplied tag-set to an object that already exists in\n                                                a bucket",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutObjectVersionAcl": {
+      "name": "PutObjectVersionAcl",
+      "description": "Grants permission to use the acl subresource to set the access control list (ACL)\n                                                permissions for an object that already exists in a bucket",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685043": {
+      "name": "$1604344685043",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutObjectVersionTagging": {
+      "name": "PutObjectVersionTagging",
+      "description": "Grants permission to set the supplied tag-set for a specific version of an object",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutReplicationConfiguration": {
+      "name": "PutReplicationConfiguration",
+      "description": "Grants permission to create a new replication configuration or replace an existing\n                                                one",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "ReplicateDelete": {
+      "name": "ReplicateDelete",
+      "description": "Grants permission to replicate delete markers to the destination bucket",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685044": {
+      "name": "$1604344685044",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-server-side-encryption\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-server-side-encryption-aws-kms-key-id",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ReplicateObject": {
+      "name": "ReplicateObject",
+      "description": "Grants permission to replicate objects and object tags to the destination bucket",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ReplicateTags": {
+      "name": "ReplicateTags",
+      "description": "Grants permission to replicate object tags to the destination bucket",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685045": {
+      "name": "$1604344685045",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:RequestJobPriority\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:ExistingJobPriority\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:ExistingJobOperation",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "RestoreObject": {
+      "name": "RestoreObject",
+      "description": "Grants permission to restore an archived copy of an object back into Amazon S3",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "object*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateJobPriority": {
+      "name": "UpdateJobPriority",
+      "description": "Grants permission to update the priority of an existing job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateJobStatus": {
+      "name": "UpdateJobStatus",
+      "description": "Grants permission to update the status for the specified job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344685046": {
+      "name": "$1604344685046",
+      "description": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:ExistingJobPriority\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:ExistingJobOperation\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:JobSuspendedCause",
+      "accessLevel": "",
+      "resourceTypes": []
+    }
+  },
+  "name": "Amazon S3"
+}

@@ -1,0 +1,170 @@
+{
+  "servicePrefix": "codestar-notifications",
+  "actions": {
+    "CreateNotificationRule": {
+      "name": "CreateNotificationRule",
+      "description": "Grants permission to create a notification rule for a resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "notificationrule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344677974": {
+      "name": "$1604344677974",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      codestar-notifications:NotificationsForResource",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteNotificationRule": {
+      "name": "DeleteNotificationRule",
+      "description": "Grants permission to delete a notification rule for a resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "notificationrule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344677976": {
+      "name": "$1604344677976",
+      "description": "aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      codestar-notifications:NotificationsForResource",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteTarget": {
+      "name": "DeleteTarget",
+      "description": "Grants permission to delete a target for a notification rule",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "DescribeNotificationRule": {
+      "name": "DescribeNotificationRule",
+      "description": "Grants permission to get information about a notification rule",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "notificationrule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEventTypes": {
+      "name": "ListEventTypes",
+      "description": "Grants permission to list notifications event types",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListNotificationRules": {
+      "name": "ListNotificationRules",
+      "description": "Grants permission to list notification rules in an AWS account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permission to list the tags attached to a notification rule resource ARN",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "notificationrule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344677978": {
+      "name": "$1604344677978",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ListTargets": {
+      "name": "ListTargets",
+      "description": "Grants permission to list the notification rule targets for an AWS account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "Subscribe": {
+      "name": "Subscribe",
+      "description": "Grants permission to create an association between a notification rule and an Amazon\n                                                SNS topic",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "notificationrule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344677980": {
+      "name": "$1604344677980",
+      "description": "aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      codestar-notifications:NotificationsForResource",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permission to attach resource tags to a notification rule resource ARN",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "notificationrule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344677981": {
+      "name": "$1604344677981",
+      "description": "aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "Unsubscribe": {
+      "name": "Unsubscribe",
+      "description": "Grants permission to remove an association between a notification rule and an Amazon\n                                                SNS topic",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "notificationrule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344677982": {
+      "name": "$1604344677982",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permission to disassociate resource tags from a notification rule resource\n                                                ARN",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "notificationrule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateNotificationRule": {
+      "name": "UpdateNotificationRule",
+      "description": "Grants permission to change a notification rule for a resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "notificationrule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344677983": {
+      "name": "$1604344677983",
+      "description": "aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      codestar-notifications:NotificationsForResource",
+      "accessLevel": "",
+      "resourceTypes": []
+    }
+  },
+  "name": "AWS CodeStar Notifications"
+}

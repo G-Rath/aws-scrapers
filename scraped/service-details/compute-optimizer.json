@@ -1,0 +1,78 @@
+{
+  "servicePrefix": "compute-optimizer",
+  "actions": {
+    "DescribeRecommendationExportJobs": {
+      "name": "DescribeRecommendationExportJobs",
+      "description": "Grants permission to view the status of recommendation export jobs.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ExportAutoScalingGroupRecommendations": {
+      "name": "ExportAutoScalingGroupRecommendations",
+      "description": "Grants permission to export autoscaling group recommendations to S3 for the provided\n                                                accounts.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ExportEC2InstanceRecommendations": {
+      "name": "ExportEC2InstanceRecommendations",
+      "description": "Grants permission to export EC2 instance recommendations to S3 for the provided accounts.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAutoScalingGroupRecommendations": {
+      "name": "GetAutoScalingGroupRecommendations",
+      "description": "Grants permission to get recommendations for the provided autoscaling groups.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEC2InstanceRecommendations": {
+      "name": "GetEC2InstanceRecommendations",
+      "description": "Grants permission to get recommendations for the provided EC2 instances.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEC2RecommendationProjectedMetrics": {
+      "name": "GetEC2RecommendationProjectedMetrics",
+      "description": "Grants permission to get the recommendation projected metrics of the specified instance.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEnrollmentStatus": {
+      "name": "GetEnrollmentStatus",
+      "description": "Grants permission to get the enrollment status for the specified account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRecommendationSummaries": {
+      "name": "GetRecommendationSummaries",
+      "description": "Grants permission to get the recommendation summaries for the specified account(s).",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateEnrollmentStatus": {
+      "name": "UpdateEnrollmentStatus",
+      "description": "Grants permission to update the enrollment status.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Compute Optimizer"
+}

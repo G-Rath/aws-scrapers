@@ -1,0 +1,50 @@
+{
+  "servicePrefix": "honeycode",
+  "actions": {
+    "ApproveTeamAssociation": {
+      "name": "ApproveTeamAssociation",
+      "description": "Grants permission to approve a team association request for your AWS Account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetScreenData": {
+      "name": "GetScreenData",
+      "description": "Grants permission to load the data from a screen",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "screen*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "InvokeScreenAutomation": {
+      "name": "InvokeScreenAutomation",
+      "description": "Grants permission to invoke a screen automation",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "screen-automation*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTeamAssociations": {
+      "name": "ListTeamAssociations",
+      "description": "Grants permission to list all pending and approved team associations with your AWS\n                                                Account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RejectTeamAssociation": {
+      "name": "RejectTeamAssociation",
+      "description": "Grants permission to reject a team association request for your AWS Account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Honeycode"
+}

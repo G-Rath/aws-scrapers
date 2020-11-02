@@ -1,0 +1,122 @@
+{
+  "servicePrefix": "signer",
+  "actions": {
+    "CancelSigningProfile": {
+      "name": "CancelSigningProfile",
+      "description": "Cancels a signing profile.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "signing-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeSigningJob": {
+      "name": "DescribeSigningJob",
+      "description": "Describe a signing job.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "signing-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSigningPlatform": {
+      "name": "GetSigningPlatform",
+      "description": "Retrieves a signing platform.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSigningProfile": {
+      "name": "GetSigningProfile",
+      "description": "Retrieves a signing profile.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "signing-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSigningJobs": {
+      "name": "ListSigningJobs",
+      "description": "List signing jobs.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSigningPlatforms": {
+      "name": "ListSigningPlatforms",
+      "description": "List all signing platforms.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSigningProfiles": {
+      "name": "ListSigningProfiles",
+      "description": "List all signing profile associated with the account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Lists the tags associated with the Signing Profile resource.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "signing-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutSigningProfile": {
+      "name": "PutSigningProfile",
+      "description": "Creates a new signing profile if not exists.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "StartSigningJob": {
+      "name": "StartSigningJob",
+      "description": "Starts a code signing request.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "signing-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Adds one or more tags to an Signing Profile resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "signing-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344737480": {
+      "name": "$1604344737480",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Removes one or more tags from an Signing Profile resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "signing-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Code Signing for Amazon FreeRTOS"
+}

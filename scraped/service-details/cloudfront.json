@@ -1,0 +1,548 @@
+{
+  "servicePrefix": "cloudfront",
+  "actions": {
+    "CreateCachePolicy": {
+      "name": "CreateCachePolicy",
+      "description": "This action adds a new cache policy to CloudFront.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateCloudFrontOriginAccessIdentity": {
+      "name": "CreateCloudFrontOriginAccessIdentity",
+      "description": "This action creates a new CloudFront origin access identity.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "origin-access-identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDistribution": {
+      "name": "CreateDistribution",
+      "description": "This action creates a new web distribution.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "distribution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDistributionWithTags": {
+      "name": "CreateDistributionWithTags",
+      "description": "This action creates a new web distribution with tags.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "distribution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344726969": {
+      "name": "$1604344726969",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateFieldLevelEncryptionConfig": {
+      "name": "CreateFieldLevelEncryptionConfig",
+      "description": "This action creates a new field-level encryption configuration.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateFieldLevelEncryptionProfile": {
+      "name": "CreateFieldLevelEncryptionProfile",
+      "description": "This action creates a field-level encryption profile.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateInvalidation": {
+      "name": "CreateInvalidation",
+      "description": "This action creates a new invalidation batch request.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "distribution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateOriginRequestPolicy": {
+      "name": "CreateOriginRequestPolicy",
+      "description": "This action adds a new origin request policy to CloudFront.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreatePublicKey": {
+      "name": "CreatePublicKey",
+      "description": "This action adds a new public key to CloudFront.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateStreamingDistribution": {
+      "name": "CreateStreamingDistribution",
+      "description": "This action creates a new RTMP distribution.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "streaming-distribution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateStreamingDistributionWithTags": {
+      "name": "CreateStreamingDistributionWithTags",
+      "description": "This action creates a new RTMP distribution with tags.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "streaming-distribution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344726970": {
+      "name": "$1604344726970",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteCachePolicy": {
+      "name": "DeleteCachePolicy",
+      "description": "This action deletes a cache policy.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteCloudFrontOriginAccessIdentity": {
+      "name": "DeleteCloudFrontOriginAccessIdentity",
+      "description": "This action deletes a CloudFront origin access identity.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "origin-access-identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDistribution": {
+      "name": "DeleteDistribution",
+      "description": "This action deletes a web distribution.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "distribution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteFieldLevelEncryptionConfig": {
+      "name": "DeleteFieldLevelEncryptionConfig",
+      "description": "This action deletes a field-level encryption configuration.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteFieldLevelEncryptionProfile": {
+      "name": "DeleteFieldLevelEncryptionProfile",
+      "description": "This action deletes a field-level encryption profile.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteOriginRequestPolicy": {
+      "name": "DeleteOriginRequestPolicy",
+      "description": "This action deletes an origin request policy.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeletePublicKey": {
+      "name": "DeletePublicKey",
+      "description": "This action deletes a public key from CloudFront.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteStreamingDistribution": {
+      "name": "DeleteStreamingDistribution",
+      "description": "This action deletes an RTMP distribution.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "streaming-distribution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetCachePolicy": {
+      "name": "GetCachePolicy",
+      "description": "Get the cache policy",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetCachePolicyConfig": {
+      "name": "GetCachePolicyConfig",
+      "description": "Get the cache policy configuration",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetCloudFrontOriginAccessIdentity": {
+      "name": "GetCloudFrontOriginAccessIdentity",
+      "description": "Get the information about a CloudFront origin access identity.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "origin-access-identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetCloudFrontOriginAccessIdentityConfig": {
+      "name": "GetCloudFrontOriginAccessIdentityConfig",
+      "description": "Get the configuration information about a Cloudfront origin access identity.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "origin-access-identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDistribution": {
+      "name": "GetDistribution",
+      "description": "Get the information about a web distribution.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "distribution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDistributionConfig": {
+      "name": "GetDistributionConfig",
+      "description": "Get the configuration information about a distribution.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "distribution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFieldLevelEncryption": {
+      "name": "GetFieldLevelEncryption",
+      "description": "Get the field-level encryption configuration information.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFieldLevelEncryptionConfig": {
+      "name": "GetFieldLevelEncryptionConfig",
+      "description": "Get the field-level encryption configuration information.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFieldLevelEncryptionProfile": {
+      "name": "GetFieldLevelEncryptionProfile",
+      "description": "Get the field-level encryption configuration information.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFieldLevelEncryptionProfileConfig": {
+      "name": "GetFieldLevelEncryptionProfileConfig",
+      "description": "Get the field-level encryption profile configuration information.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetInvalidation": {
+      "name": "GetInvalidation",
+      "description": "Get the information about an invalidation.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "distribution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetOriginRequestPolicy": {
+      "name": "GetOriginRequestPolicy",
+      "description": "Get the origin request policy",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetOriginRequestPolicyConfig": {
+      "name": "GetOriginRequestPolicyConfig",
+      "description": "Get the origin request policy configuration",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPublicKey": {
+      "name": "GetPublicKey",
+      "description": "Get the public key information.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPublicKeyConfig": {
+      "name": "GetPublicKeyConfig",
+      "description": "Get the public key configuration information.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetStreamingDistribution": {
+      "name": "GetStreamingDistribution",
+      "description": "Get the information about an RTMP distribution.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "streaming-distribution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetStreamingDistributionConfig": {
+      "name": "GetStreamingDistributionConfig",
+      "description": "Get the configuration information about a streaming distribution.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "streaming-distribution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListCachePolicies": {
+      "name": "ListCachePolicies",
+      "description": "List all cache policies that have been created in CloudFront for this account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListCloudFrontOriginAccessIdentities": {
+      "name": "ListCloudFrontOriginAccessIdentities",
+      "description": "List your CloudFront origin access identities.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDistributions": {
+      "name": "ListDistributions",
+      "description": "List the distributions associated with your AWS account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDistributionsByCachePolicyId": {
+      "name": "ListDistributionsByCachePolicyId",
+      "description": "List distribution IDs for distributions that have a cache behavior that's associated\n                                                with the specified cache policy.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDistributionsByOriginRequestPolicyId": {
+      "name": "ListDistributionsByOriginRequestPolicyId",
+      "description": "List distribution IDs for distributions that have a cache behavior that's associated\n                                                with the specified origin request policy.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDistributionsByWebACLId": {
+      "name": "ListDistributionsByWebACLId",
+      "description": "List the distributions associated with your AWS account with given AWS WAF web ACL.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFieldLevelEncryptionConfigs": {
+      "name": "ListFieldLevelEncryptionConfigs",
+      "description": "List all field-level encryption configurations that have been created in CloudFront\n                                                for this account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFieldLevelEncryptionProfiles": {
+      "name": "ListFieldLevelEncryptionProfiles",
+      "description": "List all field-level encryption profiles that have been created in CloudFront for\n                                                this account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListInvalidations": {
+      "name": "ListInvalidations",
+      "description": "List your invalidation batches.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "distribution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListOriginRequestPolicies": {
+      "name": "ListOriginRequestPolicies",
+      "description": "List all origin request policies that have been created in CloudFront for this account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPublicKeys": {
+      "name": "ListPublicKeys",
+      "description": "List all public keys that have been added to CloudFront for this account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListStreamingDistributions": {
+      "name": "ListStreamingDistributions",
+      "description": "List your RTMP distributions.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "List tags for a CloudFront resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "distribution"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "streaming-distribution": {
+      "name": "streaming-distribution",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Add tags to a CloudFront resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "distribution"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344726975": {
+      "name": "$1604344726975",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Remove tags from a CloudFront resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "distribution"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateCachePolicy": {
+      "name": "UpdateCachePolicy",
+      "description": "This action updates a cache policy.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateCloudFrontOriginAccessIdentity": {
+      "name": "UpdateCloudFrontOriginAccessIdentity",
+      "description": "This action sets the configuration for a CloudFront origin access identity.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "origin-access-identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDistribution": {
+      "name": "UpdateDistribution",
+      "description": "This action updates the configuration for a web distribution.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "distribution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateFieldLevelEncryptionConfig": {
+      "name": "UpdateFieldLevelEncryptionConfig",
+      "description": "This action updates a field-level encryption configuration.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateFieldLevelEncryptionProfile": {
+      "name": "UpdateFieldLevelEncryptionProfile",
+      "description": "This action updates a field-level encryption profile.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateOriginRequestPolicy": {
+      "name": "UpdateOriginRequestPolicy",
+      "description": "This action updates an origin request policy.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdatePublicKey": {
+      "name": "UpdatePublicKey",
+      "description": "This action updates public key information.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateStreamingDistribution": {
+      "name": "UpdateStreamingDistribution",
+      "description": "This action updates the configuration for an RTMP distribution.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "streaming-distribution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon CloudFront"
+}

@@ -1,0 +1,344 @@
+{
+  "servicePrefix": "es",
+  "actions": {
+    "AcceptInboundCrossClusterSearchConnection": {
+      "name": "AcceptInboundCrossClusterSearchConnection",
+      "description": "Allows the destination domain owner to accept an inbound cross-cluster search connection\n                                                request",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AddTags": {
+      "name": "AddTags",
+      "description": "Grants permission to attach resource tags to an Amazon ES domain.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateElasticsearchDomain": {
+      "name": "CreateElasticsearchDomain",
+      "description": "Grants permission to create an Amazon ES domain.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateElasticsearchServiceRole": {
+      "name": "CreateElasticsearchServiceRole",
+      "description": "Grants permission to create the service-linked role required for Amazon ES domains\n                                                that use VPC access.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateOutboundCrossClusterSearchConnection": {
+      "name": "CreateOutboundCrossClusterSearchConnection",
+      "description": "Creates a new cross-cluster search connection from a source domain to a destination\n                                                domain",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteElasticsearchDomain": {
+      "name": "DeleteElasticsearchDomain",
+      "description": "Grants permission to delete an Amazon ES domain and all of its data.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteElasticsearchServiceRole": {
+      "name": "DeleteElasticsearchServiceRole",
+      "description": "Grants permission to delete the service-linked role required for Amazon ES domains\n                                                that use VPC access.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteInboundCrossClusterSearchConnection": {
+      "name": "DeleteInboundCrossClusterSearchConnection",
+      "description": "Allows the destination domain owner to delete an existing inbound cross-cluster search\n                                                connection",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteOutboundCrossClusterSearchConnection": {
+      "name": "DeleteOutboundCrossClusterSearchConnection",
+      "description": "Allows the source domain owner to delete an existing outbound cross-cluster search\n                                                connection",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeElasticsearchDomain": {
+      "name": "DescribeElasticsearchDomain",
+      "description": "Grants permission to view a description of the domain configuration for the specified\n                                                Amazon ES domain, including the domain ID, domain service endpoint, and domain ARN.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeElasticsearchDomainConfig": {
+      "name": "DescribeElasticsearchDomainConfig",
+      "description": "Grants permission to view a description of the configuration options and status of\n                                                an Amazon ES domain.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeElasticsearchDomains": {
+      "name": "DescribeElasticsearchDomains",
+      "description": "Grants permission to view a description of the domain configuration for up to five\n                                                specified Amazon ES domains.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeElasticsearchInstanceTypeLimits": {
+      "name": "DescribeElasticsearchInstanceTypeLimits",
+      "description": "Grants permission to view the instance count, storage, and master node limits for\n                                                a given Elasticsearch version and instance type.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeInboundCrossClusterSearchConnections": {
+      "name": "DescribeInboundCrossClusterSearchConnections",
+      "description": "Lists all the inbound cross-cluster search connections for a destination domain",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeOutboundCrossClusterSearchConnections": {
+      "name": "DescribeOutboundCrossClusterSearchConnections",
+      "description": "Lists all the outbound cross-cluster search connections for a source domain",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeReservedElasticsearchInstanceOfferings": {
+      "name": "DescribeReservedElasticsearchInstanceOfferings",
+      "description": "Grants permission to fetch reserved instance offerings for ES",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeReservedElasticsearchInstances": {
+      "name": "DescribeReservedElasticsearchInstances",
+      "description": "Grants permission to fetch ES reserved instances already purchased by customer",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ESCrossClusterGet": {
+      "name": "ESCrossClusterGet",
+      "description": "Grants permission to send cross-cluster requests to a destination domain.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "domain"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ESHttpDelete": {
+      "name": "ESHttpDelete",
+      "description": "Grants permission to send HTTP DELETE requests to the Elasticsearch APIs.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ESHttpGet": {
+      "name": "ESHttpGet",
+      "description": "Grants permission to send HTTP GET requests to the Elasticsearch APIs.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "domain"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ESHttpHead": {
+      "name": "ESHttpHead",
+      "description": "Grants permission to send HTTP HEAD requests to the Elasticsearch APIs.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "domain"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ESHttpPatch": {
+      "name": "ESHttpPatch",
+      "description": "Grants permission to send HTTP PATCH requests to the Elasticsearch APIs.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ESHttpPost": {
+      "name": "ESHttpPost",
+      "description": "Grants permission to send HTTP POST requests to the Elasticsearch APIs.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ESHttpPut": {
+      "name": "ESHttpPut",
+      "description": "Grants permission to send HTTP PUT requests to the Elasticsearch APIs.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetCompatibleElasticsearchVersions": {
+      "name": "GetCompatibleElasticsearchVersions",
+      "description": "Grants permission to fetch list of compatible elastic search versions to which Amazon\n                                                ES domain can be upgraded",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetUpgradeHistory": {
+      "name": "GetUpgradeHistory",
+      "description": "Grants permission to fetch upgrade history for given ES domain",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetUpgradeStatus": {
+      "name": "GetUpgradeStatus",
+      "description": "Grants permission to fetch upgrade status for given ES domain",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDomainNames": {
+      "name": "ListDomainNames",
+      "description": "Grants permission to display the names of all Amazon ES domains that the current user\n                                                owns.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListElasticsearchInstanceTypeDetails": {
+      "name": "ListElasticsearchInstanceTypeDetails",
+      "description": "Grants permission to list all instance types and available features for a given Elasticsearch\n                                                version.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListElasticsearchInstanceTypes": {
+      "name": "ListElasticsearchInstanceTypes",
+      "description": "Grants permission to list all Elasticsearch instance types that are supported for\n                                                a given Elasticsearch version.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListElasticsearchVersions": {
+      "name": "ListElasticsearchVersions",
+      "description": "Grants permission to list all supported Elasticsearch versions on Amazon ES.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTags": {
+      "name": "ListTags",
+      "description": "Grants permission to display all of the tags for an Amazon ES domain.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PurchaseReservedElasticsearchInstanceOffering": {
+      "name": "PurchaseReservedElasticsearchInstanceOffering",
+      "description": "Grants permission to purchase ES reserved instances",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RejectInboundCrossClusterSearchConnection": {
+      "name": "RejectInboundCrossClusterSearchConnection",
+      "description": "Allows the destination domain owner to reject an inbound cross-cluster search connection\n                                                request",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemoveTags": {
+      "name": "RemoveTags",
+      "description": "Grants permission to remove tags from Amazon ES domains.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateElasticsearchDomainConfig": {
+      "name": "UpdateElasticsearchDomainConfig",
+      "description": "Grants permission to modify the configuration of an Amazon ES domain, such as the\n                                                instance type or number of instances.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpgradeElasticsearchDomain": {
+      "name": "UpgradeElasticsearchDomain",
+      "description": "Grants permission to initiate upgrade of elastic search domain to given version",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Elasticsearch Service"
+}

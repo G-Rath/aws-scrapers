@@ -1,0 +1,264 @@
+{
+  "servicePrefix": "groundstation",
+  "actions": {
+    "CancelContact": {
+      "name": "CancelContact",
+      "description": "Grants permission to cancel a contact",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Contact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateConfig": {
+      "name": "CreateConfig",
+      "description": "Grants permission to create a configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateDataflowEndpointGroup": {
+      "name": "CreateDataflowEndpointGroup",
+      "description": "Grants permission to create a data flow endpoint group",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateMissionProfile": {
+      "name": "CreateMissionProfile",
+      "description": "Grants permission to create a mission profile",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "DeleteConfig": {
+      "name": "DeleteConfig",
+      "description": "Grants permission to delete a config",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Config*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDataflowEndpointGroup": {
+      "name": "DeleteDataflowEndpointGroup",
+      "description": "Grants permission to delete a data flow endpoint group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "DataflowEndpointGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteMissionProfile": {
+      "name": "DeleteMissionProfile",
+      "description": "Grants permission to delete a mission profile",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "MissionProfile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeContact": {
+      "name": "DescribeContact",
+      "description": "Grants permission to describe a contact",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Contact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetConfig": {
+      "name": "GetConfig",
+      "description": "Grants permission to return a configuration",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Config*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDataflowEndpointGroup": {
+      "name": "GetDataflowEndpointGroup",
+      "description": "Grants permission to return a data flow endpoint group",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "DataflowEndpointGroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMinuteUsage": {
+      "name": "GetMinuteUsage",
+      "description": "Grants permission to return minutes usage",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMissionProfile": {
+      "name": "GetMissionProfile",
+      "description": "Grants permission to retrieve a mission profile",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "MissionProfile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSatellite": {
+      "name": "GetSatellite",
+      "description": "Grants permission to return information about a satellite",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Satellite*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListConfigs": {
+      "name": "ListConfigs",
+      "description": "Grants permisson to return a list of past configurations",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListContacts": {
+      "name": "ListContacts",
+      "description": "Grants permission to return a list of contacts",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDataflowEndpointGroups": {
+      "name": "ListDataflowEndpointGroups",
+      "description": "Grants permission to list data flow endpoint groups",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGroundStations": {
+      "name": "ListGroundStations",
+      "description": "Grants permission to list ground stations",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMissionProfiles": {
+      "name": "ListMissionProfiles",
+      "description": "Grants permission to return a list of mission profiles",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSatellites": {
+      "name": "ListSatellites",
+      "description": "Grants permission to list satellites",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permission to list tags for a resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Config"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "Contact": {
+      "name": "Contact",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DataflowEndpointGroup": {
+      "name": "DataflowEndpointGroup",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "MissionProfile": {
+      "name": "MissionProfile",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ReserveContact": {
+      "name": "ReserveContact",
+      "description": "Grants permission to reserve a contact",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permission to assign a resource tag",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "Config"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344709077": {
+      "name": "$1604344709077",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permission to deassign a resource tag",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "Config"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344709078": {
+      "name": "$1604344709078",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateConfig": {
+      "name": "UpdateConfig",
+      "description": "Grants permission to update a configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Config*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateMissionProfile": {
+      "name": "UpdateMissionProfile",
+      "description": "Grants permission to update a mission profile",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "MissionProfile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Ground Station"
+}

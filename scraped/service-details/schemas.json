@@ -1,0 +1,328 @@
+{
+  "servicePrefix": "schemas",
+  "actions": {
+    "CreateDiscoverer": {
+      "name": "CreateDiscoverer",
+      "description": "Creates an event schema discoverer. Once created, your events will be automatically\n                                                map into corresponding schema documents",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "discoverer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateRegistry": {
+      "name": "CreateRegistry",
+      "description": "Create a new schema registry in your account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "registry*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateSchema": {
+      "name": "CreateSchema",
+      "description": "Create a new schema in your account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "schema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDiscoverer": {
+      "name": "DeleteDiscoverer",
+      "description": "Deletes discoverer in your account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "discoverer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRegistry": {
+      "name": "DeleteRegistry",
+      "description": "Deletes an existing registry in your account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "registry*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteResourcePolicy": {
+      "name": "DeleteResourcePolicy",
+      "description": "Delete the resource-based policy attached to a given registry.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "registry*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSchema": {
+      "name": "DeleteSchema",
+      "description": "Deletes an existing schema in your account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "schema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSchemaVersion": {
+      "name": "DeleteSchemaVersion",
+      "description": "Deletes a specific version of schema in your account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "schema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeCodeBinding": {
+      "name": "DescribeCodeBinding",
+      "description": "Retrieves metadata for generated code for specific schema in your account.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "schema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDiscoverer": {
+      "name": "DescribeDiscoverer",
+      "description": "Retrieves discoverer metadata in your account.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "discoverer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeRegistry": {
+      "name": "DescribeRegistry",
+      "description": "Describes an existing registry metadata in your account.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "registry*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeSchema": {
+      "name": "DescribeSchema",
+      "description": "Retrieves an existing schema in your account.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "schema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetCodeBindingSource": {
+      "name": "GetCodeBindingSource",
+      "description": "Retrieves metadata for generated code for specific schema in your account.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "schema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDiscoveredSchema": {
+      "name": "GetDiscoveredSchema",
+      "description": "Retrieves schema for the provided list of sample events.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetResourcePolicy": {
+      "name": "GetResourcePolicy",
+      "description": "Retrieves the resource-based policy attached to a given registry.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "registry*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDiscoverers": {
+      "name": "ListDiscoverers",
+      "description": "Lists all the discoverers in your account.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "discoverer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRegistries": {
+      "name": "ListRegistries",
+      "description": "List all discoverers in your account.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "registry*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSchemaVersions": {
+      "name": "ListSchemaVersions",
+      "description": "List all versions of a schema.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "schema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSchemas": {
+      "name": "ListSchemas",
+      "description": "List all schemas.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "schema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "This action lists tags for a resource.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "discoverer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "registry*": {
+      "name": "registry*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "schema*": {
+      "name": "schema*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutCodeBinding": {
+      "name": "PutCodeBinding",
+      "description": "Generates code for specific schema in your account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "schema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutResourcePolicy": {
+      "name": "PutResourcePolicy",
+      "description": "Attach resource-based policy to the specific registry.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "registry*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchSchemas": {
+      "name": "SearchSchemas",
+      "description": "Searches schemas based on specified keywords in your account.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "schema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartDiscoverer": {
+      "name": "StartDiscoverer",
+      "description": "Starts the specified discoverer. Once started the discoverer will automatically register\n                                                schemas for published events to configured source in your account",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "discoverer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopDiscoverer": {
+      "name": "StopDiscoverer",
+      "description": "Starts the specified discoverer. Once started the discoverer will automatically register\n                                                schemas for published events to configured source in your account",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "discoverer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "This action tags an resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "discoverer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344688913": {
+      "name": "$1604344688913",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "This action removes a tag from on a resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "discoverer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344688914": {
+      "name": "$1604344688914",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateDiscoverer": {
+      "name": "UpdateDiscoverer",
+      "description": "Updates an existing discoverer in your account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "discoverer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRegistry": {
+      "name": "UpdateRegistry",
+      "description": "Updates an existing registry metadata in your account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "registry*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSchema": {
+      "name": "UpdateSchema",
+      "description": "Updates an existing schema in your account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "schema*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon EventBridge Schemas"
+}

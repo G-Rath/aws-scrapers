@@ -1,0 +1,86 @@
+{
+  "servicePrefix": "polly",
+  "actions": {
+    "DeleteLexicon": {
+      "name": "DeleteLexicon",
+      "description": "Deletes the specified pronunciation lexicon stored in an AWS Region",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "lexicon*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeVoices": {
+      "name": "DescribeVoices",
+      "description": "Returns the list of voices that are available for use when requesting speech synthesis.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLexicon": {
+      "name": "GetLexicon",
+      "description": "Returns the content of the specified pronunciation lexicon stored in an AWS Region.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "lexicon*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSpeechSynthesisTask": {
+      "name": "GetSpeechSynthesisTask",
+      "description": "Enables the user to get information about specific speech synthesis task.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListLexicons": {
+      "name": "ListLexicons",
+      "description": "Returns a list of pronunciation lexicons stored in an AWS Region.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSpeechSynthesisTasks": {
+      "name": "ListSpeechSynthesisTasks",
+      "description": "Enables the user to list requested speech synthesis tasks.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutLexicon": {
+      "name": "PutLexicon",
+      "description": "Stores a pronunciation lexicon in an AWS Region.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartSpeechSynthesisTask": {
+      "name": "StartSpeechSynthesisTask",
+      "description": "Enables the user to synthesize long inputs to provided S3 location.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "lexicon"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "s3:PutObject"
+    },
+    "SynthesizeSpeech": {
+      "name": "SynthesizeSpeech",
+      "description": "Synthesizes UTF-8 input, plain text or SSML, to a stream of bytes.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "lexicon"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Polly"
+}

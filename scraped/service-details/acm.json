@@ -1,0 +1,148 @@
+{
+  "servicePrefix": "acm",
+  "actions": {
+    "AddTagsToCertificate": {
+      "name": "AddTagsToCertificate",
+      "description": "Adds one or more tags to a certificate.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "certificate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344711193": {
+      "name": "$1604344711193",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteCertificate": {
+      "name": "DeleteCertificate",
+      "description": "Deletes a certificate and its associated private key.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "certificate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeCertificate": {
+      "name": "DescribeCertificate",
+      "description": "Returns a list of the fields contained in the specified certificate.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "certificate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ExportCertificate": {
+      "name": "ExportCertificate",
+      "description": "Exports a private certificate issued by a private certificate authority (CA) for use\n                                                anywhere.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "certificate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetCertificate": {
+      "name": "GetCertificate",
+      "description": "Retrieves a certificate and certificate chain for the certificate specified by an\n                                                ARN.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "certificate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ImportCertificate": {
+      "name": "ImportCertificate",
+      "description": "Imports a 3rd party SSL/TLS certificate into AWS Certificate Manager (ACM).",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "certificate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344711195": {
+      "name": "$1604344711195",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ListCertificates": {
+      "name": "ListCertificates",
+      "description": "Retrieves a list of the certificate ARNs and the domain name for each ARN.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForCertificate": {
+      "name": "ListTagsForCertificate",
+      "description": "Lists the tags that have been applied to the certificate.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemoveTagsFromCertificate": {
+      "name": "RemoveTagsFromCertificate",
+      "description": "Remove one or more tags from a certificate. A tag consists of a key-value pair",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "certificate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344711200": {
+      "name": "$1604344711200",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "RenewCertificate": {
+      "name": "RenewCertificate",
+      "description": "Renews an eligable private certificate.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "certificate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RequestCertificate": {
+      "name": "RequestCertificate",
+      "description": "Requests a public or private certificate.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "ResendValidationEmail": {
+      "name": "ResendValidationEmail",
+      "description": "Resends an email to request domain ownership validation.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "certificate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateCertificateOptions": {
+      "name": "UpdateCertificateOptions",
+      "description": "Updates a certificate. Use to specify whether to opt in to or out of certificate transparency\n                                                logging.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "certificate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Certificate Manager"
+}

@@ -1,0 +1,322 @@
+{
+  "servicePrefix": "cloudwatch",
+  "actions": {
+    "DeleteAlarms": {
+      "name": "DeleteAlarms",
+      "description": "Grants permission to delete a collection of alarms",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "alarm*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAnomalyDetector": {
+      "name": "DeleteAnomalyDetector",
+      "description": "Grants permission to delete the specified anomaly detection model from your account.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDashboards": {
+      "name": "DeleteDashboards",
+      "description": "Grants permission to delete all CloudWatch dashboards that you specify",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dashboard*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteInsightRules": {
+      "name": "DeleteInsightRules",
+      "description": "Grants permission to delete a collection of insight rules",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "insight-rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAlarmHistory": {
+      "name": "DescribeAlarmHistory",
+      "description": "Grants permission to retrieve the history for the specified alarm",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "alarm*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAlarms": {
+      "name": "DescribeAlarms",
+      "description": "Grants permission to describe all alarms, currently owned by the user's account",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "alarm*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAlarmsForMetric": {
+      "name": "DescribeAlarmsForMetric",
+      "description": "Grants permission to describe all alarms configured on the specified metric, currently\n                                                owned by the user's account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAnomalyDetectors": {
+      "name": "DescribeAnomalyDetectors",
+      "description": "Grants permission to lists the anomaly detection models that you have created in your\n                                                account.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeInsightRules": {
+      "name": "DescribeInsightRules",
+      "description": "Grants permission to describe all insight rules, currently owned by the user's account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisableAlarmActions": {
+      "name": "DisableAlarmActions",
+      "description": "Grants permission to disable actions for a collection of alarms",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "alarm*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisableInsightRules": {
+      "name": "DisableInsightRules",
+      "description": "Grants permission to disable a collection of insight rules",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "insight-rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "EnableAlarmActions": {
+      "name": "EnableAlarmActions",
+      "description": "Grants permission to enable actions for a collection of alarms",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "alarm*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "EnableInsightRules": {
+      "name": "EnableInsightRules",
+      "description": "Grants permission to enable a collection of insight rules",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "insight-rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDashboard": {
+      "name": "GetDashboard",
+      "description": "Grants permission to display the details of the CloudWatch dashboard you specify",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "dashboard*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetInsightRuleReport": {
+      "name": "GetInsightRuleReport",
+      "description": "Grants permission to return the top-N report of unique contributors over a time range\n                                                for a given insight rule",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "insight-rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMetricData": {
+      "name": "GetMetricData",
+      "description": "Grants permission to retrieve batch amounts of CloudWatch metric data and perform\n                                                metric math on retrieved data",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMetricStatistics": {
+      "name": "GetMetricStatistics",
+      "description": "Grants permission to retrieve statistics for the specified metric",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMetricWidgetImage": {
+      "name": "GetMetricWidgetImage",
+      "description": "Grants permission to retrieve snapshots of metric widgets",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDashboards": {
+      "name": "ListDashboards",
+      "description": "Grants permission to return a list of all CloudWatch dashboards in your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMetrics": {
+      "name": "ListMetrics",
+      "description": "Grants permission to retrieve a list of valid metrics stored for the AWS account owner",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permission to list tags for an Amazon CloudWatch resource",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "alarm"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "insight-rule": {
+      "name": "insight-rule",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "SCENARIO: \n                                                   CloudWatch-Alarm": {
+      "name": "SCENARIO: \n                                                   CloudWatch-Alarm",
+      "description": "",
+      "accessLevel": "alarm*",
+      "resourceTypes": [],
+      "conditionKeys": ""
+    },
+    "SCENARIO: \n                                                   CloudWatch-InsightRule": {
+      "name": "SCENARIO: \n                                                   CloudWatch-InsightRule",
+      "description": "",
+      "accessLevel": "insight-rule*",
+      "resourceTypes": [],
+      "conditionKeys": ""
+    },
+    "PutAnomalyDetector": {
+      "name": "PutAnomalyDetector",
+      "description": "Grants permission to create or update an anomaly detection model for a CloudWatch\n                                                metric.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutCompositeAlarm": {
+      "name": "PutCompositeAlarm",
+      "description": "Grants permission to create or update a composite alarm",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "alarm*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344732543": {
+      "name": "$1604344732543",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutDashboard": {
+      "name": "PutDashboard",
+      "description": "Grants permission to create a CloudWatch dashboard, or update an existing dashboard\n                                                if it already exists",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dashboard*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutInsightRule": {
+      "name": "PutInsightRule",
+      "description": "Grants permission to create a new insight rule or replace an existing insight rule",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "insight-rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutMetricAlarm": {
+      "name": "PutMetricAlarm",
+      "description": "Grants permission to create or update an alarm and associates it with the specified\n                                                Amazon CloudWatch metric",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "alarm*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344732544": {
+      "name": "$1604344732544",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutMetricData": {
+      "name": "PutMetricData",
+      "description": "Grants permission to publish metric data points to Amazon CloudWatch",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "cloudwatch:namespace",
+      "dependentActions": ""
+    },
+    "SetAlarmState": {
+      "name": "SetAlarmState",
+      "description": "Grants permission to temporarily set the state of an alarm for testing purposes",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "alarm*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permission to add tags to an Amazon CloudWatch resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "alarm"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permission to remove a tag from an Amazon CloudWatch resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "alarm"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344732546": {
+      "name": "$1604344732546",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    }
+  },
+  "name": "Amazon CloudWatch"
+}

@@ -1,0 +1,722 @@
+{
+  "servicePrefix": "opsworks",
+  "actions": {
+    "AssignInstance": {
+      "name": "AssignInstance",
+      "description": "Assign a registered instance to a layer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssignVolume": {
+      "name": "AssignVolume",
+      "description": "Assigns one of the stack's registered Amazon EBS volumes to a specified instance",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociateElasticIp": {
+      "name": "AssociateElasticIp",
+      "description": "Associates one of the stack's registered Elastic IP addresses with a specified instance",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AttachElasticLoadBalancer": {
+      "name": "AttachElasticLoadBalancer",
+      "description": "Attaches an Elastic Load Balancing load balancer to a specified layer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CloneStack": {
+      "name": "CloneStack",
+      "description": "Creates a clone of a specified stack",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateApp": {
+      "name": "CreateApp",
+      "description": "Creates an app for a specified stack",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDeployment": {
+      "name": "CreateDeployment",
+      "description": "Runs deployment or stack commands",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateInstance": {
+      "name": "CreateInstance",
+      "description": "Creates an instance in a specified stack",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateLayer": {
+      "name": "CreateLayer",
+      "description": "Creates a layer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateStack": {
+      "name": "CreateStack",
+      "description": "Creates a new stack",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateUserProfile": {
+      "name": "CreateUserProfile",
+      "description": "Creates a new user profile",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteApp": {
+      "name": "DeleteApp",
+      "description": "Deletes a specified app",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteInstance": {
+      "name": "DeleteInstance",
+      "description": "Deletes a specified instance, which terminates the associated Amazon EC2 instance",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteLayer": {
+      "name": "DeleteLayer",
+      "description": "Deletes a specified layer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteStack": {
+      "name": "DeleteStack",
+      "description": "Deletes a specified stack",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteUserProfile": {
+      "name": "DeleteUserProfile",
+      "description": "Deletes a user profile",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeregisterEcsCluster": {
+      "name": "DeregisterEcsCluster",
+      "description": "Deletes a user profile",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeregisterElasticIp": {
+      "name": "DeregisterElasticIp",
+      "description": "Deregisters a specified Elastic IP address",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeregisterInstance": {
+      "name": "DeregisterInstance",
+      "description": "Deregister a registered Amazon EC2 or on-premises instance",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeregisterRdsDbInstance": {
+      "name": "DeregisterRdsDbInstance",
+      "description": "Deregisters an Amazon RDS instance",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeregisterVolume": {
+      "name": "DeregisterVolume",
+      "description": "Deregisters an Amazon EBS volume",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAgentVersions": {
+      "name": "DescribeAgentVersions",
+      "description": "Describes the available AWS OpsWorks agent versions",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeApps": {
+      "name": "DescribeApps",
+      "description": "Requests a description of a specified set of apps",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeCommands": {
+      "name": "DescribeCommands",
+      "description": "Describes the results of specified commands",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDeployments": {
+      "name": "DescribeDeployments",
+      "description": "Requests a description of a specified set of deployments",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeEcsClusters": {
+      "name": "DescribeEcsClusters",
+      "description": "Describes Amazon ECS clusters that are registered with a stack",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeElasticIps": {
+      "name": "DescribeElasticIps",
+      "description": "Describes Elastic IP addresses",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeElasticLoadBalancers": {
+      "name": "DescribeElasticLoadBalancers",
+      "description": "Describes a stack's Elastic Load Balancing instances",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeInstances": {
+      "name": "DescribeInstances",
+      "description": "Requests a description of a set of instances",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeLayers": {
+      "name": "DescribeLayers",
+      "description": "Requests a description of one or more layers in a specified stack",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeLoadBasedAutoScaling": {
+      "name": "DescribeLoadBasedAutoScaling",
+      "description": "Describes load-based auto scaling configurations for specified layers",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeMyUserProfile": {
+      "name": "DescribeMyUserProfile",
+      "description": "Describes a user's SSH information",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribePermissions": {
+      "name": "DescribePermissions",
+      "description": "Describes the permissions for a specified stack",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeRaidArrays": {
+      "name": "DescribeRaidArrays",
+      "description": "Describe an instance's RAID arrays",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeRdsDbInstances": {
+      "name": "DescribeRdsDbInstances",
+      "description": "Describes Amazon RDS instances",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeServiceErrors": {
+      "name": "DescribeServiceErrors",
+      "description": "Describes AWS OpsWorks service errors",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeStackProvisioningParameters": {
+      "name": "DescribeStackProvisioningParameters",
+      "description": "Requests a description of a stack's provisioning parameters",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeStackSummary": {
+      "name": "DescribeStackSummary",
+      "description": "Describes the number of layers and apps in a specified stack, and the number of instances\n                                                in each state, such as running_setup or online",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeStacks": {
+      "name": "DescribeStacks",
+      "description": "Requests a description of one or more stacks",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTimeBasedAutoScaling": {
+      "name": "DescribeTimeBasedAutoScaling",
+      "description": "Describes time-based auto scaling configurations for specified instances",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeUserProfiles": {
+      "name": "DescribeUserProfiles",
+      "description": "Describe specified users",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeVolumes": {
+      "name": "DescribeVolumes",
+      "description": "Describes an instance's Amazon EBS volumes",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DetachElasticLoadBalancer": {
+      "name": "DetachElasticLoadBalancer",
+      "description": "Detaches a specified Elastic Load Balancing instance from its layer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateElasticIp": {
+      "name": "DisassociateElasticIp",
+      "description": "Disassociates an Elastic IP address from its instance",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetHostnameSuggestion": {
+      "name": "GetHostnameSuggestion",
+      "description": "Gets a generated host name for the specified layer, based on the current host name\n                                                theme",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GrantAccess": {
+      "name": "GrantAccess",
+      "description": "Grants RDP access to a Windows instance for a specified time period",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTags": {
+      "name": "ListTags",
+      "description": "Returns a list of tags that are applied to the specified stack or layer",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RebootInstance": {
+      "name": "RebootInstance",
+      "description": "Reboots a specified instance",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterEcsCluster": {
+      "name": "RegisterEcsCluster",
+      "description": "Registers a specified Amazon ECS cluster with a stack",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterElasticIp": {
+      "name": "RegisterElasticIp",
+      "description": "Registers an Elastic IP address with a specified stack",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterInstance": {
+      "name": "RegisterInstance",
+      "description": "Registers instances with a specified stack that were created outside of AWS OpsWorks",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterRdsDbInstance": {
+      "name": "RegisterRdsDbInstance",
+      "description": "Registers an Amazon RDS instance with a stack",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterVolume": {
+      "name": "RegisterVolume",
+      "description": "Registers an Amazon EBS volume with a specified stack",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetLoadBasedAutoScaling": {
+      "name": "SetLoadBasedAutoScaling",
+      "description": "Specify the load-based auto scaling configuration for a specified layer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetPermission": {
+      "name": "SetPermission",
+      "description": "Specifies a user's permissions",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetTimeBasedAutoScaling": {
+      "name": "SetTimeBasedAutoScaling",
+      "description": "Specify the time-based auto scaling configuration for a specified instance",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartInstance": {
+      "name": "StartInstance",
+      "description": "Starts a specified instance",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartStack": {
+      "name": "StartStack",
+      "description": "Starts a stack's instances",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopInstance": {
+      "name": "StopInstance",
+      "description": "Stops a specified instance",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopStack": {
+      "name": "StopStack",
+      "description": "Stops a specified stack",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Apply tags to a specified stack or layer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UnassignInstance": {
+      "name": "UnassignInstance",
+      "description": "Unassigns a registered instance from all of it's layers",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UnassignVolume": {
+      "name": "UnassignVolume",
+      "description": "Unassigns an assigned Amazon EBS volume",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Removes tags from a specified stack or layer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateApp": {
+      "name": "UpdateApp",
+      "description": "Updates a specified app",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateElasticIp": {
+      "name": "UpdateElasticIp",
+      "description": "Updates a registered Elastic IP address's name",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateInstance": {
+      "name": "UpdateInstance",
+      "description": "Updates a specified instance",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateLayer": {
+      "name": "UpdateLayer",
+      "description": "Updates a specified layer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateMyUserProfile": {
+      "name": "UpdateMyUserProfile",
+      "description": "Updates a user's SSH public key",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRdsDbInstance": {
+      "name": "UpdateRdsDbInstance",
+      "description": "Updates an Amazon RDS instance",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateStack": {
+      "name": "UpdateStack",
+      "description": "Updates a specified stack",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateUserProfile": {
+      "name": "UpdateUserProfile",
+      "description": "Updates a specified user profile",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateVolume": {
+      "name": "UpdateVolume",
+      "description": "Updates an Amazon EBS volume's name or mount point",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stack"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS OpsWorks"
+}

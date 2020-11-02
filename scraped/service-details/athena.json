@@ -1,0 +1,322 @@
+{
+  "servicePrefix": "athena",
+  "actions": {
+    "BatchGetNamedQuery": {
+      "name": "BatchGetNamedQuery",
+      "description": "Grants permissions to get information about one or more named queries.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "workgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchGetQueryExecution": {
+      "name": "BatchGetQueryExecution",
+      "description": "Grants permissions to get information about one or more query executions.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "workgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDataCatalog": {
+      "name": "CreateDataCatalog",
+      "description": "Grants permissions to create a datacatalog.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "datacatalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344701394": {
+      "name": "$1604344701394",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateNamedQuery": {
+      "name": "CreateNamedQuery",
+      "description": "Grants permissions to create a named query.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateWorkGroup": {
+      "name": "CreateWorkGroup",
+      "description": "Grants permissions to create a workgroup.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "workgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344701395": {
+      "name": "$1604344701395",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteDataCatalog": {
+      "name": "DeleteDataCatalog",
+      "description": "Grants permissions to delete a datacatalog.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "datacatalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteNamedQuery": {
+      "name": "DeleteNamedQuery",
+      "description": "Grants permissions to delete a named query specified.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteWorkGroup": {
+      "name": "DeleteWorkGroup",
+      "description": "Grants permissions to delete a workgroup.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDataCatalog": {
+      "name": "GetDataCatalog",
+      "description": "Grants permissions to get a datacatalog.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "datacatalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDatabase": {
+      "name": "GetDatabase",
+      "description": "Grants permissions to get a database for a given datacatalog.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "datacatalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetNamedQuery": {
+      "name": "GetNamedQuery",
+      "description": "Grants permissions to get information about the specified named query.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "workgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetQueryExecution": {
+      "name": "GetQueryExecution",
+      "description": "Grants permissions to get information about the specified query execution.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "workgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetQueryResults": {
+      "name": "GetQueryResults",
+      "description": "Grants permissions to get the query results.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "workgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetQueryResultsStream": {
+      "name": "GetQueryResultsStream",
+      "description": "Grants permissions to get the query results stream.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "workgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetTableMetadata": {
+      "name": "GetTableMetadata",
+      "description": "Grants permissions to get a metadata about a table for a given datacatalog.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "datacatalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetWorkGroup": {
+      "name": "GetWorkGroup",
+      "description": "Grants permissions to get a workgroup.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "workgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDataCatalogs": {
+      "name": "ListDataCatalogs",
+      "description": "Grants permissions to return a list of datacatalogs for the specified AWS account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDatabases": {
+      "name": "ListDatabases",
+      "description": "Grants permissions to return a list of databases for a given datacatalog.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "datacatalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListNamedQueries": {
+      "name": "ListNamedQueries",
+      "description": "Grants permissions to return a list of named queries in Amazon Athena for the specified\n                                                AWS account.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "workgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListQueryExecutions": {
+      "name": "ListQueryExecutions",
+      "description": "Grants permissions to return a list of query executions for the specified AWS account.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "workgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTableMetadata": {
+      "name": "ListTableMetadata",
+      "description": "Grants permissions to return a list of table metadata in a database for a given datacatalog.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "datacatalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permissions to return a list of tags for a resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "datacatalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "workgroup*": {
+      "name": "workgroup*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ListWorkGroups": {
+      "name": "ListWorkGroups",
+      "description": "Grants permissions to return a list of workgroups for the specified AWS account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartQueryExecution": {
+      "name": "StartQueryExecution",
+      "description": "Grants permissions to start a query execution using an SQL query provided as a string.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopQueryExecution": {
+      "name": "StopQueryExecution",
+      "description": "Grants permissions to stop the specified query execution.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permissions to add a tag to a resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "datacatalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344701400": {
+      "name": "$1604344701400",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permissions to remove a tag from a resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "datacatalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344701401": {
+      "name": "$1604344701401",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateDataCatalog": {
+      "name": "UpdateDataCatalog",
+      "description": "Grants permissions to update a datacatalog.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "datacatalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateWorkGroup": {
+      "name": "UpdateWorkGroup",
+      "description": "Grants permissions to update a workgroup.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Athena"
+}

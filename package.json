@@ -1,0 +1,42 @@
+{
+  "name": "aws-scrapers",
+  "version": "1.0.0",
+  "description": "Some scrapers for scrapping aws docs",
+  "keywords": [],
+  "homepage": "https://github.com/G-Rath/aws-scrapers#readme",
+  "bugs": {
+    "url": "https://github.com/G-Rath/aws-scrapers/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/G-Rath/aws-scrapers.git"
+  },
+  "license": "ISC",
+  "author": "Gareth Jones",
+  "scripts": {
+    "lint": "eslint '*/**/*.{js,ts,tsx}'",
+    "typecheck": "tsc -p . --noEmit"
+  },
+  "prettier": "prettier-config-ackama",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "cheerio": "^1.0.0-rc.3"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.22",
+    "@types/eslint": "^7.2.4",
+    "@types/node": "^12.19.2",
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
+    "eslint": "^7.12.1",
+    "eslint-config-ackama": "^2.0.1",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.2",
+    "prettier-config-ackama": "^0.1.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5"
+  }
+}

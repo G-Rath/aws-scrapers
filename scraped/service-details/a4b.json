@@ -1,0 +1,776 @@
+{
+  "servicePrefix": "a4b",
+  "actions": {
+    "ApproveSkill": {
+      "name": "ApproveSkill",
+      "description": "Associates a skill with the organization under the customer's AWS account. If a skill\n                                                is private, the user implicitly accepts access to this skill during enablement.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociateContactWithAddressBook": {
+      "name": "AssociateContactWithAddressBook",
+      "description": "Associates a contact with a given address book.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "addressbook*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "contact*": {
+      "name": "contact*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "AssociateDeviceWithRoom": {
+      "name": "AssociateDeviceWithRoom",
+      "description": "Associates device with given room.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "room*": {
+      "name": "room*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "AssociateSkillGroupWithRoom": {
+      "name": "AssociateSkillGroupWithRoom",
+      "description": "Associates the skill group with given room. SkillGroup ARN and Room ARN must be specified.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "room*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "skillgroup*": {
+      "name": "skillgroup*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "AssociateSkillWithSkillGroup": {
+      "name": "AssociateSkillWithSkillGroup",
+      "description": "Associates a skill with a skill group.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "skillgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociateSkillWithUsers": {
+      "name": "AssociateSkillWithUsers",
+      "description": "Makes a private skill available for enrolled users to enable on their devices.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CompleteRegistration": {
+      "name": "CompleteRegistration",
+      "description": "Completes the operation of registering an Alexa device.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAddressBook": {
+      "name": "CreateAddressBook",
+      "description": "Creates an address book with the specified details.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateBusinessReportSchedule": {
+      "name": "CreateBusinessReportSchedule",
+      "description": "Creates a recurring schedule for usage reports to deliver to the specified S3 location\n                                                with a specified daily or weekly interval.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateConferenceProvider": {
+      "name": "CreateConferenceProvider",
+      "description": "Adds a new conference provider under the user's AWS account.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateContact": {
+      "name": "CreateContact",
+      "description": "Creates a contact with the specified details.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateProfile": {
+      "name": "CreateProfile",
+      "description": "Creates a new profile.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateRoom": {
+      "name": "CreateRoom",
+      "description": "Create room with the specified details.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateSkillGroup": {
+      "name": "CreateSkillGroup",
+      "description": "Creates a skill group with given name and description.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateUser": {
+      "name": "CreateUser",
+      "description": "Creates a user.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAddressBook": {
+      "name": "DeleteAddressBook",
+      "description": "Deletes an address book by the address book ARN.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "addressbook*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteBusinessReportSchedule": {
+      "name": "DeleteBusinessReportSchedule",
+      "description": "Deletes the recurring report delivery schedule with the specified schedule ARN.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "schedule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteConferenceProvider": {
+      "name": "DeleteConferenceProvider",
+      "description": "Deletes a conference provider.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "conferenceprovider*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteContact": {
+      "name": "DeleteContact",
+      "description": "Deletes a contact by the contact ARN.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDevice": {
+      "name": "DeleteDevice",
+      "description": "Removes a device from Alexa For Business.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteProfile": {
+      "name": "DeleteProfile",
+      "description": "Delete profile by profile ARN.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRoom": {
+      "name": "DeleteRoom",
+      "description": "Delete room.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "room*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRoomSkillParameter": {
+      "name": "DeleteRoomSkillParameter",
+      "description": "Delete a parameter from a skill and room.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "room*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSkillAuthorization": {
+      "name": "DeleteSkillAuthorization",
+      "description": "Unlinks a third-party account from a skill.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "room*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSkillGroup": {
+      "name": "DeleteSkillGroup",
+      "description": "Deletes skill group with skill group ARN. Skillgroup ARN must be specified.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "skillgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteUser": {
+      "name": "DeleteUser",
+      "description": "Delete a user.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateContactFromAddressBook": {
+      "name": "DisassociateContactFromAddressBook",
+      "description": "Disassociates a contact from a given address book.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "addressbook*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateDeviceFromRoom": {
+      "name": "DisassociateDeviceFromRoom",
+      "description": "Disassociates device from its current room.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateSkillFromSkillGroup": {
+      "name": "DisassociateSkillFromSkillGroup",
+      "description": "Disassociates a skill from a skill group.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "skillgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateSkillFromUsers": {
+      "name": "DisassociateSkillFromUsers",
+      "description": "Makes a private skill unavailable for enrolled users and prevents them from enabling\n                                                it on their devices.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateSkillGroupFromRoom": {
+      "name": "DisassociateSkillGroupFromRoom",
+      "description": "Disassociates the skill group from given room. SkillGroup ARN and Room ARN must be\n                                                specified.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "room*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ForgetSmartHomeAppliances": {
+      "name": "ForgetSmartHomeAppliances",
+      "description": "Forgets smart home appliances associated to a room.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "room*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAddressBook": {
+      "name": "GetAddressBook",
+      "description": "Gets the address book details by the address book ARN.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "addressbook*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetConferencePreference": {
+      "name": "GetConferencePreference",
+      "description": "Retrieves the existing conference preferences.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetConferenceProvider": {
+      "name": "GetConferenceProvider",
+      "description": "Gets details about a specific conference provider.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "conferenceprovider*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetContact": {
+      "name": "GetContact",
+      "description": "Gets the contact details by the contact ARN.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "contact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDevice": {
+      "name": "GetDevice",
+      "description": "Get device details.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetNetworkProfile": {
+      "name": "GetNetworkProfile",
+      "description": "Gets the network profile details by the network profile ARN.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "networkprofile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetProfile": {
+      "name": "GetProfile",
+      "description": "Gets profile when provided with Profile ARN.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRoom": {
+      "name": "GetRoom",
+      "description": "Get room details.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "room*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRoomSkillParameter": {
+      "name": "GetRoomSkillParameter",
+      "description": "Get an existing parameter that has been set for a skill and room.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "room*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSkillGroup": {
+      "name": "GetSkillGroup",
+      "description": "Gets skill group details with skill group ARN. Skillgroup ARN must be specified.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "skillgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListBusinessReportSchedules": {
+      "name": "ListBusinessReportSchedules",
+      "description": "Lists the details of the schedules that a user configured.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListConferenceProviders": {
+      "name": "ListConferenceProviders",
+      "description": "Lists conference providers under a specific AWS account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDeviceEvents": {
+      "name": "ListDeviceEvents",
+      "description": "Lists the device event history, including device connection status, for up to 30 days.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSkills": {
+      "name": "ListSkills",
+      "description": "Lists skills.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSkillsStoreCategories": {
+      "name": "ListSkillsStoreCategories",
+      "description": "Lists all categories in the Alexa skill store.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSkillsStoreSkillsByCategory": {
+      "name": "ListSkillsStoreSkillsByCategory",
+      "description": "Lists all skills in the Alexa skill store by category.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSmartHomeAppliances": {
+      "name": "ListSmartHomeAppliances",
+      "description": "Lists all of the smart home appliances associated with a room.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "room*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTags": {
+      "name": "ListTags",
+      "description": "Lists all tags on a resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "device"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "room": {
+      "name": "room",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "user": {
+      "name": "user",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PutConferencePreference": {
+      "name": "PutConferencePreference",
+      "description": "Sets the conference preferences on a specific conference provider at the account level.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutDeviceSetupEvents": {
+      "name": "PutDeviceSetupEvents",
+      "description": "Publishes Alexa device setup events.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutRoomSkillParameter": {
+      "name": "PutRoomSkillParameter",
+      "description": "Put a room specific parameter for a skill.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "room*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutSkillAuthorization": {
+      "name": "PutSkillAuthorization",
+      "description": "Links a user's account to a third-party skill provider. If this API operation is called\n                                                by an assumed IAM role, the skill being linked must be a private skill. Also, the\n                                                skill must be owned by the AWS account that assumed the IAM role.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "room*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterAVSDevice": {
+      "name": "RegisterAVSDevice",
+      "description": "Registers an Alexa-enabled device built by an Original Equipment Manufacturer (OEM)\n                                                using Alexa Voice Service (AVS).",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterDevice": {
+      "name": "RegisterDevice",
+      "description": "Registers an Alexa device.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RejectSkill": {
+      "name": "RejectSkill",
+      "description": "Disassociates a skill from the organization under a user's AWS account. If the skill\n                                                is a private skill, it moves to an AcceptStatus of PENDING.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ResolveRoom": {
+      "name": "ResolveRoom",
+      "description": "Returns resolved room information.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RevokeInvitation": {
+      "name": "RevokeInvitation",
+      "description": "Revoke an invitation.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchAddressBooks": {
+      "name": "SearchAddressBooks",
+      "description": "Searches address books and lists the ones that meet a set of filter and sort criteria.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchContacts": {
+      "name": "SearchContacts",
+      "description": "Searches contacts and lists the ones that meet a set of filter and sort criteria.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchDevices": {
+      "name": "SearchDevices",
+      "description": "Search for devices.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchNetworkProfiles": {
+      "name": "SearchNetworkProfiles",
+      "description": "Searches network profiles and lists the ones that meet a set of filter and sort criteria.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchProfiles": {
+      "name": "SearchProfiles",
+      "description": "Search for profiles.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchRooms": {
+      "name": "SearchRooms",
+      "description": "Search for rooms.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchSkillGroups": {
+      "name": "SearchSkillGroups",
+      "description": "Search for skill groups.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchUsers": {
+      "name": "SearchUsers",
+      "description": "Search for users.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendInvitation": {
+      "name": "SendInvitation",
+      "description": "Send an invitation to a user.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartDeviceSync": {
+      "name": "StartDeviceSync",
+      "description": "Restore the device and its account to its known, default settings by clearing all\n                                                information and settings set by its previous users.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartSmartHomeApplianceDiscovery": {
+      "name": "StartSmartHomeApplianceDiscovery",
+      "description": "Initiates the discovery of any smart home appliances associated with the room.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "room*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Adds metadata tags to a resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "device"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Removes metadata tags from a resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "device"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAddressBook": {
+      "name": "UpdateAddressBook",
+      "description": "Updates address book details by the address book ARN.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "addressbook*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateBusinessReportSchedule": {
+      "name": "UpdateBusinessReportSchedule",
+      "description": "Updates the configuration of the report delivery schedule with the specified schedule\n                                                ARN.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "schedule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateConferenceProvider": {
+      "name": "UpdateConferenceProvider",
+      "description": "Updates an existing conference provider's settings.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "conferenceprovider*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateContact": {
+      "name": "UpdateContact",
+      "description": "Updates the contact details by the contact ARN.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDevice": {
+      "name": "UpdateDevice",
+      "description": "Updates device name.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateProfile": {
+      "name": "UpdateProfile",
+      "description": "Updates an existing profile.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRoom": {
+      "name": "UpdateRoom",
+      "description": "Update room details.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "room*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSkillGroup": {
+      "name": "UpdateSkillGroup",
+      "description": "Updates skill group details with skill group ARN. Skillgroup ARN must be specified.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "skillgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Alexa for Business"
+}

@@ -1,0 +1,52 @@
+{
+  "servicePrefix": "artifact",
+  "actions": {
+    "AcceptAgreement": {
+      "name": "AcceptAgreement",
+      "description": "Grants permission to accept an AWS agreement that has not yet been accepted by the\n                                                customer account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "agreement*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DownloadAgreement": {
+      "name": "DownloadAgreement",
+      "description": "Grants permission to download an AWS agreement that has not yet been accepted or a\n                                                customer agreement that has been accepted by the customer account.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "agreement"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "customer-agreement": {
+      "name": "customer-agreement",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "Get": {
+      "name": "Get",
+      "description": "Grants permission to download an AWS compliance report package.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "report-package*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TerminateAgreement": {
+      "name": "TerminateAgreement",
+      "description": "Grants permission to terminate a customer agreement that was previously accepted by\n                                                the customer account.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "customer-agreement*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Artifact"
+}

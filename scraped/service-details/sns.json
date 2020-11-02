@@ -1,0 +1,308 @@
+{
+  "servicePrefix": "sns",
+  "actions": {
+    "AddPermission": {
+      "name": "AddPermission",
+      "description": "Adds a statement to a topic's access control policy, granting access for the specified\n                                                AWS accounts to the specified actions.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "topic*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CheckIfPhoneNumberIsOptedOut": {
+      "name": "CheckIfPhoneNumberIsOptedOut",
+      "description": "Accepts a phone number and indicates whether the phone holder has opted out of receiving\n                                                SMS messages from your account.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ConfirmSubscription": {
+      "name": "ConfirmSubscription",
+      "description": "Verifies an endpoint owner's intent to receive messages by validating the token sent\n                                                to the endpoint by an earlier Subscribe action.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "topic*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreatePlatformApplication": {
+      "name": "CreatePlatformApplication",
+      "description": "Creates a platform application object for one of the supported push notification services,\n                                                such as APNS and GCM, to which devices and mobile apps may register.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreatePlatformEndpoint": {
+      "name": "CreatePlatformEndpoint",
+      "description": "Creates an endpoint for a device and mobile app on one of the supported push notification\n                                                services, such as GCM and APNS.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateTopic": {
+      "name": "CreateTopic",
+      "description": "Creates a topic to which notifications can be published.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "topic*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteEndpoint": {
+      "name": "DeleteEndpoint",
+      "description": "Deletes the endpoint for a device and mobile app from Amazon SNS.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeletePlatformApplication": {
+      "name": "DeletePlatformApplication",
+      "description": "Deletes a platform application object for one of the supported push notification services,\n                                                such as APNS and GCM.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteTopic": {
+      "name": "DeleteTopic",
+      "description": "Deletes a topic and all its subscriptions.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "topic*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEndpointAttributes": {
+      "name": "GetEndpointAttributes",
+      "description": "Retrieves the endpoint attributes for a device on one of the supported push notification\n                                                services, such as GCM and APNS.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPlatformApplicationAttributes": {
+      "name": "GetPlatformApplicationAttributes",
+      "description": "Retrieves the attributes of the platform application object for the supported push\n                                                notification services, such as APNS and GCM.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSMSAttributes": {
+      "name": "GetSMSAttributes",
+      "description": "Returns the settings for sending SMS messages from your account.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSubscriptionAttributes": {
+      "name": "GetSubscriptionAttributes",
+      "description": "Returns all of the properties of a subscription.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetTopicAttributes": {
+      "name": "GetTopicAttributes",
+      "description": "Returns all of the properties of a topic. Topic properties returned might differ based\n                                                on the authorization of the user.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "topic*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEndpointsByPlatformApplication": {
+      "name": "ListEndpointsByPlatformApplication",
+      "description": "Lists the endpoints and endpoint attributes for devices in a supported push notification\n                                                service, such as GCM and APNS.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPhoneNumbersOptedOut": {
+      "name": "ListPhoneNumbersOptedOut",
+      "description": "Returns a list of phone numbers that are opted out, meaning you cannot send SMS messages\n                                                to them.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPlatformApplications": {
+      "name": "ListPlatformApplications",
+      "description": "Lists the platform application objects for the supported push notification services,\n                                                such as APNS and GCM.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSubscriptions": {
+      "name": "ListSubscriptions",
+      "description": "Returns a list of the requester's subscriptions.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSubscriptionsByTopic": {
+      "name": "ListSubscriptionsByTopic",
+      "description": "Returns a list of the subscriptions to a specific topic.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "topic*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "List all tags added to the specified Amazon SNS topic.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "topic"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTopics": {
+      "name": "ListTopics",
+      "description": "Returns a list of the requester's topics. Each call returns a limited list of topics,\n                                                up to 100.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "OptInPhoneNumber": {
+      "name": "OptInPhoneNumber",
+      "description": "Opts in a phone number that is currently opted out, which enables you to resume sending\n                                                SMS messages to the number.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "Publish": {
+      "name": "Publish",
+      "description": "Sends a message to all of a topic's subscribed endpoints.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "topic*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemovePermission": {
+      "name": "RemovePermission",
+      "description": "Removes a statement from a topic's access control policy.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "topic*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetEndpointAttributes": {
+      "name": "SetEndpointAttributes",
+      "description": "Sets the attributes for an endpoint for a device on one of the supported push notification\n                                                services, such as GCM and APNS.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetPlatformApplicationAttributes": {
+      "name": "SetPlatformApplicationAttributes",
+      "description": "Sets the attributes of the platform application object for the supported push notification\n                                                services, such as APNS and GCM.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetSMSAttributes": {
+      "name": "SetSMSAttributes",
+      "description": "Set the default settings for sending SMS messages and receiving daily SMS usage reports.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetSubscriptionAttributes": {
+      "name": "SetSubscriptionAttributes",
+      "description": "Allows a subscription owner to set an attribute of the topic to a new value.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetTopicAttributes": {
+      "name": "SetTopicAttributes",
+      "description": "Allows a topic owner to set an attribute of the topic to a new value.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "topic*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "Subscribe": {
+      "name": "Subscribe",
+      "description": "Prepares to subscribe an endpoint by sending the endpoint a confirmation message.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "topic*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344711476": {
+      "name": "$1604344711476",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Add tags to the specified Amazon SNS topic.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "topic"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "Unsubscribe": {
+      "name": "Unsubscribe",
+      "description": "Deletes a subscription. If the subscription requires authentication for deletion,\n                                                only the owner of the subscription or the topic's owner can unsubscribe, and an AWS\n                                                signature is required.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Remove tags from the specified Amazon SNS topic.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "topic"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344711477": {
+      "name": "$1604344711477",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    }
+  },
+  "name": "Amazon SNS"
+}

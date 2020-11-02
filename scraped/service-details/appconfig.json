@@ -1,0 +1,464 @@
+{
+  "servicePrefix": "appconfig",
+  "actions": {
+    "CreateApplication": {
+      "name": "CreateApplication",
+      "description": "Grants permission to create an application",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344688468": {
+      "name": "$1604344688468",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateConfigurationProfile": {
+      "name": "CreateConfigurationProfile",
+      "description": "Grants permission to create a configuration profile",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "configurationprofile*": {
+      "name": "configurationprofile*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344688471": {
+      "name": "$1604344688471",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateDeploymentStrategy": {
+      "name": "CreateDeploymentStrategy",
+      "description": "Grants permission to create a deployment strategy",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "deploymentstrategy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateEnvironment": {
+      "name": "CreateEnvironment",
+      "description": "Grants permission to create an environment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "environment*": {
+      "name": "environment*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344688472": {
+      "name": "$1604344688472",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CreateHostedConfigurationVersion": {
+      "name": "CreateHostedConfigurationVersion",
+      "description": "Grants permission to create a hosted configuration version",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "hostedconfigurationversion*": {
+      "name": "hostedconfigurationversion*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteApplication": {
+      "name": "DeleteApplication",
+      "description": "Grants permission to delete an application",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteConfigurationProfile": {
+      "name": "DeleteConfigurationProfile",
+      "description": "Grants permission to delete a configuration profile",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDeploymentStrategy": {
+      "name": "DeleteDeploymentStrategy",
+      "description": "Grants permission to delete a deployment strategy",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "deploymentstrategy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteEnvironment": {
+      "name": "DeleteEnvironment",
+      "description": "Grants permission to delete an environment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteHostedConfigurationVersion": {
+      "name": "DeleteHostedConfigurationVersion",
+      "description": "Grants permission to delete a hosted configuration version",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetApplication": {
+      "name": "GetApplication",
+      "description": "Grants permission to view details about an application",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344688476": {
+      "name": "$1604344688476",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetConfiguration": {
+      "name": "GetConfiguration",
+      "description": "Grants permission to view details about a configuration",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344688477": {
+      "name": "$1604344688477",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetConfigurationProfile": {
+      "name": "GetConfigurationProfile",
+      "description": "Grants permission to view details about a configuration profile",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344688478": {
+      "name": "$1604344688478",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetDeployment": {
+      "name": "GetDeployment",
+      "description": "Grants permission to view details about a deployment",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "deployment*": {
+      "name": "deployment*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344688480": {
+      "name": "$1604344688480",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetDeploymentStrategy": {
+      "name": "GetDeploymentStrategy",
+      "description": "Grants permission to view details about a deployment strategy",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "deploymentstrategy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEnvironment": {
+      "name": "GetEnvironment",
+      "description": "Grants permission to view details about an environment",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344688481": {
+      "name": "$1604344688481",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "GetHostedConfigurationVersion": {
+      "name": "GetHostedConfigurationVersion",
+      "description": "Grants permission to view details about a hosted configuration version",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListApplications": {
+      "name": "ListApplications",
+      "description": "Grants permission to list the applications in your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListConfigurationProfiles": {
+      "name": "ListConfigurationProfiles",
+      "description": "Grants permission to list the configuration profiles for an application",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDeploymentStrategies": {
+      "name": "ListDeploymentStrategies",
+      "description": "Grants permission to list the deployment strategies for your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDeployments": {
+      "name": "ListDeployments",
+      "description": "Grants permission to list the deployments for an environment",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEnvironments": {
+      "name": "ListEnvironments",
+      "description": "Grants permission to list the environments for an application",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListHostedConfigurationVersions": {
+      "name": "ListHostedConfigurationVersions",
+      "description": "Grants permission to list the hosted configuration versions for a configuration profile",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permission to view a list of resource tags for a specified resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "application"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "configurationprofile": {
+      "name": "configurationprofile",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "deployment": {
+      "name": "deployment",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "deploymentstrategy": {
+      "name": "deploymentstrategy",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "environment": {
+      "name": "environment",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344688486": {
+      "name": "$1604344688486",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "StartDeployment": {
+      "name": "StartDeployment",
+      "description": "Grants permission to initiate a deployment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "deploymentstrategy*": {
+      "name": "deploymentstrategy*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "StopDeployment": {
+      "name": "StopDeployment",
+      "description": "Grants permission to stop a deployment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permission to tag an appconfig resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "application"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344688495": {
+      "name": "$1604344688495",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permission to untag an appconfig resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "application"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344688497": {
+      "name": "$1604344688497",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateApplication": {
+      "name": "UpdateApplication",
+      "description": "Grants permission to modify an application",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344688498": {
+      "name": "$1604344688498",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateConfigurationProfile": {
+      "name": "UpdateConfigurationProfile",
+      "description": "Grants permission to modify a configuration profile",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDeploymentStrategy": {
+      "name": "UpdateDeploymentStrategy",
+      "description": "Grants permission to modify a deployment strategy",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "deploymentstrategy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateEnvironment": {
+      "name": "UpdateEnvironment",
+      "description": "Grants permission to modify an environment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344688499": {
+      "name": "$1604344688499",
+      "description": "aws:ResourceTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ValidateConfiguration": {
+      "name": "ValidateConfiguration",
+      "description": "Grants permission to validate a configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS AppConfig"
+}

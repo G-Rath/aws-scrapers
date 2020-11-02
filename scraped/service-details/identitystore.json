@@ -1,0 +1,38 @@
+{
+  "servicePrefix": "identitystore",
+  "actions": {
+    "DescribeGroup": {
+      "name": "DescribeGroup",
+      "description": "Retrieves information about group from the directory that AWS Identity Store provides\n                                                by default",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeUser": {
+      "name": "DescribeUser",
+      "description": "Retrieves information about user from the directory that AWS Identity Store provides\n                                                by default",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGroups": {
+      "name": "ListGroups",
+      "description": "Search for groups within the associated directory",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListUsers": {
+      "name": "ListUsers",
+      "description": "Search for users within the associated directory",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Identity Store"
+}

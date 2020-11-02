@@ -1,0 +1,244 @@
+{
+  "servicePrefix": "qldb",
+  "actions": {
+    "CancelJournalKinesisStream": {
+      "name": "CancelJournalKinesisStream",
+      "description": "Grants permission to cancel a journal kinesis stream",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateLedger": {
+      "name": "CreateLedger",
+      "description": "Grants permission to create a ledger",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ledger*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344728564": {
+      "name": "$1604344728564",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteLedger": {
+      "name": "DeleteLedger",
+      "description": "Grants permission to delete a ledger",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ledger*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeJournalKinesisStream": {
+      "name": "DescribeJournalKinesisStream",
+      "description": "Grants permission to describe information about a journal kinesis stream",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeJournalS3Export": {
+      "name": "DescribeJournalS3Export",
+      "description": "Grants permission to describe information about a journal export job",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ledger*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeLedger": {
+      "name": "DescribeLedger",
+      "description": "Grants permission to describe a ledger",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ledger*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ExecuteStatement": {
+      "name": "ExecuteStatement",
+      "description": "Grants permission to send commands to a ledger via the console",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ledger*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ExportJournalToS3": {
+      "name": "ExportJournalToS3",
+      "description": "Grants permission to export journal contents to an Amazon S3 bucket",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ledger*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBlock": {
+      "name": "GetBlock",
+      "description": "Grants permission to retrieve a block from a ledger for a given BlockAddress",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ledger*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDigest": {
+      "name": "GetDigest",
+      "description": "Grants permission to retrieve a digest from a ledger for a given BlockAddress",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ledger*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRevision": {
+      "name": "GetRevision",
+      "description": "Grants permission to retrieve a revision for a given document ID and a given BlockAddress",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ledger*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "InsertSampleData": {
+      "name": "InsertSampleData",
+      "description": "Grants permission to insert sample application data via the console",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ledger*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListJournalKinesisStreamsForLedger": {
+      "name": "ListJournalKinesisStreamsForLedger",
+      "description": "Grants permission to list journal kinesis streams for a specified ledger",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListJournalS3Exports": {
+      "name": "ListJournalS3Exports",
+      "description": "Grants permission to list journal export jobs for all ledgers",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListJournalS3ExportsForLedger": {
+      "name": "ListJournalS3ExportsForLedger",
+      "description": "Grants permission to list journal export jobs for a specified ledger",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "ledger*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListLedgers": {
+      "name": "ListLedgers",
+      "description": "Grants permission to list existing ledgers",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Grants permission to list tags for a resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ledger"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendCommand": {
+      "name": "SendCommand",
+      "description": "Grants permission to send commands to a ledger",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ledger*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ShowCatalog": {
+      "name": "ShowCatalog",
+      "description": "Grants permission to view a ledger's catalog via the console",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ledger*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StreamJournalToKinesis": {
+      "name": "StreamJournalToKinesis",
+      "description": "Grants permission to stream journal contents to a Kinesis Data Stream",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permission to add one or more tags to a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "ledger"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344728566": {
+      "name": "$1604344728566",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permission to remove one or more tags to a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "ledger"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateLedger": {
+      "name": "UpdateLedger",
+      "description": "Grants permission to update properties on a ledger",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ledger*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon QLDB"
+}

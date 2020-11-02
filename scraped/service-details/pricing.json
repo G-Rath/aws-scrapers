@@ -1,0 +1,30 @@
+{
+  "servicePrefix": "pricing",
+  "actions": {
+    "DescribeServices": {
+      "name": "DescribeServices",
+      "description": "Returns the service details for all (paginated) services (if serviceCode is not set)\n                                                or service detail for a particular service (if given serviceCode).",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAttributeValues": {
+      "name": "GetAttributeValues",
+      "description": "Returns all (paginated) possible values for a given attribute.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetProducts": {
+      "name": "GetProducts",
+      "description": "Returns all matching products with given search criteria.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Price List"
+}

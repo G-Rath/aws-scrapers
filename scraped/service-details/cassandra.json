@@ -1,0 +1,122 @@
+{
+  "servicePrefix": "cassandra",
+  "actions": {
+    "Alter": {
+      "name": "Alter",
+      "description": "Grants permission to alter a keyspace or table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "keyspace"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "table": {
+      "name": "table",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "$1604344746322": {
+      "name": "$1604344746322",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "Create": {
+      "name": "Create",
+      "description": "Grants permission to create a keyspace or table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "keyspace"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344746323": {
+      "name": "$1604344746323",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "Drop": {
+      "name": "Drop",
+      "description": "Grants permission to drop a keyspace or table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "keyspace"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "Modify": {
+      "name": "Modify",
+      "description": "Grants permission to INSERT, UPDATE or DELETE data in a table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "Restore": {
+      "name": "Restore",
+      "description": "Grants permission to restore table from a backup",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344746324": {
+      "name": "$1604344746324",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "Select": {
+      "name": "Select",
+      "description": "Grants permission to SELECT data from a table",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Grants permission to tag a keyspace or table",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "keyspace"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344746325": {
+      "name": "$1604344746325",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Grants permission to untag a keyspace or table",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "keyspace"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344746326": {
+      "name": "$1604344746326",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    }
+  },
+  "name": "Amazon Keyspaces (for Apache Cassandra)"
+}

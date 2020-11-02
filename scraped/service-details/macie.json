@@ -1,0 +1,62 @@
+{
+  "servicePrefix": "macie",
+  "actions": {
+    "AssociateMemberAccount": {
+      "name": "AssociateMemberAccount",
+      "description": "Enables the user to associate a specified AWS account with Amazon Macie as a member\n                                                account.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociateS3Resources": {
+      "name": "AssociateS3Resources",
+      "description": "Enables the user to associate specified S3 resources with Amazon Macie for monitoring\n                                                and data classification.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:SourceArn",
+      "dependentActions": ""
+    },
+    "DisassociateMemberAccount": {
+      "name": "DisassociateMemberAccount",
+      "description": "Enables the user to remove the specified member account from Amazon Macie.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateS3Resources": {
+      "name": "DisassociateS3Resources",
+      "description": "Enables the user to remove specified S3 resources from being monitored by Amazon Macie.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:SourceArn",
+      "dependentActions": ""
+    },
+    "ListMemberAccounts": {
+      "name": "ListMemberAccounts",
+      "description": "Enables the user to list all Amazon Macie member accounts for the current Macie master\n                                                account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListS3Resources": {
+      "name": "ListS3Resources",
+      "description": "Enables the user to list all the S3 resources associated with Amazon Macie.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateS3Resources": {
+      "name": "UpdateS3Resources",
+      "description": "Enables the user to update the classification types for the specified S3 resources.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:SourceArn",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Macie Classic"
+}

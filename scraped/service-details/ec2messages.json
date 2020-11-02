@@ -1,0 +1,54 @@
+{
+  "servicePrefix": "ec2messages",
+  "actions": {
+    "AcknowledgeMessage": {
+      "name": "AcknowledgeMessage",
+      "description": "Acknowledges a message, ensuring it will not be delivered again",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteMessage": {
+      "name": "DeleteMessage",
+      "description": "Deletes a message",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "FailMessage": {
+      "name": "FailMessage",
+      "description": "Fails a message, signifying the message could not be processed successfully, ensuring\n                                                it cannot be replied to or delivered again",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEndpoint": {
+      "name": "GetEndpoint",
+      "description": "Routes traffic to the correct endpoint based on the given destination for the messages",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMessages": {
+      "name": "GetMessages",
+      "description": "Delivers messages to clients/instances using long polling",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendReply": {
+      "name": "SendReply",
+      "description": "Sends replies from clients/instances to upstream service",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Message Delivery Service"
+}

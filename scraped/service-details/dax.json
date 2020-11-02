@@ -1,0 +1,308 @@
+{
+  "servicePrefix": "dax",
+  "actions": {
+    "BatchGetItem": {
+      "name": "BatchGetItem",
+      "description": "The BatchGetItem action returns the attributes of one or more items from one or more\n                                                tables.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchWriteItem": {
+      "name": "BatchWriteItem",
+      "description": "The BatchWriteItem action operation puts or deletes multiple items in one or more\n                                                tables.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ConditionCheckItem": {
+      "name": "ConditionCheckItem",
+      "description": "The ConditionCheckItem operation checks the existence of a set of attributes for the\n                                                item with the given primary key",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateCluster": {
+      "name": "CreateCluster",
+      "description": "The CreateCluster action creates a DAX cluster.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "dax:CreateParameterGroup\n                                                   \n                                                \n                                                \n                                                \n                                                   dax:CreateSubnetGroup\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:CreateNetworkInterface\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DeleteNetworkInterface\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeNetworkInterfaces\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeSecurityGroups\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeSubnets\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeVpcs\n                                                   \n                                                \n                                                \n                                                \n                                                   iam:GetRole\n                                                   \n                                                \n                                                \n                                                \n                                                   iam:PassRole"
+    },
+    "CreateParameterGroup": {
+      "name": "CreateParameterGroup",
+      "description": "The CreateParameterGroup action creates collection of parameters that you apply to\n                                                all of the nodes in a DAX cluster.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateSubnetGroup": {
+      "name": "CreateSubnetGroup",
+      "description": "The CreateSubnetGroup action creates a new subnet group.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DecreaseReplicationFactor": {
+      "name": "DecreaseReplicationFactor",
+      "description": "The DecreaseReplicationFactor action removes one or more nodes from a DAX cluster.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteCluster": {
+      "name": "DeleteCluster",
+      "description": "The DeleteCluster action deletes a previously provisioned DAX cluster.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteItem": {
+      "name": "DeleteItem",
+      "description": "The DeleteItem action deletes a single item in a table by primary key.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344722786": {
+      "name": "$1604344722786",
+      "description": "dax:EnclosingOperation",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeleteParameterGroup": {
+      "name": "DeleteParameterGroup",
+      "description": "The DeleteParameterGroup action deletes the specified parameter group.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSubnetGroup": {
+      "name": "DeleteSubnetGroup",
+      "description": "The DeleteSubnetGroup action deletes a subnet group.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeClusters": {
+      "name": "DescribeClusters",
+      "description": "The DescribeClusters action returns information about all provisioned DAX clusters.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "application"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDefaultParameters": {
+      "name": "DescribeDefaultParameters",
+      "description": "The DescribeDefaultParameters action returns the default system parameter information\n                                                for DAX.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeEvents": {
+      "name": "DescribeEvents",
+      "description": "The DescribeEvents action returns events related to DAX clusters and parameter groups.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeParameterGroups": {
+      "name": "DescribeParameterGroups",
+      "description": "The DescribeParameterGroups action returns a list of parameter group descriptions.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeParameters": {
+      "name": "DescribeParameters",
+      "description": "The DescribeParameters action returns the detailed parameter list for a particular\n                                                parameter group.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeSubnetGroups": {
+      "name": "DescribeSubnetGroups",
+      "description": "The DescribeSubnetGroups action returns a list of subnet group descriptions.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetItem": {
+      "name": "GetItem",
+      "description": "The GetItem action returns a set of attributes for the item with the given primary\n                                                key.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344722787": {
+      "name": "$1604344722787",
+      "description": "dax:EnclosingOperation",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "IncreaseReplicationFactor": {
+      "name": "IncreaseReplicationFactor",
+      "description": "The IncreaseReplicationFactor action adds one or more nodes to a DAX cluster.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTags": {
+      "name": "ListTags",
+      "description": "The ListTags action returns a list all of the tags for a DAX cluster.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutItem": {
+      "name": "PutItem",
+      "description": "The PutItem action creates a new item, or replaces an old item with a new item.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344722788": {
+      "name": "$1604344722788",
+      "description": "dax:EnclosingOperation",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "Query": {
+      "name": "Query",
+      "description": "The Query action finds items based on primary key values. You can query any table\n                                                or secondary index that has a composite primary key (a partition key and a sort key).",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RebootNode": {
+      "name": "RebootNode",
+      "description": "The RebootNode action reboots a single node of a DAX cluster.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "Scan": {
+      "name": "Scan",
+      "description": "The Scan action returns one or more items and item attributes by accessing every item\n                                                in a table or a secondary index.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "The TagResource action associates a set of tags with a DAX resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "The UntagResource action removes the association of tags from a DAX resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateCluster": {
+      "name": "UpdateCluster",
+      "description": "The UpdateCluster action modifies the settings for a DAX cluster.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateItem": {
+      "name": "UpdateItem",
+      "description": "The UpdateItem action edits an existing item's attributes, or adds a new item to the\n                                                table if it does not already exist.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344722789": {
+      "name": "$1604344722789",
+      "description": "dax:EnclosingOperation",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateParameterGroup": {
+      "name": "UpdateParameterGroup",
+      "description": "The UpdateParameterGroup action modifies the parameters of a parameter group.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSubnetGroup": {
+      "name": "UpdateSubnetGroup",
+      "description": "The UpdateSubnetGroup action modifies an existing subnet group.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon DynamoDB Accelerator (DAX)"
+}

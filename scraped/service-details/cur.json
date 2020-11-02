@@ -1,0 +1,44 @@
+{
+  "servicePrefix": "cur",
+  "actions": {
+    "DeleteReportDefinition": {
+      "name": "DeleteReportDefinition",
+      "description": "Delete Cost and Usage Report Definition",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cur*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeReportDefinitions": {
+      "name": "DescribeReportDefinitions",
+      "description": "Get Cost and Usage Report Definitions",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ModifyReportDefinition": {
+      "name": "ModifyReportDefinition",
+      "description": "Modify Cost and Usage Report Definition",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cur*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutReportDefinition": {
+      "name": "PutReportDefinition",
+      "description": "Write Cost and Usage Report Definition",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cur*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Cost and Usage Report"
+}

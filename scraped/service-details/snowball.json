@@ -1,0 +1,142 @@
+{
+  "servicePrefix": "snowball",
+  "actions": {
+    "CancelCluster": {
+      "name": "CancelCluster",
+      "description": "Cancels a cluster job.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CancelJob": {
+      "name": "CancelJob",
+      "description": "Cancels the specified job.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAddress": {
+      "name": "CreateAddress",
+      "description": "Creates an address for a Snowball to be shipped to.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateCluster": {
+      "name": "CreateCluster",
+      "description": "Creates an empty cluster.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateJob": {
+      "name": "CreateJob",
+      "description": "Creates a job to import or export data between Amazon S3 and your on-premises data\n                                                center.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAddress": {
+      "name": "DescribeAddress",
+      "description": "Takes an AddressId and returns specific details about that address in the form of\n                                                an Address object.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAddresses": {
+      "name": "DescribeAddresses",
+      "description": "Returns a specified number of ADDRESS objects.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeCluster": {
+      "name": "DescribeCluster",
+      "description": "Returns information about a specific cluster including shipping information, cluster\n                                                status, and other important metadata.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeJob": {
+      "name": "DescribeJob",
+      "description": "Returns information about a specific job including shipping information, job status,\n                                                and other important metadata.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetJobManifest": {
+      "name": "GetJobManifest",
+      "description": "Returns a link to an Amazon S3 presigned URL for the manifest file associated with\n                                                the specified JobId value.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetJobUnlockCode": {
+      "name": "GetJobUnlockCode",
+      "description": "Returns the UnlockCode code value for the specified job.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSnowballUsage": {
+      "name": "GetSnowballUsage",
+      "description": "Returns information about the Snowball service limit for your account, and also the\n                                                number of Snowballs your account has in use.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListClusterJobs": {
+      "name": "ListClusterJobs",
+      "description": "Returns an array of JobListEntry objects of the specified length.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListClusters": {
+      "name": "ListClusters",
+      "description": "Returns an array of ClusterListEntry objects of the specified length.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListJobs": {
+      "name": "ListJobs",
+      "description": "Returns an array of JobListEntry objects of the specified length.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateCluster": {
+      "name": "UpdateCluster",
+      "description": "While a cluster's ClusterState value is in the AwaitingQuorum state, you can update\n                                                some of the information associated with a cluster.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateJob": {
+      "name": "UpdateJob",
+      "description": "While a job's JobState value is New, you can update some of the information associated\n                                                with a job.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Snowball"
+}

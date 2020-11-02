@@ -1,0 +1,278 @@
+{
+  "servicePrefix": "kinesis",
+  "actions": {
+    "AddTagsToStream": {
+      "name": "AddTagsToStream",
+      "description": "Adds or updates tags for the specified Amazon Kinesis stream. Each stream can have\n                                                up to 10 tags.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateStream": {
+      "name": "CreateStream",
+      "description": "Creates a Amazon Kinesis stream.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DecreaseStreamRetentionPeriod": {
+      "name": "DecreaseStreamRetentionPeriod",
+      "description": "Decreases the stream's retention period, which is the length of time data records\n                                                are accessible after they are added to the stream.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteStream": {
+      "name": "DeleteStream",
+      "description": "Deletes a stream and all its shards and data.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeregisterStreamConsumer": {
+      "name": "DeregisterStreamConsumer",
+      "description": "Deregisters a stream consumer with a Kinesis data stream.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "consumer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "stream*": {
+      "name": "stream*",
+      "description": "",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DescribeLimits": {
+      "name": "DescribeLimits",
+      "description": "Describes the shard limits and usage for the account.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeStream": {
+      "name": "DescribeStream",
+      "description": "Describes the specified stream.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeStreamConsumer": {
+      "name": "DescribeStreamConsumer",
+      "description": "Gets the description of a registered stream consumer.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "consumer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeStreamSummary": {
+      "name": "DescribeStreamSummary",
+      "description": "Provides a summarized description of the specified Kinesis data stream without the\n                                                shard list.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisableEnhancedMonitoring": {
+      "name": "DisableEnhancedMonitoring",
+      "description": "Disables enhanced monitoring.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "EnableEnhancedMonitoring": {
+      "name": "EnableEnhancedMonitoring",
+      "description": "API_EnableEnhancedMonitoring.html",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRecords": {
+      "name": "GetRecords",
+      "description": "Gets data records from a shard.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetShardIterator": {
+      "name": "GetShardIterator",
+      "description": "Gets a shard iterator. A shard iterator expires five minutes after it is returned\n                                                to the requester.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "IncreaseStreamRetentionPeriod": {
+      "name": "IncreaseStreamRetentionPeriod",
+      "description": "Increases the stream's retention period, which is the length of time data records\n                                                are accessible after they are added to the stream.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListShards": {
+      "name": "ListShards",
+      "description": "Lists the shards in a stream and provides information about each shard.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListStreamConsumers": {
+      "name": "ListStreamConsumers",
+      "description": "Lists the stream consumers registered to receive data from a Kinesis stream using\n                                                enhanced fan-out, and provides information about each consumer.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListStreams": {
+      "name": "ListStreams",
+      "description": "Lists your streams.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForStream": {
+      "name": "ListTagsForStream",
+      "description": "Lists the tags for the specified Amazon Kinesis stream.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "MergeShards": {
+      "name": "MergeShards",
+      "description": "Merges two adjacent shards in a stream and combines them into a single shard to reduce\n                                                the stream's capacity to ingest and transport data.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutRecord": {
+      "name": "PutRecord",
+      "description": "Writes a single data record from a producer into an Amazon Kinesis stream.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutRecords": {
+      "name": "PutRecords",
+      "description": "Writes multiple data records from a producer into an Amazon Kinesis stream in a single\n                                                call (also referred to as a PutRecords request).",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterStreamConsumer": {
+      "name": "RegisterStreamConsumer",
+      "description": "Registers a stream consumer with a Kinesis data stream.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "consumer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemoveTagsFromStream": {
+      "name": "RemoveTagsFromStream",
+      "description": "Description for SplitShard",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SplitShard": {
+      "name": "SplitShard",
+      "description": "Description for SplitShard",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartStreamEncryption": {
+      "name": "StartStreamEncryption",
+      "description": "Grants permission to enable or update server-side encryption using an AWS KMS key\n                                                for a specified stream.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "kmsKey*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopStreamEncryption": {
+      "name": "StopStreamEncryption",
+      "description": "Grants permission to disable server-side encryption for a specified stream.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "kmsKey*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SubscribeToShard": {
+      "name": "SubscribeToShard",
+      "description": "Listening to a specific shard with enhanced fan-out.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "consumer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateShardCount": {
+      "name": "UpdateShardCount",
+      "description": "Updates the shard count of the specified stream to the specified number of shards.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "Amazon Kinesis"
+}

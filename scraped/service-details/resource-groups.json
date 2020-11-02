@@ -1,0 +1,132 @@
+{
+  "servicePrefix": "resource-groups",
+  "actions": {
+    "CreateGroup": {
+      "name": "CreateGroup",
+      "description": "Creates a group with a specified name, description, and resource query.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "DeleteGroup": {
+      "name": "DeleteGroup",
+      "description": "Deletes a specified resource group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetGroup": {
+      "name": "GetGroup",
+      "description": "Gets information of a specified resource group",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetGroupQuery": {
+      "name": "GetGroupQuery",
+      "description": "Gets the query associated with a specified resource group",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetTags": {
+      "name": "GetTags",
+      "description": "Gets the tags associated with a specified resource group",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGroupResources": {
+      "name": "ListGroupResources",
+      "description": "Lists the resources that are member of a specified resource group",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGroups": {
+      "name": "ListGroups",
+      "description": "Lists all resource groups",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchResources": {
+      "name": "SearchResources",
+      "description": "Returns a list of AWS resource identifiers matching the given query",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "Tag": {
+      "name": "Tag",
+      "description": "Tags a specified resource group",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344677154": {
+      "name": "$1604344677154",
+      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "Untag": {
+      "name": "Untag",
+      "description": "Removes tags associated with a specified resource group",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344677155": {
+      "name": "$1604344677155",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "UpdateGroup": {
+      "name": "UpdateGroup",
+      "description": "Updates a specified resource group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateGroupQuery": {
+      "name": "UpdateGroupQuery",
+      "description": "Updates the query associated with a specified resource group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "name": "AWS Resource Groups"
+}

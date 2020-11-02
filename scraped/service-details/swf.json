@@ -1,0 +1,540 @@
+{
+  "servicePrefix": "swf",
+  "actions": {
+    "CancelTimer": {
+      "name": "CancelTimer",
+      "description": "Description for CancelTimer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CancelWorkflowExecution": {
+      "name": "CancelWorkflowExecution",
+      "description": "Description for CancelWorkflowExecution",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CompleteWorkflowExecution": {
+      "name": "CompleteWorkflowExecution",
+      "description": "Description for CompleteWorkflowExecution",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ContinueAsNewWorkflowExecution": {
+      "name": "ContinueAsNewWorkflowExecution",
+      "description": "Description for ContinueAsNewWorkflowExecution",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CountClosedWorkflowExecutions": {
+      "name": "CountClosedWorkflowExecutions",
+      "description": "Returns the number of closed workflow executions within the given domain that meet\n                                                the specified filtering criteria.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344707927": {
+      "name": "$1604344707927",
+      "description": "swf:tagFilter.tag\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:typeFilter.name\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:typeFilter.version",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CountOpenWorkflowExecutions": {
+      "name": "CountOpenWorkflowExecutions",
+      "description": "Returns the number of open workflow executions within the given domain that meet the\n                                                specified filtering criteria.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344707928": {
+      "name": "$1604344707928",
+      "description": "swf:taskList.name",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "CountPendingActivityTasks": {
+      "name": "CountPendingActivityTasks",
+      "description": "Returns the estimated number of activity tasks in the specified task list.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CountPendingDecisionTasks": {
+      "name": "CountPendingDecisionTasks",
+      "description": "Returns the estimated number of decision tasks in the specified task list.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344707929": {
+      "name": "$1604344707929",
+      "description": "swf:activityType.name\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:activityType.version",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DeprecateActivityType": {
+      "name": "DeprecateActivityType",
+      "description": "Deprecates the specified activity type.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeprecateDomain": {
+      "name": "DeprecateDomain",
+      "description": "Deprecates the specified domain.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeprecateWorkflowType": {
+      "name": "DeprecateWorkflowType",
+      "description": "Deprecates the specified workflow type.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344707930": {
+      "name": "$1604344707930",
+      "description": "swf:activityType.name\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:activityType.version",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "DescribeActivityType": {
+      "name": "DescribeActivityType",
+      "description": "Returns information about the specified activity type.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDomain": {
+      "name": "DescribeDomain",
+      "description": "Returns information about the specified domain, including description and status.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeWorkflowExecution": {
+      "name": "DescribeWorkflowExecution",
+      "description": "Returns information about the specified workflow execution including its type and\n                                                some statistics.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeWorkflowType": {
+      "name": "DescribeWorkflowType",
+      "description": "Returns information about the specified workflow type.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344707931": {
+      "name": "$1604344707931",
+      "description": "swf:tagFilter.tag\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:typeFilter.name\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:typeFilter.version",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "FailWorkflowExecution": {
+      "name": "FailWorkflowExecution",
+      "description": "Description for FailWorkflowExecution",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetWorkflowExecutionHistory": {
+      "name": "GetWorkflowExecutionHistory",
+      "description": "Returns the history of the specified workflow execution.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListActivityTypes": {
+      "name": "ListActivityTypes",
+      "description": "Returns information about all activities registered in the specified domain that match\n                                                the specified name and registration status.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListClosedWorkflowExecutions": {
+      "name": "ListClosedWorkflowExecutions",
+      "description": "Returns a list of closed workflow executions in the specified domain that meet the\n                                                filtering criteria.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDomains": {
+      "name": "ListDomains",
+      "description": "Returns the list of domains registered in the account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListOpenWorkflowExecutions": {
+      "name": "ListOpenWorkflowExecutions",
+      "description": "Returns a list of open workflow executions in the specified domain that meet the filtering\n                                                criteria.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344707932": {
+      "name": "$1604344707932",
+      "description": "swf:tagFilter.tag\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:typeFilter.name\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:typeFilter.version",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "This action lists tags for an AWS SWF resource.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "domain"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListWorkflowTypes": {
+      "name": "ListWorkflowTypes",
+      "description": "Returns information about workflow types in the specified domain.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PollForActivityTask": {
+      "name": "PollForActivityTask",
+      "description": "Used by workers to get an ActivityTask from the specified activity taskList.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344707933": {
+      "name": "$1604344707933",
+      "description": "swf:taskList.name",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "PollForDecisionTask": {
+      "name": "PollForDecisionTask",
+      "description": "Used by deciders to get a DecisionTask from the specified decision taskList.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RecordActivityTaskHeartbeat": {
+      "name": "RecordActivityTaskHeartbeat",
+      "description": "Used by activity workers to report to the service that the ActivityTask represented\n                                                by the specified taskToken is still making progress.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RecordMarker": {
+      "name": "RecordMarker",
+      "description": "Description for RecordMarker",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterActivityType": {
+      "name": "RegisterActivityType",
+      "description": "Registers a new activity type along with its configuration settings in the specified\n                                                domain.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344707934": {
+      "name": "$1604344707934",
+      "description": "swf:defaultTaskList.name\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:name\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:version",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "RegisterDomain": {
+      "name": "RegisterDomain",
+      "description": "Registers a new domain.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "dependentActions": ""
+    },
+    "RegisterWorkflowType": {
+      "name": "RegisterWorkflowType",
+      "description": "Registers a new workflow type and its configuration settings in the specified domain.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344707935": {
+      "name": "$1604344707935",
+      "description": "swf:defaultTaskList.name\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:name\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:version",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "RequestCancelActivityTask": {
+      "name": "RequestCancelActivityTask",
+      "description": "Description for RequestCancelActivityTask",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RequestCancelExternalWorkflowExecution": {
+      "name": "RequestCancelExternalWorkflowExecution",
+      "description": "Description for RequestCancelExternalWorkflowExecution",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RequestCancelWorkflowExecution": {
+      "name": "RequestCancelWorkflowExecution",
+      "description": "Records a WorkflowExecutionCancelRequested event in the currently running workflow\n                                                execution identified by the given domain, workflowId, and runId.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RespondActivityTaskCanceled": {
+      "name": "RespondActivityTaskCanceled",
+      "description": "Used by workers to tell the service that the ActivityTask identified by the taskToken\n                                                was successfully canceled.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RespondActivityTaskCompleted": {
+      "name": "RespondActivityTaskCompleted",
+      "description": "Used by workers to tell the service that the ActivityTask identified by the taskToken\n                                                completed successfully with a result (if provided).",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344707936": {
+      "name": "$1604344707936",
+      "description": "swf:activityType.name\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:activityType.version\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:tagList.member.0\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:tagList.member.1\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:tagList.member.2\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:tagList.member.3\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:tagList.member.4\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:taskList.name\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:workflowType.name\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:workflowType.version",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "RespondActivityTaskFailed": {
+      "name": "RespondActivityTaskFailed",
+      "description": "Used by workers to tell the service that the ActivityTask identified by the taskToken\n                                                has failed with reason (if specified).",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RespondDecisionTaskCompleted": {
+      "name": "RespondDecisionTaskCompleted",
+      "description": "Used by deciders to tell the service that the DecisionTask identified by the taskToken\n                                                has successfully completed.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ScheduleActivityTask": {
+      "name": "ScheduleActivityTask",
+      "description": "Description for ScheduleActivityTask",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SignalExternalWorkflowExecution": {
+      "name": "SignalExternalWorkflowExecution",
+      "description": "Description for SignalExternalWorkflowExecution",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SignalWorkflowExecution": {
+      "name": "SignalWorkflowExecution",
+      "description": "Records a WorkflowExecutionSignaled event in the workflow execution history and creates\n                                                a decision task for the workflow execution identified by the given domain, workflowId\n                                                and runId.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartChildWorkflowExecution": {
+      "name": "StartChildWorkflowExecution",
+      "description": "Description for StartChildWorkflowExecution",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartTimer": {
+      "name": "StartTimer",
+      "description": "Description for StartTimer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartWorkflowExecution": {
+      "name": "StartWorkflowExecution",
+      "description": "Starts an execution of the workflow type in the specified domain using the provided\n                                                workflowId and input data.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344707937": {
+      "name": "$1604344707937",
+      "description": "swf:tagList.member.0\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:tagList.member.1\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:tagList.member.2\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:tagList.member.3\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:tagList.member.4\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:taskList.name\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:workflowType.name\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      swf:workflowType.version",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "This action tags an AWS SWF resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "domain"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344707938": {
+      "name": "$1604344707938",
+      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "accessLevel": "",
+      "resourceTypes": []
+    },
+    "TerminateWorkflowExecution": {
+      "name": "TerminateWorkflowExecution",
+      "description": "Records a WorkflowExecutionTerminated event and forces closure of the workflow execution\n                                                identified by the given domain, runId, and workflowId.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "This action removes a tag from an AWS SWF resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "domain"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "$1604344707939": {
+      "name": "$1604344707939",
+      "description": "aws:TagKeys",
+      "accessLevel": "",
+      "resourceTypes": []
+    }
+  },
+  "name": "Amazon Simple Workflow Service"
+}

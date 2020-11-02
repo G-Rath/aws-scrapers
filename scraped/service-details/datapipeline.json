@@ -1,0 +1,174 @@
+{
+  "servicePrefix": "datapipeline",
+  "actions": {
+    "ActivatePipeline": {
+      "name": "ActivatePipeline",
+      "description": "Validates the specified pipeline and starts processing pipeline tasks. If the pipeline\n                                                does not pass validation, activation fails.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "datapipeline:PipelineCreator\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      datapipeline:Tag\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      datapipeline:workerGroup",
+      "dependentActions": ""
+    },
+    "AddTags": {
+      "name": "AddTags",
+      "description": "Adds or modifies tags for the specified pipeline.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "datapipeline:PipelineCreator\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      datapipeline:Tag",
+      "dependentActions": ""
+    },
+    "CreatePipeline": {
+      "name": "CreatePipeline",
+      "description": "Creates a new, empty pipeline.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "datapipeline:Tag",
+      "dependentActions": ""
+    },
+    "DeactivatePipeline": {
+      "name": "DeactivatePipeline",
+      "description": "Deactivates the specified running pipeline.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "datapipeline:PipelineCreator\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      datapipeline:Tag\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      datapipeline:workerGroup",
+      "dependentActions": ""
+    },
+    "DeletePipeline": {
+      "name": "DeletePipeline",
+      "description": "Deletes a pipeline, its pipeline definition, and its run history.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "datapipeline:PipelineCreator\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      datapipeline:Tag",
+      "dependentActions": ""
+    },
+    "DescribeObjects": {
+      "name": "DescribeObjects",
+      "description": "Gets the object definitions for a set of objects associated with the pipeline.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "datapipeline:PipelineCreator\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      datapipeline:Tag",
+      "dependentActions": ""
+    },
+    "DescribePipelines": {
+      "name": "DescribePipelines",
+      "description": "Retrieves metadata about one or more pipelines.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "datapipeline:PipelineCreator\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      datapipeline:Tag",
+      "dependentActions": ""
+    },
+    "EvaluateExpression": {
+      "name": "EvaluateExpression",
+      "description": "Task runners call EvaluateExpression to evaluate a string in the context of the specified\n                                                object.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "datapipeline:PipelineCreator\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      datapipeline:Tag",
+      "dependentActions": ""
+    },
+    "GetAccountLimits": {
+      "name": "GetAccountLimits",
+      "description": "Description for GetAccountLimits",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPipelineDefinition": {
+      "name": "GetPipelineDefinition",
+      "description": "Gets the definition of the specified pipeline.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "datapipeline:PipelineCreator\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      datapipeline:Tag\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      datapipeline:workerGroup",
+      "dependentActions": ""
+    },
+    "ListPipelines": {
+      "name": "ListPipelines",
+      "description": "Lists the pipeline identifiers for all active pipelines that you have permission to\n                                                access.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PollForTask": {
+      "name": "PollForTask",
+      "description": "Task runners call PollForTask to receive a task to perform from AWS Data Pipeline.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "datapipeline:workerGroup",
+      "dependentActions": ""
+    },
+    "PutAccountLimits": {
+      "name": "PutAccountLimits",
+      "description": "Description for PutAccountLimits",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutPipelineDefinition": {
+      "name": "PutPipelineDefinition",
+      "description": "Adds tasks, schedules, and preconditions to the specified pipeline.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "datapipeline:PipelineCreator\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      datapipeline:Tag\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      datapipeline:workerGroup",
+      "dependentActions": ""
+    },
+    "QueryObjects": {
+      "name": "QueryObjects",
+      "description": "Queries the specified pipeline for the names of objects that match the specified set\n                                                of conditions.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "datapipeline:PipelineCreator\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      datapipeline:Tag",
+      "dependentActions": ""
+    },
+    "RemoveTags": {
+      "name": "RemoveTags",
+      "description": "Removes existing tags from the specified pipeline.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "datapipeline:PipelineCreator\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      datapipeline:Tag",
+      "dependentActions": ""
+    },
+    "ReportTaskProgress": {
+      "name": "ReportTaskProgress",
+      "description": "Task runners call ReportTaskProgress when assigned a task to acknowledge that it has\n                                                the task.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ReportTaskRunnerHeartbeat": {
+      "name": "ReportTaskRunnerHeartbeat",
+      "description": "Task runners call ReportTaskRunnerHeartbeat every 15 minutes to indicate that they\n                                                are operational.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetStatus": {
+      "name": "SetStatus",
+      "description": "Requests that the status of the specified physical or logical pipeline objects be\n                                                updated in the specified pipeline.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "datapipeline:PipelineCreator\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      datapipeline:Tag",
+      "dependentActions": ""
+    },
+    "SetTaskStatus": {
+      "name": "SetTaskStatus",
+      "description": "Task runners call SetTaskStatus to notify AWS Data Pipeline that a task is completed\n                                                and provide information about the final status.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ValidatePipelineDefinition": {
+      "name": "ValidatePipelineDefinition",
+      "description": "Validates the specified pipeline definition to ensure that it is well formed and can\n                                                be run without error.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "datapipeline:PipelineCreator\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      datapipeline:Tag\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      datapipeline:workerGroup",
+      "dependentActions": ""
+    }
+  },
+  "name": "Data Pipeline"
+}
