@@ -50,11 +50,7 @@ const scrapeServiceTopics = async (): Promise<ServiceTopicTuple[]> => {
     });
 };
 
-const scapeServicePrefix = (
-  $: cheerio.Root,
-  name: string,
-  logger: Logger
-): string => {
+const scapeServicePrefix = ($: cheerio.Root, logger: Logger): string => {
   const firstCodeElement = $('code.code').get(0) as cheerio.Element | undefined;
 
   if (!firstCodeElement) {
@@ -120,7 +116,6 @@ const countColumnsSpanned = (
 
 const scrapeServiceActions = (
   $: cheerio.Root,
-  name: string,
   logger: Logger
 ): ServiceAction[] => {
   const $tableContainer = $(
@@ -253,8 +248,8 @@ const scrapeServiceDetails = async ([name, url]: ServiceTopicTuple): Promise<
 
   const $ = cheerio.load(data);
 
-  const servicePrefix = scapeServicePrefix($, name, logger);
-  const actions = scrapeServiceActions($, name, logger);
+  const servicePrefix = scapeServicePrefix($, logger);
+  const actions = scrapeServiceActions($, logger);
 
   logger.log('scraped actions');
 
