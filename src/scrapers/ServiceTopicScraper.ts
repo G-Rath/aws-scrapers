@@ -14,7 +14,7 @@ export interface ServiceAction {
 export interface ServiceDetails {
   actions: Record<string, ServiceAction>;
   servicePrefix: string;
-  name: string;
+  topics: string[];
 }
 
 const selectTagElements = (elements: cheerio.Element[]): cheerio.Element[] =>
@@ -55,7 +55,7 @@ export class ServiceTopicScraper {
         (m, action) => ({ ...m, [action.name]: action }),
         {}
       ),
-      name: this._name
+      topics: [this._name]
     };
   }
 

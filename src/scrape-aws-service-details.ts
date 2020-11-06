@@ -21,7 +21,7 @@ const writeToFile = async (details: ServiceDetails) => {
   await fs.writeFile(filePath, JSON.stringify(details, null, 2));
 
   console.log(
-    `[${details.name}]:`,
+    `[${details.servicePrefix}]:`,
     'wrote',
     Object.keys(details.actions).length,
     'actions to',
