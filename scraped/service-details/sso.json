@@ -3,6 +3,9 @@
   "actions": {
     "AssociateDirectory": {
       "name": "AssociateDirectory",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Connect a directory to be used by AWS Single Sign-On",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "AssociateProfile": {
       "name": "AssociateProfile",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Create an association between a directory user or group and a profile",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -19,6 +25,9 @@
     },
     "AttachManagedPolicyToPermissionSet": {
       "name": "AttachManagedPolicyToPermissionSet",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Attaches an AWS managed policy to a permission set.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -29,6 +38,9 @@
     },
     "CreateAccountAssignment": {
       "name": "CreateAccountAssignment",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Assigns access to a Principal for a specified AWS account using a specified permission\n                                                set.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -39,6 +51,9 @@
     },
     "CreateApplicationInstance": {
       "name": "CreateApplicationInstance",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Add an application instance to AWS Single Sign-On",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -47,6 +62,9 @@
     },
     "CreateApplicationInstanceCertificate": {
       "name": "CreateApplicationInstanceCertificate",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Add a new certificate for an application instance",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -55,6 +73,9 @@
     },
     "CreateManagedApplicationInstance": {
       "name": "CreateManagedApplicationInstance",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Add a managed application instance to AWS Single Sign-On",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -63,6 +84,9 @@
     },
     "CreatePermissionSet": {
       "name": "CreatePermissionSet",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Create a permission set",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -73,6 +97,9 @@
     },
     "CreateProfile": {
       "name": "CreateProfile",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Create a profile for an application instance",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -81,6 +108,9 @@
     },
     "CreateTrust": {
       "name": "CreateTrust",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Create a federation trust in a target account",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -89,6 +119,9 @@
     },
     "DeleteAccountAssignment": {
       "name": "DeleteAccountAssignment",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Deletes a Principal's access from a specified AWS account using a specified permission\n                                                set.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -99,6 +132,9 @@
     },
     "DeleteApplicationInstance": {
       "name": "DeleteApplicationInstance",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Delete the application instance",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -107,6 +143,9 @@
     },
     "DeleteApplicationInstanceCertificate": {
       "name": "DeleteApplicationInstanceCertificate",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Delete an inactive or expired certificate from the application instance",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -115,6 +154,9 @@
     },
     "DeleteInlinePolicyFromPermissionSet": {
       "name": "DeleteInlinePolicyFromPermissionSet",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Deletes the inline policy from a specified permission set.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -125,6 +167,9 @@
     },
     "DeleteManagedApplicationInstance": {
       "name": "DeleteManagedApplicationInstance",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Delete the managed application instance",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -133,6 +178,9 @@
     },
     "DeletePermissionSet": {
       "name": "DeletePermissionSet",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Delete a permission set",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -143,6 +191,9 @@
     },
     "DeletePermissionsPolicy": {
       "name": "DeletePermissionsPolicy",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Delete the permission policy associated with a permission set",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -151,6 +202,9 @@
     },
     "DeleteProfile": {
       "name": "DeleteProfile",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Delete the profile for an application instance",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -159,6 +213,9 @@
     },
     "DescribeAccountAssignmentCreationStatus": {
       "name": "DescribeAccountAssignmentCreationStatus",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Describes the status of the assignment creation request.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -169,6 +226,9 @@
     },
     "DescribeAccountAssignmentDeletionStatus": {
       "name": "DescribeAccountAssignmentDeletionStatus",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Describes the status of an assignment deletion request.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -179,6 +239,9 @@
     },
     "DescribePermissionSet": {
       "name": "DescribePermissionSet",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Describes a permission set",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -189,6 +252,9 @@
     },
     "DescribePermissionSetProvisioningStatus": {
       "name": "DescribePermissionSetProvisioningStatus",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Describes the status for the given Permission Set Provisioning request.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -199,6 +265,9 @@
     },
     "DescribePermissionsPolicies": {
       "name": "DescribePermissionsPolicies",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Retrieve all the permissions policies associated with a permission set",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -207,6 +276,9 @@
     },
     "DescribeRegisteredRegions": {
       "name": "DescribeRegisteredRegions",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Obtains the regions where your organization has enabled AWS Single Sign-on",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -215,6 +287,9 @@
     },
     "DetachManagedPolicyFromPermissionSet": {
       "name": "DetachManagedPolicyFromPermissionSet",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Detaches the attached AWS managed policy from the specified permission set.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -225,6 +300,9 @@
     },
     "DisassociateDirectory": {
       "name": "DisassociateDirectory",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Disassociate a directory to be used by AWS Single Sign-On",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -233,6 +311,9 @@
     },
     "DisassociateProfile": {
       "name": "DisassociateProfile",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Disassociate a directory user or group from a profile",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -241,6 +322,9 @@
     },
     "GetApplicationInstance": {
       "name": "GetApplicationInstance",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Retrieve details for an application instance",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -249,6 +333,9 @@
     },
     "GetApplicationTemplate": {
       "name": "GetApplicationTemplate",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Retrieve application template details",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -257,6 +344,9 @@
     },
     "GetInlinePolicyForPermissionSet": {
       "name": "GetInlinePolicyForPermissionSet",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Obtains the inline policy assigned to the permission set.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -267,6 +357,9 @@
     },
     "GetManagedApplicationInstance": {
       "name": "GetManagedApplicationInstance",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Retrieve details for an application instance",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -275,6 +368,9 @@
     },
     "GetMfaDeviceManagementForDirectory": {
       "name": "GetMfaDeviceManagementForDirectory",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Retrieve Mfa Device Management settings for the directory",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -283,6 +379,9 @@
     },
     "GetPermissionSet": {
       "name": "GetPermissionSet",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Retrieve details of a permission set",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -291,6 +390,9 @@
     },
     "GetPermissionsPolicy": {
       "name": "GetPermissionsPolicy",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Retrieve all permission policies associated with a permission set",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -299,6 +401,9 @@
     },
     "GetProfile": {
       "name": "GetProfile",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Retrieve a profile for an application instance",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -307,6 +412,9 @@
     },
     "GetSSOStatus": {
       "name": "GetSSOStatus",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Check if AWS Single Sign-On is enabled",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -315,6 +423,9 @@
     },
     "GetSharedSsoConfiguration": {
       "name": "GetSharedSsoConfiguration",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Retrieve shared configuration for the current SSO instance",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -323,6 +434,9 @@
     },
     "GetSsoConfiguration": {
       "name": "GetSsoConfiguration",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Retrieve configuration for the current SSO instance",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -331,6 +445,9 @@
     },
     "GetTrust": {
       "name": "GetTrust",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Retrieve the federation trust in a target account",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -339,6 +456,9 @@
     },
     "ImportApplicationInstanceServiceProviderMetadata": {
       "name": "ImportApplicationInstanceServiceProviderMetadata",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Update the application instance by uploading an application SAML metadata file provided\n                                                by the service provider",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -347,6 +467,9 @@
     },
     "ListAccountAssignmentCreationStatus": {
       "name": "ListAccountAssignmentCreationStatus",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Lists the status of the AWS account assignment creation requests for a specified SSO\n                                                instance.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -357,6 +480,9 @@
     },
     "ListAccountAssignmentDeletionStatus": {
       "name": "ListAccountAssignmentDeletionStatus",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Lists the status of the AWS account assignment deletion requests for a specified SSO\n                                                instance.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -367,6 +493,9 @@
     },
     "ListAccountAssignments": {
       "name": "ListAccountAssignments",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Lists the assignee of the specified AWS account with the specified permission set.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -377,6 +506,9 @@
     },
     "ListAccountsForProvisionedPermissionSet": {
       "name": "ListAccountsForProvisionedPermissionSet",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Lists all the AWS accounts where the specified permission set is provisioned.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -387,6 +519,9 @@
     },
     "ListApplicationInstanceCertificates": {
       "name": "ListApplicationInstanceCertificates",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Retrieve all of the certificates for a given application instance",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -395,6 +530,9 @@
     },
     "ListApplicationInstances": {
       "name": "ListApplicationInstances",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Retrieve all application instances",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -403,6 +541,9 @@
     },
     "ListApplicationTemplates": {
       "name": "ListApplicationTemplates",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Retrieve all supported application templates",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -411,6 +552,9 @@
     },
     "ListApplications": {
       "name": "ListApplications",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Retrieve all supported applications",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -419,6 +563,9 @@
     },
     "ListDirectoryAssociations": {
       "name": "ListDirectoryAssociations",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Retrieve details about the directory connected to AWS Single Sign-On",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -427,6 +574,9 @@
     },
     "ListInstances": {
       "name": "ListInstances",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Lists the SSO Instances that the caller has access to.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -435,6 +585,9 @@
     },
     "ListManagedPoliciesInPermissionSet": {
       "name": "ListManagedPoliciesInPermissionSet",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Lists the AWS managed policies that are attached to a specified permission set.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -445,6 +598,9 @@
     },
     "ListPermissionSetProvisioningStatus": {
       "name": "ListPermissionSetProvisioningStatus",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Lists the status of the Permission Set Provisioning requests for a specified SSO instance.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -455,6 +611,9 @@
     },
     "ListPermissionSets": {
       "name": "ListPermissionSets",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Retrieve all permission sets",
       "accessLevel": "List",
       "resourceTypes": [
@@ -465,6 +624,9 @@
     },
     "ListPermissionSetsProvisionedToAccount": {
       "name": "ListPermissionSetsProvisionedToAccount",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Lists all the permission sets that are provisioned to a specified AWS account.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -475,6 +637,9 @@
     },
     "ListProfileAssociations": {
       "name": "ListProfileAssociations",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Retrieve the directory user or group associated with the profile",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -483,6 +648,9 @@
     },
     "ListProfiles": {
       "name": "ListProfiles",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Retrieve all profiles for an application instance",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -491,6 +659,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Lists the tags that are attached to a specified resource.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -501,6 +672,9 @@
     },
     "ProvisionPermissionSet": {
       "name": "ProvisionPermissionSet",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "The process by which a specified permission set is provisioned to the specified target.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -511,6 +685,9 @@
     },
     "PutInlinePolicyToPermissionSet": {
       "name": "PutInlinePolicyToPermissionSet",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Attaches an IAM inline policy to a permission set.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -521,6 +698,9 @@
     },
     "PutMfaDeviceManagementForDirectory": {
       "name": "PutMfaDeviceManagementForDirectory",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Put Mfa Device Management settings for the directory",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -529,6 +709,9 @@
     },
     "PutPermissionsPolicy": {
       "name": "PutPermissionsPolicy",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Add a policy to a permission set",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -537,6 +720,9 @@
     },
     "SearchGroups": {
       "name": "SearchGroups",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Search for groups within the associated directory",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -545,6 +731,9 @@
     },
     "SearchUsers": {
       "name": "SearchUsers",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Search for users within the associated directory",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -553,6 +742,9 @@
     },
     "StartSSO": {
       "name": "StartSSO",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Initialize AWS Single Sign-On",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -561,6 +753,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Associates a set of tags with a specified resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -571,6 +766,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Disassociates a set of tags from a specified resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -581,6 +779,9 @@
     },
     "UpdateApplicationInstanceActiveCertificate": {
       "name": "UpdateApplicationInstanceActiveCertificate",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Set a certificate as the active one for this application instance",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -589,6 +790,9 @@
     },
     "UpdateApplicationInstanceDisplayData": {
       "name": "UpdateApplicationInstanceDisplayData",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Update display data of an application instance",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -597,6 +801,9 @@
     },
     "UpdateApplicationInstanceResponseConfiguration": {
       "name": "UpdateApplicationInstanceResponseConfiguration",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Update federation response configuration for the application instance",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -605,6 +812,9 @@
     },
     "UpdateApplicationInstanceResponseSchemaConfiguration": {
       "name": "UpdateApplicationInstanceResponseSchemaConfiguration",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Update federation response schema configuration for the application instance",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -613,6 +823,9 @@
     },
     "UpdateApplicationInstanceSecurityConfiguration": {
       "name": "UpdateApplicationInstanceSecurityConfiguration",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Update security details for the application instance",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -621,6 +834,9 @@
     },
     "UpdateApplicationInstanceServiceProviderConfiguration": {
       "name": "UpdateApplicationInstanceServiceProviderConfiguration",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Update service provider related configuration for the application instance",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -629,6 +845,9 @@
     },
     "UpdateApplicationInstanceStatus": {
       "name": "UpdateApplicationInstanceStatus",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Update the status of an application instance",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -637,6 +856,9 @@
     },
     "UpdateDirectoryAssociation": {
       "name": "UpdateDirectoryAssociation",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Update the user attribute mappings for your connected directory",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -645,6 +867,9 @@
     },
     "UpdateManagedApplicationInstanceStatus": {
       "name": "UpdateManagedApplicationInstanceStatus",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Update the status of a managed application instance",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -653,6 +878,9 @@
     },
     "UpdatePermissionSet": {
       "name": "UpdatePermissionSet",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Update the permission set.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -663,6 +891,9 @@
     },
     "UpdateProfile": {
       "name": "UpdateProfile",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Update the profile for an application instance",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -671,6 +902,9 @@
     },
     "UpdateSSOConfiguration": {
       "name": "UpdateSSOConfiguration",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Update the configuration for the current SSO instance",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -679,6 +913,9 @@
     },
     "UpdateTrust": {
       "name": "UpdateTrust",
+      "topics": [
+        "AWS SSO"
+      ],
       "description": "Update the federation trust in a target account",
       "accessLevel": "Write",
       "resourceTypes": [],

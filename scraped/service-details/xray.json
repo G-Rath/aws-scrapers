@@ -3,6 +3,9 @@
   "actions": {
     "BatchGetTraces": {
       "name": "BatchGetTraces",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to retrieve a list of traces specified by ID. Each trace is a collection\n                                                of segment documents that originates from a single request. Use GetTraceSummaries\n                                                to get a list of trace IDs",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "CreateGroup": {
       "name": "CreateGroup",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to create a group resource with a name and a filter expression",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -21,6 +27,9 @@
     },
     "CreateSamplingRule": {
       "name": "CreateSamplingRule",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to create a rule to control sampling behavior for instrumented applications",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -31,6 +40,9 @@
     },
     "DeleteGroup": {
       "name": "DeleteGroup",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to delete a group resource",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -41,6 +53,9 @@
     },
     "DeleteSamplingRule": {
       "name": "DeleteSamplingRule",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to delete a sampling rule",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -51,6 +66,9 @@
     },
     "GetEncryptionConfig": {
       "name": "GetEncryptionConfig",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to retrieve the current encryption configuration for X-Ray data",
       "accessLevel": "Permissions management",
       "resourceTypes": [],
@@ -59,6 +77,9 @@
     },
     "GetGroup": {
       "name": "GetGroup",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to retrieve group resource details",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -69,6 +90,9 @@
     },
     "GetGroups": {
       "name": "GetGroups",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to retrieve all active group details",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -77,6 +101,9 @@
     },
     "GetInsight": {
       "name": "GetInsight",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to retrieve the details of a specific insight",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -85,6 +112,9 @@
     },
     "GetInsightEvents": {
       "name": "GetInsightEvents",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to retrieve the events of a specific insight",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -93,6 +123,9 @@
     },
     "GetInsightImpactGraph": {
       "name": "GetInsightImpactGraph",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to retrieve the part of the service graph which is impacted for\n                                                a specific insight",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -101,6 +134,9 @@
     },
     "GetInsightSummaries": {
       "name": "GetInsightSummaries",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to retrieve the summary of all insights for a group and time range\n                                                with optional filters",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -109,6 +145,9 @@
     },
     "GetSamplingRules": {
       "name": "GetSamplingRules",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to retrieve all sampling rules",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -117,6 +156,9 @@
     },
     "GetSamplingStatisticSummaries": {
       "name": "GetSamplingStatisticSummaries",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to retrieve information about recent sampling results for all sampling\n                                                rules",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -125,6 +167,9 @@
     },
     "GetSamplingTargets": {
       "name": "GetSamplingTargets",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to request a sampling quota for rules that the service is using\n                                                to sample requests",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -133,6 +178,9 @@
     },
     "GetServiceGraph": {
       "name": "GetServiceGraph",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to retrieve a document that describes services that process incoming\n                                                requests, and downstream services that they call as a result",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -141,6 +189,9 @@
     },
     "GetTimeSeriesServiceStatistics": {
       "name": "GetTimeSeriesServiceStatistics",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to retrieve an aggregation of service statistics defined by a specific\n                                                time range bucketed into time intervals",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -149,6 +200,9 @@
     },
     "GetTraceGraph": {
       "name": "GetTraceGraph",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to retrieve a service graph for one or more specific trace IDs",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -157,6 +211,9 @@
     },
     "GetTraceSummaries": {
       "name": "GetTraceSummaries",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to retrieve IDs and metadata for traces available for a specified\n                                                time frame using an optional filter. To get the full traces, pass the trace IDs to\n                                                BatchGetTraces",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -165,6 +222,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to list tags for an X-Ray resource",
       "accessLevel": "List",
       "resourceTypes": [
@@ -175,6 +235,9 @@
     },
     "PutEncryptionConfig": {
       "name": "PutEncryptionConfig",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to update the encryption configuration for X-Ray data",
       "accessLevel": "Permissions management",
       "resourceTypes": [],
@@ -183,6 +246,9 @@
     },
     "PutTelemetryRecords": {
       "name": "PutTelemetryRecords",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to send AWS X-Ray daemon telemetry to the service",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -191,6 +257,9 @@
     },
     "PutTraceSegments": {
       "name": "PutTraceSegments",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to upload segment documents to AWS X-Ray. The X-Ray SDK generates\n                                                segment documents and sends them to the X-Ray daemon, which uploads them in batches",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -199,6 +268,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to add tags to an X-Ray resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -209,6 +281,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to remove tags from an X-Ray resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -219,6 +294,9 @@
     },
     "UpdateGroup": {
       "name": "UpdateGroup",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to update a group resource",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -229,6 +307,9 @@
     },
     "UpdateSamplingRule": {
       "name": "UpdateSamplingRule",
+      "topics": [
+        "AWS X-Ray"
+      ],
       "description": "Grants permission to modify a sampling rule's configuration",
       "accessLevel": "Write",
       "resourceTypes": [

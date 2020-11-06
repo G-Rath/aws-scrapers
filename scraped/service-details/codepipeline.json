@@ -3,6 +3,9 @@
   "actions": {
     "AcknowledgeJob": {
       "name": "AcknowledgeJob",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to view information about a specified job and whether that job has\n                                                been received by the job worker",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "AcknowledgeThirdPartyJob": {
       "name": "AcknowledgeThirdPartyJob",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to confirm that a job worker has received the specified job (partner\n                                                actions only)",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -19,6 +25,9 @@
     },
     "CreateCustomActionType": {
       "name": "CreateCustomActionType",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to create a custom action that you can use in the pipelines associated\n                                                with your AWS account",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -29,6 +38,9 @@
     },
     "CreatePipeline": {
       "name": "CreatePipeline",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to create a uniquely named pipeline",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -39,6 +51,9 @@
     },
     "DeleteCustomActionType": {
       "name": "DeleteCustomActionType",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to delete a custom action",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -49,6 +64,9 @@
     },
     "DeletePipeline": {
       "name": "DeletePipeline",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to delete a specified pipeline",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -59,6 +77,9 @@
     },
     "DeleteWebhook": {
       "name": "DeleteWebhook",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to delete a specified webhook",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -69,6 +90,9 @@
     },
     "DeregisterWebhookWithThirdParty": {
       "name": "DeregisterWebhookWithThirdParty",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to remove the registration of a webhook with the third party specified\n                                                in its configuration",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -79,6 +103,9 @@
     },
     "DisableStageTransition": {
       "name": "DisableStageTransition",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to prevent revisions from transitioning to the next stage in a pipeline",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -89,6 +116,9 @@
     },
     "EnableStageTransition": {
       "name": "EnableStageTransition",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to allow revisions to transition to the next stage in a pipeline",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -99,6 +129,9 @@
     },
     "GetJobDetails": {
       "name": "GetJobDetails",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to view information about a job (custom actions only)",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -107,6 +140,9 @@
     },
     "GetPipeline": {
       "name": "GetPipeline",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to retrieve information about a pipeline structure",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -117,6 +153,9 @@
     },
     "GetPipelineExecution": {
       "name": "GetPipelineExecution",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to view information about an execution of a pipeline, including\n                                                details about artifacts, the pipeline execution ID, and the name, version, and status\n                                                of the pipeline",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -127,6 +166,9 @@
     },
     "GetPipelineState": {
       "name": "GetPipelineState",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to view information about the current state of the stages and actions\n                                                of a pipeline",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -137,6 +179,9 @@
     },
     "GetThirdPartyJobDetails": {
       "name": "GetThirdPartyJobDetails",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to view the details of a job for a third-party action (partner actions\n                                                only)",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -145,6 +190,9 @@
     },
     "ListActionExecutions": {
       "name": "ListActionExecutions",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to list the action executions that have occurred in a pipeline",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -155,6 +203,9 @@
     },
     "ListActionTypes": {
       "name": "ListActionTypes",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to list a summary of all the action types available for pipelines\n                                                in your account",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -163,6 +214,9 @@
     },
     "ListPipelineExecutions": {
       "name": "ListPipelineExecutions",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to list a summary of the most recent executions for a pipeline",
       "accessLevel": "List",
       "resourceTypes": [
@@ -173,6 +227,9 @@
     },
     "ListPipelines": {
       "name": "ListPipelines",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to list a summary of all the pipelines associated with your AWS\n                                                account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -181,6 +238,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to list tags for a CodePipeline resource",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -191,6 +251,9 @@
     },
     "ListWebhooks": {
       "name": "ListWebhooks",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to list all of the webhooks associated with your AWS account",
       "accessLevel": "List",
       "resourceTypes": [
@@ -201,6 +264,9 @@
     },
     "PollForJobs": {
       "name": "PollForJobs",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to view information about any jobs for CodePipeline to act on",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -211,6 +277,9 @@
     },
     "PollForThirdPartyJobs": {
       "name": "PollForThirdPartyJobs",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to determine whether there are any third-party jobs for a job worker\n                                                to act on (partner actions only)",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -219,6 +288,9 @@
     },
     "PutActionRevision": {
       "name": "PutActionRevision",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to edit actions in a pipeline",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -229,6 +301,9 @@
     },
     "PutApprovalResult": {
       "name": "PutApprovalResult",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to provide a response (Approved or Rejected) to a manual approval\n                                                request in CodePipeline",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -239,6 +314,9 @@
     },
     "PutJobFailureResult": {
       "name": "PutJobFailureResult",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to represent the failure of a job as returned to the pipeline by\n                                                a job worker (custom actions only)",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -247,6 +325,9 @@
     },
     "PutJobSuccessResult": {
       "name": "PutJobSuccessResult",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to represent the success of a job as returned to the pipeline by\n                                                a job worker (custom actions only)",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -255,6 +336,9 @@
     },
     "PutThirdPartyJobFailureResult": {
       "name": "PutThirdPartyJobFailureResult",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to represent the failure of a third-party job as returned to the\n                                                pipeline by a job worker (partner actions only)",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -263,6 +347,9 @@
     },
     "PutThirdPartyJobSuccessResult": {
       "name": "PutThirdPartyJobSuccessResult",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to represent the success of a third-party job as returned to the\n                                                pipeline by a job worker (partner actions only)",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -271,6 +358,9 @@
     },
     "PutWebhook": {
       "name": "PutWebhook",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to create or update a webhook",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -281,6 +371,9 @@
     },
     "RegisterWebhookWithThirdParty": {
       "name": "RegisterWebhookWithThirdParty",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to register a webhook with the third party specified in its configuration",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -291,6 +384,9 @@
     },
     "RetryStageExecution": {
       "name": "RetryStageExecution",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to resume the pipeline execution by retrying the last failed actions\n                                                in a stage",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -301,6 +397,9 @@
     },
     "StartPipelineExecution": {
       "name": "StartPipelineExecution",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to run the most recent revision through the pipeline",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -311,6 +410,9 @@
     },
     "StopPipelineExecution": {
       "name": "StopPipelineExecution",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to stop an in-progress pipeline execution",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -321,6 +423,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to tag a CodePipeline resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -331,6 +436,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to remove a tag from a CodePipeline resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -341,6 +449,9 @@
     },
     "UpdatePipeline": {
       "name": "UpdatePipeline",
+      "topics": [
+        "AWS CodePipeline"
+      ],
       "description": "Grants permission to update a pipeline with changes to the structure of the pipeline",
       "accessLevel": "Write",
       "resourceTypes": [

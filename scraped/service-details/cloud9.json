@@ -3,6 +3,9 @@
   "actions": {
     "CreateEnvironmentEC2": {
       "name": "CreateEnvironmentEC2",
+      "topics": [
+        "AWS Cloud9"
+      ],
       "description": "Grants permission to create an AWS Cloud9 development environment, launches an Amazon\n                                                Elastic Compute Cloud (Amazon EC2) instance, and then hosts the environment on the\n                                                instance.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "CreateEnvironmentMembership": {
       "name": "CreateEnvironmentMembership",
+      "topics": [
+        "AWS Cloud9"
+      ],
       "description": "Grants permission to add an environment member to an AWS Cloud9 development environment.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -21,6 +27,9 @@
     },
     "DeleteEnvironment": {
       "name": "DeleteEnvironment",
+      "topics": [
+        "AWS Cloud9"
+      ],
       "description": "Grants permission to delete an AWS Cloud9 development environment. If the environment\n                                                is hosted on an Amazon Elastic Compute Cloud (Amazon EC2) instance, also terminates\n                                                the instance.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -31,6 +40,9 @@
     },
     "DeleteEnvironmentMembership": {
       "name": "DeleteEnvironmentMembership",
+      "topics": [
+        "AWS Cloud9"
+      ],
       "description": "Grants permission to delete an environment member from an AWS Cloud9 development environment.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -41,6 +53,9 @@
     },
     "DescribeEnvironmentMemberships": {
       "name": "DescribeEnvironmentMemberships",
+      "topics": [
+        "AWS Cloud9"
+      ],
       "description": "Grants permission to get information about environment members for an AWS Cloud9 development\n                                                environment.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -51,6 +66,9 @@
     },
     "DescribeEnvironmentStatus": {
       "name": "DescribeEnvironmentStatus",
+      "topics": [
+        "AWS Cloud9"
+      ],
       "description": "Grants permission to get status information for an AWS Cloud9 development environment.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -61,6 +79,9 @@
     },
     "DescribeEnvironments": {
       "name": "DescribeEnvironments",
+      "topics": [
+        "AWS Cloud9"
+      ],
       "description": "Grants permission to get information about AWS Cloud9 development environments.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -71,6 +92,9 @@
     },
     "GetUserSettings": {
       "name": "GetUserSettings",
+      "topics": [
+        "AWS Cloud9"
+      ],
       "description": "Grants permission to get IDE-specific settings of an AWS Cloud9 user.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -79,6 +103,9 @@
     },
     "ListEnvironments": {
       "name": "ListEnvironments",
+      "topics": [
+        "AWS Cloud9"
+      ],
       "description": "Grants permission to get a list of AWS Cloud9 development environment identifiers.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -87,6 +114,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "AWS Cloud9"
+      ],
       "description": "Lists tags for a cloud9 environment",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -97,6 +127,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS Cloud9"
+      ],
       "description": "Adds tags to a cloud9 environment",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -107,6 +140,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS Cloud9"
+      ],
       "description": "Removes tags from a cloud9 environment",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -117,6 +153,9 @@
     },
     "UpdateEnvironment": {
       "name": "UpdateEnvironment",
+      "topics": [
+        "AWS Cloud9"
+      ],
       "description": "Grants permission to change the settings of an existing AWS Cloud9 development environment.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -127,6 +166,9 @@
     },
     "UpdateEnvironmentMembership": {
       "name": "UpdateEnvironmentMembership",
+      "topics": [
+        "AWS Cloud9"
+      ],
       "description": "Grants permission to change the settings of an existing environment member for an\n                                                AWS Cloud9 development environment.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -137,6 +179,9 @@
     },
     "UpdateUserSettings": {
       "name": "UpdateUserSettings",
+      "topics": [
+        "AWS Cloud9"
+      ],
       "description": "Grants permission to update IDE-specific settings of an AWS Cloud9 user.",
       "accessLevel": "Write",
       "resourceTypes": [],

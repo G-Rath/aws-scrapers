@@ -3,6 +3,9 @@
   "actions": {
     "AssociateDeviceWithPlacement": {
       "name": "AssociateDeviceWithPlacement",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "Associate a device to a placement",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "ClaimDevicesByClaimCode": {
       "name": "ClaimDevicesByClaimCode",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "Claim a batch of devices with a claim code.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -21,6 +27,9 @@
     },
     "CreatePlacement": {
       "name": "CreatePlacement",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "Create a new placement in a project",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -31,6 +40,9 @@
     },
     "CreateProject": {
       "name": "CreateProject",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "Create a new project",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -41,6 +53,9 @@
     },
     "DeletePlacement": {
       "name": "DeletePlacement",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "Delete a placement from a project",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -51,6 +66,9 @@
     },
     "DeleteProject": {
       "name": "DeleteProject",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "Delete a project",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -61,6 +79,9 @@
     },
     "DescribeDevice": {
       "name": "DescribeDevice",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "Describe a device",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -71,6 +92,9 @@
     },
     "DescribePlacement": {
       "name": "DescribePlacement",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "Describe a placement",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -81,6 +105,9 @@
     },
     "DescribeProject": {
       "name": "DescribeProject",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "Describe a project",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -91,6 +118,9 @@
     },
     "DisassociateDeviceFromPlacement": {
       "name": "DisassociateDeviceFromPlacement",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "Disassociate a device from a placement",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -101,6 +131,9 @@
     },
     "FinalizeDeviceClaim": {
       "name": "FinalizeDeviceClaim",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "Finalize a device claim",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -111,6 +144,9 @@
     },
     "GetDeviceMethods": {
       "name": "GetDeviceMethods",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "Get available methods of a device",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -121,6 +157,9 @@
     },
     "GetDevicesInPlacement": {
       "name": "GetDevicesInPlacement",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "Get devices associated to a placement",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -131,6 +170,9 @@
     },
     "InitiateDeviceClaim": {
       "name": "InitiateDeviceClaim",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "Initialize a device claim",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -141,6 +183,9 @@
     },
     "InvokeDeviceMethod": {
       "name": "InvokeDeviceMethod",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "Invoke a device method",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -151,6 +196,9 @@
     },
     "ListDeviceEvents": {
       "name": "ListDeviceEvents",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "List past events published by a device",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -161,6 +209,9 @@
     },
     "ListDevices": {
       "name": "ListDevices",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "List all devices",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -169,6 +220,9 @@
     },
     "ListPlacements": {
       "name": "ListPlacements",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "List placements in a project",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -179,6 +233,9 @@
     },
     "ListProjects": {
       "name": "ListProjects",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "List all projects",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -187,6 +244,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "Lists the tags (metadata) which you have assigned to the resource.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -197,6 +257,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "Adds to or modifies the tags of the given resource. Tags are metadata which can be\n                                                used to manage a resource.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -207,6 +270,9 @@
     },
     "UnclaimDevice": {
       "name": "UnclaimDevice",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "Unclaim a device",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -217,6 +283,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "Removes the given tags (metadata) from the resource.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -227,6 +296,9 @@
     },
     "UpdateDeviceState": {
       "name": "UpdateDeviceState",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "Update device state",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -237,6 +309,9 @@
     },
     "UpdatePlacement": {
       "name": "UpdatePlacement",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "Update a placement",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -247,6 +322,9 @@
     },
     "UpdateProject": {
       "name": "UpdateProject",
+      "topics": [
+        "AWS IoT 1-Click"
+      ],
       "description": "Update a project",
       "accessLevel": "Write",
       "resourceTypes": [

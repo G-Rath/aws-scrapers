@@ -3,6 +3,9 @@
   "actions": {
     "AbortEnvironmentUpdate": {
       "name": "AbortEnvironmentUpdate",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to cancel in-progress environment configuration update or application\n                                                version deployment.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "AddTags": {
       "name": "AddTags",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to add tags to an Elastic Beanstalk resource and to update tag values.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "ApplyEnvironmentManagedAction": {
       "name": "ApplyEnvironmentManagedAction",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to apply a scheduled managed action immediately.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "AssociateEnvironmentOperationsRole": {
       "name": "AssociateEnvironmentOperationsRole",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to associate an operations role with an environment.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "CheckDNSAvailability": {
       "name": "CheckDNSAvailability",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to check CNAME availability.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -51,6 +66,9 @@
     },
     "ComposeEnvironments": {
       "name": "ComposeEnvironments",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to create or update a group of environments, each running a separate\n                                                component of a single application.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -61,6 +79,9 @@
     },
     "CreateApplication": {
       "name": "CreateApplication",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to create a new application.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -71,6 +92,9 @@
     },
     "CreateApplicationVersion": {
       "name": "CreateApplicationVersion",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to create an application version for an application.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -81,6 +105,9 @@
     },
     "CreateConfigurationTemplate": {
       "name": "CreateConfigurationTemplate",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to create a configuration template.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -91,6 +118,9 @@
     },
     "CreateEnvironment": {
       "name": "CreateEnvironment",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to launch an environment for an application.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -101,6 +131,9 @@
     },
     "CreatePlatformVersion": {
       "name": "CreatePlatformVersion",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to create a new version of a custom platform.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -111,6 +144,9 @@
     },
     "CreateStorageLocation": {
       "name": "CreateStorageLocation",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to create the Amazon S3 storage location for the account.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -119,6 +155,9 @@
     },
     "DeleteApplication": {
       "name": "DeleteApplication",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to delete an application along with all associated versions and\n                                                configurations.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -129,6 +168,9 @@
     },
     "DeleteApplicationVersion": {
       "name": "DeleteApplicationVersion",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to delete an application version from an application.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -139,6 +181,9 @@
     },
     "DeleteConfigurationTemplate": {
       "name": "DeleteConfigurationTemplate",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to delete a configuration template.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -149,6 +194,9 @@
     },
     "DeleteEnvironmentConfiguration": {
       "name": "DeleteEnvironmentConfiguration",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to delete the draft configuration associated with the running environment.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -159,6 +207,9 @@
     },
     "DeletePlatformVersion": {
       "name": "DeletePlatformVersion",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to delete a version of a custom platform.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -169,6 +220,9 @@
     },
     "DescribeAccountAttributes": {
       "name": "DescribeAccountAttributes",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to retrieve a list of account attributes, including resource quotas.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -177,6 +231,9 @@
     },
     "DescribeApplicationVersions": {
       "name": "DescribeApplicationVersions",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to retrieve a list of application versions stored in an AWS Elastic\n                                                Beanstalk storage bucket.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -187,6 +244,9 @@
     },
     "DescribeApplications": {
       "name": "DescribeApplications",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to retrieve the descriptions of existing applications.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -197,6 +257,9 @@
     },
     "DescribeConfigurationOptions": {
       "name": "DescribeConfigurationOptions",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to retrieve descriptions of environment configuration options.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -207,6 +270,9 @@
     },
     "DescribeConfigurationSettings": {
       "name": "DescribeConfigurationSettings",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to retrieve a description of the settings for a configuration set.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -217,6 +283,9 @@
     },
     "DescribeEnvironmentHealth": {
       "name": "DescribeEnvironmentHealth",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to retrieve information about the overall health of an environment.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -227,6 +296,9 @@
     },
     "DescribeEnvironmentManagedActionHistory": {
       "name": "DescribeEnvironmentManagedActionHistory",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to retrieve a list of an environment's completed and failed managed\n                                                actions.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -237,6 +309,9 @@
     },
     "DescribeEnvironmentManagedActions": {
       "name": "DescribeEnvironmentManagedActions",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to retrieve a list of an environment's upcoming and in-progress\n                                                managed actions.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -247,6 +322,9 @@
     },
     "DescribeEnvironmentResources": {
       "name": "DescribeEnvironmentResources",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to retrieve a list of AWS resources for an environment.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -257,6 +335,9 @@
     },
     "DescribeEnvironments": {
       "name": "DescribeEnvironments",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to retrieve descriptions for existing environments.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -267,6 +348,9 @@
     },
     "DescribeEvents": {
       "name": "DescribeEvents",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to retrieve a list of event descriptions matching a set of criteria.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -277,6 +361,9 @@
     },
     "DescribeInstancesHealth": {
       "name": "DescribeInstancesHealth",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to retrieve more detailed information about the health of environment\n                                                instances.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -287,6 +374,9 @@
     },
     "DescribePlatformVersion": {
       "name": "DescribePlatformVersion",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to retrieve a description of a platform version.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -297,6 +387,9 @@
     },
     "DisassociateEnvironmentOperationsRole": {
       "name": "DisassociateEnvironmentOperationsRole",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to disassociate an operations role with an environment.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -307,6 +400,9 @@
     },
     "ListAvailableSolutionStacks": {
       "name": "ListAvailableSolutionStacks",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to retrieve a list of the available solution stack names.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -317,6 +413,9 @@
     },
     "ListPlatformBranches": {
       "name": "ListPlatformBranches",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to retrieve a list of the available platform branches.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -325,6 +424,9 @@
     },
     "ListPlatformVersions": {
       "name": "ListPlatformVersions",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to retrieve a list of the available platforms.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -335,6 +437,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to retrieve a list of tags of an Elastic Beanstalk resource.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -345,6 +450,9 @@
     },
     "PutInstanceStatistics": {
       "name": "PutInstanceStatistics",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to submit instance statistics for enhanced health.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -355,6 +463,9 @@
     },
     "RebuildEnvironment": {
       "name": "RebuildEnvironment",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to delete and recreate all of the AWS resources for an environment\n                                                and to force a restart.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -365,6 +476,9 @@
     },
     "RemoveTags": {
       "name": "RemoveTags",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to remove tags from an Elastic Beanstalk resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -375,6 +489,9 @@
     },
     "RequestEnvironmentInfo": {
       "name": "RequestEnvironmentInfo",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to initiate a request to compile information of the deployed environment.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -385,6 +502,9 @@
     },
     "RestartAppServer": {
       "name": "RestartAppServer",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to request an environment to restart the application container server\n                                                running on each Amazon EC2 instance.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -395,6 +515,9 @@
     },
     "RetrieveEnvironmentInfo": {
       "name": "RetrieveEnvironmentInfo",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to retrieve the compiled information from a RequestEnvironmentInfo\n                                                request.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -405,6 +528,9 @@
     },
     "SwapEnvironmentCNAMEs": {
       "name": "SwapEnvironmentCNAMEs",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to swap the CNAMEs of two environments.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -415,6 +541,9 @@
     },
     "TerminateEnvironment": {
       "name": "TerminateEnvironment",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to terminate an environment.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -425,6 +554,9 @@
     },
     "UpdateApplication": {
       "name": "UpdateApplication",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to update an application with specified properties.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -435,6 +567,9 @@
     },
     "UpdateApplicationResourceLifecycle": {
       "name": "UpdateApplicationResourceLifecycle",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to update the application version lifecycle policy associated with\n                                                the application.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -445,6 +580,9 @@
     },
     "UpdateApplicationVersion": {
       "name": "UpdateApplicationVersion",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to update an application version with specified properties.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -455,6 +593,9 @@
     },
     "UpdateConfigurationTemplate": {
       "name": "UpdateConfigurationTemplate",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to update a configuration template with specified properties or\n                                                configuration option values.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -465,6 +606,9 @@
     },
     "UpdateEnvironment": {
       "name": "UpdateEnvironment",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to update an environment.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -475,6 +619,9 @@
     },
     "ValidateConfigurationSettings": {
       "name": "ValidateConfigurationSettings",
+      "topics": [
+        "AWS Elastic Beanstalk"
+      ],
       "description": "Grants permission to check the validity of a set of configuration settings for a configuration\n                                                template or an environment.",
       "accessLevel": "Read",
       "resourceTypes": [

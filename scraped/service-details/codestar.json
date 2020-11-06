@@ -3,6 +3,9 @@
   "actions": {
     "AssociateTeamMember": {
       "name": "AssociateTeamMember",
+      "topics": [
+        "AWS CodeStar"
+      ],
       "description": "Adds a user to the team for an AWS CodeStar project.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "CreateProject": {
       "name": "CreateProject",
+      "topics": [
+        "AWS CodeStar"
+      ],
       "description": "Creates a project with minimal structure, customer policies, and no resources.",
       "accessLevel": "Permissions management",
       "resourceTypes": [],
@@ -21,6 +27,9 @@
     },
     "CreateUserProfile": {
       "name": "CreateUserProfile",
+      "topics": [
+        "AWS CodeStar"
+      ],
       "description": "Creates a profile for a user that includes user preferences, display name, and email.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -31,6 +40,9 @@
     },
     "DeleteExtendedAccess": {
       "name": "DeleteExtendedAccess",
+      "topics": [
+        "AWS CodeStar"
+      ],
       "description": "Grants access to extended delete APIs.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -41,6 +53,9 @@
     },
     "DeleteProject": {
       "name": "DeleteProject",
+      "topics": [
+        "AWS CodeStar"
+      ],
       "description": "Deletes a project, including project resources. Does not delete users associated with\n                                                the project, but does delete the IAM roles that allowed access to the project.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -51,6 +66,9 @@
     },
     "DeleteUserProfile": {
       "name": "DeleteUserProfile",
+      "topics": [
+        "AWS CodeStar"
+      ],
       "description": "Deletes a user profile in AWS CodeStar, including all personal preference data associated\n                                                with that profile, such as display name and email address. It does not delete the\n                                                history of that user, for example the history of commits made by that user.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -61,6 +79,9 @@
     },
     "DescribeProject": {
       "name": "DescribeProject",
+      "topics": [
+        "AWS CodeStar"
+      ],
       "description": "Describes a project and its resources.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -71,6 +92,9 @@
     },
     "DescribeUserProfile": {
       "name": "DescribeUserProfile",
+      "topics": [
+        "AWS CodeStar"
+      ],
       "description": "Describes a user in AWS CodeStar and the user attributes across all projects.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -79,6 +103,9 @@
     },
     "DisassociateTeamMember": {
       "name": "DisassociateTeamMember",
+      "topics": [
+        "AWS CodeStar"
+      ],
       "description": "Removes a user from a project. Removing a user from a project also removes the IAM\n                                                policies from that user that allowed access to the project and its resources.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -89,6 +116,9 @@
     },
     "GetExtendedAccess": {
       "name": "GetExtendedAccess",
+      "topics": [
+        "AWS CodeStar"
+      ],
       "description": "Grants access to extended read APIs.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -99,6 +129,9 @@
     },
     "ListProjects": {
       "name": "ListProjects",
+      "topics": [
+        "AWS CodeStar"
+      ],
       "description": "Lists all projects in CodeStar associated with your AWS account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -107,6 +140,9 @@
     },
     "ListResources": {
       "name": "ListResources",
+      "topics": [
+        "AWS CodeStar"
+      ],
       "description": "Lists all resources associated with a project in CodeStar.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -117,6 +153,9 @@
     },
     "ListTagsForProject": {
       "name": "ListTagsForProject",
+      "topics": [
+        "AWS CodeStar"
+      ],
       "description": "Lists the tags associated with a project in CodeStar.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -127,6 +166,9 @@
     },
     "ListTeamMembers": {
       "name": "ListTeamMembers",
+      "topics": [
+        "AWS CodeStar"
+      ],
       "description": "Lists all team members associated with a project.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -137,6 +179,9 @@
     },
     "ListUserProfiles": {
       "name": "ListUserProfiles",
+      "topics": [
+        "AWS CodeStar"
+      ],
       "description": "Lists user profiles in AWS CodeStar.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -145,6 +190,9 @@
     },
     "PutExtendedAccess": {
       "name": "PutExtendedAccess",
+      "topics": [
+        "AWS CodeStar"
+      ],
       "description": "Grants access to extended write APIs.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -155,6 +203,9 @@
     },
     "TagProject": {
       "name": "TagProject",
+      "topics": [
+        "AWS CodeStar"
+      ],
       "description": "Adds tags to a project in CodeStar.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -165,6 +216,9 @@
     },
     "UntagProject": {
       "name": "UntagProject",
+      "topics": [
+        "AWS CodeStar"
+      ],
       "description": "Removes tags from a project in CodeStar.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -175,6 +229,9 @@
     },
     "UpdateProject": {
       "name": "UpdateProject",
+      "topics": [
+        "AWS CodeStar"
+      ],
       "description": "Updates a project in CodeStar.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -185,6 +242,9 @@
     },
     "UpdateTeamMember": {
       "name": "UpdateTeamMember",
+      "topics": [
+        "AWS CodeStar"
+      ],
       "description": "Updates team member attributes within a CodeStar project.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -195,6 +255,9 @@
     },
     "UpdateUserProfile": {
       "name": "UpdateUserProfile",
+      "topics": [
+        "AWS CodeStar"
+      ],
       "description": "Updates a profile for a user that includes user preferences, display name, and email.",
       "accessLevel": "Write",
       "resourceTypes": [

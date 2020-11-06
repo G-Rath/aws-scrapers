@@ -3,6 +3,9 @@
   "actions": {
     "CreateCanary": {
       "name": "CreateCanary",
+      "topics": [
+        "Amazon CloudWatch Synthetics"
+      ],
       "description": "Create a canary.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "DeleteCanary": {
       "name": "DeleteCanary",
+      "topics": [
+        "Amazon CloudWatch Synthetics"
+      ],
       "description": "Deletes a canary. Amazon Synthetics deletes all the resources except for the Lambda\n                                                function and the CloudWatch Alarms if you created one.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -21,6 +27,9 @@
     },
     "DescribeCanaries": {
       "name": "DescribeCanaries",
+      "topics": [
+        "Amazon CloudWatch Synthetics"
+      ],
       "description": "Returns information of all canaries.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -29,6 +38,9 @@
     },
     "DescribeCanariesLastRun": {
       "name": "DescribeCanariesLastRun",
+      "topics": [
+        "Amazon CloudWatch Synthetics"
+      ],
       "description": "Returns information about the last test run associated with all canaries.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -37,6 +49,9 @@
     },
     "GetCanaryRuns": {
       "name": "GetCanaryRuns",
+      "topics": [
+        "Amazon CloudWatch Synthetics"
+      ],
       "description": "Returns information about all the test runs associated with a canary.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -47,6 +62,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "Amazon CloudWatch Synthetics"
+      ],
       "description": "Returns a list of all tags and values associated with a canary.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -57,6 +75,9 @@
     },
     "StartCanary": {
       "name": "StartCanary",
+      "topics": [
+        "Amazon CloudWatch Synthetics"
+      ],
       "description": "Starts a canary, so that Amazon Synthetics starts monitoring a website.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -67,6 +88,9 @@
     },
     "StopCanary": {
       "name": "StopCanary",
+      "topics": [
+        "Amazon CloudWatch Synthetics"
+      ],
       "description": "Stops a canary.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -77,6 +101,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "Amazon CloudWatch Synthetics"
+      ],
       "description": "Adds one or more tags to a canary.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -87,6 +114,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "Amazon CloudWatch Synthetics"
+      ],
       "description": "Removes one or more tags from a canary.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -97,6 +127,9 @@
     },
     "UpdateCanary": {
       "name": "UpdateCanary",
+      "topics": [
+        "Amazon CloudWatch Synthetics"
+      ],
       "description": "Updates a canary.",
       "accessLevel": "Write",
       "resourceTypes": [

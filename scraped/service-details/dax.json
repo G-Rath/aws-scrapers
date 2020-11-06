@@ -3,6 +3,9 @@
   "actions": {
     "BatchGetItem": {
       "name": "BatchGetItem",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The BatchGetItem action returns the attributes of one or more items from one or more\n                                                tables.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "BatchWriteItem": {
       "name": "BatchWriteItem",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The BatchWriteItem action operation puts or deletes multiple items in one or more\n                                                tables.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "ConditionCheckItem": {
       "name": "ConditionCheckItem",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The ConditionCheckItem operation checks the existence of a set of attributes for the\n                                                item with the given primary key",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "CreateCluster": {
       "name": "CreateCluster",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The CreateCluster action creates a DAX cluster.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "CreateParameterGroup": {
       "name": "CreateParameterGroup",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The CreateParameterGroup action creates collection of parameters that you apply to\n                                                all of the nodes in a DAX cluster.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -51,6 +66,9 @@
     },
     "CreateSubnetGroup": {
       "name": "CreateSubnetGroup",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The CreateSubnetGroup action creates a new subnet group.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -59,6 +77,9 @@
     },
     "DecreaseReplicationFactor": {
       "name": "DecreaseReplicationFactor",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The DecreaseReplicationFactor action removes one or more nodes from a DAX cluster.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -69,6 +90,9 @@
     },
     "DeleteCluster": {
       "name": "DeleteCluster",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The DeleteCluster action deletes a previously provisioned DAX cluster.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -79,6 +103,9 @@
     },
     "DeleteItem": {
       "name": "DeleteItem",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The DeleteItem action deletes a single item in a table by primary key.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -89,6 +116,9 @@
     },
     "DeleteParameterGroup": {
       "name": "DeleteParameterGroup",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The DeleteParameterGroup action deletes the specified parameter group.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -97,6 +127,9 @@
     },
     "DeleteSubnetGroup": {
       "name": "DeleteSubnetGroup",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The DeleteSubnetGroup action deletes a subnet group.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -105,6 +138,9 @@
     },
     "DescribeClusters": {
       "name": "DescribeClusters",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The DescribeClusters action returns information about all provisioned DAX clusters.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -115,6 +151,9 @@
     },
     "DescribeDefaultParameters": {
       "name": "DescribeDefaultParameters",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The DescribeDefaultParameters action returns the default system parameter information\n                                                for DAX.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -123,6 +162,9 @@
     },
     "DescribeEvents": {
       "name": "DescribeEvents",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The DescribeEvents action returns events related to DAX clusters and parameter groups.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -131,6 +173,9 @@
     },
     "DescribeParameterGroups": {
       "name": "DescribeParameterGroups",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The DescribeParameterGroups action returns a list of parameter group descriptions.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -139,6 +184,9 @@
     },
     "DescribeParameters": {
       "name": "DescribeParameters",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The DescribeParameters action returns the detailed parameter list for a particular\n                                                parameter group.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -147,6 +195,9 @@
     },
     "DescribeSubnetGroups": {
       "name": "DescribeSubnetGroups",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The DescribeSubnetGroups action returns a list of subnet group descriptions.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -155,6 +206,9 @@
     },
     "GetItem": {
       "name": "GetItem",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The GetItem action returns a set of attributes for the item with the given primary\n                                                key.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -165,6 +219,9 @@
     },
     "IncreaseReplicationFactor": {
       "name": "IncreaseReplicationFactor",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The IncreaseReplicationFactor action adds one or more nodes to a DAX cluster.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -175,6 +232,9 @@
     },
     "ListTags": {
       "name": "ListTags",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The ListTags action returns a list all of the tags for a DAX cluster.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -185,6 +245,9 @@
     },
     "PutItem": {
       "name": "PutItem",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The PutItem action creates a new item, or replaces an old item with a new item.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -195,6 +258,9 @@
     },
     "Query": {
       "name": "Query",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The Query action finds items based on primary key values. You can query any table\n                                                or secondary index that has a composite primary key (a partition key and a sort key).",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -205,6 +271,9 @@
     },
     "RebootNode": {
       "name": "RebootNode",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The RebootNode action reboots a single node of a DAX cluster.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -215,6 +284,9 @@
     },
     "Scan": {
       "name": "Scan",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The Scan action returns one or more items and item attributes by accessing every item\n                                                in a table or a secondary index.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -225,6 +297,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The TagResource action associates a set of tags with a DAX resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -235,6 +310,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The UntagResource action removes the association of tags from a DAX resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -245,6 +323,9 @@
     },
     "UpdateCluster": {
       "name": "UpdateCluster",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The UpdateCluster action modifies the settings for a DAX cluster.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -255,6 +336,9 @@
     },
     "UpdateItem": {
       "name": "UpdateItem",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The UpdateItem action edits an existing item's attributes, or adds a new item to the\n                                                table if it does not already exist.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -265,6 +349,9 @@
     },
     "UpdateParameterGroup": {
       "name": "UpdateParameterGroup",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The UpdateParameterGroup action modifies the parameters of a parameter group.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -273,6 +360,9 @@
     },
     "UpdateSubnetGroup": {
       "name": "UpdateSubnetGroup",
+      "topics": [
+        "Amazon DynamoDB Accelerator (DAX)"
+      ],
       "description": "The UpdateSubnetGroup action modifies an existing subnet group.",
       "accessLevel": "Write",
       "resourceTypes": [],

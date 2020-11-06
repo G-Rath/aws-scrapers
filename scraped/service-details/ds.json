@@ -3,6 +3,9 @@
   "actions": {
     "AcceptSharedDirectory": {
       "name": "AcceptSharedDirectory",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Accepts a directory sharing request that was sent from the directory owner account.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "AddIpRoutes": {
       "name": "AddIpRoutes",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Adds a CIDR address block to correctly route traffic to and from your Microsoft AD\n                                                on Amazon Web Services",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "AddTagsToResource": {
       "name": "AddTagsToResource",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Adds or overwrites one or more tags for the specified Amazon Directory Services directory.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "AuthorizeApplication": {
       "name": "AuthorizeApplication",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Authorizes an application for your AWS Directory.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "CancelSchemaExtension": {
       "name": "CancelSchemaExtension",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Cancels an in-progress schema extension to a Microsoft AD directory.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "CheckAlias": {
       "name": "CheckAlias",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Verifies that the alias is available for use.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -61,6 +79,9 @@
     },
     "ConnectDirectory": {
       "name": "ConnectDirectory",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Creates an AD Connector to connect to an on-premises directory.",
       "accessLevel": "Tagging",
       "resourceTypes": [],
@@ -69,6 +90,9 @@
     },
     "CreateAlias": {
       "name": "CreateAlias",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Creates an alias for a directory and assigns the alias to the directory.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -79,6 +103,9 @@
     },
     "CreateComputer": {
       "name": "CreateComputer",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Creates a computer account in the specified directory, and joins the computer to the\n                                                directory.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -89,6 +116,9 @@
     },
     "CreateConditionalForwarder": {
       "name": "CreateConditionalForwarder",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Creates a conditional forwarder associated with your AWS directory.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -99,6 +129,9 @@
     },
     "CreateDirectory": {
       "name": "CreateDirectory",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Creates a Simple AD directory.",
       "accessLevel": "Tagging",
       "resourceTypes": [],
@@ -107,6 +140,9 @@
     },
     "CreateIdentityPoolDirectory": {
       "name": "CreateIdentityPoolDirectory",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Creates a IdentityPool Directory in the AWS cloud.",
       "accessLevel": "Tagging",
       "resourceTypes": [],
@@ -115,6 +151,9 @@
     },
     "CreateLogSubscription": {
       "name": "CreateLogSubscription",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Creates a subscription to forward real time Directory Service domain controller security\n                                                logs to the specified CloudWatch log group in your AWS account.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -125,6 +164,9 @@
     },
     "CreateMicrosoftAD": {
       "name": "CreateMicrosoftAD",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Creates a Microsoft AD in the AWS cloud.",
       "accessLevel": "Tagging",
       "resourceTypes": [],
@@ -133,6 +175,9 @@
     },
     "CreateSnapshot": {
       "name": "CreateSnapshot",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Creates a snapshot of a Simple AD or Microsoft AD directory in the AWS cloud.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -143,6 +188,9 @@
     },
     "CreateTrust": {
       "name": "CreateTrust",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Initiates the creation of the AWS side of a trust relationship between a Microsoft\n                                                AD in the AWS cloud and an external domain.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -153,6 +201,9 @@
     },
     "DeleteConditionalForwarder": {
       "name": "DeleteConditionalForwarder",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Deletes a conditional forwarder that has been set up for your AWS directory.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -163,6 +214,9 @@
     },
     "DeleteDirectory": {
       "name": "DeleteDirectory",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Deletes an AWS Directory Service directory.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -173,6 +227,9 @@
     },
     "DeleteLogSubscription": {
       "name": "DeleteLogSubscription",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Deletes the specified log subscription.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -183,6 +240,9 @@
     },
     "DeleteSnapshot": {
       "name": "DeleteSnapshot",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Deletes a directory snapshot.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -193,6 +253,9 @@
     },
     "DeleteTrust": {
       "name": "DeleteTrust",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Deletes an existing trust relationship between your Microsoft AD in the AWS cloud\n                                                and an external domain.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -203,6 +266,9 @@
     },
     "DeregisterCertificate": {
       "name": "DeregisterCertificate",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Deletes from the system the certificate that was registered for a secured LDAP connection.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -213,6 +279,9 @@
     },
     "DeregisterEventTopic": {
       "name": "DeregisterEventTopic",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Removes the specified directory as a publisher to the specified SNS topic.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -223,6 +292,9 @@
     },
     "DescribeCertificate": {
       "name": "DescribeCertificate",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Displays information about the certificate registered for a secured LDAP connection.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -233,6 +305,9 @@
     },
     "DescribeConditionalForwarders": {
       "name": "DescribeConditionalForwarders",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Obtains information about the conditional forwarders for this account.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -243,6 +318,9 @@
     },
     "DescribeDirectories": {
       "name": "DescribeDirectories",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Obtains information about the directories that belong to this account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -251,6 +329,9 @@
     },
     "DescribeDomainControllers": {
       "name": "DescribeDomainControllers",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Provides information about any domain controllers in your directory.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -261,6 +342,9 @@
     },
     "DescribeEventTopics": {
       "name": "DescribeEventTopics",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Obtains information about which SNS topics receive status messages from the specified\n                                                directory.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -271,6 +355,9 @@
     },
     "DescribeLDAPSSettings": {
       "name": "DescribeLDAPSSettings",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Describes the status of LDAP security for the specified directory.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -281,6 +368,9 @@
     },
     "DescribeSharedDirectories": {
       "name": "DescribeSharedDirectories",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Returns the shared directories in your account.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -291,6 +381,9 @@
     },
     "DescribeSnapshots": {
       "name": "DescribeSnapshots",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Obtains information about the directory snapshots that belong to this account.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -299,6 +392,9 @@
     },
     "DescribeTrusts": {
       "name": "DescribeTrusts",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Obtains information about the trust relationships for this account.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -307,6 +403,9 @@
     },
     "DisableLDAPS": {
       "name": "DisableLDAPS",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Deactivates LDAP secure calls for the specified directory.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -317,6 +416,9 @@
     },
     "DisableRadius": {
       "name": "DisableRadius",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Disables multi-factor authentication (MFA) with the Remote Authentication Dial In\n                                                User Service (RADIUS) server for an AD Connector directory.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -327,6 +429,9 @@
     },
     "DisableSso": {
       "name": "DisableSso",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Disables single-sign on for a directory.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -337,6 +442,9 @@
     },
     "EnableLDAPS": {
       "name": "EnableLDAPS",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Activates the switch for the specific directory to always use LDAP secure calls.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -347,6 +455,9 @@
     },
     "EnableRadius": {
       "name": "EnableRadius",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Enables multi-factor authentication (MFA) with the Remote Authentication Dial In User\n                                                Service (RADIUS) server for an AD Connector directory.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -357,6 +468,9 @@
     },
     "EnableSso": {
       "name": "EnableSso",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Enables single-sign on for a directory.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -367,6 +481,9 @@
     },
     "GetAuthorizedApplicationDetails": {
       "name": "GetAuthorizedApplicationDetails",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -377,6 +494,9 @@
     },
     "GetDirectoryLimits": {
       "name": "GetDirectoryLimits",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Obtains directory limit information for the current region.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -385,6 +505,9 @@
     },
     "GetSnapshotLimits": {
       "name": "GetSnapshotLimits",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Obtains the manual snapshot limits for a directory.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -395,6 +518,9 @@
     },
     "ListAuthorizedApplications": {
       "name": "ListAuthorizedApplications",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Obtains the aws applications authorized for a directory.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -405,6 +531,9 @@
     },
     "ListCertificates": {
       "name": "ListCertificates",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "For the specified directory, lists all the certificates registered for a secured LDAP\n                                                connection.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -415,6 +544,9 @@
     },
     "ListIpRoutes": {
       "name": "ListIpRoutes",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Lists the address blocks that you have added to a directory.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -425,6 +557,9 @@
     },
     "ListLogSubscriptions": {
       "name": "ListLogSubscriptions",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Lists the active log subscriptions for the AWS account.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -433,6 +568,9 @@
     },
     "ListSchemaExtensions": {
       "name": "ListSchemaExtensions",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Lists all schema extensions applied to a Microsoft AD Directory.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -443,6 +581,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Lists all tags on an Amazon Directory Services directory.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -453,6 +594,9 @@
     },
     "RegisterCertificate": {
       "name": "RegisterCertificate",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Registers a certificate for secured LDAP connection.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -463,6 +607,9 @@
     },
     "RegisterEventTopic": {
       "name": "RegisterEventTopic",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Associates a directory with an SNS topic.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -473,6 +620,9 @@
     },
     "RejectSharedDirectory": {
       "name": "RejectSharedDirectory",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Rejects a directory sharing request that was sent from the directory owner account.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -483,6 +633,9 @@
     },
     "RemoveIpRoutes": {
       "name": "RemoveIpRoutes",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Removes IP address blocks from a directory.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -493,6 +646,9 @@
     },
     "RemoveTagsFromResource": {
       "name": "RemoveTagsFromResource",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Removes tags from an Amazon Directory Services directory.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -503,6 +659,9 @@
     },
     "ResetUserPassword": {
       "name": "ResetUserPassword",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Resets the password for any user in your AWS Managed Microsoft AD or Simple AD directory.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -513,6 +672,9 @@
     },
     "RestoreFromSnapshot": {
       "name": "RestoreFromSnapshot",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Restores a directory using an existing directory snapshot.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -523,6 +685,9 @@
     },
     "ShareDirectory": {
       "name": "ShareDirectory",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Shares a specified directory in your AWS account (directory owner) with another AWS\n                                                account (directory consumer). With this operation you can use your directory from\n                                                any AWS account and from any Amazon VPC within an AWS Region.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -533,6 +698,9 @@
     },
     "StartSchemaExtension": {
       "name": "StartSchemaExtension",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Applies a schema extension to a Microsoft AD directory.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -543,6 +711,9 @@
     },
     "UnauthorizeApplication": {
       "name": "UnauthorizeApplication",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Unauthorizes an application from your AWS Directory.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -553,6 +724,9 @@
     },
     "UnshareDirectory": {
       "name": "UnshareDirectory",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Stops the directory sharing between the directory owner and consumer accounts.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -563,6 +737,9 @@
     },
     "UpdateConditionalForwarder": {
       "name": "UpdateConditionalForwarder",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Updates a conditional forwarder that has been set up for your AWS directory.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -573,6 +750,9 @@
     },
     "UpdateNumberOfDomainControllers": {
       "name": "UpdateNumberOfDomainControllers",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Adds or removes domain controllers to or from the directory. Based on the difference\n                                                between current value and new value (provided through this API call), domain controllers\n                                                will be added or removed. It may take up to 45 minutes for any new domain controllers\n                                                to become fully active once the requested number of domain controllers is updated.\n                                                During this time, you cannot make another update request.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -583,6 +763,9 @@
     },
     "UpdateRadius": {
       "name": "UpdateRadius",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Updates the Remote Authentication Dial In User Service (RADIUS) server information\n                                                for an AD Connector directory.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -593,6 +776,9 @@
     },
     "UpdateTrust": {
       "name": "UpdateTrust",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Updates the trust that has been set up between your AWS Managed Microsoft AD directory\n                                                and an on-premises Active Directory.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -603,6 +789,9 @@
     },
     "VerifyTrust": {
       "name": "VerifyTrust",
+      "topics": [
+        "AWS Directory Service"
+      ],
       "description": "Verifies a trust relationship between your Microsoft AD in the AWS cloud and an external\n                                                domain.",
       "accessLevel": "Read",
       "resourceTypes": [

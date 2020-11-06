@@ -3,6 +3,9 @@
   "actions": {
     "AssociateExternalConnection": {
       "name": "AssociateExternalConnection",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to add an external connection to a repository",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "AssociateWithDownstreamRepository": {
       "name": "AssociateWithDownstreamRepository",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to associate an existing repository as an upstream repository to\n                                                another repository",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "CopyPackageVersions": {
       "name": "CopyPackageVersions",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to copy package versions from one repository to another repository\n                                                in the same domain.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "CreateDomain": {
       "name": "CreateDomain",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to create a new domain",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "CreateRepository": {
       "name": "CreateRepository",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to create a new repository",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "DeleteDomain": {
       "name": "DeleteDomain",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to delete a domain",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "DeleteDomainPermissionsPolicy": {
       "name": "DeleteDomainPermissionsPolicy",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to delete the resource policy set on a domain",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "DeletePackageVersions": {
       "name": "DeletePackageVersions",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to delete package versions",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "DeleteRepository": {
       "name": "DeleteRepository",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to delete a repository",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "DeleteRepositoryPermissionsPolicy": {
       "name": "DeleteRepositoryPermissionsPolicy",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to delete the resource policy set on a repository",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "DescribeDomain": {
       "name": "DescribeDomain",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to return information about a domain",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -113,6 +146,9 @@
     },
     "DescribePackageVersion": {
       "name": "DescribePackageVersion",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to return information about a package version",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -123,6 +159,9 @@
     },
     "DescribeRepository": {
       "name": "DescribeRepository",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to return detailed information about a repository",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -133,6 +172,9 @@
     },
     "DisassociateExternalConnection": {
       "name": "DisassociateExternalConnection",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to disassociate an external connection from a repository",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -143,6 +185,9 @@
     },
     "DisposePackageVersions": {
       "name": "DisposePackageVersions",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to set the status of package versions to Disposed and delete their\n                                                assets",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -153,6 +198,9 @@
     },
     "GetAuthorizationToken": {
       "name": "GetAuthorizationToken",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to generate a temporary authentication token for accessing repositories\n                                                in a domain",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -163,6 +211,9 @@
     },
     "GetDomainPermissionsPolicy": {
       "name": "GetDomainPermissionsPolicy",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to return a domain's resource policy",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -173,6 +224,9 @@
     },
     "GetPackageVersionAsset": {
       "name": "GetPackageVersionAsset",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to return an asset (or file) that is part of a package version",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -183,6 +237,9 @@
     },
     "GetPackageVersionReadme": {
       "name": "GetPackageVersionReadme",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to return a package version's readme file",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -193,6 +250,9 @@
     },
     "GetRepositoryEndpoint": {
       "name": "GetRepositoryEndpoint",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to return an endpoint for a repository",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -203,6 +263,9 @@
     },
     "GetRepositoryPermissionsPolicy": {
       "name": "GetRepositoryPermissionsPolicy",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to return a repository's resource policy",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -213,6 +276,9 @@
     },
     "ListDomains": {
       "name": "ListDomains",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to list the domains in the current user's AWS account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -221,6 +287,9 @@
     },
     "ListPackageVersionAssets": {
       "name": "ListPackageVersionAssets",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to list a package version's assets",
       "accessLevel": "List",
       "resourceTypes": [
@@ -231,6 +300,9 @@
     },
     "ListPackageVersionDependencies": {
       "name": "ListPackageVersionDependencies",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to list the direct dependencies of a package version",
       "accessLevel": "List",
       "resourceTypes": [
@@ -241,6 +313,9 @@
     },
     "ListPackageVersions": {
       "name": "ListPackageVersions",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to list a package's versions",
       "accessLevel": "List",
       "resourceTypes": [
@@ -251,6 +326,9 @@
     },
     "ListPackages": {
       "name": "ListPackages",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to list the packages in a repository",
       "accessLevel": "List",
       "resourceTypes": [
@@ -261,6 +339,9 @@
     },
     "ListRepositories": {
       "name": "ListRepositories",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to list the repositories administered by the calling account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -269,6 +350,9 @@
     },
     "ListRepositoriesInDomain": {
       "name": "ListRepositoriesInDomain",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to list the repositories in a domain",
       "accessLevel": "List",
       "resourceTypes": [
@@ -279,6 +363,9 @@
     },
     "PublishPackageVersion": {
       "name": "PublishPackageVersion",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to publish assets and metadata to a repository endpoint",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -289,6 +376,9 @@
     },
     "PutDomainPermissionsPolicy": {
       "name": "PutDomainPermissionsPolicy",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to attach a resource policy to a domain",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -299,6 +389,9 @@
     },
     "PutPackageMetadata": {
       "name": "PutPackageMetadata",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to add, modify or remove package metadata using a repository endpoint",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -309,6 +402,9 @@
     },
     "PutRepositoryPermissionsPolicy": {
       "name": "PutRepositoryPermissionsPolicy",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to attach a resource policy to a repository",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -319,6 +415,9 @@
     },
     "ReadFromRepository": {
       "name": "ReadFromRepository",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to return package assets and metadata from a repository endpoint",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -329,6 +428,9 @@
     },
     "UpdatePackageVersionsStatus": {
       "name": "UpdatePackageVersionsStatus",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to modify the status of one or more versions of a package",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -339,6 +441,9 @@
     },
     "UpdateRepository": {
       "name": "UpdateRepository",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
       "description": "Grants permission to modify the properties of a repository",
       "accessLevel": "Write",
       "resourceTypes": [

@@ -3,6 +3,9 @@
   "actions": {
     "AddPermission": {
       "name": "AddPermission",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Adds a statement to a topic's access control policy, granting access for the specified\n                                                AWS accounts to the specified actions.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "CheckIfPhoneNumberIsOptedOut": {
       "name": "CheckIfPhoneNumberIsOptedOut",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Accepts a phone number and indicates whether the phone holder has opted out of receiving\n                                                SMS messages from your account.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -21,6 +27,9 @@
     },
     "ConfirmSubscription": {
       "name": "ConfirmSubscription",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Verifies an endpoint owner's intent to receive messages by validating the token sent\n                                                to the endpoint by an earlier Subscribe action.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -31,6 +40,9 @@
     },
     "CreatePlatformApplication": {
       "name": "CreatePlatformApplication",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Creates a platform application object for one of the supported push notification services,\n                                                such as APNS and GCM, to which devices and mobile apps may register.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -39,6 +51,9 @@
     },
     "CreatePlatformEndpoint": {
       "name": "CreatePlatformEndpoint",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Creates an endpoint for a device and mobile app on one of the supported push notification\n                                                services, such as GCM and APNS.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -47,6 +62,9 @@
     },
     "CreateTopic": {
       "name": "CreateTopic",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Creates a topic to which notifications can be published.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -57,6 +75,9 @@
     },
     "DeleteEndpoint": {
       "name": "DeleteEndpoint",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Deletes the endpoint for a device and mobile app from Amazon SNS.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -65,6 +86,9 @@
     },
     "DeletePlatformApplication": {
       "name": "DeletePlatformApplication",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Deletes a platform application object for one of the supported push notification services,\n                                                such as APNS and GCM.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -73,6 +97,9 @@
     },
     "DeleteTopic": {
       "name": "DeleteTopic",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Deletes a topic and all its subscriptions.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -83,6 +110,9 @@
     },
     "GetEndpointAttributes": {
       "name": "GetEndpointAttributes",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Retrieves the endpoint attributes for a device on one of the supported push notification\n                                                services, such as GCM and APNS.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -91,6 +121,9 @@
     },
     "GetPlatformApplicationAttributes": {
       "name": "GetPlatformApplicationAttributes",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Retrieves the attributes of the platform application object for the supported push\n                                                notification services, such as APNS and GCM.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -99,6 +132,9 @@
     },
     "GetSMSAttributes": {
       "name": "GetSMSAttributes",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Returns the settings for sending SMS messages from your account.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -107,6 +143,9 @@
     },
     "GetSubscriptionAttributes": {
       "name": "GetSubscriptionAttributes",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Returns all of the properties of a subscription.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -115,6 +154,9 @@
     },
     "GetTopicAttributes": {
       "name": "GetTopicAttributes",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Returns all of the properties of a topic. Topic properties returned might differ based\n                                                on the authorization of the user.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -125,6 +167,9 @@
     },
     "ListEndpointsByPlatformApplication": {
       "name": "ListEndpointsByPlatformApplication",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Lists the endpoints and endpoint attributes for devices in a supported push notification\n                                                service, such as GCM and APNS.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -133,6 +178,9 @@
     },
     "ListPhoneNumbersOptedOut": {
       "name": "ListPhoneNumbersOptedOut",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Returns a list of phone numbers that are opted out, meaning you cannot send SMS messages\n                                                to them.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -141,6 +189,9 @@
     },
     "ListPlatformApplications": {
       "name": "ListPlatformApplications",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Lists the platform application objects for the supported push notification services,\n                                                such as APNS and GCM.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -149,6 +200,9 @@
     },
     "ListSubscriptions": {
       "name": "ListSubscriptions",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Returns a list of the requester's subscriptions.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -157,6 +211,9 @@
     },
     "ListSubscriptionsByTopic": {
       "name": "ListSubscriptionsByTopic",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Returns a list of the subscriptions to a specific topic.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -167,6 +224,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "List all tags added to the specified Amazon SNS topic.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -177,6 +237,9 @@
     },
     "ListTopics": {
       "name": "ListTopics",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Returns a list of the requester's topics. Each call returns a limited list of topics,\n                                                up to 100.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -185,6 +248,9 @@
     },
     "OptInPhoneNumber": {
       "name": "OptInPhoneNumber",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Opts in a phone number that is currently opted out, which enables you to resume sending\n                                                SMS messages to the number.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -193,6 +259,9 @@
     },
     "Publish": {
       "name": "Publish",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Sends a message to all of a topic's subscribed endpoints.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -203,6 +272,9 @@
     },
     "RemovePermission": {
       "name": "RemovePermission",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Removes a statement from a topic's access control policy.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -213,6 +285,9 @@
     },
     "SetEndpointAttributes": {
       "name": "SetEndpointAttributes",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Sets the attributes for an endpoint for a device on one of the supported push notification\n                                                services, such as GCM and APNS.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -221,6 +296,9 @@
     },
     "SetPlatformApplicationAttributes": {
       "name": "SetPlatformApplicationAttributes",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Sets the attributes of the platform application object for the supported push notification\n                                                services, such as APNS and GCM.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -229,6 +307,9 @@
     },
     "SetSMSAttributes": {
       "name": "SetSMSAttributes",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Set the default settings for sending SMS messages and receiving daily SMS usage reports.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -237,6 +318,9 @@
     },
     "SetSubscriptionAttributes": {
       "name": "SetSubscriptionAttributes",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Allows a subscription owner to set an attribute of the topic to a new value.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -245,6 +329,9 @@
     },
     "SetTopicAttributes": {
       "name": "SetTopicAttributes",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Allows a topic owner to set an attribute of the topic to a new value.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -255,6 +342,9 @@
     },
     "Subscribe": {
       "name": "Subscribe",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Prepares to subscribe an endpoint by sending the endpoint a confirmation message.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -265,6 +355,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Add tags to the specified Amazon SNS topic.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -275,6 +368,9 @@
     },
     "Unsubscribe": {
       "name": "Unsubscribe",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Deletes a subscription. If the subscription requires authentication for deletion,\n                                                only the owner of the subscription or the topic's owner can unsubscribe, and an AWS\n                                                signature is required.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -283,6 +379,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "Amazon SNS"
+      ],
       "description": "Remove tags from the specified Amazon SNS topic.",
       "accessLevel": "Tagging",
       "resourceTypes": [

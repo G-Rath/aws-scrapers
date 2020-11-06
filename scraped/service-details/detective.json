@@ -3,6 +3,9 @@
   "actions": {
     "AcceptInvitation": {
       "name": "AcceptInvitation",
+      "topics": [
+        "Amazon Detective"
+      ],
       "description": "Grants permission to accept an invitation to become a member of a behavior graph",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "CreateGraph": {
       "name": "CreateGraph",
+      "topics": [
+        "Amazon Detective"
+      ],
       "description": "Grants permission to create a behavior graph and begin to aggregate security information",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -21,6 +27,9 @@
     },
     "CreateMembers": {
       "name": "CreateMembers",
+      "topics": [
+        "Amazon Detective"
+      ],
       "description": "Grants permission to request the membership of one or more accounts in a behavior\n                                                graph managed by this account",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -31,6 +40,9 @@
     },
     "DeleteGraph": {
       "name": "DeleteGraph",
+      "topics": [
+        "Amazon Detective"
+      ],
       "description": "Grants permission to delete a behavior graph and stop aggregating security information",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -41,6 +53,9 @@
     },
     "DeleteMembers": {
       "name": "DeleteMembers",
+      "topics": [
+        "Amazon Detective"
+      ],
       "description": "Grants permission to remove member accounts from a behavior graph managed by this\n                                                account",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -51,6 +66,9 @@
     },
     "DisassociateMembership": {
       "name": "DisassociateMembership",
+      "topics": [
+        "Amazon Detective"
+      ],
       "description": "Grants permission to remove the association of this account with a behavior graph",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -61,6 +79,9 @@
     },
     "GetFreeTrialEligibility": {
       "name": "GetFreeTrialEligibility",
+      "topics": [
+        "Amazon Detective"
+      ],
       "description": "Grants permission to retrieve a behavior graph's eligibility for a free trial period",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -71,6 +92,9 @@
     },
     "GetGraphIngestState": {
       "name": "GetGraphIngestState",
+      "topics": [
+        "Amazon Detective"
+      ],
       "description": "Grants permission to retrieve the data ingestion state of a behavior graph",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -81,6 +105,9 @@
     },
     "GetMembers": {
       "name": "GetMembers",
+      "topics": [
+        "Amazon Detective"
+      ],
       "description": "Grants permission to retrieve details on specified members of a behavior graph",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -91,6 +118,9 @@
     },
     "GetPricingInformation": {
       "name": "GetPricingInformation",
+      "topics": [
+        "Amazon Detective"
+      ],
       "description": "Grants permission to retrieve information about Amazon Detective's pricing",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -99,6 +129,9 @@
     },
     "GetUsageInformation": {
       "name": "GetUsageInformation",
+      "topics": [
+        "Amazon Detective"
+      ],
       "description": "Grants permission to list usage information of a behavior graph",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -109,6 +142,9 @@
     },
     "ListGraphs": {
       "name": "ListGraphs",
+      "topics": [
+        "Amazon Detective"
+      ],
       "description": "Grants permission to list behavior graphs managed by this account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -117,6 +153,9 @@
     },
     "ListInvitations": {
       "name": "ListInvitations",
+      "topics": [
+        "Amazon Detective"
+      ],
       "description": "Grants permission to retrieve details on the behavior graphs to which this account\n                                                has been invited to join",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -125,6 +164,9 @@
     },
     "ListMembers": {
       "name": "ListMembers",
+      "topics": [
+        "Amazon Detective"
+      ],
       "description": "Grants permission to retrieve details on all members of a behavior graph",
       "accessLevel": "List",
       "resourceTypes": [
@@ -135,6 +177,9 @@
     },
     "RejectInvitation": {
       "name": "RejectInvitation",
+      "topics": [
+        "Amazon Detective"
+      ],
       "description": "Grants permission to reject an invitation to become a member of a behavior graph",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -145,6 +190,9 @@
     },
     "SearchGraph": {
       "name": "SearchGraph",
+      "topics": [
+        "Amazon Detective"
+      ],
       "description": "Grants permission to search the data stored in a behavior graph",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -155,6 +203,9 @@
     },
     "StartMonitoringMember": {
       "name": "StartMonitoringMember",
+      "topics": [
+        "Amazon Detective"
+      ],
       "description": "Grants permission to start data ingest for a member account that has a status of ACCEPTED_BUT_DISABLED.",
       "accessLevel": "Write",
       "resourceTypes": [

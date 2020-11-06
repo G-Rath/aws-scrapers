@@ -3,6 +3,9 @@
   "actions": {
     "AddTagsToStream": {
       "name": "AddTagsToStream",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Adds or updates tags for the specified Amazon Kinesis stream. Each stream can have\n                                                up to 10 tags.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "CreateStream": {
       "name": "CreateStream",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Creates a Amazon Kinesis stream.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "DecreaseStreamRetentionPeriod": {
       "name": "DecreaseStreamRetentionPeriod",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Decreases the stream's retention period, which is the length of time data records\n                                                are accessible after they are added to the stream.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "DeleteStream": {
       "name": "DeleteStream",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Deletes a stream and all its shards and data.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "DeregisterStreamConsumer": {
       "name": "DeregisterStreamConsumer",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Deregisters a stream consumer with a Kinesis data stream.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "DescribeLimits": {
       "name": "DescribeLimits",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Describes the shard limits and usage for the account.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -61,6 +79,9 @@
     },
     "DescribeStream": {
       "name": "DescribeStream",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Describes the specified stream.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -71,6 +92,9 @@
     },
     "DescribeStreamConsumer": {
       "name": "DescribeStreamConsumer",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Gets the description of a registered stream consumer.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -81,6 +105,9 @@
     },
     "DescribeStreamSummary": {
       "name": "DescribeStreamSummary",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Provides a summarized description of the specified Kinesis data stream without the\n                                                shard list.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -91,6 +118,9 @@
     },
     "DisableEnhancedMonitoring": {
       "name": "DisableEnhancedMonitoring",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Disables enhanced monitoring.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -99,6 +129,9 @@
     },
     "EnableEnhancedMonitoring": {
       "name": "EnableEnhancedMonitoring",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "API_EnableEnhancedMonitoring.html",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -107,6 +140,9 @@
     },
     "GetRecords": {
       "name": "GetRecords",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Gets data records from a shard.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -117,6 +153,9 @@
     },
     "GetShardIterator": {
       "name": "GetShardIterator",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Gets a shard iterator. A shard iterator expires five minutes after it is returned\n                                                to the requester.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -127,6 +166,9 @@
     },
     "IncreaseStreamRetentionPeriod": {
       "name": "IncreaseStreamRetentionPeriod",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Increases the stream's retention period, which is the length of time data records\n                                                are accessible after they are added to the stream.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -137,6 +179,9 @@
     },
     "ListShards": {
       "name": "ListShards",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Lists the shards in a stream and provides information about each shard.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -145,6 +190,9 @@
     },
     "ListStreamConsumers": {
       "name": "ListStreamConsumers",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Lists the stream consumers registered to receive data from a Kinesis stream using\n                                                enhanced fan-out, and provides information about each consumer.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -153,6 +201,9 @@
     },
     "ListStreams": {
       "name": "ListStreams",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Lists your streams.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -161,6 +212,9 @@
     },
     "ListTagsForStream": {
       "name": "ListTagsForStream",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Lists the tags for the specified Amazon Kinesis stream.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -171,6 +225,9 @@
     },
     "MergeShards": {
       "name": "MergeShards",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Merges two adjacent shards in a stream and combines them into a single shard to reduce\n                                                the stream's capacity to ingest and transport data.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -181,6 +238,9 @@
     },
     "PutRecord": {
       "name": "PutRecord",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Writes a single data record from a producer into an Amazon Kinesis stream.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -191,6 +251,9 @@
     },
     "PutRecords": {
       "name": "PutRecords",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Writes multiple data records from a producer into an Amazon Kinesis stream in a single\n                                                call (also referred to as a PutRecords request).",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -201,6 +264,9 @@
     },
     "RegisterStreamConsumer": {
       "name": "RegisterStreamConsumer",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Registers a stream consumer with a Kinesis data stream.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -211,6 +277,9 @@
     },
     "RemoveTagsFromStream": {
       "name": "RemoveTagsFromStream",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Description for SplitShard",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -221,6 +290,9 @@
     },
     "SplitShard": {
       "name": "SplitShard",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Description for SplitShard",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -231,6 +303,9 @@
     },
     "StartStreamEncryption": {
       "name": "StartStreamEncryption",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Grants permission to enable or update server-side encryption using an AWS KMS key\n                                                for a specified stream.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -241,6 +316,9 @@
     },
     "StopStreamEncryption": {
       "name": "StopStreamEncryption",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Grants permission to disable server-side encryption for a specified stream.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -251,6 +329,9 @@
     },
     "SubscribeToShard": {
       "name": "SubscribeToShard",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Listening to a specific shard with enhanced fan-out.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -261,6 +342,9 @@
     },
     "UpdateShardCount": {
       "name": "UpdateShardCount",
+      "topics": [
+        "Amazon Kinesis"
+      ],
       "description": "Updates the shard count of the specified stream to the specified number of shards.",
       "accessLevel": "Write",
       "resourceTypes": [],

@@ -3,6 +3,9 @@
   "actions": {
     "DeletePlaybackConfiguration": {
       "name": "DeletePlaybackConfiguration",
+      "topics": [
+        "AWS Elemental MediaTailor"
+      ],
       "description": "Deletes the playback configuration for the specified name",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "GetPlaybackConfiguration": {
       "name": "GetPlaybackConfiguration",
+      "topics": [
+        "AWS Elemental MediaTailor"
+      ],
       "description": "Grants permission to retrieve the configuration for the specified name",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "ListPlaybackConfigurations": {
       "name": "ListPlaybackConfigurations",
+      "topics": [
+        "AWS Elemental MediaTailor"
+      ],
       "description": "Grants permission to retrieve the list of available configurations",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -31,6 +40,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "AWS Elemental MediaTailor"
+      ],
       "description": "Returns a list of the tags assigned to the specified playback configuration resource.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -39,6 +51,9 @@
     },
     "PutPlaybackConfiguration": {
       "name": "PutPlaybackConfiguration",
+      "topics": [
+        "AWS Elemental MediaTailor"
+      ],
       "description": "Grants permission to add a new configuration",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -49,6 +64,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS Elemental MediaTailor"
+      ],
       "description": "Adds tags to the specified playback configuration resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [],
@@ -57,6 +75,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS Elemental MediaTailor"
+      ],
       "description": "Removes tags from the specified playback configuration resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [],

@@ -3,6 +3,9 @@
   "actions": {
     "AddMemberToGroup": {
       "name": "AddMemberToGroup",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to add a member to a group in the directory that AWS SSO provides\n                                                by default",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "CompleteVirtualMfaDeviceRegistration": {
       "name": "CompleteVirtualMfaDeviceRegistration",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to complete the creation process of a virtual MFA device",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -19,6 +25,9 @@
     },
     "CreateAlias": {
       "name": "CreateAlias",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to create an alias for the directory that AWS SSO provides by default",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -27,6 +36,9 @@
     },
     "CreateBearerToken": {
       "name": "CreateBearerToken",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to create a bearer token for a given provisioning tenant",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -35,6 +47,9 @@
     },
     "CreateExternalIdPConfigurationForDirectory": {
       "name": "CreateExternalIdPConfigurationForDirectory",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to create an External Identity Provider configuration for the directory",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -43,6 +58,9 @@
     },
     "CreateGroup": {
       "name": "CreateGroup",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to create a group in the directory that AWS SSO provides by default",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -51,6 +69,9 @@
     },
     "CreateProvisioningTenant": {
       "name": "CreateProvisioningTenant",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to create a provisioning tenant for a given directory",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -59,6 +80,9 @@
     },
     "CreateUser": {
       "name": "CreateUser",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to create a user in the directory that AWS SSO provides by default",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -67,6 +91,9 @@
     },
     "DeleteBearerToken": {
       "name": "DeleteBearerToken",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to delete a bearer token",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -75,6 +102,9 @@
     },
     "DeleteExternalIdPCertificate": {
       "name": "DeleteExternalIdPCertificate",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to delete the given external IdP certificate",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -83,6 +113,9 @@
     },
     "DeleteExternalIdPConfigurationForDirectory": {
       "name": "DeleteExternalIdPConfigurationForDirectory",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to delete an External Identity Provider configuration associated\n                                                with the directory",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -91,6 +124,9 @@
     },
     "DeleteGroup": {
       "name": "DeleteGroup",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to delete a group from the directory that AWS SSO provides by default",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -99,6 +135,9 @@
     },
     "DeleteMfaDeviceForUser": {
       "name": "DeleteMfaDeviceForUser",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to delete a MFA device by device name for a given user",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -107,6 +146,9 @@
     },
     "DeleteProvisioningTenant": {
       "name": "DeleteProvisioningTenant",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to delete the provisioning tenant",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -115,6 +157,9 @@
     },
     "DeleteUser": {
       "name": "DeleteUser",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to delete a user from the directory that AWS SSO provides by default",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -123,6 +168,9 @@
     },
     "DescribeDirectory": {
       "name": "DescribeDirectory",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to retrieve information about the directory that AWS SSO provides\n                                                by default",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -131,6 +179,9 @@
     },
     "DescribeGroups": {
       "name": "DescribeGroups",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to retrieve information about a group from the directory that AWS\n                                                SSO provides by default",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -139,6 +190,9 @@
     },
     "DescribeUser": {
       "name": "DescribeUser",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to retrieve information about a user from the directory that AWS\n                                                SSO provides by default",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -147,6 +201,9 @@
     },
     "DescribeUsers": {
       "name": "DescribeUsers",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to retrieve information about user from the directory that AWS SSO\n                                                provides by default",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -155,6 +212,9 @@
     },
     "DisableExternalIdPConfigurationForDirectory": {
       "name": "DisableExternalIdPConfigurationForDirectory",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to disable authentication of end users with an External Identity\n                                                Provider",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -163,6 +223,9 @@
     },
     "DisableUser": {
       "name": "DisableUser",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to deactivate a user in the directory that AWS SSO provides by default",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -171,6 +234,9 @@
     },
     "EnableExternalIdPConfigurationForDirectory": {
       "name": "EnableExternalIdPConfigurationForDirectory",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to enable authentication of end users with an External Identity\n                                                Provider",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -179,6 +245,9 @@
     },
     "EnableUser": {
       "name": "EnableUser",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to activate user in the directory that AWS SSO provides by default",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -187,6 +256,9 @@
     },
     "GetAWSSPConfigurationForDirectory": {
       "name": "GetAWSSPConfigurationForDirectory",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to retrieve the AWS SSO Service Provider configurations for the\n                                                directory",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -195,6 +267,9 @@
     },
     "ImportExternalIdPCertificate": {
       "name": "ImportExternalIdPCertificate",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to import the IdP certificate used for verifying external IdP responses",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -203,6 +278,9 @@
     },
     "IsMemberInGroup": {
       "name": "IsMemberInGroup",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to check if a member is a part of the group in the directory that\n                                                AWS SSO provides by default",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -211,6 +289,9 @@
     },
     "ListBearerTokens": {
       "name": "ListBearerTokens",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to list bearer tokens for a given provisioning tenant",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -219,6 +300,9 @@
     },
     "ListExternalIdPCertificates": {
       "name": "ListExternalIdPCertificates",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to list the external IdP certificates of a given directory and IdP",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -227,6 +311,9 @@
     },
     "ListExternalIdPConfigurationsForDirectory": {
       "name": "ListExternalIdPConfigurationsForDirectory",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to list all the External Identity Provider configurations created\n                                                for the directory",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -235,6 +322,9 @@
     },
     "ListGroupsForUser": {
       "name": "ListGroupsForUser",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to list groups for a user from the directory that AWS SSO provides\n                                                by default",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -243,6 +333,9 @@
     },
     "ListMembersInGroup": {
       "name": "ListMembersInGroup",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to retrieve all members that are part of a group in the directory\n                                                that AWS SSO provides by default",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -251,6 +344,9 @@
     },
     "ListMfaDevicesForUser": {
       "name": "ListMfaDevicesForUser",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to list all active MFA devices and their MFA device metadata for\n                                                a user",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -259,6 +355,9 @@
     },
     "ListProvisioningTenants": {
       "name": "ListProvisioningTenants",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to list provisioning tenants for a given directory",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -267,6 +366,9 @@
     },
     "RemoveMemberFromGroup": {
       "name": "RemoveMemberFromGroup",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to remove a member that is part of a group in the directory that\n                                                AWS SSO provides by default",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -275,6 +377,9 @@
     },
     "SearchGroups": {
       "name": "SearchGroups",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to search for groups within the associated directory",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -283,6 +388,9 @@
     },
     "SearchUsers": {
       "name": "SearchUsers",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to search for users within the associated directory",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -291,6 +399,9 @@
     },
     "StartVirtualMfaDeviceRegistration": {
       "name": "StartVirtualMfaDeviceRegistration",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to begin the creation process of virtual mfa device",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -299,6 +410,9 @@
     },
     "UpdateExternalIdPConfigurationForDirectory": {
       "name": "UpdateExternalIdPConfigurationForDirectory",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to update an External Identity Provider configuration associated\n                                                with the directory",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -307,6 +421,9 @@
     },
     "UpdateGroup": {
       "name": "UpdateGroup",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to update information about a group in the directory that AWS SSO\n                                                provides by default",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -315,6 +432,9 @@
     },
     "UpdatePassword": {
       "name": "UpdatePassword",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to update a password by sending password reset link via email or\n                                                generating one time password for a user in the directory that AWS SSO provides by\n                                                default",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -323,6 +443,9 @@
     },
     "UpdateUser": {
       "name": "UpdateUser",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to update user information in the directory that AWS SSO provides\n                                                by default",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -331,6 +454,9 @@
     },
     "VerifyEmail": {
       "name": "VerifyEmail",
+      "topics": [
+        "AWS SSO Directory"
+      ],
       "description": "Grants permission to verify an email address of an User",
       "accessLevel": "Write",
       "resourceTypes": [],

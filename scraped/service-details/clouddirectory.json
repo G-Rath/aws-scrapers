@@ -3,6 +3,9 @@
   "actions": {
     "AddFacetToObject": {
       "name": "AddFacetToObject",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Adds a new Facet to an object.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "ApplySchema": {
       "name": "ApplySchema",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Copies input published schema into Directory with same name and version as that of\n                                                published schema.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "AttachObject": {
       "name": "AttachObject",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Attaches an existing object to another existing object.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "AttachPolicy": {
       "name": "AttachPolicy",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Attaches a policy object to any other object.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "AttachToIndex": {
       "name": "AttachToIndex",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Attaches the specified object to the specified index.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "AttachTypedLink": {
       "name": "AttachTypedLink",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Attaches a typed link b/w a source & target object reference.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "BatchRead": {
       "name": "BatchRead",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Performs all the read operations in a batch. Each individual operation inside BatchRead\n                                                needs to be granted permissions explicitly.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "BatchWrite": {
       "name": "BatchWrite",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Performs all the write operations in a batch. Each individual operation inside BatchWrite\n                                                needs to be granted permissions explicitly.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "CreateDirectory": {
       "name": "CreateDirectory",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Creates a Directory by copying the published schema into the directory.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "CreateFacet": {
       "name": "CreateFacet",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Creates a new Facet in a schema.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "CreateIndex": {
       "name": "CreateIndex",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Creates an index object.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -113,6 +146,9 @@
     },
     "CreateObject": {
       "name": "CreateObject",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Creates an object in a Directory.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -123,6 +159,9 @@
     },
     "CreateSchema": {
       "name": "CreateSchema",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Creates a new schema in a development state.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -131,6 +170,9 @@
     },
     "CreateTypedLinkFacet": {
       "name": "CreateTypedLinkFacet",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Creates a new Typed Link facet in a schema.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -141,6 +183,9 @@
     },
     "DeleteDirectory": {
       "name": "DeleteDirectory",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Deletes a directory. Only disabled directories can be deleted.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -151,6 +196,9 @@
     },
     "DeleteFacet": {
       "name": "DeleteFacet",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Deletes a given Facet. All attributes and Rules associated with the facet will be\n                                                deleted.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -161,6 +209,9 @@
     },
     "DeleteObject": {
       "name": "DeleteObject",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Deletes an object and its associated attributes.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -171,6 +222,9 @@
     },
     "DeleteSchema": {
       "name": "DeleteSchema",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Deletes a given schema.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -181,6 +235,9 @@
     },
     "DeleteTypedLinkFacet": {
       "name": "DeleteTypedLinkFacet",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Deletes a given TypedLink Facet. All attributes and Rules associated with the facet\n                                                will be deleted.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -191,6 +248,9 @@
     },
     "DetachFromIndex": {
       "name": "DetachFromIndex",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Detaches the specified object from the specified index.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -201,6 +261,9 @@
     },
     "DetachObject": {
       "name": "DetachObject",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Detaches a given object from the parent object.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -211,6 +274,9 @@
     },
     "DetachPolicy": {
       "name": "DetachPolicy",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Detaches a policy from an object.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -221,6 +287,9 @@
     },
     "DetachTypedLink": {
       "name": "DetachTypedLink",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Detaches a given typed link b/w given source and target object reference.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -231,6 +300,9 @@
     },
     "DisableDirectory": {
       "name": "DisableDirectory",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Disables the specified directory.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -241,6 +313,9 @@
     },
     "EnableDirectory": {
       "name": "EnableDirectory",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Enables the specified directory.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -251,6 +326,9 @@
     },
     "GetDirectory": {
       "name": "GetDirectory",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Retrieves metadata about a directory.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -261,6 +339,9 @@
     },
     "GetFacet": {
       "name": "GetFacet",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Gets details of the Facet, such as Facet Name, Attributes, Rules, or ObjectType.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -271,6 +352,9 @@
     },
     "GetLinkAttributes": {
       "name": "GetLinkAttributes",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Retrieves attributes that are associated with a typed link.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -281,6 +365,9 @@
     },
     "GetObjectAttributes": {
       "name": "GetObjectAttributes",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Retrieves attributes within a facet that are associated with an object.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -291,6 +378,9 @@
     },
     "GetObjectInformation": {
       "name": "GetObjectInformation",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Retrieves metadata about an object.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -301,6 +391,9 @@
     },
     "GetSchemaAsJson": {
       "name": "GetSchemaAsJson",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Retrieves a JSON representation of the schema.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -311,6 +404,9 @@
     },
     "GetTypedLinkFacetInformation": {
       "name": "GetTypedLinkFacetInformation",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Returns identity attributes order information associated with a given typed link facet.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -321,6 +417,9 @@
     },
     "ListAppliedSchemaArns": {
       "name": "ListAppliedSchemaArns",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Lists schemas applied to a directory.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -331,6 +430,9 @@
     },
     "ListAttachedIndices": {
       "name": "ListAttachedIndices",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Lists indices attached to an object.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -341,6 +443,9 @@
     },
     "ListDevelopmentSchemaArns": {
       "name": "ListDevelopmentSchemaArns",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Retrieves the ARNs of schemas in the development state.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -349,6 +454,9 @@
     },
     "ListDirectories": {
       "name": "ListDirectories",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Lists directories created within an account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -357,6 +465,9 @@
     },
     "ListFacetAttributes": {
       "name": "ListFacetAttributes",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Retrieves attributes attached to the facet.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -367,6 +478,9 @@
     },
     "ListFacetNames": {
       "name": "ListFacetNames",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Retrieves the names of facets that exist in a schema.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -377,6 +491,9 @@
     },
     "ListIncomingTypedLinks": {
       "name": "ListIncomingTypedLinks",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Returns a paginated list of all incoming TypedLinks for a given object.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -387,6 +504,9 @@
     },
     "ListIndex": {
       "name": "ListIndex",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Lists objects attached to the specified index.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -397,6 +517,9 @@
     },
     "ListObjectAttributes": {
       "name": "ListObjectAttributes",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Lists all attributes associated with an object.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -407,6 +530,9 @@
     },
     "ListObjectChildren": {
       "name": "ListObjectChildren",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Returns a paginated list of child objects associated with a given object.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -417,6 +543,9 @@
     },
     "ListObjectParentPaths": {
       "name": "ListObjectParentPaths",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Retrieves all available parent paths for any object type such as node, leaf node,\n                                                policy node, and index node objects.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -427,6 +556,9 @@
     },
     "ListObjectParents": {
       "name": "ListObjectParents",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Lists parent objects associated with a given object in pagination fashion.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -437,6 +569,9 @@
     },
     "ListObjectPolicies": {
       "name": "ListObjectPolicies",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Returns policies attached to an object in pagination fashion.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -447,6 +582,9 @@
     },
     "ListOutgoingTypedLinks": {
       "name": "ListOutgoingTypedLinks",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Returns a paginated list of all outgoing TypedLinks for a given object.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -457,6 +595,9 @@
     },
     "ListPolicyAttachments": {
       "name": "ListPolicyAttachments",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Returns all of the ObjectIdentifiers to which a given policy is attached.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -467,6 +608,9 @@
     },
     "ListPublishedSchemaArns": {
       "name": "ListPublishedSchemaArns",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Retrieves published schema ARNs.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -475,6 +619,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Returns tags for a resource.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -485,6 +632,9 @@
     },
     "ListTypedLinkFacetAttributes": {
       "name": "ListTypedLinkFacetAttributes",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Returns a paginated list of attributes associated with typed link facet.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -495,6 +645,9 @@
     },
     "ListTypedLinkFacetNames": {
       "name": "ListTypedLinkFacetNames",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Returns a paginated list of typed link facet names that exist in a schema.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -505,6 +658,9 @@
     },
     "LookupPolicy": {
       "name": "LookupPolicy",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Lists all policies from the root of the Directory to the object specified.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -515,6 +671,9 @@
     },
     "PublishSchema": {
       "name": "PublishSchema",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Publishes a development schema with a version.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -525,6 +684,9 @@
     },
     "PutSchemaFromJson": {
       "name": "PutSchemaFromJson",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Allows a schema to be updated using JSON upload. Only available for development schemas.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -533,6 +695,9 @@
     },
     "RemoveFacetFromObject": {
       "name": "RemoveFacetFromObject",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Removes the specified facet from the specified object.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -543,6 +708,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Adds tags to a resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -553,6 +721,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Removes tags from a resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -563,6 +734,9 @@
     },
     "UpdateFacet": {
       "name": "UpdateFacet",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Adds/Updates/Deletes existing Attributes, Rules, or ObjectType of a Facet.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -573,6 +747,9 @@
     },
     "UpdateLinkAttributes": {
       "name": "UpdateLinkAttributes",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Updates a given typed link’s attributes. Attributes to be updated must not contribute\n                                                to the typed link’s identity, as defined by its IdentityAttributeOrder.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -583,6 +760,9 @@
     },
     "UpdateObjectAttributes": {
       "name": "UpdateObjectAttributes",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Updates a given object's attributes.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -593,6 +773,9 @@
     },
     "UpdateSchema": {
       "name": "UpdateSchema",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Updates the schema name with a new name.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -603,6 +786,9 @@
     },
     "UpdateTypedLinkFacet": {
       "name": "UpdateTypedLinkFacet",
+      "topics": [
+        "Amazon Cloud Directory"
+      ],
       "description": "Adds/Updates/Deletes existing Attributes, Rules, identity attribute order of a TypedLink\n                                                Facet.",
       "accessLevel": "Write",
       "resourceTypes": [

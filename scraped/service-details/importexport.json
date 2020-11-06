@@ -3,6 +3,9 @@
   "actions": {
     "CancelJob": {
       "name": "CancelJob",
+      "topics": [
+        "AWS Import Export Disk Service"
+      ],
       "description": "This action cancels a specified job. Only the job owner can cancel it. The action\n                                                fails if the job has already started or is complete.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "CreateJob": {
       "name": "CreateJob",
+      "topics": [
+        "AWS Import Export Disk Service"
+      ],
       "description": "This action initiates the process of scheduling an upload or download of your data.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -19,6 +25,9 @@
     },
     "GetShippingLabel": {
       "name": "GetShippingLabel",
+      "topics": [
+        "AWS Import Export Disk Service"
+      ],
       "description": "This action generates a pre-paid shipping label that you will use to ship your device\n                                                to AWS for processing.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -27,6 +36,9 @@
     },
     "GetStatus": {
       "name": "GetStatus",
+      "topics": [
+        "AWS Import Export Disk Service"
+      ],
       "description": "This action returns information about a job, including where the job is in the processing\n                                                pipeline, the status of the results, and the signature value associated with the job.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -35,6 +47,9 @@
     },
     "ListJobs": {
       "name": "ListJobs",
+      "topics": [
+        "AWS Import Export Disk Service"
+      ],
       "description": "This action returns the jobs associated with the requester.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -43,6 +58,9 @@
     },
     "UpdateJob": {
       "name": "UpdateJob",
+      "topics": [
+        "AWS Import Export Disk Service"
+      ],
       "description": "You use this action to change the parameters specified in the original manifest file\n                                                by supplying a new manifest file.",
       "accessLevel": "Write",
       "resourceTypes": [],

@@ -3,6 +3,9 @@
   "actions": {
     "AbortMultipartUpload": {
       "name": "AbortMultipartUpload",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to abort a multipart upload",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "BypassGovernanceRetention": {
       "name": "BypassGovernanceRetention",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to allow circumvention of governance-mode object retention settings",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "CreateAccessPoint": {
       "name": "CreateAccessPoint",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to create a new access point",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "CreateBucket": {
       "name": "CreateBucket",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to create a new bucket",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "CreateJob": {
       "name": "CreateJob",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to create a new Amazon S3 Batch Operations job",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -51,6 +66,9 @@
     },
     "DeleteAccessPoint": {
       "name": "DeleteAccessPoint",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to delete the access point named in the URI",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -61,6 +79,9 @@
     },
     "DeleteAccessPointPolicy": {
       "name": "DeleteAccessPointPolicy",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to delete the policy on a specified access point",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -71,6 +92,9 @@
     },
     "DeleteBucket": {
       "name": "DeleteBucket",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to delete the bucket named in the URI",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -81,6 +105,9 @@
     },
     "DeleteBucketOwnershipControls": {
       "name": "DeleteBucketOwnershipControls",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to delete ownership controls on a bucket",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -91,6 +118,9 @@
     },
     "DeleteBucketPolicy": {
       "name": "DeleteBucketPolicy",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to delete the policy on a specified bucket",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -101,6 +131,9 @@
     },
     "DeleteBucketWebsite": {
       "name": "DeleteBucketWebsite",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to remove the website configuration for a bucket",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -111,6 +144,9 @@
     },
     "DeleteJobTagging": {
       "name": "DeleteJobTagging",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to remove tags from an existing Amazon S3 Batch Operations job",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -121,6 +157,9 @@
     },
     "DeleteObject": {
       "name": "DeleteObject",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to remove the null version of an object and insert a delete marker,\n                                                which becomes the current version of the object",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -131,6 +170,9 @@
     },
     "DeleteObjectTagging": {
       "name": "DeleteObjectTagging",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to use the tagging subresource to remove the entire tag set from\n                                                the specified object",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -141,6 +183,9 @@
     },
     "DeleteObjectVersion": {
       "name": "DeleteObjectVersion",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to remove a specific version of an object",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -151,6 +196,9 @@
     },
     "DeleteObjectVersionTagging": {
       "name": "DeleteObjectVersionTagging",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to remove the entire tag set for a specific version of the object",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -161,6 +209,9 @@
     },
     "DescribeJob": {
       "name": "DescribeJob",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to retrieve the configuration parameters and status for a batch\n                                                operations job",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -171,6 +222,9 @@
     },
     "GetAccelerateConfiguration": {
       "name": "GetAccelerateConfiguration",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to uses the accelerate subresource to return the Transfer Acceleration\n                                                state of a bucket, which is either Enabled or Suspended",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -181,6 +235,9 @@
     },
     "GetAccessPoint": {
       "name": "GetAccessPoint",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to return configuration information about the specified access point",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -189,6 +246,9 @@
     },
     "GetAccessPointPolicy": {
       "name": "GetAccessPointPolicy",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to returns the access point policy associated with the specified\n                                                access point",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -199,6 +259,9 @@
     },
     "GetAccessPointPolicyStatus": {
       "name": "GetAccessPointPolicyStatus",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to return the policy status for a specific access point policy",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -209,6 +272,9 @@
     },
     "GetAccountPublicAccessBlock": {
       "name": "GetAccountPublicAccessBlock",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to retrieve the PublicAccessBlock configuration for an AWS account",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -217,6 +283,9 @@
     },
     "GetAnalyticsConfiguration": {
       "name": "GetAnalyticsConfiguration",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to get an analytics configuration from an Amazon S3 bucket, identified\n                                                by the analytics configuration ID",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -227,6 +296,9 @@
     },
     "GetBucketAcl": {
       "name": "GetBucketAcl",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to use the acl subresource to return the access control list (ACL)\n                                                of an Amazon S3 bucket",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -237,6 +309,9 @@
     },
     "GetBucketCORS": {
       "name": "GetBucketCORS",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to return the CORS configuration information set for an Amazon S3\n                                                bucket",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -247,6 +322,9 @@
     },
     "GetBucketLocation": {
       "name": "GetBucketLocation",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to return the Region that an Amazon S3 bucket resides in",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -257,6 +335,9 @@
     },
     "GetBucketLogging": {
       "name": "GetBucketLogging",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to return the logging status of an Amazon S3 bucket and the permissions\n                                                users have to view or modify that status",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -267,6 +348,9 @@
     },
     "GetBucketNotification": {
       "name": "GetBucketNotification",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to get the notification configuration of an Amazon S3 bucket",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -277,6 +361,9 @@
     },
     "GetBucketObjectLockConfiguration": {
       "name": "GetBucketObjectLockConfiguration",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to get the Object Lock configuration of an Amazon S3 bucket",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -287,6 +374,9 @@
     },
     "GetBucketOwnershipControls": {
       "name": "GetBucketOwnershipControls",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to retrieve ownership controls on a bucket",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -297,6 +387,9 @@
     },
     "GetBucketPolicy": {
       "name": "GetBucketPolicy",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to return the policy of the specified bucket",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -307,6 +400,9 @@
     },
     "GetBucketPolicyStatus": {
       "name": "GetBucketPolicyStatus",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to retrieve the policy status for a specific Amazon S3 bucket, which\n                                                indicates whether the bucket is public",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -317,6 +413,9 @@
     },
     "GetBucketPublicAccessBlock": {
       "name": "GetBucketPublicAccessBlock",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to retrieve the PublicAccessBlock configuration for an Amazon S3\n                                                bucket",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -327,6 +426,9 @@
     },
     "GetBucketRequestPayment": {
       "name": "GetBucketRequestPayment",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to return the request payment configuration for an Amazon S3 bucket",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -337,6 +439,9 @@
     },
     "GetBucketTagging": {
       "name": "GetBucketTagging",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to return the tag set associated with an Amazon S3 bucket",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -347,6 +452,9 @@
     },
     "GetBucketVersioning": {
       "name": "GetBucketVersioning",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to return the versioning state of an Amazon S3 bucket",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -357,6 +465,9 @@
     },
     "GetBucketWebsite": {
       "name": "GetBucketWebsite",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to return the website configuration for an Amazon S3 bucket",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -367,6 +478,9 @@
     },
     "GetEncryptionConfiguration": {
       "name": "GetEncryptionConfiguration",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to return the default encryption configuration an Amazon S3 bucket",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -377,6 +491,9 @@
     },
     "GetInventoryConfiguration": {
       "name": "GetInventoryConfiguration",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to return an inventory configuration from an Amazon S3 bucket, identified\n                                                by the inventory configuration ID",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -387,6 +504,9 @@
     },
     "GetJobTagging": {
       "name": "GetJobTagging",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to return the tag set of an existing Amazon S3 Batch Operations\n                                                job",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -397,6 +517,9 @@
     },
     "GetLifecycleConfiguration": {
       "name": "GetLifecycleConfiguration",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to return the lifecycle configuration information set on an Amazon\n                                                S3 bucket",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -407,6 +530,9 @@
     },
     "GetMetricsConfiguration": {
       "name": "GetMetricsConfiguration",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to get a metrics configuration from an Amazon S3 bucket",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -417,6 +543,9 @@
     },
     "GetObject": {
       "name": "GetObject",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to retrieve objects from Amazon S3",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -427,6 +556,9 @@
     },
     "GetObjectAcl": {
       "name": "GetObjectAcl",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to return the access control list (ACL) of an object",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -437,6 +569,9 @@
     },
     "GetObjectLegalHold": {
       "name": "GetObjectLegalHold",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to get an object's current Legal Hold status",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -447,6 +582,9 @@
     },
     "GetObjectRetention": {
       "name": "GetObjectRetention",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to retrieve the retention settings for an object",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -457,6 +595,9 @@
     },
     "GetObjectTagging": {
       "name": "GetObjectTagging",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to return the tag set of an object",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -467,6 +608,9 @@
     },
     "GetObjectTorrent": {
       "name": "GetObjectTorrent",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to return torrent files from an Amazon S3 bucket",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -477,6 +621,9 @@
     },
     "GetObjectVersion": {
       "name": "GetObjectVersion",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to retrieve a specific version of an object",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -487,6 +634,9 @@
     },
     "GetObjectVersionAcl": {
       "name": "GetObjectVersionAcl",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to return the access control list (ACL) of a specific object version",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -497,6 +647,9 @@
     },
     "GetObjectVersionForReplication": {
       "name": "GetObjectVersionForReplication",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to replicate both unencrypted objects and objects encrypted with\n                                                SSE-S3 or SSE-KMS",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -507,6 +660,9 @@
     },
     "GetObjectVersionTagging": {
       "name": "GetObjectVersionTagging",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to return the tag set for a specific version of the object",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -517,6 +673,9 @@
     },
     "GetObjectVersionTorrent": {
       "name": "GetObjectVersionTorrent",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to get Torrent files about a different version using the versionId\n                                                subresource",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -527,6 +686,9 @@
     },
     "GetReplicationConfiguration": {
       "name": "GetReplicationConfiguration",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to get the replication configuration information set on an Amazon\n                                                S3 bucket",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -537,6 +699,9 @@
     },
     "ListAccessPoints": {
       "name": "ListAccessPoints",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to list access points",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -545,6 +710,9 @@
     },
     "ListAllMyBuckets": {
       "name": "ListAllMyBuckets",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to list all buckets owned by the authenticated sender of the request",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -553,6 +721,9 @@
     },
     "ListBucket": {
       "name": "ListBucket",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to list some or all of the objects in an Amazon S3 bucket (up to\n                                                1000)",
       "accessLevel": "List",
       "resourceTypes": [
@@ -563,6 +734,9 @@
     },
     "ListBucketMultipartUploads": {
       "name": "ListBucketMultipartUploads",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to list in-progress multipart uploads",
       "accessLevel": "List",
       "resourceTypes": [
@@ -573,6 +747,9 @@
     },
     "ListBucketVersions": {
       "name": "ListBucketVersions",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to list metadata about all the versions of objects in an Amazon\n                                                S3 bucket",
       "accessLevel": "List",
       "resourceTypes": [
@@ -583,6 +760,9 @@
     },
     "ListJobs": {
       "name": "ListJobs",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to list current jobs and jobs that have ended recently",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -591,6 +771,9 @@
     },
     "ListMultipartUploadParts": {
       "name": "ListMultipartUploadParts",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to list the parts that have been uploaded for a specific multipart\n                                                upload",
       "accessLevel": "List",
       "resourceTypes": [
@@ -601,6 +784,9 @@
     },
     "ObjectOwnerOverrideToBucketOwner": {
       "name": "ObjectOwnerOverrideToBucketOwner",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to change replica ownership",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -611,6 +797,9 @@
     },
     "PutAccelerateConfiguration": {
       "name": "PutAccelerateConfiguration",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to use the accelerate subresource to set the Transfer Acceleration\n                                                state of an existing S3 bucket",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -621,6 +810,9 @@
     },
     "PutAccessPointPolicy": {
       "name": "PutAccessPointPolicy",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to associate an access policy with a specified access point",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -631,6 +823,9 @@
     },
     "PutAccountPublicAccessBlock": {
       "name": "PutAccountPublicAccessBlock",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to create or modify the PublicAccessBlock configuration for an AWS\n                                                account",
       "accessLevel": "Permissions management",
       "resourceTypes": [],
@@ -639,6 +834,9 @@
     },
     "PutAnalyticsConfiguration": {
       "name": "PutAnalyticsConfiguration",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to set an analytics configuration for the bucket, specified by the\n                                                analytics configuration ID",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -649,6 +847,9 @@
     },
     "PutBucketAcl": {
       "name": "PutBucketAcl",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to set the permissions on an existing bucket using access control\n                                                lists (ACLs)",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -659,6 +860,9 @@
     },
     "PutBucketCORS": {
       "name": "PutBucketCORS",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to set the CORS configuration for an Amazon S3 bucket",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -669,6 +873,9 @@
     },
     "PutBucketLogging": {
       "name": "PutBucketLogging",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to set the logging parameters for an Amazon S3 bucket",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -679,6 +886,9 @@
     },
     "PutBucketNotification": {
       "name": "PutBucketNotification",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to receive notifications when certain events happen in an Amazon\n                                                S3 bucket",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -689,6 +899,9 @@
     },
     "PutBucketObjectLockConfiguration": {
       "name": "PutBucketObjectLockConfiguration",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to put Object Lock configuration on a specific bucket",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -699,6 +912,9 @@
     },
     "PutBucketOwnershipControls": {
       "name": "PutBucketOwnershipControls",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to add or replace ownership controls on a bucket",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -709,6 +925,9 @@
     },
     "PutBucketPolicy": {
       "name": "PutBucketPolicy",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to add or replace a bucket policy on a bucket",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -719,6 +938,9 @@
     },
     "PutBucketPublicAccessBlock": {
       "name": "PutBucketPublicAccessBlock",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to create or modify the PublicAccessBlock configuration for a specific\n                                                Amazon S3 bucket",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -729,6 +951,9 @@
     },
     "PutBucketRequestPayment": {
       "name": "PutBucketRequestPayment",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to set the request payment configuration of a bucket",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -739,6 +964,9 @@
     },
     "PutBucketTagging": {
       "name": "PutBucketTagging",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to add a set of tags to an existing Amazon S3 bucket",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -749,6 +977,9 @@
     },
     "PutBucketVersioning": {
       "name": "PutBucketVersioning",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to set the versioning state of an existing Amazon S3 bucket",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -759,6 +990,9 @@
     },
     "PutBucketWebsite": {
       "name": "PutBucketWebsite",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to set the configuration of the website that is specified in the\n                                                website subresource",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -769,6 +1003,9 @@
     },
     "PutEncryptionConfiguration": {
       "name": "PutEncryptionConfiguration",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to set the encryption configuration for an Amazon S3 bucket",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -779,6 +1016,9 @@
     },
     "PutInventoryConfiguration": {
       "name": "PutInventoryConfiguration",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to add an inventory configuration to the bucket, identified by the\n                                                inventory ID",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -789,6 +1029,9 @@
     },
     "PutJobTagging": {
       "name": "PutJobTagging",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to replace tags on an existing Amazon S3 Batch Operations job",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -799,6 +1042,9 @@
     },
     "PutLifecycleConfiguration": {
       "name": "PutLifecycleConfiguration",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to create a new lifecycle configuration for the bucket or replace\n                                                an existing lifecycle configuration",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -809,6 +1055,9 @@
     },
     "PutMetricsConfiguration": {
       "name": "PutMetricsConfiguration",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to set or update a metrics configuration for the CloudWatch request\n                                                metrics from an Amazon S3 bucket",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -819,6 +1068,9 @@
     },
     "PutObject": {
       "name": "PutObject",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to add an object to a bucket",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -829,6 +1081,9 @@
     },
     "PutObjectAcl": {
       "name": "PutObjectAcl",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to set the access control list (ACL) permissions for new or existing\n                                                objects in an S3 bucket.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -839,6 +1094,9 @@
     },
     "PutObjectLegalHold": {
       "name": "PutObjectLegalHold",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to apply a Legal Hold configuration to the specified object",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -849,6 +1107,9 @@
     },
     "PutObjectRetention": {
       "name": "PutObjectRetention",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to place an Object Retention configuration on an object",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -859,6 +1120,9 @@
     },
     "PutObjectTagging": {
       "name": "PutObjectTagging",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to set the supplied tag-set to an object that already exists in\n                                                a bucket",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -869,6 +1133,9 @@
     },
     "PutObjectVersionAcl": {
       "name": "PutObjectVersionAcl",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to use the acl subresource to set the access control list (ACL)\n                                                permissions for an object that already exists in a bucket",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -879,6 +1146,9 @@
     },
     "PutObjectVersionTagging": {
       "name": "PutObjectVersionTagging",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to set the supplied tag-set for a specific version of an object",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -889,6 +1159,9 @@
     },
     "PutReplicationConfiguration": {
       "name": "PutReplicationConfiguration",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to create a new replication configuration or replace an existing\n                                                one",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -899,6 +1172,9 @@
     },
     "ReplicateDelete": {
       "name": "ReplicateDelete",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to replicate delete markers to the destination bucket",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -909,6 +1185,9 @@
     },
     "ReplicateObject": {
       "name": "ReplicateObject",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to replicate objects and object tags to the destination bucket",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -919,6 +1198,9 @@
     },
     "ReplicateTags": {
       "name": "ReplicateTags",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to replicate object tags to the destination bucket",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -929,6 +1211,9 @@
     },
     "RestoreObject": {
       "name": "RestoreObject",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to restore an archived copy of an object back into Amazon S3",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -939,6 +1224,9 @@
     },
     "UpdateJobPriority": {
       "name": "UpdateJobPriority",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to update the priority of an existing job",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -949,6 +1237,9 @@
     },
     "UpdateJobStatus": {
       "name": "UpdateJobStatus",
+      "topics": [
+        "Amazon S3"
+      ],
       "description": "Grants permission to update the status for the specified job",
       "accessLevel": "Write",
       "resourceTypes": [

@@ -3,6 +3,9 @@
   "actions": {
     "DescribeConsoleJob": {
       "name": "DescribeConsoleJob",
+      "topics": [
+        "Amazon GroundTruth Labeling"
+      ],
       "description": "Get status of GroundTruthLabeling Jobs.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "ListDatasetObjects": {
       "name": "ListDatasetObjects",
+      "topics": [
+        "Amazon GroundTruth Labeling"
+      ],
       "description": "Paginated list API to list dataset objects in a manifest file.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -19,6 +25,9 @@
     },
     "RunFilterOrSampleDatasetJob": {
       "name": "RunFilterOrSampleDatasetJob",
+      "topics": [
+        "Amazon GroundTruth Labeling"
+      ],
       "description": "Filter records from a manifest file using S3 select. Get sample entries based on random\n                                                sampling.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -27,6 +36,9 @@
     },
     "RunGenerateManifestByCrawlingJob": {
       "name": "RunGenerateManifestByCrawlingJob",
+      "topics": [
+        "Amazon GroundTruth Labeling"
+      ],
       "description": "List a S3 prefix and create manifest files from objects in that location.",
       "accessLevel": "Write",
       "resourceTypes": [],

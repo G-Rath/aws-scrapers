@@ -3,6 +3,9 @@
   "actions": {
     "ConnectAsMaster": {
       "name": "ConnectAsMaster",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to connect as a master to the signaling channel specified by the\n                                                endpoint",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "ConnectAsViewer": {
       "name": "ConnectAsViewer",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to connect as a viewer to the signaling channel specified by the\n                                                endpoint",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "CreateSignalingChannel": {
       "name": "CreateSignalingChannel",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to create a signaling channel",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "CreateStream": {
       "name": "CreateStream",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to create a Kinesis video stream",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "DeleteSignalingChannel": {
       "name": "DeleteSignalingChannel",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to delete an existing signaling channel",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "DeleteStream": {
       "name": "DeleteStream",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to delete an existing Kinesis video stream",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "DescribeSignalingChannel": {
       "name": "DescribeSignalingChannel",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to describe the specified signaling channel",
       "accessLevel": "List",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "DescribeStream": {
       "name": "DescribeStream",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to describe the specified Kinesis video stream",
       "accessLevel": "List",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "GetClip": {
       "name": "GetClip",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to get a media clip from a video stream",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "GetDASHStreamingSessionURL": {
       "name": "GetDASHStreamingSessionURL",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to create a URL for MPEG-DASH video streaming",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "GetDataEndpoint": {
       "name": "GetDataEndpoint",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to get an endpoint for a specified stream for either reading or\n                                                writing media data to Kinesis Video Streams",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -113,6 +146,9 @@
     },
     "GetHLSStreamingSessionURL": {
       "name": "GetHLSStreamingSessionURL",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to create a URL for HLS video streaming",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -123,6 +159,9 @@
     },
     "GetIceServerConfig": {
       "name": "GetIceServerConfig",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to get the ICE server configuration",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -133,6 +172,9 @@
     },
     "GetMedia": {
       "name": "GetMedia",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to return media content of a Kinesis video stream",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -143,6 +185,9 @@
     },
     "GetMediaForFragmentList": {
       "name": "GetMediaForFragmentList",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to read and return media data only from persisted storage",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -153,6 +198,9 @@
     },
     "GetSignalingChannelEndpoint": {
       "name": "GetSignalingChannelEndpoint",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to get endpoints for a specified combination of protocol and role\n                                                for a signaling channel",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -163,6 +211,9 @@
     },
     "ListFragments": {
       "name": "ListFragments",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to list the fragments from archival storage based on the pagination\n                                                token or selector type with range specified",
       "accessLevel": "List",
       "resourceTypes": [
@@ -173,6 +224,9 @@
     },
     "ListSignalingChannels": {
       "name": "ListSignalingChannels",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to list your signaling channels",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -181,6 +235,9 @@
     },
     "ListStreams": {
       "name": "ListStreams",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to list your Kinesis video streams",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -189,6 +246,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to fetch the tags associated with your resource",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -199,6 +259,9 @@
     },
     "ListTagsForStream": {
       "name": "ListTagsForStream",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to fetch the tags associated with Kinesis video stream",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -209,6 +272,9 @@
     },
     "PutMedia": {
       "name": "PutMedia",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to send media data to a Kinesis video stream",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -219,6 +285,9 @@
     },
     "SendAlexaOfferToMaster": {
       "name": "SendAlexaOfferToMaster",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to send the Alexa SDP offer to the master",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -229,6 +298,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to attach set of tags to your resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -239,6 +311,9 @@
     },
     "TagStream": {
       "name": "TagStream",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to attach set of tags to your Kinesis video streams",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -249,6 +324,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to remove one or more tags from your resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -259,6 +337,9 @@
     },
     "UntagStream": {
       "name": "UntagStream",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to remove one or more tags from your Kinesis video streams",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -269,6 +350,9 @@
     },
     "UpdateDataRetention": {
       "name": "UpdateDataRetention",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to update the data retention period of your Kinesis video stream",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -279,6 +363,9 @@
     },
     "UpdateSignalingChannel": {
       "name": "UpdateSignalingChannel",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to update an existing signaling channel",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -289,6 +376,9 @@
     },
     "UpdateStream": {
       "name": "UpdateStream",
+      "topics": [
+        "Amazon Kinesis Video Streams"
+      ],
       "description": "Grants permission to update an existing Kinesis video stream",
       "accessLevel": "Write",
       "resourceTypes": [

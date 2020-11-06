@@ -3,6 +3,9 @@
   "actions": {
     "ActivatePipeline": {
       "name": "ActivatePipeline",
+      "topics": [
+        "Data Pipeline"
+      ],
       "description": "Validates the specified pipeline and starts processing pipeline tasks. If the pipeline\n                                                does not pass validation, activation fails.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "AddTags": {
       "name": "AddTags",
+      "topics": [
+        "Data Pipeline"
+      ],
       "description": "Adds or modifies tags for the specified pipeline.",
       "accessLevel": "Tagging",
       "resourceTypes": [],
@@ -19,6 +25,9 @@
     },
     "CreatePipeline": {
       "name": "CreatePipeline",
+      "topics": [
+        "Data Pipeline"
+      ],
       "description": "Creates a new, empty pipeline.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -27,6 +36,9 @@
     },
     "DeactivatePipeline": {
       "name": "DeactivatePipeline",
+      "topics": [
+        "Data Pipeline"
+      ],
       "description": "Deactivates the specified running pipeline.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -35,6 +47,9 @@
     },
     "DeletePipeline": {
       "name": "DeletePipeline",
+      "topics": [
+        "Data Pipeline"
+      ],
       "description": "Deletes a pipeline, its pipeline definition, and its run history.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -43,6 +58,9 @@
     },
     "DescribeObjects": {
       "name": "DescribeObjects",
+      "topics": [
+        "Data Pipeline"
+      ],
       "description": "Gets the object definitions for a set of objects associated with the pipeline.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -51,6 +69,9 @@
     },
     "DescribePipelines": {
       "name": "DescribePipelines",
+      "topics": [
+        "Data Pipeline"
+      ],
       "description": "Retrieves metadata about one or more pipelines.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -59,6 +80,9 @@
     },
     "EvaluateExpression": {
       "name": "EvaluateExpression",
+      "topics": [
+        "Data Pipeline"
+      ],
       "description": "Task runners call EvaluateExpression to evaluate a string in the context of the specified\n                                                object.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -67,6 +91,9 @@
     },
     "GetAccountLimits": {
       "name": "GetAccountLimits",
+      "topics": [
+        "Data Pipeline"
+      ],
       "description": "Description for GetAccountLimits",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -75,6 +102,9 @@
     },
     "GetPipelineDefinition": {
       "name": "GetPipelineDefinition",
+      "topics": [
+        "Data Pipeline"
+      ],
       "description": "Gets the definition of the specified pipeline.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -83,6 +113,9 @@
     },
     "ListPipelines": {
       "name": "ListPipelines",
+      "topics": [
+        "Data Pipeline"
+      ],
       "description": "Lists the pipeline identifiers for all active pipelines that you have permission to\n                                                access.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -91,6 +124,9 @@
     },
     "PollForTask": {
       "name": "PollForTask",
+      "topics": [
+        "Data Pipeline"
+      ],
       "description": "Task runners call PollForTask to receive a task to perform from AWS Data Pipeline.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -99,6 +135,9 @@
     },
     "PutAccountLimits": {
       "name": "PutAccountLimits",
+      "topics": [
+        "Data Pipeline"
+      ],
       "description": "Description for PutAccountLimits",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -107,6 +146,9 @@
     },
     "PutPipelineDefinition": {
       "name": "PutPipelineDefinition",
+      "topics": [
+        "Data Pipeline"
+      ],
       "description": "Adds tasks, schedules, and preconditions to the specified pipeline.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -115,6 +157,9 @@
     },
     "QueryObjects": {
       "name": "QueryObjects",
+      "topics": [
+        "Data Pipeline"
+      ],
       "description": "Queries the specified pipeline for the names of objects that match the specified set\n                                                of conditions.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -123,6 +168,9 @@
     },
     "RemoveTags": {
       "name": "RemoveTags",
+      "topics": [
+        "Data Pipeline"
+      ],
       "description": "Removes existing tags from the specified pipeline.",
       "accessLevel": "Tagging",
       "resourceTypes": [],
@@ -131,6 +179,9 @@
     },
     "ReportTaskProgress": {
       "name": "ReportTaskProgress",
+      "topics": [
+        "Data Pipeline"
+      ],
       "description": "Task runners call ReportTaskProgress when assigned a task to acknowledge that it has\n                                                the task.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -139,6 +190,9 @@
     },
     "ReportTaskRunnerHeartbeat": {
       "name": "ReportTaskRunnerHeartbeat",
+      "topics": [
+        "Data Pipeline"
+      ],
       "description": "Task runners call ReportTaskRunnerHeartbeat every 15 minutes to indicate that they\n                                                are operational.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -147,6 +201,9 @@
     },
     "SetStatus": {
       "name": "SetStatus",
+      "topics": [
+        "Data Pipeline"
+      ],
       "description": "Requests that the status of the specified physical or logical pipeline objects be\n                                                updated in the specified pipeline.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -155,6 +212,9 @@
     },
     "SetTaskStatus": {
       "name": "SetTaskStatus",
+      "topics": [
+        "Data Pipeline"
+      ],
       "description": "Task runners call SetTaskStatus to notify AWS Data Pipeline that a task is completed\n                                                and provide information about the final status.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -163,6 +223,9 @@
     },
     "ValidatePipelineDefinition": {
       "name": "ValidatePipelineDefinition",
+      "topics": [
+        "Data Pipeline"
+      ],
       "description": "Validates the specified pipeline definition to ensure that it is well formed and can\n                                                be run without error.",
       "accessLevel": "Read",
       "resourceTypes": [],

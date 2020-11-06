@@ -3,6 +3,9 @@
   "actions": {
     "AddListenerCertificates": {
       "name": "AddListenerCertificates",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Adds the specified certificates to the specified secure listener",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "AddTags": {
       "name": "AddTags",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Adds the specified tags to the specified load balancer. Each load balancer can have\n                                                a maximum of 10 tags",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "CreateListener": {
       "name": "CreateListener",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Creates a listener for the specified Application Load Balancer",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "CreateLoadBalancer": {
       "name": "CreateLoadBalancer",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Creates a load balancer",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "CreateRule": {
       "name": "CreateRule",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Creates a rule for the specified listener",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "CreateTargetGroup": {
       "name": "CreateTargetGroup",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Creates a target group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "DeleteListener": {
       "name": "DeleteListener",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Deletes the specified listener",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "DeleteLoadBalancer": {
       "name": "DeleteLoadBalancer",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Deletes the specified load balancer",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "DeleteRule": {
       "name": "DeleteRule",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Deletes the specified rule",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "DeleteTargetGroup": {
       "name": "DeleteTargetGroup",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Deletes the specified target group",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "DeregisterTargets": {
       "name": "DeregisterTargets",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Deregisters the specified targets from the specified target group",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -113,6 +146,9 @@
     },
     "DescribeAccountLimits": {
       "name": "DescribeAccountLimits",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Describes the Elastic Load Balancing resource limits for the AWS account",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -121,6 +157,9 @@
     },
     "DescribeListenerCertificates": {
       "name": "DescribeListenerCertificates",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Describes the certificates for the specified secure listener",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -129,6 +168,9 @@
     },
     "DescribeListeners": {
       "name": "DescribeListeners",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Describes the specified listeners or the listeners for the specified Application Load\n                                                Balancer",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -137,6 +179,9 @@
     },
     "DescribeLoadBalancerAttributes": {
       "name": "DescribeLoadBalancerAttributes",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Describes the attributes for the specified load balancer",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -145,6 +190,9 @@
     },
     "DescribeLoadBalancers": {
       "name": "DescribeLoadBalancers",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Describes the specified the load balancers. If no load balancers are specified, the\n                                                call describes all of your load balancers",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -153,6 +201,9 @@
     },
     "DescribeRules": {
       "name": "DescribeRules",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Describes the specified rules or the rules for the specified listener",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -161,6 +212,9 @@
     },
     "DescribeSSLPolicies": {
       "name": "DescribeSSLPolicies",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Describes the specified policies or all policies used for SSL negotiation",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -169,6 +223,9 @@
     },
     "DescribeTags": {
       "name": "DescribeTags",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Describes the tags associated with the specified resource",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -179,6 +236,9 @@
     },
     "DescribeTargetGroupAttributes": {
       "name": "DescribeTargetGroupAttributes",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Describes the attributes for the specified target group",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -187,6 +247,9 @@
     },
     "DescribeTargetGroups": {
       "name": "DescribeTargetGroups",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Describes the specified target groups or all of your target groups",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -195,6 +258,9 @@
     },
     "DescribeTargetHealth": {
       "name": "DescribeTargetHealth",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Describes the health of the specified targets or all of your targets",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -203,6 +269,9 @@
     },
     "ModifyListener": {
       "name": "ModifyListener",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Modifies the specified properties of the specified listener",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -213,6 +282,9 @@
     },
     "ModifyLoadBalancerAttributes": {
       "name": "ModifyLoadBalancerAttributes",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Modifies the attributes of the specified load balancer",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -223,6 +295,9 @@
     },
     "ModifyRule": {
       "name": "ModifyRule",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Modifies the specified rule",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -233,6 +308,9 @@
     },
     "ModifyTargetGroup": {
       "name": "ModifyTargetGroup",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Modifies the health checks used when evaluating the health state of the targets in\n                                                the specified target group",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -243,6 +321,9 @@
     },
     "ModifyTargetGroupAttributes": {
       "name": "ModifyTargetGroupAttributes",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Modifies the specified attributes of the specified target group",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -253,6 +334,9 @@
     },
     "RegisterTargets": {
       "name": "RegisterTargets",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Registers the specified targets with the specified target group",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -263,6 +347,9 @@
     },
     "RemoveListenerCertificates": {
       "name": "RemoveListenerCertificates",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Removes the specified certificates of the specified secure listener",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -273,6 +360,9 @@
     },
     "RemoveTags": {
       "name": "RemoveTags",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Removes one or more tags from the specified load balancer",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -283,6 +373,9 @@
     },
     "SetIpAddressType": {
       "name": "SetIpAddressType",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Not found",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -293,6 +386,9 @@
     },
     "SetRulePriorities": {
       "name": "SetRulePriorities",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Sets the priorities of the specified rules",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -303,6 +399,9 @@
     },
     "SetSecurityGroups": {
       "name": "SetSecurityGroups",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Associates the specified security groups with the specified load balancer",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -313,6 +412,9 @@
     },
     "SetSubnets": {
       "name": "SetSubnets",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Enables the Availability Zone for the specified subnets for the specified load balancer",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -323,6 +425,9 @@
     },
     "SetWebAcl": {
       "name": "SetWebAcl",
+      "topics": [
+        "Elastic Load Balancing V2"
+      ],
       "description": "Gives WebAcl permission to WAF",
       "accessLevel": "Write",
       "resourceTypes": [],

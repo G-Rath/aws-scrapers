@@ -3,6 +3,9 @@
   "actions": {
     "AddAttributesToFindings": {
       "name": "AddAttributesToFindings",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Assigns attributes (key and value pairs) to the findings that are specified by the\n                                                ARNs of the findings.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "CreateAssessmentTarget": {
       "name": "CreateAssessmentTarget",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Creates a new assessment target using the ARN of the resource group that is generated\n                                                by CreateResourceGroup.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -19,6 +25,9 @@
     },
     "CreateAssessmentTemplate": {
       "name": "CreateAssessmentTemplate",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Creates an assessment template for the assessment target that is specified by the\n                                                ARN of the assessment target.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -27,6 +36,9 @@
     },
     "CreateResourceGroup": {
       "name": "CreateResourceGroup",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Creates a resource group using the specified set of tags (key and value pairs) that\n                                                are used to select the EC2 instances to be included in an Amazon Inspector assessment\n                                                target.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -35,6 +47,9 @@
     },
     "DeleteAssessmentRun": {
       "name": "DeleteAssessmentRun",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Deletes the assessment run that is specified by the ARN of the assessment run.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -43,6 +58,9 @@
     },
     "DeleteAssessmentTarget": {
       "name": "DeleteAssessmentTarget",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Deletes the assessment target that is specified by the ARN of the assessment target.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -51,6 +69,9 @@
     },
     "DeleteAssessmentTemplate": {
       "name": "DeleteAssessmentTemplate",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Deletes the assessment template that is specified by the ARN of the assessment template.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -59,6 +80,9 @@
     },
     "DescribeAssessmentRuns": {
       "name": "DescribeAssessmentRuns",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Describes the assessment runs that are specified by the ARNs of the assessment runs.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -67,6 +91,9 @@
     },
     "DescribeAssessmentTargets": {
       "name": "DescribeAssessmentTargets",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Describes the assessment targets that are specified by the ARNs of the assessment\n                                                targets.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -75,6 +102,9 @@
     },
     "DescribeAssessmentTemplates": {
       "name": "DescribeAssessmentTemplates",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Describes the assessment templates that are specified by the ARNs of the assessment\n                                                templates.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -83,6 +113,9 @@
     },
     "DescribeCrossAccountAccessRole": {
       "name": "DescribeCrossAccountAccessRole",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Describes the IAM role that enables Amazon Inspector to access your AWS account.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -91,6 +124,9 @@
     },
     "DescribeFindings": {
       "name": "DescribeFindings",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Describes the findings that are specified by the ARNs of the findings.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -99,6 +135,9 @@
     },
     "DescribeResourceGroups": {
       "name": "DescribeResourceGroups",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Describes the resource groups that are specified by the ARNs of the resource groups.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -107,6 +146,9 @@
     },
     "DescribeRulesPackages": {
       "name": "DescribeRulesPackages",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Describes the rules packages that are specified by the ARNs of the rules packages.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -115,6 +157,9 @@
     },
     "GetTelemetryMetadata": {
       "name": "GetTelemetryMetadata",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Information about the data that is collected for the specified assessment run.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -123,6 +168,9 @@
     },
     "ListAssessmentRunAgents": {
       "name": "ListAssessmentRunAgents",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Lists the agents of the assessment runs that are specified by the ARNs of the assessment\n                                                runs.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -131,6 +179,9 @@
     },
     "ListAssessmentRuns": {
       "name": "ListAssessmentRuns",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Lists the assessment runs that correspond to the assessment templates that are specified\n                                                by the ARNs of the assessment templates.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -139,6 +190,9 @@
     },
     "ListAssessmentTargets": {
       "name": "ListAssessmentTargets",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Lists the ARNs of the assessment targets within this AWS account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -147,6 +201,9 @@
     },
     "ListAssessmentTemplates": {
       "name": "ListAssessmentTemplates",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Lists the assessment templates that correspond to the assessment targets that are\n                                                specified by the ARNs of the assessment targets.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -155,6 +212,9 @@
     },
     "ListEventSubscriptions": {
       "name": "ListEventSubscriptions",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Lists all the event subscriptions for the assessment template that is specified by\n                                                the ARN of the assessment template.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -163,6 +223,9 @@
     },
     "ListFindings": {
       "name": "ListFindings",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Lists findings that are generated by the assessment runs that are specified by the\n                                                ARNs of the assessment runs.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -171,6 +234,9 @@
     },
     "ListRulesPackages": {
       "name": "ListRulesPackages",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Lists all available Amazon Inspector rules packages.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -179,6 +245,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Lists all tags associated with an assessment template.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -187,6 +256,9 @@
     },
     "PreviewAgents": {
       "name": "PreviewAgents",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Previews the agents installed on the EC2 instances that are part of the specified\n                                                assessment target.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -195,6 +267,9 @@
     },
     "RegisterCrossAccountAccessRole": {
       "name": "RegisterCrossAccountAccessRole",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Registers the IAM role that Amazon Inspector uses to list your EC2 instances at the\n                                                start of the assessment run or when you call the PreviewAgents action.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -203,6 +278,9 @@
     },
     "RemoveAttributesFromFindings": {
       "name": "RemoveAttributesFromFindings",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Removes entire attributes (key and value pairs) from the findings that are specified\n                                                by the ARNs of the findings where an attribute with the specified key exists.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -211,6 +289,9 @@
     },
     "SetTagsForResource": {
       "name": "SetTagsForResource",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Sets tags (key and value pairs) to the assessment template that is specified by the\n                                                ARN of the assessment template.",
       "accessLevel": "Tagging",
       "resourceTypes": [],
@@ -219,6 +300,9 @@
     },
     "StartAssessmentRun": {
       "name": "StartAssessmentRun",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Starts the assessment run specified by the ARN of the assessment template.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -227,6 +311,9 @@
     },
     "StopAssessmentRun": {
       "name": "StopAssessmentRun",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Stops the assessment run that is specified by the ARN of the assessment run.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -235,6 +322,9 @@
     },
     "SubscribeToEvent": {
       "name": "SubscribeToEvent",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Enables the process of sending Amazon Simple Notification Service (SNS) notifications\n                                                about a specified event to a specified SNS topic.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -243,6 +333,9 @@
     },
     "UnsubscribeFromEvent": {
       "name": "UnsubscribeFromEvent",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Disables the process of sending Amazon Simple Notification Service (SNS) notifications\n                                                about a specified event to a specified SNS topic.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -251,6 +344,9 @@
     },
     "UpdateAssessmentTarget": {
       "name": "UpdateAssessmentTarget",
+      "topics": [
+        "Amazon Inspector"
+      ],
       "description": "Updates the assessment target that is specified by the ARN of the assessment target.",
       "accessLevel": "Write",
       "resourceTypes": [],

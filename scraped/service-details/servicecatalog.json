@@ -3,6 +3,9 @@
   "actions": {
     "AcceptPortfolioShare": {
       "name": "AcceptPortfolioShare",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to accept a portfolio that has been shared with you",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "AssociateBudgetWithResource": {
       "name": "AssociateBudgetWithResource",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to associate a budget with a resource",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -21,6 +27,9 @@
     },
     "AssociatePrincipalWithPortfolio": {
       "name": "AssociatePrincipalWithPortfolio",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to associate an IAM principal with a portfolio, giving the specified\n                                                principal access to any products associated with the specified portfolio",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -31,6 +40,9 @@
     },
     "AssociateProductWithPortfolio": {
       "name": "AssociateProductWithPortfolio",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to associate a product with a portfolio",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -39,6 +51,9 @@
     },
     "AssociateServiceActionWithProvisioningArtifact": {
       "name": "AssociateServiceActionWithProvisioningArtifact",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to associate an action with a provisioning artifact",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -49,6 +64,9 @@
     },
     "AssociateTagOptionWithResource": {
       "name": "AssociateTagOptionWithResource",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to associate the specified TagOption with the specified portfolio\n                                                or product",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -59,6 +77,9 @@
     },
     "BatchAssociateServiceActionWithProvisioningArtifact": {
       "name": "BatchAssociateServiceActionWithProvisioningArtifact",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to associate multiple self-service actions with provisioning artifacts",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -67,6 +88,9 @@
     },
     "BatchDisassociateServiceActionFromProvisioningArtifact": {
       "name": "BatchDisassociateServiceActionFromProvisioningArtifact",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to disassociate a batch of self-service actions from the specified\n                                                provisioning artifact",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -75,6 +99,9 @@
     },
     "CopyProduct": {
       "name": "CopyProduct",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to copy the specified source product to the specified target product\n                                                or a new product",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -83,6 +110,9 @@
     },
     "CreateConstraint": {
       "name": "CreateConstraint",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to create a constraint on an associated product and portfolio",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -93,6 +123,9 @@
     },
     "CreatePortfolio": {
       "name": "CreatePortfolio",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to create a portfolio",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -103,6 +136,9 @@
     },
     "CreatePortfolioShare": {
       "name": "CreatePortfolioShare",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to share a portfolio you own with another AWS account",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -113,6 +149,9 @@
     },
     "CreateProduct": {
       "name": "CreateProduct",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to create a product and that product's first provisioning artifact",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -123,6 +162,9 @@
     },
     "CreateProvisionedProductPlan": {
       "name": "CreateProvisionedProductPlan",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to add a new provisioned product plan",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -131,6 +173,9 @@
     },
     "CreateProvisioningArtifact": {
       "name": "CreateProvisioningArtifact",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to add a new provisioning artifact to an existing product",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -141,6 +186,9 @@
     },
     "CreateServiceAction": {
       "name": "CreateServiceAction",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to create a self-service action",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -149,6 +197,9 @@
     },
     "CreateTagOption": {
       "name": "CreateTagOption",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to create a TagOption",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -157,6 +208,9 @@
     },
     "DeleteConstraint": {
       "name": "DeleteConstraint",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to remove and delete an existing constraint from an associated product\n                                                and portfolio",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -165,6 +219,9 @@
     },
     "DeletePortfolio": {
       "name": "DeletePortfolio",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to delete a portfolio if all associations and shares have been removed\n                                                from the portfolio",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -175,6 +232,9 @@
     },
     "DeletePortfolioShare": {
       "name": "DeletePortfolioShare",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to unshare a portfolio you own from an AWS account you previously\n                                                shared the portfolio with",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -185,6 +245,9 @@
     },
     "DeleteProduct": {
       "name": "DeleteProduct",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to delete a product if all associations have been removed from the\n                                                product",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -195,6 +258,9 @@
     },
     "DeleteProvisionedProductPlan": {
       "name": "DeleteProvisionedProductPlan",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to delete a provisioned product plan",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -203,6 +269,9 @@
     },
     "DeleteProvisioningArtifact": {
       "name": "DeleteProvisioningArtifact",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to delete a provisioning artifact from a product",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -213,6 +282,9 @@
     },
     "DeleteServiceAction": {
       "name": "DeleteServiceAction",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to delete a self-service action",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -221,6 +293,9 @@
     },
     "DeleteTagOption": {
       "name": "DeleteTagOption",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to delete the specified TagOption",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -229,6 +304,9 @@
     },
     "DescribeConstraint": {
       "name": "DescribeConstraint",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to describe a constraint",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -237,6 +315,9 @@
     },
     "DescribeCopyProductStatus": {
       "name": "DescribeCopyProductStatus",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to get the status of the specified copy product operation",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -245,6 +326,9 @@
     },
     "DescribePortfolio": {
       "name": "DescribePortfolio",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to describe a portfolio",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -255,6 +339,9 @@
     },
     "DescribePortfolioShareStatus": {
       "name": "DescribePortfolioShareStatus",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to get the status of the specified portfolio share operation",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -263,6 +350,9 @@
     },
     "DescribeProduct": {
       "name": "DescribeProduct",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to describe a product as an end-user",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -273,6 +363,9 @@
     },
     "DescribeProductAsAdmin": {
       "name": "DescribeProductAsAdmin",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to describe a product as an admin",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -283,6 +376,9 @@
     },
     "DescribeProductView": {
       "name": "DescribeProductView",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to describe a product as an end-user",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -291,6 +387,9 @@
     },
     "DescribeProvisionedProduct": {
       "name": "DescribeProvisionedProduct",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to describe a provisioned product",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -299,6 +398,9 @@
     },
     "DescribeProvisionedProductPlan": {
       "name": "DescribeProvisionedProductPlan",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to describe a provisioned product plan",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -307,6 +409,9 @@
     },
     "DescribeProvisioningArtifact": {
       "name": "DescribeProvisioningArtifact",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to describe a provisioning artifact",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -317,6 +422,9 @@
     },
     "DescribeProvisioningParameters": {
       "name": "DescribeProvisioningParameters",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to describe the parameters that you need to specify to successfully\n                                                provision a specified provisioning artifact",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -327,6 +435,9 @@
     },
     "DescribeRecord": {
       "name": "DescribeRecord",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to describe a record and lists any outputs",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -335,6 +446,9 @@
     },
     "DescribeServiceAction": {
       "name": "DescribeServiceAction",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to describe a self-service action",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -343,6 +457,9 @@
     },
     "DescribeServiceActionExecutionParameters": {
       "name": "DescribeServiceActionExecutionParameters",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to get the default parameters if you executed the specified Service\n                                                Action on the specified Provisioned Product",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -351,6 +468,9 @@
     },
     "DescribeTagOption": {
       "name": "DescribeTagOption",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to get information about the specified TagOption",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -359,6 +479,9 @@
     },
     "DisableAWSOrganizationsAccess": {
       "name": "DisableAWSOrganizationsAccess",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to disable portfolio sharing through AWS Organizations feature",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -367,6 +490,9 @@
     },
     "DisassociateBudgetFromResource": {
       "name": "DisassociateBudgetFromResource",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to disassociate a budget from a resource",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -375,6 +501,9 @@
     },
     "DisassociatePrincipalFromPortfolio": {
       "name": "DisassociatePrincipalFromPortfolio",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to disassociate an IAM principal from a portfolio",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -385,6 +514,9 @@
     },
     "DisassociateProductFromPortfolio": {
       "name": "DisassociateProductFromPortfolio",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to disassociate a product from a portfolio",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -393,6 +525,9 @@
     },
     "DisassociateServiceActionFromProvisioningArtifact": {
       "name": "DisassociateServiceActionFromProvisioningArtifact",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to disassociate the specified self-service action association from\n                                                the specified provisioning artifact",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -403,6 +538,9 @@
     },
     "DisassociateTagOptionFromResource": {
       "name": "DisassociateTagOptionFromResource",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to disassociate the specified TagOption from the specified resource",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -413,6 +551,9 @@
     },
     "EnableAWSOrganizationsAccess": {
       "name": "EnableAWSOrganizationsAccess",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to enable portfolio sharing feature through AWS Organizations",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -421,6 +562,9 @@
     },
     "ExecuteProvisionedProductPlan": {
       "name": "ExecuteProvisionedProductPlan",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to execute a provisioned product plan",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -429,6 +573,9 @@
     },
     "ExecuteProvisionedProductServiceAction": {
       "name": "ExecuteProvisionedProductServiceAction",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to executes a provisioned product plan",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -437,6 +584,9 @@
     },
     "GetAWSOrganizationsAccessStatus": {
       "name": "GetAWSOrganizationsAccessStatus",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to get the access status of AWS Organization portfolio share feature",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -445,6 +595,9 @@
     },
     "ListAcceptedPortfolioShares": {
       "name": "ListAcceptedPortfolioShares",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to list the portfolios that have been shared with you and you have\n                                                accepted",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -453,6 +606,9 @@
     },
     "ListBudgetsForResource": {
       "name": "ListBudgetsForResource",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to list all the budgets associated to a resource",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -461,6 +617,9 @@
     },
     "ListConstraintsForPortfolio": {
       "name": "ListConstraintsForPortfolio",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to list constraints associated with a given portfolio",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -469,6 +628,9 @@
     },
     "ListLaunchPaths": {
       "name": "ListLaunchPaths",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to list the different ways to launch a given product as an end-user",
       "accessLevel": "List",
       "resourceTypes": [
@@ -479,6 +641,9 @@
     },
     "ListOrganizationPortfolioAccess": {
       "name": "ListOrganizationPortfolioAccess",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to list the organization nodes that have access to the specified\n                                                portfolio",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -487,6 +652,9 @@
     },
     "ListPortfolioAccess": {
       "name": "ListPortfolioAccess",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to list the AWS accounts you have shared a given portfolio with",
       "accessLevel": "List",
       "resourceTypes": [
@@ -497,6 +665,9 @@
     },
     "ListPortfolios": {
       "name": "ListPortfolios",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to list the portfolios in your account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -505,6 +676,9 @@
     },
     "ListPortfoliosForProduct": {
       "name": "ListPortfoliosForProduct",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to list the portfolios associated with a given product",
       "accessLevel": "List",
       "resourceTypes": [
@@ -515,6 +689,9 @@
     },
     "ListPrincipalsForPortfolio": {
       "name": "ListPrincipalsForPortfolio",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to list the IAM principals associated with a given portfolio",
       "accessLevel": "List",
       "resourceTypes": [
@@ -525,6 +702,9 @@
     },
     "ListProvisionedProductPlans": {
       "name": "ListProvisionedProductPlans",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to list the provisioned product plans",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -533,6 +713,9 @@
     },
     "ListProvisioningArtifacts": {
       "name": "ListProvisioningArtifacts",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to list the provisioning artifacts associated with a given product",
       "accessLevel": "List",
       "resourceTypes": [
@@ -543,6 +726,9 @@
     },
     "ListProvisioningArtifactsForServiceAction": {
       "name": "ListProvisioningArtifactsForServiceAction",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to list all provisioning artifacts for the specified self-service\n                                                action",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -551,6 +737,9 @@
     },
     "ListRecordHistory": {
       "name": "ListRecordHistory",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to list all the records in your account or all the records related\n                                                to a given provisioned product",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -559,6 +748,9 @@
     },
     "ListResourcesForTagOption": {
       "name": "ListResourcesForTagOption",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to list the resources associated with the specified TagOption",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -567,6 +759,9 @@
     },
     "ListServiceActions": {
       "name": "ListServiceActions",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to list all self-service actions",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -575,6 +770,9 @@
     },
     "ListServiceActionsForProvisioningArtifact": {
       "name": "ListServiceActionsForProvisioningArtifact",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to list all the service actions associated with the specified provisioning\n                                                artifact in your account",
       "accessLevel": "List",
       "resourceTypes": [
@@ -585,6 +783,9 @@
     },
     "ListStackInstancesForProvisionedProduct": {
       "name": "ListStackInstancesForProvisionedProduct",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to list account, region and status of each stack instances that\n                                                are associated with a CFN_STACKSET type provisioned product",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -593,6 +794,9 @@
     },
     "ListTagOptions": {
       "name": "ListTagOptions",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to list the specified TagOptions or all TagOptions",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -601,6 +805,9 @@
     },
     "ProvisionProduct": {
       "name": "ProvisionProduct",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to provision a product with a specified provisioning artifact and\n                                                launch parameters",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -611,6 +818,9 @@
     },
     "RejectPortfolioShare": {
       "name": "RejectPortfolioShare",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to reject a portfolio that has been shared with you that you previously\n                                                accepted",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -621,6 +831,9 @@
     },
     "ScanProvisionedProducts": {
       "name": "ScanProvisionedProducts",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to list all the provisioned products in your account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -629,6 +842,9 @@
     },
     "SearchProducts": {
       "name": "SearchProducts",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to list the products available to you as an end-user",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -637,6 +853,9 @@
     },
     "SearchProductsAsAdmin": {
       "name": "SearchProductsAsAdmin",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to list all the products in your account or all the products associated\n                                                with a given portfolio",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -645,6 +864,9 @@
     },
     "SearchProvisionedProducts": {
       "name": "SearchProvisionedProducts",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to list all the provisioned products in your account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -653,6 +875,9 @@
     },
     "TerminateProvisionedProduct": {
       "name": "TerminateProvisionedProduct",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to terminate an existing provisioned product",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -661,6 +886,9 @@
     },
     "UpdateConstraint": {
       "name": "UpdateConstraint",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to update the metadata fields of an existing constraint",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -669,6 +897,9 @@
     },
     "UpdatePortfolio": {
       "name": "UpdatePortfolio",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to update the metadata fields and/or tags of an existing portfolio",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -679,6 +910,9 @@
     },
     "UpdateProduct": {
       "name": "UpdateProduct",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to update the metadata fields and/or tags of an existing product",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -689,6 +923,9 @@
     },
     "UpdateProvisionedProduct": {
       "name": "UpdateProvisionedProduct",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to update an existing provisioned product",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -697,6 +934,9 @@
     },
     "UpdateProvisionedProductProperties": {
       "name": "UpdateProvisionedProductProperties",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to update the properties of an existing provisioned product",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -705,6 +945,9 @@
     },
     "UpdateProvisioningArtifact": {
       "name": "UpdateProvisioningArtifact",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to update the metadata fields of an existing provisioning artifact",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -715,6 +958,9 @@
     },
     "UpdateServiceAction": {
       "name": "UpdateServiceAction",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to update a self-service action",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -723,6 +969,9 @@
     },
     "UpdateTagOption": {
       "name": "UpdateTagOption",
+      "topics": [
+        "AWS Service Catalog"
+      ],
       "description": "Grants permission to update the specified TagOption",
       "accessLevel": "Write",
       "resourceTypes": [],

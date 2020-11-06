@@ -3,6 +3,9 @@
   "actions": {
     "BatchGetChannel": {
       "name": "BatchGetChannel",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
       "description": "Grants permission to get multiple channels simultaneously by channel ARN.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "BatchGetStreamKey": {
       "name": "BatchGetStreamKey",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
       "description": "Grants permission to get multiple stream keys simultaneously by stream key ARN.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "CreateChannel": {
       "name": "CreateChannel",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
       "description": "Grants permission to create a new channel and an associated stream key.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "CreateStreamKey": {
       "name": "CreateStreamKey",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
       "description": "Grants permission to create a stream key.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "DeleteChannel": {
       "name": "DeleteChannel",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
       "description": "Grants permission to delete a channel and channel's stream keys.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "DeletePlaybackKeyPair": {
       "name": "DeletePlaybackKeyPair",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
       "description": "Grants permission to delete the playback key pair for a specified ARN",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "DeleteStreamKey": {
       "name": "DeleteStreamKey",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
       "description": "Grants permission to delete the stream key for a specified ARN",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "GetChannel": {
       "name": "GetChannel",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
       "description": "Grants permission to get the channel configuration for a specified channel ARN",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "GetPlaybackKeyPair": {
       "name": "GetPlaybackKeyPair",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
       "description": "Grants permission to get the playback keypair information for a specified ARN",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "GetStream": {
       "name": "GetStream",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
       "description": "Grants permission to get information about the active (live) stream on a specified\n                                                channel",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "GetStreamKey": {
       "name": "GetStreamKey",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
       "description": "Grants permission to get stream-key information for a specified ARN",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -113,6 +146,9 @@
     },
     "ImportPlaybackKeyPair": {
       "name": "ImportPlaybackKeyPair",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
       "description": "Grants permission to import the public key.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -123,6 +159,9 @@
     },
     "ListChannels": {
       "name": "ListChannels",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
       "description": "Grants permission to get summary information about channels",
       "accessLevel": "List",
       "resourceTypes": [
@@ -133,6 +172,9 @@
     },
     "ListPlaybackKeyPairs": {
       "name": "ListPlaybackKeyPairs",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
       "description": "Grants permission to get summary information about playback key pairs",
       "accessLevel": "List",
       "resourceTypes": [
@@ -143,6 +185,9 @@
     },
     "ListStreamKeys": {
       "name": "ListStreamKeys",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
       "description": "Grants permission to get summary information about stream keys",
       "accessLevel": "List",
       "resourceTypes": [
@@ -153,6 +198,9 @@
     },
     "ListStreams": {
       "name": "ListStreams",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
       "description": "Grants permission to get summary information about live streams",
       "accessLevel": "List",
       "resourceTypes": [
@@ -163,6 +211,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
       "description": "Grants permission to get information about the tags for a specified ARN",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -173,6 +224,9 @@
     },
     "PutMetadata": {
       "name": "PutMetadata",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
       "description": "Grants permission to insert metadata into an RTMP stream for a specified channel",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -183,6 +237,9 @@
     },
     "StopStream": {
       "name": "StopStream",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
       "description": "Grants permission to disconnect a streamer on a specified channel",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -193,6 +250,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
       "description": "Grants permission to add or update tags for a resource with a specified ARN",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -203,6 +263,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
       "description": "Grants permission to remove tags for a resource with a specified ARN",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -213,6 +276,9 @@
     },
     "UpdateChannel": {
       "name": "UpdateChannel",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
       "description": "Grants permission to update a channel's configuration",
       "accessLevel": "Write",
       "resourceTypes": [

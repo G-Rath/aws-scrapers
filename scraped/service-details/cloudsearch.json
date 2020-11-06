@@ -3,6 +3,9 @@
   "actions": {
     "AddTags": {
       "name": "AddTags",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Attaches resource tags to an Amazon CloudSearch domain.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "BuildSuggesters": {
       "name": "BuildSuggesters",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Indexes the search suggestions.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "CreateDomain": {
       "name": "CreateDomain",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Creates a new search domain.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "DefineAnalysisScheme": {
       "name": "DefineAnalysisScheme",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Configures an analysis scheme that can be applied to a text or text-array field to\n                                                define language-specific text processing options.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "DefineExpression": {
       "name": "DefineExpression",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Configures an Expression for the search domain.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "DefineIndexField": {
       "name": "DefineIndexField",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Configures an IndexField for the search domain.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "DefineSuggester": {
       "name": "DefineSuggester",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Configures a suggester for a domain.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "DeleteAnalysisScheme": {
       "name": "DeleteAnalysisScheme",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Deletes an analysis scheme.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "DeleteDomain": {
       "name": "DeleteDomain",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Permanently deletes a search domain and all of its data.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "DeleteExpression": {
       "name": "DeleteExpression",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Removes an Expression from the search domain.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "DeleteIndexField": {
       "name": "DeleteIndexField",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Removes an IndexField from the search domain.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -113,6 +146,9 @@
     },
     "DeleteSuggester": {
       "name": "DeleteSuggester",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Deletes a suggester.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -123,6 +159,9 @@
     },
     "DescribeAnalysisSchemes": {
       "name": "DescribeAnalysisSchemes",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Gets the analysis schemes configured for a domain.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -133,6 +172,9 @@
     },
     "DescribeAvailabilityOptions": {
       "name": "DescribeAvailabilityOptions",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Gets the availability options configured for a domain.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -143,6 +185,9 @@
     },
     "DescribeDomainEndpointOptions": {
       "name": "DescribeDomainEndpointOptions",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Gets the domain endpoint options configured for a domain.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -153,6 +198,9 @@
     },
     "DescribeDomains": {
       "name": "DescribeDomains",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Gets information about the search domains owned by this account.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -163,6 +211,9 @@
     },
     "DescribeExpressions": {
       "name": "DescribeExpressions",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Gets the expressions configured for the search domain.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -173,6 +224,9 @@
     },
     "DescribeIndexFields": {
       "name": "DescribeIndexFields",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Gets information about the index fields configured for the search domain.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -183,6 +237,9 @@
     },
     "DescribeScalingParameters": {
       "name": "DescribeScalingParameters",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Gets the scaling parameters configured for a domain.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -193,6 +250,9 @@
     },
     "DescribeServiceAccessPolicies": {
       "name": "DescribeServiceAccessPolicies",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Gets information about the access policies that control access to the domain's document\n                                                and search endpoints.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -203,6 +263,9 @@
     },
     "DescribeSuggesters": {
       "name": "DescribeSuggesters",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Gets the suggesters configured for a domain.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -213,6 +276,9 @@
     },
     "IndexDocuments": {
       "name": "IndexDocuments",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Tells the search domain to start indexing its documents using the latest indexing\n                                                options.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -223,6 +289,9 @@
     },
     "ListDomainNames": {
       "name": "ListDomainNames",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Lists all search domains owned by an account.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -233,6 +302,9 @@
     },
     "ListTags": {
       "name": "ListTags",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Displays all of the resource tags for an Amazon CloudSearch domain.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -243,6 +315,9 @@
     },
     "RemoveTags": {
       "name": "RemoveTags",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Removes the specified resource tags from an Amazon ES domain.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -253,6 +328,9 @@
     },
     "UpdateAvailabilityOptions": {
       "name": "UpdateAvailabilityOptions",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Configures the availability options for a domain.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -263,6 +341,9 @@
     },
     "UpdateDomainEndpointOptions": {
       "name": "UpdateDomainEndpointOptions",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Configures the domain endpoint options for a domain.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -273,6 +354,9 @@
     },
     "UpdateScalingParameters": {
       "name": "UpdateScalingParameters",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Configures scaling parameters for a domain.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -283,6 +367,9 @@
     },
     "UpdateServiceAccessPolicies": {
       "name": "UpdateServiceAccessPolicies",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Configures the access rules that control access to the domain's document and search\n                                                endpoints.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -293,6 +380,9 @@
     },
     "document": {
       "name": "document",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Allows access to the document service operations.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -303,6 +393,9 @@
     },
     "search": {
       "name": "search",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Allows access to the search operations.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -313,6 +406,9 @@
     },
     "suggest": {
       "name": "suggest",
+      "topics": [
+        "Amazon CloudSearch"
+      ],
       "description": "Allows access to the suggest operations.",
       "accessLevel": "Read",
       "resourceTypes": [

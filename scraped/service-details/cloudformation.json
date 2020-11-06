@@ -3,6 +3,9 @@
   "actions": {
     "CancelUpdateStack": {
       "name": "CancelUpdateStack",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Cancels an update on the specified stack.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "ContinueUpdateRollback": {
       "name": "ContinueUpdateRollback",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "For a specified stack that is in the UPDATE_ROLLBACK_FAILED state, continues rolling\n                                                it back to the UPDATE_ROLLBACK_COMPLETE state.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "CreateChangeSet": {
       "name": "CreateChangeSet",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Creates a list of changes for a stack.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "CreateStack": {
       "name": "CreateStack",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Creates a stack as specified in the template.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "CreateStackInstances": {
       "name": "CreateStackInstances",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Creates stack instances for the specified accounts, within the specified regions.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "CreateStackSet": {
       "name": "CreateStackSet",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Creates a stackset as specified in the template.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -61,6 +79,9 @@
     },
     "CreateUploadBucket": {
       "name": "CreateUploadBucket",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -69,6 +90,9 @@
     },
     "DeleteChangeSet": {
       "name": "DeleteChangeSet",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Deletes the specified change set. Deleting change sets ensures that no one executes\n                                                the wrong change set.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -79,6 +103,9 @@
     },
     "DeleteStack": {
       "name": "DeleteStack",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Deletes a specified stack.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -89,6 +116,9 @@
     },
     "DeleteStackInstances": {
       "name": "DeleteStackInstances",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Deletes stack instances for the specified accounts, in the specified regions.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -99,6 +129,9 @@
     },
     "DeleteStackSet": {
       "name": "DeleteStackSet",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Deletes a specified stackset.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -109,6 +142,9 @@
     },
     "DeregisterType": {
       "name": "DeregisterType",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Deregisters an existing CloudFormation type or type version",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -117,6 +153,9 @@
     },
     "DescribeAccountLimits": {
       "name": "DescribeAccountLimits",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Retrieves your account's AWS CloudFormation limits.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -125,6 +164,9 @@
     },
     "DescribeChangeSet": {
       "name": "DescribeChangeSet",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Returns the description for the specified change set.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -135,6 +177,9 @@
     },
     "DescribeStackDriftDetectionStatus": {
       "name": "DescribeStackDriftDetectionStatus",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Returns information about a stack drift detection operation.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -143,6 +188,9 @@
     },
     "DescribeStackEvents": {
       "name": "DescribeStackEvents",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Returns all stack related events for a specified stack.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -153,6 +201,9 @@
     },
     "DescribeStackInstance": {
       "name": "DescribeStackInstance",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Returns the stack instance that's associated with the specified stack set, AWS account,\n                                                and region.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -163,6 +214,9 @@
     },
     "DescribeStackResource": {
       "name": "DescribeStackResource",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Returns a description of the specified resource in the specified stack.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -173,6 +227,9 @@
     },
     "DescribeStackResourceDrifts": {
       "name": "DescribeStackResourceDrifts",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Returns drift information for the resources that have been checked for drift in the\n                                                specified stack.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -183,6 +240,9 @@
     },
     "DescribeStackResources": {
       "name": "DescribeStackResources",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Returns AWS resource descriptions for running and deleted stacks.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -193,6 +253,9 @@
     },
     "DescribeStackSet": {
       "name": "DescribeStackSet",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Returns the description of the specified stack set.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -203,6 +266,9 @@
     },
     "DescribeStackSetOperation": {
       "name": "DescribeStackSetOperation",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Returns the description of the specified stack set operation.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -213,6 +279,9 @@
     },
     "DescribeStacks": {
       "name": "DescribeStacks",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Returns the description for the specified stack.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -223,6 +292,9 @@
     },
     "DescribeType": {
       "name": "DescribeType",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Returns information about the CloudFormation type requested",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -231,6 +303,9 @@
     },
     "DescribeTypeRegistration": {
       "name": "DescribeTypeRegistration",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Returns information about the registration process for a CloudFormation type",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -239,6 +314,9 @@
     },
     "DetectStackDrift": {
       "name": "DetectStackDrift",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Detects whether a stack's actual configuration differs, or has drifted, from it's\n                                                expected configuration, as defined in the stack template and any values specified\n                                                as template parameters.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -249,6 +327,9 @@
     },
     "DetectStackResourceDrift": {
       "name": "DetectStackResourceDrift",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Returns information about whether a resource's actual configuration differs, or has\n                                                drifted, from it's expected configuration, as defined in the stack template and any\n                                                values specified as template parameters.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -259,6 +340,9 @@
     },
     "DetectStackSetDrift": {
       "name": "DetectStackSetDrift",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Enables users to detect drift on a stack set and the stack instances that belong to\n                                                that stack set.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -269,6 +353,9 @@
     },
     "EstimateTemplateCost": {
       "name": "EstimateTemplateCost",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Returns the estimated monthly cost of a template.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -277,6 +364,9 @@
     },
     "ExecuteChangeSet": {
       "name": "ExecuteChangeSet",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Updates a stack using the input information that was provided when the specified change\n                                                set was created.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -287,6 +377,9 @@
     },
     "GetStackPolicy": {
       "name": "GetStackPolicy",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Returns the stack policy for a specified stack.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -297,6 +390,9 @@
     },
     "GetTemplate": {
       "name": "GetTemplate",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Returns the template body for a specified stack.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -307,6 +403,9 @@
     },
     "GetTemplateSummary": {
       "name": "GetTemplateSummary",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Returns information about a new or existing template.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -317,6 +416,9 @@
     },
     "ListChangeSets": {
       "name": "ListChangeSets",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Returns the ID and status of each active change set for a stack. For example, AWS\n                                                CloudFormation lists change sets that are in the CREATE_IN_PROGRESS or CREATE_PENDING\n                                                state.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -327,6 +429,9 @@
     },
     "ListExports": {
       "name": "ListExports",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Lists all exported output values in the account and region in which you call this\n                                                action.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -335,6 +440,9 @@
     },
     "ListImports": {
       "name": "ListImports",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Lists all stacks that are importing an exported output value.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -343,6 +451,9 @@
     },
     "ListStackInstances": {
       "name": "ListStackInstances",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Returns summary information about stack instances that are associated with the specified\n                                                stack set.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -353,6 +464,9 @@
     },
     "ListStackResources": {
       "name": "ListStackResources",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Returns descriptions of all resources of the specified stack.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -363,6 +477,9 @@
     },
     "ListStackSetOperationResults": {
       "name": "ListStackSetOperationResults",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Returns summary information about the results of a stack set operation.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -373,6 +490,9 @@
     },
     "ListStackSetOperations": {
       "name": "ListStackSetOperations",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Returns summary information about operations performed on a stack set.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -383,6 +503,9 @@
     },
     "ListStackSets": {
       "name": "ListStackSets",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Returns summary information about stack sets that are associated with the user.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -393,6 +516,9 @@
     },
     "ListStacks": {
       "name": "ListStacks",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Returns the summary information for stacks whose status matches the specified StackStatusFilter.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -401,6 +527,9 @@
     },
     "ListTypeRegistrations": {
       "name": "ListTypeRegistrations",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Lists CloudFormation type registration attempts",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -409,6 +538,9 @@
     },
     "ListTypeVersions": {
       "name": "ListTypeVersions",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Lists versions of a particular CloudFormation type",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -417,6 +549,9 @@
     },
     "ListTypes": {
       "name": "ListTypes",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Lists available CloudFormation types",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -425,6 +560,9 @@
     },
     "RegisterType": {
       "name": "RegisterType",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Registers a new CloudFormation type",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -433,6 +571,9 @@
     },
     "SetStackPolicy": {
       "name": "SetStackPolicy",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Sets a stack policy for a specified stack.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -443,6 +584,9 @@
     },
     "SetTypeDefaultVersion": {
       "name": "SetTypeDefaultVersion",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Sets which version of a CloudFormation type applies to CloudFormation operations",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -451,6 +595,9 @@
     },
     "SignalResource": {
       "name": "SignalResource",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Sends a signal to the specified resource with a success or failure status.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -461,6 +608,9 @@
     },
     "StopStackSetOperation": {
       "name": "StopStackSetOperation",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Stops an in-progress operation on a stack set and its associated stack instances.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -471,6 +621,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Tagging cloudformation resources.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -481,6 +634,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Untagging cloudformation resources.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -491,6 +647,9 @@
     },
     "UpdateStack": {
       "name": "UpdateStack",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Updates a stack as specified in the template.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -501,6 +660,9 @@
     },
     "UpdateStackInstances": {
       "name": "UpdateStackInstances",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Updates the parameter values for stack instances for the specified accounts, within\n                                                the specified regions.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -511,6 +673,9 @@
     },
     "UpdateStackSet": {
       "name": "UpdateStackSet",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Updates a stackset as specified in the template.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -521,6 +686,9 @@
     },
     "UpdateTerminationProtection": {
       "name": "UpdateTerminationProtection",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Updates termination protection for the specified stack.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -531,6 +699,9 @@
     },
     "ValidateTemplate": {
       "name": "ValidateTemplate",
+      "topics": [
+        "AWS CloudFormation"
+      ],
       "description": "Validates a specified template.",
       "accessLevel": "Read",
       "resourceTypes": [],

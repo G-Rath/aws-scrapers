@@ -3,6 +3,9 @@
   "actions": {
     "BatchPutMessage": {
       "name": "BatchPutMessage",
+      "topics": [
+        "AWS IoT Events"
+      ],
       "description": "Sends a set of messages to the AWS IoT Events system.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "BatchUpdateDetector": {
       "name": "BatchUpdateDetector",
+      "topics": [
+        "AWS IoT Events"
+      ],
       "description": "Update an detector within the AWS IoT Events system.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "CreateDetectorModel": {
       "name": "CreateDetectorModel",
+      "topics": [
+        "AWS IoT Events"
+      ],
       "description": "Creates a detector model.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "CreateInput": {
       "name": "CreateInput",
+      "topics": [
+        "AWS IoT Events"
+      ],
       "description": "Creates an input.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "DeleteDetectorModel": {
       "name": "DeleteDetectorModel",
+      "topics": [
+        "AWS IoT Events"
+      ],
       "description": "Deletes a detector model.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "DeleteInput": {
       "name": "DeleteInput",
+      "topics": [
+        "AWS IoT Events"
+      ],
       "description": "Deletes an input.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "DescribeDetector": {
       "name": "DescribeDetector",
+      "topics": [
+        "AWS IoT Events"
+      ],
       "description": "Returns information about the specified detector (instance).",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "DescribeDetectorModel": {
       "name": "DescribeDetectorModel",
+      "topics": [
+        "AWS IoT Events"
+      ],
       "description": "Describes a detector model.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "DescribeInput": {
       "name": "DescribeInput",
+      "topics": [
+        "AWS IoT Events"
+      ],
       "description": "Describes an input.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "DescribeLoggingOptions": {
       "name": "DescribeLoggingOptions",
+      "topics": [
+        "AWS IoT Events"
+      ],
       "description": "Retrieves the current settings of the AWS IoT Events logging options.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -101,6 +131,9 @@
     },
     "ListDetectorModelVersions": {
       "name": "ListDetectorModelVersions",
+      "topics": [
+        "AWS IoT Events"
+      ],
       "description": "Lists all the versions of a detector model. Only the metadata associated with each\n                                                detector model version is returned.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -111,6 +144,9 @@
     },
     "ListDetectorModels": {
       "name": "ListDetectorModels",
+      "topics": [
+        "AWS IoT Events"
+      ],
       "description": "Lists the detector models you have created. Only the metadata associated with each\n                                                detector model is returned.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -119,6 +155,9 @@
     },
     "ListDetectors": {
       "name": "ListDetectors",
+      "topics": [
+        "AWS IoT Events"
+      ],
       "description": "Lists detectors (the instances of a detector model).",
       "accessLevel": "List",
       "resourceTypes": [
@@ -129,6 +168,9 @@
     },
     "ListInputs": {
       "name": "ListInputs",
+      "topics": [
+        "AWS IoT Events"
+      ],
       "description": "Lists the inputs you have created.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -137,6 +179,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "AWS IoT Events"
+      ],
       "description": "Lists the tags (metadata) which you have assigned to the resource.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -147,6 +192,9 @@
     },
     "PutLoggingOptions": {
       "name": "PutLoggingOptions",
+      "topics": [
+        "AWS IoT Events"
+      ],
       "description": "Sets or updates the AWS IoT Events logging options.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -155,6 +203,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS IoT Events"
+      ],
       "description": "Adds to or modifies the tags of the given resource. Tags are metadata which can be\n                                                used to manage a resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -165,6 +216,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS IoT Events"
+      ],
       "description": "Removes the given tags (metadata) from the resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -175,6 +229,9 @@
     },
     "UpdateDetectorModel": {
       "name": "UpdateDetectorModel",
+      "topics": [
+        "AWS IoT Events"
+      ],
       "description": "Updates a detector model.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -185,6 +242,9 @@
     },
     "UpdateInput": {
       "name": "UpdateInput",
+      "topics": [
+        "AWS IoT Events"
+      ],
       "description": "Updates an input.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -195,6 +255,9 @@
     },
     "UpdateInputRouting": {
       "name": "UpdateInputRouting",
+      "topics": [
+        "AWS IoT Events"
+      ],
       "description": "Updates input routing.",
       "accessLevel": "Write",
       "resourceTypes": [

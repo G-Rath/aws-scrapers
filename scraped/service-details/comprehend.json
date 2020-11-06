@@ -3,6 +3,9 @@
   "actions": {
     "BatchDetectDominantLanguage": {
       "name": "BatchDetectDominantLanguage",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to detect the language or languages present in the list of text\n                                                documents",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "BatchDetectEntities": {
       "name": "BatchDetectEntities",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to detect the named entities (\"People\", \"Places\", \"Locations\", etc)\n                                                within the given list of text documents",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -19,6 +25,9 @@
     },
     "BatchDetectKeyPhrases": {
       "name": "BatchDetectKeyPhrases",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to detect the phrases in the list of text documents that are most\n                                                indicative of the content",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -27,6 +36,9 @@
     },
     "BatchDetectSentiment": {
       "name": "BatchDetectSentiment",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to detect the sentiment of a text in the list of documents (Positive,\n                                                Negative, Neutral, or Mixed)",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -35,6 +47,9 @@
     },
     "BatchDetectSyntax": {
       "name": "BatchDetectSyntax",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to detect syntactic information (like Part of Speech, Tokens) in\n                                                a list of text documents",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -43,6 +58,9 @@
     },
     "ClassifyDocument": {
       "name": "ClassifyDocument",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to create a new document classification request to analyze a single\n                                                document in real-time, using a previously created and trained custom model and an\n                                                endpoint",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -53,6 +71,9 @@
     },
     "CreateDocumentClassifier": {
       "name": "CreateDocumentClassifier",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to create a new document classifier that you can use to categorize\n                                                documents",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -61,6 +82,9 @@
     },
     "CreateEndpoint": {
       "name": "CreateEndpoint",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to create a model-specific endpoint for synchronous inference for\n                                                a previously trained custom model",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -71,6 +95,9 @@
     },
     "CreateEntityRecognizer": {
       "name": "CreateEntityRecognizer",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to create an entity recognizer using submitted files",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -79,6 +106,9 @@
     },
     "DeleteDocumentClassifier": {
       "name": "DeleteDocumentClassifier",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to delete a previously created document classifier",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -89,6 +119,9 @@
     },
     "DeleteEndpoint": {
       "name": "DeleteEndpoint",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to delete a model-specific endpoint for a previously-trained custom\n                                                model. All endpoints must be deleted in order for the model to be deleted",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -99,6 +132,9 @@
     },
     "DeleteEntityRecognizer": {
       "name": "DeleteEntityRecognizer",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to delete a submitted entity recognizer",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -109,6 +145,9 @@
     },
     "DescribeDocumentClassificationJob": {
       "name": "DescribeDocumentClassificationJob",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to get the properties associated with a document classification\n                                                job",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -117,6 +156,9 @@
     },
     "DescribeDocumentClassifier": {
       "name": "DescribeDocumentClassifier",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to get the properties associated with a document classifier",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -127,6 +169,9 @@
     },
     "DescribeDominantLanguageDetectionJob": {
       "name": "DescribeDominantLanguageDetectionJob",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to get the properties associated with a dominant language detection\n                                                job",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -135,6 +180,9 @@
     },
     "DescribeEndpoint": {
       "name": "DescribeEndpoint",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to get the properties associated with a specific endpoint. Use this\n                                                operation to get the status of an endpoint",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -145,6 +193,9 @@
     },
     "DescribeEntitiesDetectionJob": {
       "name": "DescribeEntitiesDetectionJob",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to get the properties associated with an entities detection job",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -153,6 +204,9 @@
     },
     "DescribeEntityRecognizer": {
       "name": "DescribeEntityRecognizer",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to provide details about an entity recognizer including status,\n                                                S3 buckets containing training data, recognizer metadata, metrics, and so on",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -163,6 +217,9 @@
     },
     "DescribeKeyPhrasesDetectionJob": {
       "name": "DescribeKeyPhrasesDetectionJob",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to get the properties associated with a key phrases detection job",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -171,6 +228,9 @@
     },
     "DescribePiiEntitiesDetectionJob": {
       "name": "DescribePiiEntitiesDetectionJob",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to get the properties associated with a PII entities detection job",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -179,6 +239,9 @@
     },
     "DescribeSentimentDetectionJob": {
       "name": "DescribeSentimentDetectionJob",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to get the properties associated with a sentiment detection job",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -187,6 +250,9 @@
     },
     "DescribeTopicsDetectionJob": {
       "name": "DescribeTopicsDetectionJob",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to get the properties associated with a topic detection job",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -195,6 +261,9 @@
     },
     "DetectDominantLanguage": {
       "name": "DetectDominantLanguage",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to detect the language or languages present in the text",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -203,6 +272,9 @@
     },
     "DetectEntities": {
       "name": "DetectEntities",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to detect the named entities (\"People\", \"Places\", \"Locations\", etc)\n                                                within the given text document",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -213,6 +285,9 @@
     },
     "DetectKeyPhrases": {
       "name": "DetectKeyPhrases",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to detect the phrases in the text that are most indicative of the\n                                                content",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -221,6 +296,9 @@
     },
     "DetectPiiEntities": {
       "name": "DetectPiiEntities",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to detect the personally identifiable information entities (\"Name\",\n                                                \"SSN\", \"PIN\", etc) within the given text document",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -229,6 +307,9 @@
     },
     "DetectSentiment": {
       "name": "DetectSentiment",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to detect the sentiment of a text in a document (Positive, Negative,\n                                                Neutral, or Mixed)",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -237,6 +318,9 @@
     },
     "DetectSyntax": {
       "name": "DetectSyntax",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to detect syntactic information (like Part of Speech, Tokens) in\n                                                a text document",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -245,6 +329,9 @@
     },
     "ListDocumentClassificationJobs": {
       "name": "ListDocumentClassificationJobs",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to get a list of the document classification jobs that you have\n                                                submitted",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -253,6 +340,9 @@
     },
     "ListDocumentClassifiers": {
       "name": "ListDocumentClassifiers",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to get a list of the document classifiers that you have created",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -261,6 +351,9 @@
     },
     "ListDominantLanguageDetectionJobs": {
       "name": "ListDominantLanguageDetectionJobs",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to get a list of the dominant language detection jobs that you have\n                                                submitted",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -269,6 +362,9 @@
     },
     "ListEndpoints": {
       "name": "ListEndpoints",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to get a list of all existing endpoints that you've created",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -277,6 +373,9 @@
     },
     "ListEntitiesDetectionJobs": {
       "name": "ListEntitiesDetectionJobs",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to get a list of the entity detection jobs that you have submitted",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -285,6 +384,9 @@
     },
     "ListEntityRecognizers": {
       "name": "ListEntityRecognizers",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to get a list of the properties of all entity recognizers that you\n                                                created, including recognizers currently in training",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -293,6 +395,9 @@
     },
     "ListKeyPhrasesDetectionJobs": {
       "name": "ListKeyPhrasesDetectionJobs",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to get a list of key phrase detection jobs that you have submitted",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -301,6 +406,9 @@
     },
     "ListPiiEntitiesDetectionJobs": {
       "name": "ListPiiEntitiesDetectionJobs",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to get a list of PII entities detection jobs that you have submitted",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -309,6 +417,9 @@
     },
     "ListSentimentDetectionJobs": {
       "name": "ListSentimentDetectionJobs",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to get a list of sentiment detection jobs that you have submitted",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -317,6 +428,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to list tags for a resource",
       "accessLevel": "List",
       "resourceTypes": [
@@ -327,6 +441,9 @@
     },
     "ListTopicsDetectionJobs": {
       "name": "ListTopicsDetectionJobs",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to get a list of the topic detection jobs that you have submitted",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -335,6 +452,9 @@
     },
     "StartDocumentClassificationJob": {
       "name": "StartDocumentClassificationJob",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to start an asynchronous document classification job",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -345,6 +465,9 @@
     },
     "StartDominantLanguageDetectionJob": {
       "name": "StartDominantLanguageDetectionJob",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to start an asynchronous dominant language detection job for a collection\n                                                of documents",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -353,6 +476,9 @@
     },
     "StartEntitiesDetectionJob": {
       "name": "StartEntitiesDetectionJob",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to start an asynchronous entity detection job for a collection of\n                                                documents",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -363,6 +489,9 @@
     },
     "StartKeyPhrasesDetectionJob": {
       "name": "StartKeyPhrasesDetectionJob",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to start an asynchronous key phrase detection job for a collection\n                                                of documents",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -371,6 +500,9 @@
     },
     "StartPiiEntitiesDetectionJob": {
       "name": "StartPiiEntitiesDetectionJob",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to start an asynchronous PII entities detection job for a collection\n                                                of documents",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -379,6 +511,9 @@
     },
     "StartSentimentDetectionJob": {
       "name": "StartSentimentDetectionJob",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to start an asynchronous sentiment detection job for a collection\n                                                of documents",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -387,6 +522,9 @@
     },
     "StartTopicsDetectionJob": {
       "name": "StartTopicsDetectionJob",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to start an asynchronous job to detect the most common topics in\n                                                the collection of documents and the phrases associated with each topic",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -395,6 +533,9 @@
     },
     "StopDominantLanguageDetectionJob": {
       "name": "StopDominantLanguageDetectionJob",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to stop a dominant language detection job",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -403,6 +544,9 @@
     },
     "StopEntitiesDetectionJob": {
       "name": "StopEntitiesDetectionJob",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to stop an entity detection job",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -411,6 +555,9 @@
     },
     "StopKeyPhrasesDetectionJob": {
       "name": "StopKeyPhrasesDetectionJob",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to stop a key phrase detection job",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -419,6 +566,9 @@
     },
     "StopPiiEntitiesDetectionJob": {
       "name": "StopPiiEntitiesDetectionJob",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to stop a PII entities detection job",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -427,6 +577,9 @@
     },
     "StopSentimentDetectionJob": {
       "name": "StopSentimentDetectionJob",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to stop a sentiment detection job",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -435,6 +588,9 @@
     },
     "StopTrainingDocumentClassifier": {
       "name": "StopTrainingDocumentClassifier",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to stop a previously created document classifier training job",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -445,6 +601,9 @@
     },
     "StopTrainingEntityRecognizer": {
       "name": "StopTrainingEntityRecognizer",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to stop a previously created entity recognizer training job",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -455,6 +614,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to tag a resource with given key value pairs",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -465,6 +627,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to untag a resource with given key",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -475,6 +640,9 @@
     },
     "UpdateEndpoint": {
       "name": "UpdateEndpoint",
+      "topics": [
+        "Amazon Comprehend"
+      ],
       "description": "Grants permission to update information about the specified endpoint",
       "accessLevel": "Write",
       "resourceTypes": [

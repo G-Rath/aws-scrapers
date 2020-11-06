@@ -3,6 +3,9 @@
   "actions": {
     "AcceptHandshake": {
       "name": "AcceptHandshake",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to send a response to the originator of a handshake agreeing to\n                                                the action proposed by the handshake request.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "AttachPolicy": {
       "name": "AttachPolicy",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to attach a policy to a root, an organizational unit, or an individual\n                                                account.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "CancelHandshake": {
       "name": "CancelHandshake",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to cancel a handshake.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "CreateAccount": {
       "name": "CreateAccount",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to create an AWS account that is automatically a member of the organization\n                                                with the credentials that made the request.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -41,6 +53,9 @@
     },
     "CreateGovCloudAccount": {
       "name": "CreateGovCloudAccount",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to create an AWS GovCloud (US) account.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -49,6 +64,9 @@
     },
     "CreateOrganization": {
       "name": "CreateOrganization",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to create an organization. The account with the credentials that\n                                                calls the CreateOrganization operation automatically becomes the master account of\n                                                the new organization.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -57,6 +75,9 @@
     },
     "CreateOrganizationalUnit": {
       "name": "CreateOrganizationalUnit",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to create an organizational unit (OU) within a root or parent OU.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -67,6 +88,9 @@
     },
     "CreatePolicy": {
       "name": "CreatePolicy",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to create a policy that you can attach to a root, an organizational\n                                                unit (OU), or an individual AWS account.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -75,6 +99,9 @@
     },
     "DeclineHandshake": {
       "name": "DeclineHandshake",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to decline a handshake request. This sets the handshake state to\n                                                DECLINED and effectively deactivates the request.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -85,6 +112,9 @@
     },
     "DeleteOrganization": {
       "name": "DeleteOrganization",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to delete the organization.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -93,6 +123,9 @@
     },
     "DeleteOrganizationalUnit": {
       "name": "DeleteOrganizationalUnit",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to delete an organizational unit from a root or another OU.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -103,6 +136,9 @@
     },
     "DeletePolicy": {
       "name": "DeletePolicy",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to delete a policy from your organization.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -113,6 +149,9 @@
     },
     "DeregisterDelegatedAdministrator": {
       "name": "DeregisterDelegatedAdministrator",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to deregister the specified member AWS account as a delegated administrator\n                                                for the AWS service that is specified by ServicePrincipal.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -123,6 +162,9 @@
     },
     "DescribeAccount": {
       "name": "DescribeAccount",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to retrieve Organizations-related details about the specified account.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -133,6 +175,9 @@
     },
     "DescribeCreateAccountStatus": {
       "name": "DescribeCreateAccountStatus",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to retrieve the current status of an asynchronous request to create\n                                                an account.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -141,6 +186,9 @@
     },
     "DescribeEffectivePolicy": {
       "name": "DescribeEffectivePolicy",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to retrieve the effective policy for an account.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -151,6 +199,9 @@
     },
     "DescribeHandshake": {
       "name": "DescribeHandshake",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to retrieve details about a previously requested handshake.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -161,6 +212,9 @@
     },
     "DescribeOrganization": {
       "name": "DescribeOrganization",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to retrieves details about the organization that the calling credentials\n                                                belong to.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -169,6 +223,9 @@
     },
     "DescribeOrganizationalUnit": {
       "name": "DescribeOrganizationalUnit",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to retrieve details about an organizational unit (OU).",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -179,6 +236,9 @@
     },
     "DescribePolicy": {
       "name": "DescribePolicy",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to retrieves details about a policy.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -189,6 +249,9 @@
     },
     "DetachPolicy": {
       "name": "DetachPolicy",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to detach a policy from a target root, organizational unit, or account.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -199,6 +262,9 @@
     },
     "DisableAWSServiceAccess": {
       "name": "DisableAWSServiceAccess",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to disable integration of an AWS service (the service that is specified\n                                                by ServicePrincipal) with AWS Organizations.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -207,6 +273,9 @@
     },
     "DisablePolicyType": {
       "name": "DisablePolicyType",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to disable an organization policy type in a root.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -217,6 +286,9 @@
     },
     "EnableAWSServiceAccess": {
       "name": "EnableAWSServiceAccess",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to enable integration of an AWS service (the service that is specified\n                                                by ServicePrincipal) with AWS Organizations.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -225,6 +297,9 @@
     },
     "EnableAllFeatures": {
       "name": "EnableAllFeatures",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to start the process to enable all features in an organization,\n                                                upgrading it from supporting only Consolidated Billing features.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -233,6 +308,9 @@
     },
     "EnablePolicyType": {
       "name": "EnablePolicyType",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to enable a policy type in a root.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -243,6 +321,9 @@
     },
     "InviteAccountToOrganization": {
       "name": "InviteAccountToOrganization",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to send an invitation to another AWS account, asking it to join\n                                                your organization as a member account.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -253,6 +334,9 @@
     },
     "LeaveOrganization": {
       "name": "LeaveOrganization",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to remove a member account from its parent organization.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -261,6 +345,9 @@
     },
     "ListAWSServiceAccessForOrganization": {
       "name": "ListAWSServiceAccessForOrganization",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to retrieve the list of the AWS services for which you enabled integration\n                                                with your organization.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -269,6 +356,9 @@
     },
     "ListAccounts": {
       "name": "ListAccounts",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to list all of the the accounts in the organization.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -277,6 +367,9 @@
     },
     "ListAccountsForParent": {
       "name": "ListAccountsForParent",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to list the accounts in an organization that are contained by a\n                                                root or organizational unit (OU).",
       "accessLevel": "List",
       "resourceTypes": [
@@ -287,6 +380,9 @@
     },
     "ListChildren": {
       "name": "ListChildren",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to list all of the OUs or accounts that are contained in a parent\n                                                OU or root.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -297,6 +393,9 @@
     },
     "ListCreateAccountStatus": {
       "name": "ListCreateAccountStatus",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to list the asynchronous account creation requests that are currently\n                                                being tracked for the organization.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -305,6 +404,9 @@
     },
     "ListDelegatedAdministrators": {
       "name": "ListDelegatedAdministrators",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to list the AWS accounts that are designated as delegated administrators\n                                                in this organization.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -313,6 +415,9 @@
     },
     "ListDelegatedServicesForAccount": {
       "name": "ListDelegatedServicesForAccount",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to list the AWS services for which the specified account is a delegated\n                                                administrator in this organization.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -323,6 +428,9 @@
     },
     "ListHandshakesForAccount": {
       "name": "ListHandshakesForAccount",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to list all of the handshakes that are associated with an account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -331,6 +439,9 @@
     },
     "ListHandshakesForOrganization": {
       "name": "ListHandshakesForOrganization",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to list the handshakes that are associated with the organization.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -339,6 +450,9 @@
     },
     "ListOrganizationalUnitsForParent": {
       "name": "ListOrganizationalUnitsForParent",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to lists all of the organizational units (OUs) in a parent organizational\n                                                unit or root.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -349,6 +463,9 @@
     },
     "ListParents": {
       "name": "ListParents",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to list the root or organizational units (OUs) that serve as the\n                                                immediate parent of a child OU or account.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -359,6 +476,9 @@
     },
     "ListPolicies": {
       "name": "ListPolicies",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to list all of the policies in an organization.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -367,6 +487,9 @@
     },
     "ListPoliciesForTarget": {
       "name": "ListPoliciesForTarget",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to list all of the policies that are directly attached to a root,\n                                                organizational unit (OU), or account.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -377,6 +500,9 @@
     },
     "ListRoots": {
       "name": "ListRoots",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to list all of the roots that are defined in the organization.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -385,6 +511,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to list all tags for the specified resource.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -395,6 +524,9 @@
     },
     "ListTargetsForPolicy": {
       "name": "ListTargetsForPolicy",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to list all the roots, OUs, and accounts to which a policy is attached.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -405,6 +537,9 @@
     },
     "MoveAccount": {
       "name": "MoveAccount",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to move an account from its current root or OU to another parent\n                                                root or OU.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -415,6 +550,9 @@
     },
     "RegisterDelegatedAdministrator": {
       "name": "RegisterDelegatedAdministrator",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to register the specified member account to administer the Organizations\n                                                features of the AWS service that is specified by ServicePrincipal.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -425,6 +563,9 @@
     },
     "RemoveAccountFromOrganization": {
       "name": "RemoveAccountFromOrganization",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to removes the specified account from the organization.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -435,6 +576,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to add one or more tags to the specified resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -445,6 +589,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to remove one or more tags from the specified resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -455,6 +602,9 @@
     },
     "UpdateOrganizationalUnit": {
       "name": "UpdateOrganizationalUnit",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to rename an organizational unit (OU).",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -465,6 +615,9 @@
     },
     "UpdatePolicy": {
       "name": "UpdatePolicy",
+      "topics": [
+        "AWS Organizations"
+      ],
       "description": "Grants permission to update an existing policy with a new name, description, or content.",
       "accessLevel": "Write",
       "resourceTypes": [

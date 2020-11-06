@@ -3,6 +3,9 @@
   "actions": {
     "CreateDeliveryStream": {
       "name": "CreateDeliveryStream",
+      "topics": [
+        "Amazon Kinesis Firehose"
+      ],
       "description": "Creates a delivery stream.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "DeleteDeliveryStream": {
       "name": "DeleteDeliveryStream",
+      "topics": [
+        "Amazon Kinesis Firehose"
+      ],
       "description": "Deletes a delivery stream and its data.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "DescribeDeliveryStream": {
       "name": "DescribeDeliveryStream",
+      "topics": [
+        "Amazon Kinesis Firehose"
+      ],
       "description": "Describes the specified delivery stream and gets the status.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "ListDeliveryStreams": {
       "name": "ListDeliveryStreams",
+      "topics": [
+        "Amazon Kinesis Firehose"
+      ],
       "description": "Lists your delivery streams.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -41,6 +53,9 @@
     },
     "ListTagsForDeliveryStream": {
       "name": "ListTagsForDeliveryStream",
+      "topics": [
+        "Amazon Kinesis Firehose"
+      ],
       "description": "Lists the tags for the specified delivery stream.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -51,6 +66,9 @@
     },
     "PutRecord": {
       "name": "PutRecord",
+      "topics": [
+        "Amazon Kinesis Firehose"
+      ],
       "description": "Writes a single data record into an Amazon Kinesis Firehose delivery stream.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -61,6 +79,9 @@
     },
     "PutRecordBatch": {
       "name": "PutRecordBatch",
+      "topics": [
+        "Amazon Kinesis Firehose"
+      ],
       "description": "Writes multiple data records into a delivery stream in a single call, which can achieve\n                                                higher throughput per producer than when writing single records.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -71,6 +92,9 @@
     },
     "StartDeliveryStreamEncryption": {
       "name": "StartDeliveryStreamEncryption",
+      "topics": [
+        "Amazon Kinesis Firehose"
+      ],
       "description": "Enables server-side encryption (SSE) for the delivery stream.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -81,6 +105,9 @@
     },
     "StopDeliveryStreamEncryption": {
       "name": "StopDeliveryStreamEncryption",
+      "topics": [
+        "Amazon Kinesis Firehose"
+      ],
       "description": "Disables the specified destination of the specified delivery stream.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -91,6 +118,9 @@
     },
     "TagDeliveryStream": {
       "name": "TagDeliveryStream",
+      "topics": [
+        "Amazon Kinesis Firehose"
+      ],
       "description": "Adds or updates tags for the specified delivery stream.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -101,6 +131,9 @@
     },
     "UntagDeliveryStream": {
       "name": "UntagDeliveryStream",
+      "topics": [
+        "Amazon Kinesis Firehose"
+      ],
       "description": "Removes tags from the specified delivery stream.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -111,6 +144,9 @@
     },
     "UpdateDestination": {
       "name": "UpdateDestination",
+      "topics": [
+        "Amazon Kinesis Firehose"
+      ],
       "description": "Updates the specified destination of the specified delivery stream.",
       "accessLevel": "Write",
       "resourceTypes": [

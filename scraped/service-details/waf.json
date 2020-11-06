@@ -3,6 +3,9 @@
   "actions": {
     "CreateByteMatchSet": {
       "name": "CreateByteMatchSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Creates a ByteMatchSet.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "CreateGeoMatchSet": {
       "name": "CreateGeoMatchSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Creates a GeoMatchSet, which you use to specify which web requests you want to allow\n                                                or block based on the country that the requests originate from.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "CreateIPSet": {
       "name": "CreateIPSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Creates an IPSet, which you use to specify which web requests you want to allow or\n                                                block based on the IP addresses that the requests originate from.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "CreateRateBasedRule": {
       "name": "CreateRateBasedRule",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Creates a RateBasedRule, which contains a RateLimit specifying the maximum number\n                                                of requests that AWS WAF allows from a specified IP address in a five-minute period.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "CreateRegexMatchSet": {
       "name": "CreateRegexMatchSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Creates a RegexMatchSet, which you use to specify which web requests you want to allow\n                                                or block based on the regex patterns you specified in a RegexPatternSet.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "CreateRegexPatternSet": {
       "name": "CreateRegexPatternSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Creates a RegexPatternSet, which you use to specify the regular expression (regex)\n                                                pattern that you want AWS WAF to search for.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "CreateRule": {
       "name": "CreateRule",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Creates a Rule, which contains the IPSet objects, ByteMatchSet objects, and other\n                                                predicates that identify the requests that you want to block.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "CreateRuleGroup": {
       "name": "CreateRuleGroup",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Creates a RuleGroup. A rule group is a collection of predefined rules that you add\n                                                to a WebACL.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "CreateSizeConstraintSet": {
       "name": "CreateSizeConstraintSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Creates a SizeConstraintSet, which you use to identify the part of a web request that\n                                                you want to check for length.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "CreateSqlInjectionMatchSet": {
       "name": "CreateSqlInjectionMatchSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Creates a SqlInjectionMatchSet, which you use to allow, block, or count requests that\n                                                contain snippets of SQL code in a specified part of web requests.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "CreateWebACL": {
       "name": "CreateWebACL",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Creates a WebACL, which contains the Rules that identify the CloudFront web requests\n                                                that you want to allow, block, or count.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -113,6 +146,9 @@
     },
     "CreateWebACLMigrationStack": {
       "name": "CreateWebACLMigrationStack",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Create and store a CloudFormation tempalte that creates an equivalent WAF v2 WebACL\n                                                from the given WAF Classic WebACL in the given S3 bucket.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -123,6 +159,9 @@
     },
     "CreateXssMatchSet": {
       "name": "CreateXssMatchSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Creates an XssMatchSet, which you use to allow, block, or count requests that contain\n                                                cross-site scripting attacks in the specified part of web requests.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -133,6 +172,9 @@
     },
     "DeleteByteMatchSet": {
       "name": "DeleteByteMatchSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Permanently deletes a ByteMatchSet.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -143,6 +185,9 @@
     },
     "DeleteGeoMatchSet": {
       "name": "DeleteGeoMatchSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Permanently deletes an GeoMatchSet.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -153,6 +198,9 @@
     },
     "DeleteIPSet": {
       "name": "DeleteIPSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Permanently deletes an IPSet.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -163,6 +211,9 @@
     },
     "DeleteLoggingConfiguration": {
       "name": "DeleteLoggingConfiguration",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Permanently deletes the LoggingConfiguration from the specified web ACL.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -173,6 +224,9 @@
     },
     "DeletePermissionPolicy": {
       "name": "DeletePermissionPolicy",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Permanently deletes an IAM policy from the specified RuleGroup.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -183,6 +237,9 @@
     },
     "DeleteRateBasedRule": {
       "name": "DeleteRateBasedRule",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Permanently deletes a RateBasedRule.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -193,6 +250,9 @@
     },
     "DeleteRegexMatchSet": {
       "name": "DeleteRegexMatchSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Permanently deletes an RegexMatchSet.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -203,6 +263,9 @@
     },
     "DeleteRegexPatternSet": {
       "name": "DeleteRegexPatternSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Permanently deletes an RegexPatternSet.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -213,6 +276,9 @@
     },
     "DeleteRule": {
       "name": "DeleteRule",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Permanently deletes a Rule.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -223,6 +289,9 @@
     },
     "DeleteRuleGroup": {
       "name": "DeleteRuleGroup",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Permanently deletes a RuleGroup.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -233,6 +302,9 @@
     },
     "DeleteSizeConstraintSet": {
       "name": "DeleteSizeConstraintSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Permanently deletes a SizeConstraintSet.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -243,6 +315,9 @@
     },
     "DeleteSqlInjectionMatchSet": {
       "name": "DeleteSqlInjectionMatchSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Permanently deletes a SqlInjectionMatchSet.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -253,6 +328,9 @@
     },
     "DeleteWebACL": {
       "name": "DeleteWebACL",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Permanently deletes a WebACL.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -263,6 +341,9 @@
     },
     "DeleteXssMatchSet": {
       "name": "DeleteXssMatchSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Permanently deletes an XssMatchSet.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -273,6 +354,9 @@
     },
     "GetByteMatchSet": {
       "name": "GetByteMatchSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns the ByteMatchSet specified by ByteMatchSetId.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -283,6 +367,9 @@
     },
     "GetChangeToken": {
       "name": "GetChangeToken",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "When you want to create, update, or delete AWS WAF objects, get a change token and\n                                                include the change token in the create, update, or delete request.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -291,6 +378,9 @@
     },
     "GetChangeTokenStatus": {
       "name": "GetChangeTokenStatus",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns the status of a ChangeToken that you got by calling GetChangeToken.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -299,6 +389,9 @@
     },
     "GetGeoMatchSet": {
       "name": "GetGeoMatchSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns the GeoMatchSet specified by GeoMatchSetId.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -309,6 +402,9 @@
     },
     "GetIPSet": {
       "name": "GetIPSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns the IPSet that is specified by IPSetId.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -319,6 +415,9 @@
     },
     "GetLoggingConfiguration": {
       "name": "GetLoggingConfiguration",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns the LoggingConfiguration for the specified web ACL.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -329,6 +428,9 @@
     },
     "GetPermissionPolicy": {
       "name": "GetPermissionPolicy",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns the IAM policy attached to the RuleGroup.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -339,6 +441,9 @@
     },
     "GetRateBasedRule": {
       "name": "GetRateBasedRule",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns the RateBasedRule that is specified by the RuleId that you included in the\n                                                GetRateBasedRule request.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -349,6 +454,9 @@
     },
     "GetRateBasedRuleManagedKeys": {
       "name": "GetRateBasedRuleManagedKeys",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns an array of IP addresses currently being blocked by the RateBasedRule that\n                                                is specified by the RuleId.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -359,6 +467,9 @@
     },
     "GetRegexMatchSet": {
       "name": "GetRegexMatchSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns the RegexMatchSet specified by RegexMatchSetId.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -369,6 +480,9 @@
     },
     "GetRegexPatternSet": {
       "name": "GetRegexPatternSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns the RegexPatternSet specified by RegexPatternSetId.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -379,6 +493,9 @@
     },
     "GetRule": {
       "name": "GetRule",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns the Rule that is specified by the RuleId that you included in the GetRule\n                                                request.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -389,6 +506,9 @@
     },
     "GetRuleGroup": {
       "name": "GetRuleGroup",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns the RuleGroup that is specified by the RuleGroupId that you included in the\n                                                GetRuleGroup request.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -399,6 +519,9 @@
     },
     "GetSampledRequests": {
       "name": "GetSampledRequests",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Gets detailed information about a specified number of requests--a sample--that AWS\n                                                WAF randomly selects from among the first 5,000 requests that your AWS resource received\n                                                during a time range that you choose.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -409,6 +532,9 @@
     },
     "GetSizeConstraintSet": {
       "name": "GetSizeConstraintSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns the SizeConstraintSet specified by SizeConstraintSetId.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -419,6 +545,9 @@
     },
     "GetSqlInjectionMatchSet": {
       "name": "GetSqlInjectionMatchSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns the SqlInjectionMatchSet that is specified by SqlInjectionMatchSetId.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -429,6 +558,9 @@
     },
     "GetWebACL": {
       "name": "GetWebACL",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns the WebACL that is specified by WebACLId.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -439,6 +571,9 @@
     },
     "GetXssMatchSet": {
       "name": "GetXssMatchSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns the XssMatchSet that is specified by XssMatchSetId.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -449,6 +584,9 @@
     },
     "ListActivatedRulesInRuleGroup": {
       "name": "ListActivatedRulesInRuleGroup",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns an array of ActivatedRule objects.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -457,6 +595,9 @@
     },
     "ListByteMatchSets": {
       "name": "ListByteMatchSets",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns an array of ByteMatchSetSummary objects.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -465,6 +606,9 @@
     },
     "ListGeoMatchSets": {
       "name": "ListGeoMatchSets",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns an array of GeoMatchSetSummary objects.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -473,6 +617,9 @@
     },
     "ListIPSets": {
       "name": "ListIPSets",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns an array of IPSetSummary objects in the response.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -481,6 +628,9 @@
     },
     "ListLoggingConfigurations": {
       "name": "ListLoggingConfigurations",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns an array of LoggingConfiguration objects.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -489,6 +639,9 @@
     },
     "ListRateBasedRules": {
       "name": "ListRateBasedRules",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns an array of RuleSummary objects.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -497,6 +650,9 @@
     },
     "ListRegexMatchSets": {
       "name": "ListRegexMatchSets",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns an array of RegexMatchSetSummary objects.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -505,6 +661,9 @@
     },
     "ListRegexPatternSets": {
       "name": "ListRegexPatternSets",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns an array of RegexPatternSetSummary objects.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -513,6 +672,9 @@
     },
     "ListRuleGroups": {
       "name": "ListRuleGroups",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns an array of RuleGroup objects.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -521,6 +683,9 @@
     },
     "ListRules": {
       "name": "ListRules",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns an array of RuleSummary objects.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -529,6 +694,9 @@
     },
     "ListSizeConstraintSets": {
       "name": "ListSizeConstraintSets",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns an array of SizeConstraintSetSummary objects.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -537,6 +705,9 @@
     },
     "ListSqlInjectionMatchSets": {
       "name": "ListSqlInjectionMatchSets",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns an array of SqlInjectionMatchSet objects.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -545,6 +716,9 @@
     },
     "ListSubscribedRuleGroups": {
       "name": "ListSubscribedRuleGroups",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns an array of RuleGroup objects that you are subscribed to.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -553,6 +727,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Lists the Tags for a given resource.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -563,6 +740,9 @@
     },
     "ListWebACLs": {
       "name": "ListWebACLs",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns an array of WebACLSummary objects in the response.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -571,6 +751,9 @@
     },
     "ListXssMatchSets": {
       "name": "ListXssMatchSets",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Returns an array of XssMatchSet objects.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -579,6 +762,9 @@
     },
     "PutLoggingConfiguration": {
       "name": "PutLoggingConfiguration",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Associates a LoggingConfiguration with a specified web ACL.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -589,6 +775,9 @@
     },
     "PutPermissionPolicy": {
       "name": "PutPermissionPolicy",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Attaches a IAM policy to the specified resource. The only supported use for this action\n                                                is to share a RuleGroup across accounts.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -599,6 +788,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Adds a Tag to a given resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -609,6 +801,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Removes a Tag from a given resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -619,6 +814,9 @@
     },
     "UpdateByteMatchSet": {
       "name": "UpdateByteMatchSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Inserts or deletes ByteMatchTuple objects (filters) in a ByteMatchSet.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -629,6 +827,9 @@
     },
     "UpdateGeoMatchSet": {
       "name": "UpdateGeoMatchSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Inserts or deletes GeoMatchConstraint objects in a GeoMatchSet.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -639,6 +840,9 @@
     },
     "UpdateIPSet": {
       "name": "UpdateIPSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Inserts or deletes IPSetDescriptor objects in an IPSet.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -649,6 +853,9 @@
     },
     "UpdateRateBasedRule": {
       "name": "UpdateRateBasedRule",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Inserts or deletes Predicate objects in a rule and updates the RateLimit in the rule.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -659,6 +866,9 @@
     },
     "UpdateRegexMatchSet": {
       "name": "UpdateRegexMatchSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Inserts or deletes RegexMatchTuple objects (filters) in a RegexMatchSet.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -669,6 +879,9 @@
     },
     "UpdateRegexPatternSet": {
       "name": "UpdateRegexPatternSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Inserts or deletes RegexPatternStrings in a RegexPatternSet.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -679,6 +892,9 @@
     },
     "UpdateRule": {
       "name": "UpdateRule",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Inserts or deletes Predicate objects in a Rule.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -689,6 +905,9 @@
     },
     "UpdateRuleGroup": {
       "name": "UpdateRuleGroup",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Inserts or deletes ActivatedRule objects in a RuleGroup.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -699,6 +918,9 @@
     },
     "UpdateSizeConstraintSet": {
       "name": "UpdateSizeConstraintSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Inserts or deletes SizeConstraint objects (filters) in a SizeConstraintSet.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -709,6 +931,9 @@
     },
     "UpdateSqlInjectionMatchSet": {
       "name": "UpdateSqlInjectionMatchSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Inserts or deletes SqlInjectionMatchTuple objects (filters) in a SqlInjectionMatchSet.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -719,6 +944,9 @@
     },
     "UpdateWebACL": {
       "name": "UpdateWebACL",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Inserts or deletes ActivatedRule objects in a WebACL.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -729,6 +957,9 @@
     },
     "UpdateXssMatchSet": {
       "name": "UpdateXssMatchSet",
+      "topics": [
+        "AWS WAF"
+      ],
       "description": "Inserts or deletes XssMatchTuple objects (filters) in an XssMatchSet.",
       "accessLevel": "Write",
       "resourceTypes": [

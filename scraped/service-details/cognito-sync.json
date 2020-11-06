@@ -3,6 +3,9 @@
   "actions": {
     "BulkPublish": {
       "name": "BulkPublish",
+      "topics": [
+        "Amazon Cognito Sync"
+      ],
       "description": "Initiates a bulk publish of all existing datasets for an Identity Pool to the configured\n                                                stream.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "DeleteDataset": {
       "name": "DeleteDataset",
+      "topics": [
+        "Amazon Cognito Sync"
+      ],
       "description": "Deletes the specific dataset.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "DescribeDataset": {
       "name": "DescribeDataset",
+      "topics": [
+        "Amazon Cognito Sync"
+      ],
       "description": "Gets meta data about a dataset by identity and dataset name.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "DescribeIdentityPoolUsage": {
       "name": "DescribeIdentityPoolUsage",
+      "topics": [
+        "Amazon Cognito Sync"
+      ],
       "description": "Gets usage details (for example, data storage) about a particular identity pool.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "DescribeIdentityUsage": {
       "name": "DescribeIdentityUsage",
+      "topics": [
+        "Amazon Cognito Sync"
+      ],
       "description": "Gets usage information for an identity, including number of datasets and data usage.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "GetBulkPublishDetails": {
       "name": "GetBulkPublishDetails",
+      "topics": [
+        "Amazon Cognito Sync"
+      ],
       "description": "Get the status of the last BulkPublish operation for an identity pool.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "GetCognitoEvents": {
       "name": "GetCognitoEvents",
+      "topics": [
+        "Amazon Cognito Sync"
+      ],
       "description": "Gets the events and the corresponding Lambda functions associated with an identity\n                                                pool.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "GetIdentityPoolConfiguration": {
       "name": "GetIdentityPoolConfiguration",
+      "topics": [
+        "Amazon Cognito Sync"
+      ],
       "description": "Gets the configuration settings of an identity pool.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "ListDatasets": {
       "name": "ListDatasets",
+      "topics": [
+        "Amazon Cognito Sync"
+      ],
       "description": "Lists datasets for an identity.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "ListIdentityPoolUsage": {
       "name": "ListIdentityPoolUsage",
+      "topics": [
+        "Amazon Cognito Sync"
+      ],
       "description": "Gets a list of identity pools registered with Cognito.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "ListRecords": {
       "name": "ListRecords",
+      "topics": [
+        "Amazon Cognito Sync"
+      ],
       "description": "Gets paginated records, optionally changed after a particular sync count for a dataset\n                                                and identity.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -113,6 +146,9 @@
     },
     "QueryRecords": {
       "name": "QueryRecords",
+      "topics": [
+        "Amazon Cognito Sync"
+      ],
       "description": "A permission that grants the ability to query records.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -121,6 +157,9 @@
     },
     "RegisterDevice": {
       "name": "RegisterDevice",
+      "topics": [
+        "Amazon Cognito Sync"
+      ],
       "description": "Registers a device to receive push sync notifications.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -131,6 +170,9 @@
     },
     "SetCognitoEvents": {
       "name": "SetCognitoEvents",
+      "topics": [
+        "Amazon Cognito Sync"
+      ],
       "description": "Sets the AWS Lambda function for a given event type for an identity pool.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -141,6 +183,9 @@
     },
     "SetDatasetConfiguration": {
       "name": "SetDatasetConfiguration",
+      "topics": [
+        "Amazon Cognito Sync"
+      ],
       "description": "A permission that grants ability to configure datasets.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -151,6 +196,9 @@
     },
     "SetIdentityPoolConfiguration": {
       "name": "SetIdentityPoolConfiguration",
+      "topics": [
+        "Amazon Cognito Sync"
+      ],
       "description": "Sets the necessary configuration for push sync.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -161,6 +209,9 @@
     },
     "SubscribeToDataset": {
       "name": "SubscribeToDataset",
+      "topics": [
+        "Amazon Cognito Sync"
+      ],
       "description": "Subscribes to receive notifications when a dataset is modified by another device.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -171,6 +222,9 @@
     },
     "UnsubscribeFromDataset": {
       "name": "UnsubscribeFromDataset",
+      "topics": [
+        "Amazon Cognito Sync"
+      ],
       "description": "Unsubscribes from receiving notifications when a dataset is modified by another device.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -181,6 +235,9 @@
     },
     "UpdateRecords": {
       "name": "UpdateRecords",
+      "topics": [
+        "Amazon Cognito Sync"
+      ],
       "description": "Posts updates to records and adds and deletes records for a dataset and user.",
       "accessLevel": "Write",
       "resourceTypes": [

@@ -3,6 +3,9 @@
   "actions": {
     "AcceptResourceShareInvitation": {
       "name": "AcceptResourceShareInvitation",
+      "topics": [
+        "AWS Resource Access Manager"
+      ],
       "description": "Accept the specified resource share invitation",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "AssociateResourceShare": {
       "name": "AssociateResourceShare",
+      "topics": [
+        "AWS Resource Access Manager"
+      ],
       "description": "Associates resource(s) and/or principal(s) to a resource share",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "AssociateResourceSharePermission": {
       "name": "AssociateResourceSharePermission",
+      "topics": [
+        "AWS Resource Access Manager"
+      ],
       "description": "Associate a Permission with a Resource Share",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "CreateResourceShare": {
       "name": "CreateResourceShare",
+      "topics": [
+        "AWS Resource Access Manager"
+      ],
       "description": "Create resource share with provided resource(s) and/or principal(s)",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -41,6 +53,9 @@
     },
     "DeleteResourceShare": {
       "name": "DeleteResourceShare",
+      "topics": [
+        "AWS Resource Access Manager"
+      ],
       "description": "Delete resource share",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -51,6 +66,9 @@
     },
     "DisassociateResourceShare": {
       "name": "DisassociateResourceShare",
+      "topics": [
+        "AWS Resource Access Manager"
+      ],
       "description": "Disassociates resource(s) and/or principal(s) from a resource share",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -61,6 +79,9 @@
     },
     "DisassociateResourceSharePermission": {
       "name": "DisassociateResourceSharePermission",
+      "topics": [
+        "AWS Resource Access Manager"
+      ],
       "description": "Disassociate a Permission from a Resource Share",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -71,6 +92,9 @@
     },
     "EnableSharingWithAwsOrganization": {
       "name": "EnableSharingWithAwsOrganization",
+      "topics": [
+        "AWS Resource Access Manager"
+      ],
       "description": "Grants permission to access customer's organization and create a SLR in the customer's\n                                                account",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -79,6 +103,9 @@
     },
     "GetPermission": {
       "name": "GetPermission",
+      "topics": [
+        "AWS Resource Access Manager"
+      ],
       "description": "Gets the contents of an AWS RAM permission",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -89,6 +116,9 @@
     },
     "GetResourcePolicies": {
       "name": "GetResourcePolicies",
+      "topics": [
+        "AWS Resource Access Manager"
+      ],
       "description": "Gets the policies for the specified resources that you own and have shared",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -97,6 +127,9 @@
     },
     "GetResourceShareAssociations": {
       "name": "GetResourceShareAssociations",
+      "topics": [
+        "AWS Resource Access Manager"
+      ],
       "description": "Get a set of resource share associations from a provided list or with a specified\n                                                status of the specified type",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -105,6 +138,9 @@
     },
     "GetResourceShareInvitations": {
       "name": "GetResourceShareInvitations",
+      "topics": [
+        "AWS Resource Access Manager"
+      ],
       "description": "Get resource share invitations by the specified invitation arn or those for the resource\n                                                share",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -113,6 +149,9 @@
     },
     "GetResourceShares": {
       "name": "GetResourceShares",
+      "topics": [
+        "AWS Resource Access Manager"
+      ],
       "description": "Get a set of resource shares from a provided list or with a specified status",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -121,6 +160,9 @@
     },
     "ListPendingInvitationResources": {
       "name": "ListPendingInvitationResources",
+      "topics": [
+        "AWS Resource Access Manager"
+      ],
       "description": "Lists the resources in a resource share that is shared with you but that the invitation\n                                                is still pending for",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -131,6 +173,9 @@
     },
     "ListPermissions": {
       "name": "ListPermissions",
+      "topics": [
+        "AWS Resource Access Manager"
+      ],
       "description": "Lists the AWS RAM permissions",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -139,6 +184,9 @@
     },
     "ListPrincipals": {
       "name": "ListPrincipals",
+      "topics": [
+        "AWS Resource Access Manager"
+      ],
       "description": "Lists the principals that you have shared resources with or that have shared resources\n                                                with you",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -147,6 +195,9 @@
     },
     "ListResourceSharePermissions": {
       "name": "ListResourceSharePermissions",
+      "topics": [
+        "AWS Resource Access Manager"
+      ],
       "description": "List the Permissions associated with a Resource Share",
       "accessLevel": "List",
       "resourceTypes": [
@@ -157,6 +208,9 @@
     },
     "ListResourceTypes": {
       "name": "ListResourceTypes",
+      "topics": [
+        "AWS Resource Access Manager"
+      ],
       "description": "Lists the shareable resource types supported by AWS RAM",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -165,6 +219,9 @@
     },
     "ListResources": {
       "name": "ListResources",
+      "topics": [
+        "AWS Resource Access Manager"
+      ],
       "description": "Lists the resources that you added to a resource shares or the resources that are\n                                                shared with you",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -173,6 +230,9 @@
     },
     "PromoteResourceShareCreatedFromPolicy": {
       "name": "PromoteResourceShareCreatedFromPolicy",
+      "topics": [
+        "AWS Resource Access Manager"
+      ],
       "description": "Use this API action to promote the resource share",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -183,6 +243,9 @@
     },
     "RejectResourceShareInvitation": {
       "name": "RejectResourceShareInvitation",
+      "topics": [
+        "AWS Resource Access Manager"
+      ],
       "description": "Reject the specified resource share invitation",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -193,6 +256,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS Resource Access Manager"
+      ],
       "description": "Tag the specified resources share",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -203,6 +269,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS Resource Access Manager"
+      ],
       "description": "Untag the specified resource share",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -213,6 +282,9 @@
     },
     "UpdateResourceShare": {
       "name": "UpdateResourceShare",
+      "topics": [
+        "AWS Resource Access Manager"
+      ],
       "description": "Update attributes of the resource share",
       "accessLevel": "Write",
       "resourceTypes": [

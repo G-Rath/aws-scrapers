@@ -3,6 +3,9 @@
   "actions": {
     "CompleteSnapshot": {
       "name": "CompleteSnapshot",
+      "topics": [
+        "Amazon Elastic Block Store"
+      ],
       "description": "Grants permission to seal and complete the snapshot after all of the required blocks\n                                                of data have been written to it.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "GetSnapshotBlock": {
       "name": "GetSnapshotBlock",
+      "topics": [
+        "Amazon Elastic Block Store"
+      ],
       "description": "Grants permission to return the data of a block in an Amazon Elastic Block Store (EBS)\n                                                snapshot",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "ListChangedBlocks": {
       "name": "ListChangedBlocks",
+      "topics": [
+        "Amazon Elastic Block Store"
+      ],
       "description": "Grants permission to list the blocks that are different between two Amazon Elastic\n                                                Block Store (EBS) snapshots of the same volume/snapshot lineage",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "ListSnapshotBlocks": {
       "name": "ListSnapshotBlocks",
+      "topics": [
+        "Amazon Elastic Block Store"
+      ],
       "description": "Grants permission to list the blocks in an Amazon Elastic Block Store (EBS) snapshot.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "PutSnapshotBlock": {
       "name": "PutSnapshotBlock",
+      "topics": [
+        "Amazon Elastic Block Store"
+      ],
       "description": "Grants permission to write a block of data to a snapshot created by the StartSnapshot\n                                                operation.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "StartSnapshot": {
       "name": "StartSnapshot",
+      "topics": [
+        "Amazon Elastic Block Store"
+      ],
       "description": "Grants permission to create a new EBS snapshot.",
       "accessLevel": "Write",
       "resourceTypes": [

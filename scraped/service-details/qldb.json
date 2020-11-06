@@ -3,6 +3,9 @@
   "actions": {
     "CancelJournalKinesisStream": {
       "name": "CancelJournalKinesisStream",
+      "topics": [
+        "Amazon QLDB"
+      ],
       "description": "Grants permission to cancel a journal kinesis stream",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "CreateLedger": {
       "name": "CreateLedger",
+      "topics": [
+        "Amazon QLDB"
+      ],
       "description": "Grants permission to create a ledger",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "DeleteLedger": {
       "name": "DeleteLedger",
+      "topics": [
+        "Amazon QLDB"
+      ],
       "description": "Grants permission to delete a ledger",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "DescribeJournalKinesisStream": {
       "name": "DescribeJournalKinesisStream",
+      "topics": [
+        "Amazon QLDB"
+      ],
       "description": "Grants permission to describe information about a journal kinesis stream",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "DescribeJournalS3Export": {
       "name": "DescribeJournalS3Export",
+      "topics": [
+        "Amazon QLDB"
+      ],
       "description": "Grants permission to describe information about a journal export job",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "DescribeLedger": {
       "name": "DescribeLedger",
+      "topics": [
+        "Amazon QLDB"
+      ],
       "description": "Grants permission to describe a ledger",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "ExecuteStatement": {
       "name": "ExecuteStatement",
+      "topics": [
+        "Amazon QLDB"
+      ],
       "description": "Grants permission to send commands to a ledger via the console",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "ExportJournalToS3": {
       "name": "ExportJournalToS3",
+      "topics": [
+        "Amazon QLDB"
+      ],
       "description": "Grants permission to export journal contents to an Amazon S3 bucket",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "GetBlock": {
       "name": "GetBlock",
+      "topics": [
+        "Amazon QLDB"
+      ],
       "description": "Grants permission to retrieve a block from a ledger for a given BlockAddress",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "GetDigest": {
       "name": "GetDigest",
+      "topics": [
+        "Amazon QLDB"
+      ],
       "description": "Grants permission to retrieve a digest from a ledger for a given BlockAddress",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "GetRevision": {
       "name": "GetRevision",
+      "topics": [
+        "Amazon QLDB"
+      ],
       "description": "Grants permission to retrieve a revision for a given document ID and a given BlockAddress",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -113,6 +146,9 @@
     },
     "InsertSampleData": {
       "name": "InsertSampleData",
+      "topics": [
+        "Amazon QLDB"
+      ],
       "description": "Grants permission to insert sample application data via the console",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -123,6 +159,9 @@
     },
     "ListJournalKinesisStreamsForLedger": {
       "name": "ListJournalKinesisStreamsForLedger",
+      "topics": [
+        "Amazon QLDB"
+      ],
       "description": "Grants permission to list journal kinesis streams for a specified ledger",
       "accessLevel": "List",
       "resourceTypes": [
@@ -133,6 +172,9 @@
     },
     "ListJournalS3Exports": {
       "name": "ListJournalS3Exports",
+      "topics": [
+        "Amazon QLDB"
+      ],
       "description": "Grants permission to list journal export jobs for all ledgers",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -141,6 +183,9 @@
     },
     "ListJournalS3ExportsForLedger": {
       "name": "ListJournalS3ExportsForLedger",
+      "topics": [
+        "Amazon QLDB"
+      ],
       "description": "Grants permission to list journal export jobs for a specified ledger",
       "accessLevel": "List",
       "resourceTypes": [
@@ -151,6 +196,9 @@
     },
     "ListLedgers": {
       "name": "ListLedgers",
+      "topics": [
+        "Amazon QLDB"
+      ],
       "description": "Grants permission to list existing ledgers",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -159,6 +207,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "Amazon QLDB"
+      ],
       "description": "Grants permission to list tags for a resource",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -169,6 +220,9 @@
     },
     "SendCommand": {
       "name": "SendCommand",
+      "topics": [
+        "Amazon QLDB"
+      ],
       "description": "Grants permission to send commands to a ledger",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -179,6 +233,9 @@
     },
     "ShowCatalog": {
       "name": "ShowCatalog",
+      "topics": [
+        "Amazon QLDB"
+      ],
       "description": "Grants permission to view a ledger's catalog via the console",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -189,6 +246,9 @@
     },
     "StreamJournalToKinesis": {
       "name": "StreamJournalToKinesis",
+      "topics": [
+        "Amazon QLDB"
+      ],
       "description": "Grants permission to stream journal contents to a Kinesis Data Stream",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -199,6 +259,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "Amazon QLDB"
+      ],
       "description": "Grants permission to add one or more tags to a resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -209,6 +272,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "Amazon QLDB"
+      ],
       "description": "Grants permission to remove one or more tags to a resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -219,6 +285,9 @@
     },
     "UpdateLedger": {
       "name": "UpdateLedger",
+      "topics": [
+        "Amazon QLDB"
+      ],
       "description": "Grants permission to update properties on a ledger",
       "accessLevel": "Write",
       "resourceTypes": [

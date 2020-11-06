@@ -3,6 +3,9 @@
   "actions": {
     "DeleteTerminology": {
       "name": "DeleteTerminology",
+      "topics": [
+        "Amazon Translate"
+      ],
       "description": "A synchronous action that deletes a custom terminology.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "DescribeTextTranslationJob": {
       "name": "DescribeTextTranslationJob",
+      "topics": [
+        "Amazon Translate"
+      ],
       "description": "Gets the properties associated with an asynchronous batch translation job including\n                                                name, ID, status, source and target languages, input/output S3 buckets, and so on.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -19,6 +25,9 @@
     },
     "GetTerminology": {
       "name": "GetTerminology",
+      "topics": [
+        "Amazon Translate"
+      ],
       "description": "Retrieves a custom terminology.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -27,6 +36,9 @@
     },
     "ImportTerminology": {
       "name": "ImportTerminology",
+      "topics": [
+        "Amazon Translate"
+      ],
       "description": "Creates or updates a custom terminology, depending on whether or not one already exists\n                                                for the given terminology name.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -35,6 +47,9 @@
     },
     "ListTerminologies": {
       "name": "ListTerminologies",
+      "topics": [
+        "Amazon Translate"
+      ],
       "description": "Provides a list of custom terminologies associated with your account.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -43,6 +58,9 @@
     },
     "ListTextTranslationJobs": {
       "name": "ListTextTranslationJobs",
+      "topics": [
+        "Amazon Translate"
+      ],
       "description": "Gets a list of the batch translation jobs that you have submitted.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -51,6 +69,9 @@
     },
     "StartTextTranslationJob": {
       "name": "StartTextTranslationJob",
+      "topics": [
+        "Amazon Translate"
+      ],
       "description": "Starts an asynchronous batch translation job. Batch translation jobs can be used to\n                                                translate large volumes of text across multiple documents at once.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -59,6 +80,9 @@
     },
     "StopTextTranslationJob": {
       "name": "StopTextTranslationJob",
+      "topics": [
+        "Amazon Translate"
+      ],
       "description": "Stops an asynchronous batch translation job that is in progress.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -67,6 +91,9 @@
     },
     "TranslateText": {
       "name": "TranslateText",
+      "topics": [
+        "Amazon Translate"
+      ],
       "description": "Translate text from a source language to a target language.",
       "accessLevel": "Read",
       "resourceTypes": [],

@@ -3,6 +3,9 @@
   "actions": {
     "AssociateResolverEndpointIpAddress": {
       "name": "AssociateResolverEndpointIpAddress",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to associate a specified IP address with a Resolver endpoint. This\n                                                is an IP address that DNS queries pass through on the way to your network (outbound)\n                                                or your VPCs (inbound)",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "AssociateResolverQueryLogConfig": {
       "name": "AssociateResolverQueryLogConfig",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to associate an Amazon VPC with a specified query logging configuration",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "AssociateResolverRule": {
       "name": "AssociateResolverRule",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to associate a specified Resolver rule with a specified VPC",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "CreateResolverEndpoint": {
       "name": "CreateResolverEndpoint",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to create a Resolver endpoint. There are two types of Resolver endpoints,\n                                                inbound and outbound",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "CreateResolverQueryLogConfig": {
       "name": "CreateResolverQueryLogConfig",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to create a Resolver query logging configuration, which defines\n                                                where you want Resolver to save DNS query logs that originate in your VPCs",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "CreateResolverRule": {
       "name": "CreateResolverRule",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "For DNS queries that originate in your VPC, grants permission to define how to route\n                                                the queries out of the VPC",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "DeleteResolverEndpoint": {
       "name": "DeleteResolverEndpoint",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to delete a Resolver endpoint. The effect of deleting a Resolver\n                                                endpoint depends on whether it's an inbound or an outbound endpoint",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "DeleteResolverQueryLogConfig": {
       "name": "DeleteResolverQueryLogConfig",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to delete a Resolver query logging configuration",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "DeleteResolverRule": {
       "name": "DeleteResolverRule",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to delete a Resolver rule",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "DisassociateResolverEndpointIpAddress": {
       "name": "DisassociateResolverEndpointIpAddress",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to remove a specified IP address from a Resolver endpoint. This\n                                                is an IP address that DNS queries pass through on the way to your network (outbound)\n                                                or your VPCs (inbound)",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "DisassociateResolverQueryLogConfig": {
       "name": "DisassociateResolverQueryLogConfig",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to remove the association between a specified Resolver query logging\n                                                configuration and a specified VPC",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -113,6 +146,9 @@
     },
     "DisassociateResolverRule": {
       "name": "DisassociateResolverRule",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to remove the association between a specified Resolver rule and\n                                                a specified VPC",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -123,6 +159,9 @@
     },
     "GetResolverEndpoint": {
       "name": "GetResolverEndpoint",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to get information about a specified Resolver endpoint, such as\n                                                whether it's an inbound or an outbound endpoint, and the IP addresses in your VPC\n                                                that DNS queries are forwarded to on the way into or out of your VPC",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -133,6 +172,9 @@
     },
     "GetResolverQueryLogConfig": {
       "name": "GetResolverQueryLogConfig",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to get information about a specified Resolver query logging configuration,\n                                                such as the number of VPCs that the configuration is logging queries for and the location\n                                                that logs are sent to",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -143,6 +185,9 @@
     },
     "GetResolverQueryLogConfigAssociation": {
       "name": "GetResolverQueryLogConfigAssociation",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to get information about a specified association between a Resolver\n                                                query logging configuration and an Amazon VPC. When you associate a VPC with a query\n                                                logging configuration, Resolver logs DNS queries that originate in that VPC",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -153,6 +198,9 @@
     },
     "GetResolverQueryLogConfigPolicy": {
       "name": "GetResolverQueryLogConfigPolicy",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to get information about a specified Resolver query logging policy,\n                                                which specifies the Resolver query logging operations and resources that you want\n                                                to allow another AWS account to use",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -163,6 +211,9 @@
     },
     "GetResolverRule": {
       "name": "GetResolverRule",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to get information about a specified Resolver rule, such as the\n                                                domain name that the rule forwards DNS queries for and the IP address that queries\n                                                are forwarded to.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -173,6 +224,9 @@
     },
     "GetResolverRuleAssociation": {
       "name": "GetResolverRuleAssociation",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to get information about an association between a specified Resolver\n                                                rule and a VPC",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -183,6 +237,9 @@
     },
     "GetResolverRulePolicy": {
       "name": "GetResolverRulePolicy",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to get information about a Resolver rule policy, which specifies\n                                                the Resolver operations and resources that you want to allow another AWS account to\n                                                use",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -193,6 +250,9 @@
     },
     "ListResolverEndpointIpAddresses": {
       "name": "ListResolverEndpointIpAddresses",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "For a specified Resolver endpoint, grants permission to list the IP addresses that\n                                                DNS queries pass through on the way to your network (outbound) or your VPCs (inbound)",
       "accessLevel": "List",
       "resourceTypes": [
@@ -203,6 +263,9 @@
     },
     "ListResolverEndpoints": {
       "name": "ListResolverEndpoints",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to list all the Resolver endpoints that were created using the current\n                                                AWS account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -211,6 +274,9 @@
     },
     "ListResolverQueryLogConfigAssociations": {
       "name": "ListResolverQueryLogConfigAssociations",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to list information about associations between Amazon VPCs and query\n                                                logging configurations",
       "accessLevel": "List",
       "resourceTypes": [
@@ -221,6 +287,9 @@
     },
     "ListResolverQueryLogConfigs": {
       "name": "ListResolverQueryLogConfigs",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to list information about the specified query logging configurations,\n                                                which define where you want Resolver to save DNS query logs and specify the VPCs that\n                                                you want to log queries for",
       "accessLevel": "List",
       "resourceTypes": [
@@ -231,6 +300,9 @@
     },
     "ListResolverRuleAssociations": {
       "name": "ListResolverRuleAssociations",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to list the associations that were created between Resolver rules\n                                                and VPCs using the current AWS account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -239,6 +311,9 @@
     },
     "ListResolverRules": {
       "name": "ListResolverRules",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to list the Resolver rules that were created using the current AWS\n                                                account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -247,6 +322,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to list the tags that you associated with the specified resource",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -257,6 +335,9 @@
     },
     "PutResolverQueryLogConfigPolicy": {
       "name": "PutResolverQueryLogConfigPolicy",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to specify an AWS account that you want to share a query logging\n                                                configuration with, the query logging configuration that you want to share, and the\n                                                operations that you want the account to be able to perform on the configuration",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -267,6 +348,9 @@
     },
     "PutResolverRulePolicy": {
       "name": "PutResolverRulePolicy",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to specify an AWS account that you want to share rules with, the\n                                                Resolver rules that you want to share, and the operations that you want the account\n                                                to be able to perform on those rules",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -277,6 +361,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to add one or more tags to a specified resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -287,6 +374,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to remove one or more tags from a specified resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -297,6 +387,9 @@
     },
     "UpdateResolverEndpoint": {
       "name": "UpdateResolverEndpoint",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to update selected settings for an inbound or an outbound Resolver\n                                                endpoint",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -307,6 +400,9 @@
     },
     "UpdateResolverRule": {
       "name": "UpdateResolverRule",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
       "description": "Grants permission to update settings for a specified Resolver rule",
       "accessLevel": "Write",
       "resourceTypes": [

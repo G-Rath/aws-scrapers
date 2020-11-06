@@ -3,6 +3,9 @@
   "actions": {
     "BatchDeleteBuilds": {
       "name": "BatchDeleteBuilds",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Deletes one or more builds.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "BatchGetBuildBatches": {
       "name": "BatchGetBuildBatches",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Gets information about one or more build batches.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "BatchGetBuilds": {
       "name": "BatchGetBuilds",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Gets information about one or more builds.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "BatchGetProjects": {
       "name": "BatchGetProjects",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Gets information about one or more build projects.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "BatchGetReportGroups": {
       "name": "BatchGetReportGroups",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Returns an array of ReportGroup objects that are specified by the input reportGroupArns\n                                                parameter.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "BatchGetReports": {
       "name": "BatchGetReports",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Returns an array of the Report objects specified by the input reportArns parameter.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "BatchPutCodeCoverages": {
       "name": "BatchPutCodeCoverages",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Adds or updates information about a report.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "BatchPutTestCases": {
       "name": "BatchPutTestCases",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Adds or updates information about a report.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "CreateProject": {
       "name": "CreateProject",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Creates a build project.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "CreateReport": {
       "name": "CreateReport",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Creates a report. A report is created when tests specified in the buildspec file for\n                                                a report groups run during the build of a project.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "CreateReportGroup": {
       "name": "CreateReportGroup",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Creates a report group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -113,6 +146,9 @@
     },
     "CreateWebhook": {
       "name": "CreateWebhook",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "For an existing AWS CodeBuild build project that has its source code stored in a GitHub\n                                                or Bitbucket repository, enables AWS CodeBuild to start rebuilding the source code\n                                                every time a code change is pushed to the repository.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -123,6 +159,9 @@
     },
     "DeleteBuildBatch": {
       "name": "DeleteBuildBatch",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Deletes a build batch.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -133,6 +172,9 @@
     },
     "DeleteOAuthToken": {
       "name": "DeleteOAuthToken",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Deletes an OAuth token from a connected third-party OAuth provider. Only used in the\n                                                AWS CodeBuild console.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -141,6 +183,9 @@
     },
     "DeleteProject": {
       "name": "DeleteProject",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Deletes a build project.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -151,6 +196,9 @@
     },
     "DeleteReport": {
       "name": "DeleteReport",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Deletes a report.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -161,6 +209,9 @@
     },
     "DeleteReportGroup": {
       "name": "DeleteReportGroup",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Deletes a report group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -171,6 +222,9 @@
     },
     "DeleteResourcePolicy": {
       "name": "DeleteResourcePolicy",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Deletes a resource policy for the associated project or report group.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -181,6 +235,9 @@
     },
     "DeleteSourceCredentials": {
       "name": "DeleteSourceCredentials",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Deletes a set of GitHub, GitHub Enterprise, or Bitbucket source credentials.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -189,6 +246,9 @@
     },
     "DeleteWebhook": {
       "name": "DeleteWebhook",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "For an existing AWS CodeBuild build project that has its source code stored in a GitHub\n                                                or Bitbucket repository, stops AWS CodeBuild from rebuilding the source code every\n                                                time a code change is pushed to the repository.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -199,6 +259,9 @@
     },
     "DescribeCodeCoverages": {
       "name": "DescribeCodeCoverages",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Returns an array of CodeCoverage objects.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -209,6 +272,9 @@
     },
     "DescribeTestCases": {
       "name": "DescribeTestCases",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Returns an array of TestCase objects.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -219,6 +285,9 @@
     },
     "GetResourcePolicy": {
       "name": "GetResourcePolicy",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Returns a resource policy for the specified project or report group.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -229,6 +298,9 @@
     },
     "ImportSourceCredentials": {
       "name": "ImportSourceCredentials",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Imports the source repository credentials for an AWS CodeBuild project that has its\n                                                source code stored in a GitHub, GitHub Enterprise, or Bitbucket repository.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -237,6 +309,9 @@
     },
     "InvalidateProjectCache": {
       "name": "InvalidateProjectCache",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Resets the cache for a project.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -247,6 +322,9 @@
     },
     "ListBuildBatches": {
       "name": "ListBuildBatches",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Gets a list of build batch IDs, with each build batch ID representing a single build\n                                                batch.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -255,6 +333,9 @@
     },
     "ListBuildBatchesForProject": {
       "name": "ListBuildBatchesForProject",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Gets a list of build batch IDs for the specified build project, with each build batch\n                                                ID representing a single build batch.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -265,6 +346,9 @@
     },
     "ListBuilds": {
       "name": "ListBuilds",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Gets a list of build IDs, with each build ID representing a single build.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -273,6 +357,9 @@
     },
     "ListBuildsForProject": {
       "name": "ListBuildsForProject",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Gets a list of build IDs for the specified build project, with each build ID representing\n                                                a single build.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -283,6 +370,9 @@
     },
     "ListConnectedOAuthAccounts": {
       "name": "ListConnectedOAuthAccounts",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Lists connected third-party OAuth providers. Only used in the AWS CodeBuild console.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -291,6 +381,9 @@
     },
     "ListCuratedEnvironmentImages": {
       "name": "ListCuratedEnvironmentImages",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Gets information about Docker images that are managed by AWS CodeBuild.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -299,6 +392,9 @@
     },
     "ListProjects": {
       "name": "ListProjects",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Gets a list of build project names, with each build project name representing a single\n                                                build project.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -307,6 +403,9 @@
     },
     "ListReportGroups": {
       "name": "ListReportGroups",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Returns a list of report group ARNs. Each report group ARN represents one report group.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -315,6 +414,9 @@
     },
     "ListReports": {
       "name": "ListReports",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Returns a list of report ARNs. Each report ARN representing one report.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -323,6 +425,9 @@
     },
     "ListReportsForReportGroup": {
       "name": "ListReportsForReportGroup",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Returns a list of report ARNs that belong to the specified report group. Each report\n                                                ARN represents one report.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -333,6 +438,9 @@
     },
     "ListRepositories": {
       "name": "ListRepositories",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Lists source code repositories from a connected third-party OAuth provider. Only used\n                                                in the AWS CodeBuild console.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -341,6 +449,9 @@
     },
     "ListSharedProjects": {
       "name": "ListSharedProjects",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Returns a list of project ARNs that have been shared with the requester. Each project\n                                                ARN represents one project.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -349,6 +460,9 @@
     },
     "ListSharedReportGroups": {
       "name": "ListSharedReportGroups",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Returns a list of report group ARNs that have been shared with the requester. Each\n                                                report group ARN represents one report group.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -357,6 +471,9 @@
     },
     "ListSourceCredentials": {
       "name": "ListSourceCredentials",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Returns a list of SourceCredentialsInfo objects.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -365,6 +482,9 @@
     },
     "PersistOAuthToken": {
       "name": "PersistOAuthToken",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Saves an OAuth token from a connected third-party OAuth provider. Only used in the\n                                                AWS CodeBuild console.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -373,6 +493,9 @@
     },
     "PutResourcePolicy": {
       "name": "PutResourcePolicy",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Creates a resource policy for the associated project or report group.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -383,6 +506,9 @@
     },
     "RetryBuild": {
       "name": "RetryBuild",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Retries a build.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -393,6 +519,9 @@
     },
     "RetryBuildBatch": {
       "name": "RetryBuildBatch",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Retries a build batch.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -403,6 +532,9 @@
     },
     "StartBuild": {
       "name": "StartBuild",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Starts running a build.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -413,6 +545,9 @@
     },
     "StartBuildBatch": {
       "name": "StartBuildBatch",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Starts running a build batch.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -423,6 +558,9 @@
     },
     "StopBuild": {
       "name": "StopBuild",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Attempts to stop running a build.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -433,6 +571,9 @@
     },
     "StopBuildBatch": {
       "name": "StopBuildBatch",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Attempts to stop running a build batch.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -443,6 +584,9 @@
     },
     "UpdateProject": {
       "name": "UpdateProject",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Changes the settings of an existing build project.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -453,6 +597,9 @@
     },
     "UpdateReport": {
       "name": "UpdateReport",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Updates information about a report.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -463,6 +610,9 @@
     },
     "UpdateReportGroup": {
       "name": "UpdateReportGroup",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Changes the settings of an existing report group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -473,6 +623,9 @@
     },
     "UpdateWebhook": {
       "name": "UpdateWebhook",
+      "topics": [
+        "AWS CodeBuild"
+      ],
       "description": "Updates the webhook associated with an AWS CodeBuild build project.",
       "accessLevel": "Write",
       "resourceTypes": [

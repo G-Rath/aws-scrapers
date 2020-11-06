@@ -3,6 +3,9 @@
   "actions": {
     "AcceptInvitation": {
       "name": "AcceptInvitation",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to accept invitations to become a GuardDuty member account",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "ArchiveFindings": {
       "name": "ArchiveFindings",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to archive GuardDuty findings",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "CreateDetector": {
       "name": "CreateDetector",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to create a detector",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -31,6 +40,9 @@
     },
     "CreateFilter": {
       "name": "CreateFilter",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to create GuardDuty filters. A filters defines finding attributes\n                                                and conditions used to filter findings",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -41,6 +53,9 @@
     },
     "CreateIPSet": {
       "name": "CreateIPSet",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to create an IPSet",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -51,6 +66,9 @@
     },
     "CreateMembers": {
       "name": "CreateMembers",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to create GuardDuty member accounts, where the account used to create\n                                                a member becomes the GuardDuty administrator account",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -61,6 +79,9 @@
     },
     "CreatePublishingDestination": {
       "name": "CreatePublishingDestination",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to create a publishing destination",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -71,6 +92,9 @@
     },
     "CreateSampleFindings": {
       "name": "CreateSampleFindings",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to create sample findings",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -81,6 +105,9 @@
     },
     "CreateThreatIntelSet": {
       "name": "CreateThreatIntelSet",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to create GuardDuty ThreatIntelSets, where a ThreatIntelSet consists\n                                                of known malicious IP addresses used by GuardDuty to generate findings",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -91,6 +118,9 @@
     },
     "DeclineInvitations": {
       "name": "DeclineInvitations",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to decline invitations to become a GuardDuty member account",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -99,6 +129,9 @@
     },
     "DeleteDetector": {
       "name": "DeleteDetector",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to delete GuardDuty detectors",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -109,6 +142,9 @@
     },
     "DeleteFilter": {
       "name": "DeleteFilter",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to delete GuardDuty filters",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -119,6 +155,9 @@
     },
     "DeleteIPSet": {
       "name": "DeleteIPSet",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to delete GuardDuty IPSets",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -129,6 +168,9 @@
     },
     "DeleteInvitations": {
       "name": "DeleteInvitations",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to delete invitations to become a GuardDuty member account",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -137,6 +179,9 @@
     },
     "DeleteMembers": {
       "name": "DeleteMembers",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to delete GuardDuty member accounts",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -147,6 +192,9 @@
     },
     "DeletePublishingDestination": {
       "name": "DeletePublishingDestination",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to delete a publishing destination",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -157,6 +205,9 @@
     },
     "DeleteThreatIntelSet": {
       "name": "DeleteThreatIntelSet",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to delete GuardDuty ThreatIntelSets",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -167,6 +218,9 @@
     },
     "DescribeOrganizationConfiguration": {
       "name": "DescribeOrganizationConfiguration",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to retrieve details about the delegated administrator associated\n                                                with a GuardDuty detector",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -177,6 +231,9 @@
     },
     "DescribePublishingDestination": {
       "name": "DescribePublishingDestination",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to retrieve details about a publishing destination",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -187,6 +244,9 @@
     },
     "DisableOrganizationAdminAccount": {
       "name": "DisableOrganizationAdminAccount",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to disable the organization delegated administrator for GuardDuty",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -195,6 +255,9 @@
     },
     "DisassociateFromMasterAccount": {
       "name": "DisassociateFromMasterAccount",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to disassociate a GuardDuty member account from its GuardDuty master\n                                                account",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -205,6 +268,9 @@
     },
     "DisassociateMembers": {
       "name": "DisassociateMembers",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to disassociate GuardDuty member accounts from their master GuardDuty\n                                                account",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -215,6 +281,9 @@
     },
     "EnableOrganizationAdminAccount": {
       "name": "EnableOrganizationAdminAccount",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to enable an organization delegated administrator for GuardDuty",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -223,6 +292,9 @@
     },
     "GetDetector": {
       "name": "GetDetector",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to retrieve GuardDuty detectors",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -233,6 +305,9 @@
     },
     "GetFilter": {
       "name": "GetFilter",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to retrieve GuardDuty filters",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -243,6 +318,9 @@
     },
     "GetFindings": {
       "name": "GetFindings",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to retrieve GuardDuty findings",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -253,6 +331,9 @@
     },
     "GetFindingsStatistics": {
       "name": "GetFindingsStatistics",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to retrieve a list of GuardDuty finding statistics",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -263,6 +344,9 @@
     },
     "GetIPSet": {
       "name": "GetIPSet",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permsission to retrieve GuardDuty IPSets",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -273,6 +357,9 @@
     },
     "GetInvitationsCount": {
       "name": "GetInvitationsCount",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to retrieve the count of all GuardDuty invitations sent to a specified\n                                                account, which does not include the accepted invitation",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -281,6 +368,9 @@
     },
     "GetMasterAccount": {
       "name": "GetMasterAccount",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to retrieve details of the GuardDuty master account associated with\n                                                a member account",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -291,6 +381,9 @@
     },
     "GetMembers": {
       "name": "GetMembers",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to retrieve the member accounts associated with a master account",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -301,6 +394,9 @@
     },
     "GetThreatIntelSet": {
       "name": "GetThreatIntelSet",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to retrieve GuardDuty ThreatIntelSets",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -311,6 +407,9 @@
     },
     "InviteMembers": {
       "name": "InviteMembers",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to invite other AWS accounts to enable GuardDuty and become GuardDuty\n                                                member accounts",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -321,6 +420,9 @@
     },
     "ListDetectors": {
       "name": "ListDetectors",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to retrieve a list of GuardDuty detectors",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -329,6 +431,9 @@
     },
     "ListFilters": {
       "name": "ListFilters",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to retrieve a list of GuardDuty filters",
       "accessLevel": "List",
       "resourceTypes": [
@@ -339,6 +444,9 @@
     },
     "ListFindings": {
       "name": "ListFindings",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to retrieve a list of GuardDuty findings",
       "accessLevel": "List",
       "resourceTypes": [
@@ -349,6 +457,9 @@
     },
     "ListIPSets": {
       "name": "ListIPSets",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to retrieve a list of GuardDuty IPSets",
       "accessLevel": "List",
       "resourceTypes": [
@@ -359,6 +470,9 @@
     },
     "ListInvitations": {
       "name": "ListInvitations",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to retrieve a lists of all of the GuardDuty membership invitations\n                                                that were sent to an AWS account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -367,6 +481,9 @@
     },
     "ListMembers": {
       "name": "ListMembers",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to retrierve a lsit of GuardDuty member accounts associated with\n                                                a master account",
       "accessLevel": "List",
       "resourceTypes": [
@@ -377,6 +494,9 @@
     },
     "ListOrganizationAdminAccounts": {
       "name": "ListOrganizationAdminAccounts",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to list details about the organization delegated administrator for\n                                                GuardDuty",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -385,6 +505,9 @@
     },
     "ListPublishingDestinations": {
       "name": "ListPublishingDestinations",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to retrieve a list of publishing destinations",
       "accessLevel": "List",
       "resourceTypes": [
@@ -395,6 +518,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to retrieve a list of tags associated with a GuardDuty resource",
       "accessLevel": "List",
       "resourceTypes": [
@@ -405,6 +531,9 @@
     },
     "ListThreatIntelSets": {
       "name": "ListThreatIntelSets",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to retrieve a list of GuardDuty ThreatIntelSets",
       "accessLevel": "List",
       "resourceTypes": [
@@ -415,6 +544,9 @@
     },
     "StartMonitoringMembers": {
       "name": "StartMonitoringMembers",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to a GuardDuty administrator account to monitor findings from GuardDuty\n                                                member accounts",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -425,6 +557,9 @@
     },
     "StopMonitoringMembers": {
       "name": "StopMonitoringMembers",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to disable monitoring findings from member accounts",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -435,6 +570,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to add tags to a GuardDuty resource",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -445,6 +583,9 @@
     },
     "UnarchiveFindings": {
       "name": "UnarchiveFindings",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to unarchive GuardDuty findings",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -455,6 +596,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to remove tags from a GuardDuty resource",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -465,6 +609,9 @@
     },
     "UpdateDetector": {
       "name": "UpdateDetector",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to update GuardDuty detectors",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -475,6 +622,9 @@
     },
     "UpdateFilter": {
       "name": "UpdateFilter",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to updates GuardDuty filters",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -485,6 +635,9 @@
     },
     "UpdateFindingsFeedback": {
       "name": "UpdateFindingsFeedback",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to update findings feedback to mark GuardDuty findings as useful\n                                                or not useful",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -495,6 +648,9 @@
     },
     "UpdateIPSet": {
       "name": "UpdateIPSet",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to update GuardDuty IPSets",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -505,6 +661,9 @@
     },
     "UpdateOrganizationConfiguration": {
       "name": "UpdateOrganizationConfiguration",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to update the delegated administrator configuration associated with\n                                                a GuardDuty detector",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -515,6 +674,9 @@
     },
     "UpdatePublishingDestination": {
       "name": "UpdatePublishingDestination",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to update a publishing destination",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -525,6 +687,9 @@
     },
     "UpdateThreatIntelSet": {
       "name": "UpdateThreatIntelSet",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
       "description": "Grants permission to updates the GuardDuty ThreatIntelSets",
       "accessLevel": "Write",
       "resourceTypes": [

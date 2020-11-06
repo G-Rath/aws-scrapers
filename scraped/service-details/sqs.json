@@ -3,6 +3,9 @@
   "actions": {
     "AddPermission": {
       "name": "AddPermission",
+      "topics": [
+        "Amazon SQS"
+      ],
       "description": "Adds a permission to a queue for a specific principal.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "ChangeMessageVisibility": {
       "name": "ChangeMessageVisibility",
+      "topics": [
+        "Amazon SQS"
+      ],
       "description": "Changes the visibility timeout of a specified message in a queue to a new value.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "ChangeMessageVisibilityBatch": {
       "name": "ChangeMessageVisibilityBatch",
+      "topics": [
+        "Amazon SQS"
+      ],
       "description": "Changes the visibility timeout of multiple messages.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "CreateQueue": {
       "name": "CreateQueue",
+      "topics": [
+        "Amazon SQS"
+      ],
       "description": "Creates a new queue, or returns the URL of an existing one.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "DeleteMessage": {
       "name": "DeleteMessage",
+      "topics": [
+        "Amazon SQS"
+      ],
       "description": "Deletes the specified message from the specified queue.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "DeleteMessageBatch": {
       "name": "DeleteMessageBatch",
+      "topics": [
+        "Amazon SQS"
+      ],
       "description": "Deletes up to ten messages from the specified queue.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "DeleteQueue": {
       "name": "DeleteQueue",
+      "topics": [
+        "Amazon SQS"
+      ],
       "description": "Deletes the queue specified by the queue URL, regardless of whether the queue is empty.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "GetQueueAttributes": {
       "name": "GetQueueAttributes",
+      "topics": [
+        "Amazon SQS"
+      ],
       "description": "Gets attributes for the specified queue.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "GetQueueUrl": {
       "name": "GetQueueUrl",
+      "topics": [
+        "Amazon SQS"
+      ],
       "description": "Returns the URL of an existing queue.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "ListDeadLetterSourceQueues": {
       "name": "ListDeadLetterSourceQueues",
+      "topics": [
+        "Amazon SQS"
+      ],
       "description": "Returns a list of your queues that have the RedrivePolicy queue attribute configured\n                                                with a dead letter queue.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "ListQueueTags": {
       "name": "ListQueueTags",
+      "topics": [
+        "Amazon SQS"
+      ],
       "description": "Lists tags added to an SQS queue.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -113,6 +146,9 @@
     },
     "ListQueues": {
       "name": "ListQueues",
+      "topics": [
+        "Amazon SQS"
+      ],
       "description": "Returns a list of your queues.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -121,6 +157,9 @@
     },
     "PurgeQueue": {
       "name": "PurgeQueue",
+      "topics": [
+        "Amazon SQS"
+      ],
       "description": "Deletes the messages in a queue specified by the queue URL.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -131,6 +170,9 @@
     },
     "ReceiveMessage": {
       "name": "ReceiveMessage",
+      "topics": [
+        "Amazon SQS"
+      ],
       "description": "Retrieves one or more messages, with a maximum limit of 10 messages, from the specified\n                                                queue.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -141,6 +183,9 @@
     },
     "RemovePermission": {
       "name": "RemovePermission",
+      "topics": [
+        "Amazon SQS"
+      ],
       "description": "Revokes any permissions in the queue policy that matches the specified Label parameter.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -151,6 +196,9 @@
     },
     "SendMessage": {
       "name": "SendMessage",
+      "topics": [
+        "Amazon SQS"
+      ],
       "description": "Delivers a message to the specified queue.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -161,6 +209,9 @@
     },
     "SendMessageBatch": {
       "name": "SendMessageBatch",
+      "topics": [
+        "Amazon SQS"
+      ],
       "description": "Delivers up to ten messages to the specified queue.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -171,6 +222,9 @@
     },
     "SetQueueAttributes": {
       "name": "SetQueueAttributes",
+      "topics": [
+        "Amazon SQS"
+      ],
       "description": "Sets the value of one or more queue attributes.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -181,6 +235,9 @@
     },
     "TagQueue": {
       "name": "TagQueue",
+      "topics": [
+        "Amazon SQS"
+      ],
       "description": "Add tags to the specified SQS queue.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -191,6 +248,9 @@
     },
     "UntagQueue": {
       "name": "UntagQueue",
+      "topics": [
+        "Amazon SQS"
+      ],
       "description": "Remove tags from the specified SQS queue.",
       "accessLevel": "Tagging",
       "resourceTypes": [

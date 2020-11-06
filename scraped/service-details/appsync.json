@@ -3,6 +3,9 @@
   "actions": {
     "CreateApiKey": {
       "name": "CreateApiKey",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Creates a unique key that you can distribute to clients who are executing your API.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "CreateDataSource": {
       "name": "CreateDataSource",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Creates a DataSource object.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -19,6 +25,9 @@
     },
     "CreateFunction": {
       "name": "CreateFunction",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Create a new Function object.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -27,6 +36,9 @@
     },
     "CreateGraphqlApi": {
       "name": "CreateGraphqlApi",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Creates a GraphqlApi object, which is the top level AppSync resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [],
@@ -35,6 +47,9 @@
     },
     "CreateResolver": {
       "name": "CreateResolver",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Creates a Resolver object. A resolver converts incoming requests into a format that\n                                                a data source can understand, and converts the data source's responses into GraphQL.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -43,6 +58,9 @@
     },
     "CreateType": {
       "name": "CreateType",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Creates a Type object.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -51,6 +69,9 @@
     },
     "DeleteApiKey": {
       "name": "DeleteApiKey",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Deletes an API key.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -59,6 +80,9 @@
     },
     "DeleteDataSource": {
       "name": "DeleteDataSource",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Deletes a DataSource object.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -67,6 +91,9 @@
     },
     "DeleteFunction": {
       "name": "DeleteFunction",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Deletes a Function object.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -75,6 +102,9 @@
     },
     "DeleteGraphqlApi": {
       "name": "DeleteGraphqlApi",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Deletes a GraphqlApi object. This will also clean up every AppSync resource below\n                                                that API.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -85,6 +115,9 @@
     },
     "DeleteResolver": {
       "name": "DeleteResolver",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Deletes a Resolver object.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -93,6 +126,9 @@
     },
     "DeleteType": {
       "name": "DeleteType",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Deletes a Type object.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -101,6 +137,9 @@
     },
     "GetDataSource": {
       "name": "GetDataSource",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Retrieves a DataSource object.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -109,6 +148,9 @@
     },
     "GetFunction": {
       "name": "GetFunction",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Retrieves a Function object.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -117,6 +159,9 @@
     },
     "GetGraphqlApi": {
       "name": "GetGraphqlApi",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Retrieves a GraphqlApi object.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -127,6 +172,9 @@
     },
     "GetIntrospectionSchema": {
       "name": "GetIntrospectionSchema",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Retrieves the introspection schema for a GraphQL API.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -135,6 +183,9 @@
     },
     "GetResolver": {
       "name": "GetResolver",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Retrieves a Resolver object.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -143,6 +194,9 @@
     },
     "GetSchemaCreationStatus": {
       "name": "GetSchemaCreationStatus",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Retrieves the current status of a schema creation operation.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -151,6 +205,9 @@
     },
     "GetType": {
       "name": "GetType",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Retrieves a Type object.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -159,6 +216,9 @@
     },
     "GraphQL": {
       "name": "GraphQL",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Sends a GraphQL query to a GraphQL API.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -169,6 +229,9 @@
     },
     "ListApiKeys": {
       "name": "ListApiKeys",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Lists the API keys for a given API.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -177,6 +240,9 @@
     },
     "ListDataSources": {
       "name": "ListDataSources",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Lists the data sources for a given API.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -185,6 +251,9 @@
     },
     "ListFunctions": {
       "name": "ListFunctions",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Lists the functions for a given API.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -193,6 +262,9 @@
     },
     "ListGraphqlApis": {
       "name": "ListGraphqlApis",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Lists your GraphQL APIs.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -201,6 +273,9 @@
     },
     "ListResolvers": {
       "name": "ListResolvers",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Lists the resolvers for a given API and type.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -209,6 +284,9 @@
     },
     "ListResolversByFunction": {
       "name": "ListResolversByFunction",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "List the resolvers that are associated with a specific function.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -217,6 +295,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "List the tags for a resource.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -227,6 +308,9 @@
     },
     "ListTypes": {
       "name": "ListTypes",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Lists the types for a given API.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -235,6 +319,9 @@
     },
     "SetWebACL": {
       "name": "SetWebACL",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Gives WebAcl permissions to WAF.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -243,6 +330,9 @@
     },
     "StartSchemaCreation": {
       "name": "StartSchemaCreation",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Adds a new schema to your GraphQL API. This operation is asynchronous - GetSchemaCreationStatus\n                                                can show when it has completed.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -251,6 +341,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Tag a resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -261,6 +354,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Untag a resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -271,6 +367,9 @@
     },
     "UpdateApiKey": {
       "name": "UpdateApiKey",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Updates an API key for a given API.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -279,6 +378,9 @@
     },
     "UpdateDataSource": {
       "name": "UpdateDataSource",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Updates a DataSource object.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -287,6 +389,9 @@
     },
     "UpdateFunction": {
       "name": "UpdateFunction",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Updates an existing Function object.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -295,6 +400,9 @@
     },
     "UpdateGraphqlApi": {
       "name": "UpdateGraphqlApi",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Updates a GraphqlApi object.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -305,6 +413,9 @@
     },
     "UpdateResolver": {
       "name": "UpdateResolver",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Updates a Resolver object.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -313,6 +424,9 @@
     },
     "UpdateType": {
       "name": "UpdateType",
+      "topics": [
+        "AWS AppSync"
+      ],
       "description": "Updates a Type object.",
       "accessLevel": "Write",
       "resourceTypes": [],

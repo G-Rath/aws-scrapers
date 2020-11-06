@@ -3,6 +3,9 @@
   "actions": {
     "CreateChimeWebhookConfiguration": {
       "name": "CreateChimeWebhookConfiguration",
+      "topics": [
+        "AWS Chatbot"
+      ],
       "description": "Creates an AWS Chatbot Chime Webhook Configuration.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "CreateSlackChannelConfiguration": {
       "name": "CreateSlackChannelConfiguration",
+      "topics": [
+        "AWS Chatbot"
+      ],
       "description": "Creates an AWS Chatbot Slack Channel Configuration.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -19,6 +25,9 @@
     },
     "DeleteChimeWebhookConfiguration": {
       "name": "DeleteChimeWebhookConfiguration",
+      "topics": [
+        "AWS Chatbot"
+      ],
       "description": "Deletes an AWS Chatbot Chime Webhook Configuration.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -27,6 +36,9 @@
     },
     "DeleteSlackChannelConfiguration": {
       "name": "DeleteSlackChannelConfiguration",
+      "topics": [
+        "AWS Chatbot"
+      ],
       "description": "Deletes an AWS Chatbot Slack Channel Configuration.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -35,6 +47,9 @@
     },
     "DescribeChimeWebhookConfigurations": {
       "name": "DescribeChimeWebhookConfigurations",
+      "topics": [
+        "AWS Chatbot"
+      ],
       "description": "Lists all AWS Chatbot Chime Webhook Configurations in an AWS Account.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -43,6 +58,9 @@
     },
     "DescribeSlackChannelConfigurations": {
       "name": "DescribeSlackChannelConfigurations",
+      "topics": [
+        "AWS Chatbot"
+      ],
       "description": "Lists all AWS Chatbot Slack Channel Configurations in an AWS account.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -51,6 +69,9 @@
     },
     "DescribeSlackChannels": {
       "name": "DescribeSlackChannels",
+      "topics": [
+        "AWS Chatbot"
+      ],
       "description": "Lists all public Slack channels in the Slack workspace connected to the AWS Account\n                                                onboarded with AWS Chatbot service.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -59,6 +80,9 @@
     },
     "DescribeSlackWorkspaces": {
       "name": "DescribeSlackWorkspaces",
+      "topics": [
+        "AWS Chatbot"
+      ],
       "description": "Lists all authorized Slack workspaces connected to the AWS Account onboarded with\n                                                AWS Chatbot service.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -67,6 +91,9 @@
     },
     "GetSlackOauthParameters": {
       "name": "GetSlackOauthParameters",
+      "topics": [
+        "AWS Chatbot"
+      ],
       "description": "Generate OAuth parameters to request Slack OAuth code to be used by the AWS Chatbot\n                                                service.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -75,6 +102,9 @@
     },
     "RedeemSlackOauthCode": {
       "name": "RedeemSlackOauthCode",
+      "topics": [
+        "AWS Chatbot"
+      ],
       "description": "Redeem previously generated parameters with Slack API, to acquire OAuth tokens to\n                                                be used by the AWS Chatbot service.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -83,6 +113,9 @@
     },
     "UpdateChimeWebhookConfiguration": {
       "name": "UpdateChimeWebhookConfiguration",
+      "topics": [
+        "AWS Chatbot"
+      ],
       "description": "Updates an AWS Chatbot Chime Webhook Configuration.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -91,6 +124,9 @@
     },
     "UpdateSlackChannelConfiguration": {
       "name": "UpdateSlackChannelConfiguration",
+      "topics": [
+        "AWS Chatbot"
+      ],
       "description": "Updates an AWS Chatbot Slack Channel Configuration.",
       "accessLevel": "Write",
       "resourceTypes": [],

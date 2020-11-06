@@ -3,6 +3,9 @@
   "actions": {
     "AssumeRole": {
       "name": "AssumeRole",
+      "topics": [
+        "AWS Security Token Service"
+      ],
       "description": "Returns a set of temporary security credentials that you can use to access AWS resources\n                                                that you might not normally have access to",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "AssumeRoleWithSAML": {
       "name": "AssumeRoleWithSAML",
+      "topics": [
+        "AWS Security Token Service"
+      ],
       "description": "Returns a set of temporary security credentials for users who have been authenticated\n                                                via a SAML authentication response",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "AssumeRoleWithWebIdentity": {
       "name": "AssumeRoleWithWebIdentity",
+      "topics": [
+        "AWS Security Token Service"
+      ],
       "description": "Returns a set of temporary security credentials for users who have been authenticated\n                                                in a mobile or web application with a web identity provider",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "DecodeAuthorizationMessage": {
       "name": "DecodeAuthorizationMessage",
+      "topics": [
+        "AWS Security Token Service"
+      ],
       "description": "Decodes additional information about the authorization status of a request from an\n                                                encoded message returned in response to an AWS request",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -41,6 +53,9 @@
     },
     "GetAccessKeyInfo": {
       "name": "GetAccessKeyInfo",
+      "topics": [
+        "AWS Security Token Service"
+      ],
       "description": "Returns details about the access key id passed as a parameter to the request.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -49,6 +64,9 @@
     },
     "GetCallerIdentity": {
       "name": "GetCallerIdentity",
+      "topics": [
+        "AWS Security Token Service"
+      ],
       "description": "Returns details about the IAM identity whose credentials are used to call the API",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -57,6 +75,9 @@
     },
     "GetFederationToken": {
       "name": "GetFederationToken",
+      "topics": [
+        "AWS Security Token Service"
+      ],
       "description": "Returns a set of temporary security credentials (consisting of an access key ID, a\n                                                secret access key, and a security token) for a federated user",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -67,6 +88,9 @@
     },
     "GetServiceBearerToken": {
       "name": "GetServiceBearerToken",
+      "topics": [
+        "AWS Security Token Service"
+      ],
       "description": "Returns a STS bearer token for an AWS root user, IAM role, or an IAM user",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -75,6 +99,9 @@
     },
     "GetSessionToken": {
       "name": "GetSessionToken",
+      "topics": [
+        "AWS Security Token Service"
+      ],
       "description": "Returns a set of temporary security credentials (consisting of an access key ID, a\n                                                secret access key, and a security token) for an AWS account or IAM user",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -83,6 +110,9 @@
     },
     "TagSession": {
       "name": "TagSession",
+      "topics": [
+        "AWS Security Token Service"
+      ],
       "description": "Grants permission to add tags to a STS session",
       "accessLevel": "Tagging",
       "resourceTypes": [

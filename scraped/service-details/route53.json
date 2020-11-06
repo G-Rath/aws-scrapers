@@ -3,6 +3,9 @@
   "actions": {
     "AssociateVPCWithHostedZone": {
       "name": "AssociateVPCWithHostedZone",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to associate an additional Amazon VPC with a private hosted zone",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "ChangeResourceRecordSets": {
       "name": "ChangeResourceRecordSets",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to create, update, or delete a record, which contains authoritative\n                                                DNS information for a specified domain or subdomain name",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "ChangeTagsForResource": {
       "name": "ChangeTagsForResource",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to add, edit, or delete tags for a health check or a hosted zone",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "CreateHealthCheck": {
       "name": "CreateHealthCheck",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to create a new health check, which monitors the health and performance\n                                                of your web applications, web servers, and other resources",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -41,6 +53,9 @@
     },
     "CreateHostedZone": {
       "name": "CreateHostedZone",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to create a public hosted zone, which you use to specify how the\n                                                Domain Name System (DNS) routes traffic on the Internet for a domain, such as example.com,\n                                                and its subdomains",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -51,6 +66,9 @@
     },
     "CreateQueryLoggingConfig": {
       "name": "CreateQueryLoggingConfig",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to create a configuration for DNS query logging",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -61,6 +79,9 @@
     },
     "CreateReusableDelegationSet": {
       "name": "CreateReusableDelegationSet",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to create a delegation set (a group of four name servers) that can\n                                                be reused by multiple hosted zones",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -69,6 +90,9 @@
     },
     "CreateTrafficPolicy": {
       "name": "CreateTrafficPolicy",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to create a traffic policy, which you use to create multiple DNS\n                                                records for one domain name (such as example.com) or one subdomain name (such as www.example.com)",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -77,6 +101,9 @@
     },
     "CreateTrafficPolicyInstance": {
       "name": "CreateTrafficPolicyInstance",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to create records in a specified hosted zone based on the settings\n                                                in a specified traffic policy version",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -87,6 +114,9 @@
     },
     "CreateTrafficPolicyVersion": {
       "name": "CreateTrafficPolicyVersion",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to create a new version of an existing traffic policy",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -97,6 +127,9 @@
     },
     "CreateVPCAssociationAuthorization": {
       "name": "CreateVPCAssociationAuthorization",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to authorize the AWS account that created a specified VPC to submit\n                                                an AssociateVPCWithHostedZone request, which associates the VPC with a specified hosted\n                                                zone that was created by a different account",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -107,6 +140,9 @@
     },
     "DeleteHealthCheck": {
       "name": "DeleteHealthCheck",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to delete a health check",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -117,6 +153,9 @@
     },
     "DeleteHostedZone": {
       "name": "DeleteHostedZone",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to delete a hosted zone",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -127,6 +166,9 @@
     },
     "DeleteQueryLoggingConfig": {
       "name": "DeleteQueryLoggingConfig",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to delete a configuration for DNS query logging",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -137,6 +179,9 @@
     },
     "DeleteReusableDelegationSet": {
       "name": "DeleteReusableDelegationSet",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to delete a reusable delegation set",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -147,6 +192,9 @@
     },
     "DeleteTrafficPolicy": {
       "name": "DeleteTrafficPolicy",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to delete a traffic policy",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -157,6 +205,9 @@
     },
     "DeleteTrafficPolicyInstance": {
       "name": "DeleteTrafficPolicyInstance",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to delete a traffic policy instance and all the records that Route\n                                                53 created when you created the instance",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -167,6 +218,9 @@
     },
     "DeleteVPCAssociationAuthorization": {
       "name": "DeleteVPCAssociationAuthorization",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to remove authorization for associating an Amazon Virtual Private\n                                                Cloud with a Route 53 private hosted zone",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -177,6 +231,9 @@
     },
     "DisassociateVPCFromHostedZone": {
       "name": "DisassociateVPCFromHostedZone",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to disassociate an Amazon Virtual Private Cloud from a Route 53\n                                                private hosted zone",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -187,6 +244,9 @@
     },
     "GetAccountLimit": {
       "name": "GetAccountLimit",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get the specified limit for the current account, for example,\n                                                the maximum number of health checks that you can create using the account",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -195,6 +255,9 @@
     },
     "GetChange": {
       "name": "GetChange",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get the current status of a request to create, update, or delete\n                                                one or more records",
       "accessLevel": "List",
       "resourceTypes": [
@@ -205,6 +268,9 @@
     },
     "GetCheckerIpRanges": {
       "name": "GetCheckerIpRanges",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get a list of the IP ranges that are used by Route 53 health\n                                                checkers to check the health of your resources",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -213,6 +279,9 @@
     },
     "GetGeoLocation": {
       "name": "GetGeoLocation",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get information about whether a specified geographic location\n                                                is supported for Route 53 geolocation records",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -221,6 +290,9 @@
     },
     "GetHealthCheck": {
       "name": "GetHealthCheck",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get information about a specified health check",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -231,6 +303,9 @@
     },
     "GetHealthCheckCount": {
       "name": "GetHealthCheckCount",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get the number of health checks that are associated with the\n                                                current AWS account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -239,6 +314,9 @@
     },
     "GetHealthCheckLastFailureReason": {
       "name": "GetHealthCheckLastFailureReason",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get the reason that a specified health check failed most recently",
       "accessLevel": "List",
       "resourceTypes": [
@@ -249,6 +327,9 @@
     },
     "GetHealthCheckStatus": {
       "name": "GetHealthCheckStatus",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get the status of a specified health check",
       "accessLevel": "List",
       "resourceTypes": [
@@ -259,6 +340,9 @@
     },
     "GetHostedZone": {
       "name": "GetHostedZone",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get information about a specified hosted zone including the four\n                                                name servers that Route 53 assigned to the hosted zone",
       "accessLevel": "List",
       "resourceTypes": [
@@ -269,6 +353,9 @@
     },
     "GetHostedZoneCount": {
       "name": "GetHostedZoneCount",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get the number of hosted zones that are associated with the current\n                                                AWS account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -277,6 +364,9 @@
     },
     "GetHostedZoneLimit": {
       "name": "GetHostedZoneLimit",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get the specified limit for a specified hosted zone",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -287,6 +377,9 @@
     },
     "GetQueryLoggingConfig": {
       "name": "GetQueryLoggingConfig",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get information about a specified configuration for DNS query\n                                                logging",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -297,6 +390,9 @@
     },
     "GetReusableDelegationSet": {
       "name": "GetReusableDelegationSet",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get information about a specified reusable delegation set, including\n                                                the four name servers that are assigned to the delegation set",
       "accessLevel": "List",
       "resourceTypes": [
@@ -307,6 +403,9 @@
     },
     "GetReusableDelegationSetLimit": {
       "name": "GetReusableDelegationSetLimit",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get the maximum number of hosted zones that you can associate\n                                                with the specified reusable delegation set",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -317,6 +416,9 @@
     },
     "GetTrafficPolicy": {
       "name": "GetTrafficPolicy",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get information about a specified traffic policy version",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -327,6 +429,9 @@
     },
     "GetTrafficPolicyInstance": {
       "name": "GetTrafficPolicyInstance",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get information about a specified traffic policy instance",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -337,6 +442,9 @@
     },
     "GetTrafficPolicyInstanceCount": {
       "name": "GetTrafficPolicyInstanceCount",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get the number of traffic policy instances that are associated\n                                                with the current AWS account",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -345,6 +453,9 @@
     },
     "ListGeoLocations": {
       "name": "ListGeoLocations",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get a list of geographic locations that Route 53 supports for\n                                                geolocation",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -353,6 +464,9 @@
     },
     "ListHealthChecks": {
       "name": "ListHealthChecks",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get a list of the health checks that are associated with the\n                                                current AWS account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -361,6 +475,9 @@
     },
     "ListHostedZones": {
       "name": "ListHostedZones",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get a list of the public and private hosted zones that are associated\n                                                with the current AWS account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -369,6 +486,9 @@
     },
     "ListHostedZonesByName": {
       "name": "ListHostedZonesByName",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get a list of your hosted zones in lexicographic order. Hosted\n                                                zones are sorted by name with the labels reversed, for example, com.example.www.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -377,6 +497,9 @@
     },
     "ListHostedZonesByVPC": {
       "name": "ListHostedZonesByVPC",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get a list of all the private hosted zones that a specified VPC\n                                                is associated with",
       "accessLevel": "List",
       "resourceTypes": [
@@ -387,6 +510,9 @@
     },
     "ListQueryLoggingConfigs": {
       "name": "ListQueryLoggingConfigs",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to list the configurations for DNS query logging that are associated\n                                                with the current AWS account or the configuration that is associated with a specified\n                                                hosted zone.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -397,6 +523,9 @@
     },
     "ListResourceRecordSets": {
       "name": "ListResourceRecordSets",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to list the records in a specified hosted zone",
       "accessLevel": "List",
       "resourceTypes": [
@@ -407,6 +536,9 @@
     },
     "ListReusableDelegationSets": {
       "name": "ListReusableDelegationSets",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to list the reusable delegation sets that are associated with the\n                                                current AWS account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -415,6 +547,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to list tags for one health check or hosted zone",
       "accessLevel": "List",
       "resourceTypes": [
@@ -425,6 +560,9 @@
     },
     "ListTagsForResources": {
       "name": "ListTagsForResources",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to list tags for up to 10 health checks or hosted zones",
       "accessLevel": "List",
       "resourceTypes": [
@@ -435,6 +573,9 @@
     },
     "ListTrafficPolicies": {
       "name": "ListTrafficPolicies",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get information about the latest version for every traffic policy\n                                                that is associated with the current AWS account. Policies are listed in the order\n                                                in which they were created.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -443,6 +584,9 @@
     },
     "ListTrafficPolicyInstances": {
       "name": "ListTrafficPolicyInstances",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get information about the traffic policy instances that you created\n                                                by using the current AWS account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -451,6 +595,9 @@
     },
     "ListTrafficPolicyInstancesByHostedZone": {
       "name": "ListTrafficPolicyInstancesByHostedZone",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get information about the traffic policy instances that you created\n                                                in a specified hosted zone",
       "accessLevel": "List",
       "resourceTypes": [
@@ -461,6 +608,9 @@
     },
     "ListTrafficPolicyInstancesByPolicy": {
       "name": "ListTrafficPolicyInstancesByPolicy",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get information about the traffic policy instances that you created\n                                                using a specified traffic policy version",
       "accessLevel": "List",
       "resourceTypes": [
@@ -471,6 +621,9 @@
     },
     "ListTrafficPolicyVersions": {
       "name": "ListTrafficPolicyVersions",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get information about all the versions for a specified traffic\n                                                policy",
       "accessLevel": "List",
       "resourceTypes": [
@@ -481,6 +634,9 @@
     },
     "ListVPCAssociationAuthorizations": {
       "name": "ListVPCAssociationAuthorizations",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get a list of the VPCs that were created by other accounts and\n                                                that can be associated with a specified hosted zone",
       "accessLevel": "List",
       "resourceTypes": [
@@ -491,6 +647,9 @@
     },
     "TestDNSAnswer": {
       "name": "TestDNSAnswer",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to get the value that Route 53 returns in response to a DNS query\n                                                for a specified record name and type",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -499,6 +658,9 @@
     },
     "UpdateHealthCheck": {
       "name": "UpdateHealthCheck",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to update an existing health check",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -509,6 +671,9 @@
     },
     "UpdateHostedZoneComment": {
       "name": "UpdateHostedZoneComment",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to update the comment for a specified hosted zone",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -519,6 +684,9 @@
     },
     "UpdateTrafficPolicyComment": {
       "name": "UpdateTrafficPolicyComment",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to update the comment for a specified traffic policy version",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -529,6 +697,9 @@
     },
     "UpdateTrafficPolicyInstance": {
       "name": "UpdateTrafficPolicyInstance",
+      "topics": [
+        "Amazon Route 53"
+      ],
       "description": "Grants permission to update the records in a specified hosted zone that were created\n                                                based on the settings in a specified traffic policy version",
       "accessLevel": "Write",
       "resourceTypes": [

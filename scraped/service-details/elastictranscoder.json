@@ -3,6 +3,9 @@
   "actions": {
     "CancelJob": {
       "name": "CancelJob",
+      "topics": [
+        "Amazon Elastic Transcoder"
+      ],
       "description": "Cancel a job that Elastic Transcoder has not begun to process",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "CreateJob": {
       "name": "CreateJob",
+      "topics": [
+        "Amazon Elastic Transcoder"
+      ],
       "description": "Create a job.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "CreatePipeline": {
       "name": "CreatePipeline",
+      "topics": [
+        "Amazon Elastic Transcoder"
+      ],
       "description": "Create a pipeline",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "CreatePreset": {
       "name": "CreatePreset",
+      "topics": [
+        "Amazon Elastic Transcoder"
+      ],
       "description": "Create a preset.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "DeletePipeline": {
       "name": "DeletePipeline",
+      "topics": [
+        "Amazon Elastic Transcoder"
+      ],
       "description": "Delete a pipeline",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "DeletePreset": {
       "name": "DeletePreset",
+      "topics": [
+        "Amazon Elastic Transcoder"
+      ],
       "description": "Delete a preset",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "ListJobsByPipeline": {
       "name": "ListJobsByPipeline",
+      "topics": [
+        "Amazon Elastic Transcoder"
+      ],
       "description": "Get a list of the jobs that you assigned to a pipeline",
       "accessLevel": "List",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "ListJobsByStatus": {
       "name": "ListJobsByStatus",
+      "topics": [
+        "Amazon Elastic Transcoder"
+      ],
       "description": "Get information about all of the jobs associated with the current AWS account that\n                                                have a specified status",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -81,6 +105,9 @@
     },
     "ListPipelines": {
       "name": "ListPipelines",
+      "topics": [
+        "Amazon Elastic Transcoder"
+      ],
       "description": "Get a list of the pipelines associated with the current AWS account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -89,6 +116,9 @@
     },
     "ListPresets": {
       "name": "ListPresets",
+      "topics": [
+        "Amazon Elastic Transcoder"
+      ],
       "description": "Get a list of all presets associated with the current AWS account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -97,6 +127,9 @@
     },
     "ReadJob": {
       "name": "ReadJob",
+      "topics": [
+        "Amazon Elastic Transcoder"
+      ],
       "description": "Get detailed information about a job",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -107,6 +140,9 @@
     },
     "ReadPipeline": {
       "name": "ReadPipeline",
+      "topics": [
+        "Amazon Elastic Transcoder"
+      ],
       "description": "Get detailed information about a pipeline",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -117,6 +153,9 @@
     },
     "ReadPreset": {
       "name": "ReadPreset",
+      "topics": [
+        "Amazon Elastic Transcoder"
+      ],
       "description": "Get detailed information about a preset.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -127,6 +166,9 @@
     },
     "TestRole": {
       "name": "TestRole",
+      "topics": [
+        "Amazon Elastic Transcoder"
+      ],
       "description": "Test the settings for a pipeline to ensure that Elastic Transcoder can create and\n                                                process jobs",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -135,6 +177,9 @@
     },
     "UpdatePipeline": {
       "name": "UpdatePipeline",
+      "topics": [
+        "Amazon Elastic Transcoder"
+      ],
       "description": "Update settings for a pipeline",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -145,6 +190,9 @@
     },
     "UpdatePipelineNotifications": {
       "name": "UpdatePipelineNotifications",
+      "topics": [
+        "Amazon Elastic Transcoder"
+      ],
       "description": "Update only Amazon Simple Notification Service (Amazon SNS) notifications for a pipeline",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -155,6 +203,9 @@
     },
     "UpdatePipelineStatus": {
       "name": "UpdatePipelineStatus",
+      "topics": [
+        "Amazon Elastic Transcoder"
+      ],
       "description": "Pause or reactivate a pipeline, so the pipeline stops or restarts processing jobs,\n                                                update the status for the pipeline.",
       "accessLevel": "Write",
       "resourceTypes": [

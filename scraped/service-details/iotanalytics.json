@@ -3,6 +3,9 @@
   "actions": {
     "BatchPutMessage": {
       "name": "BatchPutMessage",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Puts a batch of messages into the specified channel.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "CancelPipelineReprocessing": {
       "name": "CancelPipelineReprocessing",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Cancels reprocessing for the specified pipeline.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "CreateChannel": {
       "name": "CreateChannel",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Creates a channel.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "CreateDataset": {
       "name": "CreateDataset",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Creates a dataset.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "CreateDatasetContent": {
       "name": "CreateDatasetContent",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Generates content of the specified dataset (by executing the dataset actions).",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "CreateDatastore": {
       "name": "CreateDatastore",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Creates a datastore.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "CreatePipeline": {
       "name": "CreatePipeline",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Creates a pipeline.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "DeleteChannel": {
       "name": "DeleteChannel",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Deletes the specified channel.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "DeleteDataset": {
       "name": "DeleteDataset",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Deletes the specified dataset.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "DeleteDatasetContent": {
       "name": "DeleteDatasetContent",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Deletes the content of the specified dataset.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "DeleteDatastore": {
       "name": "DeleteDatastore",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Deletes the specified datastore.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -113,6 +146,9 @@
     },
     "DeletePipeline": {
       "name": "DeletePipeline",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Deletes the specified pipeline.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -123,6 +159,9 @@
     },
     "DescribeChannel": {
       "name": "DescribeChannel",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Describes the specified channel.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -133,6 +172,9 @@
     },
     "DescribeDataset": {
       "name": "DescribeDataset",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Describes the specified dataset.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -143,6 +185,9 @@
     },
     "DescribeDatastore": {
       "name": "DescribeDatastore",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Describes the specified datastore.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -153,6 +198,9 @@
     },
     "DescribeLoggingOptions": {
       "name": "DescribeLoggingOptions",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Describes logging options for the the account.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -161,6 +209,9 @@
     },
     "DescribePipeline": {
       "name": "DescribePipeline",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Describes the specified pipeline.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -171,6 +222,9 @@
     },
     "GetDatasetContent": {
       "name": "GetDatasetContent",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Gets the content of the specified dataset.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -181,6 +235,9 @@
     },
     "ListChannels": {
       "name": "ListChannels",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Lists the channels for the account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -189,6 +246,9 @@
     },
     "ListDatasets": {
       "name": "ListDatasets",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Lists the datasets for the account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -197,6 +257,9 @@
     },
     "ListDatastores": {
       "name": "ListDatastores",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Lists the datastores for the account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -205,6 +268,9 @@
     },
     "ListPipelines": {
       "name": "ListPipelines",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Lists the pipelines for the account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -213,6 +279,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Lists the tags (metadata) which you have assigned to the resource.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -223,6 +292,9 @@
     },
     "PutLoggingOptions": {
       "name": "PutLoggingOptions",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Puts logging options for the the account.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -231,6 +303,9 @@
     },
     "RunPipelineActivity": {
       "name": "RunPipelineActivity",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Runs the specified pipeline activity.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -239,6 +314,9 @@
     },
     "SampleChannelData": {
       "name": "SampleChannelData",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Samples the specified channel's data.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -249,6 +327,9 @@
     },
     "StartPipelineReprocessing": {
       "name": "StartPipelineReprocessing",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Starts reprocessing for the specified pipeline.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -259,6 +340,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Adds to or modifies the tags of the given resource. Tags are metadata which can be\n                                                used to manage a resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -269,6 +353,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Removes the given tags (metadata) from the resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -279,6 +366,9 @@
     },
     "UpdateChannel": {
       "name": "UpdateChannel",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Updates the specified channel.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -289,6 +379,9 @@
     },
     "UpdateDataset": {
       "name": "UpdateDataset",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Updates the specified dataset.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -299,6 +392,9 @@
     },
     "UpdateDatastore": {
       "name": "UpdateDatastore",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Updates the specified datastore.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -309,6 +405,9 @@
     },
     "UpdatePipeline": {
       "name": "UpdatePipeline",
+      "topics": [
+        "AWS IoT Analytics"
+      ],
       "description": "Updates the specified pipeline.",
       "accessLevel": "Write",
       "resourceTypes": [

@@ -3,6 +3,9 @@
   "actions": {
     "CreateBotVersion": {
       "name": "CreateBotVersion",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Creates a new version based on the $LATEST version of the specified bot.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "CreateIntentVersion": {
       "name": "CreateIntentVersion",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Creates a new version based on the $LATEST version of the specified intent.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "CreateSlotTypeVersion": {
       "name": "CreateSlotTypeVersion",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Creates a new version based on the $LATEST version of the specified slot type.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "DeleteBot": {
       "name": "DeleteBot",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Deletes all versions of a bot.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "DeleteBotAlias": {
       "name": "DeleteBotAlias",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Deletes an alias for a specific bot.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "DeleteBotChannelAssociation": {
       "name": "DeleteBotChannelAssociation",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Deletes the association between a Amazon Lex bot alias and a messaging platform.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "DeleteBotVersion": {
       "name": "DeleteBotVersion",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Deletes a specific version of a bot.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "DeleteIntent": {
       "name": "DeleteIntent",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Deletes all versions of an intent.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "DeleteIntentVersion": {
       "name": "DeleteIntentVersion",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Deletes a specific version of an intent.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "DeleteSession": {
       "name": "DeleteSession",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Removes session information for a specified bot, alias, and user ID.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "DeleteSlotType": {
       "name": "DeleteSlotType",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Deletes all versions of a slot type.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -113,6 +146,9 @@
     },
     "DeleteSlotTypeVersion": {
       "name": "DeleteSlotTypeVersion",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Deletes a specific version of a slot type.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -123,6 +159,9 @@
     },
     "DeleteUtterances": {
       "name": "DeleteUtterances",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Deletes the information Amazon Lex maintains for utterances on a specific bot and\n                                                userId.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -133,6 +172,9 @@
     },
     "GetBot": {
       "name": "GetBot",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Returns information for a specific bot. In addition to the bot name, the bot version\n                                                or alias is required.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -143,6 +185,9 @@
     },
     "GetBotAlias": {
       "name": "GetBotAlias",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Returns information about a Amazon Lex bot alias.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -153,6 +198,9 @@
     },
     "GetBotAliases": {
       "name": "GetBotAliases",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Returns a list of aliases for a given Amazon Lex bot.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -161,6 +209,9 @@
     },
     "GetBotChannelAssociation": {
       "name": "GetBotChannelAssociation",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Returns information about the association between a Amazon Lex bot and a messaging\n                                                platform.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -171,6 +222,9 @@
     },
     "GetBotChannelAssociations": {
       "name": "GetBotChannelAssociations",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Returns a list of all of the channels associated with a single bot.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -181,6 +235,9 @@
     },
     "GetBotVersions": {
       "name": "GetBotVersions",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Returns information for all versions of a specific bot.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -191,6 +248,9 @@
     },
     "GetBots": {
       "name": "GetBots",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Returns information for the $LATEST version of all bots, subject to filters provided\n                                                by the client.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -199,6 +259,9 @@
     },
     "GetBuiltinIntent": {
       "name": "GetBuiltinIntent",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Returns information about a built-in intent.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -207,6 +270,9 @@
     },
     "GetBuiltinIntents": {
       "name": "GetBuiltinIntents",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Gets a list of built-in intents that meet the specified criteria.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -215,6 +281,9 @@
     },
     "GetBuiltinSlotTypes": {
       "name": "GetBuiltinSlotTypes",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Gets a list of built-in slot types that meet the specified criteria.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -223,6 +292,9 @@
     },
     "GetExport": {
       "name": "GetExport",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Exports Amazon Lex Resource in a requested format.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -233,6 +305,9 @@
     },
     "GetImport": {
       "name": "GetImport",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Gets information about an import job started with StartImport.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -241,6 +316,9 @@
     },
     "GetIntent": {
       "name": "GetIntent",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Returns information for a specific intent. In addition to the intent name, you must\n                                                also specify the intent version.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -251,6 +329,9 @@
     },
     "GetIntentVersions": {
       "name": "GetIntentVersions",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Returns information for all versions of a specific intent.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -261,6 +342,9 @@
     },
     "GetIntents": {
       "name": "GetIntents",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Returns information for the $LATEST version of all intents, subject to filters provided\n                                                by the client.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -269,6 +353,9 @@
     },
     "GetSession": {
       "name": "GetSession",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Returns session information for a specified bot, alias, and user ID.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -279,6 +366,9 @@
     },
     "GetSlotType": {
       "name": "GetSlotType",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Returns information about a specific version of a slot type. In addition to specifying\n                                                the slot type name, you must also specify the slot type version.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -289,6 +379,9 @@
     },
     "GetSlotTypeVersions": {
       "name": "GetSlotTypeVersions",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Returns information for all versions of a specific slot type.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -299,6 +392,9 @@
     },
     "GetSlotTypes": {
       "name": "GetSlotTypes",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Returns information for the $LATEST version of all slot types, subject to filters\n                                                provided by the client.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -307,6 +403,9 @@
     },
     "GetUtterancesView": {
       "name": "GetUtterancesView",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Returns a view of aggregate utterance data for versions of a bot for a recent time\n                                                period.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -317,6 +416,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Lists tags for a Lex resource",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -327,6 +429,9 @@
     },
     "PostContent": {
       "name": "PostContent",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Sends user input (text or speech) to Amazon Lex.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -337,6 +442,9 @@
     },
     "PostText": {
       "name": "PostText",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Sends user input (text-only) to Amazon Lex.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -347,6 +455,9 @@
     },
     "PutBot": {
       "name": "PutBot",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Creates or updates the $LATEST version of a Amazon Lex conversational bot.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -357,6 +468,9 @@
     },
     "PutBotAlias": {
       "name": "PutBotAlias",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Creates or updates an alias for the specific bot.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -367,6 +481,9 @@
     },
     "PutIntent": {
       "name": "PutIntent",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Creates or updates the $LATEST version of an intent.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -377,6 +494,9 @@
     },
     "PutSession": {
       "name": "PutSession",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Creates a new session or modifies an existing session with an Amazon Lex bot.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -387,6 +507,9 @@
     },
     "PutSlotType": {
       "name": "PutSlotType",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Creates or updates the $LATEST version of a slot type.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -397,6 +520,9 @@
     },
     "StartImport": {
       "name": "StartImport",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Starts a job to import a resource to Amazon Lex.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -405,6 +531,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Adds or overwrites tags to a Lex resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -415,6 +544,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "Amazon Lex"
+      ],
       "description": "Removes tags from a Lex resource",
       "accessLevel": "Tagging",
       "resourceTypes": [

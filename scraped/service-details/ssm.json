@@ -3,6 +3,9 @@
   "actions": {
     "AddTagsToResource": {
       "name": "AddTagsToResource",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to add or overwrite one or more tags for a specified AWS resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "CancelCommand": {
       "name": "CancelCommand",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to cancel a specified Run Command command",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -21,6 +27,9 @@
     },
     "CancelMaintenanceWindowExecution": {
       "name": "CancelMaintenanceWindowExecution",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to cancel an in-progress maintenance window execution",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -29,6 +38,9 @@
     },
     "CreateActivation": {
       "name": "CreateActivation",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to create an activation that is used to register on-premises servers\n                                                and virtual machines (VMs) with Systems Manager",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -37,6 +49,9 @@
     },
     "CreateAssociation": {
       "name": "CreateAssociation",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to associate a specified Systems Manager document with specified\n                                                instances or other targets",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -47,6 +62,9 @@
     },
     "CreateAssociationBatch": {
       "name": "CreateAssociationBatch",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to combine entries for multiple CreateAssociation operations in\n                                                a single command",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -57,6 +75,9 @@
     },
     "CreateDocument": {
       "name": "CreateDocument",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to create a Systems Manager SSM document",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -67,6 +88,9 @@
     },
     "CreateMaintenanceWindow": {
       "name": "CreateMaintenanceWindow",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to create a maintenance window",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -75,6 +99,9 @@
     },
     "CreateOpsItem": {
       "name": "CreateOpsItem",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to create an OpsItem in OpsCenter",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -83,6 +110,9 @@
     },
     "CreatePatchBaseline": {
       "name": "CreatePatchBaseline",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to create a patch baseline",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -91,6 +121,9 @@
     },
     "CreateResourceDataSync": {
       "name": "CreateResourceDataSync",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to create a resource data sync configuration, which regularly collects\n                                                inventory data from managed instances and updates the data in an Amazon S3 bucket",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -101,6 +134,9 @@
     },
     "DeleteActivation": {
       "name": "DeleteActivation",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to delete a specified activation for managed instances",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -109,6 +145,9 @@
     },
     "DeleteAssociation": {
       "name": "DeleteAssociation",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to disassociate a specified SSM document from a specified instance",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -119,6 +158,9 @@
     },
     "DeleteDocument": {
       "name": "DeleteDocument",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to delete a specified SSM document and its instance associations",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -129,6 +171,9 @@
     },
     "DeleteInventory": {
       "name": "DeleteInventory",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to delete a specified custom inventory type, or the data associated\n                                                with a custom inventory type",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -137,6 +182,9 @@
     },
     "DeleteMaintenanceWindow": {
       "name": "DeleteMaintenanceWindow",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to delete a specified maintenance window",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -147,6 +195,9 @@
     },
     "DeleteParameter": {
       "name": "DeleteParameter",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to delete a specified SSM parameter",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -157,6 +208,9 @@
     },
     "DeleteParameters": {
       "name": "DeleteParameters",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to delete multiple specified SSM parameters",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -167,6 +221,9 @@
     },
     "DeletePatchBaseline": {
       "name": "DeletePatchBaseline",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to delete a specified patch baseline",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -177,6 +234,9 @@
     },
     "DeleteResourceDataSync": {
       "name": "DeleteResourceDataSync",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to delete a specified resource data sync",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -187,6 +247,9 @@
     },
     "DeregisterManagedInstance": {
       "name": "DeregisterManagedInstance",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to deregister a specified on-premises server or virtual machine\n                                                (VM) from Systems Manager",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -197,6 +260,9 @@
     },
     "DeregisterPatchBaselineForPatchGroup": {
       "name": "DeregisterPatchBaselineForPatchGroup",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to deregister a specified patch baseline from being the default\n                                                patch baseline for a specified patch group",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -207,6 +273,9 @@
     },
     "DeregisterTargetFromMaintenanceWindow": {
       "name": "DeregisterTargetFromMaintenanceWindow",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to deregister a specified target from a maintenance window",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -217,6 +286,9 @@
     },
     "DeregisterTaskFromMaintenanceWindow": {
       "name": "DeregisterTaskFromMaintenanceWindow",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to deregister a specified task from a maintenance window",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -227,6 +299,9 @@
     },
     "DescribeActivations": {
       "name": "DescribeActivations",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view details about a specified managed instance activation, such\n                                                as when it was created and the number of instances registered using the activation",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -235,6 +310,9 @@
     },
     "DescribeAssociation": {
       "name": "DescribeAssociation",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view details about the specified association for a specified\n                                                instance or target",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -245,6 +323,9 @@
     },
     "DescribeAssociationExecutionTargets": {
       "name": "DescribeAssociationExecutionTargets",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view information about a specified association execution",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -253,6 +334,9 @@
     },
     "DescribeAssociationExecutions": {
       "name": "DescribeAssociationExecutions",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view all executions for a specified association",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -261,6 +345,9 @@
     },
     "DescribeAutomationExecutions": {
       "name": "DescribeAutomationExecutions",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view details about all active and terminated Automation executions",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -269,6 +356,9 @@
     },
     "DescribeAutomationStepExecutions": {
       "name": "DescribeAutomationStepExecutions",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view information about all active and terminated step executions\n                                                in an Automation workflow",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -277,6 +367,9 @@
     },
     "DescribeAvailablePatches": {
       "name": "DescribeAvailablePatches",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view all patches eligible to include in a patch baseline",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -285,6 +378,9 @@
     },
     "DescribeDocument": {
       "name": "DescribeDocument",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view details about a specified SSM document",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -295,6 +391,9 @@
     },
     "DescribeDocumentParameters": {
       "name": "DescribeDocumentParameters",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to display information about SSM document parameters in the Systems\n                                                Manager console (internal Systems Manager action)",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -305,6 +404,9 @@
     },
     "DescribeDocumentPermission": {
       "name": "DescribeDocumentPermission",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view the permissions for a specified SSM document",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -315,6 +417,9 @@
     },
     "DescribeEffectiveInstanceAssociations": {
       "name": "DescribeEffectiveInstanceAssociations",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view all current associations for a specified instance",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -325,6 +430,9 @@
     },
     "DescribeEffectivePatchesForPatchBaseline": {
       "name": "DescribeEffectivePatchesForPatchBaseline",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view details about the patches currently associated with the\n                                                specified patch baseline (Windows only)",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -335,6 +443,9 @@
     },
     "DescribeInstanceAssociationsStatus": {
       "name": "DescribeInstanceAssociationsStatus",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view the status of the associations for a specified instance",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -345,6 +456,9 @@
     },
     "DescribeInstanceInformation": {
       "name": "DescribeInstanceInformation",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view details about a specified instance",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -353,6 +467,9 @@
     },
     "DescribeInstancePatchStates": {
       "name": "DescribeInstancePatchStates",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view status details about patches on a specified instance",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -361,6 +478,9 @@
     },
     "DescribeInstancePatchStatesForPatchGroup": {
       "name": "DescribeInstancePatchStatesForPatchGroup",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to describe the high-level patch state for the instances in the\n                                                specified patch group",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -369,6 +489,9 @@
     },
     "DescribeInstancePatches": {
       "name": "DescribeInstancePatches",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view general details about the patches on a specified instance",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -377,6 +500,9 @@
     },
     "DescribeInstanceProperties": {
       "name": "DescribeInstanceProperties",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to user's Amazon EC2 console to render managed instances' nodes",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -385,6 +511,9 @@
     },
     "DescribeInventoryDeletions": {
       "name": "DescribeInventoryDeletions",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view details about a specified inventory deletion",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -393,6 +522,9 @@
     },
     "DescribeMaintenanceWindowExecutionTaskInvocations": {
       "name": "DescribeMaintenanceWindowExecutionTaskInvocations",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view details of a specified task execution for a maintenance\n                                                window",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -401,6 +533,9 @@
     },
     "DescribeMaintenanceWindowExecutionTasks": {
       "name": "DescribeMaintenanceWindowExecutionTasks",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view details about the tasks that ran during a specified maintenance\n                                                window execution",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -409,6 +544,9 @@
     },
     "DescribeMaintenanceWindowExecutions": {
       "name": "DescribeMaintenanceWindowExecutions",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view the executions of a specified maintenance window",
       "accessLevel": "List",
       "resourceTypes": [
@@ -419,6 +557,9 @@
     },
     "DescribeMaintenanceWindowSchedule": {
       "name": "DescribeMaintenanceWindowSchedule",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view details about upcoming executions of a specified maintenance\n                                                window",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -427,6 +568,9 @@
     },
     "DescribeMaintenanceWindowTargets": {
       "name": "DescribeMaintenanceWindowTargets",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view a list of the targets associated with a specified maintenance\n                                                window",
       "accessLevel": "List",
       "resourceTypes": [
@@ -437,6 +581,9 @@
     },
     "DescribeMaintenanceWindowTasks": {
       "name": "DescribeMaintenanceWindowTasks",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view a list of the tasks associated with a specified maintenance\n                                                window",
       "accessLevel": "List",
       "resourceTypes": [
@@ -447,6 +594,9 @@
     },
     "DescribeMaintenanceWindows": {
       "name": "DescribeMaintenanceWindows",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view information about all or specified maintenance windows",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -455,6 +605,9 @@
     },
     "DescribeMaintenanceWindowsForTarget": {
       "name": "DescribeMaintenanceWindowsForTarget",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view information about the maintenance window targets and tasks\n                                                associated with a specified instance",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -463,6 +616,9 @@
     },
     "DescribeOpsItems": {
       "name": "DescribeOpsItems",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view details about specified OpsItems",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -471,6 +627,9 @@
     },
     "DescribeParameters": {
       "name": "DescribeParameters",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view details about a specified SSM parameter",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -479,6 +638,9 @@
     },
     "DescribePatchBaselines": {
       "name": "DescribePatchBaselines",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view information about patch baselines that meet the specified\n                                                criteria",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -487,6 +649,9 @@
     },
     "DescribePatchGroupState": {
       "name": "DescribePatchGroupState",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view aggregated status details for patches for a specified patch\n                                                group",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -495,6 +660,9 @@
     },
     "DescribePatchGroups": {
       "name": "DescribePatchGroups",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view information about the patch baseline for a specified patch\n                                                group",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -503,6 +671,9 @@
     },
     "DescribePatchProperties": {
       "name": "DescribePatchProperties",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view details of available patches for a specified operating system\n                                                and patch property",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -511,6 +682,9 @@
     },
     "DescribeSessions": {
       "name": "DescribeSessions",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view a list of recent Session Manager sessions that meet the\n                                                specified search criteria",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -519,6 +693,9 @@
     },
     "GetAutomationExecution": {
       "name": "GetAutomationExecution",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view details of a specified Automation execution",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -527,6 +704,9 @@
     },
     "GetCalendarState": {
       "name": "GetCalendarState",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view the calendar state for a change calendar or a list of change\n                                                calendars",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -537,6 +717,9 @@
     },
     "GetCommandInvocation": {
       "name": "GetCommandInvocation",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view details about the command execution of a specified invocation\n                                                or plugin",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -545,6 +728,9 @@
     },
     "GetConnectionStatus": {
       "name": "GetConnectionStatus",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view the Session Manager connection status for a specified managed\n                                                instance",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -553,6 +739,9 @@
     },
     "GetDefaultPatchBaseline": {
       "name": "GetDefaultPatchBaseline",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view the current default patch baseline for a specified operating\n                                                system type",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -563,6 +752,9 @@
     },
     "GetDeployablePatchSnapshotForInstance": {
       "name": "GetDeployablePatchSnapshotForInstance",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to retrieve the current patch baseline snapshot for a specified\n                                                instance",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -571,6 +763,9 @@
     },
     "GetDocument": {
       "name": "GetDocument",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view the contents of a specified SSM document",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -581,6 +776,9 @@
     },
     "GetInventory": {
       "name": "GetInventory",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view instance inventory details per the specified criteria",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -589,6 +787,9 @@
     },
     "GetInventorySchema": {
       "name": "GetInventorySchema",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view a list of inventory types or attribute names for a specified\n                                                inventory item type",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -597,6 +798,9 @@
     },
     "GetMaintenanceWindow": {
       "name": "GetMaintenanceWindow",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view details about a specified maintenance window",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -607,6 +811,9 @@
     },
     "GetMaintenanceWindowExecution": {
       "name": "GetMaintenanceWindowExecution",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view details about a specified maintenance window execution",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -615,6 +822,9 @@
     },
     "GetMaintenanceWindowExecutionTask": {
       "name": "GetMaintenanceWindowExecutionTask",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view details about a specified maintenance window execution task",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -623,6 +833,9 @@
     },
     "GetMaintenanceWindowExecutionTaskInvocation": {
       "name": "GetMaintenanceWindowExecutionTaskInvocation",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view details about a specific maintenance window task running\n                                                on a specific target",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -631,6 +844,9 @@
     },
     "GetMaintenanceWindowTask": {
       "name": "GetMaintenanceWindowTask",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view details about tasks registered with a specified maintenance\n                                                window",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -641,6 +857,9 @@
     },
     "GetManifest": {
       "name": "GetManifest",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Used by Systems Manager and SSM Agent to determine package installation requirements\n                                                for an instance (internal Systems Manager call)",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -649,6 +868,9 @@
     },
     "GetOpsItem": {
       "name": "GetOpsItem",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view information about a specified OpsItem",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -657,6 +879,9 @@
     },
     "GetOpsSummary": {
       "name": "GetOpsSummary",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view summary information about OpsItems based on specified filters\n                                                and aggregators",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -667,6 +892,9 @@
     },
     "GetParameter": {
       "name": "GetParameter",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view information about a specified parameter",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -677,6 +905,9 @@
     },
     "GetParameterHistory": {
       "name": "GetParameterHistory",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view details and changes for a specified parameter",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -687,6 +918,9 @@
     },
     "GetParameters": {
       "name": "GetParameters",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view information about multiple specified parameters",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -697,6 +931,9 @@
     },
     "GetParametersByPath": {
       "name": "GetParametersByPath",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view information about parameters in a specified hierarchy",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -707,6 +944,9 @@
     },
     "GetPatchBaseline": {
       "name": "GetPatchBaseline",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view information about a specified patch baseline",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -717,6 +957,9 @@
     },
     "GetPatchBaselineForPatchGroup": {
       "name": "GetPatchBaselineForPatchGroup",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view the ID of the current patch baseline for a specified patch\n                                                group",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -727,6 +970,9 @@
     },
     "GetServiceSetting": {
       "name": "GetServiceSetting",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view the account-level setting for an AWS service",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -737,6 +983,9 @@
     },
     "LabelParameterVersion": {
       "name": "LabelParameterVersion",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to apply an identifying label to a specified version of a parameter",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -747,6 +996,9 @@
     },
     "ListAssociationVersions": {
       "name": "ListAssociationVersions",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to list versions of the specified association",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -755,6 +1007,9 @@
     },
     "ListAssociations": {
       "name": "ListAssociations",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to list the associations for a specified SSM document or managed\n                                                instance",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -763,6 +1018,9 @@
     },
     "ListCommandInvocations": {
       "name": "ListCommandInvocations",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to list information about command invocations sent to a specified\n                                                instance",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -771,6 +1029,9 @@
     },
     "ListCommands": {
       "name": "ListCommands",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to list the commands sent to a specified instance",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -779,6 +1040,9 @@
     },
     "ListComplianceItems": {
       "name": "ListComplianceItems",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to list compliance status for specified resource types on a specified\n                                                resource",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -787,6 +1051,9 @@
     },
     "ListComplianceSummaries": {
       "name": "ListComplianceSummaries",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to list a summary count of compliant and noncompliant resources\n                                                for a specified compliance type",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -795,6 +1062,9 @@
     },
     "ListDocumentVersions": {
       "name": "ListDocumentVersions",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to list all versions of a specified document",
       "accessLevel": "List",
       "resourceTypes": [
@@ -805,6 +1075,9 @@
     },
     "ListDocuments": {
       "name": "ListDocuments",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view information about a specified SSM document",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -813,6 +1086,9 @@
     },
     "ListInstanceAssociations": {
       "name": "ListInstanceAssociations",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Used by SSM Agent to check for new State Manager associations (internal Systems Manager\n                                                call)",
       "accessLevel": "List",
       "resourceTypes": [
@@ -823,6 +1099,9 @@
     },
     "ListInventoryEntries": {
       "name": "ListInventoryEntries",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view a list of specified inventory types for a specified instance",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -831,6 +1110,9 @@
     },
     "ListResourceComplianceSummaries": {
       "name": "ListResourceComplianceSummaries",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to list resource-level summary count",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -839,6 +1121,9 @@
     },
     "ListResourceDataSync": {
       "name": "ListResourceDataSync",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to list information about resource data sync configurations in an\n                                                account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -847,6 +1132,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to view a list of resource tags for a specified resource",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -857,6 +1145,9 @@
     },
     "ModifyDocumentPermission": {
       "name": "ModifyDocumentPermission",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to share a custom SSM document publicly or privately with specified\n                                                AWS accounts",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -867,6 +1158,9 @@
     },
     "PutComplianceItems": {
       "name": "PutComplianceItems",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to register a compliance type and other compliance details on a\n                                                specified resource",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -877,6 +1171,9 @@
     },
     "PutConfigurePackageResult": {
       "name": "PutConfigurePackageResult",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Used by SSM Agent to generate a report of the results of specific agent requests (internal\n                                                Systems Manager call)",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -885,6 +1182,9 @@
     },
     "PutInventory": {
       "name": "PutInventory",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to add or update inventory items on multiple specified managed instances",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -893,6 +1193,9 @@
     },
     "PutParameter": {
       "name": "PutParameter",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to create an SSM parameter",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -903,6 +1206,9 @@
     },
     "RegisterDefaultPatchBaseline": {
       "name": "RegisterDefaultPatchBaseline",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to specify the default patch baseline for an operating system type",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -913,6 +1219,9 @@
     },
     "RegisterPatchBaselineForPatchGroup": {
       "name": "RegisterPatchBaselineForPatchGroup",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to specify the default patch baseline for a specified patch group",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -923,6 +1232,9 @@
     },
     "RegisterTargetWithMaintenanceWindow": {
       "name": "RegisterTargetWithMaintenanceWindow",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to register a target with a specified maintenance window",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -933,6 +1245,9 @@
     },
     "RegisterTaskWithMaintenanceWindow": {
       "name": "RegisterTaskWithMaintenanceWindow",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to register a task with a specified maintenance window",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -943,6 +1258,9 @@
     },
     "RemoveTagsFromResource": {
       "name": "RemoveTagsFromResource",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to remove a specified tag key from a specified resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -953,6 +1271,9 @@
     },
     "ResetServiceSetting": {
       "name": "ResetServiceSetting",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to reset the service setting for an AWS account to the default value",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -963,6 +1284,9 @@
     },
     "ResumeSession": {
       "name": "ResumeSession",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to reconnect a Session Manager session to a managed instance",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -973,6 +1297,9 @@
     },
     "SendAutomationSignal": {
       "name": "SendAutomationSignal",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to send a signal to change the current behavior or status of a specified\n                                                Automation execution",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -981,6 +1308,9 @@
     },
     "SendCommand": {
       "name": "SendCommand",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to run commands on one or more specified managed instances",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -991,6 +1321,9 @@
     },
     "StartAssociationsOnce": {
       "name": "StartAssociationsOnce",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to run a specified association manually",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1001,6 +1334,9 @@
     },
     "StartAutomationExecution": {
       "name": "StartAutomationExecution",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to initiate the execution of an Automation document",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1011,6 +1347,9 @@
     },
     "StartSession": {
       "name": "StartSession",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to initiate a connection to a specified target for a Session Manager\n                                                session",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1021,6 +1360,9 @@
     },
     "StopAutomationExecution": {
       "name": "StopAutomationExecution",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to stop a specified Automation execution that is already in progress",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -1029,6 +1371,9 @@
     },
     "TerminateSession": {
       "name": "TerminateSession",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to permanently end a Session Manager connection to an instance.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1039,6 +1384,9 @@
     },
     "UpdateAssociation": {
       "name": "UpdateAssociation",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to update an association and immediately run the association on\n                                                the specified targets",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1049,6 +1397,9 @@
     },
     "UpdateAssociationStatus": {
       "name": "UpdateAssociationStatus",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to update the status of the SSM document associated with a specified\n                                                instance",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1059,6 +1410,9 @@
     },
     "UpdateDocument": {
       "name": "UpdateDocument",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to update one or more values for an SSM document",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1069,6 +1423,9 @@
     },
     "UpdateDocumentDefaultVersion": {
       "name": "UpdateDocumentDefaultVersion",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to change the default version of an SSM document",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1079,6 +1436,9 @@
     },
     "UpdateInstanceAssociationStatus": {
       "name": "UpdateInstanceAssociationStatus",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Used by SSM Agent to update the status of the association that it is currently running\n                                                (internal Systems Manager call)",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1089,6 +1449,9 @@
     },
     "UpdateInstanceInformation": {
       "name": "UpdateInstanceInformation",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Used by SSM Agent to send a heartbeat signal to the Systems Manager service in the\n                                                cloud",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -1097,6 +1460,9 @@
     },
     "UpdateMaintenanceWindow": {
       "name": "UpdateMaintenanceWindow",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to update a specified maintenance window",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1107,6 +1473,9 @@
     },
     "UpdateMaintenanceWindowTarget": {
       "name": "UpdateMaintenanceWindowTarget",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to update a specified maintenance window target",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1117,6 +1486,9 @@
     },
     "UpdateMaintenanceWindowTask": {
       "name": "UpdateMaintenanceWindowTask",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to update a specified maintenance window task",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1127,6 +1499,9 @@
     },
     "UpdateManagedInstanceRole": {
       "name": "UpdateManagedInstanceRole",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to assign or change the IAM role assigned to a specified managed\n                                                instance",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1137,6 +1512,9 @@
     },
     "UpdateOpsItem": {
       "name": "UpdateOpsItem",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to edit or change an OpsItem",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -1145,6 +1523,9 @@
     },
     "UpdatePatchBaseline": {
       "name": "UpdatePatchBaseline",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to update a specified patch baseline",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1155,6 +1536,9 @@
     },
     "UpdateResourceDataSync": {
       "name": "UpdateResourceDataSync",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to update a resource data sync",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1165,6 +1549,9 @@
     },
     "UpdateServiceSetting": {
       "name": "UpdateServiceSetting",
+      "topics": [
+        "AWS Systems Manager"
+      ],
       "description": "Grants permission to update the service setting for an AWS account",
       "accessLevel": "Write",
       "resourceTypes": [

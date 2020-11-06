@@ -3,6 +3,7 @@ import { Logger, createLogger, getWebpage } from '../utils';
 
 export interface ServiceAction {
   name: string;
+  topics: string[];
   description: string;
   accessLevel: string;
   resourceTypes: string[];
@@ -184,6 +185,7 @@ export class ServiceTopicScraper {
 
           return {
             name: this._getActionName($, nameElement, index),
+            topics: [this._name],
             description,
             accessLevel,
             resourceTypes: [resourceTypes].filter(s => !!s),

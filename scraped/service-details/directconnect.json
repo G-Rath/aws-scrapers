@@ -3,6 +3,9 @@
   "actions": {
     "AcceptDirectConnectGatewayAssociationProposal": {
       "name": "AcceptDirectConnectGatewayAssociationProposal",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Accepts a proposal request to attach a virtual private gateway to a Direct Connect\n                                                gateway.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "AllocateConnectionOnInterconnect": {
       "name": "AllocateConnectionOnInterconnect",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Creates a hosted connection on an interconnect.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "AllocateHostedConnection": {
       "name": "AllocateHostedConnection",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Creates a new hosted connection between a AWS Direct Connect partner's network and\n                                                a specific AWS Direct Connect location.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "AllocatePrivateVirtualInterface": {
       "name": "AllocatePrivateVirtualInterface",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Provisions a private virtual interface to be owned by a different customer.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "AllocatePublicVirtualInterface": {
       "name": "AllocatePublicVirtualInterface",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Provisions a public virtual interface to be owned by a different customer.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "AllocateTransitVirtualInterface": {
       "name": "AllocateTransitVirtualInterface",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Provisions a transit virtual interface to be owned by a different customer.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "AssociateConnectionWithLag": {
       "name": "AssociateConnectionWithLag",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Associates a connection with a LAG.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "AssociateHostedConnection": {
       "name": "AssociateHostedConnection",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Associates a hosted connection and its virtual interfaces with a link aggregation\n                                                group (LAG) or interconnect.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "AssociateVirtualInterface": {
       "name": "AssociateVirtualInterface",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Associates a virtual interface with a specified link aggregation group (LAG) or connection.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "ConfirmConnection": {
       "name": "ConfirmConnection",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Confirm the creation of a hosted connection on an interconnect.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "ConfirmPrivateVirtualInterface": {
       "name": "ConfirmPrivateVirtualInterface",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Accept ownership of a private virtual interface created by another customer.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -113,6 +146,9 @@
     },
     "ConfirmPublicVirtualInterface": {
       "name": "ConfirmPublicVirtualInterface",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Accept ownership of a public virtual interface created by another customer",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -123,6 +159,9 @@
     },
     "ConfirmTransitVirtualInterface": {
       "name": "ConfirmTransitVirtualInterface",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Accept ownership of a transit virtual interface created by another customer",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -133,6 +172,9 @@
     },
     "CreateBGPPeer": {
       "name": "CreateBGPPeer",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Creates a BGP peer on the specified virtual interface.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -143,6 +185,9 @@
     },
     "CreateConnection": {
       "name": "CreateConnection",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Creates a new connection between the customer network and a specific AWS Direct Connect\n                                                location.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -153,6 +198,9 @@
     },
     "CreateDirectConnectGateway": {
       "name": "CreateDirectConnectGateway",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Creates a Direct Connect gateway, which is an intermediate object that enables you\n                                                to connect a set of virtual interfaces and virtual private gateways.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -161,6 +209,9 @@
     },
     "CreateDirectConnectGatewayAssociation": {
       "name": "CreateDirectConnectGatewayAssociation",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Creates an association between a Direct Connect gateway and a virtual private gateway.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -171,6 +222,9 @@
     },
     "CreateDirectConnectGatewayAssociationProposal": {
       "name": "CreateDirectConnectGatewayAssociationProposal",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Creates a proposal to associate the specified virtual private gateway with the specified\n                                                Direct Connect gateway.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -181,6 +235,9 @@
     },
     "CreateInterconnect": {
       "name": "CreateInterconnect",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Creates a new interconnect between a AWS Direct Connect partner's network and a specific\n                                                AWS Direct Connect location.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -191,6 +248,9 @@
     },
     "CreateLag": {
       "name": "CreateLag",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Creates a link aggregation group (LAG) with the specified number of bundled physical\n                                                connections between the customer network and a specific AWS Direct Connect location.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -201,6 +261,9 @@
     },
     "CreatePrivateVirtualInterface": {
       "name": "CreatePrivateVirtualInterface",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Creates a new private virtual interface.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -211,6 +274,9 @@
     },
     "CreatePublicVirtualInterface": {
       "name": "CreatePublicVirtualInterface",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Creates a new public virtual interface.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -221,6 +287,9 @@
     },
     "CreateTransitVirtualInterface": {
       "name": "CreateTransitVirtualInterface",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Creates a new transit virtual interface.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -231,6 +300,9 @@
     },
     "DeleteBGPPeer": {
       "name": "DeleteBGPPeer",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Deletes the specified BGP peer on the specified virtual interface with the specified\n                                                customer address and ASN.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -241,6 +313,9 @@
     },
     "DeleteConnection": {
       "name": "DeleteConnection",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Deletes the connection.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -251,6 +326,9 @@
     },
     "DeleteDirectConnectGateway": {
       "name": "DeleteDirectConnectGateway",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Deletes the specified Direct Connect gateway.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -261,6 +339,9 @@
     },
     "DeleteDirectConnectGatewayAssociation": {
       "name": "DeleteDirectConnectGatewayAssociation",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Deletes the association between the specified Direct Connect gateway and virtual private\n                                                gateway.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -271,6 +352,9 @@
     },
     "DeleteDirectConnectGatewayAssociationProposal": {
       "name": "DeleteDirectConnectGatewayAssociationProposal",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Deletes the association proposal request between the specified Direct Connect gateway\n                                                and virtual private gateway.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -279,6 +363,9 @@
     },
     "DeleteInterconnect": {
       "name": "DeleteInterconnect",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Deletes the specified interconnect.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -289,6 +376,9 @@
     },
     "DeleteLag": {
       "name": "DeleteLag",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Deletes the specified link aggregation group (LAG).",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -299,6 +389,9 @@
     },
     "DeleteVirtualInterface": {
       "name": "DeleteVirtualInterface",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Deletes a virtual interface.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -309,6 +402,9 @@
     },
     "DescribeConnectionLoa": {
       "name": "DescribeConnectionLoa",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Returns the LOA-CFA for a Connection.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -319,6 +415,9 @@
     },
     "DescribeConnections": {
       "name": "DescribeConnections",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Displays all connections in this region.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -329,6 +428,9 @@
     },
     "DescribeConnectionsOnInterconnect": {
       "name": "DescribeConnectionsOnInterconnect",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Return a list of connections that have been provisioned on the given interconnect.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -339,6 +441,9 @@
     },
     "DescribeDirectConnectGatewayAssociationProposals": {
       "name": "DescribeDirectConnectGatewayAssociationProposals",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Describes one or more association proposals for connection between a virtual private\n                                                gateway and a Direct Connect gateway.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -349,6 +454,9 @@
     },
     "DescribeDirectConnectGatewayAssociations": {
       "name": "DescribeDirectConnectGatewayAssociations",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Lists the associations between your Direct Connect gateways and virtual private gateways.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -359,6 +467,9 @@
     },
     "DescribeDirectConnectGatewayAttachments": {
       "name": "DescribeDirectConnectGatewayAttachments",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Lists the attachments between your Direct Connect gateways and virtual interfaces.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -369,6 +480,9 @@
     },
     "DescribeDirectConnectGateways": {
       "name": "DescribeDirectConnectGateways",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Lists all your Direct Connect gateways or only the specified Direct Connect gateway.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -379,6 +493,9 @@
     },
     "DescribeHostedConnections": {
       "name": "DescribeHostedConnections",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Lists the hosted connections that have been provisioned on the specified interconnect\n                                                or link aggregation group (LAG).",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -389,6 +506,9 @@
     },
     "DescribeInterconnectLoa": {
       "name": "DescribeInterconnectLoa",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Returns the LOA-CFA for an Interconnect.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -399,6 +519,9 @@
     },
     "DescribeInterconnects": {
       "name": "DescribeInterconnects",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Returns a list of interconnects owned by the AWS account.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -409,6 +532,9 @@
     },
     "DescribeLags": {
       "name": "DescribeLags",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Describes all your link aggregation groups (LAG) or the specified LAG.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -419,6 +545,9 @@
     },
     "DescribeLoa": {
       "name": "DescribeLoa",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Gets the LOA-CFA for a connection, interconnect, or link aggregation group (LAG).",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -429,6 +558,9 @@
     },
     "DescribeLocations": {
       "name": "DescribeLocations",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Returns the list of AWS Direct Connect locations in the current AWS region.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -437,6 +569,9 @@
     },
     "DescribeTags": {
       "name": "DescribeTags",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Describes the tags associated with the specified AWS Direct Connect resources.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -447,6 +582,9 @@
     },
     "DescribeVirtualGateways": {
       "name": "DescribeVirtualGateways",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Returns a list of virtual private gateways owned by the AWS account.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -455,6 +593,9 @@
     },
     "DescribeVirtualInterfaces": {
       "name": "DescribeVirtualInterfaces",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Displays all virtual interfaces for an AWS account.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -465,6 +606,9 @@
     },
     "DisassociateConnectionFromLag": {
       "name": "DisassociateConnectionFromLag",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Disassociates a connection from a link aggregation group (LAG).",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -475,6 +619,9 @@
     },
     "ListVirtualInterfaceTestHistory": {
       "name": "ListVirtualInterfaceTestHistory",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Lists the virtual interface failover test history.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -485,6 +632,9 @@
     },
     "StartBgpFailoverTest": {
       "name": "StartBgpFailoverTest",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Starts the virtual interface failover test that verifies your configuration meets\n                                                your resiliency requirements by placing the BGP peering session in the DOWN state.\n                                                You can then send traffic to verify that there are no outages.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -495,6 +645,9 @@
     },
     "StopBgpFailoverTest": {
       "name": "StopBgpFailoverTest",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Stops the virtual interface failover test.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -505,6 +658,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Adds the specified tags to the specified AWS Direct Connect resource. Each resource\n                                                can have a maximum of 50 tags.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -515,6 +671,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Removes one or more tags from the specified AWS Direct Connect resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -525,6 +684,9 @@
     },
     "UpdateDirectConnectGatewayAssociation": {
       "name": "UpdateDirectConnectGatewayAssociation",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Updates the specified attributes of the Direct Connect gateway association.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -533,6 +695,9 @@
     },
     "UpdateLag": {
       "name": "UpdateLag",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Updates the attributes of the specified link aggregation group (LAG).",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -543,6 +708,9 @@
     },
     "UpdateVirtualInterfaceAttributes": {
       "name": "UpdateVirtualInterfaceAttributes",
+      "topics": [
+        "AWS Direct Connect"
+      ],
       "description": "Updates the specified attributes of the specified virtual private interface.",
       "accessLevel": "Write",
       "resourceTypes": [

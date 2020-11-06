@@ -3,6 +3,9 @@
   "actions": {
     "CreateConfigurationSet": {
       "name": "CreateConfigurationSet",
+      "topics": [
+        "Amazon Pinpoint SMS and Voice Service"
+      ],
       "description": "Create a new configuration set. After you create the configuration set, you can add\n                                                one or more event destinations to it.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "CreateConfigurationSetEventDestination": {
       "name": "CreateConfigurationSetEventDestination",
+      "topics": [
+        "Amazon Pinpoint SMS and Voice Service"
+      ],
       "description": "Create a new event destination in a configuration set.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -19,6 +25,9 @@
     },
     "DeleteConfigurationSet": {
       "name": "DeleteConfigurationSet",
+      "topics": [
+        "Amazon Pinpoint SMS and Voice Service"
+      ],
       "description": "Deletes an existing configuration set.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -27,6 +36,9 @@
     },
     "DeleteConfigurationSetEventDestination": {
       "name": "DeleteConfigurationSetEventDestination",
+      "topics": [
+        "Amazon Pinpoint SMS and Voice Service"
+      ],
       "description": "Deletes an event destination in a configuration set.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -35,6 +47,9 @@
     },
     "GetConfigurationSetEventDestinations": {
       "name": "GetConfigurationSetEventDestinations",
+      "topics": [
+        "Amazon Pinpoint SMS and Voice Service"
+      ],
       "description": "Obtain information about an event destination, including the types of events it reports,\n                                                the Amazon Resource Name (ARN) of the destination, and the name of the event destination.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -43,6 +58,9 @@
     },
     "ListConfigurationSets": {
       "name": "ListConfigurationSets",
+      "topics": [
+        "Amazon Pinpoint SMS and Voice Service"
+      ],
       "description": "Return a list of configuration sets. This operation only returns the configuration\n                                                sets that are associated with your account in the current AWS Region.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -51,6 +69,9 @@
     },
     "SendVoiceMessage": {
       "name": "SendVoiceMessage",
+      "topics": [
+        "Amazon Pinpoint SMS and Voice Service"
+      ],
       "description": "Create a new voice message and send it to a recipient's phone number.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -59,6 +80,9 @@
     },
     "UpdateConfigurationSetEventDestination": {
       "name": "UpdateConfigurationSetEventDestination",
+      "topics": [
+        "Amazon Pinpoint SMS and Voice Service"
+      ],
       "description": "Update an event destination in a configuration set. An event destination is a location\n                                                that you publish information about your voice calls to. For example, you can log an\n                                                event to an Amazon CloudWatch destination when a call fails.",
       "accessLevel": "Write",
       "resourceTypes": [],

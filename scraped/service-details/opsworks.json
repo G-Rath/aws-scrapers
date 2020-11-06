@@ -3,6 +3,9 @@
   "actions": {
     "AssignInstance": {
       "name": "AssignInstance",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Assign a registered instance to a layer",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "AssignVolume": {
       "name": "AssignVolume",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Assigns one of the stack's registered Amazon EBS volumes to a specified instance",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "AssociateElasticIp": {
       "name": "AssociateElasticIp",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Associates one of the stack's registered Elastic IP addresses with a specified instance",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "AttachElasticLoadBalancer": {
       "name": "AttachElasticLoadBalancer",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Attaches an Elastic Load Balancing load balancer to a specified layer",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "CloneStack": {
       "name": "CloneStack",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Creates a clone of a specified stack",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "CreateApp": {
       "name": "CreateApp",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Creates an app for a specified stack",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "CreateDeployment": {
       "name": "CreateDeployment",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Runs deployment or stack commands",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "CreateInstance": {
       "name": "CreateInstance",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Creates an instance in a specified stack",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "CreateLayer": {
       "name": "CreateLayer",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Creates a layer",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "CreateStack": {
       "name": "CreateStack",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Creates a new stack",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -101,6 +131,9 @@
     },
     "CreateUserProfile": {
       "name": "CreateUserProfile",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Creates a new user profile",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -109,6 +142,9 @@
     },
     "DeleteApp": {
       "name": "DeleteApp",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Deletes a specified app",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -119,6 +155,9 @@
     },
     "DeleteInstance": {
       "name": "DeleteInstance",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Deletes a specified instance, which terminates the associated Amazon EC2 instance",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -129,6 +168,9 @@
     },
     "DeleteLayer": {
       "name": "DeleteLayer",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Deletes a specified layer",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -139,6 +181,9 @@
     },
     "DeleteStack": {
       "name": "DeleteStack",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Deletes a specified stack",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -149,6 +194,9 @@
     },
     "DeleteUserProfile": {
       "name": "DeleteUserProfile",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Deletes a user profile",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -157,6 +205,9 @@
     },
     "DeregisterEcsCluster": {
       "name": "DeregisterEcsCluster",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Deletes a user profile",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -167,6 +218,9 @@
     },
     "DeregisterElasticIp": {
       "name": "DeregisterElasticIp",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Deregisters a specified Elastic IP address",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -177,6 +231,9 @@
     },
     "DeregisterInstance": {
       "name": "DeregisterInstance",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Deregister a registered Amazon EC2 or on-premises instance",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -187,6 +244,9 @@
     },
     "DeregisterRdsDbInstance": {
       "name": "DeregisterRdsDbInstance",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Deregisters an Amazon RDS instance",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -197,6 +257,9 @@
     },
     "DeregisterVolume": {
       "name": "DeregisterVolume",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Deregisters an Amazon EBS volume",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -207,6 +270,9 @@
     },
     "DescribeAgentVersions": {
       "name": "DescribeAgentVersions",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Describes the available AWS OpsWorks agent versions",
       "accessLevel": "List",
       "resourceTypes": [
@@ -217,6 +283,9 @@
     },
     "DescribeApps": {
       "name": "DescribeApps",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Requests a description of a specified set of apps",
       "accessLevel": "List",
       "resourceTypes": [
@@ -227,6 +296,9 @@
     },
     "DescribeCommands": {
       "name": "DescribeCommands",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Describes the results of specified commands",
       "accessLevel": "List",
       "resourceTypes": [
@@ -237,6 +309,9 @@
     },
     "DescribeDeployments": {
       "name": "DescribeDeployments",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Requests a description of a specified set of deployments",
       "accessLevel": "List",
       "resourceTypes": [
@@ -247,6 +322,9 @@
     },
     "DescribeEcsClusters": {
       "name": "DescribeEcsClusters",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Describes Amazon ECS clusters that are registered with a stack",
       "accessLevel": "List",
       "resourceTypes": [
@@ -257,6 +335,9 @@
     },
     "DescribeElasticIps": {
       "name": "DescribeElasticIps",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Describes Elastic IP addresses",
       "accessLevel": "List",
       "resourceTypes": [
@@ -267,6 +348,9 @@
     },
     "DescribeElasticLoadBalancers": {
       "name": "DescribeElasticLoadBalancers",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Describes a stack's Elastic Load Balancing instances",
       "accessLevel": "List",
       "resourceTypes": [
@@ -277,6 +361,9 @@
     },
     "DescribeInstances": {
       "name": "DescribeInstances",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Requests a description of a set of instances",
       "accessLevel": "List",
       "resourceTypes": [
@@ -287,6 +374,9 @@
     },
     "DescribeLayers": {
       "name": "DescribeLayers",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Requests a description of one or more layers in a specified stack",
       "accessLevel": "List",
       "resourceTypes": [
@@ -297,6 +387,9 @@
     },
     "DescribeLoadBasedAutoScaling": {
       "name": "DescribeLoadBasedAutoScaling",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Describes load-based auto scaling configurations for specified layers",
       "accessLevel": "List",
       "resourceTypes": [
@@ -307,6 +400,9 @@
     },
     "DescribeMyUserProfile": {
       "name": "DescribeMyUserProfile",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Describes a user's SSH information",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -315,6 +411,9 @@
     },
     "DescribePermissions": {
       "name": "DescribePermissions",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Describes the permissions for a specified stack",
       "accessLevel": "List",
       "resourceTypes": [
@@ -325,6 +424,9 @@
     },
     "DescribeRaidArrays": {
       "name": "DescribeRaidArrays",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Describe an instance's RAID arrays",
       "accessLevel": "List",
       "resourceTypes": [
@@ -335,6 +437,9 @@
     },
     "DescribeRdsDbInstances": {
       "name": "DescribeRdsDbInstances",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Describes Amazon RDS instances",
       "accessLevel": "List",
       "resourceTypes": [
@@ -345,6 +450,9 @@
     },
     "DescribeServiceErrors": {
       "name": "DescribeServiceErrors",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Describes AWS OpsWorks service errors",
       "accessLevel": "List",
       "resourceTypes": [
@@ -355,6 +463,9 @@
     },
     "DescribeStackProvisioningParameters": {
       "name": "DescribeStackProvisioningParameters",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Requests a description of a stack's provisioning parameters",
       "accessLevel": "List",
       "resourceTypes": [
@@ -365,6 +476,9 @@
     },
     "DescribeStackSummary": {
       "name": "DescribeStackSummary",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Describes the number of layers and apps in a specified stack, and the number of instances\n                                                in each state, such as running_setup or online",
       "accessLevel": "List",
       "resourceTypes": [
@@ -375,6 +489,9 @@
     },
     "DescribeStacks": {
       "name": "DescribeStacks",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Requests a description of one or more stacks",
       "accessLevel": "List",
       "resourceTypes": [
@@ -385,6 +502,9 @@
     },
     "DescribeTimeBasedAutoScaling": {
       "name": "DescribeTimeBasedAutoScaling",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Describes time-based auto scaling configurations for specified instances",
       "accessLevel": "List",
       "resourceTypes": [
@@ -395,6 +515,9 @@
     },
     "DescribeUserProfiles": {
       "name": "DescribeUserProfiles",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Describe specified users",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -403,6 +526,9 @@
     },
     "DescribeVolumes": {
       "name": "DescribeVolumes",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Describes an instance's Amazon EBS volumes",
       "accessLevel": "List",
       "resourceTypes": [
@@ -413,6 +539,9 @@
     },
     "DetachElasticLoadBalancer": {
       "name": "DetachElasticLoadBalancer",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Detaches a specified Elastic Load Balancing instance from its layer",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -423,6 +552,9 @@
     },
     "DisassociateElasticIp": {
       "name": "DisassociateElasticIp",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Disassociates an Elastic IP address from its instance",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -433,6 +565,9 @@
     },
     "GetHostnameSuggestion": {
       "name": "GetHostnameSuggestion",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Gets a generated host name for the specified layer, based on the current host name\n                                                theme",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -443,6 +578,9 @@
     },
     "GrantAccess": {
       "name": "GrantAccess",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Grants RDP access to a Windows instance for a specified time period",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -453,6 +591,9 @@
     },
     "ListTags": {
       "name": "ListTags",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Returns a list of tags that are applied to the specified stack or layer",
       "accessLevel": "List",
       "resourceTypes": [
@@ -463,6 +604,9 @@
     },
     "RebootInstance": {
       "name": "RebootInstance",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Reboots a specified instance",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -473,6 +617,9 @@
     },
     "RegisterEcsCluster": {
       "name": "RegisterEcsCluster",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Registers a specified Amazon ECS cluster with a stack",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -483,6 +630,9 @@
     },
     "RegisterElasticIp": {
       "name": "RegisterElasticIp",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Registers an Elastic IP address with a specified stack",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -493,6 +643,9 @@
     },
     "RegisterInstance": {
       "name": "RegisterInstance",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Registers instances with a specified stack that were created outside of AWS OpsWorks",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -503,6 +656,9 @@
     },
     "RegisterRdsDbInstance": {
       "name": "RegisterRdsDbInstance",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Registers an Amazon RDS instance with a stack",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -513,6 +669,9 @@
     },
     "RegisterVolume": {
       "name": "RegisterVolume",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Registers an Amazon EBS volume with a specified stack",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -523,6 +682,9 @@
     },
     "SetLoadBasedAutoScaling": {
       "name": "SetLoadBasedAutoScaling",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Specify the load-based auto scaling configuration for a specified layer",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -533,6 +695,9 @@
     },
     "SetPermission": {
       "name": "SetPermission",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Specifies a user's permissions",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -543,6 +708,9 @@
     },
     "SetTimeBasedAutoScaling": {
       "name": "SetTimeBasedAutoScaling",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Specify the time-based auto scaling configuration for a specified instance",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -553,6 +721,9 @@
     },
     "StartInstance": {
       "name": "StartInstance",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Starts a specified instance",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -563,6 +734,9 @@
     },
     "StartStack": {
       "name": "StartStack",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Starts a stack's instances",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -573,6 +747,9 @@
     },
     "StopInstance": {
       "name": "StopInstance",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Stops a specified instance",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -583,6 +760,9 @@
     },
     "StopStack": {
       "name": "StopStack",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Stops a specified stack",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -593,6 +773,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Apply tags to a specified stack or layer",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -603,6 +786,9 @@
     },
     "UnassignInstance": {
       "name": "UnassignInstance",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Unassigns a registered instance from all of it's layers",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -613,6 +799,9 @@
     },
     "UnassignVolume": {
       "name": "UnassignVolume",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Unassigns an assigned Amazon EBS volume",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -623,6 +812,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Removes tags from a specified stack or layer",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -633,6 +825,9 @@
     },
     "UpdateApp": {
       "name": "UpdateApp",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Updates a specified app",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -643,6 +838,9 @@
     },
     "UpdateElasticIp": {
       "name": "UpdateElasticIp",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Updates a registered Elastic IP address's name",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -653,6 +851,9 @@
     },
     "UpdateInstance": {
       "name": "UpdateInstance",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Updates a specified instance",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -663,6 +864,9 @@
     },
     "UpdateLayer": {
       "name": "UpdateLayer",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Updates a specified layer",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -673,6 +877,9 @@
     },
     "UpdateMyUserProfile": {
       "name": "UpdateMyUserProfile",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Updates a user's SSH public key",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -681,6 +888,9 @@
     },
     "UpdateRdsDbInstance": {
       "name": "UpdateRdsDbInstance",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Updates an Amazon RDS instance",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -691,6 +901,9 @@
     },
     "UpdateStack": {
       "name": "UpdateStack",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Updates a specified stack",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -701,6 +914,9 @@
     },
     "UpdateUserProfile": {
       "name": "UpdateUserProfile",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Updates a specified user profile",
       "accessLevel": "Permissions management",
       "resourceTypes": [],
@@ -709,6 +925,9 @@
     },
     "UpdateVolume": {
       "name": "UpdateVolume",
+      "topics": [
+        "AWS OpsWorks"
+      ],
       "description": "Updates an Amazon EBS volume's name or mount point",
       "accessLevel": "Write",
       "resourceTypes": [

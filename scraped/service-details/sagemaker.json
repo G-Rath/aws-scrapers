@@ -3,6 +3,9 @@
   "actions": {
     "AddTags": {
       "name": "AddTags",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Adds or overwrites one or more tags for the specified Amazon SageMaker resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "AssociateTrialComponent": {
       "name": "AssociateTrialComponent",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Associate a trial component with a trial.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "BatchGetMetrics": {
       "name": "BatchGetMetrics",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Retrieve metrics associated with SageMaker Resources such as Training Jobs. This API\n                                                is not publicly exposed at this point, however admins can control this action",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "BatchPutMetrics": {
       "name": "BatchPutMetrics",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Publish metrics associated with a SageMaker Resource such as a Training Job. This\n                                                API is not publicly exposed at this point, however admins can control this action",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "CreateAlgorithm": {
       "name": "CreateAlgorithm",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Create an algorithm.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "CreateApp": {
       "name": "CreateApp",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Grants permission to create an App for a SageMaker Studio UserProfile",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "CreateAutoMLJob": {
       "name": "CreateAutoMLJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Creates automl job.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "CreateCodeRepository": {
       "name": "CreateCodeRepository",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Create a code repository.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "CreateCompilationJob": {
       "name": "CreateCompilationJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Create a compilation job.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "CreateDomain": {
       "name": "CreateDomain",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Grants permission to create a Domain for SageMaker Studio",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "CreateEndpoint": {
       "name": "CreateEndpoint",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Creates an endpoint using the endpoint configuration specified in the request.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -113,6 +146,9 @@
     },
     "CreateEndpointConfig": {
       "name": "CreateEndpointConfig",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Creates an endpoint configuration that can be deployed using Amazon SageMaker hosting\n                                                services.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -123,6 +159,9 @@
     },
     "CreateExperiment": {
       "name": "CreateExperiment",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Create an experiment.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -133,6 +172,9 @@
     },
     "CreateFlowDefinition": {
       "name": "CreateFlowDefinition",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Creates a flow definition, which defines settings for a human workflow.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -143,6 +185,9 @@
     },
     "CreateHumanTaskUi": {
       "name": "CreateHumanTaskUi",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Defines the settings you will use for the human review workflow user interface.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -153,6 +198,9 @@
     },
     "CreateHyperParameterTuningJob": {
       "name": "CreateHyperParameterTuningJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Creates hyper parameter tuning job that can be deployed using Amazon SageMaker.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -163,6 +211,9 @@
     },
     "CreateLabelingJob": {
       "name": "CreateLabelingJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Starts a labeling job. A labeling job takes unlabeled data in and produces labeled\n                                                data as output, which can be used for training SageMaker models.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -173,6 +224,9 @@
     },
     "CreateModel": {
       "name": "CreateModel",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Creates a model in Amazon SageMaker. In the request, you specify a name for the model\n                                                and describe one or more containers.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -183,6 +237,9 @@
     },
     "CreateModelPackage": {
       "name": "CreateModelPackage",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Create a model package.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -193,6 +250,9 @@
     },
     "CreateMonitoringSchedule": {
       "name": "CreateMonitoringSchedule",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Creates a monitoring schedule.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -203,6 +263,9 @@
     },
     "CreateNotebookInstance": {
       "name": "CreateNotebookInstance",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Creates an Amazon SageMaker notebook instance. A notebook instance is an Amazon EC2\n                                                instance running on a Jupyter Notebook.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -213,6 +276,9 @@
     },
     "CreateNotebookInstanceLifecycleConfig": {
       "name": "CreateNotebookInstanceLifecycleConfig",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Creates an notebook instance lifecycle configuration that can be deployed using Amazon\n                                                SageMaker.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -223,6 +289,9 @@
     },
     "CreatePresignedDomainUrl": {
       "name": "CreatePresignedDomainUrl",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Grants permission to return a URL that you can use from your browser to connect to\n                                                the Domain as a specified UserProfile when AuthMode is 'IAM'",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -233,6 +302,9 @@
     },
     "CreatePresignedNotebookInstanceUrl": {
       "name": "CreatePresignedNotebookInstanceUrl",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns a URL that you can use from your browser to connect to the Notebook Instance.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -243,6 +315,9 @@
     },
     "CreateProcessingJob": {
       "name": "CreateProcessingJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Starts a processing job. After processing completes, Amazon SageMaker saves the resulting\n                                                artifacts and other optional output to an Amazon S3 location that you specify.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -253,6 +328,9 @@
     },
     "CreateTrainingJob": {
       "name": "CreateTrainingJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Starts a model training job. After training completes, Amazon SageMaker saves the\n                                                resulting model artifacts and other optional output to an Amazon S3 location that\n                                                you specify.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -263,6 +341,9 @@
     },
     "CreateTransformJob": {
       "name": "CreateTransformJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Starts a transform job. After the results are obtained, Amazon SageMaker saves them\n                                                to an Amazon S3 location that you specify.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -273,6 +354,9 @@
     },
     "CreateTrial": {
       "name": "CreateTrial",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Create a trial.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -283,6 +367,9 @@
     },
     "CreateTrialComponent": {
       "name": "CreateTrialComponent",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Create a trial component.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -293,6 +380,9 @@
     },
     "CreateUserProfile": {
       "name": "CreateUserProfile",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Grants permission to create a UserProfile for a SageMaker Studio Domain",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -303,6 +393,9 @@
     },
     "CreateWorkforce": {
       "name": "CreateWorkforce",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Create a workforce.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -313,6 +406,9 @@
     },
     "CreateWorkteam": {
       "name": "CreateWorkteam",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Create a workteam.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -323,6 +419,9 @@
     },
     "DeleteAlgorithm": {
       "name": "DeleteAlgorithm",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Deletes an algorithm.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -333,6 +432,9 @@
     },
     "DeleteApp": {
       "name": "DeleteApp",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Grants permission to delete an App",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -343,6 +445,9 @@
     },
     "DeleteCodeRepository": {
       "name": "DeleteCodeRepository",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Deletes a code repository.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -353,6 +458,9 @@
     },
     "DeleteDomain": {
       "name": "DeleteDomain",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Grants permission to delete a Domain",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -363,6 +471,9 @@
     },
     "DeleteEndpoint": {
       "name": "DeleteEndpoint",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Deletes an endpoint. Amazon SageMaker frees up all the resources that were deployed\n                                                when the endpoint was created.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -373,6 +484,9 @@
     },
     "DeleteEndpointConfig": {
       "name": "DeleteEndpointConfig",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Deletes the endpoint configuration created using the CreateEndpointConfig API. The\n                                                DeleteEndpointConfig API deletes only the specified configuration. It does not delete\n                                                any endpoints created using the configuration.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -383,6 +497,9 @@
     },
     "DeleteExperiment": {
       "name": "DeleteExperiment",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Deletes an experiment.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -393,6 +510,9 @@
     },
     "DeleteFlowDefinition": {
       "name": "DeleteFlowDefinition",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Deltes the specified flow definition.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -403,6 +523,9 @@
     },
     "DeleteHumanLoop": {
       "name": "DeleteHumanLoop",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Deletes the specified human loop.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -413,6 +536,9 @@
     },
     "DeleteModel": {
       "name": "DeleteModel",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Deletes a model created using the CreateModel API. The DeleteModel API deletes only\n                                                the model entry in Amazon SageMaker that you created by calling the CreateModel API.\n                                                It does not delete model artifacts, inference code, or the IAM role that you specified\n                                                when creating the model.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -423,6 +549,9 @@
     },
     "DeleteModelPackage": {
       "name": "DeleteModelPackage",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Deletes a model package.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -433,6 +562,9 @@
     },
     "DeleteMonitoringSchedule": {
       "name": "DeleteMonitoringSchedule",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Deletes a monitoring schedule. Amazon SageMaker will no longer run the scheduled monitoring.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -443,6 +575,9 @@
     },
     "DeleteNotebookInstance": {
       "name": "DeleteNotebookInstance",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Deletes an Amazon SageMaker notebook instance. Before you can delete a notebook instance,\n                                                you must call the StopNotebookInstance API.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -453,6 +588,9 @@
     },
     "DeleteNotebookInstanceLifecycleConfig": {
       "name": "DeleteNotebookInstanceLifecycleConfig",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Deletes an notebook instance lifecycle configuration that can be deployed using Amazon\n                                                SageMaker.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -463,6 +601,9 @@
     },
     "DeleteTags": {
       "name": "DeleteTags",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Deletes the specified set of tags from an Amazon SageMaker resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -473,6 +614,9 @@
     },
     "DeleteTrial": {
       "name": "DeleteTrial",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Deletes a trial.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -483,6 +627,9 @@
     },
     "DeleteTrialComponent": {
       "name": "DeleteTrialComponent",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Deletes a trial component.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -493,6 +640,9 @@
     },
     "DeleteUserProfile": {
       "name": "DeleteUserProfile",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Grants permission to delete a UserProfile",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -503,6 +653,9 @@
     },
     "DeleteWorkforce": {
       "name": "DeleteWorkforce",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Deletes a workforce.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -513,6 +666,9 @@
     },
     "DeleteWorkteam": {
       "name": "DeleteWorkteam",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Deletes a workteam.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -523,6 +679,9 @@
     },
     "DescribeAlgorithm": {
       "name": "DescribeAlgorithm",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns information about an algorithm.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -533,6 +692,9 @@
     },
     "DescribeApp": {
       "name": "DescribeApp",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Grants permission to describe an App",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -543,6 +705,9 @@
     },
     "DescribeAutoMLJob": {
       "name": "DescribeAutoMLJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Describes an automl job that was created via CreateAutoMLJob API.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -553,6 +718,9 @@
     },
     "DescribeCodeRepository": {
       "name": "DescribeCodeRepository",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns information about a code repository.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -563,6 +731,9 @@
     },
     "DescribeCompilationJob": {
       "name": "DescribeCompilationJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns information about a compilation job.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -573,6 +744,9 @@
     },
     "DescribeDomain": {
       "name": "DescribeDomain",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Grants permission to describe a Domain",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -583,6 +757,9 @@
     },
     "DescribeEndpoint": {
       "name": "DescribeEndpoint",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns the description of an endpoint.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -593,6 +770,9 @@
     },
     "DescribeEndpointConfig": {
       "name": "DescribeEndpointConfig",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns the description of an endpoint configuration, which was created using the\n                                                CreateEndpointConfig API.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -603,6 +783,9 @@
     },
     "DescribeExperiment": {
       "name": "DescribeExperiment",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns information about an experiment.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -613,6 +796,9 @@
     },
     "DescribeFlowDefinition": {
       "name": "DescribeFlowDefinition",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns detailed information about the specified flow definition.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -623,6 +809,9 @@
     },
     "DescribeHumanLoop": {
       "name": "DescribeHumanLoop",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns detailed information about the specified human loop.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -633,6 +822,9 @@
     },
     "DescribeHumanTaskUi": {
       "name": "DescribeHumanTaskUi",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns detailed information about the specified human review workflow user interface.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -643,6 +835,9 @@
     },
     "DescribeHyperParameterTuningJob": {
       "name": "DescribeHyperParameterTuningJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Describes a hyper parameter tuning job that was created via CreateHyperParameterTuningJob\n                                                API.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -653,6 +848,9 @@
     },
     "DescribeLabelingJob": {
       "name": "DescribeLabelingJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns information about a labeling job.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -663,6 +861,9 @@
     },
     "DescribeModel": {
       "name": "DescribeModel",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Describes a model that you created using the CreateModel API.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -673,6 +874,9 @@
     },
     "DescribeModelPackage": {
       "name": "DescribeModelPackage",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns information about a model package.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -683,6 +887,9 @@
     },
     "DescribeMonitoringSchedule": {
       "name": "DescribeMonitoringSchedule",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns information about a monitoring schedule.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -693,6 +900,9 @@
     },
     "DescribeNotebookInstance": {
       "name": "DescribeNotebookInstance",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns information about a notebook instance.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -703,6 +913,9 @@
     },
     "DescribeNotebookInstanceLifecycleConfig": {
       "name": "DescribeNotebookInstanceLifecycleConfig",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Describes an notebook instance lifecycle configuration that was created via CreateNotebookInstanceLifecycleConfig\n                                                API.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -713,6 +926,9 @@
     },
     "DescribeProcessingJob": {
       "name": "DescribeProcessingJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns information about a processing job.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -723,6 +939,9 @@
     },
     "DescribeSubscribedWorkteam": {
       "name": "DescribeSubscribedWorkteam",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns information about a subscribed workteam.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -733,6 +952,9 @@
     },
     "DescribeTrainingJob": {
       "name": "DescribeTrainingJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns information about a training job.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -743,6 +965,9 @@
     },
     "DescribeTransformJob": {
       "name": "DescribeTransformJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns information about a transform job.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -753,6 +978,9 @@
     },
     "DescribeTrial": {
       "name": "DescribeTrial",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns information about a trial.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -763,6 +991,9 @@
     },
     "DescribeTrialComponent": {
       "name": "DescribeTrialComponent",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns information about a trial component.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -773,6 +1004,9 @@
     },
     "DescribeUserProfile": {
       "name": "DescribeUserProfile",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Grants permission to describe a UserProfile",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -783,6 +1017,9 @@
     },
     "DescribeWorkforce": {
       "name": "DescribeWorkforce",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns information about a workforce.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -793,6 +1030,9 @@
     },
     "DescribeWorkteam": {
       "name": "DescribeWorkteam",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns information about a workteam.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -803,6 +1043,9 @@
     },
     "DisassociateTrialComponent": {
       "name": "DisassociateTrialComponent",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Disassociate a trial component with a trial.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -813,6 +1056,9 @@
     },
     "GetSearchSuggestions": {
       "name": "GetSearchSuggestions",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Get search suggestions when provided with keyword.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -821,6 +1067,9 @@
     },
     "InvokeEndpoint": {
       "name": "InvokeEndpoint",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "After you deploy a model into production using Amazon SageMaker hosting services,\n                                                your client applications use this API to get inferences from the model hosted at the\n                                                specified endpoint.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -831,6 +1080,9 @@
     },
     "ListAlgorithms": {
       "name": "ListAlgorithms",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Lists algorithms.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -839,6 +1091,9 @@
     },
     "ListApps": {
       "name": "ListApps",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Grants permission to list the Apps in your account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -847,6 +1102,9 @@
     },
     "ListAutoMLJobs": {
       "name": "ListAutoMLJobs",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Lists automl jobs created via the CreateAutoMLJob.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -855,6 +1113,9 @@
     },
     "ListCandidatesForAutoMLJob": {
       "name": "ListCandidatesForAutoMLJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Lists candidates for automl job created via the CreateAutoMLJob.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -863,6 +1124,9 @@
     },
     "ListCodeRepositories": {
       "name": "ListCodeRepositories",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Lists code repositories.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -871,6 +1135,9 @@
     },
     "ListCompilationJobs": {
       "name": "ListCompilationJobs",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Lists compilation jobs.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -879,6 +1146,9 @@
     },
     "ListDomains": {
       "name": "ListDomains",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Grants permission to list the Domains in your account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -887,6 +1157,9 @@
     },
     "ListEndpointConfigs": {
       "name": "ListEndpointConfigs",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Lists endpoint configurations.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -895,6 +1168,9 @@
     },
     "ListEndpoints": {
       "name": "ListEndpoints",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Lists endpoints.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -903,6 +1179,9 @@
     },
     "ListExperiments": {
       "name": "ListExperiments",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Lists experiments.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -911,6 +1190,9 @@
     },
     "ListFlowDefinitions": {
       "name": "ListFlowDefinitions",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns summary information about flow definitions, given the specified parameters.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -919,6 +1201,9 @@
     },
     "ListHumanLoops": {
       "name": "ListHumanLoops",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns summary information about human loops, given the specified parameters.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -927,6 +1212,9 @@
     },
     "ListHumanTaskUis": {
       "name": "ListHumanTaskUis",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns summary information about human review workflow user interfaces, given the\n                                                specified parameters.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -935,6 +1223,9 @@
     },
     "ListHyperParameterTuningJobs": {
       "name": "ListHyperParameterTuningJobs",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Lists hyper parameter tuning jobs that was created using Amazon SageMaker.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -943,6 +1234,9 @@
     },
     "ListLabelingJobs": {
       "name": "ListLabelingJobs",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Lists labeling jobs.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -951,6 +1245,9 @@
     },
     "ListLabelingJobsForWorkteam": {
       "name": "ListLabelingJobsForWorkteam",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Lists labeling jobs for workteam.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -961,6 +1258,9 @@
     },
     "ListModelPackages": {
       "name": "ListModelPackages",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Lists model packages.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -969,6 +1269,9 @@
     },
     "ListModels": {
       "name": "ListModels",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Lists the models created with the CreateModel API.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -977,6 +1280,9 @@
     },
     "ListMonitoringExecutions": {
       "name": "ListMonitoringExecutions",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Lists monitoring executions.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -985,6 +1291,9 @@
     },
     "ListMonitoringSchedules": {
       "name": "ListMonitoringSchedules",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Lists monitoring schedules.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -993,6 +1302,9 @@
     },
     "ListNotebookInstanceLifecycleConfigs": {
       "name": "ListNotebookInstanceLifecycleConfigs",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Lists notebook instance lifecycle configurations that can be deployed using Amazon\n                                                SageMaker.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1001,6 +1313,9 @@
     },
     "ListNotebookInstances": {
       "name": "ListNotebookInstances",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns a list of the Amazon SageMaker notebook instances in the requester's account\n                                                in an AWS Region.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1009,6 +1324,9 @@
     },
     "ListProcessingJobs": {
       "name": "ListProcessingJobs",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Lists processing jobs.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1017,6 +1335,9 @@
     },
     "ListSubscribedWorkteams": {
       "name": "ListSubscribedWorkteams",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Lists subscribed workteams.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1025,6 +1346,9 @@
     },
     "ListTags": {
       "name": "ListTags",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Returns the tag set associated with the specified resource.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -1035,6 +1359,9 @@
     },
     "ListTrainingJobs": {
       "name": "ListTrainingJobs",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Lists training jobs.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1043,6 +1370,9 @@
     },
     "ListTrainingJobsForHyperParameterTuningJob": {
       "name": "ListTrainingJobsForHyperParameterTuningJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Lists training jobs for a hyper parameter tuning job that was created using Amazon\n                                                SageMaker.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -1053,6 +1383,9 @@
     },
     "ListTransformJobs": {
       "name": "ListTransformJobs",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Lists transform jobs.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1061,6 +1394,9 @@
     },
     "ListTrialComponents": {
       "name": "ListTrialComponents",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Lists trial components.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1069,6 +1405,9 @@
     },
     "ListTrials": {
       "name": "ListTrials",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Lists trials.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1077,6 +1416,9 @@
     },
     "ListUserProfiles": {
       "name": "ListUserProfiles",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Grants permission to list the UserProfiles in your account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1085,6 +1427,9 @@
     },
     "ListWorkforces": {
       "name": "ListWorkforces",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Lists workforces.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1093,6 +1438,9 @@
     },
     "ListWorkteams": {
       "name": "ListWorkteams",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Lists workteams.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1101,6 +1449,9 @@
     },
     "RenderUiTemplate": {
       "name": "RenderUiTemplate",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Render a UI template used for a human annotation task.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -1109,6 +1460,9 @@
     },
     "Search": {
       "name": "Search",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Search for SageMaker objects.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -1117,6 +1471,9 @@
     },
     "StartHumanLoop": {
       "name": "StartHumanLoop",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Starts a human loop.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1127,6 +1484,9 @@
     },
     "StartMonitoringSchedule": {
       "name": "StartMonitoringSchedule",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Starts a monitoring schedule.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1137,6 +1497,9 @@
     },
     "StartNotebookInstance": {
       "name": "StartNotebookInstance",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Launches an EC2 instance with the latest version of the libraries and attaches your\n                                                EBS volume.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1147,6 +1510,9 @@
     },
     "StopAutoMLJob": {
       "name": "StopAutoMLJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Stops a running automl job created via the CreateAutoMLJob.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1157,6 +1523,9 @@
     },
     "StopCompilationJob": {
       "name": "StopCompilationJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Stops a compilation job.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1167,6 +1536,9 @@
     },
     "StopHumanLoop": {
       "name": "StopHumanLoop",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Stops the specified human loop.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1177,6 +1549,9 @@
     },
     "StopHyperParameterTuningJob": {
       "name": "StopHyperParameterTuningJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Stops a running hyper parameter tuning job create via the CreateHyperParameterTuningJob.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1187,6 +1562,9 @@
     },
     "StopLabelingJob": {
       "name": "StopLabelingJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Stops a labeling job. Any labels already generated will be exported before stopping.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1197,6 +1575,9 @@
     },
     "StopMonitoringSchedule": {
       "name": "StopMonitoringSchedule",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Stops a monitoring schedule.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1207,6 +1588,9 @@
     },
     "StopNotebookInstance": {
       "name": "StopNotebookInstance",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Terminates the EC2 instance. Before terminating the instance, Amazon SageMaker disconnects\n                                                the EBS volume from it. Amazon SageMaker preserves the EBS volume.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1217,6 +1601,9 @@
     },
     "StopProcessingJob": {
       "name": "StopProcessingJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Stops a processing job. To stop a job, Amazon SageMaker sends the algorithm the SIGTERM\n                                                signal, which delays job termination for 120 seconds.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1227,6 +1614,9 @@
     },
     "StopTrainingJob": {
       "name": "StopTrainingJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Stops a training job. To stop a job, Amazon SageMaker sends the algorithm the SIGTERM\n                                                signal, which delays job termination for 120 seconds.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1237,6 +1627,9 @@
     },
     "StopTransformJob": {
       "name": "StopTransformJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Stops a transform job.  When Amazon SageMaker receives a StopTransformJob request,\n                                                the status of the job changes to Stopping.  After Amazon SageMaker stops the job,\n                                                the status is set to Stopped",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1247,6 +1640,9 @@
     },
     "UpdateCodeRepository": {
       "name": "UpdateCodeRepository",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Updates a code repository.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1257,6 +1653,9 @@
     },
     "UpdateDomain": {
       "name": "UpdateDomain",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Grants permission to update a Domain",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1267,6 +1666,9 @@
     },
     "UpdateEndpoint": {
       "name": "UpdateEndpoint",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Updates an endpoint to use the endpoint configuration specified in the request.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1277,6 +1679,9 @@
     },
     "UpdateEndpointWeightsAndCapacities": {
       "name": "UpdateEndpointWeightsAndCapacities",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Updates variant weight, capacity, or both of one or more variants associated with\n                                                an endpoint.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1287,6 +1692,9 @@
     },
     "UpdateExperiment": {
       "name": "UpdateExperiment",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Updates an experiment.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1297,6 +1705,9 @@
     },
     "UpdateMonitoringSchedule": {
       "name": "UpdateMonitoringSchedule",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Updates a monitoring schedule.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1307,6 +1718,9 @@
     },
     "UpdateNotebookInstance": {
       "name": "UpdateNotebookInstance",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Updates a notebook instance. Notebook instance updates include upgrading or downgrading\n                                                the EC2 instance used for your notebook instance to accommodate changes in your workload\n                                                requirements. You can also update the VPC security groups.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1317,6 +1731,9 @@
     },
     "UpdateNotebookInstanceLifecycleConfig": {
       "name": "UpdateNotebookInstanceLifecycleConfig",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Updates a notebook instance lifecycle configuration created with the CreateNotebookInstanceLifecycleConfig\n                                                API.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1327,6 +1744,9 @@
     },
     "UpdateTrial": {
       "name": "UpdateTrial",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Updates a trial.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1337,6 +1757,9 @@
     },
     "UpdateTrialComponent": {
       "name": "UpdateTrialComponent",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Updates a trial component.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1347,6 +1770,9 @@
     },
     "UpdateUserProfile": {
       "name": "UpdateUserProfile",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Grants permission to update a UserProfile",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1357,6 +1783,9 @@
     },
     "UpdateWorkforce": {
       "name": "UpdateWorkforce",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Updates a workforce.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1367,6 +1796,9 @@
     },
     "UpdateWorkteam": {
       "name": "UpdateWorkteam",
+      "topics": [
+        "Amazon SageMaker"
+      ],
       "description": "Updates a workteam.",
       "accessLevel": "Write",
       "resourceTypes": [

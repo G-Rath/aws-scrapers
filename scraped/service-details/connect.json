@@ -3,6 +3,9 @@
   "actions": {
     "AssociateRoutingProfileQueues": {
       "name": "AssociateRoutingProfileQueues",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to associate queues with a routing profile in an Amazon Connect\n                                                instance.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "CreateContactFlow": {
       "name": "CreateContactFlow",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to create a contact flow in an Amazon Connect instance.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "CreateInstance": {
       "name": "CreateInstance",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to create a new Amazon Connect instance. The associated required\n                                                actions grant permissions to configure instance settings.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -31,6 +40,9 @@
     },
     "CreateRoutingProfile": {
       "name": "CreateRoutingProfile",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permission to create a routing profile in an Amazon Connect instance.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -41,6 +53,9 @@
     },
     "CreateUser": {
       "name": "CreateUser",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permission to create a user for the specified Amazon Connect instance.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -51,6 +66,9 @@
     },
     "DeleteUser": {
       "name": "DeleteUser",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to delete a user in an Amazon Connect instance.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -61,6 +79,9 @@
     },
     "DescribeContactFlow": {
       "name": "DescribeContactFlow",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to describe a contact flow in an Amazon Connect instance.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -71,6 +92,9 @@
     },
     "DescribeInstance": {
       "name": "DescribeInstance",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to view details of an Amazon Connect instance. This is required\n                                                to create an instance.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -81,6 +105,9 @@
     },
     "DescribeRoutingProfile": {
       "name": "DescribeRoutingProfile",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to describe a routing profile in an Amazon Connect instance.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -91,6 +118,9 @@
     },
     "DescribeUser": {
       "name": "DescribeUser",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to describe a user in an Amazon Connect instance.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -101,6 +131,9 @@
     },
     "DescribeUserHierarchyGroup": {
       "name": "DescribeUserHierarchyGroup",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to describe a hierarchy group for an Amazon Connect instance.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -111,6 +144,9 @@
     },
     "DescribeUserHierarchyStructure": {
       "name": "DescribeUserHierarchyStructure",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to describe the hierarchy structure for an Amazon Connect instance.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -121,6 +157,9 @@
     },
     "DestroyInstance": {
       "name": "DestroyInstance",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to delete an Amazon Connect instance. When you remove an instance,\n                                                the link to an existing AWS directory is also removed.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -131,6 +170,9 @@
     },
     "DisassociateRoutingProfileQueues": {
       "name": "DisassociateRoutingProfileQueues",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to disassociate queues from a routing profile in an Amazon Connect\n                                                instance.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -141,6 +183,9 @@
     },
     "GetContactAttributes": {
       "name": "GetContactAttributes",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to retrieve the contact attributes for the specified contact.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -151,6 +196,9 @@
     },
     "GetCurrentMetricData": {
       "name": "GetCurrentMetricData",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to retrieve current metric data for the queues in an Amazon Connect\n                                                instance.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -161,6 +209,9 @@
     },
     "GetFederationToken": {
       "name": "GetFederationToken",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Allows federation into an instance when using SAML-based authentication for identity\n                                                management.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -171,6 +222,9 @@
     },
     "GetFederationTokens": {
       "name": "GetFederationTokens",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to federate in to an Amazon Connect instance (Log in as administrator\n                                                functionality in the AWS console).",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -181,6 +235,9 @@
     },
     "GetMetricData": {
       "name": "GetMetricData",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to retrieve historical metric data for queues in an Amazon Connect\n                                                instance.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -191,6 +248,9 @@
     },
     "ListContactFlows": {
       "name": "ListContactFlows",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to list contact flow resources in an Amazon Connect instance.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -201,6 +261,9 @@
     },
     "ListHoursOfOperations": {
       "name": "ListHoursOfOperations",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to list hours of operation resources in an Amazon Connect instance.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -211,6 +274,9 @@
     },
     "ListInstances": {
       "name": "ListInstances",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to view the Amazon Connect instances associated with an AWS account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -219,6 +285,9 @@
     },
     "ListPhoneNumbers": {
       "name": "ListPhoneNumbers",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to list phone number resources in an Amazon Connect instance.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -229,6 +298,9 @@
     },
     "ListPrompts": {
       "name": "ListPrompts",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to list prompt resources in an Amazon Connect instance.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -239,6 +311,9 @@
     },
     "ListQueues": {
       "name": "ListQueues",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to list queue resources in an Amazon Connect instance.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -249,6 +324,9 @@
     },
     "ListRoutingProfileQueues": {
       "name": "ListRoutingProfileQueues",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to list queue resources in a routing profile in an Amazon Connect\n                                                instance.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -259,6 +337,9 @@
     },
     "ListRoutingProfiles": {
       "name": "ListRoutingProfiles",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to list routing profile resources in an Amazon Connect instance.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -269,6 +350,9 @@
     },
     "ListSecurityProfiles": {
       "name": "ListSecurityProfiles",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to list security profile resources in an Amazon Connect instance.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -279,6 +363,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to list tags for an Amazon Connect resource.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -289,6 +376,9 @@
     },
     "ListUserHierarchyGroups": {
       "name": "ListUserHierarchyGroups",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to list the hierarchy group resources in an Amazon Connect instance.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -299,6 +389,9 @@
     },
     "ListUsers": {
       "name": "ListUsers",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to list user resources in an Amazon Connect instance.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -309,6 +402,9 @@
     },
     "ModifyInstance": {
       "name": "ModifyInstance",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to modify configuration settings for an existing Amazon Connect\n                                                instance. The associated required actions grant permission modify the settings for\n                                                the instance.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -319,6 +415,9 @@
     },
     "ResumeContactRecording": {
       "name": "ResumeContactRecording",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to resume recording for the specified contact.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -329,6 +428,9 @@
     },
     "StartChatContact": {
       "name": "StartChatContact",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to initiate a chat using the Amazon Connect API.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -339,6 +441,9 @@
     },
     "StartContactRecording": {
       "name": "StartContactRecording",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to start recording for the specified contact.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -349,6 +454,9 @@
     },
     "StartOutboundVoiceContact": {
       "name": "StartOutboundVoiceContact",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to initiate outbound calls using the Amazon Connect API.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -359,6 +467,9 @@
     },
     "StopContact": {
       "name": "StopContact",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to stop contacts that were initiated using the Amazon Connect API.\n                                                If you use this operation on an active contact the contact ends, even if the agent\n                                                is active on a call with a customer.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -369,6 +480,9 @@
     },
     "StopContactRecording": {
       "name": "StopContactRecording",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to stop recording for the specified contact.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -379,6 +493,9 @@
     },
     "SuspendContactRecording": {
       "name": "SuspendContactRecording",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to suspend recording for the specified contact.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -389,6 +506,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to tag an Amazon Connect resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -399,6 +519,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to untag an Amazon Connect resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -409,6 +532,9 @@
     },
     "UpdateContactAttributes": {
       "name": "UpdateContactAttributes",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to create or update the contact attributes associated with the\n                                                specified contact.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -419,6 +545,9 @@
     },
     "UpdateContactFlowContent": {
       "name": "UpdateContactFlowContent",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to update contact flow content in an Amazon Connect instance.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -429,6 +558,9 @@
     },
     "UpdateContactFlowName": {
       "name": "UpdateContactFlowName",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to update the name and description of a contact flow in an Amazon\n                                                Connect instance.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -439,6 +571,9 @@
     },
     "UpdateRoutingProfileConcurrency": {
       "name": "UpdateRoutingProfileConcurrency",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to update the concurrency in a routing profile in an Amazon Connect\n                                                instance.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -449,6 +584,9 @@
     },
     "UpdateRoutingProfileDefaultOutboundQueue": {
       "name": "UpdateRoutingProfileDefaultOutboundQueue",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to update the outbound queue in a routing profile in an Amazon\n                                                Connect instance.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -459,6 +597,9 @@
     },
     "UpdateRoutingProfileName": {
       "name": "UpdateRoutingProfileName",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to update a routing profile name and description in an Amazon Connect\n                                                instance.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -469,6 +610,9 @@
     },
     "UpdateRoutingProfileQueues": {
       "name": "UpdateRoutingProfileQueues",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to update the queues in routing profile in an Amazon Connect instance.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -479,6 +623,9 @@
     },
     "UpdateUserHierarchy": {
       "name": "UpdateUserHierarchy",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to update a hierarchy group for a user in an Amazon Connect instance.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -489,6 +636,9 @@
     },
     "UpdateUserIdentityInfo": {
       "name": "UpdateUserIdentityInfo",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to update identity information for a user in an Amazon Connect\n                                                instance.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -499,6 +649,9 @@
     },
     "UpdateUserPhoneConfig": {
       "name": "UpdateUserPhoneConfig",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to update phone configuration settings for a user in an Amazon\n                                                Connect instance.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -509,6 +662,9 @@
     },
     "UpdateUserRoutingProfile": {
       "name": "UpdateUserRoutingProfile",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to update a routing profile for a user in an Amazon Connect instance.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -519,6 +675,9 @@
     },
     "UpdateUserSecurityProfiles": {
       "name": "UpdateUserSecurityProfiles",
+      "topics": [
+        "Amazon Connect"
+      ],
       "description": "Grants permissions to update security profiles for a user in an Amazon Connect instance.",
       "accessLevel": "Write",
       "resourceTypes": [

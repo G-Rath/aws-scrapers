@@ -3,6 +3,9 @@
   "actions": {
     "AddTags": {
       "name": "AddTags",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Adds one or more tags to an object, up to a limit of 10. Each tag consists of a key\n                                                and an optional value",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "CreateBatchPrediction": {
       "name": "CreateBatchPrediction",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Generates predictions for a group of observations",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "CreateDataSourceFromRDS": {
       "name": "CreateDataSourceFromRDS",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Creates a DataSource object from an Amazon RDS",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "CreateDataSourceFromRedshift": {
       "name": "CreateDataSourceFromRedshift",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Creates a DataSource from a database hosted on an Amazon Redshift cluster",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "CreateDataSourceFromS3": {
       "name": "CreateDataSourceFromS3",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Creates a DataSource object from S3",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "CreateEvaluation": {
       "name": "CreateEvaluation",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Creates a new Evaluation of an MLModel",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "CreateMLModel": {
       "name": "CreateMLModel",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Creates a new MLModel",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "CreateRealtimeEndpoint": {
       "name": "CreateRealtimeEndpoint",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Creates a real-time endpoint for the MLModel",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "DeleteBatchPrediction": {
       "name": "DeleteBatchPrediction",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Assigns the DELETED status to a BatchPrediction, rendering it unusable",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "DeleteDataSource": {
       "name": "DeleteDataSource",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Assigns the DELETED status to a DataSource, rendering it unusable",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "DeleteEvaluation": {
       "name": "DeleteEvaluation",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Assigns the DELETED status to an Evaluation, rendering it unusable",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -113,6 +146,9 @@
     },
     "DeleteMLModel": {
       "name": "DeleteMLModel",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Assigns the DELETED status to an MLModel, rendering it unusable",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -123,6 +159,9 @@
     },
     "DeleteRealtimeEndpoint": {
       "name": "DeleteRealtimeEndpoint",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Deletes a real time endpoint of an MLModel",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -133,6 +172,9 @@
     },
     "DeleteTags": {
       "name": "DeleteTags",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Deletes the specified tags associated with an ML object. After this operation is complete,\n                                                you can't recover deleted tags",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -143,6 +185,9 @@
     },
     "DescribeBatchPredictions": {
       "name": "DescribeBatchPredictions",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Returns a list of BatchPrediction operations that match the search criteria in the\n                                                request",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -151,6 +196,9 @@
     },
     "DescribeDataSources": {
       "name": "DescribeDataSources",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Returns a list of DataSource that match the search criteria in the request",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -159,6 +207,9 @@
     },
     "DescribeEvaluations": {
       "name": "DescribeEvaluations",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Returns a list of DescribeEvaluations that match the search criteria in the request",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -167,6 +218,9 @@
     },
     "DescribeMLModels": {
       "name": "DescribeMLModels",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Returns a list of MLModel that match the search criteria in the request",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -175,6 +229,9 @@
     },
     "DescribeTags": {
       "name": "DescribeTags",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Describes one or more of the tags for your Amazon ML object",
       "accessLevel": "List",
       "resourceTypes": [
@@ -185,6 +242,9 @@
     },
     "GetBatchPrediction": {
       "name": "GetBatchPrediction",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Returns a BatchPrediction that includes detailed metadata, status, and data file information",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -195,6 +255,9 @@
     },
     "GetDataSource": {
       "name": "GetDataSource",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Returns a DataSource that includes metadata and data file information, as well as\n                                                the current status of the DataSource",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -205,6 +268,9 @@
     },
     "GetEvaluation": {
       "name": "GetEvaluation",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Returns an Evaluation that includes metadata as well as the current status of the\n                                                Evaluation",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -215,6 +281,9 @@
     },
     "GetMLModel": {
       "name": "GetMLModel",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Returns an MLModel that includes detailed metadata, and data source information as\n                                                well as the current status of the MLModel",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -225,6 +294,9 @@
     },
     "Predict": {
       "name": "Predict",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Generates a prediction for the observation using the specified ML Model",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -235,6 +307,9 @@
     },
     "UpdateBatchPrediction": {
       "name": "UpdateBatchPrediction",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Updates the BatchPredictionName of a BatchPrediction",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -245,6 +320,9 @@
     },
     "UpdateDataSource": {
       "name": "UpdateDataSource",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Updates the DataSourceName of a DataSource",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -255,6 +333,9 @@
     },
     "UpdateEvaluation": {
       "name": "UpdateEvaluation",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Updates the EvaluationName of an Evaluation",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -265,6 +346,9 @@
     },
     "UpdateMLModel": {
       "name": "UpdateMLModel",
+      "topics": [
+        "Amazon Machine Learning"
+      ],
       "description": "Updates the MLModelName and the ScoreThreshold of an MLModel",
       "accessLevel": "Write",
       "resourceTypes": [

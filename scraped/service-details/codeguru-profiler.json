@@ -3,6 +3,9 @@
   "actions": {
     "AddNotificationChannels": {
       "name": "AddNotificationChannels",
+      "topics": [
+        "Amazon CodeGuru Profiler"
+      ],
       "description": "Grants permission to add up to 2 topic ARNs of existing AWS SNS topics to publish\n                                                notifications",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "BatchGetFrameMetricData": {
       "name": "BatchGetFrameMetricData",
+      "topics": [
+        "Amazon CodeGuru Profiler"
+      ],
       "description": "Grants permission to get the frame metric data for a Profiling Group",
       "accessLevel": "List",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "ConfigureAgent": {
       "name": "ConfigureAgent",
+      "topics": [
+        "Amazon CodeGuru Profiler"
+      ],
       "description": "Grants permission for an agent to register with the orchestration service and retrieve\n                                                profiling configuration information",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "CreateProfilingGroup": {
       "name": "CreateProfilingGroup",
+      "topics": [
+        "Amazon CodeGuru Profiler"
+      ],
       "description": "Grants permission to create a profiling group",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -41,6 +53,9 @@
     },
     "DeleteProfilingGroup": {
       "name": "DeleteProfilingGroup",
+      "topics": [
+        "Amazon CodeGuru Profiler"
+      ],
       "description": "Grants permission to delete a profiling group",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -51,6 +66,9 @@
     },
     "DescribeProfilingGroup": {
       "name": "DescribeProfilingGroup",
+      "topics": [
+        "Amazon CodeGuru Profiler"
+      ],
       "description": "Grants permission to describe a profiling group",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -61,6 +79,9 @@
     },
     "GetFindingsReportAccountSummary": {
       "name": "GetFindingsReportAccountSummary",
+      "topics": [
+        "Amazon CodeGuru Profiler"
+      ],
       "description": "Grants permission to get a summary of recent recommendations for each profiling group\n                                                in the account",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -69,6 +90,9 @@
     },
     "GetNotificationConfiguration": {
       "name": "GetNotificationConfiguration",
+      "topics": [
+        "Amazon CodeGuru Profiler"
+      ],
       "description": "Grants permission to get the notification configuration",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -79,6 +103,9 @@
     },
     "GetPolicy": {
       "name": "GetPolicy",
+      "topics": [
+        "Amazon CodeGuru Profiler"
+      ],
       "description": "Grants permission to get the resource policy associated with the specified Profiling\n                                                Group.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -89,6 +116,9 @@
     },
     "GetProfile": {
       "name": "GetProfile",
+      "topics": [
+        "Amazon CodeGuru Profiler"
+      ],
       "description": "Grants permission to get aggregated profiles for a specific profiling group",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -99,6 +129,9 @@
     },
     "GetRecommendations": {
       "name": "GetRecommendations",
+      "topics": [
+        "Amazon CodeGuru Profiler"
+      ],
       "description": "Grants permission to get recommendations",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -109,6 +142,9 @@
     },
     "ListFindingsReports": {
       "name": "ListFindingsReports",
+      "topics": [
+        "Amazon CodeGuru Profiler"
+      ],
       "description": "Grants permission to list the available recommendations reports for a specific profiling\n                                                group",
       "accessLevel": "List",
       "resourceTypes": [
@@ -119,6 +155,9 @@
     },
     "ListProfileTimes": {
       "name": "ListProfileTimes",
+      "topics": [
+        "Amazon CodeGuru Profiler"
+      ],
       "description": "Grants permission to list the start times of the available aggregated profiles for\n                                                a specific profiling group",
       "accessLevel": "List",
       "resourceTypes": [
@@ -129,6 +168,9 @@
     },
     "ListProfilingGroups": {
       "name": "ListProfilingGroups",
+      "topics": [
+        "Amazon CodeGuru Profiler"
+      ],
       "description": "Grants permission to list profiling groups in the account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -137,6 +179,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "Amazon CodeGuru Profiler"
+      ],
       "description": "Grants permission to list tags for a Profiling Group",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -147,6 +192,9 @@
     },
     "PostAgentProfile": {
       "name": "PostAgentProfile",
+      "topics": [
+        "Amazon CodeGuru Profiler"
+      ],
       "description": "Grants permission to submit a profile collected by an agent belonging to a specific\n                                                profiling group for aggregation",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -157,6 +205,9 @@
     },
     "PutPermission": {
       "name": "PutPermission",
+      "topics": [
+        "Amazon CodeGuru Profiler"
+      ],
       "description": "Grants permission to update the list of principals allowed for an action group in\n                                                the resource policy associated with the specified Profiling Group.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -167,6 +218,9 @@
     },
     "RemoveNotificationChannel": {
       "name": "RemoveNotificationChannel",
+      "topics": [
+        "Amazon CodeGuru Profiler"
+      ],
       "description": "Grants permission to delete an already configured SNStopic arn from the notification\n                                                configuration",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -177,6 +231,9 @@
     },
     "RemovePermission": {
       "name": "RemovePermission",
+      "topics": [
+        "Amazon CodeGuru Profiler"
+      ],
       "description": "Grants permission to remove the permission of specified Action Group from the resource\n                                                policy associated with the specified Profiling Group.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -187,6 +244,9 @@
     },
     "SubmitFeedback": {
       "name": "SubmitFeedback",
+      "topics": [
+        "Amazon CodeGuru Profiler"
+      ],
       "description": "Grants permission to submit user feedback for useful or non useful anomaly",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -197,6 +257,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "Amazon CodeGuru Profiler"
+      ],
       "description": "Grants permission to add or overwrite tags to a Profiling Group",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -207,6 +270,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "Amazon CodeGuru Profiler"
+      ],
       "description": "Grants permission to remove tags from a Profiling Group",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -217,6 +283,9 @@
     },
     "UpdateProfilingGroup": {
       "name": "UpdateProfilingGroup",
+      "topics": [
+        "Amazon CodeGuru Profiler"
+      ],
       "description": "Grants permission to update a specific profiling group",
       "accessLevel": "Write",
       "resourceTypes": [

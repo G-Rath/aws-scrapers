@@ -3,6 +3,9 @@
   "actions": {
     "DeleteLexicon": {
       "name": "DeleteLexicon",
+      "topics": [
+        "Amazon Polly"
+      ],
       "description": "Deletes the specified pronunciation lexicon stored in an AWS Region",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "DescribeVoices": {
       "name": "DescribeVoices",
+      "topics": [
+        "Amazon Polly"
+      ],
       "description": "Returns the list of voices that are available for use when requesting speech synthesis.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -21,6 +27,9 @@
     },
     "GetLexicon": {
       "name": "GetLexicon",
+      "topics": [
+        "Amazon Polly"
+      ],
       "description": "Returns the content of the specified pronunciation lexicon stored in an AWS Region.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -31,6 +40,9 @@
     },
     "GetSpeechSynthesisTask": {
       "name": "GetSpeechSynthesisTask",
+      "topics": [
+        "Amazon Polly"
+      ],
       "description": "Enables the user to get information about specific speech synthesis task.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -39,6 +51,9 @@
     },
     "ListLexicons": {
       "name": "ListLexicons",
+      "topics": [
+        "Amazon Polly"
+      ],
       "description": "Returns a list of pronunciation lexicons stored in an AWS Region.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -47,6 +62,9 @@
     },
     "ListSpeechSynthesisTasks": {
       "name": "ListSpeechSynthesisTasks",
+      "topics": [
+        "Amazon Polly"
+      ],
       "description": "Enables the user to list requested speech synthesis tasks.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -55,6 +73,9 @@
     },
     "PutLexicon": {
       "name": "PutLexicon",
+      "topics": [
+        "Amazon Polly"
+      ],
       "description": "Stores a pronunciation lexicon in an AWS Region.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -63,6 +84,9 @@
     },
     "StartSpeechSynthesisTask": {
       "name": "StartSpeechSynthesisTask",
+      "topics": [
+        "Amazon Polly"
+      ],
       "description": "Enables the user to synthesize long inputs to provided S3 location.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -73,6 +97,9 @@
     },
     "SynthesizeSpeech": {
       "name": "SynthesizeSpeech",
+      "topics": [
+        "Amazon Polly"
+      ],
       "description": "Synthesizes UTF-8 input, plain text or SSML, to a stream of bytes.",
       "accessLevel": "Read",
       "resourceTypes": [

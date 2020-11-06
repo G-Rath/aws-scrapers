@@ -3,6 +3,9 @@
   "actions": {
     "SendSSHPublicKey": {
       "name": "SendSSHPublicKey",
+      "topics": [
+        "Amazon EC2 Instance Connect"
+      ],
       "description": "Grants permission to push the SSH public key to the instance metadata where it remains\n                                                for 60 seconds.",
       "accessLevel": "Write",
       "resourceTypes": [

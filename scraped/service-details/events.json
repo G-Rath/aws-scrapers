@@ -3,6 +3,9 @@
   "actions": {
     "ActivateEventSource": {
       "name": "ActivateEventSource",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Activates a partner event source that has been deactivated. Once activated, your matching\n                                                event bus will start receiving events from the event source.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "CreateEventBus": {
       "name": "CreateEventBus",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Creates a new event bus within your account. This can be a custom event bus which\n                                                you can use to receive events from your own custom applications and services, or it\n                                                can be a partner event bus which can be matched to a partner event source.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "CreatePartnerEventSource": {
       "name": "CreatePartnerEventSource",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Called by an AWS partner to create a partner event source.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "DeactivateEventSource": {
       "name": "DeactivateEventSource",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Called by an AWS partner to create a partner event source.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "DeleteEventBus": {
       "name": "DeleteEventBus",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Deletes the specified custom event bus or partner event bus. All rules associated\n                                                with this event bus are also deleted. You can't delete your account's default event\n                                                bus.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "DeletePartnerEventSource": {
       "name": "DeletePartnerEventSource",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Called by an AWS partner to delete a partner event source.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "DeleteRule": {
       "name": "DeleteRule",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Deletes a rule. You must remove all targets from a rule using RemoveTargets before\n                                                you can delete the rule.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "DescribeEventBus": {
       "name": "DescribeEventBus",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Displays the external AWS accounts that are permitted to write events to your account\n                                                using your account's event bus, and the associated policy.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "DescribeEventSource": {
       "name": "DescribeEventSource",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Describes the details of the specified partner event source that is shared with your\n                                                account.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "DescribePartnerEventSource": {
       "name": "DescribePartnerEventSource",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Called by an AWS partner describe the details of the specified partner event source\n                                                that they have created.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "DescribeRule": {
       "name": "DescribeRule",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Describes the details of the specified rule.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -113,6 +146,9 @@
     },
     "DisableRule": {
       "name": "DisableRule",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Disables a rule. A disabled rule won't match any events, and won't self-trigger if\n                                                it has a schedule expression.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -123,6 +159,9 @@
     },
     "EnableRule": {
       "name": "EnableRule",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Enables a rule. If the rule does not exist, the operation fails.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -133,6 +172,9 @@
     },
     "ListEventBuses": {
       "name": "ListEventBuses",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Lists all the event buses in your account, including the default event bus, custom\n                                                event buses, and partner event buses.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -141,6 +183,9 @@
     },
     "ListEventSources": {
       "name": "ListEventSources",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Lists the event sources shared with this account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -149,6 +194,9 @@
     },
     "ListPartnerEventSourceAccounts": {
       "name": "ListPartnerEventSourceAccounts",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Called by an AWS partner to display the AWS account ID that the specified partner\n                                                event source is associated with.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -159,6 +207,9 @@
     },
     "ListPartnerEventSources": {
       "name": "ListPartnerEventSources",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Called by an AWS partner to list all the partner event sources that they have created.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -167,6 +218,9 @@
     },
     "ListRuleNamesByTarget": {
       "name": "ListRuleNamesByTarget",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Lists the names of the rules that the given target is put to.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -175,6 +229,9 @@
     },
     "ListRules": {
       "name": "ListRules",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Lists the Amazon EventBridge rules in your account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -183,6 +240,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "This action lists tags for an Amazon EventBridge resource.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -193,6 +253,9 @@
     },
     "ListTargetsByRule": {
       "name": "ListTargetsByRule",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Lists of targets assigned to the rule.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -203,6 +266,9 @@
     },
     "PutEvents": {
       "name": "PutEvents",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Sends custom events to Amazon EventBridge so that they can be matched to rules.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -213,6 +279,9 @@
     },
     "PutPartnerEvents": {
       "name": "PutPartnerEvents",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Sends custom events to Amazon EventBridge so that they can be matched to rules.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -221,6 +290,9 @@
     },
     "PutPermission": {
       "name": "PutPermission",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Running PutPermission permits the specified AWS account to put events to your account's\n                                                default event bus.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -229,6 +301,9 @@
     },
     "PutRule": {
       "name": "PutRule",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Creates or updates a rule. Rules are enabled by default, or based on value of the\n                                                State parameter.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -239,6 +314,9 @@
     },
     "PutTargets": {
       "name": "PutTargets",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Adds target(s) to a rule. Targets are the resources that can be invoked when a rule\n                                                is triggered.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -249,6 +327,9 @@
     },
     "RemovePermission": {
       "name": "RemovePermission",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Revokes the permission of another AWS account to be able to put events to your default\n                                                event bus.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -257,6 +338,9 @@
     },
     "RemoveTargets": {
       "name": "RemoveTargets",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Removes target(s) from a rule so that when the rule is triggered, those targets will\n                                                no longer be invoked.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -267,6 +351,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "This action tags an Amazon EventBridge resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -277,6 +364,9 @@
     },
     "TestEventPattern": {
       "name": "TestEventPattern",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "Tests whether an event pattern matches the provided event.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -285,6 +375,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "Amazon EventBridge"
+      ],
       "description": "This action removes a tag from an Amazon EventBridge resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [

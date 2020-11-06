@@ -3,6 +3,9 @@
   "actions": {
     "AcceptReservedNodeExchange": {
       "name": "AcceptReservedNodeExchange",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to exchange a DC1 reserved node for a DC2 reserved node with no\n                                                changes to the configuration",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "AuthorizeClusterSecurityGroupIngress": {
       "name": "AuthorizeClusterSecurityGroupIngress",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to add an inbound (ingress) rule to an Amazon Redshift security\n                                                group",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -21,6 +27,9 @@
     },
     "AuthorizeSnapshotAccess": {
       "name": "AuthorizeSnapshotAccess",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to the specified AWS account to restore a snapshot",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -31,6 +40,9 @@
     },
     "BatchDeleteClusterSnapshots": {
       "name": "BatchDeleteClusterSnapshots",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to delete snapshots in a batch of size upto 100",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -41,6 +53,9 @@
     },
     "BatchModifyClusterSnapshots": {
       "name": "BatchModifyClusterSnapshots",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to modify settings for a list of snapshots",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -51,6 +66,9 @@
     },
     "CancelQuery": {
       "name": "CancelQuery",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to cancel a query through the Amazon Redshift console",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -59,6 +77,9 @@
     },
     "CancelQuerySession": {
       "name": "CancelQuerySession",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to see queries in the Amazon Redshift console",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -67,6 +88,9 @@
     },
     "CancelResize": {
       "name": "CancelResize",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to cancel a resize operation",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -77,6 +101,9 @@
     },
     "CopyClusterSnapshot": {
       "name": "CopyClusterSnapshot",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to copy a cluster snapshot",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -87,6 +114,9 @@
     },
     "CreateCluster": {
       "name": "CreateCluster",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to create a cluster",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -97,6 +127,9 @@
     },
     "CreateClusterParameterGroup": {
       "name": "CreateClusterParameterGroup",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to create an Amazon Redshift parameter group",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -107,6 +140,9 @@
     },
     "CreateClusterSecurityGroup": {
       "name": "CreateClusterSecurityGroup",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to create an Amazon Redshift security group",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -117,6 +153,9 @@
     },
     "CreateClusterSnapshot": {
       "name": "CreateClusterSnapshot",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to create a manual snapshot of the specified cluster",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -127,6 +166,9 @@
     },
     "CreateClusterSubnetGroup": {
       "name": "CreateClusterSubnetGroup",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to create an Amazon Redshift subnet group",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -137,6 +179,9 @@
     },
     "CreateClusterUser": {
       "name": "CreateClusterUser",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to automatically create the specified Amazon Redshift user if it\n                                                does not exist",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -147,6 +192,9 @@
     },
     "CreateEventSubscription": {
       "name": "CreateEventSubscription",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to create an Amazon Redshift event notification subscription",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -157,6 +205,9 @@
     },
     "CreateHsmClientCertificate": {
       "name": "CreateHsmClientCertificate",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to create an HSM client certificate that a cluster uses to connect\n                                                to an HSM",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -167,6 +218,9 @@
     },
     "CreateHsmConfiguration": {
       "name": "CreateHsmConfiguration",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to create an HSM configuration that contains information required\n                                                by a cluster to store and use database encryption keys in a hardware security module\n                                                (HSM)",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -177,6 +231,9 @@
     },
     "CreateSavedQuery": {
       "name": "CreateSavedQuery",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to create saved SQL queries through the Amazon Redshift console",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -185,6 +242,9 @@
     },
     "CreateScheduledAction": {
       "name": "CreateScheduledAction",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to create an Amazon Redshift scheduled action",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -193,6 +253,9 @@
     },
     "CreateSnapshotCopyGrant": {
       "name": "CreateSnapshotCopyGrant",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to create a snapshot copy grant and encrypt copied snapshots in\n                                                a destination AWS Region",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -203,6 +266,9 @@
     },
     "CreateSnapshotSchedule": {
       "name": "CreateSnapshotSchedule",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to create a snapshot schedule",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -213,6 +279,9 @@
     },
     "CreateTags": {
       "name": "CreateTags",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to add one or more tags to a specified resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -223,6 +292,9 @@
     },
     "DeleteCluster": {
       "name": "DeleteCluster",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to delete a previously provisioned cluster",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -233,6 +305,9 @@
     },
     "DeleteClusterParameterGroup": {
       "name": "DeleteClusterParameterGroup",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to delete an Amazon Redshift parameter group",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -243,6 +318,9 @@
     },
     "DeleteClusterSecurityGroup": {
       "name": "DeleteClusterSecurityGroup",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to delete an Amazon Redshift security group",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -253,6 +331,9 @@
     },
     "DeleteClusterSnapshot": {
       "name": "DeleteClusterSnapshot",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to delete a manual snapshot",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -263,6 +344,9 @@
     },
     "DeleteClusterSubnetGroup": {
       "name": "DeleteClusterSubnetGroup",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to delete a cluster subnet group",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -273,6 +357,9 @@
     },
     "DeleteEventSubscription": {
       "name": "DeleteEventSubscription",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to delete an Amazon Redshift event notification subscription",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -283,6 +370,9 @@
     },
     "DeleteHsmClientCertificate": {
       "name": "DeleteHsmClientCertificate",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to delete an HSM client certificate",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -293,6 +383,9 @@
     },
     "DeleteHsmConfiguration": {
       "name": "DeleteHsmConfiguration",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to delete an Amazon Redshift HSM configuration",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -303,6 +396,9 @@
     },
     "DeleteSavedQueries": {
       "name": "DeleteSavedQueries",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to delete saved SQL queries through the Amazon Redshift console",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -311,6 +407,9 @@
     },
     "DeleteScheduledAction": {
       "name": "DeleteScheduledAction",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to delete an Amazon Redshift scheduled action",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -319,6 +418,9 @@
     },
     "DeleteSnapshotCopyGrant": {
       "name": "DeleteSnapshotCopyGrant",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to delete a snapshot copy grant",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -329,6 +431,9 @@
     },
     "DeleteSnapshotSchedule": {
       "name": "DeleteSnapshotSchedule",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to delete a snapshot schedule",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -339,6 +444,9 @@
     },
     "DeleteTags": {
       "name": "DeleteTags",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to delete a tag or tags from a resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -349,6 +457,9 @@
     },
     "DescribeAccountAttributes": {
       "name": "DescribeAccountAttributes",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe attributes attached to the specified AWS account",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -357,6 +468,9 @@
     },
     "DescribeClusterDbRevisions": {
       "name": "DescribeClusterDbRevisions",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe database revisions for a cluster",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -365,6 +479,9 @@
     },
     "DescribeClusterParameterGroups": {
       "name": "DescribeClusterParameterGroups",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe Amazon Redshift parameter groups, including parameter\n                                                groups you created and the default parameter group",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -373,6 +490,9 @@
     },
     "DescribeClusterParameters": {
       "name": "DescribeClusterParameters",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe parameters contained within an Amazon Redshift parameter\n                                                group",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -383,6 +503,9 @@
     },
     "DescribeClusterSecurityGroups": {
       "name": "DescribeClusterSecurityGroups",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe Amazon Redshift security groups",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -391,6 +514,9 @@
     },
     "DescribeClusterSnapshots": {
       "name": "DescribeClusterSnapshots",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe one or more snapshot objects, which contain metadata\n                                                about your cluster snapshots",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -399,6 +525,9 @@
     },
     "DescribeClusterSubnetGroups": {
       "name": "DescribeClusterSubnetGroups",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe one or more cluster subnet group objects, which contain\n                                                metadata about your cluster subnet groups",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -407,6 +536,9 @@
     },
     "DescribeClusterTracks": {
       "name": "DescribeClusterTracks",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe available maintenance tracks",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -415,6 +547,9 @@
     },
     "DescribeClusterVersions": {
       "name": "DescribeClusterVersions",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe available Amazon Redshift cluster versions",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -423,6 +558,9 @@
     },
     "DescribeClusters": {
       "name": "DescribeClusters",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe properties of provisioned clusters",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -431,6 +569,9 @@
     },
     "DescribeDefaultClusterParameters": {
       "name": "DescribeDefaultClusterParameters",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe parameter settings for a parameter group family",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -439,6 +580,9 @@
     },
     "DescribeEventCategories": {
       "name": "DescribeEventCategories",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe event categories for all event source types, or for\n                                                a specified source type",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -447,6 +591,9 @@
     },
     "DescribeEventSubscriptions": {
       "name": "DescribeEventSubscriptions",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe Amazon Redshift event notification subscriptions for\n                                                the specified AWS account",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -455,6 +602,9 @@
     },
     "DescribeEvents": {
       "name": "DescribeEvents",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe events related to clusters, security groups, snapshots,\n                                                and parameter groups for the past 14 days",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -463,6 +613,9 @@
     },
     "DescribeHsmClientCertificates": {
       "name": "DescribeHsmClientCertificates",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe HSM client certificates",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -471,6 +624,9 @@
     },
     "DescribeHsmConfigurations": {
       "name": "DescribeHsmConfigurations",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe Amazon Redshift HSM configurations",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -479,6 +635,9 @@
     },
     "DescribeLoggingStatus": {
       "name": "DescribeLoggingStatus",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe whether information, such as queries and connection\n                                                attempts, is being logged for a cluster",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -489,6 +648,9 @@
     },
     "DescribeNodeConfigurationOptions": {
       "name": "DescribeNodeConfigurationOptions",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe properties of possible node configurations such as node\n                                                type, number of nodes, and disk usage for the specified action type",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -497,6 +659,9 @@
     },
     "DescribeOrderableClusterOptions": {
       "name": "DescribeOrderableClusterOptions",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe orderable cluster options",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -505,6 +670,9 @@
     },
     "DescribeQuery": {
       "name": "DescribeQuery",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe a query through the Amazon Redshift console",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -513,6 +681,9 @@
     },
     "DescribeReservedNodeOfferings": {
       "name": "DescribeReservedNodeOfferings",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe available reserved node offerings by Amazon Redshift",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -521,6 +692,9 @@
     },
     "DescribeReservedNodes": {
       "name": "DescribeReservedNodes",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe the reserved nodes",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -529,6 +703,9 @@
     },
     "DescribeResize": {
       "name": "DescribeResize",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe the last resize operation for a cluster",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -539,6 +716,9 @@
     },
     "DescribeSavedQueries": {
       "name": "DescribeSavedQueries",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe saved queries through the Amazon Redshift console",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -547,6 +727,9 @@
     },
     "DescribeScheduledActions": {
       "name": "DescribeScheduledActions",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe created Amazon Redshift scheduled actions",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -555,6 +738,9 @@
     },
     "DescribeSnapshotCopyGrants": {
       "name": "DescribeSnapshotCopyGrants",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe snapshot copy grants owned by the specified AWS account\n                                                in the destination AWS Region",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -563,6 +749,9 @@
     },
     "DescribeSnapshotSchedules": {
       "name": "DescribeSnapshotSchedules",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe snapshot schedules",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -573,6 +762,9 @@
     },
     "DescribeStorage": {
       "name": "DescribeStorage",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe account level backups storage size and provisional storage",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -581,6 +773,9 @@
     },
     "DescribeTable": {
       "name": "DescribeTable",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe a table through the Amazon Redshift console",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -589,6 +784,9 @@
     },
     "DescribeTableRestoreStatus": {
       "name": "DescribeTableRestoreStatus",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe status of one or more table restore requests made using\n                                                the RestoreTableFromClusterSnapshot API action",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -597,6 +795,9 @@
     },
     "DescribeTags": {
       "name": "DescribeTags",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to describe tags",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -607,6 +808,9 @@
     },
     "DisableLogging": {
       "name": "DisableLogging",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to disable logging information, such as queries and connection attempts,\n                                                for a cluster",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -617,6 +821,9 @@
     },
     "DisableSnapshotCopy": {
       "name": "DisableSnapshotCopy",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to disable the automatic copy of snapshots for a cluster",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -627,6 +834,9 @@
     },
     "EnableLogging": {
       "name": "EnableLogging",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to enable logging information, such as queries and connection attempts,\n                                                for a cluster",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -637,6 +847,9 @@
     },
     "EnableSnapshotCopy": {
       "name": "EnableSnapshotCopy",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to enable the automatic copy of snapshots for a cluster",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -647,6 +860,9 @@
     },
     "ExecuteQuery": {
       "name": "ExecuteQuery",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to execute a query through the Amazon Redshift console",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -655,6 +871,9 @@
     },
     "FetchResults": {
       "name": "FetchResults",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to fetch query results through the Amazon Redshift console",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -663,6 +882,9 @@
     },
     "GetClusterCredentials": {
       "name": "GetClusterCredentials",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to get temporary credentials to access an Amazon Redshift database\n                                                by the specified AWS account",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -673,6 +895,9 @@
     },
     "GetReservedNodeExchangeOfferings": {
       "name": "GetReservedNodeExchangeOfferings",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to get an array of DC2 ReservedNodeOfferings that matches the payment\n                                                type, term, and usage price of the given DC1 reserved node",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -681,6 +906,9 @@
     },
     "JoinGroup": {
       "name": "JoinGroup",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to join the specified Amazon Redshift group",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -691,6 +919,9 @@
     },
     "ListDatabases": {
       "name": "ListDatabases",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to list databases through the Amazon Redshift console",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -699,6 +930,9 @@
     },
     "ListSavedQueries": {
       "name": "ListSavedQueries",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to list saved queries through the Amazon Redshift console",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -707,6 +941,9 @@
     },
     "ListSchemas": {
       "name": "ListSchemas",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to list schemas through the Amazon Redshift console",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -715,6 +952,9 @@
     },
     "ListTables": {
       "name": "ListTables",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to list tables through the Amazon Redshift console",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -723,6 +963,9 @@
     },
     "ModifyCluster": {
       "name": "ModifyCluster",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to modify the settings of a cluster",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -733,6 +976,9 @@
     },
     "ModifyClusterDbRevision": {
       "name": "ModifyClusterDbRevision",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to modify the database revision of a cluster",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -743,6 +989,9 @@
     },
     "ModifyClusterIamRoles": {
       "name": "ModifyClusterIamRoles",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to modify the list of AWS Identity and Access Management (IAM) roles\n                                                that can be used by a cluster to access other AWS services",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -753,6 +1002,9 @@
     },
     "ModifyClusterMaintenance": {
       "name": "ModifyClusterMaintenance",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to modify the maintenance settings of a cluster",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -761,6 +1013,9 @@
     },
     "ModifyClusterParameterGroup": {
       "name": "ModifyClusterParameterGroup",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to modify the parameters of a parameter group",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -771,6 +1026,9 @@
     },
     "ModifyClusterSnapshot": {
       "name": "ModifyClusterSnapshot",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to modify the settings of a snapshot",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -781,6 +1039,9 @@
     },
     "ModifyClusterSnapshotSchedule": {
       "name": "ModifyClusterSnapshotSchedule",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to modify a snapshot schedule for a cluster",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -791,6 +1052,9 @@
     },
     "ModifyClusterSubnetGroup": {
       "name": "ModifyClusterSubnetGroup",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to modify a cluster subnet group to include the specified list of\n                                                VPC subnets",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -801,6 +1065,9 @@
     },
     "ModifyEventSubscription": {
       "name": "ModifyEventSubscription",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to modify an existing Amazon Redshift event notification subscription",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -811,6 +1078,9 @@
     },
     "ModifySavedQuery": {
       "name": "ModifySavedQuery",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to modify an existing saved query through the Amazon Redshift console",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -819,6 +1089,9 @@
     },
     "ModifyScheduledAction": {
       "name": "ModifyScheduledAction",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to modify an existing Amazon Redshift scheduled action",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -827,6 +1100,9 @@
     },
     "ModifySnapshotCopyRetentionPeriod": {
       "name": "ModifySnapshotCopyRetentionPeriod",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to modify the number of days to retain snapshots in the destination\n                                                AWS Region after they are copied from the source AWS Region",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -837,6 +1113,9 @@
     },
     "ModifySnapshotSchedule": {
       "name": "ModifySnapshotSchedule",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to modify a snapshot schedule",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -847,6 +1126,9 @@
     },
     "PauseCluster": {
       "name": "PauseCluster",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to pause a cluster",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -857,6 +1139,9 @@
     },
     "PurchaseReservedNodeOffering": {
       "name": "PurchaseReservedNodeOffering",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to purchase a reserved node",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -865,6 +1150,9 @@
     },
     "RebootCluster": {
       "name": "RebootCluster",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to reboot a cluster",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -875,6 +1163,9 @@
     },
     "ResetClusterParameterGroup": {
       "name": "ResetClusterParameterGroup",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to set one or more parameters of a parameter group to their default\n                                                values and set the source values of the parameters to \"engine-default\"",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -885,6 +1176,9 @@
     },
     "ResizeCluster": {
       "name": "ResizeCluster",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to change the size of a cluster",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -895,6 +1189,9 @@
     },
     "RestoreFromClusterSnapshot": {
       "name": "RestoreFromClusterSnapshot",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to create a cluster from a snapshot",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -905,6 +1202,9 @@
     },
     "RestoreTableFromClusterSnapshot": {
       "name": "RestoreTableFromClusterSnapshot",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to create a table from a table in an Amazon Redshift cluster snapshot",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -915,6 +1215,9 @@
     },
     "ResumeCluster": {
       "name": "ResumeCluster",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to resume a cluster",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -925,6 +1228,9 @@
     },
     "RevokeClusterSecurityGroupIngress": {
       "name": "RevokeClusterSecurityGroupIngress",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to revoke an ingress rule in an Amazon Redshift security group for\n                                                a previously authorized IP range or Amazon EC2 security group",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -935,6 +1241,9 @@
     },
     "RevokeSnapshotAccess": {
       "name": "RevokeSnapshotAccess",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to revoke access from the specified AWS account to restore a snapshot",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -945,6 +1254,9 @@
     },
     "RotateEncryptionKey": {
       "name": "RotateEncryptionKey",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to rotate an encryption key for a cluster",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -955,6 +1267,9 @@
     },
     "ViewQueriesFromConsole": {
       "name": "ViewQueriesFromConsole",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to view query results through the Amazon Redshift console",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -963,6 +1278,9 @@
     },
     "ViewQueriesInConsole": {
       "name": "ViewQueriesInConsole",
+      "topics": [
+        "Amazon Redshift"
+      ],
       "description": "Grants permission to terminate running queries and loads through the Amazon Redshift\n                                                console",
       "accessLevel": "List",
       "resourceTypes": [],

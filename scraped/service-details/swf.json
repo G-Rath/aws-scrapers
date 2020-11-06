@@ -3,6 +3,9 @@
   "actions": {
     "CancelTimer": {
       "name": "CancelTimer",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Description for CancelTimer",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "CancelWorkflowExecution": {
       "name": "CancelWorkflowExecution",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Description for CancelWorkflowExecution",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "CompleteWorkflowExecution": {
       "name": "CompleteWorkflowExecution",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Description for CompleteWorkflowExecution",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "ContinueAsNewWorkflowExecution": {
       "name": "ContinueAsNewWorkflowExecution",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Description for ContinueAsNewWorkflowExecution",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "CountClosedWorkflowExecutions": {
       "name": "CountClosedWorkflowExecutions",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Returns the number of closed workflow executions within the given domain that meet\n                                                the specified filtering criteria.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "CountOpenWorkflowExecutions": {
       "name": "CountOpenWorkflowExecutions",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Returns the number of open workflow executions within the given domain that meet the\n                                                specified filtering criteria.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "CountPendingActivityTasks": {
       "name": "CountPendingActivityTasks",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Returns the estimated number of activity tasks in the specified task list.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "CountPendingDecisionTasks": {
       "name": "CountPendingDecisionTasks",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Returns the estimated number of decision tasks in the specified task list.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "DeprecateActivityType": {
       "name": "DeprecateActivityType",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Deprecates the specified activity type.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "DeprecateDomain": {
       "name": "DeprecateDomain",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Deprecates the specified domain.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "DeprecateWorkflowType": {
       "name": "DeprecateWorkflowType",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Deprecates the specified workflow type.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -113,6 +146,9 @@
     },
     "DescribeActivityType": {
       "name": "DescribeActivityType",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Returns information about the specified activity type.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -123,6 +159,9 @@
     },
     "DescribeDomain": {
       "name": "DescribeDomain",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Returns information about the specified domain, including description and status.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -133,6 +172,9 @@
     },
     "DescribeWorkflowExecution": {
       "name": "DescribeWorkflowExecution",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Returns information about the specified workflow execution including its type and\n                                                some statistics.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -143,6 +185,9 @@
     },
     "DescribeWorkflowType": {
       "name": "DescribeWorkflowType",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Returns information about the specified workflow type.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -153,6 +198,9 @@
     },
     "FailWorkflowExecution": {
       "name": "FailWorkflowExecution",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Description for FailWorkflowExecution",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -163,6 +211,9 @@
     },
     "GetWorkflowExecutionHistory": {
       "name": "GetWorkflowExecutionHistory",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Returns the history of the specified workflow execution.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -173,6 +224,9 @@
     },
     "ListActivityTypes": {
       "name": "ListActivityTypes",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Returns information about all activities registered in the specified domain that match\n                                                the specified name and registration status.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -183,6 +237,9 @@
     },
     "ListClosedWorkflowExecutions": {
       "name": "ListClosedWorkflowExecutions",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Returns a list of closed workflow executions in the specified domain that meet the\n                                                filtering criteria.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -193,6 +250,9 @@
     },
     "ListDomains": {
       "name": "ListDomains",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Returns the list of domains registered in the account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -201,6 +261,9 @@
     },
     "ListOpenWorkflowExecutions": {
       "name": "ListOpenWorkflowExecutions",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Returns a list of open workflow executions in the specified domain that meet the filtering\n                                                criteria.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -211,6 +274,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "This action lists tags for an AWS SWF resource.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -221,6 +287,9 @@
     },
     "ListWorkflowTypes": {
       "name": "ListWorkflowTypes",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Returns information about workflow types in the specified domain.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -231,6 +300,9 @@
     },
     "PollForActivityTask": {
       "name": "PollForActivityTask",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Used by workers to get an ActivityTask from the specified activity taskList.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -241,6 +313,9 @@
     },
     "PollForDecisionTask": {
       "name": "PollForDecisionTask",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Used by deciders to get a DecisionTask from the specified decision taskList.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -251,6 +326,9 @@
     },
     "RecordActivityTaskHeartbeat": {
       "name": "RecordActivityTaskHeartbeat",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Used by activity workers to report to the service that the ActivityTask represented\n                                                by the specified taskToken is still making progress.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -261,6 +339,9 @@
     },
     "RecordMarker": {
       "name": "RecordMarker",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Description for RecordMarker",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -271,6 +352,9 @@
     },
     "RegisterActivityType": {
       "name": "RegisterActivityType",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Registers a new activity type along with its configuration settings in the specified\n                                                domain.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -281,6 +365,9 @@
     },
     "RegisterDomain": {
       "name": "RegisterDomain",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Registers a new domain.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -289,6 +376,9 @@
     },
     "RegisterWorkflowType": {
       "name": "RegisterWorkflowType",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Registers a new workflow type and its configuration settings in the specified domain.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -299,6 +389,9 @@
     },
     "RequestCancelActivityTask": {
       "name": "RequestCancelActivityTask",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Description for RequestCancelActivityTask",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -309,6 +402,9 @@
     },
     "RequestCancelExternalWorkflowExecution": {
       "name": "RequestCancelExternalWorkflowExecution",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Description for RequestCancelExternalWorkflowExecution",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -319,6 +415,9 @@
     },
     "RequestCancelWorkflowExecution": {
       "name": "RequestCancelWorkflowExecution",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Records a WorkflowExecutionCancelRequested event in the currently running workflow\n                                                execution identified by the given domain, workflowId, and runId.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -329,6 +428,9 @@
     },
     "RespondActivityTaskCanceled": {
       "name": "RespondActivityTaskCanceled",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Used by workers to tell the service that the ActivityTask identified by the taskToken\n                                                was successfully canceled.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -339,6 +441,9 @@
     },
     "RespondActivityTaskCompleted": {
       "name": "RespondActivityTaskCompleted",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Used by workers to tell the service that the ActivityTask identified by the taskToken\n                                                completed successfully with a result (if provided).",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -349,6 +454,9 @@
     },
     "RespondActivityTaskFailed": {
       "name": "RespondActivityTaskFailed",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Used by workers to tell the service that the ActivityTask identified by the taskToken\n                                                has failed with reason (if specified).",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -359,6 +467,9 @@
     },
     "RespondDecisionTaskCompleted": {
       "name": "RespondDecisionTaskCompleted",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Used by deciders to tell the service that the DecisionTask identified by the taskToken\n                                                has successfully completed.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -369,6 +480,9 @@
     },
     "ScheduleActivityTask": {
       "name": "ScheduleActivityTask",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Description for ScheduleActivityTask",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -379,6 +493,9 @@
     },
     "SignalExternalWorkflowExecution": {
       "name": "SignalExternalWorkflowExecution",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Description for SignalExternalWorkflowExecution",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -389,6 +506,9 @@
     },
     "SignalWorkflowExecution": {
       "name": "SignalWorkflowExecution",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Records a WorkflowExecutionSignaled event in the workflow execution history and creates\n                                                a decision task for the workflow execution identified by the given domain, workflowId\n                                                and runId.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -399,6 +519,9 @@
     },
     "StartChildWorkflowExecution": {
       "name": "StartChildWorkflowExecution",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Description for StartChildWorkflowExecution",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -409,6 +532,9 @@
     },
     "StartTimer": {
       "name": "StartTimer",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Description for StartTimer",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -419,6 +545,9 @@
     },
     "StartWorkflowExecution": {
       "name": "StartWorkflowExecution",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Starts an execution of the workflow type in the specified domain using the provided\n                                                workflowId and input data.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -429,6 +558,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "This action tags an AWS SWF resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -439,6 +571,9 @@
     },
     "TerminateWorkflowExecution": {
       "name": "TerminateWorkflowExecution",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "Records a WorkflowExecutionTerminated event and forces closure of the workflow execution\n                                                identified by the given domain, runId, and workflowId.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -449,6 +584,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "Amazon Simple Workflow Service"
+      ],
       "description": "This action removes a tag from an AWS SWF resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [

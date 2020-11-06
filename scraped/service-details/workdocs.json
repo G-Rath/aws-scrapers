@@ -3,6 +3,9 @@
   "actions": {
     "AbortDocumentVersionUpload": {
       "name": "AbortDocumentVersionUpload",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to abort the upload of the specified document version that was previously\n                                                initiated by InitiateDocumentVersionUpload.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "ActivateUser": {
       "name": "ActivateUser",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to activate the specified user. Only active users can access Amazon\n                                                WorkDocs.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -19,6 +25,9 @@
     },
     "AddResourcePermissions": {
       "name": "AddResourcePermissions",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to create a set of permissions for the specified folder or document.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -27,6 +36,9 @@
     },
     "AddUserToGroup": {
       "name": "AddUserToGroup",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to add a user to a group.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -35,6 +47,9 @@
     },
     "CheckAlias": {
       "name": "CheckAlias",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to check an alias.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -43,6 +58,9 @@
     },
     "CreateComment": {
       "name": "CreateComment",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to add a new comment to the specified document version.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -51,6 +69,9 @@
     },
     "CreateCustomMetadata": {
       "name": "CreateCustomMetadata",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to add one or more custom properties to the specified resource.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -59,6 +80,9 @@
     },
     "CreateFolder": {
       "name": "CreateFolder",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to create a folder with the specified name and parent folder.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -67,6 +91,9 @@
     },
     "CreateInstance": {
       "name": "CreateInstance",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to create an instance.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -75,6 +102,9 @@
     },
     "CreateLabels": {
       "name": "CreateLabels",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to add labels to the given resource.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -83,6 +113,9 @@
     },
     "CreateNotificationSubscription": {
       "name": "CreateNotificationSubscription",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to configure WorkDocs to use Amazon SNS notifications.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -91,6 +124,9 @@
     },
     "CreateUser": {
       "name": "CreateUser",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to create a user in a Simple AD or Microsoft AD directory.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -99,6 +135,9 @@
     },
     "DeactivateUser": {
       "name": "DeactivateUser",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to deactivate the specified user, which revokes the user's access\n                                                to Amazon WorkDocs.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -107,6 +146,9 @@
     },
     "DeleteComment": {
       "name": "DeleteComment",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to delete the specified comment from the document version.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -115,6 +157,9 @@
     },
     "DeleteCustomMetadata": {
       "name": "DeleteCustomMetadata",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to delete custom metadata from the specified resource.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -123,6 +168,9 @@
     },
     "DeleteDocument": {
       "name": "DeleteDocument",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to permanently delete the specified document and its associated\n                                                metadata.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -131,6 +179,9 @@
     },
     "DeleteFolder": {
       "name": "DeleteFolder",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to permanently delete the specified folder and its contents.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -139,6 +190,9 @@
     },
     "DeleteFolderContents": {
       "name": "DeleteFolderContents",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to delete the contents of the specified folder.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -147,6 +201,9 @@
     },
     "DeleteInstance": {
       "name": "DeleteInstance",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to delete an instance.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -155,6 +212,9 @@
     },
     "DeleteLabels": {
       "name": "DeleteLabels",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to delete one or more labels from a resource.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -163,6 +223,9 @@
     },
     "DeleteNotificationSubscription": {
       "name": "DeleteNotificationSubscription",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to delete the specified subscription from the specified organization.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -171,6 +234,9 @@
     },
     "DeleteUser": {
       "name": "DeleteUser",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to delete the specified user from a Simple AD or Microsoft AD directory.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -179,6 +245,9 @@
     },
     "DeregisterDirectory": {
       "name": "DeregisterDirectory",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to deregister a directory.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -187,6 +256,9 @@
     },
     "DescribeActivities": {
       "name": "DescribeActivities",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to fetch user activities in a specified time period.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -195,6 +267,9 @@
     },
     "DescribeAvailableDirectories": {
       "name": "DescribeAvailableDirectories",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to describe available directories.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -203,6 +278,9 @@
     },
     "DescribeComments": {
       "name": "DescribeComments",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to list all the comments for the specified document version.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -211,6 +289,9 @@
     },
     "DescribeDocumentVersions": {
       "name": "DescribeDocumentVersions",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to retrieve the document versions for the specified document.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -219,6 +300,9 @@
     },
     "DescribeFolderContents": {
       "name": "DescribeFolderContents",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to describe the contents of the specified folder, including its\n                                                documents and sub-folders.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -227,6 +311,9 @@
     },
     "DescribeGroups": {
       "name": "DescribeGroups",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to describe the user groups.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -235,6 +322,9 @@
     },
     "DescribeInstances": {
       "name": "DescribeInstances",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to describe instances.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -243,6 +333,9 @@
     },
     "DescribeNotificationSubscriptions": {
       "name": "DescribeNotificationSubscriptions",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to list the specified notification subscriptions.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -251,6 +344,9 @@
     },
     "DescribeResourcePermissions": {
       "name": "DescribeResourcePermissions",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to view a description of a specified resource's permissions.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -259,6 +355,9 @@
     },
     "DescribeRootFolders": {
       "name": "DescribeRootFolders",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to describe the root folders.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -267,6 +366,9 @@
     },
     "DescribeUsers": {
       "name": "DescribeUsers",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to view a description of the specified users. You can describe all\n                                                users or filter the results (for example, by status or organization).",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -275,6 +377,9 @@
     },
     "DownloadDocumentVersion": {
       "name": "DownloadDocumentVersion",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to download a specified document version.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -283,6 +388,9 @@
     },
     "GetCurrentUser": {
       "name": "GetCurrentUser",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to retrieve the details of the current user.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -291,6 +399,9 @@
     },
     "GetDocument": {
       "name": "GetDocument",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to retrieve the specified document object.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -299,6 +410,9 @@
     },
     "GetDocumentPath": {
       "name": "GetDocumentPath",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to retrieve the path information (the hierarchy from the root folder)\n                                                for the requested document.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -307,6 +421,9 @@
     },
     "GetDocumentVersion": {
       "name": "GetDocumentVersion",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to retrieve version metadata for the specified document.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -315,6 +432,9 @@
     },
     "GetFolder": {
       "name": "GetFolder",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to retrieve the metadata of the specified folder.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -323,6 +443,9 @@
     },
     "GetFolderPath": {
       "name": "GetFolderPath",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to retrieve the path information (the hierarchy from the root folder)\n                                                for the specified folder.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -331,6 +454,9 @@
     },
     "GetResources": {
       "name": "GetResources",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to get a collection of resources.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -339,6 +465,9 @@
     },
     "InitiateDocumentVersionUpload": {
       "name": "InitiateDocumentVersionUpload",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to create a new document object and version object.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -347,6 +476,9 @@
     },
     "RegisterDirectory": {
       "name": "RegisterDirectory",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to register a directory.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -355,6 +487,9 @@
     },
     "RemoveAllResourcePermissions": {
       "name": "RemoveAllResourcePermissions",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to remove all the permissions from the specified resource.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -363,6 +498,9 @@
     },
     "RemoveResourcePermission": {
       "name": "RemoveResourcePermission",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to remove the permission for the specified principal from the specified\n                                                resource.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -371,6 +509,9 @@
     },
     "UpdateDocument": {
       "name": "UpdateDocument",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to update the specified attributes of the specified document.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -379,6 +520,9 @@
     },
     "UpdateDocumentVersion": {
       "name": "UpdateDocumentVersion",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to change the status of the document version to ACTIVE.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -387,6 +531,9 @@
     },
     "UpdateFolder": {
       "name": "UpdateFolder",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to update the specified attributes of the specified folder.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -395,6 +542,9 @@
     },
     "UpdateInstanceAlias": {
       "name": "UpdateInstanceAlias",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to update an instance alias.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -403,6 +553,9 @@
     },
     "UpdateUser": {
       "name": "UpdateUser",
+      "topics": [
+        "Amazon WorkDocs"
+      ],
       "description": "Grants permission to update the specified attributes of the specified user, and grants\n                                                or revokes administrative privileges to the Amazon WorkDocs site.",
       "accessLevel": "Write",
       "resourceTypes": [],

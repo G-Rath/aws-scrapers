@@ -3,6 +3,9 @@
   "actions": {
     "CreateActivity": {
       "name": "CreateActivity",
+      "topics": [
+        "AWS Step Functions"
+      ],
       "description": "Creates an activity. Activities must poll Step Functions using the GetActivityTask\n                                                and respond using SendTask* API calls.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "CreateStateMachine": {
       "name": "CreateStateMachine",
+      "topics": [
+        "AWS Step Functions"
+      ],
       "description": "Creates a state machine.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "DeleteActivity": {
       "name": "DeleteActivity",
+      "topics": [
+        "AWS Step Functions"
+      ],
       "description": "Deletes an activity.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "DeleteStateMachine": {
       "name": "DeleteStateMachine",
+      "topics": [
+        "AWS Step Functions"
+      ],
       "description": "Deletes a state machine.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "DescribeActivity": {
       "name": "DescribeActivity",
+      "topics": [
+        "AWS Step Functions"
+      ],
       "description": "Describes an activity.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "DescribeExecution": {
       "name": "DescribeExecution",
+      "topics": [
+        "AWS Step Functions"
+      ],
       "description": "Describes an execution.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "DescribeStateMachine": {
       "name": "DescribeStateMachine",
+      "topics": [
+        "AWS Step Functions"
+      ],
       "description": "Describes a state machine.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "DescribeStateMachineForExecution": {
       "name": "DescribeStateMachineForExecution",
+      "topics": [
+        "AWS Step Functions"
+      ],
       "description": "Describes state machine for an execution.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "GetActivityTask": {
       "name": "GetActivityTask",
+      "topics": [
+        "AWS Step Functions"
+      ],
       "description": "Used by workers to retrieve a task (with the specified activity ARN) which has been\n                                                scheduled for execution by a running state machine.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "GetExecutionHistory": {
       "name": "GetExecutionHistory",
+      "topics": [
+        "AWS Step Functions"
+      ],
       "description": "Returns the history of the specified execution as a list of events. By default, the\n                                                results are returned in ascending order of the timeStamp of the events.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "ListActivities": {
       "name": "ListActivities",
+      "topics": [
+        "AWS Step Functions"
+      ],
       "description": "Lists the existing activities. The results may be split into multiple pages.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -111,6 +144,9 @@
     },
     "ListExecutions": {
       "name": "ListExecutions",
+      "topics": [
+        "AWS Step Functions"
+      ],
       "description": "Lists the executions of a state machine that meet the filtering criteria. The results\n                                                may be split into multiple pages.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -121,6 +157,9 @@
     },
     "ListStateMachines": {
       "name": "ListStateMachines",
+      "topics": [
+        "AWS Step Functions"
+      ],
       "description": "Lists the existing state machines. The results may be split into multiple pages.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -129,6 +168,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "AWS Step Functions"
+      ],
       "description": "This action lists tags for an AWS Step Functions resource.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -139,6 +181,9 @@
     },
     "SendTaskFailure": {
       "name": "SendTaskFailure",
+      "topics": [
+        "AWS Step Functions"
+      ],
       "description": "Used by workers to report that the task identified by the taskToken failed.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -147,6 +192,9 @@
     },
     "SendTaskHeartbeat": {
       "name": "SendTaskHeartbeat",
+      "topics": [
+        "AWS Step Functions"
+      ],
       "description": "Used by workers to report to the service that the task represented by the specified\n                                                taskToken is still making progress.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -155,6 +203,9 @@
     },
     "SendTaskSuccess": {
       "name": "SendTaskSuccess",
+      "topics": [
+        "AWS Step Functions"
+      ],
       "description": "Used by workers to report that the task identified by the taskToken completed successfully.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -163,6 +214,9 @@
     },
     "StartExecution": {
       "name": "StartExecution",
+      "topics": [
+        "AWS Step Functions"
+      ],
       "description": "Starts a state machine execution.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -173,6 +227,9 @@
     },
     "StopExecution": {
       "name": "StopExecution",
+      "topics": [
+        "AWS Step Functions"
+      ],
       "description": "Stops an execution.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -183,6 +240,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS Step Functions"
+      ],
       "description": "This action tags an AWS Step Functions resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -193,6 +253,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS Step Functions"
+      ],
       "description": "This action removes a tag from an AWS Step Functions resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -203,6 +266,9 @@
     },
     "UpdateStateMachine": {
       "name": "UpdateStateMachine",
+      "topics": [
+        "AWS Step Functions"
+      ],
       "description": "Updates a state machine.",
       "accessLevel": "Write",
       "resourceTypes": [

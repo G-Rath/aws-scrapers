@@ -3,6 +3,9 @@
   "actions": {
     "CancelCluster": {
       "name": "CancelCluster",
+      "topics": [
+        "AWS Snowball"
+      ],
       "description": "Cancels a cluster job.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "CancelJob": {
       "name": "CancelJob",
+      "topics": [
+        "AWS Snowball"
+      ],
       "description": "Cancels the specified job.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -19,6 +25,9 @@
     },
     "CreateAddress": {
       "name": "CreateAddress",
+      "topics": [
+        "AWS Snowball"
+      ],
       "description": "Creates an address for a Snowball to be shipped to.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -27,6 +36,9 @@
     },
     "CreateCluster": {
       "name": "CreateCluster",
+      "topics": [
+        "AWS Snowball"
+      ],
       "description": "Creates an empty cluster.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -35,6 +47,9 @@
     },
     "CreateJob": {
       "name": "CreateJob",
+      "topics": [
+        "AWS Snowball"
+      ],
       "description": "Creates a job to import or export data between Amazon S3 and your on-premises data\n                                                center.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -43,6 +58,9 @@
     },
     "DescribeAddress": {
       "name": "DescribeAddress",
+      "topics": [
+        "AWS Snowball"
+      ],
       "description": "Takes an AddressId and returns specific details about that address in the form of\n                                                an Address object.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -51,6 +69,9 @@
     },
     "DescribeAddresses": {
       "name": "DescribeAddresses",
+      "topics": [
+        "AWS Snowball"
+      ],
       "description": "Returns a specified number of ADDRESS objects.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -59,6 +80,9 @@
     },
     "DescribeCluster": {
       "name": "DescribeCluster",
+      "topics": [
+        "AWS Snowball"
+      ],
       "description": "Returns information about a specific cluster including shipping information, cluster\n                                                status, and other important metadata.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -67,6 +91,9 @@
     },
     "DescribeJob": {
       "name": "DescribeJob",
+      "topics": [
+        "AWS Snowball"
+      ],
       "description": "Returns information about a specific job including shipping information, job status,\n                                                and other important metadata.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -75,6 +102,9 @@
     },
     "GetJobManifest": {
       "name": "GetJobManifest",
+      "topics": [
+        "AWS Snowball"
+      ],
       "description": "Returns a link to an Amazon S3 presigned URL for the manifest file associated with\n                                                the specified JobId value.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -83,6 +113,9 @@
     },
     "GetJobUnlockCode": {
       "name": "GetJobUnlockCode",
+      "topics": [
+        "AWS Snowball"
+      ],
       "description": "Returns the UnlockCode code value for the specified job.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -91,6 +124,9 @@
     },
     "GetSnowballUsage": {
       "name": "GetSnowballUsage",
+      "topics": [
+        "AWS Snowball"
+      ],
       "description": "Returns information about the Snowball service limit for your account, and also the\n                                                number of Snowballs your account has in use.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -99,6 +135,9 @@
     },
     "ListClusterJobs": {
       "name": "ListClusterJobs",
+      "topics": [
+        "AWS Snowball"
+      ],
       "description": "Returns an array of JobListEntry objects of the specified length.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -107,6 +146,9 @@
     },
     "ListClusters": {
       "name": "ListClusters",
+      "topics": [
+        "AWS Snowball"
+      ],
       "description": "Returns an array of ClusterListEntry objects of the specified length.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -115,6 +157,9 @@
     },
     "ListJobs": {
       "name": "ListJobs",
+      "topics": [
+        "AWS Snowball"
+      ],
       "description": "Returns an array of JobListEntry objects of the specified length.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -123,6 +168,9 @@
     },
     "UpdateCluster": {
       "name": "UpdateCluster",
+      "topics": [
+        "AWS Snowball"
+      ],
       "description": "While a cluster's ClusterState value is in the AwaitingQuorum state, you can update\n                                                some of the information associated with a cluster.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -131,6 +179,9 @@
     },
     "UpdateJob": {
       "name": "UpdateJob",
+      "topics": [
+        "AWS Snowball"
+      ],
       "description": "While a job's JobState value is New, you can update some of the information associated\n                                                with a job.",
       "accessLevel": "Write",
       "resourceTypes": [],

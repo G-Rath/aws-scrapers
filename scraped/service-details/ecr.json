@@ -3,6 +3,9 @@
   "actions": {
     "BatchCheckLayerAvailability": {
       "name": "BatchCheckLayerAvailability",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to check the availability of multiple image layers in a specified\n                                                registry and repository",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "BatchDeleteImage": {
       "name": "BatchDeleteImage",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to delete a list of specified images within a specified repository",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "BatchGetImage": {
       "name": "BatchGetImage",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to get detailed information for specified images within a specified\n                                                repository",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "CompleteLayerUpload": {
       "name": "CompleteLayerUpload",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to inform Amazon ECR that the image layer upload for a specified\n                                                registry, repository name, and upload ID, has completed",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "CreateRepository": {
       "name": "CreateRepository",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to create an image repository",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "DeleteLifecyclePolicy": {
       "name": "DeleteLifecyclePolicy",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to delete the specified lifecycle policy",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "DeleteRepository": {
       "name": "DeleteRepository",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to delete an existing image repository",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "DeleteRepositoryPolicy": {
       "name": "DeleteRepositoryPolicy",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to delete the repository policy from a specified repository",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "DescribeImageScanFindings": {
       "name": "DescribeImageScanFindings",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to describe the image scan findings for the specified image",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "DescribeImages": {
       "name": "DescribeImages",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to get metadata about the images in a repository, including image\n                                                size, image tags, and creation date",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "DescribeRepositories": {
       "name": "DescribeRepositories",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to describe image repositories in a registry",
       "accessLevel": "List",
       "resourceTypes": [
@@ -113,6 +146,9 @@
     },
     "GetAuthorizationToken": {
       "name": "GetAuthorizationToken",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to retrieve a token that is valid for a specified registry for 12\n                                                hours",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -121,6 +157,9 @@
     },
     "GetDownloadUrlForLayer": {
       "name": "GetDownloadUrlForLayer",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to retrieve the download URL corresponding to an image layer",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -131,6 +170,9 @@
     },
     "GetLifecyclePolicy": {
       "name": "GetLifecyclePolicy",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to retrieve the specified lifecycle policy",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -141,6 +183,9 @@
     },
     "GetLifecyclePolicyPreview": {
       "name": "GetLifecyclePolicyPreview",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to retrieve the results of the specified lifecycle policy preview\n                                                request",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -151,6 +196,9 @@
     },
     "GetRepositoryPolicy": {
       "name": "GetRepositoryPolicy",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to retrieve the repository policy for a specified repository",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -161,6 +209,9 @@
     },
     "InitiateLayerUpload": {
       "name": "InitiateLayerUpload",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to notify Amazon ECR that you intend to upload an image layer",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -171,6 +222,9 @@
     },
     "ListImages": {
       "name": "ListImages",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to list all the image IDs for a given repository",
       "accessLevel": "List",
       "resourceTypes": [
@@ -181,6 +235,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to list the tags for an Amazon ECR resource",
       "accessLevel": "List",
       "resourceTypes": [
@@ -191,6 +248,9 @@
     },
     "PutImage": {
       "name": "PutImage",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to create or update the image manifest associated with an image",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -201,6 +261,9 @@
     },
     "PutImageScanningConfiguration": {
       "name": "PutImageScanningConfiguration",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to update the image scanning configuration for a repository",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -211,6 +274,9 @@
     },
     "PutImageTagMutability": {
       "name": "PutImageTagMutability",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to update the image tag mutability settings for a repository",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -221,6 +287,9 @@
     },
     "PutLifecyclePolicy": {
       "name": "PutLifecyclePolicy",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to create or update a lifecycle policy",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -231,6 +300,9 @@
     },
     "SetRepositoryPolicy": {
       "name": "SetRepositoryPolicy",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to apply a repository policy on a specified repository to control\n                                                access permissions",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -241,6 +313,9 @@
     },
     "StartImageScan": {
       "name": "StartImageScan",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to start an image scan",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -251,6 +326,9 @@
     },
     "StartLifecyclePolicyPreview": {
       "name": "StartLifecyclePolicyPreview",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to start a preview of the specified lifecycle policy",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -261,6 +339,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to tag an Amazon ECR resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -271,6 +352,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to untag an Amazon ECR resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -281,6 +365,9 @@
     },
     "UploadLayerPart": {
       "name": "UploadLayerPart",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
       "description": "Grants permission to upload an image layer part to Amazon ECR",
       "accessLevel": "Write",
       "resourceTypes": [

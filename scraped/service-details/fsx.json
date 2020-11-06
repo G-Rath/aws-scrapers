@@ -3,6 +3,9 @@
   "actions": {
     "CancelDataRepositoryTask": {
       "name": "CancelDataRepositoryTask",
+      "topics": [
+        "Amazon FSx"
+      ],
       "description": "This action cancels a data repository task",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "CreateBackup": {
       "name": "CreateBackup",
+      "topics": [
+        "Amazon FSx"
+      ],
       "description": "This action creates a new backup.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "CreateDataRepositoryTask": {
       "name": "CreateDataRepositoryTask",
+      "topics": [
+        "Amazon FSx"
+      ],
       "description": "This action creates a new task.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "CreateFileSystem": {
       "name": "CreateFileSystem",
+      "topics": [
+        "Amazon FSx"
+      ],
       "description": "This action creates a new, empty, Amazon FSx file system",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "CreateFileSystemFromBackup": {
       "name": "CreateFileSystemFromBackup",
+      "topics": [
+        "Amazon FSx"
+      ],
       "description": "This action creates a new Amazon FSx file system from an existing backup.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "DeleteBackup": {
       "name": "DeleteBackup",
+      "topics": [
+        "Amazon FSx"
+      ],
       "description": "This action deletes a backup, deleting its contents. After deletion, the backup no\n                                                longer exists, and its data is gone.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "DeleteFileSystem": {
       "name": "DeleteFileSystem",
+      "topics": [
+        "Amazon FSx"
+      ],
       "description": "This action deletes a file system, deleting its contents.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "DescribeBackups": {
       "name": "DescribeBackups",
+      "topics": [
+        "Amazon FSx"
+      ],
       "description": "This action returns the description of specific Amazon FSx backups, if one or more\n                                                BackupIds are provided for that backup. Otherwise, it returns all backups owned by\n                                                your AWS account in the AWS Region of the endpoint that you're calling.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -81,6 +105,9 @@
     },
     "DescribeDataRepositoryTasks": {
       "name": "DescribeDataRepositoryTasks",
+      "topics": [
+        "Amazon FSx"
+      ],
       "description": "This action returns the description of specific Amazon FSx data repository task, if\n                                                one or more TaskIds are provided for that data repository task. Otherwise, it returns\n                                                all data repository task owned by your AWS account in the AWS Region of the endpoint\n                                                that you're calling.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -89,6 +116,9 @@
     },
     "DescribeFileSystems": {
       "name": "DescribeFileSystems",
+      "topics": [
+        "Amazon FSx"
+      ],
       "description": "This action returns the description of specific Amazon FSx file systems, if a FileSystemIds\n                                                value is provided for that file system. Otherwise, it returns descriptions of all\n                                                file systems owned by your AWS account in the AWS Region of the endpoint that you're\n                                                calling.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -97,6 +127,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "Amazon FSx"
+      ],
       "description": "This action lists tags for an Amazon FSx resource.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -107,6 +140,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "Amazon FSx"
+      ],
       "description": "This action tags an Amazon FSx resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -117,6 +153,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "Amazon FSx"
+      ],
       "description": "This action removes a tag from an Amazon FSx resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -127,6 +166,9 @@
     },
     "UpdateFileSystem": {
       "name": "UpdateFileSystem",
+      "topics": [
+        "Amazon FSx"
+      ],
       "description": "This action updates file system configuration.",
       "accessLevel": "Write",
       "resourceTypes": [

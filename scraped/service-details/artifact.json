@@ -3,6 +3,9 @@
   "actions": {
     "AcceptAgreement": {
       "name": "AcceptAgreement",
+      "topics": [
+        "AWS Artifact"
+      ],
       "description": "Grants permission to accept an AWS agreement that has not yet been accepted by the\n                                                customer account.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "DownloadAgreement": {
       "name": "DownloadAgreement",
+      "topics": [
+        "AWS Artifact"
+      ],
       "description": "Grants permission to download an AWS agreement that has not yet been accepted or a\n                                                customer agreement that has been accepted by the customer account.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "Get": {
       "name": "Get",
+      "topics": [
+        "AWS Artifact"
+      ],
       "description": "Grants permission to download an AWS compliance report package.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "TerminateAgreement": {
       "name": "TerminateAgreement",
+      "topics": [
+        "AWS Artifact"
+      ],
       "description": "Grants permission to terminate a customer agreement that was previously accepted by\n                                                the customer account.",
       "accessLevel": "Write",
       "resourceTypes": [

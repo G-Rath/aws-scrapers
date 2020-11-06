@@ -3,6 +3,9 @@
   "actions": {
     "AttachInstances": {
       "name": "AttachInstances",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Attaches one or more EC2 instances to the specified Auto Scaling group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "AttachLoadBalancerTargetGroups": {
       "name": "AttachLoadBalancerTargetGroups",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Attaches one or more target groups to the specified Auto Scaling group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "AttachLoadBalancers": {
       "name": "AttachLoadBalancers",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Attaches one or more load balancers to the specified Auto Scaling group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "BatchDeleteScheduledAction": {
       "name": "BatchDeleteScheduledAction",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Deletes the specified scheduled actions.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "BatchPutScheduledUpdateGroupAction": {
       "name": "BatchPutScheduledUpdateGroupAction",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Creates or updates multiple scheduled scaling actions for an Auto Scaling group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "CancelInstanceRefresh": {
       "name": "CancelInstanceRefresh",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Grants permission to cancel an instance refresh operation in progress",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "CompleteLifecycleAction": {
       "name": "CompleteLifecycleAction",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Completes the lifecycle action for the specified token or instance with the specified\n                                                result.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "CreateAutoScalingGroup": {
       "name": "CreateAutoScalingGroup",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Creates an Auto Scaling group with the specified name and attributes.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "CreateLaunchConfiguration": {
       "name": "CreateLaunchConfiguration",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Creates a launch configuration.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "CreateOrUpdateTags": {
       "name": "CreateOrUpdateTags",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Creates or updates tags for the specified Auto Scaling group.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "DeleteAutoScalingGroup": {
       "name": "DeleteAutoScalingGroup",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Deletes the specified Auto Scaling group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -113,6 +146,9 @@
     },
     "DeleteLaunchConfiguration": {
       "name": "DeleteLaunchConfiguration",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Deletes the specified launch configuration.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -123,6 +159,9 @@
     },
     "DeleteLifecycleHook": {
       "name": "DeleteLifecycleHook",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Deletes the specified lifecycle hook.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -133,6 +172,9 @@
     },
     "DeleteNotificationConfiguration": {
       "name": "DeleteNotificationConfiguration",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Deletes the specified notification.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -143,6 +185,9 @@
     },
     "DeletePolicy": {
       "name": "DeletePolicy",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Deletes the specified Auto Scaling policy.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -153,6 +198,9 @@
     },
     "DeleteScheduledAction": {
       "name": "DeleteScheduledAction",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Deletes the specified scheduled action.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -163,6 +211,9 @@
     },
     "DeleteTags": {
       "name": "DeleteTags",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Deletes the specified tags.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -173,6 +224,9 @@
     },
     "DescribeAccountLimits": {
       "name": "DescribeAccountLimits",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Describes the current Auto Scaling resource limits for your AWS account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -181,6 +235,9 @@
     },
     "DescribeAdjustmentTypes": {
       "name": "DescribeAdjustmentTypes",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Describes the policy adjustment types for use with PutScalingPolicy.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -189,6 +246,9 @@
     },
     "DescribeAutoScalingGroups": {
       "name": "DescribeAutoScalingGroups",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Describes one or more Auto Scaling groups. If a list of names is not provided, the\n                                                call describes all Auto Scaling groups.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -197,6 +257,9 @@
     },
     "DescribeAutoScalingInstances": {
       "name": "DescribeAutoScalingInstances",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Describes one or more Auto Scaling instances. If a list is not provided, the call\n                                                describes all instances.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -205,6 +268,9 @@
     },
     "DescribeAutoScalingNotificationTypes": {
       "name": "DescribeAutoScalingNotificationTypes",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Describes the notification types that are supported by Auto Scaling.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -213,6 +279,9 @@
     },
     "DescribeInstanceRefreshes": {
       "name": "DescribeInstanceRefreshes",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Grants permission to describe one or more instance refreshes for an Auto Scaling group",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -221,6 +290,9 @@
     },
     "DescribeLaunchConfigurations": {
       "name": "DescribeLaunchConfigurations",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Describes one or more launch configurations. If you omit the list of names, then the\n                                                call describes all launch configurations.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -229,6 +301,9 @@
     },
     "DescribeLifecycleHookTypes": {
       "name": "DescribeLifecycleHookTypes",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Describes the available types of lifecycle hooks.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -237,6 +312,9 @@
     },
     "DescribeLifecycleHooks": {
       "name": "DescribeLifecycleHooks",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Describes the lifecycle hooks for the specified Auto Scaling group.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -245,6 +323,9 @@
     },
     "DescribeLoadBalancerTargetGroups": {
       "name": "DescribeLoadBalancerTargetGroups",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Describes the target groups for the specified Auto Scaling group.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -253,6 +334,9 @@
     },
     "DescribeLoadBalancers": {
       "name": "DescribeLoadBalancers",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Describes the load balancers for the specified Auto Scaling group.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -261,6 +345,9 @@
     },
     "DescribeMetricCollectionTypes": {
       "name": "DescribeMetricCollectionTypes",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Describes the available CloudWatch metrics for Auto Scaling.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -269,6 +356,9 @@
     },
     "DescribeNotificationConfigurations": {
       "name": "DescribeNotificationConfigurations",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Describes the notification actions associated with the specified Auto Scaling group.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -277,6 +367,9 @@
     },
     "DescribePolicies": {
       "name": "DescribePolicies",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Describes the policies for the specified Auto Scaling group.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -285,6 +378,9 @@
     },
     "DescribeScalingActivities": {
       "name": "DescribeScalingActivities",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Describes one or more scaling activities for the specified Auto Scaling group.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -293,6 +389,9 @@
     },
     "DescribeScalingProcessTypes": {
       "name": "DescribeScalingProcessTypes",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Describes the scaling process types for use with ResumeProcesses and SuspendProcesses.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -301,6 +400,9 @@
     },
     "DescribeScheduledActions": {
       "name": "DescribeScheduledActions",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Describes the actions scheduled for your Auto Scaling group that haven't run.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -309,6 +411,9 @@
     },
     "DescribeTags": {
       "name": "DescribeTags",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Describes the specified tags.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -317,6 +422,9 @@
     },
     "DescribeTerminationPolicyTypes": {
       "name": "DescribeTerminationPolicyTypes",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Describes the termination policies supported by Auto Scaling.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -325,6 +433,9 @@
     },
     "DetachInstances": {
       "name": "DetachInstances",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Removes one or more instances from the specified Auto Scaling group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -335,6 +446,9 @@
     },
     "DetachLoadBalancerTargetGroups": {
       "name": "DetachLoadBalancerTargetGroups",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Detaches one or more target groups from the specified Auto Scaling group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -345,6 +459,9 @@
     },
     "DetachLoadBalancers": {
       "name": "DetachLoadBalancers",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Removes one or more load balancers from the specified Auto Scaling group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -355,6 +472,9 @@
     },
     "DisableMetricsCollection": {
       "name": "DisableMetricsCollection",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Disables monitoring of the specified metrics for the specified Auto Scaling group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -365,6 +485,9 @@
     },
     "EnableMetricsCollection": {
       "name": "EnableMetricsCollection",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Enables monitoring of the specified metrics for the specified Auto Scaling group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -375,6 +498,9 @@
     },
     "EnterStandby": {
       "name": "EnterStandby",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Moves the specified instances into Standby mode.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -385,6 +511,9 @@
     },
     "ExecutePolicy": {
       "name": "ExecutePolicy",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Executes the specified policy.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -395,6 +524,9 @@
     },
     "ExitStandby": {
       "name": "ExitStandby",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Moves the specified instances out of Standby mode.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -405,6 +537,9 @@
     },
     "PutLifecycleHook": {
       "name": "PutLifecycleHook",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Creates or updates a lifecycle hook for the specified Auto Scaling Group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -415,6 +550,9 @@
     },
     "PutNotificationConfiguration": {
       "name": "PutNotificationConfiguration",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Configures an Auto Scaling group to send notifications when specified events take\n                                                place.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -425,6 +563,9 @@
     },
     "PutScalingPolicy": {
       "name": "PutScalingPolicy",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Creates or updates a policy for an Auto Scaling group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -435,6 +576,9 @@
     },
     "PutScheduledUpdateGroupAction": {
       "name": "PutScheduledUpdateGroupAction",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Creates or updates a scheduled scaling action for an Auto Scaling group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -445,6 +589,9 @@
     },
     "RecordLifecycleActionHeartbeat": {
       "name": "RecordLifecycleActionHeartbeat",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Records a heartbeat for the lifecycle action associated with the specified token or\n                                                instance.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -455,6 +602,9 @@
     },
     "ResumeProcesses": {
       "name": "ResumeProcesses",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Resumes the specified suspended Auto Scaling processes, or all suspended process,\n                                                for the specified Auto Scaling group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -465,6 +615,9 @@
     },
     "SetDesiredCapacity": {
       "name": "SetDesiredCapacity",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Sets the size of the specified Auto Scaling group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -475,6 +628,9 @@
     },
     "SetInstanceHealth": {
       "name": "SetInstanceHealth",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Sets the health status of the specified instance.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -485,6 +641,9 @@
     },
     "SetInstanceProtection": {
       "name": "SetInstanceProtection",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Updates the instance protection settings of the specified instances.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -495,6 +654,9 @@
     },
     "StartInstanceRefresh": {
       "name": "StartInstanceRefresh",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Grants permission to start a new instance refresh operation",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -505,6 +667,9 @@
     },
     "SuspendProcesses": {
       "name": "SuspendProcesses",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Suspends the specified Auto Scaling processes, or all processes, for the specified\n                                                Auto Scaling group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -515,6 +680,9 @@
     },
     "TerminateInstanceInAutoScalingGroup": {
       "name": "TerminateInstanceInAutoScalingGroup",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Terminates the specified instance and optionally adjusts the desired group size.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -525,6 +693,9 @@
     },
     "UpdateAutoScalingGroup": {
       "name": "UpdateAutoScalingGroup",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
       "description": "Updates the configuration for the specified Auto Scaling group.",
       "accessLevel": "Write",
       "resourceTypes": [

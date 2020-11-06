@@ -3,6 +3,9 @@
   "actions": {
     "CreateApplication": {
       "name": "CreateApplication",
+      "topics": [
+        "AWS Serverless Application Repository"
+      ],
       "description": "Creates an application, optionally including an AWS SAM file to create the first application\n                                                version in the same call.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "CreateApplicationVersion": {
       "name": "CreateApplicationVersion",
+      "topics": [
+        "AWS Serverless Application Repository"
+      ],
       "description": "Creates an application version.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -21,6 +27,9 @@
     },
     "CreateCloudFormationChangeSet": {
       "name": "CreateCloudFormationChangeSet",
+      "topics": [
+        "AWS Serverless Application Repository"
+      ],
       "description": "Creates an AWS CloudFormation ChangeSet for the given application.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -31,6 +40,9 @@
     },
     "CreateCloudFormationTemplate": {
       "name": "CreateCloudFormationTemplate",
+      "topics": [
+        "AWS Serverless Application Repository"
+      ],
       "description": "Creates an AWS CloudFormation template",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -41,6 +53,9 @@
     },
     "DeleteApplication": {
       "name": "DeleteApplication",
+      "topics": [
+        "AWS Serverless Application Repository"
+      ],
       "description": "Deletes the specified application",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -51,6 +66,9 @@
     },
     "GetApplication": {
       "name": "GetApplication",
+      "topics": [
+        "AWS Serverless Application Repository"
+      ],
       "description": "Gets the specified application.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -61,6 +79,9 @@
     },
     "GetApplicationPolicy": {
       "name": "GetApplicationPolicy",
+      "topics": [
+        "AWS Serverless Application Repository"
+      ],
       "description": "Gets the policy for the specified application.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -71,6 +92,9 @@
     },
     "GetCloudFormationTemplate": {
       "name": "GetCloudFormationTemplate",
+      "topics": [
+        "AWS Serverless Application Repository"
+      ],
       "description": "Gets the specified AWS CloudFormation template",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -81,6 +105,9 @@
     },
     "ListApplicationDependencies": {
       "name": "ListApplicationDependencies",
+      "topics": [
+        "AWS Serverless Application Repository"
+      ],
       "description": "Retrieves the list of applications nested in the containing application",
       "accessLevel": "List",
       "resourceTypes": [
@@ -91,6 +118,9 @@
     },
     "ListApplicationVersions": {
       "name": "ListApplicationVersions",
+      "topics": [
+        "AWS Serverless Application Repository"
+      ],
       "description": "Lists versions for the specified application owned by the requester.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -101,6 +131,9 @@
     },
     "ListApplications": {
       "name": "ListApplications",
+      "topics": [
+        "AWS Serverless Application Repository"
+      ],
       "description": "Lists applications owned by the requester.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -109,6 +142,9 @@
     },
     "PutApplicationPolicy": {
       "name": "PutApplicationPolicy",
+      "topics": [
+        "AWS Serverless Application Repository"
+      ],
       "description": "Puts the policy for the specified application.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -119,6 +155,9 @@
     },
     "SearchApplications": {
       "name": "SearchApplications",
+      "topics": [
+        "AWS Serverless Application Repository"
+      ],
       "description": "Gets all applications authorized for this user",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -127,6 +166,9 @@
     },
     "UnshareApplication": {
       "name": "UnshareApplication",
+      "topics": [
+        "AWS Serverless Application Repository"
+      ],
       "description": "Unshares the specified application",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -137,6 +179,9 @@
     },
     "UpdateApplication": {
       "name": "UpdateApplication",
+      "topics": [
+        "AWS Serverless Application Repository"
+      ],
       "description": "Updates meta-data of the application",
       "accessLevel": "Write",
       "resourceTypes": [

@@ -3,6 +3,9 @@
   "actions": {
     "CreateServer": {
       "name": "CreateServer",
+      "topics": [
+        "AWS Transfer for SFTP"
+      ],
       "description": "Enables the caller to create a server.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "CreateUser": {
       "name": "CreateUser",
+      "topics": [
+        "AWS Transfer for SFTP"
+      ],
       "description": "Enables the caller to add a user associated with a server.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -21,6 +27,9 @@
     },
     "DeleteServer": {
       "name": "DeleteServer",
+      "topics": [
+        "AWS Transfer for SFTP"
+      ],
       "description": "Enables the caller to delete a server.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -31,6 +40,9 @@
     },
     "DeleteSshPublicKey": {
       "name": "DeleteSshPublicKey",
+      "topics": [
+        "AWS Transfer for SFTP"
+      ],
       "description": "Enables the caller to delete an SSH public key from a user.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -41,6 +53,9 @@
     },
     "DeleteUser": {
       "name": "DeleteUser",
+      "topics": [
+        "AWS Transfer for SFTP"
+      ],
       "description": "Enables the caller to delete a user associated with a server.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -51,6 +66,9 @@
     },
     "DescribeServer": {
       "name": "DescribeServer",
+      "topics": [
+        "AWS Transfer for SFTP"
+      ],
       "description": "Enables the caller to describe a server.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -61,6 +79,9 @@
     },
     "DescribeUser": {
       "name": "DescribeUser",
+      "topics": [
+        "AWS Transfer for SFTP"
+      ],
       "description": "Enables the caller to describe a user associated with a server.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -71,6 +92,9 @@
     },
     "ImportSshPublicKey": {
       "name": "ImportSshPublicKey",
+      "topics": [
+        "AWS Transfer for SFTP"
+      ],
       "description": "Enables the caller to add an SSH public key to a user.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -81,6 +105,9 @@
     },
     "ListServers": {
       "name": "ListServers",
+      "topics": [
+        "AWS Transfer for SFTP"
+      ],
       "description": "Enables the caller to list servers",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -89,6 +116,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "AWS Transfer for SFTP"
+      ],
       "description": "Enables the caller to list tags for a server or a user.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -99,6 +129,9 @@
     },
     "ListUsers": {
       "name": "ListUsers",
+      "topics": [
+        "AWS Transfer for SFTP"
+      ],
       "description": "Enables the caller to list users associated with a server.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -109,6 +142,9 @@
     },
     "StartServer": {
       "name": "StartServer",
+      "topics": [
+        "AWS Transfer for SFTP"
+      ],
       "description": "Enables the caller to start a server.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -119,6 +155,9 @@
     },
     "StopServer": {
       "name": "StopServer",
+      "topics": [
+        "AWS Transfer for SFTP"
+      ],
       "description": "Enables the caller to stop a server.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -129,6 +168,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS Transfer for SFTP"
+      ],
       "description": "Enables the caller to tag a server or a user.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -139,6 +181,9 @@
     },
     "TestIdentityProvider": {
       "name": "TestIdentityProvider",
+      "topics": [
+        "AWS Transfer for SFTP"
+      ],
       "description": "Enables the caller to test a server's custom identity provider.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -149,6 +194,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS Transfer for SFTP"
+      ],
       "description": "Enables the caller to untag a server or a user.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -159,6 +207,9 @@
     },
     "UpdateServer": {
       "name": "UpdateServer",
+      "topics": [
+        "AWS Transfer for SFTP"
+      ],
       "description": "Enables the caller to update the configuration of a server",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -169,6 +220,9 @@
     },
     "UpdateUser": {
       "name": "UpdateUser",
+      "topics": [
+        "AWS Transfer for SFTP"
+      ],
       "description": "Enables the caller to update the configuration of a user",
       "accessLevel": "Write",
       "resourceTypes": [

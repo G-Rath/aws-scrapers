@@ -3,6 +3,9 @@
   "actions": {
     "BatchGetItem": {
       "name": "BatchGetItem",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Returns the attributes of one or more items from one or more tables",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "BatchWriteItem": {
       "name": "BatchWriteItem",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Puts or deletes multiple items in one or more tables",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "ConditionCheckItem": {
       "name": "ConditionCheckItem",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "The ConditionCheckItem operation checks the existence of a set of attributes for the\n                                                item with the given primary key",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "CreateBackup": {
       "name": "CreateBackup",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Creates a backup for an existing table",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "CreateGlobalTable": {
       "name": "CreateGlobalTable",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Enables the user to create a global table from an existing table",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "CreateTable": {
       "name": "CreateTable",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "The CreateTable operation adds a new table to your account",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "CreateTableReplica": {
       "name": "CreateTableReplica",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Adds a new replica table",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "DeleteBackup": {
       "name": "DeleteBackup",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Deletes an existing backup of a table",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "DeleteItem": {
       "name": "DeleteItem",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Deletes a single item in a table by primary key",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "DeleteTable": {
       "name": "DeleteTable",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "The DeleteTable operation deletes a table and all of its items",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "DeleteTableReplica": {
       "name": "DeleteTableReplica",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Deletes a replica table and all of its items",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -113,6 +146,9 @@
     },
     "DescribeBackup": {
       "name": "DescribeBackup",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Describes an existing backup of a table",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -123,6 +159,9 @@
     },
     "DescribeContinuousBackups": {
       "name": "DescribeContinuousBackups",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Checks the status of the backup restore settings on the specified table",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -133,6 +172,9 @@
     },
     "DescribeContributorInsights": {
       "name": "DescribeContributorInsights",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Describes the contributor insights status and related details for a given table or\n                                                global secondary index",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -143,6 +185,9 @@
     },
     "DescribeGlobalTable": {
       "name": "DescribeGlobalTable",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Returns information about the specified global table",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -153,6 +198,9 @@
     },
     "DescribeGlobalTableSettings": {
       "name": "DescribeGlobalTableSettings",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Returns settings information about the specified global table",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -163,6 +211,9 @@
     },
     "DescribeLimits": {
       "name": "DescribeLimits",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Returns the current provisioned-capacity limits for your AWS account in a region,\n                                                both for the region as a whole and for any one DynamoDB table that you create there",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -171,6 +222,9 @@
     },
     "DescribeReservedCapacity": {
       "name": "DescribeReservedCapacity",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Describes one or more of the Reserved Capacity purchased",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -179,6 +233,9 @@
     },
     "DescribeReservedCapacityOfferings": {
       "name": "DescribeReservedCapacityOfferings",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Describes Reserved Capacity offerings that are available for purchase",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -187,6 +244,9 @@
     },
     "DescribeStream": {
       "name": "DescribeStream",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Returns information about a stream, including the current status of the stream, its\n                                                Amazon Resource Name (ARN), the composition of its shards, and its corresponding DynamoDB\n                                                table",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -197,6 +257,9 @@
     },
     "DescribeTable": {
       "name": "DescribeTable",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Returns information about the table",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -207,6 +270,9 @@
     },
     "DescribeTableReplicaAutoScaling": {
       "name": "DescribeTableReplicaAutoScaling",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Describes the auto scaling settings across all replicas of the global table",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -217,6 +283,9 @@
     },
     "DescribeTimeToLive": {
       "name": "DescribeTimeToLive",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Gives a description of the Time to Live (TTL) status on the specified table.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -227,6 +296,9 @@
     },
     "GetItem": {
       "name": "GetItem",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "The GetItem operation returns a set of attributes for the item with the given primary\n                                                key",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -237,6 +309,9 @@
     },
     "GetRecords": {
       "name": "GetRecords",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Retrieves the stream records from a given shard",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -247,6 +322,9 @@
     },
     "GetShardIterator": {
       "name": "GetShardIterator",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Returns a shard iterator",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -257,6 +335,9 @@
     },
     "ListBackups": {
       "name": "ListBackups",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "List backups associated with the account and endpoint",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -265,6 +346,9 @@
     },
     "ListContributorInsights": {
       "name": "ListContributorInsights",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Lists the ContributorInsightsSummary for all tables and global secondary indexes associated\n                                                with the current account and endpoint",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -273,6 +357,9 @@
     },
     "ListGlobalTables": {
       "name": "ListGlobalTables",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Lists all global tables that have a replica in the specified region",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -281,6 +368,9 @@
     },
     "ListStreams": {
       "name": "ListStreams",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Returns an array of stream ARNs associated with the current account and endpoint",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -289,6 +379,9 @@
     },
     "ListTables": {
       "name": "ListTables",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Returns an array of table names associated with the current account and endpoint",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -297,6 +390,9 @@
     },
     "ListTagsOfResource": {
       "name": "ListTagsOfResource",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "List all tags on an Amazon DynamoDB resource",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -307,6 +403,9 @@
     },
     "PurchaseReservedCapacityOfferings": {
       "name": "PurchaseReservedCapacityOfferings",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Purchases Reserved Capacity for use with your account",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -315,6 +414,9 @@
     },
     "PutItem": {
       "name": "PutItem",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Creates a new item, or replaces an old item with a new item",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -325,6 +427,9 @@
     },
     "Query": {
       "name": "Query",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Uses the primary key of a table or a secondary index to directly access items from\n                                                that table or index",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -335,6 +440,9 @@
     },
     "RestoreTableFromBackup": {
       "name": "RestoreTableFromBackup",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Creates a new table from an existing backup",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -345,6 +453,9 @@
     },
     "RestoreTableToPointInTime": {
       "name": "RestoreTableToPointInTime",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Restores a table to a point in time",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -355,6 +466,9 @@
     },
     "Scan": {
       "name": "Scan",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Returns one or more items and item attributes by accessing every item in a table or\n                                                a secondary index",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -365,6 +479,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Associate a set of tags with an Amazon DynamoDB resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -375,6 +492,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Removes the association of tags from an Amazon DynamoDB resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -385,6 +505,9 @@
     },
     "UpdateContinuousBackups": {
       "name": "UpdateContinuousBackups",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Enables or disables continuous backups",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -395,6 +518,9 @@
     },
     "UpdateContributorInsights": {
       "name": "UpdateContributorInsights",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Updates the status for contributor insights for a specific table or global secondary\n                                                index",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -405,6 +531,9 @@
     },
     "UpdateGlobalTable": {
       "name": "UpdateGlobalTable",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Enables the user to add or remove replicas in the specified global table",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -415,6 +544,9 @@
     },
     "UpdateGlobalTableSettings": {
       "name": "UpdateGlobalTableSettings",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Enables the user to update settings of the specified global table",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -425,6 +557,9 @@
     },
     "UpdateItem": {
       "name": "UpdateItem",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Edits an existing item's attributes, or adds a new item to the table if it does not\n                                                already exist",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -435,6 +570,9 @@
     },
     "UpdateTable": {
       "name": "UpdateTable",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Modifies the provisioned throughput settings, global secondary indexes, or DynamoDB\n                                                Streams settings for a given table",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -445,6 +583,9 @@
     },
     "UpdateTableReplicaAutoScaling": {
       "name": "UpdateTableReplicaAutoScaling",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Updates auto scaling settings on your replica table",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -455,6 +596,9 @@
     },
     "UpdateTimeToLive": {
       "name": "UpdateTimeToLive",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
       "description": "Enables or disables TTL for the specified table",
       "accessLevel": "Write",
       "resourceTypes": [

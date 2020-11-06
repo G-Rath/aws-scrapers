@@ -3,6 +3,9 @@
   "actions": {
     "CreateLifecyclePolicy": {
       "name": "CreateLifecyclePolicy",
+      "topics": [
+        "Amazon Data Lifecycle Manager"
+      ],
       "description": "Create a data lifecycle policy to manage the scheduled creation and retention of Amazon\n                                                EBS snapshots. You may have up to 100 policies.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "DeleteLifecyclePolicy": {
       "name": "DeleteLifecyclePolicy",
+      "topics": [
+        "Amazon Data Lifecycle Manager"
+      ],
       "description": "Delete an existing data lifecycle policy. In addition, this action halts the creation\n                                                and deletion of snapshots that the policy specified. Existing snapshots are not affected.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -21,6 +27,9 @@
     },
     "GetLifecyclePolicies": {
       "name": "GetLifecyclePolicies",
+      "topics": [
+        "Amazon Data Lifecycle Manager"
+      ],
       "description": "Returns a list of summary descriptions of data lifecycle policies.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -29,6 +38,9 @@
     },
     "GetLifecyclePolicy": {
       "name": "GetLifecyclePolicy",
+      "topics": [
+        "Amazon Data Lifecycle Manager"
+      ],
       "description": "Returns a complete description of a single data lifecycle policy.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -39,6 +51,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "Amazon Data Lifecycle Manager"
+      ],
       "description": "Grants permission to list the tags associated with a resource.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -49,6 +64,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "Amazon Data Lifecycle Manager"
+      ],
       "description": "Grants permission to add or update tags of a resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -59,6 +77,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "Amazon Data Lifecycle Manager"
+      ],
       "description": "Grants permission to remove associated with a resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -69,6 +90,9 @@
     },
     "UpdateLifecyclePolicy": {
       "name": "UpdateLifecyclePolicy",
+      "topics": [
+        "Amazon Data Lifecycle Manager"
+      ],
       "description": "Updates an existing data lifecycle policy.",
       "accessLevel": "Write",
       "resourceTypes": [

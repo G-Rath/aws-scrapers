@@ -3,6 +3,9 @@
   "actions": {
     "CreateControlChannel": {
       "name": "CreateControlChannel",
+      "topics": [
+        "Amazon Session Manager Message Gateway Service"
+      ],
       "description": "Registers a control channel for an instance to send control messages to Systems Manager\n                                                service.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "CreateDataChannel": {
       "name": "CreateDataChannel",
+      "topics": [
+        "Amazon Session Manager Message Gateway Service"
+      ],
       "description": "Registers a data channel for an instance to send data messages to Systems Manager\n                                                service.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -19,6 +25,9 @@
     },
     "OpenControlChannel": {
       "name": "OpenControlChannel",
+      "topics": [
+        "Amazon Session Manager Message Gateway Service"
+      ],
       "description": "Opens a websocket connection for a registered control channel stream from an instance\n                                                to Systems Manager service.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -27,6 +36,9 @@
     },
     "OpenDataChannel": {
       "name": "OpenDataChannel",
+      "topics": [
+        "Amazon Session Manager Message Gateway Service"
+      ],
       "description": "Opens a websocket connection for a registered data channel stream from an instance\n                                                to Systems Manager service.",
       "accessLevel": "Write",
       "resourceTypes": [],

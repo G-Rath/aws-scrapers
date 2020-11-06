@@ -3,6 +3,9 @@
   "actions": {
     "DeleteAlarms": {
       "name": "DeleteAlarms",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to delete a collection of alarms",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "DeleteAnomalyDetector": {
       "name": "DeleteAnomalyDetector",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to delete the specified anomaly detection model from your account.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -21,6 +27,9 @@
     },
     "DeleteDashboards": {
       "name": "DeleteDashboards",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to delete all CloudWatch dashboards that you specify",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -31,6 +40,9 @@
     },
     "DeleteInsightRules": {
       "name": "DeleteInsightRules",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to delete a collection of insight rules",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -41,6 +53,9 @@
     },
     "DescribeAlarmHistory": {
       "name": "DescribeAlarmHistory",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to retrieve the history for the specified alarm",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -51,6 +66,9 @@
     },
     "DescribeAlarms": {
       "name": "DescribeAlarms",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to describe all alarms, currently owned by the user's account",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -61,6 +79,9 @@
     },
     "DescribeAlarmsForMetric": {
       "name": "DescribeAlarmsForMetric",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to describe all alarms configured on the specified metric, currently\n                                                owned by the user's account",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -69,6 +90,9 @@
     },
     "DescribeAnomalyDetectors": {
       "name": "DescribeAnomalyDetectors",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to lists the anomaly detection models that you have created in your\n                                                account.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -77,6 +101,9 @@
     },
     "DescribeInsightRules": {
       "name": "DescribeInsightRules",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to describe all insight rules, currently owned by the user's account",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -85,6 +112,9 @@
     },
     "DisableAlarmActions": {
       "name": "DisableAlarmActions",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to disable actions for a collection of alarms",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -95,6 +125,9 @@
     },
     "DisableInsightRules": {
       "name": "DisableInsightRules",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to disable a collection of insight rules",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -105,6 +138,9 @@
     },
     "EnableAlarmActions": {
       "name": "EnableAlarmActions",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to enable actions for a collection of alarms",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -115,6 +151,9 @@
     },
     "EnableInsightRules": {
       "name": "EnableInsightRules",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to enable a collection of insight rules",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -125,6 +164,9 @@
     },
     "GetDashboard": {
       "name": "GetDashboard",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to display the details of the CloudWatch dashboard you specify",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -135,6 +177,9 @@
     },
     "GetInsightRuleReport": {
       "name": "GetInsightRuleReport",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to return the top-N report of unique contributors over a time range\n                                                for a given insight rule",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -145,6 +190,9 @@
     },
     "GetMetricData": {
       "name": "GetMetricData",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to retrieve batch amounts of CloudWatch metric data and perform\n                                                metric math on retrieved data",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -153,6 +201,9 @@
     },
     "GetMetricStatistics": {
       "name": "GetMetricStatistics",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to retrieve statistics for the specified metric",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -161,6 +212,9 @@
     },
     "GetMetricWidgetImage": {
       "name": "GetMetricWidgetImage",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to retrieve snapshots of metric widgets",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -169,6 +223,9 @@
     },
     "ListDashboards": {
       "name": "ListDashboards",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to return a list of all CloudWatch dashboards in your account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -177,6 +234,9 @@
     },
     "ListMetrics": {
       "name": "ListMetrics",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to retrieve a list of valid metrics stored for the AWS account owner",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -185,6 +245,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to list tags for an Amazon CloudWatch resource",
       "accessLevel": "List",
       "resourceTypes": [
@@ -195,6 +258,9 @@
     },
     "PutAnomalyDetector": {
       "name": "PutAnomalyDetector",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to create or update an anomaly detection model for a CloudWatch\n                                                metric.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -203,6 +269,9 @@
     },
     "PutCompositeAlarm": {
       "name": "PutCompositeAlarm",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to create or update a composite alarm",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -213,6 +282,9 @@
     },
     "PutDashboard": {
       "name": "PutDashboard",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to create a CloudWatch dashboard, or update an existing dashboard\n                                                if it already exists",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -223,6 +295,9 @@
     },
     "PutInsightRule": {
       "name": "PutInsightRule",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to create a new insight rule or replace an existing insight rule",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -233,6 +308,9 @@
     },
     "PutMetricAlarm": {
       "name": "PutMetricAlarm",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to create or update an alarm and associates it with the specified\n                                                Amazon CloudWatch metric",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -243,6 +321,9 @@
     },
     "PutMetricData": {
       "name": "PutMetricData",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to publish metric data points to Amazon CloudWatch",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -251,6 +332,9 @@
     },
     "SetAlarmState": {
       "name": "SetAlarmState",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to temporarily set the state of an alarm for testing purposes",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -261,6 +345,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to add tags to an Amazon CloudWatch resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -271,6 +358,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
       "description": "Grants permission to remove a tag from an Amazon CloudWatch resource",
       "accessLevel": "Tagging",
       "resourceTypes": [

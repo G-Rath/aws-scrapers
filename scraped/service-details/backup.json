@@ -3,6 +3,9 @@
   "actions": {
     "CopyIntoBackupVault": {
       "name": "CopyIntoBackupVault",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Copy into a backup vault",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "CreateBackupPlan": {
       "name": "CreateBackupPlan",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Creates a new backup plan",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -21,6 +27,9 @@
     },
     "CreateBackupSelection": {
       "name": "CreateBackupSelection",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Creates a new resource assignment in a backup plan.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -31,6 +40,9 @@
     },
     "CreateBackupVault": {
       "name": "CreateBackupVault",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Creates a new backup vault.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -41,6 +53,9 @@
     },
     "DeleteBackupPlan": {
       "name": "DeleteBackupPlan",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Deletes a backup plan.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -51,6 +66,9 @@
     },
     "DeleteBackupSelection": {
       "name": "DeleteBackupSelection",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Deletes a resource assignment from a backup plan.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -61,6 +79,9 @@
     },
     "DeleteBackupVault": {
       "name": "DeleteBackupVault",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Deletes a backup vault.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -71,6 +92,9 @@
     },
     "DeleteBackupVaultAccessPolicy": {
       "name": "DeleteBackupVaultAccessPolicy",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Deletes backup vault access policy.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -81,6 +105,9 @@
     },
     "DeleteBackupVaultNotifications": {
       "name": "DeleteBackupVaultNotifications",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Remove notifications from backup vault.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -91,6 +118,9 @@
     },
     "DeleteRecoveryPoint": {
       "name": "DeleteRecoveryPoint",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Deletes a recovery point from a backup vault.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -101,6 +131,9 @@
     },
     "DescribeBackupJob": {
       "name": "DescribeBackupJob",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Describes a backup job",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -109,6 +142,9 @@
     },
     "DescribeBackupVault": {
       "name": "DescribeBackupVault",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Creates a new backup vault with the specified name.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -119,6 +155,9 @@
     },
     "DescribeCopyJob": {
       "name": "DescribeCopyJob",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Describes a copy job",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -127,6 +166,9 @@
     },
     "DescribeProtectedResource": {
       "name": "DescribeProtectedResource",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Describes a protected resource.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -135,6 +177,9 @@
     },
     "DescribeRecoveryPoint": {
       "name": "DescribeRecoveryPoint",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Describes a recovery point.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -145,6 +190,9 @@
     },
     "DescribeRegionSettings": {
       "name": "DescribeRegionSettings",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Describes region settings",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -153,6 +201,9 @@
     },
     "DescribeRestoreJob": {
       "name": "DescribeRestoreJob",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Describes a restore job.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -161,6 +212,9 @@
     },
     "ExportBackupPlanTemplate": {
       "name": "ExportBackupPlanTemplate",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Exports a backup plan as a JSON.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -169,6 +223,9 @@
     },
     "GetBackupPlan": {
       "name": "GetBackupPlan",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Gets a backup plan.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -179,6 +236,9 @@
     },
     "GetBackupPlanFromJSON": {
       "name": "GetBackupPlanFromJSON",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Transforms a JSON to a backup plan.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -187,6 +247,9 @@
     },
     "GetBackupPlanFromTemplate": {
       "name": "GetBackupPlanFromTemplate",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Transforms a template to a backup plan.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -195,6 +258,9 @@
     },
     "GetBackupSelection": {
       "name": "GetBackupSelection",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Gets a backup plan resource assignment.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -205,6 +271,9 @@
     },
     "GetBackupVaultAccessPolicy": {
       "name": "GetBackupVaultAccessPolicy",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Gets backup vault access policy.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -215,6 +284,9 @@
     },
     "GetBackupVaultNotifications": {
       "name": "GetBackupVaultNotifications",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Gets backup vault notifications.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -225,6 +297,9 @@
     },
     "GetRecoveryPointRestoreMetadata": {
       "name": "GetRecoveryPointRestoreMetadata",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Gets recovery point restore metadata.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -235,6 +310,9 @@
     },
     "GetSupportedResourceTypes": {
       "name": "GetSupportedResourceTypes",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Gets supported resource types.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -243,6 +321,9 @@
     },
     "ListBackupJobs": {
       "name": "ListBackupJobs",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Lists backup jobs.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -251,6 +332,9 @@
     },
     "ListBackupPlanTemplates": {
       "name": "ListBackupPlanTemplates",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Lists backup plan templates provided by AWS Backup.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -259,6 +343,9 @@
     },
     "ListBackupPlanVersions": {
       "name": "ListBackupPlanVersions",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Lists backup plan versions.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -269,6 +356,9 @@
     },
     "ListBackupPlans": {
       "name": "ListBackupPlans",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Lists backup plans.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -277,6 +367,9 @@
     },
     "ListBackupSelections": {
       "name": "ListBackupSelections",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Lists resource assignments for a specific backup plan.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -287,6 +380,9 @@
     },
     "ListBackupVaults": {
       "name": "ListBackupVaults",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Lists backup vaults.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -295,6 +391,9 @@
     },
     "ListCopyJobs": {
       "name": "ListCopyJobs",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "List copy jobs",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -303,6 +402,9 @@
     },
     "ListProtectedResources": {
       "name": "ListProtectedResources",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Lists protected resources by AWS Backup.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -311,6 +413,9 @@
     },
     "ListRecoveryPointsByBackupVault": {
       "name": "ListRecoveryPointsByBackupVault",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Lists recovery points inside a backup vault.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -321,6 +426,9 @@
     },
     "ListRecoveryPointsByResource": {
       "name": "ListRecoveryPointsByResource",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Lists recovery points for a resource.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -329,6 +437,9 @@
     },
     "ListRestoreJobs": {
       "name": "ListRestoreJobs",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Lists restore jobs.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -337,6 +448,9 @@
     },
     "ListTags": {
       "name": "ListTags",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Lists tags for a resource.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -347,6 +461,9 @@
     },
     "PutBackupVaultAccessPolicy": {
       "name": "PutBackupVaultAccessPolicy",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Adds an access policy to the backup vault.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -357,6 +474,9 @@
     },
     "PutBackupVaultNotifications": {
       "name": "PutBackupVaultNotifications",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Adds an SNS topic to the backup vault.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -367,6 +487,9 @@
     },
     "StartBackupJob": {
       "name": "StartBackupJob",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Starts a new backup job.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -377,6 +500,9 @@
     },
     "StartCopyJob": {
       "name": "StartCopyJob",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Copy a backup from a source region to a destination region.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -387,6 +513,9 @@
     },
     "StartRestoreJob": {
       "name": "StartRestoreJob",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Starts a new restore job.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -397,6 +526,9 @@
     },
     "StopBackupJob": {
       "name": "StopBackupJob",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Stops a backup job.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -405,6 +537,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Tags a resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -415,6 +550,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Untags a resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -425,6 +563,9 @@
     },
     "UpdateBackupPlan": {
       "name": "UpdateBackupPlan",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Updates a backup plan.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -435,6 +576,9 @@
     },
     "UpdateRecoveryPointLifecycle": {
       "name": "UpdateRecoveryPointLifecycle",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Updates the lifecycle of the recovery point.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -445,6 +589,9 @@
     },
     "UpdateRegionSettings": {
       "name": "UpdateRegionSettings",
+      "topics": [
+        "AWS Backup"
+      ],
       "description": "Describes region settings",
       "accessLevel": "Write",
       "resourceTypes": [],

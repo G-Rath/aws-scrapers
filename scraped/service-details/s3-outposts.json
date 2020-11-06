@@ -3,6 +3,9 @@
   "actions": {
     "AbortMultipartUpload": {
       "name": "AbortMultipartUpload",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to abort a multipart upload",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "CreateAccessPoint": {
       "name": "CreateAccessPoint",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to create a new access point",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "CreateBucket": {
       "name": "CreateBucket",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to create a new bucket",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "CreateEndpoint": {
       "name": "CreateEndpoint",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to create a new endpoint",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "DeleteAccessPoint": {
       "name": "DeleteAccessPoint",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to delete the access point named in the URI",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "DeleteAccessPointPolicy": {
       "name": "DeleteAccessPointPolicy",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to delete the policy on a specified access point",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "DeleteBucket": {
       "name": "DeleteBucket",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to delete the bucket named in the URI",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "DeleteBucketPolicy": {
       "name": "DeleteBucketPolicy",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to delete the policy on a specified bucket",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "DeleteEndpoint": {
       "name": "DeleteEndpoint",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to delete the endpoint named in the URI",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "DeleteObject": {
       "name": "DeleteObject",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to remove the null version of an object and insert a delete marker,\n                                                which becomes the current version of the object",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "DeleteObjectTagging": {
       "name": "DeleteObjectTagging",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to use the tagging subresource to remove the entire tag set from\n                                                the specified object",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -113,6 +146,9 @@
     },
     "GetAccessPoint": {
       "name": "GetAccessPoint",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to return configuration information about the specified access point",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -121,6 +157,9 @@
     },
     "GetAccessPointPolicy": {
       "name": "GetAccessPointPolicy",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to returns the access point policy associated with the specified\n                                                access point",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -131,6 +170,9 @@
     },
     "GetBucket": {
       "name": "GetBucket",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to return the bucket configuration associated with an Amazon S3\n                                                bucket",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -141,6 +183,9 @@
     },
     "GetBucketPolicy": {
       "name": "GetBucketPolicy",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to return the policy of the specified bucket",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -151,6 +196,9 @@
     },
     "GetBucketTagging": {
       "name": "GetBucketTagging",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to return the tag set associated with an Amazon S3 bucket",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -161,6 +209,9 @@
     },
     "GetLifecycleConfiguration": {
       "name": "GetLifecycleConfiguration",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to return the lifecycle configuration information set on an Amazon\n                                                S3 bucket",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -171,6 +222,9 @@
     },
     "GetObject": {
       "name": "GetObject",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to retrieve objects from Amazon S3",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -181,6 +235,9 @@
     },
     "GetObjectTagging": {
       "name": "GetObjectTagging",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to return the tag set of an object",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -191,6 +248,9 @@
     },
     "ListAccessPoints": {
       "name": "ListAccessPoints",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to list access points",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -199,6 +259,9 @@
     },
     "ListBucket": {
       "name": "ListBucket",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to list some or all of the objects in an Amazon S3 bucket (up to\n                                                1000)",
       "accessLevel": "List",
       "resourceTypes": [
@@ -209,6 +272,9 @@
     },
     "ListBucketMultipartUploads": {
       "name": "ListBucketMultipartUploads",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to list in-progress multipart uploads",
       "accessLevel": "List",
       "resourceTypes": [
@@ -219,6 +285,9 @@
     },
     "ListEndpoints": {
       "name": "ListEndpoints",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to list endpoints",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -227,6 +296,9 @@
     },
     "ListMultipartUploadParts": {
       "name": "ListMultipartUploadParts",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to list the parts that have been uploaded for a specific multipart\n                                                upload",
       "accessLevel": "List",
       "resourceTypes": [
@@ -237,6 +309,9 @@
     },
     "ListRegionalBuckets": {
       "name": "ListRegionalBuckets",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to list all buckets owned by the authenticated sender of the request",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -245,6 +320,9 @@
     },
     "PutAccessPointPolicy": {
       "name": "PutAccessPointPolicy",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to associate an access policy with a specified access point",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -255,6 +333,9 @@
     },
     "PutBucketPolicy": {
       "name": "PutBucketPolicy",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to add or replace a bucket policy on a bucket",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -265,6 +346,9 @@
     },
     "PutBucketTagging": {
       "name": "PutBucketTagging",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to add a set of tags to an existing Amazon S3 bucket",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -275,6 +359,9 @@
     },
     "PutLifecycleConfiguration": {
       "name": "PutLifecycleConfiguration",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to create a new lifecycle configuration for the bucket or replace\n                                                an existing lifecycle configuration",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -285,6 +372,9 @@
     },
     "PutObject": {
       "name": "PutObject",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to add an object to a bucket",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -295,6 +385,9 @@
     },
     "PutObjectAcl": {
       "name": "PutObjectAcl",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to set the access control list (ACL) permissions for an object that\n                                                already exists in a bucket",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -305,6 +398,9 @@
     },
     "PutObjectTagging": {
       "name": "PutObjectTagging",
+      "topics": [
+        "Amazon S3 on Outposts"
+      ],
       "description": "Grants permission to set the supplied tag-set to an object that already exists in\n                                                a bucket",
       "accessLevel": "Tagging",
       "resourceTypes": [

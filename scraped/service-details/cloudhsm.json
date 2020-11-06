@@ -3,6 +3,9 @@
   "actions": {
     "AddTagsToResource": {
       "name": "AddTagsToResource",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Adds or overwrites one or more tags for the specified AWS CloudHSM resource",
       "accessLevel": "Tagging",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "CopyBackupToRegion": {
       "name": "CopyBackupToRegion",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Creates a copy of a backup in the specified region",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -21,6 +27,9 @@
     },
     "CreateCluster": {
       "name": "CreateCluster",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Creates a new AWS CloudHSM cluster",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -31,6 +40,9 @@
     },
     "CreateHapg": {
       "name": "CreateHapg",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Creates a high-availability partition group",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -39,6 +51,9 @@
     },
     "CreateHsm": {
       "name": "CreateHsm",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Creates a new hardware security module (HSM) in the specified AWS CloudHSM cluster",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -49,6 +64,9 @@
     },
     "CreateLunaClient": {
       "name": "CreateLunaClient",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Creates an HSM client",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -57,6 +75,9 @@
     },
     "DeleteBackup": {
       "name": "DeleteBackup",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Deletes the specified CloudHSM backup",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -67,6 +88,9 @@
     },
     "DeleteCluster": {
       "name": "DeleteCluster",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Deletes the specified AWS CloudHSM cluster",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -77,6 +101,9 @@
     },
     "DeleteHapg": {
       "name": "DeleteHapg",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Deletes a high-availability partition group",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -85,6 +112,9 @@
     },
     "DeleteHsm": {
       "name": "DeleteHsm",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Deletes the specified HSM",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -93,6 +123,9 @@
     },
     "DeleteLunaClient": {
       "name": "DeleteLunaClient",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Deletes a client",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -101,6 +134,9 @@
     },
     "DescribeBackups": {
       "name": "DescribeBackups",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Gets information about backups of AWS CloudHSM clusters",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -109,6 +145,9 @@
     },
     "DescribeClusters": {
       "name": "DescribeClusters",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Gets information about AWS CloudHSM clusters",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -117,6 +156,9 @@
     },
     "DescribeHapg": {
       "name": "DescribeHapg",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Retrieves information about a high-availability partition group",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -125,6 +167,9 @@
     },
     "DescribeHsm": {
       "name": "DescribeHsm",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Retrieves information about an HSM. You can identify the HSM by its ARN or its serial\n                                                number",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -133,6 +178,9 @@
     },
     "DescribeLunaClient": {
       "name": "DescribeLunaClient",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Retrieves information about an HSM client",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -141,6 +189,9 @@
     },
     "GetConfig": {
       "name": "GetConfig",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Gets the configuration files necessary to connect to all high availability partition\n                                                groups the client is associated with",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -149,6 +200,9 @@
     },
     "InitializeCluster": {
       "name": "InitializeCluster",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Claims an AWS CloudHSM cluster",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -159,6 +213,9 @@
     },
     "ListAvailableZones": {
       "name": "ListAvailableZones",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Lists the Availability Zones that have available AWS CloudHSM capacity",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -167,6 +224,9 @@
     },
     "ListHapgs": {
       "name": "ListHapgs",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Lists the high-availability partition groups for the account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -175,6 +235,9 @@
     },
     "ListHsms": {
       "name": "ListHsms",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Retrieves the identifiers of all of the HSMs provisioned for the current customer",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -183,6 +246,9 @@
     },
     "ListLunaClients": {
       "name": "ListLunaClients",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Lists all of the clients",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -191,6 +257,9 @@
     },
     "ListTags": {
       "name": "ListTags",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Gets a list of tags for the specified AWS CloudHSM cluster",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -201,6 +270,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Returns a list of all tags for the specified AWS CloudHSM resource",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -209,6 +281,9 @@
     },
     "ModifyHapg": {
       "name": "ModifyHapg",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Modifies an existing high-availability partition group",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -217,6 +292,9 @@
     },
     "ModifyHsm": {
       "name": "ModifyHsm",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Modifies an HSM",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -225,6 +303,9 @@
     },
     "ModifyLunaClient": {
       "name": "ModifyLunaClient",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Modifies the certificate used by the client",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -233,6 +314,9 @@
     },
     "RemoveTagsFromResource": {
       "name": "RemoveTagsFromResource",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Removes one or more tags from the specified AWS CloudHSM resource",
       "accessLevel": "Tagging",
       "resourceTypes": [],
@@ -241,6 +325,9 @@
     },
     "RestoreBackup": {
       "name": "RestoreBackup",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Restores the specified CloudHSM backup",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -251,6 +338,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Adds or overwrites one or more tags for the specified AWS CloudHSM cluster",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -261,6 +351,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS CloudHSM"
+      ],
       "description": "Removes the specified tag or tags from the specified AWS CloudHSM cluster",
       "accessLevel": "Tagging",
       "resourceTypes": [

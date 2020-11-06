@@ -3,6 +3,9 @@
   "actions": {
     "CreateApp": {
       "name": "CreateApp",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Creates a new Amplify App.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "CreateBackendEnvironment": {
       "name": "CreateBackendEnvironment",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Creates a new backend environment for an Amplify App.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "CreateBranch": {
       "name": "CreateBranch",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Creates a new Branch for an Amplify App.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "CreateDeployment": {
       "name": "CreateDeployment",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Create a deployment for manual deploy apps. (Apps are not connected to repository)",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "CreateDomainAssociation": {
       "name": "CreateDomainAssociation",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Create a new DomainAssociation on an App",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "CreateWebHook": {
       "name": "CreateWebHook",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Create a new webhook on an App.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "DeleteApp": {
       "name": "DeleteApp",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Delete an existing Amplify App by appId.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "DeleteBackendEnvironment": {
       "name": "DeleteBackendEnvironment",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Deletes a branch for an Amplify App.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "DeleteBranch": {
       "name": "DeleteBranch",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Deletes a branch for an Amplify App.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "DeleteDomainAssociation": {
       "name": "DeleteDomainAssociation",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Deletes a DomainAssociation.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "DeleteJob": {
       "name": "DeleteJob",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Delete a job, for an Amplify branch, part of Amplify App.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -113,6 +146,9 @@
     },
     "DeleteWebHook": {
       "name": "DeleteWebHook",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Delete a webhook by id.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -123,6 +159,9 @@
     },
     "GenerateAccessLogs": {
       "name": "GenerateAccessLogs",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Generate website access logs for a specific time range via a pre-signed URL.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -133,6 +172,9 @@
     },
     "GetApp": {
       "name": "GetApp",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Retrieves an existing Amplify App by appId.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -143,6 +185,9 @@
     },
     "GetArtifactUrl": {
       "name": "GetArtifactUrl",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Retrieves artifact info that corresponds to a artifactId.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -153,6 +198,9 @@
     },
     "GetBackendEnvironment": {
       "name": "GetBackendEnvironment",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Retrieves a backend environment for an Amplify App.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -163,6 +211,9 @@
     },
     "GetBranch": {
       "name": "GetBranch",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Retrieves a branch for an Amplify App.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -173,6 +224,9 @@
     },
     "GetDomainAssociation": {
       "name": "GetDomainAssociation",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Retrieves domain info that corresponds to an appId and domainName.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -183,6 +237,9 @@
     },
     "GetJob": {
       "name": "GetJob",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Get a job for a branch, part of an Amplify App.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -193,6 +250,9 @@
     },
     "GetWebHook": {
       "name": "GetWebHook",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Retrieves webhook info that corresponds to a webhookId.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -203,6 +263,9 @@
     },
     "ListApps": {
       "name": "ListApps",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Lists existing Amplify Apps.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -211,6 +274,9 @@
     },
     "ListArtifacts": {
       "name": "ListArtifacts",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "List artifacts with an app, a branch, a job and an artifact type.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -221,6 +287,9 @@
     },
     "ListBackendEnvironments": {
       "name": "ListBackendEnvironments",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Lists backend environments for an Amplify App.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -231,6 +300,9 @@
     },
     "ListBranches": {
       "name": "ListBranches",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Lists branches for an Amplify App.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -241,6 +313,9 @@
     },
     "ListDomainAssociations": {
       "name": "ListDomainAssociations",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "List domains with an app",
       "accessLevel": "List",
       "resourceTypes": [
@@ -251,6 +326,9 @@
     },
     "ListJobs": {
       "name": "ListJobs",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "List Jobs for a branch, part of an Amplify App.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -261,6 +339,9 @@
     },
     "ListWebHooks": {
       "name": "ListWebHooks",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "List webhooks on an App.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -271,6 +352,9 @@
     },
     "StartDeployment": {
       "name": "StartDeployment",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Start a deployment for manual deploy apps. (Apps are not connected to repository)",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -281,6 +365,9 @@
     },
     "StartJob": {
       "name": "StartJob",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Starts a new job for a branch, part of an Amplify App.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -291,6 +378,9 @@
     },
     "StopJob": {
       "name": "StopJob",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Stop a job that is in progress, for an Amplify branch, part of Amplify App.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -301,6 +391,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "This action tags an AWS Amplify Console resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -311,6 +404,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "This action removes a tag from an AWS Amplify Console resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -321,6 +417,9 @@
     },
     "UpdateApp": {
       "name": "UpdateApp",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Updates an existing Amplify App.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -331,6 +430,9 @@
     },
     "UpdateBranch": {
       "name": "UpdateBranch",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Updates a branch for an Amplify App.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -341,6 +443,9 @@
     },
     "UpdateDomainAssociation": {
       "name": "UpdateDomainAssociation",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Update a DomainAssociation on an App.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -351,6 +456,9 @@
     },
     "UpdateWebHook": {
       "name": "UpdateWebHook",
+      "topics": [
+        "AWS Amplify"
+      ],
       "description": "Update a webhook.",
       "accessLevel": "Write",
       "resourceTypes": [

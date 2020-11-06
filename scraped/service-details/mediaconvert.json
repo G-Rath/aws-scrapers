@@ -3,6 +3,9 @@
   "actions": {
     "AssociateCertificate": {
       "name": "AssociateCertificate",
+      "topics": [
+        "AWS Elemental MediaConvert"
+      ],
       "description": "Grants permission to associate an AWS Certificate Manager (ACM) Amazon Resource Name\n                                                (ARN) with AWS Elemental MediaConvert.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "CancelJob": {
       "name": "CancelJob",
+      "topics": [
+        "AWS Elemental MediaConvert"
+      ],
       "description": "Grants permission to cancel an AWS Elemental MediaConvert job that is waiting in queue",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -21,6 +27,9 @@
     },
     "CreateJob": {
       "name": "CreateJob",
+      "topics": [
+        "AWS Elemental MediaConvert"
+      ],
       "description": "Grants permission to create and submit an AWS Elemental MediaConvert job",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -31,6 +40,9 @@
     },
     "CreateJobTemplate": {
       "name": "CreateJobTemplate",
+      "topics": [
+        "AWS Elemental MediaConvert"
+      ],
       "description": "Grants permission to create an AWS Elemental MediaConvert custom job template",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -41,6 +53,9 @@
     },
     "CreatePreset": {
       "name": "CreatePreset",
+      "topics": [
+        "AWS Elemental MediaConvert"
+      ],
       "description": "Grants permission to create an AWS Elemental MediaConvert custom output preset",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -49,6 +64,9 @@
     },
     "CreateQueue": {
       "name": "CreateQueue",
+      "topics": [
+        "AWS Elemental MediaConvert"
+      ],
       "description": "Grants permission to create an AWS Elemental MediaConvert job queue",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -57,6 +75,9 @@
     },
     "DeleteJobTemplate": {
       "name": "DeleteJobTemplate",
+      "topics": [
+        "AWS Elemental MediaConvert"
+      ],
       "description": "Grants permission to delete an AWS Elemental MediaConvert custom job template",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -67,6 +88,9 @@
     },
     "DeletePreset": {
       "name": "DeletePreset",
+      "topics": [
+        "AWS Elemental MediaConvert"
+      ],
       "description": "Grants permission to delete an AWS Elemental MediaConvert custom output preset",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -77,6 +101,9 @@
     },
     "DeleteQueue": {
       "name": "DeleteQueue",
+      "topics": [
+        "AWS Elemental MediaConvert"
+      ],
       "description": "Grants permission to delete an AWS Elemental MediaConvert job queue",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -87,6 +114,9 @@
     },
     "DescribeEndpoints": {
       "name": "DescribeEndpoints",
+      "topics": [
+        "AWS Elemental MediaConvert"
+      ],
       "description": "Grants permission to subscribe to the AWS Elemental MediaConvert service, by sending\n                                                a request for an account-specific endpoint. All transcoding requests must be sent\n                                                to the endpoint that the service returns.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -95,6 +125,9 @@
     },
     "DisassociateCertificate": {
       "name": "DisassociateCertificate",
+      "topics": [
+        "AWS Elemental MediaConvert"
+      ],
       "description": "Grants permission to remove an association between the Amazon Resource Name (ARN)\n                                                of an AWS Certificate Manager (ACM) certificate and an AWS Elemental MediaConvert\n                                                resource.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -103,6 +136,9 @@
     },
     "GetJob": {
       "name": "GetJob",
+      "topics": [
+        "AWS Elemental MediaConvert"
+      ],
       "description": "Grants permission to get an AWS Elemental MediaConvert job",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -113,6 +149,9 @@
     },
     "GetJobTemplate": {
       "name": "GetJobTemplate",
+      "topics": [
+        "AWS Elemental MediaConvert"
+      ],
       "description": "Grants permission to get an AWS Elemental MediaConvert job template",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -123,6 +162,9 @@
     },
     "GetPreset": {
       "name": "GetPreset",
+      "topics": [
+        "AWS Elemental MediaConvert"
+      ],
       "description": "Grants permission to get an AWS Elemental MediaConvert output preset",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -133,6 +175,9 @@
     },
     "GetQueue": {
       "name": "GetQueue",
+      "topics": [
+        "AWS Elemental MediaConvert"
+      ],
       "description": "Grants permission to get an AWS Elemental MediaConvert job queue",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -143,6 +188,9 @@
     },
     "ListJobTemplates": {
       "name": "ListJobTemplates",
+      "topics": [
+        "AWS Elemental MediaConvert"
+      ],
       "description": "Grants permission to list AWS Elemental MediaConvert job templates",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -151,6 +199,9 @@
     },
     "ListJobs": {
       "name": "ListJobs",
+      "topics": [
+        "AWS Elemental MediaConvert"
+      ],
       "description": "Grants permission to list AWS Elemental MediaConvert jobs",
       "accessLevel": "List",
       "resourceTypes": [
@@ -161,6 +212,9 @@
     },
     "ListPresets": {
       "name": "ListPresets",
+      "topics": [
+        "AWS Elemental MediaConvert"
+      ],
       "description": "Grants permission to list AWS Elemental MediaConvert output presets",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -169,6 +223,9 @@
     },
     "ListQueues": {
       "name": "ListQueues",
+      "topics": [
+        "AWS Elemental MediaConvert"
+      ],
       "description": "Grants permission to list AWS Elemental MediaConvert job queues",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -177,6 +234,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "AWS Elemental MediaConvert"
+      ],
       "description": "Grants permission to retrieve the tags for a MediaConvert queue, preset, or job template",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -187,6 +247,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS Elemental MediaConvert"
+      ],
       "description": "Grants permission to add tags to a MediaConvert queue, preset, or job template",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -197,6 +260,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS Elemental MediaConvert"
+      ],
       "description": "Grants permission to remove tags from a MediaConvert queue, preset, or job template",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -207,6 +273,9 @@
     },
     "UpdateJobTemplate": {
       "name": "UpdateJobTemplate",
+      "topics": [
+        "AWS Elemental MediaConvert"
+      ],
       "description": "Grants permission to update an AWS Elemental MediaConvert custom job template",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -217,6 +286,9 @@
     },
     "UpdatePreset": {
       "name": "UpdatePreset",
+      "topics": [
+        "AWS Elemental MediaConvert"
+      ],
       "description": "Grants permission to update an AWS Elemental MediaConvert custom output preset",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -227,6 +299,9 @@
     },
     "UpdateQueue": {
       "name": "UpdateQueue",
+      "topics": [
+        "AWS Elemental MediaConvert"
+      ],
       "description": "Grants permission to update an AWS Elemental MediaConvert job queue",
       "accessLevel": "Write",
       "resourceTypes": [

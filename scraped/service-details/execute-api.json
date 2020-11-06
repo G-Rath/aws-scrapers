@@ -3,6 +3,9 @@
   "actions": {
     "InvalidateCache": {
       "name": "InvalidateCache",
+      "topics": [
+        "Amazon API Gateway"
+      ],
       "description": "Used to invalidate API cache upon a client request",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "Invoke": {
       "name": "Invoke",
+      "topics": [
+        "Amazon API Gateway"
+      ],
       "description": "Used to invoke an API upon a client request",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "ManageConnections": {
       "name": "ManageConnections",
+      "topics": [
+        "Amazon API Gateway"
+      ],
       "description": "ManageConnections controls access to the @connections API",
       "accessLevel": "Write",
       "resourceTypes": [

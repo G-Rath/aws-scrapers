@@ -3,6 +3,9 @@
   "actions": {
     "AssociateWebACL": {
       "name": "AssociateWebACL",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to associate a WebACL with a resource.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "CheckCapacity": {
       "name": "CheckCapacity",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to calculate web ACL capacity unit (WCU) requirements for a specified\n                                                scope and set of rules.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -21,6 +27,9 @@
     },
     "CreateIPSet": {
       "name": "CreateIPSet",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to create an IPSet.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -31,6 +40,9 @@
     },
     "CreateRegexPatternSet": {
       "name": "CreateRegexPatternSet",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to create a RegexPatternSet.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -41,6 +53,9 @@
     },
     "CreateRuleGroup": {
       "name": "CreateRuleGroup",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to create a RuleGroup.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -51,6 +66,9 @@
     },
     "CreateWebACL": {
       "name": "CreateWebACL",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to create a WebACL.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -61,6 +79,9 @@
     },
     "DeleteFirewallManagerRuleGroups": {
       "name": "DeleteFirewallManagerRuleGroups",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to delete specified FirewallManagedRulesGroups from the specified\n                                                WebACL if not managed by Firewall Manager anymore.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -71,6 +92,9 @@
     },
     "DeleteIPSet": {
       "name": "DeleteIPSet",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to delete the specified IPSet.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -81,6 +105,9 @@
     },
     "DeleteLoggingConfiguration": {
       "name": "DeleteLoggingConfiguration",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to delete the LoggingConfiguration from the specified WebACL.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -91,6 +118,9 @@
     },
     "DeletePermissionPolicy": {
       "name": "DeletePermissionPolicy",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to delete the PermissionPolicy on the specified RuleGroup.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -101,6 +131,9 @@
     },
     "DeleteRegexPatternSet": {
       "name": "DeleteRegexPatternSet",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to delete the specified RegexPatternSet.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -111,6 +144,9 @@
     },
     "DeleteRuleGroup": {
       "name": "DeleteRuleGroup",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to delete the specified RuleGroup.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -121,6 +157,9 @@
     },
     "DeleteWebACL": {
       "name": "DeleteWebACL",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to delete the specified WebACL.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -131,6 +170,9 @@
     },
     "DescribeManagedRuleGroup": {
       "name": "DescribeManagedRuleGroup",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to view high-level information for a managed rule group.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -139,6 +181,9 @@
     },
     "DisassociateFirewallManager": {
       "name": "DisassociateFirewallManager",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to disassociate Firewall Manager from the specified WebACL.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -149,6 +194,9 @@
     },
     "DisassociateWebACL": {
       "name": "DisassociateWebACL",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission disassociate a WebACL from an application resource.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -159,6 +207,9 @@
     },
     "GetIPSet": {
       "name": "GetIPSet",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to view details about the specified IPSet.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -169,6 +220,9 @@
     },
     "GetLoggingConfiguration": {
       "name": "GetLoggingConfiguration",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to view LoggingConfiguration about the specified WebACL.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -179,6 +233,9 @@
     },
     "GetPermissionPolicy": {
       "name": "GetPermissionPolicy",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to view PermissionPolicy on the specified RuleGroup.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -189,6 +246,9 @@
     },
     "GetRateBasedStatementManagedKeys": {
       "name": "GetRateBasedStatementManagedKeys",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to view the keys that are currently blocked by a rate-based rule.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -199,6 +259,9 @@
     },
     "GetRegexPatternSet": {
       "name": "GetRegexPatternSet",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to view details about the specified RegexPatternSet.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -209,6 +272,9 @@
     },
     "GetRuleGroup": {
       "name": "GetRuleGroup",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to view details about the specified RuleGroup.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -219,6 +285,9 @@
     },
     "GetSampledRequests": {
       "name": "GetSampledRequests",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to view detailed information about a specified number of requests--a\n                                                sample--that AWS WAF randomly selects from among the first 5,000 requests that your\n                                                AWS resource received during a time range that you choose.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -229,6 +298,9 @@
     },
     "GetWebACL": {
       "name": "GetWebACL",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to view details about the specified GetWebACL.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -239,6 +311,9 @@
     },
     "GetWebACLForResource": {
       "name": "GetWebACLForResource",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to view the WebACL for the specified resource.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -249,6 +324,9 @@
     },
     "ListAvailableManagedRuleGroups": {
       "name": "ListAvailableManagedRuleGroups",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to view an array of managed rule groups that are available for you\n                                                to use.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -257,6 +335,9 @@
     },
     "ListIPSets": {
       "name": "ListIPSets",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to view an array of IPSetSummary objects for the IP sets that you\n                                                manage.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -265,6 +346,9 @@
     },
     "ListLoggingConfigurations": {
       "name": "ListLoggingConfigurations",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to view an array of your LoggingConfiguration objects.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -273,6 +357,9 @@
     },
     "ListRegexPatternSets": {
       "name": "ListRegexPatternSets",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to view an array of RegexPatternSetSummary objects for the regex\n                                                pattern sets that you manage.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -281,6 +368,9 @@
     },
     "ListResourcesForWebACL": {
       "name": "ListResourcesForWebACL",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to view an array of the Amazon Resource Names (ARNs) for the resources\n                                                that are associated with the specified web ACL.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -291,6 +381,9 @@
     },
     "ListRuleGroups": {
       "name": "ListRuleGroups",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to view an array of RuleGroupSummary objects for the rule groups\n                                                that you manage.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -299,6 +392,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to lists tag for the specified resource.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -309,6 +405,9 @@
     },
     "ListWebACLs": {
       "name": "ListWebACLs",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to view an array of WebACLSummary objects for the web ACLs that\n                                                you manage.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -317,6 +416,9 @@
     },
     "PutFirewallManagerRuleGroups": {
       "name": "PutFirewallManagerRuleGroups",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to create FirewallManagedRulesGroups in the specified WebACL.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -327,6 +429,9 @@
     },
     "PutLoggingConfiguration": {
       "name": "PutLoggingConfiguration",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to enables the specified LoggingConfiguration, to start logging\n                                                from a web ACL.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -337,6 +442,9 @@
     },
     "PutPermissionPolicy": {
       "name": "PutPermissionPolicy",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to attach the specified IAM policy to the specified resource. The\n                                                only supported use for this action is to share a RuleGroup across accounts.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -347,6 +455,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to associates tags with the specified AWS resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -357,6 +468,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to disassociates tags from an AWS resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -367,6 +481,9 @@
     },
     "UpdateIPSet": {
       "name": "UpdateIPSet",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to update the specified IPSet.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -377,6 +494,9 @@
     },
     "UpdateRegexPatternSet": {
       "name": "UpdateRegexPatternSet",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to update the specified RegexPatternSet.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -387,6 +507,9 @@
     },
     "UpdateRuleGroup": {
       "name": "UpdateRuleGroup",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to update the specified RuleGroup.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -397,6 +520,9 @@
     },
     "UpdateWebACL": {
       "name": "UpdateWebACL",
+      "topics": [
+        "AWS WAF V2"
+      ],
       "description": "Grants permission to update the specified WebACL.",
       "accessLevel": "Permissions management",
       "resourceTypes": [

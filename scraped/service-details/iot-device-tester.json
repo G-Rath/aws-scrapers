@@ -3,6 +3,9 @@
   "actions": {
     "CheckVersion": {
       "name": "CheckVersion",
+      "topics": [
+        "AWS IoT Device Tester"
+      ],
       "description": "Grants permission for IoT Device Tester to check if a given set of product, test suite\n                                                and device tester version are compatible",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "DownloadTestSuite": {
       "name": "DownloadTestSuite",
+      "topics": [
+        "AWS IoT Device Tester"
+      ],
       "description": "Grants permission for IoT Device Tester to download compatible test suite versions",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -19,6 +25,9 @@
     },
     "LatestIdt": {
       "name": "LatestIdt",
+      "topics": [
+        "AWS IoT Device Tester"
+      ],
       "description": "Grants permission for IoT Device Tester to get information on latest version of device\n                                                tester available",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -27,6 +36,9 @@
     },
     "SendMetrics": {
       "name": "SendMetrics",
+      "topics": [
+        "AWS IoT Device Tester"
+      ],
       "description": "Grants permissions for IoT Device Tester to send usage metrics on your behalf",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -35,6 +47,9 @@
     },
     "SupportedVersion": {
       "name": "SupportedVersion",
+      "topics": [
+        "AWS IoT Device Tester"
+      ],
       "description": "Grants permission for IoT Device Tester to get list of supported products and test\n                                                suite versions",
       "accessLevel": "Read",
       "resourceTypes": [],

@@ -3,6 +3,9 @@
   "actions": {
     "CreateNotificationRule": {
       "name": "CreateNotificationRule",
+      "topics": [
+        "AWS CodeStar Notifications"
+      ],
       "description": "Grants permission to create a notification rule for a resource",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "DeleteNotificationRule": {
       "name": "DeleteNotificationRule",
+      "topics": [
+        "AWS CodeStar Notifications"
+      ],
       "description": "Grants permission to delete a notification rule for a resource",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "DeleteTarget": {
       "name": "DeleteTarget",
+      "topics": [
+        "AWS CodeStar Notifications"
+      ],
       "description": "Grants permission to delete a target for a notification rule",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -31,6 +40,9 @@
     },
     "DescribeNotificationRule": {
       "name": "DescribeNotificationRule",
+      "topics": [
+        "AWS CodeStar Notifications"
+      ],
       "description": "Grants permission to get information about a notification rule",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -41,6 +53,9 @@
     },
     "ListEventTypes": {
       "name": "ListEventTypes",
+      "topics": [
+        "AWS CodeStar Notifications"
+      ],
       "description": "Grants permission to list notifications event types",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -49,6 +64,9 @@
     },
     "ListNotificationRules": {
       "name": "ListNotificationRules",
+      "topics": [
+        "AWS CodeStar Notifications"
+      ],
       "description": "Grants permission to list notification rules in an AWS account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -57,6 +75,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "AWS CodeStar Notifications"
+      ],
       "description": "Grants permission to list the tags attached to a notification rule resource ARN",
       "accessLevel": "List",
       "resourceTypes": [
@@ -67,6 +88,9 @@
     },
     "ListTargets": {
       "name": "ListTargets",
+      "topics": [
+        "AWS CodeStar Notifications"
+      ],
       "description": "Grants permission to list the notification rule targets for an AWS account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -75,6 +99,9 @@
     },
     "Subscribe": {
       "name": "Subscribe",
+      "topics": [
+        "AWS CodeStar Notifications"
+      ],
       "description": "Grants permission to create an association between a notification rule and an Amazon\n                                                SNS topic",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -85,6 +112,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS CodeStar Notifications"
+      ],
       "description": "Grants permission to attach resource tags to a notification rule resource ARN",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -95,6 +125,9 @@
     },
     "Unsubscribe": {
       "name": "Unsubscribe",
+      "topics": [
+        "AWS CodeStar Notifications"
+      ],
       "description": "Grants permission to remove an association between a notification rule and an Amazon\n                                                SNS topic",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -105,6 +138,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS CodeStar Notifications"
+      ],
       "description": "Grants permission to disassociate resource tags from a notification rule resource\n                                                ARN",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -115,6 +151,9 @@
     },
     "UpdateNotificationRule": {
       "name": "UpdateNotificationRule",
+      "topics": [
+        "AWS CodeStar Notifications"
+      ],
       "description": "Grants permission to change a notification rule for a resource",
       "accessLevel": "Write",
       "resourceTypes": [

@@ -3,6 +3,9 @@
   "actions": {
     "AssociateServiceRoleToAccount": {
       "name": "AssociateServiceRoleToAccount",
+      "topics": [
+        "AWS DeepLens"
+      ],
       "description": "Associates the user's account with IAM roles controlling various permissions needed\n                                                by AWS DeepLens for proper functionality.",
       "accessLevel": "Permissions management",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "BatchGetDevice": {
       "name": "BatchGetDevice",
+      "topics": [
+        "AWS DeepLens"
+      ],
       "description": "Retrieves a list of AWS DeepLens devices.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -21,6 +27,9 @@
     },
     "BatchGetModel": {
       "name": "BatchGetModel",
+      "topics": [
+        "AWS DeepLens"
+      ],
       "description": "Retrieves a list of AWS DeepLens Models.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -31,6 +40,9 @@
     },
     "BatchGetProject": {
       "name": "BatchGetProject",
+      "topics": [
+        "AWS DeepLens"
+      ],
       "description": "Retrieves a list of AWS DeepLens Projects.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -41,6 +53,9 @@
     },
     "CreateDeviceCertificates": {
       "name": "CreateDeviceCertificates",
+      "topics": [
+        "AWS DeepLens"
+      ],
       "description": "Creates a certificate package that is used to successfully authenticate and Register\n                                                an AWS DeepLens device.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -49,6 +64,9 @@
     },
     "CreateModel": {
       "name": "CreateModel",
+      "topics": [
+        "AWS DeepLens"
+      ],
       "description": "Creates a new AWS DeepLens Model.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -57,6 +75,9 @@
     },
     "CreateProject": {
       "name": "CreateProject",
+      "topics": [
+        "AWS DeepLens"
+      ],
       "description": "Creates a new AWS DeepLens Project.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -65,6 +86,9 @@
     },
     "DeleteModel": {
       "name": "DeleteModel",
+      "topics": [
+        "AWS DeepLens"
+      ],
       "description": "Deletes an AWS DeepLens Model.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -75,6 +99,9 @@
     },
     "DeleteProject": {
       "name": "DeleteProject",
+      "topics": [
+        "AWS DeepLens"
+      ],
       "description": "Deletes an AWS DeepLens Project.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -85,6 +112,9 @@
     },
     "DeployProject": {
       "name": "DeployProject",
+      "topics": [
+        "AWS DeepLens"
+      ],
       "description": "Deploys an AWS DeepLens project to a registered AWS DeepLens device.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -95,6 +125,9 @@
     },
     "DeregisterDevice": {
       "name": "DeregisterDevice",
+      "topics": [
+        "AWS DeepLens"
+      ],
       "description": "Begins a device de-registration workflow for a registered AWS DeepLens device.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -105,6 +138,9 @@
     },
     "GetAssociatedResources": {
       "name": "GetAssociatedResources",
+      "topics": [
+        "AWS DeepLens"
+      ],
       "description": "Retrieves the account level resources associated with the user's account.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -113,6 +149,9 @@
     },
     "GetDeploymentStatus": {
       "name": "GetDeploymentStatus",
+      "topics": [
+        "AWS DeepLens"
+      ],
       "description": "Retrieves the the deployment status of a particular AWS DeepLens device, along with\n                                                any associated metadata.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -121,6 +160,9 @@
     },
     "GetDevice": {
       "name": "GetDevice",
+      "topics": [
+        "AWS DeepLens"
+      ],
       "description": "Retrieves information about an AWS DeepLens device.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -131,6 +173,9 @@
     },
     "GetModel": {
       "name": "GetModel",
+      "topics": [
+        "AWS DeepLens"
+      ],
       "description": "Retrieves an AWS DeepLens Model.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -141,6 +186,9 @@
     },
     "GetProject": {
       "name": "GetProject",
+      "topics": [
+        "AWS DeepLens"
+      ],
       "description": "Retrieves an AWS DeepLens Project.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -151,6 +199,9 @@
     },
     "ImportProjectFromTemplate": {
       "name": "ImportProjectFromTemplate",
+      "topics": [
+        "AWS DeepLens"
+      ],
       "description": "Creates a new AWS DeepLens project from a sample project template.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -159,6 +210,9 @@
     },
     "ListDeployments": {
       "name": "ListDeployments",
+      "topics": [
+        "AWS DeepLens"
+      ],
       "description": "Retrieves a list of AWS DeepLens Deployment identifiers.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -167,6 +221,9 @@
     },
     "ListDevices": {
       "name": "ListDevices",
+      "topics": [
+        "AWS DeepLens"
+      ],
       "description": "Retrieves a list of AWS DeepLens device identifiers.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -175,6 +232,9 @@
     },
     "ListModels": {
       "name": "ListModels",
+      "topics": [
+        "AWS DeepLens"
+      ],
       "description": "Retrieves a list of AWS DeepLens Model identifiers.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -183,6 +243,9 @@
     },
     "ListProjects": {
       "name": "ListProjects",
+      "topics": [
+        "AWS DeepLens"
+      ],
       "description": "Retrieves a list of AWS DeepLens Project identifiers.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -191,6 +254,9 @@
     },
     "RegisterDevice": {
       "name": "RegisterDevice",
+      "topics": [
+        "AWS DeepLens"
+      ],
       "description": "Begins a device registration workflow for an AWS DeepLens device.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -199,6 +265,9 @@
     },
     "RemoveProject": {
       "name": "RemoveProject",
+      "topics": [
+        "AWS DeepLens"
+      ],
       "description": "Removes a deployed AWS DeepLens project from an AWS DeepLens device.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -209,6 +278,9 @@
     },
     "UpdateProject": {
       "name": "UpdateProject",
+      "topics": [
+        "AWS DeepLens"
+      ],
       "description": "Updates an existing AWS DeepLens Project.",
       "accessLevel": "Write",
       "resourceTypes": [

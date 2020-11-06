@@ -3,6 +3,9 @@
   "actions": {
     "AbortMultipartUpload": {
       "name": "AbortMultipartUpload",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Aborts a multipart upload identified by the upload ID",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "AbortVaultLock": {
       "name": "AbortVaultLock",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Aborts the vault locking process if the vault lock is not in the Locked state",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "AddTagsToVault": {
       "name": "AddTagsToVault",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Adds the specified tags to a vault",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "CompleteMultipartUpload": {
       "name": "CompleteMultipartUpload",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Completes a multipart upload process",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "CompleteVaultLock": {
       "name": "CompleteVaultLock",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Completes the vault locking process",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "CreateVault": {
       "name": "CreateVault",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Creates a new vault with the specified name",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "DeleteArchive": {
       "name": "DeleteArchive",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Deletes an archive from a vault",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "DeleteVault": {
       "name": "DeleteVault",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Deletes a vault",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "DeleteVaultAccessPolicy": {
       "name": "DeleteVaultAccessPolicy",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Deletes the access policy associated with the specified vault",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -93,6 +120,9 @@
     },
     "DeleteVaultNotifications": {
       "name": "DeleteVaultNotifications",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Deletes the notification configuration set for a vault",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -103,6 +133,9 @@
     },
     "DescribeJob": {
       "name": "DescribeJob",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Returns information about a job you previously initiated",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -113,6 +146,9 @@
     },
     "DescribeVault": {
       "name": "DescribeVault",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Returns information about a vault",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -123,6 +159,9 @@
     },
     "GetDataRetrievalPolicy": {
       "name": "GetDataRetrievalPolicy",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Returns the current data retrieval policy for the account and region specified in\n                                                the GET request",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -131,6 +170,9 @@
     },
     "GetJobOutput": {
       "name": "GetJobOutput",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Downloads the output of the job you initiated",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -141,6 +183,9 @@
     },
     "GetVaultAccessPolicy": {
       "name": "GetVaultAccessPolicy",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Retrieves the access-policy subresource set on the vault",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -151,6 +196,9 @@
     },
     "GetVaultLock": {
       "name": "GetVaultLock",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Retrieves attributes from the lock-policy subresource set on the specified vault",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -161,6 +209,9 @@
     },
     "GetVaultNotifications": {
       "name": "GetVaultNotifications",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Retrieves the notification-configuration subresource set on the vault",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -171,6 +222,9 @@
     },
     "InitiateJob": {
       "name": "InitiateJob",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Initiates a job of the specified type",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -181,6 +235,9 @@
     },
     "InitiateMultipartUpload": {
       "name": "InitiateMultipartUpload",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Initiates a multipart upload",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -191,6 +248,9 @@
     },
     "InitiateVaultLock": {
       "name": "InitiateVaultLock",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Initiates the vault locking process",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -201,6 +261,9 @@
     },
     "ListJobs": {
       "name": "ListJobs",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Lists jobs for a vault that are in-progress and jobs that have recently finished",
       "accessLevel": "List",
       "resourceTypes": [
@@ -211,6 +274,9 @@
     },
     "ListMultipartUploads": {
       "name": "ListMultipartUploads",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Lists in-progress multipart uploads for the specified vault",
       "accessLevel": "List",
       "resourceTypes": [
@@ -221,6 +287,9 @@
     },
     "ListParts": {
       "name": "ListParts",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Lists the parts of an archive that have been uploaded in a specific multipart upload",
       "accessLevel": "List",
       "resourceTypes": [
@@ -231,6 +300,9 @@
     },
     "ListProvisionedCapacity": {
       "name": "ListProvisionedCapacity",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "This operation lists the provisioned capacity for the specified AWS account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -239,6 +311,9 @@
     },
     "ListTagsForVault": {
       "name": "ListTagsForVault",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Lists all the tags attached to a vault",
       "accessLevel": "List",
       "resourceTypes": [
@@ -249,6 +324,9 @@
     },
     "ListVaults": {
       "name": "ListVaults",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Lists all vaults",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -257,6 +335,9 @@
     },
     "PurchaseProvisionedCapacity": {
       "name": "PurchaseProvisionedCapacity",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "This operation purchases a provisioned capacity unit for an AWS account.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -265,6 +346,9 @@
     },
     "RemoveTagsFromVault": {
       "name": "RemoveTagsFromVault",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Removes one or more tags from the set of tags attached to a vault",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -275,6 +359,9 @@
     },
     "SetDataRetrievalPolicy": {
       "name": "SetDataRetrievalPolicy",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Sets and then enacts a data retrieval policy in the region specified in the PUT request",
       "accessLevel": "Permissions management",
       "resourceTypes": [],
@@ -283,6 +370,9 @@
     },
     "SetVaultAccessPolicy": {
       "name": "SetVaultAccessPolicy",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Configures an access policy for a vault and will overwrite an existing policy",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -293,6 +383,9 @@
     },
     "SetVaultNotifications": {
       "name": "SetVaultNotifications",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Configures vault notifications",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -303,6 +396,9 @@
     },
     "UploadArchive": {
       "name": "UploadArchive",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Adds an archive to a vault",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -313,6 +409,9 @@
     },
     "UploadMultipartPart": {
       "name": "UploadMultipartPart",
+      "topics": [
+        "Amazon Glacier"
+      ],
       "description": "Uploads a part of an archive",
       "accessLevel": "Write",
       "resourceTypes": [

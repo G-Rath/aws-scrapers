@@ -3,6 +3,9 @@
   "actions": {
     "AssociateApprovalRuleTemplateWithRepository": {
       "name": "AssociateApprovalRuleTemplateWithRepository",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to associate an approval rule template with a repository",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "BatchAssociateApprovalRuleTemplateWithRepositories": {
       "name": "BatchAssociateApprovalRuleTemplateWithRepositories",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to associate an approval rule template with multiple repositories\n                                                in a single operation",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "BatchDescribeMergeConflicts": {
       "name": "BatchDescribeMergeConflicts",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to get information about multiple merge conflicts when attempting\n                                                to merge two commits using either the three-way merge or the squash merge option",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "BatchDisassociateApprovalRuleTemplateFromRepositories": {
       "name": "BatchDisassociateApprovalRuleTemplateFromRepositories",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to remove the association between an approval rule template and\n                                                multiple repositories in a single operation",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "BatchGetCommits": {
       "name": "BatchGetCommits",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to get return information about one or more commits in an AWS CodeCommit\n                                                repository.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "BatchGetPullRequests": {
       "name": "BatchGetPullRequests",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to return information about one or more pull requests in an AWS\n                                                CodeCommit repository",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "BatchGetRepositories": {
       "name": "BatchGetRepositories",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to get information about multiple repositories",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "CancelUploadArchive": {
       "name": "CancelUploadArchive",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to cancel the uploading of an archive to a pipeline in AWS CodePipeline",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -83,6 +107,9 @@
     },
     "CreateApprovalRuleTemplate": {
       "name": "CreateApprovalRuleTemplate",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to create an approval rule template that will automatically create\n                                                approval rules in pull requests that match the conditions defined in the template;\n                                                does not grant permission to create approval rules for individual pull requests",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -91,6 +118,9 @@
     },
     "CreateBranch": {
       "name": "CreateBranch",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to create a branch in an AWS CodeCommit repository with this API;\n                                                does not control Git create branch actions",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -101,6 +131,9 @@
     },
     "CreateCommit": {
       "name": "CreateCommit",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to add, copy, move or update single or multiple files in a branch\n                                                in an AWS CodeCommit repository, and generate a commit for the changes in the specified\n                                                branch.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -111,6 +144,9 @@
     },
     "CreatePullRequest": {
       "name": "CreatePullRequest",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to create a pull request in the specified repository",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -121,6 +157,9 @@
     },
     "CreatePullRequestApprovalRule": {
       "name": "CreatePullRequestApprovalRule",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to create an approval rule specific to an individual pull request;\n                                                does not grant permission to create approval rule templates",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -131,6 +170,9 @@
     },
     "CreateRepository": {
       "name": "CreateRepository",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to create an AWS CodeCommit repository",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -141,6 +183,9 @@
     },
     "CreateUnreferencedMergeCommit": {
       "name": "CreateUnreferencedMergeCommit",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to create an unreferenced commit that contains the result of merging\n                                                two commits using either the three-way or the squash merge option; does not control\n                                                Git merge actions",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -151,6 +196,9 @@
     },
     "DeleteApprovalRuleTemplate": {
       "name": "DeleteApprovalRuleTemplate",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to delete an approval rule template",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -159,6 +207,9 @@
     },
     "DeleteBranch": {
       "name": "DeleteBranch",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to delete a branch in an AWS CodeCommit repository with this API;\n                                                does not control Git delete branch actions",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -169,6 +220,9 @@
     },
     "DeleteCommentContent": {
       "name": "DeleteCommentContent",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to delete the content of a comment made on a change, file, or commit\n                                                in a repository",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -179,6 +233,9 @@
     },
     "DeleteFile": {
       "name": "DeleteFile",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to delete a specified file from a specified branch",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -189,6 +246,9 @@
     },
     "DeletePullRequestApprovalRule": {
       "name": "DeletePullRequestApprovalRule",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to delete approval rule created for a pull request if the rule was\n                                                not created by an approval rule template",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -199,6 +259,9 @@
     },
     "DeleteRepository": {
       "name": "DeleteRepository",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to delete an AWS CodeCommit repository",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -209,6 +272,9 @@
     },
     "DescribeMergeConflicts": {
       "name": "DescribeMergeConflicts",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to get information about specific merge conflicts when attempting\n                                                to merge two commits using either the three-way or the squash merge option",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -219,6 +285,9 @@
     },
     "DescribePullRequestEvents": {
       "name": "DescribePullRequestEvents",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to return information about one or more pull request events",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -229,6 +298,9 @@
     },
     "DisassociateApprovalRuleTemplateFromRepository": {
       "name": "DisassociateApprovalRuleTemplateFromRepository",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to remove the association between an approval rule template and\n                                                a repository",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -239,6 +311,9 @@
     },
     "EvaluatePullRequestApprovalRules": {
       "name": "EvaluatePullRequestApprovalRules",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to evaluate whether a pull request is mergable based on its current\n                                                approval state and approval rule requirements",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -249,6 +324,9 @@
     },
     "GetApprovalRuleTemplate": {
       "name": "GetApprovalRuleTemplate",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to return information about an approval rule template",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -257,6 +335,9 @@
     },
     "GetBlob": {
       "name": "GetBlob",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to view the encoded content of an individual file in an AWS CodeCommit\n                                                repository from the AWS CodeCommit console",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -267,6 +348,9 @@
     },
     "GetBranch": {
       "name": "GetBranch",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to get details about a branch in an AWS CodeCommit repository with\n                                                this API; does not control Git branch actions",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -277,6 +361,9 @@
     },
     "GetComment": {
       "name": "GetComment",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to get the content of a comment made on a change, file, or commit\n                                                in a repository",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -287,6 +374,9 @@
     },
     "GetCommentReactions": {
       "name": "GetCommentReactions",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to get the reactions on a comment",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -297,6 +387,9 @@
     },
     "GetCommentsForComparedCommit": {
       "name": "GetCommentsForComparedCommit",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to get information about comments made on the comparison between\n                                                two commits",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -307,6 +400,9 @@
     },
     "GetCommentsForPullRequest": {
       "name": "GetCommentsForPullRequest",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to get comments made on a pull request",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -317,6 +413,9 @@
     },
     "GetCommit": {
       "name": "GetCommit",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to return information about a commit, including commit message and\n                                                committer information, with this API; does not control Git log actions",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -327,6 +426,9 @@
     },
     "GetCommitHistory": {
       "name": "GetCommitHistory",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to get information about the history of commits in a repository",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -337,6 +439,9 @@
     },
     "GetCommitsFromMergeBase": {
       "name": "GetCommitsFromMergeBase",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to get information about the difference between commits in the context\n                                                of a potential merge",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -347,6 +452,9 @@
     },
     "GetDifferences": {
       "name": "GetDifferences",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to view information about the differences between valid commit specifiers\n                                                such as a branch, tag, HEAD, commit ID, or other fully qualified reference",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -357,6 +465,9 @@
     },
     "GetFile": {
       "name": "GetFile",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to return the base-64 encoded contents of a specified file and its\n                                                metadata",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -367,6 +478,9 @@
     },
     "GetFolder": {
       "name": "GetFolder",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to return the contents of a specified folder in a repository",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -377,6 +491,9 @@
     },
     "GetMergeCommit": {
       "name": "GetMergeCommit",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to get information about a merge commit created by one of the merge\n                                                options for pull requests that creates merge commits. Not all merge options create\n                                                merge commits. This permission does not control Git merge actions",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -387,6 +504,9 @@
     },
     "GetMergeConflicts": {
       "name": "GetMergeConflicts",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to get information about merge conflicts between the before and\n                                                after commit IDs for a pull request in a repository",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -397,6 +517,9 @@
     },
     "GetMergeOptions": {
       "name": "GetMergeOptions",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to get information about merge options for pull requests that can\n                                                be used to merge two commits; does not control Git merge actions",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -407,6 +530,9 @@
     },
     "GetObjectIdentifier": {
       "name": "GetObjectIdentifier",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to resolve blobs, trees, and commits to their identifier",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -417,6 +543,9 @@
     },
     "GetPullRequest": {
       "name": "GetPullRequest",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to get information about a pull request in a specified repository",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -427,6 +556,9 @@
     },
     "GetPullRequestApprovalStates": {
       "name": "GetPullRequestApprovalStates",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to retrieve the current approvals on an inputted pull request",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -437,6 +569,9 @@
     },
     "GetPullRequestOverrideState": {
       "name": "GetPullRequestOverrideState",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to retrieve the current override state of a given pull request",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -447,6 +582,9 @@
     },
     "GetReferences": {
       "name": "GetReferences",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to get details about references in an AWS CodeCommit repository;\n                                                does not control Git reference actions",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -457,6 +595,9 @@
     },
     "GetRepository": {
       "name": "GetRepository",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to get information about an AWS CodeCommit repository",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -467,6 +608,9 @@
     },
     "GetRepositoryTriggers": {
       "name": "GetRepositoryTriggers",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to get information about triggers configured for a repository",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -477,6 +621,9 @@
     },
     "GetTree": {
       "name": "GetTree",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to view the contents of a specified tree in an AWS CodeCommit repository\n                                                from the AWS CodeCommit console",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -487,6 +634,9 @@
     },
     "GetUploadArchiveStatus": {
       "name": "GetUploadArchiveStatus",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to get status information about an archive upload to a pipeline\n                                                in AWS CodePipeline",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -497,6 +647,9 @@
     },
     "GitPull": {
       "name": "GitPull",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to pull information from an AWS CodeCommit repository to a local\n                                                repo",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -507,6 +660,9 @@
     },
     "GitPush": {
       "name": "GitPush",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to push information from a local repo to an AWS CodeCommit repository",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -517,6 +673,9 @@
     },
     "ListApprovalRuleTemplates": {
       "name": "ListApprovalRuleTemplates",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to list all approval rule templates in an AWS Region for the AWS\n                                                account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -525,6 +684,9 @@
     },
     "ListAssociatedApprovalRuleTemplatesForRepository": {
       "name": "ListAssociatedApprovalRuleTemplatesForRepository",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to list approval rule templates that are associated with a repository",
       "accessLevel": "List",
       "resourceTypes": [
@@ -535,6 +697,9 @@
     },
     "ListBranches": {
       "name": "ListBranches",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to list branches for an AWS CodeCommit repository with this API;\n                                                does not control Git branch actions",
       "accessLevel": "List",
       "resourceTypes": [
@@ -545,6 +710,9 @@
     },
     "ListPullRequests": {
       "name": "ListPullRequests",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to list pull requests for a specified repository",
       "accessLevel": "List",
       "resourceTypes": [
@@ -555,6 +723,9 @@
     },
     "ListRepositories": {
       "name": "ListRepositories",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to list information about AWS CodeCommit repositories in the current\n                                                Region for your AWS account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -563,6 +734,9 @@
     },
     "ListRepositoriesForApprovalRuleTemplate": {
       "name": "ListRepositoriesForApprovalRuleTemplate",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to list repositories that are associated with an approval rule template",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -571,6 +745,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to list the resource attached to a CodeCommit resource ARN",
       "accessLevel": "List",
       "resourceTypes": [
@@ -581,6 +758,9 @@
     },
     "MergeBranchesByFastForward": {
       "name": "MergeBranchesByFastForward",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to merge two commits into the specified destination branch using\n                                                the fast-forward merge option",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -591,6 +771,9 @@
     },
     "MergeBranchesBySquash": {
       "name": "MergeBranchesBySquash",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to merge two commits into the specified destination branch using\n                                                the squash merge option",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -601,6 +784,9 @@
     },
     "MergeBranchesByThreeWay": {
       "name": "MergeBranchesByThreeWay",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to merge two commits into the specified destination branch using\n                                                the three-way merge option",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -611,6 +797,9 @@
     },
     "MergePullRequestByFastForward": {
       "name": "MergePullRequestByFastForward",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to close a pull request and attempt to merge it into the specified\n                                                destination branch for that pull request at the specified commit using the fast-forward\n                                                merge option",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -621,6 +810,9 @@
     },
     "MergePullRequestBySquash": {
       "name": "MergePullRequestBySquash",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to close a pull request and attempt to merge it into the specified\n                                                destination branch for that pull request at the specified commit using the squash\n                                                merge option",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -631,6 +823,9 @@
     },
     "MergePullRequestByThreeWay": {
       "name": "MergePullRequestByThreeWay",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to close a pull request and attempt to merge it into the specified\n                                                destination branch for that pull request at the specified commit using the three-way\n                                                merge option",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -641,6 +836,9 @@
     },
     "OverridePullRequestApprovalRules": {
       "name": "OverridePullRequestApprovalRules",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to override all approval rules for a pull request, including approval\n                                                rules created by a template",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -651,6 +849,9 @@
     },
     "PostCommentForComparedCommit": {
       "name": "PostCommentForComparedCommit",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to post a comment on the comparison between two commits",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -661,6 +862,9 @@
     },
     "PostCommentForPullRequest": {
       "name": "PostCommentForPullRequest",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to post a comment on a pull request",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -671,6 +875,9 @@
     },
     "PostCommentReply": {
       "name": "PostCommentReply",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to post a comment in reply to a comment on a comparison between\n                                                commits or a pull request",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -681,6 +888,9 @@
     },
     "PutCommentReaction": {
       "name": "PutCommentReaction",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to post a reaction on a comment",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -691,6 +901,9 @@
     },
     "PutFile": {
       "name": "PutFile",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to add or update a file in a branch in an AWS CodeCommit repository,\n                                                and generate a commit for the addition in the specified branch",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -701,6 +914,9 @@
     },
     "PutRepositoryTriggers": {
       "name": "PutRepositoryTriggers",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to create, update, or delete triggers for a repository",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -711,6 +927,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to attach resource tags to a CodeCommit resource ARN",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -721,6 +940,9 @@
     },
     "TestRepositoryTriggers": {
       "name": "TestRepositoryTriggers",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to test the functionality of repository triggers by sending information\n                                                to the trigger target",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -731,6 +953,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to disassociate resource tags from a CodeCommit resource ARN",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -741,6 +966,9 @@
     },
     "UpdateApprovalRuleTemplateContent": {
       "name": "UpdateApprovalRuleTemplateContent",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to update the content of approval rule templates; does not grant\n                                                permission to update content of approval rules created specifically for pull requests",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -749,6 +977,9 @@
     },
     "UpdateApprovalRuleTemplateDescription": {
       "name": "UpdateApprovalRuleTemplateDescription",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to update the description of approval rule templates",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -757,6 +988,9 @@
     },
     "UpdateApprovalRuleTemplateName": {
       "name": "UpdateApprovalRuleTemplateName",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to update the name of approval rule templates",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -765,6 +999,9 @@
     },
     "UpdateComment": {
       "name": "UpdateComment",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to update the contents of a comment if the identity matches the\n                                                identity used to create the comment",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -775,6 +1012,9 @@
     },
     "UpdateDefaultBranch": {
       "name": "UpdateDefaultBranch",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to change the default branch in an AWS CodeCommit repository",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -785,6 +1025,9 @@
     },
     "UpdatePullRequestApprovalRuleContent": {
       "name": "UpdatePullRequestApprovalRuleContent",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to update the content for approval rules created for a specific\n                                                pull requests; does not grant permission to update approval rule content for rules\n                                                created with an approval rule template",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -795,6 +1038,9 @@
     },
     "UpdatePullRequestApprovalState": {
       "name": "UpdatePullRequestApprovalState",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to update the approval state for pull requests",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -805,6 +1051,9 @@
     },
     "UpdatePullRequestDescription": {
       "name": "UpdatePullRequestDescription",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to update the description of a pull request",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -815,6 +1064,9 @@
     },
     "UpdatePullRequestStatus": {
       "name": "UpdatePullRequestStatus",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to update the status of a pull request",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -825,6 +1077,9 @@
     },
     "UpdatePullRequestTitle": {
       "name": "UpdatePullRequestTitle",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to update the title of a pull request",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -835,6 +1090,9 @@
     },
     "UpdateRepositoryDescription": {
       "name": "UpdateRepositoryDescription",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to change the description of an AWS CodeCommit repository",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -845,6 +1103,9 @@
     },
     "UpdateRepositoryName": {
       "name": "UpdateRepositoryName",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to change the name of an AWS CodeCommit repository",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -855,6 +1116,9 @@
     },
     "UploadArchive": {
       "name": "UploadArchive",
+      "topics": [
+        "AWS CodeCommit"
+      ],
       "description": "Grants permission to the service role for AWS CodePipeline to upload repository changes\n                                                into a pipeline",
       "accessLevel": "Write",
       "resourceTypes": [

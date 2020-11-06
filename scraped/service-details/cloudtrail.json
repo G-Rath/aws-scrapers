@@ -3,6 +3,9 @@
   "actions": {
     "AddTags": {
       "name": "AddTags",
+      "topics": [
+        "AWS CloudTrail"
+      ],
       "description": "Grants permission to add one or more tags to a trail, up to a limit of 10",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "CreateTrail": {
       "name": "CreateTrail",
+      "topics": [
+        "AWS CloudTrail"
+      ],
       "description": "Grants permission to create a trail that specifies the settings for delivery of log\n                                                data to an Amazon S3 bucket",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "DeleteTrail": {
       "name": "DeleteTrail",
+      "topics": [
+        "AWS CloudTrail"
+      ],
       "description": "Grants permission to delete a trail",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "DescribeTrails": {
       "name": "DescribeTrails",
+      "topics": [
+        "AWS CloudTrail"
+      ],
       "description": "Grants permission to list settings for the trails associated with the current region\n                                                for your account",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -41,6 +53,9 @@
     },
     "GetEventSelectors": {
       "name": "GetEventSelectors",
+      "topics": [
+        "AWS CloudTrail"
+      ],
       "description": "Grants permission to list settings for event selectors configured for a trail",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -51,6 +66,9 @@
     },
     "GetInsightSelectors": {
       "name": "GetInsightSelectors",
+      "topics": [
+        "AWS CloudTrail"
+      ],
       "description": "Grants permission to list CloudTrail Insights selectors that are configured for a\n                                                trail",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -61,6 +79,9 @@
     },
     "GetTrail": {
       "name": "GetTrail",
+      "topics": [
+        "AWS CloudTrail"
+      ],
       "description": "Grants permission to list settings for the trail",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -69,6 +90,9 @@
     },
     "GetTrailStatus": {
       "name": "GetTrailStatus",
+      "topics": [
+        "AWS CloudTrail"
+      ],
       "description": "Grants permission to retrieve a JSON-formatted list of information about the specified\n                                                trail",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -79,6 +103,9 @@
     },
     "ListPublicKeys": {
       "name": "ListPublicKeys",
+      "topics": [
+        "AWS CloudTrail"
+      ],
       "description": "Grants permission to list the public keys whose private keys were used to sign trail\n                                                digest files within a specified time range",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -87,6 +114,9 @@
     },
     "ListTags": {
       "name": "ListTags",
+      "topics": [
+        "AWS CloudTrail"
+      ],
       "description": "Grants permission to list the tags for trails in the current region",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -97,6 +127,9 @@
     },
     "ListTrails": {
       "name": "ListTrails",
+      "topics": [
+        "AWS CloudTrail"
+      ],
       "description": "Grants permission to list trails associated with the current region for your account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -105,6 +138,9 @@
     },
     "LookupEvents": {
       "name": "LookupEvents",
+      "topics": [
+        "AWS CloudTrail"
+      ],
       "description": "Grants permission to look up API activity events captured by CloudTrail that create,\n                                                update, or delete resources in your account",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -113,6 +149,9 @@
     },
     "PutEventSelectors": {
       "name": "PutEventSelectors",
+      "topics": [
+        "AWS CloudTrail"
+      ],
       "description": "Grants permission to create and update event selectors for a trail",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -123,6 +162,9 @@
     },
     "PutInsightSelectors": {
       "name": "PutInsightSelectors",
+      "topics": [
+        "AWS CloudTrail"
+      ],
       "description": "Grants permission to create and update CloudTrail Insights selectors for a trail",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -133,6 +175,9 @@
     },
     "RemoveTags": {
       "name": "RemoveTags",
+      "topics": [
+        "AWS CloudTrail"
+      ],
       "description": "Grants permission to remove tags from a trail",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -143,6 +188,9 @@
     },
     "StartLogging": {
       "name": "StartLogging",
+      "topics": [
+        "AWS CloudTrail"
+      ],
       "description": "Grants permission to start the recording of AWS API calls and log file delivery for\n                                                a trail",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -153,6 +201,9 @@
     },
     "StopLogging": {
       "name": "StopLogging",
+      "topics": [
+        "AWS CloudTrail"
+      ],
       "description": "Grants permission to stop the recording of AWS API calls and log file delivery for\n                                                a trail",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -163,6 +214,9 @@
     },
     "UpdateTrail": {
       "name": "UpdateTrail",
+      "topics": [
+        "AWS CloudTrail"
+      ],
       "description": "Grants permission to update the settings that specify delivery of log files",
       "accessLevel": "Write",
       "resourceTypes": [

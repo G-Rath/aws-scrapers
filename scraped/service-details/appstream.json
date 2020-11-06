@@ -3,6 +3,9 @@
   "actions": {
     "AssociateFleet": {
       "name": "AssociateFleet",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to associate the specified fleet with the specified stack",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "BatchAssociateUserStack": {
       "name": "BatchAssociateUserStack",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to associate the specified users with the specified stacks. Users\n                                                in a user pool cannot be assigned to stacks with fleets that are joined to an Active\n                                                Directory domain",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "BatchDisassociateUserStack": {
       "name": "BatchDisassociateUserStack",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to disassociate the specified users from the specified stacks",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "CopyImage": {
       "name": "CopyImage",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to copy the specified image within the same Region or to a new Region\n                                                within the same AWS account",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "CreateDirectoryConfig": {
       "name": "CreateDirectoryConfig",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to create a Directory Config object in AppStream 2.0. This object\n                                                includes the configuration information required to join fleets and image builders\n                                                to Microsoft Active Directory domains",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -51,6 +66,9 @@
     },
     "CreateFleet": {
       "name": "CreateFleet",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to create a fleet. A fleet is a group of streaming instances from\n                                                which applications are launched and streamed to users",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -61,6 +79,9 @@
     },
     "CreateImageBuilder": {
       "name": "CreateImageBuilder",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to create an image builder. An image builder is a virtual machine\n                                                that is used to create an image",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -71,6 +92,9 @@
     },
     "CreateImageBuilderStreamingURL": {
       "name": "CreateImageBuilderStreamingURL",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to create a URL to start an image builder streaming session",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -81,6 +105,9 @@
     },
     "CreateStack": {
       "name": "CreateStack",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to create a stack to start streaming applications to users. A stack\n                                                consists of an associated fleet, user access policies, and storage configurations",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -91,6 +118,9 @@
     },
     "CreateStreamingURL": {
       "name": "CreateStreamingURL",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to create a temporary URL to start an AppStream 2.0 streaming session\n                                                for the specified user. A streaming URL enables application streaming to be tested\n                                                without user setup",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -101,6 +131,9 @@
     },
     "CreateUsageReportSubscription": {
       "name": "CreateUsageReportSubscription",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to create a usage report subscription. Usage reports are generated\n                                                daily",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -109,6 +142,9 @@
     },
     "CreateUser": {
       "name": "CreateUser",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to create a new user in the user pool",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -117,6 +153,9 @@
     },
     "DeleteDirectoryConfig": {
       "name": "DeleteDirectoryConfig",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to delete the specified Directory Config object from AppStream 2.0.\n                                                This object includes the configuration information required to join fleets and image\n                                                builders to Microsoft Active Directory domains",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -125,6 +164,9 @@
     },
     "DeleteFleet": {
       "name": "DeleteFleet",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to delete the specified fleet",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -135,6 +177,9 @@
     },
     "DeleteImage": {
       "name": "DeleteImage",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to delete the specified image. An image cannot be deleted when it\n                                                is in use",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -145,6 +190,9 @@
     },
     "DeleteImageBuilder": {
       "name": "DeleteImageBuilder",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to delete the specified image builder and release capacity",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -155,6 +203,9 @@
     },
     "DeleteImagePermissions": {
       "name": "DeleteImagePermissions",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to delete permissions for the specified private image",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -165,6 +216,9 @@
     },
     "DeleteStack": {
       "name": "DeleteStack",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to delete the specified stack. After the stack is deleted, the application\n                                                streaming environment provided by the stack is no longer available to users. Also,\n                                                any reservations made for application streaming sessions for the stack are released",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -175,6 +229,9 @@
     },
     "DeleteUsageReportSubscription": {
       "name": "DeleteUsageReportSubscription",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to disable usage report generation",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -183,6 +240,9 @@
     },
     "DeleteUser": {
       "name": "DeleteUser",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to delete a user from the user pool",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -191,6 +251,9 @@
     },
     "DescribeDirectoryConfigs": {
       "name": "DescribeDirectoryConfigs",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to retrieve a list that describes one or more specified Directory\n                                                Config objects for AppStream 2.0, if the names for these objects are provided. Otherwise,\n                                                all Directory Config objects in the account are described. This object includes the\n                                                configuration information required to join fleets and image builders to Microsoft\n                                                Active Directory domains",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -199,6 +262,9 @@
     },
     "DescribeFleets": {
       "name": "DescribeFleets",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to retrieve a list that describes one or more specified fleets,\n                                                if the fleet names are provided. Otherwise, all fleets in the account are described",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -209,6 +275,9 @@
     },
     "DescribeImageBuilders": {
       "name": "DescribeImageBuilders",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to retrieve a list that describes one or more specified image builders,\n                                                if the image builder names are provided. Otherwise, all image builders in the account\n                                                are described",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -219,6 +288,9 @@
     },
     "DescribeImagePermissions": {
       "name": "DescribeImagePermissions",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to retrieve a list that describes the permissions for shared AWS\n                                                account IDs on a private image that you own",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -229,6 +301,9 @@
     },
     "DescribeImages": {
       "name": "DescribeImages",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to retrieve a list that describes one or more specified images,\n                                                if the image names or image ARNs are provided. Otherwise, all images in the account\n                                                are described",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -239,6 +314,9 @@
     },
     "DescribeSessions": {
       "name": "DescribeSessions",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to retrieve a list that describes the streaming sessions for the\n                                                specified stack and fleet. If a user ID is provided for the stack and fleet, only\n                                                the streaming sessions for that user are described",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -249,6 +327,9 @@
     },
     "DescribeStacks": {
       "name": "DescribeStacks",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to retrieve a list that describes one or more specified stacks,\n                                                if the stack names are provided. Otherwise, all stacks in the account are described",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -259,6 +340,9 @@
     },
     "DescribeUsageReportSubscriptions": {
       "name": "DescribeUsageReportSubscriptions",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to retrieve a list that describes one or more usage report subscriptions",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -267,6 +351,9 @@
     },
     "DescribeUserStackAssociations": {
       "name": "DescribeUserStackAssociations",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to retrieve a list that describes the UserStackAssociation objects",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -277,6 +364,9 @@
     },
     "DescribeUsers": {
       "name": "DescribeUsers",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to retrieve a list that describes users in the user pool",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -285,6 +375,9 @@
     },
     "DisableUser": {
       "name": "DisableUser",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to disable the specified user in the user pool. This action does\n                                                not delete the user",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -293,6 +386,9 @@
     },
     "DisassociateFleet": {
       "name": "DisassociateFleet",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to disassociate the specified fleet from the specified stack",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -303,6 +399,9 @@
     },
     "EnableUser": {
       "name": "EnableUser",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to enable a user in the user pool",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -311,6 +410,9 @@
     },
     "ExpireSession": {
       "name": "ExpireSession",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to immediately stop the specified streaming session",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -319,6 +421,9 @@
     },
     "GetImageBuilders": {
       "name": "GetImageBuilders",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to retrieve a list that describes one or more specified image builders,\n                                                if the image builder names are provided. Otherwise, all image builders in the account\n                                                are described",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -327,6 +432,9 @@
     },
     "GetParametersForThemeAssetUpload": {
       "name": "GetParametersForThemeAssetUpload",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to upload theme assets",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -335,6 +443,9 @@
     },
     "ListAssociatedFleets": {
       "name": "ListAssociatedFleets",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to retrieve the name of the fleet that is associated with the specified\n                                                stack",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -345,6 +456,9 @@
     },
     "ListAssociatedStacks": {
       "name": "ListAssociatedStacks",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to retrieve the name of the stack with which the specified fleet\n                                                is associated",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -355,6 +469,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to retrieve a list of all tags for the specified AppStream 2.0 resource.\n                                                The following resources can be tagged: Image builders, images, fleets, and stacks",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -363,6 +480,9 @@
     },
     "StartFleet": {
       "name": "StartFleet",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to start the specified fleet",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -373,6 +493,9 @@
     },
     "StartImageBuilder": {
       "name": "StartImageBuilder",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to start the specified image builder",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -383,6 +506,9 @@
     },
     "StopFleet": {
       "name": "StopFleet",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to stop the specified fleet",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -393,6 +519,9 @@
     },
     "StopImageBuilder": {
       "name": "StopImageBuilder",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to stop the specified image builder",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -403,6 +532,9 @@
     },
     "Stream": {
       "name": "Stream",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to federated users to sign in by using their existing credentials\n                                                and stream applications from the specified stack",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -413,6 +545,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to add or overwrite one or more tags for the specified AppStream\n                                                2.0 resource. The following resources can be tagged: Image builders, images, fleets,\n                                                and stacks",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -423,6 +558,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to disassociate one or more tags from the specified AppStream 2.0\n                                                resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -433,6 +571,9 @@
     },
     "UpdateDirectoryConfig": {
       "name": "UpdateDirectoryConfig",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to update the specified Directory Config object in AppStream 2.0.\n                                                This object includes the configuration information required to join fleets and image\n                                                builders to Microsoft Active Directory domains",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -441,6 +582,9 @@
     },
     "UpdateFleet": {
       "name": "UpdateFleet",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to update the specified fleet. All attributes except the fleet name\n                                                can be updated when the fleet is in the STOPPED state",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -451,6 +595,9 @@
     },
     "UpdateImagePermissions": {
       "name": "UpdateImagePermissions",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to add or update permissions for the specified private image",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -461,6 +608,9 @@
     },
     "UpdateStack": {
       "name": "UpdateStack",
+      "topics": [
+        "Amazon AppStream 2.0"
+      ],
       "description": "Grants permission to update the specified fields for the specified stack",
       "accessLevel": "Write",
       "resourceTypes": [

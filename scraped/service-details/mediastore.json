@@ -3,6 +3,9 @@
   "actions": {
     "CreateContainer": {
       "name": "CreateContainer",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to create containers.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "DeleteContainer": {
       "name": "DeleteContainer",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to delete any container in the current account.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -19,6 +25,9 @@
     },
     "DeleteContainerPolicy": {
       "name": "DeleteContainerPolicy",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to delete the access policy of any container in the current account.",
       "accessLevel": "Permissions management",
       "resourceTypes": [],
@@ -27,6 +36,9 @@
     },
     "DeleteCorsPolicy": {
       "name": "DeleteCorsPolicy",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to delete the CORS policy from any container in the current account.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -35,6 +47,9 @@
     },
     "DeleteLifecyclePolicy": {
       "name": "DeleteLifecyclePolicy",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to delete the lifecycle policy from any container in the current\n                                                account.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -43,6 +58,9 @@
     },
     "DeleteMetricPolicy": {
       "name": "DeleteMetricPolicy",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to delete the metric policy from any container in the current account.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -51,6 +69,9 @@
     },
     "DeleteObject": {
       "name": "DeleteObject",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to delete objects.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -59,6 +80,9 @@
     },
     "DescribeContainer": {
       "name": "DescribeContainer",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to retrieve details on any container in the current account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -67,6 +91,9 @@
     },
     "DescribeObject": {
       "name": "DescribeObject",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to retrieve object metadata.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -75,6 +102,9 @@
     },
     "GetContainerPolicy": {
       "name": "GetContainerPolicy",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to retrieve the access policy of any container in the current account.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -83,6 +113,9 @@
     },
     "GetCorsPolicy": {
       "name": "GetCorsPolicy",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to retrieve the CORS policy of any container in the current account.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -91,6 +124,9 @@
     },
     "GetLifecyclePolicy": {
       "name": "GetLifecyclePolicy",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to retrieve the lifecycle policy that is assigned to any container\n                                                in the current account.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -99,6 +135,9 @@
     },
     "GetMetricPolicy": {
       "name": "GetMetricPolicy",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to retrieve the metric policy that is assigned to any container\n                                                in the current account.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -107,6 +146,9 @@
     },
     "GetObject": {
       "name": "GetObject",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to retrieve objects.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -115,6 +157,9 @@
     },
     "ListContainers": {
       "name": "ListContainers",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to retrieve a list of containers in the current account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -123,6 +168,9 @@
     },
     "ListItems": {
       "name": "ListItems",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to retrieve a list of objects and folders in the current account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -131,6 +179,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to list tags on any container in the current account.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -139,6 +190,9 @@
     },
     "PutContainerPolicy": {
       "name": "PutContainerPolicy",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to create or replace the access policy of any container in the current\n                                                account.",
       "accessLevel": "Permissions management",
       "resourceTypes": [],
@@ -147,6 +201,9 @@
     },
     "PutCorsPolicy": {
       "name": "PutCorsPolicy",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to add or modify the CORS policy of any container in the current\n                                                account.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -155,6 +212,9 @@
     },
     "PutLifecyclePolicy": {
       "name": "PutLifecyclePolicy",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to add or modify the lifecycle policy that is assigned to any container\n                                                in the current account.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -163,6 +223,9 @@
     },
     "PutMetricPolicy": {
       "name": "PutMetricPolicy",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to add or modify the metric policy that is assigned to any container\n                                                in the current account.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -171,6 +234,9 @@
     },
     "PutObject": {
       "name": "PutObject",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to upload objects.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -179,6 +245,9 @@
     },
     "StartAccessLogging": {
       "name": "StartAccessLogging",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to enable access logging on any container in the current account.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -187,6 +256,9 @@
     },
     "StopAccessLogging": {
       "name": "StopAccessLogging",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to disable access logging on any container in the current account.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -195,6 +267,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to add tags to any container in the current account.",
       "accessLevel": "Tagging",
       "resourceTypes": [],
@@ -203,6 +278,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS Elemental MediaStore"
+      ],
       "description": "Grants permission to remove tags from any container in the current account.",
       "accessLevel": "Tagging",
       "resourceTypes": [],

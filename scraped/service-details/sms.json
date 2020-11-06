@@ -3,6 +3,9 @@
   "actions": {
     "CreateApp": {
       "name": "CreateApp",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to create an application configuration to migrate on-premise application\n                                                onto AWS",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "CreateReplicationJob": {
       "name": "CreateReplicationJob",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to create a job to migrate on-premise server onto AWS",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -19,6 +25,9 @@
     },
     "DeleteApp": {
       "name": "DeleteApp",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to delete an existing application configuration",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -27,6 +36,9 @@
     },
     "DeleteAppLaunchConfiguration": {
       "name": "DeleteAppLaunchConfiguration",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to delete launch configuration for an existing application",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -35,6 +47,9 @@
     },
     "DeleteAppReplicationConfiguration": {
       "name": "DeleteAppReplicationConfiguration",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to delete replication configuration for an existing application",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -43,6 +58,9 @@
     },
     "DeleteAppValidationConfiguration": {
       "name": "DeleteAppValidationConfiguration",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to delete validation configuration for an existing application",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -51,6 +69,9 @@
     },
     "DeleteReplicationJob": {
       "name": "DeleteReplicationJob",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to delete an existing job to migrate on-premise server onto AWS",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -59,6 +80,9 @@
     },
     "DeleteServerCatalog": {
       "name": "DeleteServerCatalog",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to delete the complete list of on-premise servers gathered into\n                                                AWS",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -67,6 +91,9 @@
     },
     "DisassociateConnector": {
       "name": "DisassociateConnector",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to disassociate a connector that has been associated",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -75,6 +102,9 @@
     },
     "GenerateChangeSet": {
       "name": "GenerateChangeSet",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to generate a changeSet for the CloudFormation stack of an application",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -83,6 +113,9 @@
     },
     "GenerateTemplate": {
       "name": "GenerateTemplate",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to generate a CloudFormation template for an existing application",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -91,6 +124,9 @@
     },
     "GetApp": {
       "name": "GetApp",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to get the configuration and statuses for an existing application",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -99,6 +135,9 @@
     },
     "GetAppLaunchConfiguration": {
       "name": "GetAppLaunchConfiguration",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to get launch configuration for an existing application",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -107,6 +146,9 @@
     },
     "GetAppReplicationConfiguration": {
       "name": "GetAppReplicationConfiguration",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to get replication configuration for an existing application",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -115,6 +157,9 @@
     },
     "GetAppValidationConfiguration": {
       "name": "GetAppValidationConfiguration",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to get validation configuration for an existing application",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -123,6 +168,9 @@
     },
     "GetAppValidationOutput": {
       "name": "GetAppValidationOutput",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to get notification sent from application validation script.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -131,6 +179,9 @@
     },
     "GetConnectors": {
       "name": "GetConnectors",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to get all connectors that have been associated",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -139,6 +190,9 @@
     },
     "GetMessages": {
       "name": "GetMessages",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to gets messages from AWS Server Migration Service to Server Migration\n                                                Connector",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -147,6 +201,9 @@
     },
     "GetReplicationJobs": {
       "name": "GetReplicationJobs",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to get all existing jobs to migrate on-premise servers onto AWS",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -155,6 +212,9 @@
     },
     "GetReplicationRuns": {
       "name": "GetReplicationRuns",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to get all runs for an existing job",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -163,6 +223,9 @@
     },
     "GetServers": {
       "name": "GetServers",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to get all servers that have been imported",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -171,6 +234,9 @@
     },
     "ImportAppCatalog": {
       "name": "ImportAppCatalog",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to import application catalog from AWS Application Discovery Service",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -179,6 +245,9 @@
     },
     "ImportServerCatalog": {
       "name": "ImportServerCatalog",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to gather a complete list of on-premise servers",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -187,6 +256,9 @@
     },
     "LaunchApp": {
       "name": "LaunchApp",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to create and launch a CloudFormation stack for an existing application",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -195,6 +267,9 @@
     },
     "ListApps": {
       "name": "ListApps",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to get a list of summaries for existing applications",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -203,6 +278,9 @@
     },
     "NotifyAppValidationOutput": {
       "name": "NotifyAppValidationOutput",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to send notification for application validation script",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -211,6 +289,9 @@
     },
     "PutAppLaunchConfiguration": {
       "name": "PutAppLaunchConfiguration",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to create or update launch configuration for an existing application",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -219,6 +300,9 @@
     },
     "PutAppReplicationConfiguration": {
       "name": "PutAppReplicationConfiguration",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to create or update replication configuration for an existing application",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -227,6 +311,9 @@
     },
     "PutAppValidationConfiguration": {
       "name": "PutAppValidationConfiguration",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to put validation configuration for an existing application",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -235,6 +322,9 @@
     },
     "SendMessage": {
       "name": "SendMessage",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to send message from Server Migration Connector to AWS Server Migration\n                                                Service",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -243,6 +333,9 @@
     },
     "StartAppReplication": {
       "name": "StartAppReplication",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to create and start replication jobs for an existing application",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -251,6 +344,9 @@
     },
     "StartOnDemandAppReplication": {
       "name": "StartOnDemandAppReplication",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to start a replication run for an existing application",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -259,6 +355,9 @@
     },
     "StartOnDemandReplicationRun": {
       "name": "StartOnDemandReplicationRun",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to start a replication run for an existing replication job",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -267,6 +366,9 @@
     },
     "StopAppReplication": {
       "name": "StopAppReplication",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to stop and delete replication jobs for an existing application",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -275,6 +377,9 @@
     },
     "TerminateApp": {
       "name": "TerminateApp",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to terminate the CloudFormation stack for an existing application",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -283,6 +388,9 @@
     },
     "UpdateApp": {
       "name": "UpdateApp",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to update an existing application configuration",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -291,6 +399,9 @@
     },
     "UpdateReplicationJob": {
       "name": "UpdateReplicationJob",
+      "topics": [
+        "AWS Server Migration Service"
+      ],
       "description": "Grants permission to update an existing job to migrate on-premise server onto AWS",
       "accessLevel": "Write",
       "resourceTypes": [],

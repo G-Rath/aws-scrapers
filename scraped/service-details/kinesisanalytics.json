@@ -3,6 +3,9 @@
   "actions": {
     "AddApplicationCloudWatchLoggingOption": {
       "name": "AddApplicationCloudWatchLoggingOption",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "Adds cloudwatch logging option to the application.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "AddApplicationInput": {
       "name": "AddApplicationInput",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "Adds input to the application.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "AddApplicationInputProcessingConfiguration": {
       "name": "AddApplicationInputProcessingConfiguration",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "Adds input processing configuration to the application.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "AddApplicationOutput": {
       "name": "AddApplicationOutput",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "Adds output to the application.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "AddApplicationReferenceDataSource": {
       "name": "AddApplicationReferenceDataSource",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "Adds reference data source to the application.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "AddApplicationVpcConfiguration": {
       "name": "AddApplicationVpcConfiguration",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "Adds VPC configuration to the application.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "CreateApplication": {
       "name": "CreateApplication",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "Creates an application.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -71,6 +92,9 @@
     },
     "CreateApplicationSnapshot": {
       "name": "CreateApplicationSnapshot",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "Creates a snapshot for an application.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -81,6 +105,9 @@
     },
     "DeleteApplication": {
       "name": "DeleteApplication",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "Deletes the application.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -91,6 +118,9 @@
     },
     "DeleteApplicationCloudWatchLoggingOption": {
       "name": "DeleteApplicationCloudWatchLoggingOption",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "Deletes the specified cloudwatch logging option of the application.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -101,6 +131,9 @@
     },
     "DeleteApplicationInputProcessingConfiguration": {
       "name": "DeleteApplicationInputProcessingConfiguration",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "Deletes the specified input processing configuration of the application.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -111,6 +144,9 @@
     },
     "DeleteApplicationOutput": {
       "name": "DeleteApplicationOutput",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "Deletes the specified output of the application.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -121,6 +157,9 @@
     },
     "DeleteApplicationReferenceDataSource": {
       "name": "DeleteApplicationReferenceDataSource",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "Deletes the specified reference data source of the application.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -131,6 +170,9 @@
     },
     "DeleteApplicationSnapshot": {
       "name": "DeleteApplicationSnapshot",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "Deletes a snapshot for an application.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -141,6 +183,9 @@
     },
     "DeleteApplicationVpcConfiguration": {
       "name": "DeleteApplicationVpcConfiguration",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "Deletes the specified VPC configuration of the application.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -151,6 +196,9 @@
     },
     "DescribeApplication": {
       "name": "DescribeApplication",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "Describes the specified application.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -161,6 +209,9 @@
     },
     "DescribeApplicationSnapshot": {
       "name": "DescribeApplicationSnapshot",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "Describes an application snapshot.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -171,6 +222,9 @@
     },
     "DiscoverInputSchema": {
       "name": "DiscoverInputSchema",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "Discovers the input schema for the application.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -179,6 +233,9 @@
     },
     "ListApplicationSnapshots": {
       "name": "ListApplicationSnapshots",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "Lists the snapshots for an application.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -189,6 +246,9 @@
     },
     "ListApplications": {
       "name": "ListApplications",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "List applications for the account",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -197,6 +257,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "Fetch the tags associated with the application.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -207,6 +270,9 @@
     },
     "StartApplication": {
       "name": "StartApplication",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "Starts the application.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -217,6 +283,9 @@
     },
     "StopApplication": {
       "name": "StopApplication",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "Stops the application.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -227,6 +296,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "Add tags to the application.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -237,6 +309,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "Remove the specified tags from the application.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -247,6 +322,9 @@
     },
     "UpdateApplication": {
       "name": "UpdateApplication",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
       "description": "Updates the application.",
       "accessLevel": "Write",
       "resourceTypes": [

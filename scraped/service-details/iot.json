@@ -3,6 +3,9 @@
   "actions": {
     "AcceptCertificateTransfer": {
       "name": "AcceptCertificateTransfer",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Accepts a pending certificate transfer.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "AddThingToBillingGroup": {
       "name": "AddThingToBillingGroup",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Adds a thing to the specified billing group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -23,6 +29,9 @@
     },
     "AddThingToThingGroup": {
       "name": "AddThingToThingGroup",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Adds a thing to the specified thing group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -33,6 +42,9 @@
     },
     "AssociateTargetsWithJob": {
       "name": "AssociateTargetsWithJob",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Associates a group with a continuous job.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -43,6 +55,9 @@
     },
     "AttachPolicy": {
       "name": "AttachPolicy",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Attaches a policy to the specified target.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -53,6 +68,9 @@
     },
     "AttachPrincipalPolicy": {
       "name": "AttachPrincipalPolicy",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Attaches the specified policy to the specified principal (certificate or other credential).",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -63,6 +81,9 @@
     },
     "AttachSecurityProfile": {
       "name": "AttachSecurityProfile",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Associates a Device Defender security profile with a thing group or with this account.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -73,6 +94,9 @@
     },
     "AttachThingPrincipal": {
       "name": "AttachThingPrincipal",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Attaches the specified principal to the specified thing.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -81,6 +105,9 @@
     },
     "CancelAuditMitigationActionsTask": {
       "name": "CancelAuditMitigationActionsTask",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Cancels a mitigation action task that is in progress.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -89,6 +116,9 @@
     },
     "CancelAuditTask": {
       "name": "CancelAuditTask",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Cancels an audit that is in progress. The audit can be either scheduled or on-demand.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -97,6 +127,9 @@
     },
     "CancelCertificateTransfer": {
       "name": "CancelCertificateTransfer",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Cancels a pending transfer for the specified certificate.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -107,6 +140,9 @@
     },
     "CancelJob": {
       "name": "CancelJob",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Cancels a job.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -117,6 +153,9 @@
     },
     "CancelJobExecution": {
       "name": "CancelJobExecution",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Cancels a job execution on a particular device.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -127,6 +166,9 @@
     },
     "ClearDefaultAuthorizer": {
       "name": "ClearDefaultAuthorizer",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Clears the default authorizer.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -135,6 +177,9 @@
     },
     "CloseTunnel": {
       "name": "CloseTunnel",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Closes a tunnel.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -145,6 +190,9 @@
     },
     "Connect": {
       "name": "Connect",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Connect as the specified client",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -155,6 +203,9 @@
     },
     "CreateAuditSuppression": {
       "name": "CreateAuditSuppression",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Creates a Device Defender audit suppression.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -163,6 +214,9 @@
     },
     "CreateAuthorizer": {
       "name": "CreateAuthorizer",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Creates an authorizer.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -173,6 +227,9 @@
     },
     "CreateBillingGroup": {
       "name": "CreateBillingGroup",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Creates a billing group.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -183,6 +240,9 @@
     },
     "CreateCertificateFromCsr": {
       "name": "CreateCertificateFromCsr",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Creates an X.509 certificate using the specified certificate signing request.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -191,6 +251,9 @@
     },
     "CreateDimension": {
       "name": "CreateDimension",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Defines a dimension that can be used to to limit the scope of a metric used in a security\n                                                profile.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -201,6 +264,9 @@
     },
     "CreateDomainConfiguration": {
       "name": "CreateDomainConfiguration",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Creates a domain configuration.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -211,6 +277,9 @@
     },
     "CreateDynamicThingGroup": {
       "name": "CreateDynamicThingGroup",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Creates a Dynamic Thing Group",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -221,6 +290,9 @@
     },
     "CreateJob": {
       "name": "CreateJob",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Creates a job.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -231,6 +303,9 @@
     },
     "CreateKeysAndCertificate": {
       "name": "CreateKeysAndCertificate",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Creates a 2048 bit RSA key pair and issues an X.509 certificate using the issued public\n                                                key.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -239,6 +314,9 @@
     },
     "CreateMitigationAction": {
       "name": "CreateMitigationAction",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Defines an action that can be applied to audit findings by using StartAuditMitigationActionsTask.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -249,6 +327,9 @@
     },
     "CreateOTAUpdate": {
       "name": "CreateOTAUpdate",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Creates an OTA update job.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -259,6 +340,9 @@
     },
     "CreatePolicy": {
       "name": "CreatePolicy",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Creates an AWS IoT policy.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -269,6 +353,9 @@
     },
     "CreatePolicyVersion": {
       "name": "CreatePolicyVersion",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Creates a new version of the specified AWS IoT policy.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -279,6 +366,9 @@
     },
     "CreateProvisioningClaim": {
       "name": "CreateProvisioningClaim",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Creates a provisioning claim.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -289,6 +379,9 @@
     },
     "CreateProvisioningTemplate": {
       "name": "CreateProvisioningTemplate",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Creates a fleet provisioning template.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -299,6 +392,9 @@
     },
     "CreateProvisioningTemplateVersion": {
       "name": "CreateProvisioningTemplateVersion",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Creates a new version of a fleet provisioning template.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -309,6 +405,9 @@
     },
     "CreateRoleAlias": {
       "name": "CreateRoleAlias",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Creates a role alias.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -319,6 +418,9 @@
     },
     "CreateScheduledAudit": {
       "name": "CreateScheduledAudit",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Creates a scheduled audit that is run at a specified time interval.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -329,6 +431,9 @@
     },
     "CreateSecurityProfile": {
       "name": "CreateSecurityProfile",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Creates a Device Defender security profile.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -339,6 +444,9 @@
     },
     "CreateStream": {
       "name": "CreateStream",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Creates a new AWS IoT stream",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -349,6 +457,9 @@
     },
     "CreateThing": {
       "name": "CreateThing",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Creates a thing in the thing registry.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -359,6 +470,9 @@
     },
     "CreateThingGroup": {
       "name": "CreateThingGroup",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Creates a thing group.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -369,6 +483,9 @@
     },
     "CreateThingType": {
       "name": "CreateThingType",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Creates a new thing type.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -379,6 +496,9 @@
     },
     "CreateTopicRule": {
       "name": "CreateTopicRule",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Creates a rule.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -389,6 +509,9 @@
     },
     "DeleteAccountAuditConfiguration": {
       "name": "DeleteAccountAuditConfiguration",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes the audit configuration associated with the account.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -397,6 +520,9 @@
     },
     "DeleteAuditSuppression": {
       "name": "DeleteAuditSuppression",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes a Device Defender audit suppression.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -405,6 +531,9 @@
     },
     "DeleteAuthorizer": {
       "name": "DeleteAuthorizer",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes the specified authorizer.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -415,6 +544,9 @@
     },
     "DeleteBillingGroup": {
       "name": "DeleteBillingGroup",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes the specified billing group.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -425,6 +557,9 @@
     },
     "DeleteCACertificate": {
       "name": "DeleteCACertificate",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes a registered CA certificate.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -435,6 +570,9 @@
     },
     "DeleteCertificate": {
       "name": "DeleteCertificate",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes the specified certificate.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -445,6 +583,9 @@
     },
     "DeleteDimension": {
       "name": "DeleteDimension",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Removes the specified dimension from your AWS account.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -455,6 +596,9 @@
     },
     "DeleteDomainConfiguration": {
       "name": "DeleteDomainConfiguration",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes a domain configuration.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -465,6 +609,9 @@
     },
     "DeleteDynamicThingGroup": {
       "name": "DeleteDynamicThingGroup",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes the specified Dynamic Thing Group",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -475,6 +622,9 @@
     },
     "DeleteJob": {
       "name": "DeleteJob",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes a job and its related job executions.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -485,6 +635,9 @@
     },
     "DeleteJobExecution": {
       "name": "DeleteJobExecution",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes a job execution.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -495,6 +648,9 @@
     },
     "DeleteMitigationAction": {
       "name": "DeleteMitigationAction",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes a defined mitigation action from your AWS account.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -505,6 +661,9 @@
     },
     "DeleteOTAUpdate": {
       "name": "DeleteOTAUpdate",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes an OTA update job.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -515,6 +674,9 @@
     },
     "DeletePolicy": {
       "name": "DeletePolicy",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes the specified policy.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -525,6 +687,9 @@
     },
     "DeletePolicyVersion": {
       "name": "DeletePolicyVersion",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes the specified version of the specified policy.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -535,6 +700,9 @@
     },
     "DeleteProvisioningTemplate": {
       "name": "DeleteProvisioningTemplate",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes a fleet provisioning template.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -545,6 +713,9 @@
     },
     "DeleteProvisioningTemplateVersion": {
       "name": "DeleteProvisioningTemplateVersion",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes a fleet provisioning template version.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -555,6 +726,9 @@
     },
     "DeleteRegistrationCode": {
       "name": "DeleteRegistrationCode",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes a CA certificate registration code.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -563,6 +737,9 @@
     },
     "DeleteRoleAlias": {
       "name": "DeleteRoleAlias",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes the specified role alias.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -573,6 +750,9 @@
     },
     "DeleteScheduledAudit": {
       "name": "DeleteScheduledAudit",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes a scheduled audit.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -583,6 +763,9 @@
     },
     "DeleteSecurityProfile": {
       "name": "DeleteSecurityProfile",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes a Device Defender security profile.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -593,6 +776,9 @@
     },
     "DeleteStream": {
       "name": "DeleteStream",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes a specified stream.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -603,6 +789,9 @@
     },
     "DeleteThing": {
       "name": "DeleteThing",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes the specified thing.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -613,6 +802,9 @@
     },
     "DeleteThingGroup": {
       "name": "DeleteThingGroup",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes the specified thing group.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -623,6 +815,9 @@
     },
     "DeleteThingShadow": {
       "name": "DeleteThingShadow",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes the specified thing shadow.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -633,6 +828,9 @@
     },
     "DeleteThingType": {
       "name": "DeleteThingType",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes the specified thing type.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -643,6 +841,9 @@
     },
     "DeleteTopicRule": {
       "name": "DeleteTopicRule",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes the specified rule.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -653,6 +854,9 @@
     },
     "DeleteV2LoggingLevel": {
       "name": "DeleteV2LoggingLevel",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deletes the specified v2 logging level.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -661,6 +865,9 @@
     },
     "DeprecateThingType": {
       "name": "DeprecateThingType",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Deprecates the specified thing type.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -671,6 +878,9 @@
     },
     "DescribeAccountAuditConfiguration": {
       "name": "DescribeAccountAuditConfiguration",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets information about audit configurations for the account.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -679,6 +889,9 @@
     },
     "DescribeAuditFinding": {
       "name": "DescribeAuditFinding",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets information about a single audit finding. Properties include the reason for noncompliance,\n                                                the severity of the issue, and when the audit that returned the finding was started.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -687,6 +900,9 @@
     },
     "DescribeAuditMitigationActionsTask": {
       "name": "DescribeAuditMitigationActionsTask",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets information about an audit mitigation task that is used to apply mitigation actions\n                                                to a set of audit findings.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -695,6 +911,9 @@
     },
     "DescribeAuditSuppression": {
       "name": "DescribeAuditSuppression",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets information about a Device Defender audit suppression.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -703,6 +922,9 @@
     },
     "DescribeAuditTask": {
       "name": "DescribeAuditTask",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets information about a Device Defender audit.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -711,6 +933,9 @@
     },
     "DescribeAuthorizer": {
       "name": "DescribeAuthorizer",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Describes an authorizer.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -721,6 +946,9 @@
     },
     "DescribeBillingGroup": {
       "name": "DescribeBillingGroup",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets information about the specified billing group.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -731,6 +959,9 @@
     },
     "DescribeCACertificate": {
       "name": "DescribeCACertificate",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Describes a registered CA certificate.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -741,6 +972,9 @@
     },
     "DescribeCertificate": {
       "name": "DescribeCertificate",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets information about the specified certificate.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -751,6 +985,9 @@
     },
     "DescribeDefaultAuthorizer": {
       "name": "DescribeDefaultAuthorizer",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Describes the default authorizer.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -759,6 +996,9 @@
     },
     "DescribeDimension": {
       "name": "DescribeDimension",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Provides details about a dimension that is defined in your AWS account.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -769,6 +1009,9 @@
     },
     "DescribeDomainConfiguration": {
       "name": "DescribeDomainConfiguration",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets information about the domain configuration.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -779,6 +1022,9 @@
     },
     "DescribeEndpoint": {
       "name": "DescribeEndpoint",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Returns a unique endpoint specific to the AWS account making the call.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -787,6 +1033,9 @@
     },
     "DescribeEventConfigurations": {
       "name": "DescribeEventConfigurations",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Returns account event configurations.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -795,6 +1044,9 @@
     },
     "DescribeIndex": {
       "name": "DescribeIndex",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets information about the specified index.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -805,6 +1057,9 @@
     },
     "DescribeJob": {
       "name": "DescribeJob",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Describes a job.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -815,6 +1070,9 @@
     },
     "DescribeJobExecution": {
       "name": "DescribeJobExecution",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Describes a job execution.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -825,6 +1083,9 @@
     },
     "DescribeMitigationAction": {
       "name": "DescribeMitigationAction",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets information about a mitigation action.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -835,6 +1096,9 @@
     },
     "DescribeProvisioningTemplate": {
       "name": "DescribeProvisioningTemplate",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Returns information about a fleet provisioning template.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -845,6 +1109,9 @@
     },
     "DescribeProvisioningTemplateVersion": {
       "name": "DescribeProvisioningTemplateVersion",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Returns information about a fleet provisioning template version.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -855,6 +1122,9 @@
     },
     "DescribeRoleAlias": {
       "name": "DescribeRoleAlias",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Describes a role alias.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -865,6 +1135,9 @@
     },
     "DescribeScheduledAudit": {
       "name": "DescribeScheduledAudit",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets information about a scheduled audit.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -875,6 +1148,9 @@
     },
     "DescribeSecurityProfile": {
       "name": "DescribeSecurityProfile",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets information about a Device Defender security profile.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -885,6 +1161,9 @@
     },
     "DescribeStream": {
       "name": "DescribeStream",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets information about the specified stream.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -895,6 +1174,9 @@
     },
     "DescribeThing": {
       "name": "DescribeThing",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets information about the specified thing.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -905,6 +1187,9 @@
     },
     "DescribeThingGroup": {
       "name": "DescribeThingGroup",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets information about the specified thing group.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -915,6 +1200,9 @@
     },
     "DescribeThingRegistrationTask": {
       "name": "DescribeThingRegistrationTask",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets information about the bulk thing registration task.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -923,6 +1211,9 @@
     },
     "DescribeThingType": {
       "name": "DescribeThingType",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets information about the specified thing type.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -933,6 +1224,9 @@
     },
     "DescribeTunnel": {
       "name": "DescribeTunnel",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Describes a tunnel.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -943,6 +1237,9 @@
     },
     "DetachPolicy": {
       "name": "DetachPolicy",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Detaches a policy from the specified target.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -953,6 +1250,9 @@
     },
     "DetachPrincipalPolicy": {
       "name": "DetachPrincipalPolicy",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Removes the specified policy from the specified certificate.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -963,6 +1263,9 @@
     },
     "DetachSecurityProfile": {
       "name": "DetachSecurityProfile",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Disassociates a Device Defender security profile from a thing group or from this account.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -973,6 +1276,9 @@
     },
     "DetachThingPrincipal": {
       "name": "DetachThingPrincipal",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Detaches the specified principal from the specified thing.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -981,6 +1287,9 @@
     },
     "DisableTopicRule": {
       "name": "DisableTopicRule",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Disables the specified rule.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -991,6 +1300,9 @@
     },
     "EnableTopicRule": {
       "name": "EnableTopicRule",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Enables the specified rule.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1001,6 +1313,9 @@
     },
     "GetCardinality": {
       "name": "GetCardinality",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Get cardinality for IoT fleet index",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -1011,6 +1326,9 @@
     },
     "GetEffectivePolicies": {
       "name": "GetEffectivePolicies",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets effective policies.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -1021,6 +1339,9 @@
     },
     "GetIndexingConfiguration": {
       "name": "GetIndexingConfiguration",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets current fleet indexing configuration",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -1029,6 +1350,9 @@
     },
     "GetJobDocument": {
       "name": "GetJobDocument",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets a job document.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -1039,6 +1363,9 @@
     },
     "GetLoggingOptions": {
       "name": "GetLoggingOptions",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets the logging options.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -1047,6 +1374,9 @@
     },
     "GetOTAUpdate": {
       "name": "GetOTAUpdate",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets the information about the OTA update job.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -1057,6 +1387,9 @@
     },
     "GetPendingJobExecutions": {
       "name": "GetPendingJobExecutions",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets the list of all jobs for a thing that are not in a terminal state.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -1067,6 +1400,9 @@
     },
     "GetPercentiles": {
       "name": "GetPercentiles",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Get percentiles for IoT fleet index",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -1077,6 +1413,9 @@
     },
     "GetPolicy": {
       "name": "GetPolicy",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets information about the specified policy with the policy document of the default\n                                                version.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -1087,6 +1426,9 @@
     },
     "GetPolicyVersion": {
       "name": "GetPolicyVersion",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets information about the specified policy version.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -1097,6 +1439,9 @@
     },
     "GetRegistrationCode": {
       "name": "GetRegistrationCode",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets a registration code used to register a CA certificate with AWS IoT.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -1105,6 +1450,9 @@
     },
     "GetStatistics": {
       "name": "GetStatistics",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Get statistics for IoT fleet index",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -1115,6 +1463,9 @@
     },
     "GetThingShadow": {
       "name": "GetThingShadow",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets the thing shadow.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -1125,6 +1476,9 @@
     },
     "GetTopicRule": {
       "name": "GetTopicRule",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets information about the specified rule.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -1135,6 +1489,9 @@
     },
     "GetV2LoggingOptions": {
       "name": "GetV2LoggingOptions",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets v2 logging options.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -1143,6 +1500,9 @@
     },
     "ListActiveViolations": {
       "name": "ListActiveViolations",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists the active violations for a given Device Defender security profile or Thing.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -1153,6 +1513,9 @@
     },
     "ListAttachedPolicies": {
       "name": "ListAttachedPolicies",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists the policies attached to the specified thing group.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1161,6 +1524,9 @@
     },
     "ListAuditFindings": {
       "name": "ListAuditFindings",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists the findings (results) of a Device Defender audit or of the audits performed\n                                                during a specified time period.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1169,6 +1535,9 @@
     },
     "ListAuditMitigationActionsExecutions": {
       "name": "ListAuditMitigationActionsExecutions",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets the status of audit mitigation action tasks that were executed.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1177,6 +1546,9 @@
     },
     "ListAuditMitigationActionsTasks": {
       "name": "ListAuditMitigationActionsTasks",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets a list of audit mitigation action tasks that match the specified filters.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1185,6 +1557,9 @@
     },
     "ListAuditSuppressions": {
       "name": "ListAuditSuppressions",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists your Device Defender audit suppressions.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1193,6 +1568,9 @@
     },
     "ListAuditTasks": {
       "name": "ListAuditTasks",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists the Device Defender audits that have been performed during a given time period.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1201,6 +1579,9 @@
     },
     "ListAuthorizers": {
       "name": "ListAuthorizers",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists the authorizers registered in your account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1209,6 +1590,9 @@
     },
     "ListBillingGroups": {
       "name": "ListBillingGroups",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists all billing groups.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1217,6 +1601,9 @@
     },
     "ListCACertificates": {
       "name": "ListCACertificates",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists the CA certificates registered for your AWS account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1225,6 +1612,9 @@
     },
     "ListCertificates": {
       "name": "ListCertificates",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists your certificates.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1233,6 +1623,9 @@
     },
     "ListCertificatesByCA": {
       "name": "ListCertificatesByCA",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "List the device certificates signed by the specified CA certificate.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1241,6 +1634,9 @@
     },
     "ListDimensions": {
       "name": "ListDimensions",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists the dimensions that are defined for your AWS account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1249,6 +1645,9 @@
     },
     "ListDomainConfigurations": {
       "name": "ListDomainConfigurations",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists the domain configuration created by your AWS account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1257,6 +1656,9 @@
     },
     "ListIndices": {
       "name": "ListIndices",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists all indices for fleet index",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1265,6 +1667,9 @@
     },
     "ListJobExecutionsForJob": {
       "name": "ListJobExecutionsForJob",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists the job executions for a job.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -1275,6 +1680,9 @@
     },
     "ListJobExecutionsForThing": {
       "name": "ListJobExecutionsForThing",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists the job executions for the specified thing.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -1285,6 +1693,9 @@
     },
     "ListJobs": {
       "name": "ListJobs",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists jobs.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1293,6 +1704,9 @@
     },
     "ListMitigationActions": {
       "name": "ListMitigationActions",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets a list of all mitigation actions that match the specified filter criteria.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1301,6 +1715,9 @@
     },
     "ListNamedShadowsForThing": {
       "name": "ListNamedShadowsForThing",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists all named shadows for a given thing.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -1311,6 +1728,9 @@
     },
     "ListOTAUpdates": {
       "name": "ListOTAUpdates",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists OTA update jobs in the account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1319,6 +1739,9 @@
     },
     "ListOutgoingCertificates": {
       "name": "ListOutgoingCertificates",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists certificates that are being transfered but not yet accepted.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1327,6 +1750,9 @@
     },
     "ListPolicies": {
       "name": "ListPolicies",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists your policies.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1335,6 +1761,9 @@
     },
     "ListPolicyPrincipals": {
       "name": "ListPolicyPrincipals",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists the principals associated with the specified policy.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1343,6 +1772,9 @@
     },
     "ListPolicyVersions": {
       "name": "ListPolicyVersions",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists the versions of the specified policy, and identifies the default version.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -1353,6 +1785,9 @@
     },
     "ListPrincipalPolicies": {
       "name": "ListPrincipalPolicies",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists the policies attached to the specified principal. If you use an Amazon Cognito\n                                                identity, the ID needs to be in Amazon Cognito Identity format.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1361,6 +1796,9 @@
     },
     "ListPrincipalThings": {
       "name": "ListPrincipalThings",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists the things associated with the specified principal.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1369,6 +1807,9 @@
     },
     "ListProvisioningTemplateVersions": {
       "name": "ListProvisioningTemplateVersions",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "A list of fleet provisioning template versions.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -1379,6 +1820,9 @@
     },
     "ListProvisioningTemplates": {
       "name": "ListProvisioningTemplates",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists the fleet provisioning templates in your AWS account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1387,6 +1831,9 @@
     },
     "ListRoleAliases": {
       "name": "ListRoleAliases",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists role aliases.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1395,6 +1842,9 @@
     },
     "ListScheduledAudits": {
       "name": "ListScheduledAudits",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists all of your scheduled audits.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1403,6 +1853,9 @@
     },
     "ListSecurityProfiles": {
       "name": "ListSecurityProfiles",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists the Device Defender security profiles you have created.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -1413,6 +1866,9 @@
     },
     "ListSecurityProfilesForTarget": {
       "name": "ListSecurityProfilesForTarget",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists the Device Defender security profiles attached to a target.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -1423,6 +1879,9 @@
     },
     "ListStreams": {
       "name": "ListStreams",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists the streams in your account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1431,6 +1890,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists all tags for a given resource.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -1441,6 +1903,9 @@
     },
     "ListTargetsForPolicy": {
       "name": "ListTargetsForPolicy",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "List targets for the specified policy.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -1451,6 +1916,9 @@
     },
     "ListTargetsForSecurityProfile": {
       "name": "ListTargetsForSecurityProfile",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists the targets associated with a given Device Defender security profile.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -1461,6 +1929,9 @@
     },
     "ListThingGroups": {
       "name": "ListThingGroups",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists all thing groups.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1469,6 +1940,9 @@
     },
     "ListThingGroupsForThing": {
       "name": "ListThingGroupsForThing",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "List thing groups to which the specified thing belongs.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -1479,6 +1953,9 @@
     },
     "ListThingPrincipals": {
       "name": "ListThingPrincipals",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists the principals associated with the specified thing.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1487,6 +1964,9 @@
     },
     "ListThingRegistrationTaskReports": {
       "name": "ListThingRegistrationTaskReports",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists information about bulk thing registration tasks.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1495,6 +1975,9 @@
     },
     "ListThingRegistrationTasks": {
       "name": "ListThingRegistrationTasks",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists bulk thing registration tasks.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1503,6 +1986,9 @@
     },
     "ListThingTypes": {
       "name": "ListThingTypes",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists all thing types.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1511,6 +1997,9 @@
     },
     "ListThings": {
       "name": "ListThings",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists all things.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1519,6 +2008,9 @@
     },
     "ListThingsInBillingGroup": {
       "name": "ListThingsInBillingGroup",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists all things in the specified billing group.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -1529,6 +2021,9 @@
     },
     "ListThingsInThingGroup": {
       "name": "ListThingsInThingGroup",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists all things in the specified thing group.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -1539,6 +2034,9 @@
     },
     "ListTopicRules": {
       "name": "ListTopicRules",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists the rules for the specific topic.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1547,6 +2045,9 @@
     },
     "ListTunnels": {
       "name": "ListTunnels",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists tunnels.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1555,6 +2056,9 @@
     },
     "ListV2LoggingLevels": {
       "name": "ListV2LoggingLevels",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists the v2 logging levels.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -1563,6 +2067,9 @@
     },
     "ListViolationEvents": {
       "name": "ListViolationEvents",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Lists the Device Defender security profile violations discovered during the given\n                                                time period.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -1573,6 +2080,9 @@
     },
     "OpenTunnel": {
       "name": "OpenTunnel",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Opens a tunnel.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -1581,6 +2091,9 @@
     },
     "Publish": {
       "name": "Publish",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Publish to the specified topic.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1591,6 +2104,9 @@
     },
     "Receive": {
       "name": "Receive",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Receive from the specified topic.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1601,6 +2117,9 @@
     },
     "RegisterCACertificate": {
       "name": "RegisterCACertificate",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Registers a CA certificate with AWS IoT.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -1609,6 +2128,9 @@
     },
     "RegisterCertificate": {
       "name": "RegisterCertificate",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Registers a device certificate with AWS IoT.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -1617,6 +2139,9 @@
     },
     "RegisterCertificateWithoutCA": {
       "name": "RegisterCertificateWithoutCA",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Registers a device certificate with AWS IoT without a registered CA (certificate authority).",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -1625,6 +2150,9 @@
     },
     "RegisterThing": {
       "name": "RegisterThing",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Registers your thing.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -1633,6 +2161,9 @@
     },
     "RejectCertificateTransfer": {
       "name": "RejectCertificateTransfer",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Rejects a pending certificate transfer.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1643,6 +2174,9 @@
     },
     "RemoveThingFromBillingGroup": {
       "name": "RemoveThingFromBillingGroup",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Removes thing from the specified billing group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1653,6 +2187,9 @@
     },
     "RemoveThingFromThingGroup": {
       "name": "RemoveThingFromThingGroup",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Removes thing from the specified thing group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1663,6 +2200,9 @@
     },
     "ReplaceTopicRule": {
       "name": "ReplaceTopicRule",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Replaces the specified rule.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1673,6 +2213,9 @@
     },
     "SearchIndex": {
       "name": "SearchIndex",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Search IoT fleet index",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -1683,6 +2226,9 @@
     },
     "SetDefaultAuthorizer": {
       "name": "SetDefaultAuthorizer",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Sets the default authorizer. This will be used if a websocket connection is made without\n                                                specifying an authorizer.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -1693,6 +2239,9 @@
     },
     "SetDefaultPolicyVersion": {
       "name": "SetDefaultPolicyVersion",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Sets the specified version of the specified policy as the policy's default (operative)\n                                                version.",
       "accessLevel": "Permissions management",
       "resourceTypes": [
@@ -1703,6 +2252,9 @@
     },
     "SetLoggingOptions": {
       "name": "SetLoggingOptions",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Sets the logging options.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -1711,6 +2263,9 @@
     },
     "SetV2LoggingLevel": {
       "name": "SetV2LoggingLevel",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Sets the v2 logging level.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -1719,6 +2274,9 @@
     },
     "SetV2LoggingOptions": {
       "name": "SetV2LoggingOptions",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Sets the v2 logging options.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -1727,6 +2285,9 @@
     },
     "StartAuditMitigationActionsTask": {
       "name": "StartAuditMitigationActionsTask",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Starts a task that applies a set of mitigation actions to the specified target.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -1735,6 +2296,9 @@
     },
     "StartNextPendingJobExecution": {
       "name": "StartNextPendingJobExecution",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Gets and starts the next pending job execution for a thing.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1745,6 +2309,9 @@
     },
     "StartOnDemandAuditTask": {
       "name": "StartOnDemandAuditTask",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Starts an on-demand Device Defender audit.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -1753,6 +2320,9 @@
     },
     "StartThingRegistrationTask": {
       "name": "StartThingRegistrationTask",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Starts a bulk thing registration task.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -1761,6 +2331,9 @@
     },
     "StopThingRegistrationTask": {
       "name": "StopThingRegistrationTask",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Stops a bulk thing registration task.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -1769,6 +2342,9 @@
     },
     "Subscribe": {
       "name": "Subscribe",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Subscribe to the specified TopicFilter.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1779,6 +2355,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Tag a specified resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -1789,6 +2368,9 @@
     },
     "TestAuthorization": {
       "name": "TestAuthorization",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Test the policies evaluation for group policies",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -1799,6 +2381,9 @@
     },
     "TestInvokeAuthorizer": {
       "name": "TestInvokeAuthorizer",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Invoke the specified custom authorizer for testing purposes.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -1809,6 +2394,9 @@
     },
     "TransferCertificate": {
       "name": "TransferCertificate",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Transfers the specified certificate to the specified AWS account.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1819,6 +2407,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Untag a specified resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -1829,6 +2420,9 @@
     },
     "UpdateAccountAuditConfiguration": {
       "name": "UpdateAccountAuditConfiguration",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Configures or reconfigures the Device Defender audit settings for this account.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -1837,6 +2431,9 @@
     },
     "UpdateAuditSuppression": {
       "name": "UpdateAuditSuppression",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Updates a Device Defender audit suppression.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -1845,6 +2442,9 @@
     },
     "UpdateAuthorizer": {
       "name": "UpdateAuthorizer",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Updates an authorizer",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1855,6 +2455,9 @@
     },
     "UpdateBillingGroup": {
       "name": "UpdateBillingGroup",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Updates information associated with the specified billing group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1865,6 +2468,9 @@
     },
     "UpdateCACertificate": {
       "name": "UpdateCACertificate",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Updates a registered CA certificate.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1875,6 +2481,9 @@
     },
     "UpdateCertificate": {
       "name": "UpdateCertificate",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Updates the status of the specified certificate. This operation is idempotent.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1885,6 +2494,9 @@
     },
     "UpdateDimension": {
       "name": "UpdateDimension",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Updates the definition for a dimension.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1895,6 +2507,9 @@
     },
     "UpdateDomainConfiguration": {
       "name": "UpdateDomainConfiguration",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Updates a domain configuration.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1905,6 +2520,9 @@
     },
     "UpdateDynamicThingGroup": {
       "name": "UpdateDynamicThingGroup",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Updates a Dynamic Thing Group",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1915,6 +2533,9 @@
     },
     "UpdateEventConfigurations": {
       "name": "UpdateEventConfigurations",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Updates event configurations.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -1923,6 +2544,9 @@
     },
     "UpdateIndexingConfiguration": {
       "name": "UpdateIndexingConfiguration",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Updates fleet indexing configuration",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -1931,6 +2555,9 @@
     },
     "UpdateJob": {
       "name": "UpdateJob",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Updates a job.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1941,6 +2568,9 @@
     },
     "UpdateJobExecution": {
       "name": "UpdateJobExecution",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Updates a job execution.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1951,6 +2581,9 @@
     },
     "UpdateMitigationAction": {
       "name": "UpdateMitigationAction",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Updates the definition for the specified mitigation action.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1961,6 +2594,9 @@
     },
     "UpdateProvisioningTemplate": {
       "name": "UpdateProvisioningTemplate",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Updates a fleet provisioning template.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1971,6 +2607,9 @@
     },
     "UpdateRoleAlias": {
       "name": "UpdateRoleAlias",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Updates the role alias",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1981,6 +2620,9 @@
     },
     "UpdateScheduledAudit": {
       "name": "UpdateScheduledAudit",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Updates a scheduled audit, including what checks are performed and how often the audit\n                                                takes place.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -1991,6 +2633,9 @@
     },
     "UpdateSecurityProfile": {
       "name": "UpdateSecurityProfile",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Updates a Device Defender security profile.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -2001,6 +2646,9 @@
     },
     "UpdateStream": {
       "name": "UpdateStream",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Updates the data for a stream.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -2011,6 +2659,9 @@
     },
     "UpdateThing": {
       "name": "UpdateThing",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Updates information associated with the specified thing.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -2021,6 +2672,9 @@
     },
     "UpdateThingGroup": {
       "name": "UpdateThingGroup",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Updates information associated with the specified thing group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -2031,6 +2685,9 @@
     },
     "UpdateThingGroupsForThing": {
       "name": "UpdateThingGroupsForThing",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Updates the thing groups to which the thing belongs.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -2041,6 +2698,9 @@
     },
     "UpdateThingShadow": {
       "name": "UpdateThingShadow",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Updates the thing shadow.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -2051,6 +2711,9 @@
     },
     "ValidateSecurityProfileBehaviors": {
       "name": "ValidateSecurityProfileBehaviors",
+      "topics": [
+        "AWS IoT"
+      ],
       "description": "Validates a Device Defender security profile behaviors specification.",
       "accessLevel": "Read",
       "resourceTypes": [],

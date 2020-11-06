@@ -3,6 +3,9 @@
   "actions": {
     "AdvertiseByoipCidr": {
       "name": "AdvertiseByoipCidr",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
       "description": "Advertises an IPv4 address range that is provisioned for use with your accelerator\n                                                through bring your own IP addresses (BYOIP).",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "CreateAccelerator": {
       "name": "CreateAccelerator",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
       "description": "Create an accelerator.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -19,6 +25,9 @@
     },
     "CreateEndpointGroup": {
       "name": "CreateEndpointGroup",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
       "description": "Add an endpoint group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -29,6 +38,9 @@
     },
     "CreateListener": {
       "name": "CreateListener",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
       "description": "Add a listener.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -39,6 +51,9 @@
     },
     "DeleteAccelerator": {
       "name": "DeleteAccelerator",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
       "description": "Delete the accelerator.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -49,6 +64,9 @@
     },
     "DeleteEndpointGroup": {
       "name": "DeleteEndpointGroup",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
       "description": "Delete the endpoint group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -59,6 +77,9 @@
     },
     "DeleteListener": {
       "name": "DeleteListener",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
       "description": "Delete the listener.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -69,6 +90,9 @@
     },
     "DeprovisionByoipCidr": {
       "name": "DeprovisionByoipCidr",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
       "description": "Releases the specified address range that you provisioned for use with your accelerator\n                                                through bring your own IP addresses (BYOIP) and deletes the corresponding address\n                                                pool.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -77,6 +101,9 @@
     },
     "DescribeAccelerator": {
       "name": "DescribeAccelerator",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
       "description": "Describe the accelerator.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -87,6 +114,9 @@
     },
     "DescribeAcceleratorAttributes": {
       "name": "DescribeAcceleratorAttributes",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
       "description": "Describe the accelerator Attributes.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -97,6 +127,9 @@
     },
     "DescribeEndpointGroup": {
       "name": "DescribeEndpointGroup",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
       "description": "Describe the endpoint group.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -107,6 +140,9 @@
     },
     "DescribeListener": {
       "name": "DescribeListener",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
       "description": "Describe the listener.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -117,6 +153,9 @@
     },
     "ListAccelerators": {
       "name": "ListAccelerators",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
       "description": "List the accelerators.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -125,6 +164,9 @@
     },
     "ListByoipCidrs": {
       "name": "ListByoipCidrs",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
       "description": "List the byoip cidrs.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -133,6 +175,9 @@
     },
     "ListEndpointGroups": {
       "name": "ListEndpointGroups",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
       "description": "List the endpoint groups.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -143,6 +188,9 @@
     },
     "ListListeners": {
       "name": "ListListeners",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
       "description": "List the listeners.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -153,6 +201,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
       "description": "List tags for a globalaccelerator resource.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -163,6 +214,9 @@
     },
     "ProvisionByoipCidr": {
       "name": "ProvisionByoipCidr",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
       "description": "Provisions an address range for use with your accelerator through bring your own IP\n                                                addresses (BYOIP) and creates a corresponding address pool.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -171,6 +225,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
       "description": "Add tags to globalaccelerator resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -181,6 +238,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
       "description": "Remove tags from globalaccelerator resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -191,6 +251,9 @@
     },
     "UpdateAccelerator": {
       "name": "UpdateAccelerator",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
       "description": "Update the accelerator.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -201,6 +264,9 @@
     },
     "UpdateAcceleratorAttributes": {
       "name": "UpdateAcceleratorAttributes",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
       "description": "Update the accelerator attributes.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -211,6 +277,9 @@
     },
     "UpdateEndpointGroup": {
       "name": "UpdateEndpointGroup",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
       "description": "Update the endpoint group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -221,6 +290,9 @@
     },
     "UpdateListener": {
       "name": "UpdateListener",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
       "description": "Update the listener.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -231,6 +303,9 @@
     },
     "WithdrawByoipCidr": {
       "name": "WithdrawByoipCidr",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
       "description": "Stops advertising an IPv4 address range that is provisioned as an address pool.",
       "accessLevel": "Write",
       "resourceTypes": [],

@@ -3,6 +3,9 @@
   "actions": {
     "AssociateKmsKey": {
       "name": "AssociateKmsKey",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Associates the specified AWS Key Management Service (AWS KMS) customer master key\n                                                (CMK) with the specified log group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -13,6 +16,9 @@
     },
     "CancelExportTask": {
       "name": "CancelExportTask",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Cancels an export task if it is in PENDING or RUNNING state",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -21,6 +27,9 @@
     },
     "CreateExportTask": {
       "name": "CreateExportTask",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Creates an ExportTask which allows you to efficiently export data from a Log Group\n                                                to your Amazon S3 bucket",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -31,6 +40,9 @@
     },
     "CreateLogDelivery": {
       "name": "CreateLogDelivery",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Creates the log delivery",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -39,6 +51,9 @@
     },
     "CreateLogGroup": {
       "name": "CreateLogGroup",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Creates a new log group with the specified name",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -49,6 +64,9 @@
     },
     "CreateLogStream": {
       "name": "CreateLogStream",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Creates a new log stream with the specified name",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -59,6 +77,9 @@
     },
     "DeleteDestination": {
       "name": "DeleteDestination",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Deletes the destination with the specified name and eventually disables all the subscription\n                                                filters that publish to it",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -67,6 +88,9 @@
     },
     "DeleteLogDelivery": {
       "name": "DeleteLogDelivery",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Deletes the log delivery information for specified log delivery",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -75,6 +99,9 @@
     },
     "DeleteLogGroup": {
       "name": "DeleteLogGroup",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Deletes the log group with the specified name and permanently deletes all the archived\n                                                log events associated with it",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -85,6 +112,9 @@
     },
     "DeleteLogStream": {
       "name": "DeleteLogStream",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Deletes a log stream and permanently deletes all the archived log events associated\n                                                with it",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -95,6 +125,9 @@
     },
     "DeleteMetricFilter": {
       "name": "DeleteMetricFilter",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Deletes a metric filter associated with the specified log group",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -105,6 +138,9 @@
     },
     "DeleteResourcePolicy": {
       "name": "DeleteResourcePolicy",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Deletes a resource policy from this account",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -113,6 +149,9 @@
     },
     "DeleteRetentionPolicy": {
       "name": "DeleteRetentionPolicy",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Deletes the retention policy of the specified log group",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -123,6 +162,9 @@
     },
     "DeleteSubscriptionFilter": {
       "name": "DeleteSubscriptionFilter",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Deletes a subscription filter associated with the specified log group",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -133,6 +175,9 @@
     },
     "DescribeDestinations": {
       "name": "DescribeDestinations",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Returns all the destinations that are associated with the AWS account making the request",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -141,6 +186,9 @@
     },
     "DescribeExportTasks": {
       "name": "DescribeExportTasks",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Returns all the export tasks that are associated with the AWS account making the request",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -149,6 +197,9 @@
     },
     "DescribeLogGroups": {
       "name": "DescribeLogGroups",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Returns all the log groups that are associated with the AWS account making the request",
       "accessLevel": "List",
       "resourceTypes": [
@@ -159,6 +210,9 @@
     },
     "DescribeLogStreams": {
       "name": "DescribeLogStreams",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Returns all the log streams that are associated with the specified log group",
       "accessLevel": "List",
       "resourceTypes": [
@@ -169,6 +223,9 @@
     },
     "DescribeMetricFilters": {
       "name": "DescribeMetricFilters",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Returns all the metrics filters associated with the specified log group",
       "accessLevel": "List",
       "resourceTypes": [
@@ -179,6 +236,9 @@
     },
     "DescribeQueries": {
       "name": "DescribeQueries",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Returns a list of CloudWatch Logs Insights queries that are scheduled, executing,\n                                                or have been executed recently in this account. You can request all queries, or limit\n                                                it to queries of a specific log group or queries with a certain status.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -187,6 +247,9 @@
     },
     "DescribeResourcePolicies": {
       "name": "DescribeResourcePolicies",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Return all the resource policies in this account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -195,6 +258,9 @@
     },
     "DescribeSubscriptionFilters": {
       "name": "DescribeSubscriptionFilters",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Returns all the subscription filters associated with the specified log group",
       "accessLevel": "List",
       "resourceTypes": [
@@ -205,6 +271,9 @@
     },
     "DisassociateKmsKey": {
       "name": "DisassociateKmsKey",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Disassociates the associated AWS Key Management Service (AWS KMS) customer master\n                                                key (CMK) from the specified log group",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -215,6 +284,9 @@
     },
     "FilterLogEvents": {
       "name": "FilterLogEvents",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Retrieves log events, optionally filtered by a filter pattern from the specified log\n                                                group",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -225,6 +297,9 @@
     },
     "GetLogDelivery": {
       "name": "GetLogDelivery",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Gets the log delivery information for specified log delivery",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -233,6 +308,9 @@
     },
     "GetLogEvents": {
       "name": "GetLogEvents",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Retrieves log events from the specified log stream",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -243,6 +321,9 @@
     },
     "GetLogGroupFields": {
       "name": "GetLogGroupFields",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Returns a list of the fields that are included in log events in the specified log\n                                                group, along with the percentage of log events that contain each field. The search\n                                                is limited to a time period that you specify.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -253,6 +334,9 @@
     },
     "GetLogRecord": {
       "name": "GetLogRecord",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Retrieves all the fields and values of a single log event. All fields are retrieved,\n                                                even if the original query that produced the logRecordPointer retrieved only a subset\n                                                of fields. Fields are returned as field name/field value pairs.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -261,6 +345,9 @@
     },
     "GetQueryResults": {
       "name": "GetQueryResults",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Returns the results from the specified query. If the query is in progress, partial\n                                                results of that current execution are returned. Only the fields requested in the query\n                                                are returned.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -269,6 +356,9 @@
     },
     "ListLogDeliveries": {
       "name": "ListLogDeliveries",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Lists all the log deliveries for specified account and/or log source",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -277,6 +367,9 @@
     },
     "ListTagsLogGroup": {
       "name": "ListTagsLogGroup",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Lists the tags for the specified log group",
       "accessLevel": "List",
       "resourceTypes": [
@@ -287,6 +380,9 @@
     },
     "PutDestination": {
       "name": "PutDestination",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Creates or updates a Destination",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -295,6 +391,9 @@
     },
     "PutDestinationPolicy": {
       "name": "PutDestinationPolicy",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Creates or updates an access policy associated with an existing Destination",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -303,6 +402,9 @@
     },
     "PutLogEvents": {
       "name": "PutLogEvents",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Uploads a batch of log events to the specified log stream",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -313,6 +415,9 @@
     },
     "PutMetricFilter": {
       "name": "PutMetricFilter",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Creates or updates a metric filter and associates it with the specified log group",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -323,6 +428,9 @@
     },
     "PutResourcePolicy": {
       "name": "PutResourcePolicy",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Creates or updates a resource policy allowing other AWS services to put log events\n                                                to this account",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -331,6 +439,9 @@
     },
     "PutRetentionPolicy": {
       "name": "PutRetentionPolicy",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Sets the retention of the specified log group",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -341,6 +452,9 @@
     },
     "PutSubscriptionFilter": {
       "name": "PutSubscriptionFilter",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Creates or updates a subscription filter and associates it with the specified log\n                                                group",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -351,6 +465,9 @@
     },
     "StartQuery": {
       "name": "StartQuery",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Schedules a query of a log group using CloudWatch Logs Insights. You specify the log\n                                                group and time range to query, and the query string to use.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -361,6 +478,9 @@
     },
     "StopQuery": {
       "name": "StopQuery",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Stops a CloudWatch Logs Insights query that is in progress. If the query has already\n                                                ended, the operation returns an error indicating that the specified query is not running.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -369,6 +489,9 @@
     },
     "TagLogGroup": {
       "name": "TagLogGroup",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Adds or updates the specified tags for the specified log group",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -379,6 +502,9 @@
     },
     "TestMetricFilter": {
       "name": "TestMetricFilter",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Tests the filter pattern of a metric filter against a sample of log event messages",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -387,6 +513,9 @@
     },
     "UntagLogGroup": {
       "name": "UntagLogGroup",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Removes the specified tags from the specified log group",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -397,6 +526,9 @@
     },
     "UpdateLogDelivery": {
       "name": "UpdateLogDelivery",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
       "description": "Updates the log delivery information for specified log delivery",
       "accessLevel": "Write",
       "resourceTypes": [],

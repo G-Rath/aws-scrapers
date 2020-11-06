@@ -3,6 +3,9 @@
   "actions": {
     "ApproveSkill": {
       "name": "ApproveSkill",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Associates a skill with the organization under the customer's AWS account. If a skill\n                                                is private, the user implicitly accepts access to this skill during enablement.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "AssociateContactWithAddressBook": {
       "name": "AssociateContactWithAddressBook",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Associates a contact with a given address book.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -21,6 +27,9 @@
     },
     "AssociateDeviceWithRoom": {
       "name": "AssociateDeviceWithRoom",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Associates device with given room.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -31,6 +40,9 @@
     },
     "AssociateSkillGroupWithRoom": {
       "name": "AssociateSkillGroupWithRoom",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Associates the skill group with given room. SkillGroup ARN and Room ARN must be specified.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -41,6 +53,9 @@
     },
     "AssociateSkillWithSkillGroup": {
       "name": "AssociateSkillWithSkillGroup",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Associates a skill with a skill group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -51,6 +66,9 @@
     },
     "AssociateSkillWithUsers": {
       "name": "AssociateSkillWithUsers",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Makes a private skill available for enrolled users to enable on their devices.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -59,6 +77,9 @@
     },
     "CompleteRegistration": {
       "name": "CompleteRegistration",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Completes the operation of registering an Alexa device.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -67,6 +88,9 @@
     },
     "CreateAddressBook": {
       "name": "CreateAddressBook",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Creates an address book with the specified details.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -75,6 +99,9 @@
     },
     "CreateBusinessReportSchedule": {
       "name": "CreateBusinessReportSchedule",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Creates a recurring schedule for usage reports to deliver to the specified S3 location\n                                                with a specified daily or weekly interval.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -83,6 +110,9 @@
     },
     "CreateConferenceProvider": {
       "name": "CreateConferenceProvider",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Adds a new conference provider under the user's AWS account.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -91,6 +121,9 @@
     },
     "CreateContact": {
       "name": "CreateContact",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Creates a contact with the specified details.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -99,6 +132,9 @@
     },
     "CreateProfile": {
       "name": "CreateProfile",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Creates a new profile.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -107,6 +143,9 @@
     },
     "CreateRoom": {
       "name": "CreateRoom",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Create room with the specified details.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -117,6 +156,9 @@
     },
     "CreateSkillGroup": {
       "name": "CreateSkillGroup",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Creates a skill group with given name and description.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -125,6 +167,9 @@
     },
     "CreateUser": {
       "name": "CreateUser",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Creates a user.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -135,6 +180,9 @@
     },
     "DeleteAddressBook": {
       "name": "DeleteAddressBook",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Deletes an address book by the address book ARN.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -145,6 +193,9 @@
     },
     "DeleteBusinessReportSchedule": {
       "name": "DeleteBusinessReportSchedule",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Deletes the recurring report delivery schedule with the specified schedule ARN.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -155,6 +206,9 @@
     },
     "DeleteConferenceProvider": {
       "name": "DeleteConferenceProvider",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Deletes a conference provider.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -165,6 +219,9 @@
     },
     "DeleteContact": {
       "name": "DeleteContact",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Deletes a contact by the contact ARN.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -175,6 +232,9 @@
     },
     "DeleteDevice": {
       "name": "DeleteDevice",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Removes a device from Alexa For Business.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -185,6 +245,9 @@
     },
     "DeleteProfile": {
       "name": "DeleteProfile",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Delete profile by profile ARN.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -195,6 +258,9 @@
     },
     "DeleteRoom": {
       "name": "DeleteRoom",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Delete room.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -205,6 +271,9 @@
     },
     "DeleteRoomSkillParameter": {
       "name": "DeleteRoomSkillParameter",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Delete a parameter from a skill and room.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -215,6 +284,9 @@
     },
     "DeleteSkillAuthorization": {
       "name": "DeleteSkillAuthorization",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Unlinks a third-party account from a skill.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -225,6 +297,9 @@
     },
     "DeleteSkillGroup": {
       "name": "DeleteSkillGroup",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Deletes skill group with skill group ARN. Skillgroup ARN must be specified.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -235,6 +310,9 @@
     },
     "DeleteUser": {
       "name": "DeleteUser",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Delete a user.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -245,6 +323,9 @@
     },
     "DisassociateContactFromAddressBook": {
       "name": "DisassociateContactFromAddressBook",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Disassociates a contact from a given address book.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -255,6 +336,9 @@
     },
     "DisassociateDeviceFromRoom": {
       "name": "DisassociateDeviceFromRoom",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Disassociates device from its current room.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -265,6 +349,9 @@
     },
     "DisassociateSkillFromSkillGroup": {
       "name": "DisassociateSkillFromSkillGroup",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Disassociates a skill from a skill group.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -275,6 +362,9 @@
     },
     "DisassociateSkillFromUsers": {
       "name": "DisassociateSkillFromUsers",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Makes a private skill unavailable for enrolled users and prevents them from enabling\n                                                it on their devices.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -285,6 +375,9 @@
     },
     "DisassociateSkillGroupFromRoom": {
       "name": "DisassociateSkillGroupFromRoom",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Disassociates the skill group from given room. SkillGroup ARN and Room ARN must be\n                                                specified.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -295,6 +388,9 @@
     },
     "ForgetSmartHomeAppliances": {
       "name": "ForgetSmartHomeAppliances",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Forgets smart home appliances associated to a room.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -305,6 +401,9 @@
     },
     "GetAddressBook": {
       "name": "GetAddressBook",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Gets the address book details by the address book ARN.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -315,6 +414,9 @@
     },
     "GetConferencePreference": {
       "name": "GetConferencePreference",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Retrieves the existing conference preferences.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -323,6 +425,9 @@
     },
     "GetConferenceProvider": {
       "name": "GetConferenceProvider",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Gets details about a specific conference provider.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -333,6 +438,9 @@
     },
     "GetContact": {
       "name": "GetContact",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Gets the contact details by the contact ARN.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -343,6 +451,9 @@
     },
     "GetDevice": {
       "name": "GetDevice",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Get device details.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -353,6 +464,9 @@
     },
     "GetNetworkProfile": {
       "name": "GetNetworkProfile",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Gets the network profile details by the network profile ARN.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -363,6 +477,9 @@
     },
     "GetProfile": {
       "name": "GetProfile",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Gets profile when provided with Profile ARN.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -373,6 +490,9 @@
     },
     "GetRoom": {
       "name": "GetRoom",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Get room details.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -383,6 +503,9 @@
     },
     "GetRoomSkillParameter": {
       "name": "GetRoomSkillParameter",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Get an existing parameter that has been set for a skill and room.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -393,6 +516,9 @@
     },
     "GetSkillGroup": {
       "name": "GetSkillGroup",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Gets skill group details with skill group ARN. Skillgroup ARN must be specified.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -403,6 +529,9 @@
     },
     "ListBusinessReportSchedules": {
       "name": "ListBusinessReportSchedules",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Lists the details of the schedules that a user configured.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -411,6 +540,9 @@
     },
     "ListConferenceProviders": {
       "name": "ListConferenceProviders",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Lists conference providers under a specific AWS account.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -419,6 +551,9 @@
     },
     "ListDeviceEvents": {
       "name": "ListDeviceEvents",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Lists the device event history, including device connection status, for up to 30 days.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -429,6 +564,9 @@
     },
     "ListSkills": {
       "name": "ListSkills",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Lists skills.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -437,6 +575,9 @@
     },
     "ListSkillsStoreCategories": {
       "name": "ListSkillsStoreCategories",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Lists all categories in the Alexa skill store.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -445,6 +586,9 @@
     },
     "ListSkillsStoreSkillsByCategory": {
       "name": "ListSkillsStoreSkillsByCategory",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Lists all skills in the Alexa skill store by category.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -453,6 +597,9 @@
     },
     "ListSmartHomeAppliances": {
       "name": "ListSmartHomeAppliances",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Lists all of the smart home appliances associated with a room.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -463,6 +610,9 @@
     },
     "ListTags": {
       "name": "ListTags",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Lists all tags on a resource.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -473,6 +623,9 @@
     },
     "PutConferencePreference": {
       "name": "PutConferencePreference",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Sets the conference preferences on a specific conference provider at the account level.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -481,6 +634,9 @@
     },
     "PutDeviceSetupEvents": {
       "name": "PutDeviceSetupEvents",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Publishes Alexa device setup events.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -489,6 +645,9 @@
     },
     "PutRoomSkillParameter": {
       "name": "PutRoomSkillParameter",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Put a room specific parameter for a skill.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -499,6 +658,9 @@
     },
     "PutSkillAuthorization": {
       "name": "PutSkillAuthorization",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Links a user's account to a third-party skill provider. If this API operation is called\n                                                by an assumed IAM role, the skill being linked must be a private skill. Also, the\n                                                skill must be owned by the AWS account that assumed the IAM role.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -509,6 +671,9 @@
     },
     "RegisterAVSDevice": {
       "name": "RegisterAVSDevice",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Registers an Alexa-enabled device built by an Original Equipment Manufacturer (OEM)\n                                                using Alexa Voice Service (AVS).",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -517,6 +682,9 @@
     },
     "RegisterDevice": {
       "name": "RegisterDevice",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Registers an Alexa device.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -525,6 +693,9 @@
     },
     "RejectSkill": {
       "name": "RejectSkill",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Disassociates a skill from the organization under a user's AWS account. If the skill\n                                                is a private skill, it moves to an AcceptStatus of PENDING.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -533,6 +704,9 @@
     },
     "ResolveRoom": {
       "name": "ResolveRoom",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Returns resolved room information.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -541,6 +715,9 @@
     },
     "RevokeInvitation": {
       "name": "RevokeInvitation",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Revoke an invitation.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -551,6 +728,9 @@
     },
     "SearchAddressBooks": {
       "name": "SearchAddressBooks",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Searches address books and lists the ones that meet a set of filter and sort criteria.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -559,6 +739,9 @@
     },
     "SearchContacts": {
       "name": "SearchContacts",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Searches contacts and lists the ones that meet a set of filter and sort criteria.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -567,6 +750,9 @@
     },
     "SearchDevices": {
       "name": "SearchDevices",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Search for devices.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -575,6 +761,9 @@
     },
     "SearchNetworkProfiles": {
       "name": "SearchNetworkProfiles",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Searches network profiles and lists the ones that meet a set of filter and sort criteria.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -583,6 +772,9 @@
     },
     "SearchProfiles": {
       "name": "SearchProfiles",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Search for profiles.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -591,6 +783,9 @@
     },
     "SearchRooms": {
       "name": "SearchRooms",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Search for rooms.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -599,6 +794,9 @@
     },
     "SearchSkillGroups": {
       "name": "SearchSkillGroups",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Search for skill groups.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -607,6 +805,9 @@
     },
     "SearchUsers": {
       "name": "SearchUsers",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Search for users.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -615,6 +816,9 @@
     },
     "SendInvitation": {
       "name": "SendInvitation",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Send an invitation to a user.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -625,6 +829,9 @@
     },
     "StartDeviceSync": {
       "name": "StartDeviceSync",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Restore the device and its account to its known, default settings by clearing all\n                                                information and settings set by its previous users.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -633,6 +840,9 @@
     },
     "StartSmartHomeApplianceDiscovery": {
       "name": "StartSmartHomeApplianceDiscovery",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Initiates the discovery of any smart home appliances associated with the room.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -643,6 +853,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Adds metadata tags to a resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -653,6 +866,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Removes metadata tags from a resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -663,6 +879,9 @@
     },
     "UpdateAddressBook": {
       "name": "UpdateAddressBook",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Updates address book details by the address book ARN.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -673,6 +892,9 @@
     },
     "UpdateBusinessReportSchedule": {
       "name": "UpdateBusinessReportSchedule",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Updates the configuration of the report delivery schedule with the specified schedule\n                                                ARN.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -683,6 +905,9 @@
     },
     "UpdateConferenceProvider": {
       "name": "UpdateConferenceProvider",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Updates an existing conference provider's settings.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -693,6 +918,9 @@
     },
     "UpdateContact": {
       "name": "UpdateContact",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Updates the contact details by the contact ARN.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -703,6 +931,9 @@
     },
     "UpdateDevice": {
       "name": "UpdateDevice",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Updates device name.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -713,6 +944,9 @@
     },
     "UpdateProfile": {
       "name": "UpdateProfile",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Updates an existing profile.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -723,6 +957,9 @@
     },
     "UpdateRoom": {
       "name": "UpdateRoom",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Update room details.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -733,6 +970,9 @@
     },
     "UpdateSkillGroup": {
       "name": "UpdateSkillGroup",
+      "topics": [
+        "Alexa for Business"
+      ],
       "description": "Updates skill group details with skill group ARN. Skillgroup ARN must be specified.",
       "accessLevel": "Write",
       "resourceTypes": [

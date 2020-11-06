@@ -3,6 +3,9 @@
   "actions": {
     "AcknowledgeMessage": {
       "name": "AcknowledgeMessage",
+      "topics": [
+        "Amazon Message Delivery Service"
+      ],
       "description": "Acknowledges a message, ensuring it will not be delivered again",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "DeleteMessage": {
       "name": "DeleteMessage",
+      "topics": [
+        "Amazon Message Delivery Service"
+      ],
       "description": "Deletes a message",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -19,6 +25,9 @@
     },
     "FailMessage": {
       "name": "FailMessage",
+      "topics": [
+        "Amazon Message Delivery Service"
+      ],
       "description": "Fails a message, signifying the message could not be processed successfully, ensuring\n                                                it cannot be replied to or delivered again",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -27,6 +36,9 @@
     },
     "GetEndpoint": {
       "name": "GetEndpoint",
+      "topics": [
+        "Amazon Message Delivery Service"
+      ],
       "description": "Routes traffic to the correct endpoint based on the given destination for the messages",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -35,6 +47,9 @@
     },
     "GetMessages": {
       "name": "GetMessages",
+      "topics": [
+        "Amazon Message Delivery Service"
+      ],
       "description": "Delivers messages to clients/instances using long polling",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -43,6 +58,9 @@
     },
     "SendReply": {
       "name": "SendReply",
+      "topics": [
+        "Amazon Message Delivery Service"
+      ],
       "description": "Sends replies from clients/instances to upstream service",
       "accessLevel": "Write",
       "resourceTypes": [],

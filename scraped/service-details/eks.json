@@ -3,6 +3,9 @@
   "actions": {
     "CreateCluster": {
       "name": "CreateCluster",
+      "topics": [
+        "Amazon Elastic Container Service for Kubernetes"
+      ],
       "description": "Creates an Amazon EKS cluster.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "CreateFargateProfile": {
       "name": "CreateFargateProfile",
+      "topics": [
+        "Amazon Elastic Container Service for Kubernetes"
+      ],
       "description": "Creates an AWS Fargate profile.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -21,6 +27,9 @@
     },
     "CreateNodegroup": {
       "name": "CreateNodegroup",
+      "topics": [
+        "Amazon Elastic Container Service for Kubernetes"
+      ],
       "description": "Creates an Amazon EKS Nodegroup.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -31,6 +40,9 @@
     },
     "DeleteCluster": {
       "name": "DeleteCluster",
+      "topics": [
+        "Amazon Elastic Container Service for Kubernetes"
+      ],
       "description": "Deletes an Amazon EKS cluster.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -41,6 +53,9 @@
     },
     "DeleteFargateProfile": {
       "name": "DeleteFargateProfile",
+      "topics": [
+        "Amazon Elastic Container Service for Kubernetes"
+      ],
       "description": "Deletes an AWS Fargate profile.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -51,6 +66,9 @@
     },
     "DeleteNodegroup": {
       "name": "DeleteNodegroup",
+      "topics": [
+        "Amazon Elastic Container Service for Kubernetes"
+      ],
       "description": "Deletes an Amazon EKS Nodegroup.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -61,6 +79,9 @@
     },
     "DescribeCluster": {
       "name": "DescribeCluster",
+      "topics": [
+        "Amazon Elastic Container Service for Kubernetes"
+      ],
       "description": "Returns descriptive information about an Amazon EKS cluster.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -71,6 +92,9 @@
     },
     "DescribeFargateProfile": {
       "name": "DescribeFargateProfile",
+      "topics": [
+        "Amazon Elastic Container Service for Kubernetes"
+      ],
       "description": "Returns descriptive information about an AWS Fargate profile associated with a cluster.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -81,6 +105,9 @@
     },
     "DescribeNodegroup": {
       "name": "DescribeNodegroup",
+      "topics": [
+        "Amazon Elastic Container Service for Kubernetes"
+      ],
       "description": "Returns descriptive information about an Amazon EKS nodegroup.",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -91,6 +118,9 @@
     },
     "DescribeUpdate": {
       "name": "DescribeUpdate",
+      "topics": [
+        "Amazon Elastic Container Service for Kubernetes"
+      ],
       "description": "Describes a given update for a given Amazon EKS cluster/nodegroup (in the specified\n                                                or default region).",
       "accessLevel": "Read",
       "resourceTypes": [
@@ -101,6 +131,9 @@
     },
     "ListClusters": {
       "name": "ListClusters",
+      "topics": [
+        "Amazon Elastic Container Service for Kubernetes"
+      ],
       "description": "Lists the Amazon EKS clusters in your AWS account (in the specified or default region).",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -109,6 +142,9 @@
     },
     "ListFargateProfiles": {
       "name": "ListFargateProfiles",
+      "topics": [
+        "Amazon Elastic Container Service for Kubernetes"
+      ],
       "description": "Lists the AWS Fargate profiles in your AWS account (in the specified or default region)\n                                                associated with a given cluster.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -119,6 +155,9 @@
     },
     "ListNodegroups": {
       "name": "ListNodegroups",
+      "topics": [
+        "Amazon Elastic Container Service for Kubernetes"
+      ],
       "description": "Lists the Amazon EKS nodegroups in your AWS account (in the specified or default region)\n                                                attached to given cluster.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -129,6 +168,9 @@
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
+      "topics": [
+        "Amazon Elastic Container Service for Kubernetes"
+      ],
       "description": "List tags for the specified resource.",
       "accessLevel": "List",
       "resourceTypes": [
@@ -139,6 +181,9 @@
     },
     "ListUpdates": {
       "name": "ListUpdates",
+      "topics": [
+        "Amazon Elastic Container Service for Kubernetes"
+      ],
       "description": "Lists the updates for a given Amazon EKS cluster/nodegroup (in the specified or default\n                                                region).",
       "accessLevel": "List",
       "resourceTypes": [
@@ -149,6 +194,9 @@
     },
     "TagResource": {
       "name": "TagResource",
+      "topics": [
+        "Amazon Elastic Container Service for Kubernetes"
+      ],
       "description": "Tags the specified resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -159,6 +207,9 @@
     },
     "UntagResource": {
       "name": "UntagResource",
+      "topics": [
+        "Amazon Elastic Container Service for Kubernetes"
+      ],
       "description": "Untags the specified resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
@@ -169,6 +220,9 @@
     },
     "UpdateClusterConfig": {
       "name": "UpdateClusterConfig",
+      "topics": [
+        "Amazon Elastic Container Service for Kubernetes"
+      ],
       "description": "Update Amazon EKS cluster configurations (eg: API server endpoint access).",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -179,6 +233,9 @@
     },
     "UpdateClusterVersion": {
       "name": "UpdateClusterVersion",
+      "topics": [
+        "Amazon Elastic Container Service for Kubernetes"
+      ],
       "description": "Update the Kubernetes version of an Amazon EKS cluster.",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -189,6 +246,9 @@
     },
     "UpdateNodegroupConfig": {
       "name": "UpdateNodegroupConfig",
+      "topics": [
+        "Amazon Elastic Container Service for Kubernetes"
+      ],
       "description": "Update Amazon EKS nodegroup configurations (eg: min/max/desired capacity or labels).",
       "accessLevel": "Write",
       "resourceTypes": [
@@ -199,6 +259,9 @@
     },
     "UpdateNodegroupVersion": {
       "name": "UpdateNodegroupVersion",
+      "topics": [
+        "Amazon Elastic Container Service for Kubernetes"
+      ],
       "description": "Update the Kubernetes version of an Amazon EKS nodegroup.",
       "accessLevel": "Write",
       "resourceTypes": [

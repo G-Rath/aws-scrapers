@@ -3,6 +3,9 @@
   "actions": {
     "AssociateProductsWithPrivateMarketplace": {
       "name": "AssociateProductsWithPrivateMarketplace",
+      "topics": [
+        "AWS Private Marketplace"
+      ],
       "description": "Adds new approved products to the Private Marketplace. Also allows to approve a request\n                                                for a product to be associated with the Private Marketplace. This action can be performed\n                                                by any account in an AWS Organization, provided the user has permissions to do so,\n                                                and the Organization's Service Control Policies allow it.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -11,6 +14,9 @@
     },
     "CreatePrivateMarketplace": {
       "name": "CreatePrivateMarketplace",
+      "topics": [
+        "AWS Private Marketplace"
+      ],
       "description": "Creates a Private Marketplace for the individual account, or for the entire AWS Organization\n                                                if one exists. This action can only be performed by the master account if using an\n                                                AWS Organization.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -19,6 +25,9 @@
     },
     "CreatePrivateMarketplaceProfile": {
       "name": "CreatePrivateMarketplaceProfile",
+      "topics": [
+        "AWS Private Marketplace"
+      ],
       "description": "Creates a Private Marketplace Profile that customizes the white label experience on\n                                                the AWS Marketplace website for the individual account, or for the entire AWS Organization\n                                                if one exists. This action can only be performed by the master account if using an\n                                                AWS Organization.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -27,6 +36,9 @@
     },
     "CreatePrivateMarketplaceRequests": {
       "name": "CreatePrivateMarketplaceRequests",
+      "topics": [
+        "AWS Private Marketplace"
+      ],
       "description": "Creates a new request for a product or products to be associated with the Private\n                                                Marketplace. This action can be performed by any account in an in an AWS Organization,\n                                                provided the user has permissions to do so, and the Organization's Service Control\n                                                Policies allow it.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -35,6 +47,9 @@
     },
     "DescribePrivateMarketplaceProducts": {
       "name": "DescribePrivateMarketplaceProducts",
+      "topics": [
+        "AWS Private Marketplace"
+      ],
       "description": "Describes the status of requested products in the Private Marketplace for administrative\n                                                purposes. This action can be performed by any account in an AWS Organization, provided\n                                                the user has permissions to do so, and the Organization's Service Control Policies\n                                                allow it.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -43,6 +58,9 @@
     },
     "DescribePrivateMarketplaceProfile": {
       "name": "DescribePrivateMarketplaceProfile",
+      "topics": [
+        "AWS Private Marketplace"
+      ],
       "description": "Describes details about the Private Marketplace Profile for administrative purposes.\n                                                This action can be performed by any account in an AWS Organization, provided the user\n                                                has permissions to do so, and the Organization's Service Control Policies allow it.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -51,6 +69,9 @@
     },
     "DescribePrivateMarketplaceRequests": {
       "name": "DescribePrivateMarketplaceRequests",
+      "topics": [
+        "AWS Private Marketplace"
+      ],
       "description": "Describes requests and associated products in the Private Marketplace. This action\n                                                can be performed by any account in an AWS Organization, provided the user has permissions\n                                                to do so, and the Organization's Service Control Policies allow it.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -59,6 +80,9 @@
     },
     "DescribePrivateMarketplaceSettings": {
       "name": "DescribePrivateMarketplaceSettings",
+      "topics": [
+        "AWS Private Marketplace"
+      ],
       "description": "Describes the Private Marketplace settings. This includes setting for enabling requests\n                                                from end users and preferences for notifications. This action can be performed by\n                                                any account in an AWS Organization, provided the user has permissions to do so, and\n                                                the Organization's Service Control Policies allow it.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -67,6 +91,9 @@
     },
     "DescribePrivateMarketplaceStatus": {
       "name": "DescribePrivateMarketplaceStatus",
+      "topics": [
+        "AWS Private Marketplace"
+      ],
       "description": "Describes the status of the Private Marketplace for administrative purposes. This\n                                                action can be performed by any account in an AWS Organization, provided the user has\n                                                permissions to do so, and the Organization's Service Control Policies allow it.",
       "accessLevel": "Read",
       "resourceTypes": [],
@@ -75,6 +102,9 @@
     },
     "DisassociateProductsFromPrivateMarketplace": {
       "name": "DisassociateProductsFromPrivateMarketplace",
+      "topics": [
+        "AWS Private Marketplace"
+      ],
       "description": "Removes approved products from the Private Marketplace. Also allows to decline a request\n                                                for a product to be associated with the Private Marketplace. This action can be performed\n                                                by any account in an AWS Organization, provided the user has permissions to do so,\n                                                and the Organization's Service Control Policies allow it.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -83,6 +113,9 @@
     },
     "ListPrivateMarketplaceProducts": {
       "name": "ListPrivateMarketplaceProducts",
+      "topics": [
+        "AWS Private Marketplace"
+      ],
       "description": "Queryable list for the products and status of products in the Private Marketplace\n                                                for administrative purposes. This action can be performed by any account in an AWS\n                                                Organization, provided the user has permissions to do so, and the Organization's Service\n                                                Control Policies allow it.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -91,6 +124,9 @@
     },
     "ListPrivateMarketplaceRequests": {
       "name": "ListPrivateMarketplaceRequests",
+      "topics": [
+        "AWS Private Marketplace"
+      ],
       "description": "Queryable list for requests and associated products in the Private Marketplace. This\n                                                action can be performed by any account in an AWS Organization, provided the user has\n                                                permissions to do so, and the Organization's Service Control Policies allow it.",
       "accessLevel": "List",
       "resourceTypes": [],
@@ -99,6 +135,9 @@
     },
     "StartPrivateMarketplace": {
       "name": "StartPrivateMarketplace",
+      "topics": [
+        "AWS Private Marketplace"
+      ],
       "description": "Starts the Private Marketplace, enabling the customized AWS Marketplace experience,\n                                                and enabling restrictions on the procurement of products based on what is available\n                                                in the Private Marketplace. This action can be performed by any account in an AWS\n                                                Organization, provided the user has permissions to do so, and the Organization's Service\n                                                Control Policies allow it.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -107,6 +146,9 @@
     },
     "StopPrivateMarketplace": {
       "name": "StopPrivateMarketplace",
+      "topics": [
+        "AWS Private Marketplace"
+      ],
       "description": "Stops the Private Marketplace, disabling the customized AWS Marketplace experience\n                                                and removing the Private Marketplace procurement restrictions on products. This action\n                                                can be performed by any account in an AWS Organization, provided the user has permissions\n                                                to do so, and the Organization's Service Control Policies allow it.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -115,6 +157,9 @@
     },
     "UpdatePrivateMarketplaceProfile": {
       "name": "UpdatePrivateMarketplaceProfile",
+      "topics": [
+        "AWS Private Marketplace"
+      ],
       "description": "Updates the Private Marketplace Profile that customizes the white label experience\n                                                on the AWS Marketplace website for the individual account, or for the entire AWS Organization\n                                                if one exists. This action can be performed by any account in an AWS Organization,\n                                                provided the user has permissions to do so, and the Organization's Service Control\n                                                Policies allow it.",
       "accessLevel": "Write",
       "resourceTypes": [],
@@ -123,6 +168,9 @@
     },
     "UpdatePrivateMarketplaceSettings": {
       "name": "UpdatePrivateMarketplaceSettings",
+      "topics": [
+        "AWS Private Marketplace"
+      ],
       "description": "Updates the Private Marketplace settings. This includes setting for enabling requests\n                                                from end users and preferences for notifications. This action can be performed by\n                                                any account in an AWS Organization, provided the user has permissions to do so, and\n                                                the Organization's Service Control Policies allow it.",
       "accessLevel": "Write",
       "resourceTypes": [],
