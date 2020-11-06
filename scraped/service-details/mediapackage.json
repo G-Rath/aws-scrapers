@@ -9,6 +9,14 @@
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
       "dependentActions": ""
     },
+    "CreateHarvestJob": {
+      "name": "CreateHarvestJob",
+      "description": "Grants permission to create a harvest job in AWS Elemental MediaPackage.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
     "CreateOriginEndpoint": {
       "name": "CreateOriginEndpoint",
       "description": "Grants permission to create an endpoint in AWS Elemental MediaPackage.",
@@ -47,6 +55,16 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DescribeHarvestJob": {
+      "name": "DescribeHarvestJob",
+      "description": "Grants permission to view the details of a harvest job in AWS Elemental MediaPackage.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "harvest_jobs*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DescribeOriginEndpoint": {
       "name": "DescribeOriginEndpoint",
       "description": "Grants permission to view the details of an endpoint in AWS Elemental MediaPackage.",
@@ -60,6 +78,14 @@
     "ListChannels": {
       "name": "ListChannels",
       "description": "Grants permission to view a list of channels in AWS Elemental MediaPackage.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListHarvestJobs": {
+      "name": "ListHarvestJobs",
+      "description": "Grants permission to view a list of harvest jobs in AWS Elemental MediaPackage.",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -95,7 +121,7 @@
     },
     "TagResource": {
       "name": "TagResource",
-      "description": "Grants permission to assign tags to a Channel or OriginEndpoint.",
+      "description": "",
       "accessLevel": "Write",
       "resourceTypes": [
         "channels"

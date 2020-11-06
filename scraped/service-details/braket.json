@@ -5,7 +5,9 @@
       "name": "CancelQuantumTask",
       "description": "Grants permission to cancel a quantum task.",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "quantum-task*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -13,7 +15,9 @@
       "name": "CreateQuantumTask",
       "description": "Grants permission to create a quantum task.",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "quantum-task*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -29,7 +33,19 @@
       "name": "GetQuantumTask",
       "description": "Grants permission to retrieve quantum tasks.",
       "accessLevel": "Read",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "quantum-task*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "description": "Lists the tags that have been applied to the quantum task resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "quantum-task"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -46,6 +62,26 @@
       "description": "Grants permission to search for quantum tasks.",
       "accessLevel": "Read",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "description": "Adds one or more tags to a quantum task.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "quantum-task"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "description": "Remove one or more tags from a quantum task resource. A tag consists of a key-value\n                                                pair",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "quantum-task"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     }
