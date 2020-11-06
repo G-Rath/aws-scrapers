@@ -27,6 +27,71 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ApplySecurityGroupsToLoadBalancer": {
+      "name": "ApplySecurityGroupsToLoadBalancer",
+      "topics": [
+        "Elastic Load Balancing"
+      ],
+      "description": "Associates one or more security groups with your load balancer in a virtual private\n                                                cloud (VPC)",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "loadbalancer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AttachLoadBalancerToSubnets": {
+      "name": "AttachLoadBalancerToSubnets",
+      "topics": [
+        "Elastic Load Balancing"
+      ],
+      "description": "Adds one or more subnets to the set of configured subnets for the specified load balancer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "loadbalancer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ConfigureHealthCheck": {
+      "name": "ConfigureHealthCheck",
+      "topics": [
+        "Elastic Load Balancing"
+      ],
+      "description": "Specifies the health check settings to use when evaluating the health state of your\n                                                back-end instances",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "loadbalancer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAppCookieStickinessPolicy": {
+      "name": "CreateAppCookieStickinessPolicy",
+      "topics": [
+        "Elastic Load Balancing"
+      ],
+      "description": "Generates a stickiness policy with sticky session lifetimes that follow that of an\n                                                application-generated cookie",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "loadbalancer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateLBCookieStickinessPolicy": {
+      "name": "CreateLBCookieStickinessPolicy",
+      "topics": [
+        "Elastic Load Balancing"
+      ],
+      "description": "Generates a stickiness policy with sticky session lifetimes controlled by the lifetime\n                                                of the browser (user-agent) or a specified expiration period",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "loadbalancer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "CreateListener": {
       "name": "CreateListener",
       "topics": [
@@ -49,6 +114,32 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "loadbalancer/app/"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateLoadBalancerListeners": {
+      "name": "CreateLoadBalancerListeners",
+      "topics": [
+        "Elastic Load Balancing"
+      ],
+      "description": "Creates one or more listeners for the specified load balancer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "loadbalancer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateLoadBalancerPolicy": {
+      "name": "CreateLoadBalancerPolicy",
+      "topics": [
+        "Elastic Load Balancing"
+      ],
+      "description": "Creates a policy with the specified attributes for the specified load balancer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "loadbalancer*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -105,6 +196,32 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeleteLoadBalancerListeners": {
+      "name": "DeleteLoadBalancerListeners",
+      "topics": [
+        "Elastic Load Balancing"
+      ],
+      "description": "Deletes the specified listeners from the specified load balancer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "loadbalancer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteLoadBalancerPolicy": {
+      "name": "DeleteLoadBalancerPolicy",
+      "topics": [
+        "Elastic Load Balancing"
+      ],
+      "description": "Deletes the specified policy from the specified load balancer. This policy must not\n                                                be enabled for any listeners",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "loadbalancer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteRule": {
       "name": "DeleteRule",
       "topics": [
@@ -131,6 +248,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeregisterInstancesFromLoadBalancer": {
+      "name": "DeregisterInstancesFromLoadBalancer",
+      "topics": [
+        "Elastic Load Balancing"
+      ],
+      "description": "Deregisters the specified instances from the specified load balancer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "loadbalancer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeregisterTargets": {
       "name": "DeregisterTargets",
       "topics": [
@@ -150,6 +280,17 @@
         "Elastic Load Balancing V2"
       ],
       "description": "Describes the Elastic Load Balancing resource limits for the AWS account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeInstanceHealth": {
+      "name": "DescribeInstanceHealth",
+      "topics": [
+        "Elastic Load Balancing"
+      ],
+      "description": "Describes the state of the specified instances with respect to the specified load\n                                                balancer",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -183,6 +324,28 @@
         "Elastic Load Balancing V2"
       ],
       "description": "Describes the attributes for the specified load balancer",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeLoadBalancerPolicies": {
+      "name": "DescribeLoadBalancerPolicies",
+      "topics": [
+        "Elastic Load Balancing"
+      ],
+      "description": "Describes the specified policies",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeLoadBalancerPolicyTypes": {
+      "name": "DescribeLoadBalancerPolicyTypes",
+      "topics": [
+        "Elastic Load Balancing"
+      ],
+      "description": "Describes the specified load balancer policy types",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -267,6 +430,45 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DetachLoadBalancerFromSubnets": {
+      "name": "DetachLoadBalancerFromSubnets",
+      "topics": [
+        "Elastic Load Balancing"
+      ],
+      "description": "Removes the specified subnets from the set of configured subnets for the load balancer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "loadbalancer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisableAvailabilityZonesForLoadBalancer": {
+      "name": "DisableAvailabilityZonesForLoadBalancer",
+      "topics": [
+        "Elastic Load Balancing"
+      ],
+      "description": "Removes the specified Availability Zones from the set of Availability Zones for the\n                                                specified load balancer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "loadbalancer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "EnableAvailabilityZonesForLoadBalancer": {
+      "name": "EnableAvailabilityZonesForLoadBalancer",
+      "topics": [
+        "Elastic Load Balancing"
+      ],
+      "description": "Adds the specified Availability Zones to the set of Availability Zones for the specified\n                                                load balancer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "loadbalancer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ModifyListener": {
       "name": "ModifyListener",
       "topics": [
@@ -332,6 +534,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "RegisterInstancesWithLoadBalancer": {
+      "name": "RegisterInstancesWithLoadBalancer",
+      "topics": [
+        "Elastic Load Balancing"
+      ],
+      "description": "Adds the specified instances to the specified load balancer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "loadbalancer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "RegisterTargets": {
       "name": "RegisterTargets",
       "topics": [
@@ -380,6 +595,45 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "loadbalancer/app/"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetLoadBalancerListenerSSLCertificate": {
+      "name": "SetLoadBalancerListenerSSLCertificate",
+      "topics": [
+        "Elastic Load Balancing"
+      ],
+      "description": "Sets the certificate that terminates the specified listener's SSL connections",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "loadbalancer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetLoadBalancerPoliciesForBackendServer": {
+      "name": "SetLoadBalancerPoliciesForBackendServer",
+      "topics": [
+        "Elastic Load Balancing"
+      ],
+      "description": "Replaces the set of policies associated with the specified port on which the back-end\n                                                server is listening with a new set of policies",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "loadbalancer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetLoadBalancerPoliciesOfListener": {
+      "name": "SetLoadBalancerPoliciesOfListener",
+      "topics": [
+        "Elastic Load Balancing"
+      ],
+      "description": "Replaces the current set of policies for the specified load balancer port with the\n                                                specified set of policies",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "loadbalancer*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -436,6 +690,7 @@
     }
   },
   "topics": [
+    "Elastic Load Balancing",
     "Elastic Load Balancing V2"
   ]
 }

@@ -8,7 +8,7 @@ import {
   ServiceTopicTuple,
   ServiceTopicsScraper
 } from './scrapers';
-import { chunk } from './utils';
+import { chunk, createLogger, mergeDetails } from './utils';
 
 const SERVICE_DETAILS_OUT_DIR = './scraped/service-details';
 
@@ -54,6 +54,50 @@ const scapeDetailsInBatches = async (
   return (await Promise.all(chunks.map(scrapeDetailsInBatch))).flat();
 };
 
+const groupByServicePrefix = (
+  details: ServiceDetails[]
+): Record<string, ServiceDetails[]> => {
+  const groupedDetails: Record<string, ServiceDetails[]> = {};
+
+  details.forEach(detail => {
+    (groupedDetails[detail.servicePrefix] ||= []).push(detail);
+  });
+
+  return groupedDetails;
+};
+
+const findDuplicatedServicePrefixes = (
+  details: ServiceDetails[]
+): Record<string, ServiceDetails[]> => {
+  const groupedDetails = groupByServicePrefix(details);
+
+  return Object.fromEntries(
+    Object.entries(groupedDetails).filter(([, detail]) => detail.length > 1)
+  );
+};
+
+const handleDuplicatedServicePrefixes = async (
+  details: ServiceDetails[]
+): Promise<void> => {
+  const duplicatedServicePrefixDetails = findDuplicatedServicePrefixes(details);
+
+  await Promise.all([
+    Object.entries(duplicatedServicePrefixDetails).map(
+      async ([, duplicatedDetails]) => {
+        const mergedDetails = duplicatedDetails.reduce(mergeDetails);
+
+        createLogger(mergedDetails.servicePrefix).warn(
+          'merged',
+          duplicatedDetails.length,
+          'details'
+        );
+
+        await writeToFile(mergedDetails);
+      }
+    )
+  ]);
+};
+
 const run = async () => {
   const topics = await ServiceTopicsScraper.scrape();
 
@@ -74,6 +118,9 @@ const run = async () => {
   // topics.length = 10;
 
   const details = await scapeDetailsInBatches(topics, 5);
+
+  // todo: this isn't properly fleshed out, but only affects a few non-core services
+  await handleDuplicatedServicePrefixes(details);
 
   // const details = await scapeDetailsInBatches(topics, 5);
 

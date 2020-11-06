@@ -231,12 +231,12 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "ListApplicationSnapshots": {
-      "name": "ListApplicationSnapshots",
+    "GetApplicationState": {
+      "name": "GetApplicationState",
       "topics": [
-        "Amazon Kinesis Analytics V2"
+        "Amazon Kinesis Analytics"
       ],
-      "description": "Lists the snapshots for an application.",
+      "description": "Grant permission to Kinesis Data Analytics console to display stream results for Kinesis\n                                                Data Analytics SQL runtime applications.",
       "accessLevel": "Read",
       "resourceTypes": [
         "application*"
@@ -252,6 +252,19 @@
       "description": "List applications for the account",
       "accessLevel": "List",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListApplicationSnapshots": {
+      "name": "ListApplicationSnapshots",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
+      "description": "Lists the snapshots for an application.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "application*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -335,6 +348,7 @@
     }
   },
   "topics": [
+    "Amazon Kinesis Analytics",
     "Amazon Kinesis Analytics V2"
   ]
 }

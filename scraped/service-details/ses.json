@@ -1,29 +1,58 @@
 {
   "servicePrefix": "ses",
   "actions": {
+    "CloneReceiptRuleSet": {
+      "name": "CloneReceiptRuleSet",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Creates a receipt rule set by cloning an existing one",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "CreateConfigurationSet": {
       "name": "CreateConfigurationSet",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon SES"
       ],
-      "description": "Create a configuration set. Configuration sets are groups of rules that you can apply\n                                                to the emails you send using Amazon Pinpoint",
+      "description": "Creates a new configuration set",
       "accessLevel": "Write",
-      "resourceTypes": [
-        "configuration-set*"
-      ],
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
     "CreateConfigurationSetEventDestination": {
       "name": "CreateConfigurationSetEventDestination",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon SES"
       ],
-      "description": "Create an event destination",
+      "description": "Creates a configuration set event destination",
       "accessLevel": "Write",
-      "resourceTypes": [
-        "configuration-set*"
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateConfigurationSetTrackingOptions": {
+      "name": "CreateConfigurationSetTrackingOptions",
+      "topics": [
+        "Amazon SES"
       ],
+      "description": "Creates an association between a configuration set and a custom domain for open and\n                                                click event tracking",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateCustomVerificationEmailTemplate": {
+      "name": "CreateCustomVerificationEmailTemplate",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Creates a new custom verification email template",
+      "accessLevel": "Write",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -66,29 +95,91 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "CreateReceiptFilter": {
+      "name": "CreateReceiptFilter",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Creates a new IP address filter",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateReceiptRule": {
+      "name": "CreateReceiptRule",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Creates a receipt rule",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateReceiptRuleSet": {
+      "name": "CreateReceiptRuleSet",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Creates an empty receipt rule set",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateTemplate": {
+      "name": "CreateTemplate",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Creates an email template",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteConfigurationSet": {
       "name": "DeleteConfigurationSet",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon SES"
       ],
-      "description": "Delete an existing configuration set",
+      "description": "Deletes the configuration set",
       "accessLevel": "Write",
-      "resourceTypes": [
-        "configuration-set*"
-      ],
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
     "DeleteConfigurationSetEventDestination": {
       "name": "DeleteConfigurationSetEventDestination",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon SES"
       ],
-      "description": "Delete an event destination",
+      "description": "Deletes a configuration set event destination",
       "accessLevel": "Write",
-      "resourceTypes": [
-        "configuration-set*"
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteConfigurationSetTrackingOptions": {
+      "name": "DeleteConfigurationSetTrackingOptions",
+      "topics": [
+        "Amazon SES"
       ],
+      "description": "Deletes an association between a configuration set and a custom domain for open and\n                                                click event tracking",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteCustomVerificationEmailTemplate": {
+      "name": "DeleteCustomVerificationEmailTemplate",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Deletes an existing custom verification email template",
+      "accessLevel": "Write",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -118,12 +209,144 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeleteIdentity": {
+      "name": "DeleteIdentity",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Deletes the specified identity (an email address or a domain) from the list of verified\n                                                identities",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteIdentityPolicy": {
+      "name": "DeleteIdentityPolicy",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Deletes the specified identity (an email address or a domain) from the list of verified\n                                                identities",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteReceiptFilter": {
+      "name": "DeleteReceiptFilter",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Deletes the specified IP address filter",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteReceiptRule": {
+      "name": "DeleteReceiptRule",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Deletes the specified receipt rule",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteReceiptRuleSet": {
+      "name": "DeleteReceiptRuleSet",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Deletes the specified receipt rule set and all of the receipt rules it contains",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteTemplate": {
+      "name": "DeleteTemplate",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Deletes an email template",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteVerifiedEmailAddress": {
+      "name": "DeleteVerifiedEmailAddress",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Deletes the specified email address from the list of verified addresses",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeActiveReceiptRuleSet": {
+      "name": "DescribeActiveReceiptRuleSet",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Returns the metadata and receipt rules for the receipt rule set that is currently\n                                                active",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeConfigurationSet": {
+      "name": "DescribeConfigurationSet",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Returns the details of the specified configuration set",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeReceiptRule": {
+      "name": "DescribeReceiptRule",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Returns the details of the specified receipt rule",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeReceiptRuleSet": {
+      "name": "DescribeReceiptRuleSet",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Returns the details of the specified receipt rule set",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "GetAccount": {
       "name": "GetAccount",
       "topics": [
         "Amazon Pinpoint Email Service"
       ],
       "description": "Obtain information about the email-sending status and capabilities",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAccountSendingEnabled": {
+      "name": "GetAccountSendingEnabled",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Returns the email sending status of the Amazon SES account for the current region",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -163,6 +386,17 @@
       "resourceTypes": [
         "configuration-set*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetCustomVerificationEmailTemplate": {
+      "name": "GetCustomVerificationEmailTemplate",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Returns the custom email verification template for the template name you specify",
+      "accessLevel": "Read",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -240,12 +474,111 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "GetIdentityDkimAttributes": {
+      "name": "GetIdentityDkimAttributes",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Returns the current status of Easy DKIM signing for an entity",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetIdentityMailFromDomainAttributes": {
+      "name": "GetIdentityMailFromDomainAttributes",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Returns the custom MAIL FROM attributes for a list of identities (email addresses\n                                                and/or domains)",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetIdentityNotificationAttributes": {
+      "name": "GetIdentityNotificationAttributes",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Given a list of verified identities (email addresses and/or domains), returns a structure\n                                                describing identity notification attributes",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetIdentityPolicies": {
+      "name": "GetIdentityPolicies",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Returns the requested sending authorization policies for the given identity (an email\n                                                address or a domain)",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetIdentityVerificationAttributes": {
+      "name": "GetIdentityVerificationAttributes",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Given a list of identities (email addresses and/or domains), returns the verification\n                                                status and (for domain identities) the verification token for each identity",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSendQuota": {
+      "name": "GetSendQuota",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Returns the user's current sending limits",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSendStatistics": {
+      "name": "GetSendStatistics",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Returns the user's sending statistics. The result is a list of data points, representing\n                                                the last two weeks of sending activity",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetTemplate": {
+      "name": "GetTemplate",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Returns the template object (which includes the Subject line, HTML part and text part)\n                                                for the template you specify",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ListConfigurationSets": {
       "name": "ListConfigurationSets",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon SES"
       ],
-      "description": "List all of the configuration sets associated with your Amazon Pinpoint account in\n                                                the current region",
+      "description": "Returns a list of the configuration sets associated with your Amazon SES account in\n                                                the current AWS Region",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListCustomVerificationEmailTemplates": {
+      "name": "ListCustomVerificationEmailTemplates",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Lists the existing custom verification email templates for your account in the current\n                                                AWS Region",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -284,6 +617,50 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ListIdentities": {
+      "name": "ListIdentities",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Returns a list containing all of the identities (email addresses and domains) for\n                                                your AWS account, regardless of verification status",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListIdentityPolicies": {
+      "name": "ListIdentityPolicies",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Returns a list of sending authorization policies that are attached to the given identity\n                                                (an email address or a domain)",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListReceiptFilters": {
+      "name": "ListReceiptFilters",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Lists the IP address filters associated with your AWS account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListReceiptRuleSets": {
+      "name": "ListReceiptRuleSets",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Lists the receipt rule sets that exist under your AWS account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
       "topics": [
@@ -294,6 +671,28 @@
       "resourceTypes": [
         "configuration-set"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTemplates": {
+      "name": "ListTemplates",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Lists the email templates present in your Amazon SES account in the current AWS Region",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListVerifiedEmailAddresses": {
+      "name": "ListVerifiedEmailAddresses",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Returns a list containing all of the email addresses that have been verified",
+      "accessLevel": "List",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -445,16 +844,178 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "SendEmail": {
-      "name": "SendEmail",
+    "PutIdentityPolicy": {
+      "name": "PutIdentityPolicy",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon SES"
       ],
-      "description": "Sends an email message",
+      "description": "Adds or updates a sending authorization policy for the specified identity (an email\n                                                address or a domain)",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ReorderReceiptRuleSet": {
+      "name": "ReorderReceiptRuleSet",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Reorders the receipt rules within a receipt rule set",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendBounce": {
+      "name": "SendBounce",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Generates and sends a bounce message to the sender of an email you received through\n                                                Amazon SES",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "ses:FromAddress",
+      "dependentActions": ""
+    },
+    "SendBulkTemplatedEmail": {
+      "name": "SendBulkTemplatedEmail",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Composes an email message to multiple destinations",
       "accessLevel": "Write",
       "resourceTypes": [
         "identity*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendCustomVerificationEmail": {
+      "name": "SendCustomVerificationEmail",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Adds an email address to the list of identities for your Amazon SES account in the\n                                                current AWS Region and attempts to verify it",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendEmail": {
+      "name": "SendEmail",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Composes an email message based on input data, and then immediately queues the message\n                                                for sending",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendRawEmail": {
+      "name": "SendRawEmail",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Sends an email message, with header and content specified by the client",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendTemplatedEmail": {
+      "name": "SendTemplatedEmail",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Composes an email message using an email template and immediately queues it for sending",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetActiveReceiptRuleSet": {
+      "name": "SetActiveReceiptRuleSet",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Sets the specified receipt rule set as the active receipt rule set",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetIdentityDkimEnabled": {
+      "name": "SetIdentityDkimEnabled",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Enables or disables Easy DKIM signing of email sent from an identity",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetIdentityFeedbackForwardingEnabled": {
+      "name": "SetIdentityFeedbackForwardingEnabled",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Given an identity (an email address or a domain), enables or disables whether Amazon\n                                                SES forwards bounce and complaint notifications as email",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetIdentityHeadersInNotificationsEnabled": {
+      "name": "SetIdentityHeadersInNotificationsEnabled",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Given an identity (an email address or a domain), sets whether Amazon SES includes\n                                                the original email headers in the Amazon Simple Notification Service (Amazon SNS)\n                                                notifications of a specified type",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetIdentityMailFromDomain": {
+      "name": "SetIdentityMailFromDomain",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Enables or disables the custom MAIL FROM domain setup for a verified identity (an\n                                                email address or a domain)",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetIdentityNotificationTopic": {
+      "name": "SetIdentityNotificationTopic",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Given an identity (an email address or a domain), sets the Amazon Simple Notification\n                                                Service (Amazon SNS) topic to which Amazon SES will publish bounce, complaint, and/or\n                                                delivery notifications for emails sent with that identity as the Source",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetReceiptRulePosition": {
+      "name": "SetReceiptRulePosition",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Sets the position of the specified receipt rule in the receipt rule set",
+      "accessLevel": "Write",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -471,6 +1032,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "TestRenderTemplate": {
+      "name": "TestRenderTemplate",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Creates a preview of the MIME content of an email when provided with a template and\n                                                a set of replacement data",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "UntagResource": {
       "name": "UntagResource",
       "topics": [
@@ -484,21 +1056,141 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "UpdateAccountSendingEnabled": {
+      "name": "UpdateAccountSendingEnabled",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Enables or disables email sending across your entire Amazon SES account in the current\n                                                AWS Region",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "UpdateConfigurationSetEventDestination": {
       "name": "UpdateConfigurationSetEventDestination",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon SES"
       ],
-      "description": "Update the configuration of an event destination for a configuration set",
+      "description": "Updates the event destination of a configuration set",
       "accessLevel": "Write",
-      "resourceTypes": [
-        "configuration-set*"
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateConfigurationSetReputationMetricsEnabled": {
+      "name": "UpdateConfigurationSetReputationMetricsEnabled",
+      "topics": [
+        "Amazon SES"
       ],
+      "description": "Enables or disables the publishing of reputation metrics for emails sent using a specific\n                                                configuration set in a given AWS Region",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateConfigurationSetSendingEnabled": {
+      "name": "UpdateConfigurationSetSendingEnabled",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Enables or disables email sending for messages sent using a specific configuration\n                                                set in a given AWS Region",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateConfigurationSetTrackingOptions": {
+      "name": "UpdateConfigurationSetTrackingOptions",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Modifies an association between a configuration set and a custom domain for open and\n                                                click event tracking",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateCustomVerificationEmailTemplate": {
+      "name": "UpdateCustomVerificationEmailTemplate",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Updates an existing custom verification email template",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateReceiptRule": {
+      "name": "UpdateReceiptRule",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Updates a receipt rule",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateTemplate": {
+      "name": "UpdateTemplate",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Updates an email template",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "VerifyDomainDkim": {
+      "name": "VerifyDomainDkim",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Returns a set of DKIM tokens for a domain",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "VerifyDomainIdentity": {
+      "name": "VerifyDomainIdentity",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Verifies a domain",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "VerifyEmailAddress": {
+      "name": "VerifyEmailAddress",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Verifies an email address. This action causes a confirmation email message to be sent\n                                                to the specified address. This action is throttled at one request per second",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "VerifyEmailIdentity": {
+      "name": "VerifyEmailIdentity",
+      "topics": [
+        "Amazon SES"
+      ],
+      "description": "Verifies an email address.  This action causes a confirmation email message to be\n                                                sent to the specified address. This action is throttled at one request per second",
+      "accessLevel": "Read",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     }
   },
   "topics": [
-    "Amazon Pinpoint Email Service"
+    "Amazon Pinpoint Email Service",
+    "Amazon SES"
   ]
 }

@@ -1,12 +1,67 @@
 {
   "servicePrefix": "aws-marketplace",
   "actions": {
+    "AcceptAgreementApprovalRequest": {
+      "name": "AcceptAgreementApprovalRequest",
+      "topics": [
+        "AWS Marketplace"
+      ],
+      "description": "Allows users to approve an incoming subscription request (for providers who provide\n                                                products that require subscription verification).",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "AssociateProductsWithPrivateMarketplace": {
       "name": "AssociateProductsWithPrivateMarketplace",
       "topics": [
         "AWS Private Marketplace"
       ],
       "description": "Adds new approved products to the Private Marketplace. Also allows to approve a request\n                                                for a product to be associated with the Private Marketplace. This action can be performed\n                                                by any account in an AWS Organization, provided the user has permissions to do so,\n                                                and the Organization's Service Control Policies allow it.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchMeterUsage": {
+      "name": "BatchMeterUsage",
+      "topics": [
+        "AWS Marketplace Metering Service"
+      ],
+      "description": "Called from a SaaS application listed on the AWS Marketplace to post metering records\n                                                for a set of customers.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CancelAgreementRequest": {
+      "name": "CancelAgreementRequest",
+      "topics": [
+        "AWS Marketplace"
+      ],
+      "description": "Allows users to cancel pending subscription requests for products that require subscription\n                                                verification.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CancelChangeSet": {
+      "name": "CancelChangeSet",
+      "topics": [
+        "AWS Marketplace Catalog"
+      ],
+      "description": "Cancels a running change set.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CompleteTask": {
+      "name": "CompleteTask",
+      "topics": [
+        "AWS Marketplace Catalog"
+      ],
+      "description": "Complete an existing task and submit the content to the associated change.",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -41,6 +96,50 @@
       ],
       "description": "Creates a new request for a product or products to be associated with the Private\n                                                Marketplace. This action can be performed by any account in an in an AWS Organization,\n                                                provided the user has permissions to do so, and the Organization's Service Control\n                                                Policies allow it.",
       "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAgreement": {
+      "name": "DescribeAgreement",
+      "topics": [
+        "AWS Marketplace"
+      ],
+      "description": "Returns metadata about the agreement.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeBuilds": {
+      "name": "DescribeBuilds",
+      "topics": [
+        "AWS Marketplace Image Building Service"
+      ],
+      "description": "Describes Image Builds identified by a build Id",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeChangeSet": {
+      "name": "DescribeChangeSet",
+      "topics": [
+        "AWS Marketplace Catalog"
+      ],
+      "description": "Returns the details of an existing change set.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeEntity": {
+      "name": "DescribeEntity",
+      "topics": [
+        "AWS Marketplace Catalog"
+      ],
+      "description": "Returns the details of an existing entity.",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -100,6 +199,28 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DescribeProcurementSystemConfiguration": {
+      "name": "DescribeProcurementSystemConfiguration",
+      "topics": [
+        "AWS Marketplace Procurement Systems Integration"
+      ],
+      "description": "Describes the Procurement System integration configuration (e.g. Coupa) for the individual\n                                                account, or for the entire AWS Organization if one exists. This action can only be\n                                                performed by the master account if using an AWS Organization.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTask": {
+      "name": "DescribeTask",
+      "topics": [
+        "AWS Marketplace Catalog"
+      ],
+      "description": "Returns the details of an existing task.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DisassociateProductsFromPrivateMarketplace": {
       "name": "DisassociateProductsFromPrivateMarketplace",
       "topics": [
@@ -107,6 +228,105 @@
       ],
       "description": "Removes approved products from the Private Marketplace. Also allows to decline a request\n                                                for a product to be associated with the Private Marketplace. This action can be performed\n                                                by any account in an AWS Organization, provided the user has permissions to do so,\n                                                and the Organization's Service Control Policies allow it.",
       "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAgreementApprovalRequest": {
+      "name": "GetAgreementApprovalRequest",
+      "topics": [
+        "AWS Marketplace"
+      ],
+      "description": "Allows users to view the details of their incoming subscription requests (for providers\n                                                who provide products that require subscription verification).",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAgreementRequest": {
+      "name": "GetAgreementRequest",
+      "topics": [
+        "AWS Marketplace"
+      ],
+      "description": "Allows users to view the details of their subscription requests for data products\n                                                that require subscription verification.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAgreementTerms": {
+      "name": "GetAgreementTerms",
+      "topics": [
+        "AWS Marketplace"
+      ],
+      "description": "Returns a list of terms for an agreement.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEntitlements": {
+      "name": "GetEntitlements",
+      "topics": [
+        "AWS Marketplace Entitlement Service"
+      ],
+      "description": "Retrieves entitlement values for a given product. The results can be filtered based\n                                                on customer identifier or product dimensions",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAgreementApprovalRequests": {
+      "name": "ListAgreementApprovalRequests",
+      "topics": [
+        "AWS Marketplace"
+      ],
+      "description": "Allows users to list their incoming subscription requests (for providers who provide\n                                                products that require subscription verification).",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAgreementRequests": {
+      "name": "ListAgreementRequests",
+      "topics": [
+        "AWS Marketplace"
+      ],
+      "description": "Allows users to list their subscription requests for products that require subscription\n                                                verification.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListBuilds": {
+      "name": "ListBuilds",
+      "topics": [
+        "AWS Marketplace Image Building Service"
+      ],
+      "description": "Lists Image Builds.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListChangeSets": {
+      "name": "ListChangeSets",
+      "topics": [
+        "AWS Marketplace Catalog"
+      ],
+      "description": "Lists existing change sets.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEntities": {
+      "name": "ListEntities",
+      "topics": [
+        "AWS Marketplace Catalog"
+      ],
+      "description": "Lists existing entities.",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -133,6 +353,105 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ListTasks": {
+      "name": "ListTasks",
+      "topics": [
+        "AWS Marketplace Catalog"
+      ],
+      "description": "Lists existing tasks.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "MeterUsage": {
+      "name": "MeterUsage",
+      "topics": [
+        "AWS Marketplace Metering Service"
+      ],
+      "description": "Emits metering records.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutProcurementSystemConfiguration": {
+      "name": "PutProcurementSystemConfiguration",
+      "topics": [
+        "AWS Marketplace Procurement Systems Integration"
+      ],
+      "description": "Creates or updates the Procurement System integration configuration (e.g. Coupa) for\n                                                the individual account, or for the entire AWS Organization if one exists. This action\n                                                can only be performed by the master account if using an AWS Organization.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterUsage": {
+      "name": "RegisterUsage",
+      "topics": [
+        "AWS Marketplace Metering Service"
+      ],
+      "description": "Allows you to verify that the customer running your paid software is subscribed to\n                                                your product on AWS Marketplace, enabling you to guard against unauthorized use. Meters\n                                                software use per ECS task, per hour, with usage prorated to the second.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RejectAgreementApprovalRequest": {
+      "name": "RejectAgreementApprovalRequest",
+      "topics": [
+        "AWS Marketplace"
+      ],
+      "description": "Allows users to decline an incoming subscription requests (for providers who provide\n                                                products that require subscription verification).",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ResolveCustomer": {
+      "name": "ResolveCustomer",
+      "topics": [
+        "AWS Marketplace Metering Service"
+      ],
+      "description": "Resolves a registration token to obtain a CustomerIdentifier and product code.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchAgreements": {
+      "name": "SearchAgreements",
+      "topics": [
+        "AWS Marketplace"
+      ],
+      "description": "Allows users to search their agreements.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartBuild": {
+      "name": "StartBuild",
+      "topics": [
+        "AWS Marketplace Image Building Service"
+      ],
+      "description": "Starts an Image Build",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartChangeSet": {
+      "name": "StartChangeSet",
+      "topics": [
+        "AWS Marketplace Catalog"
+      ],
+      "description": "Requests a new change set.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "catalog:ChangeType",
+      "dependentActions": ""
+    },
     "StartPrivateMarketplace": {
       "name": "StartPrivateMarketplace",
       "topics": [
@@ -150,6 +469,39 @@
         "AWS Private Marketplace"
       ],
       "description": "Stops the Private Marketplace, disabling the customized AWS Marketplace experience\n                                                and removing the Private Marketplace procurement restrictions on products. This action\n                                                can be performed by any account in an AWS Organization, provided the user has permissions\n                                                to do so, and the Organization's Service Control Policies allow it.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "Subscribe": {
+      "name": "Subscribe",
+      "topics": [
+        "AWS Marketplace"
+      ],
+      "description": "Allows users to subscribe to AWS Marketplace products. Includes the ability to send\n                                                a subscription request for products that require subscription verification. Includes\n                                                the ability to enable auto-renewal for an existing subscription.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "Unsubscribe": {
+      "name": "Unsubscribe",
+      "topics": [
+        "AWS Marketplace"
+      ],
+      "description": "Allows users to remove subscriptions to AWS Marketplace products. Includes the ability\n                                                to disable auto-renewal for an existing subscription.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAgreementApprovalRequest": {
+      "name": "UpdateAgreementApprovalRequest",
+      "topics": [
+        "AWS Marketplace"
+      ],
+      "description": "Allows users to make changes to an incoming subscription request, including the ability\n                                                to delete the prospective subscriber's information (for providers who provide products\n                                                that require subscription verification).",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -176,9 +528,37 @@
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
+    },
+    "UpdateTask": {
+      "name": "UpdateTask",
+      "topics": [
+        "AWS Marketplace Catalog"
+      ],
+      "description": "Update the content of an existing task.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ViewSubscriptions": {
+      "name": "ViewSubscriptions",
+      "topics": [
+        "AWS Marketplace"
+      ],
+      "description": "Allows users to see their account's subscriptions.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
     }
   },
   "topics": [
+    "AWS Marketplace",
+    "AWS Marketplace Catalog",
+    "AWS Marketplace Entitlement Service",
+    "AWS Marketplace Image Building Service",
+    "AWS Marketplace Metering Service",
+    "AWS Marketplace Procurement Systems Integration",
     "AWS Private Marketplace"
   ]
 }
