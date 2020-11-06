@@ -27,12 +27,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$3": {
-      "name": "$3",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreatePipeline": {
       "name": "CreatePipeline",
       "description": "Grants permission to create a uniquely named pipeline",
@@ -42,12 +36,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$5": {
-      "name": "$5",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteCustomActionType": {
       "name": "DeleteCustomActionType",
@@ -201,18 +189,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "pipeline": {
-      "name": "pipeline",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "webhook": {
-      "name": "webhook",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "ListWebhooks": {
       "name": "ListWebhooks",
       "description": "Grants permission to list all of the webhooks associated with your AWS account",
@@ -303,18 +279,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "webhook*": {
-      "name": "webhook*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$35": {
-      "name": "$35",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "RegisterWebhookWithThirdParty": {
       "name": "RegisterWebhookWithThirdParty",
       "description": "Grants permission to register a webhook with the third party specified in its configuration",
@@ -365,12 +329,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$43": {
-      "name": "$43",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UntagResource": {
       "name": "UntagResource",
       "description": "Grants permission to remove a tag from a CodePipeline resource",
@@ -380,12 +338,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$47": {
-      "name": "$47",
-      "description": "aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdatePipeline": {
       "name": "UpdatePipeline",

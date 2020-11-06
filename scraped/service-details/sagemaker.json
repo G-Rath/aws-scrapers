@@ -11,126 +11,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "automl-job": {
-      "name": "automl-job",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "domain": {
-      "name": "domain",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "endpoint": {
-      "name": "endpoint",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "endpoint-config": {
-      "name": "endpoint-config",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "experiment": {
-      "name": "experiment",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "experiment-trial": {
-      "name": "experiment-trial",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "experiment-trial-component": {
-      "name": "experiment-trial-component",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "flow-definition": {
-      "name": "flow-definition",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "human-task-ui": {
-      "name": "human-task-ui",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "hyper-parameter-tuning-job": {
-      "name": "hyper-parameter-tuning-job",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "labeling-job": {
-      "name": "labeling-job",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "model": {
-      "name": "model",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "monitoring-schedule": {
-      "name": "monitoring-schedule",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "notebook-instance": {
-      "name": "notebook-instance",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "processing-job": {
-      "name": "processing-job",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "training-job": {
-      "name": "training-job",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "transform-job": {
-      "name": "transform-job",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "user-profile": {
-      "name": "user-profile",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "workteam": {
-      "name": "workteam",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$20": {
-      "name": "$20",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "AssociateTrialComponent": {
       "name": "AssociateTrialComponent",
       "description": "Associate a trial component with a trial.",
@@ -140,12 +20,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "experiment-trial-component*": {
-      "name": "experiment-trial-component*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "BatchGetMetrics": {
       "name": "BatchGetMetrics",
@@ -187,12 +61,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$27": {
-      "name": "$27",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InstanceTypes",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateAutoMLJob": {
       "name": "CreateAutoMLJob",
       "description": "Creates automl job.",
@@ -202,12 +70,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
-    },
-    "$29": {
-      "name": "$29",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InterContainerTrafficEncryption\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:OutputKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VolumeKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSubnets",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateCodeRepository": {
       "name": "CreateCodeRepository",
@@ -239,12 +101,6 @@
       "conditionKeys": "",
       "dependentActions": "iam:CreateServiceLinkedRole\n                                                   \n                                                \n                                                \n                                                \n                                                   iam:PassRole"
     },
-    "$33": {
-      "name": "$33",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:AppNetworkAccessType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSubnets\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:DomainSharingOutputKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:HomeEfsFileSystemKmsKey",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateEndpoint": {
       "name": "CreateEndpoint",
       "description": "Creates an endpoint using the endpoint configuration specified in the request.",
@@ -254,12 +110,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$35": {
-      "name": "$35",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateEndpointConfig": {
       "name": "CreateEndpointConfig",
@@ -271,12 +121,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$37": {
-      "name": "$37",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:AcceleratorTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:ModelArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VolumeKmsKey",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateExperiment": {
       "name": "CreateExperiment",
       "description": "Create an experiment.",
@@ -286,12 +130,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$39": {
-      "name": "$39",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateFlowDefinition": {
       "name": "CreateFlowDefinition",
@@ -303,12 +141,6 @@
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
     },
-    "$41": {
-      "name": "$41",
-      "description": "sagemaker:WorkteamArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:WorkteamType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateHumanTaskUi": {
       "name": "CreateHumanTaskUi",
       "description": "Defines the settings you will use for the human review workflow user interface.",
@@ -318,12 +150,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$43": {
-      "name": "$43",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateHyperParameterTuningJob": {
       "name": "CreateHyperParameterTuningJob",
@@ -335,12 +161,6 @@
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
     },
-    "$45": {
-      "name": "$45",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:FileSystemAccessMode\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:FileSystemDirectoryPath\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:FileSystemId\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:FileSystemType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InterContainerTrafficEncryption\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:MaxRuntimeInSeconds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:NetworkIsolation\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:OutputKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VolumeKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSubnets",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateLabelingJob": {
       "name": "CreateLabelingJob",
       "description": "Starts a labeling job. A labeling job takes unlabeled data in and produces labeled\n                                                data as output, which can be used for training SageMaker models.",
@@ -351,12 +171,6 @@
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
     },
-    "$47": {
-      "name": "$47",
-      "description": "sagemaker:WorkteamArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:WorkteamType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VolumeKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:OutputKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateModel": {
       "name": "CreateModel",
       "description": "Creates a model in Amazon SageMaker. In the request, you specify a name for the model\n                                                and describe one or more containers.",
@@ -366,12 +180,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
-    },
-    "$49": {
-      "name": "$49",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:NetworkIsolation\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSubnets",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateModelPackage": {
       "name": "CreateModelPackage",
@@ -393,12 +201,6 @@
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
     },
-    "$52": {
-      "name": "$52",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:MaxRuntimeInSeconds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:NetworkIsolation\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:OutputKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VolumeKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSubnets",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateNotebookInstance": {
       "name": "CreateNotebookInstance",
       "description": "Creates an Amazon SageMaker notebook instance. A notebook instance is an Amazon EC2\n                                                instance running on a Jupyter Notebook.",
@@ -408,12 +210,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
-    },
-    "$54": {
-      "name": "$54",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:AcceleratorTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:DirectInternetAccess\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:RootAccess\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VolumeKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSubnets",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateNotebookInstanceLifecycleConfig": {
       "name": "CreateNotebookInstanceLifecycleConfig",
@@ -455,12 +251,6 @@
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
     },
-    "$59": {
-      "name": "$59",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:MaxRuntimeInSeconds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:NetworkIsolation\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:OutputKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VolumeKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSubnets\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InterContainerTrafficEncryption",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateTrainingJob": {
       "name": "CreateTrainingJob",
       "description": "Starts a model training job. After training completes, Amazon SageMaker saves the\n                                                resulting model artifacts and other optional output to an Amazon S3 location that\n                                                you specify.",
@@ -470,12 +260,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
-    },
-    "$61": {
-      "name": "$61",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:FileSystemAccessMode\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:FileSystemDirectoryPath\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:FileSystemId\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:FileSystemType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InterContainerTrafficEncryption\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:MaxRuntimeInSeconds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:NetworkIsolation\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:OutputKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VolumeKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSubnets",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateTransformJob": {
       "name": "CreateTransformJob",
@@ -487,12 +271,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$63": {
-      "name": "$63",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:ModelArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:OutputKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VolumeKmsKey",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateTrial": {
       "name": "CreateTrial",
       "description": "Create a trial.",
@@ -502,12 +280,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$65": {
-      "name": "$65",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateTrialComponent": {
       "name": "CreateTrialComponent",
@@ -519,12 +291,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$67": {
-      "name": "$67",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateUserProfile": {
       "name": "CreateUserProfile",
       "description": "Grants permission to create a UserProfile for a SageMaker Studio Domain",
@@ -534,12 +300,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
-    },
-    "$69": {
-      "name": "$69",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:DomainSharingOutputKmsKey",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateWorkforce": {
       "name": "CreateWorkforce",
@@ -551,12 +311,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$71": {
-      "name": "$71",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateWorkteam": {
       "name": "CreateWorkteam",
       "description": "Create a workteam.",
@@ -566,12 +320,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$73": {
-      "name": "$73",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteAlgorithm": {
       "name": "DeleteAlgorithm",
@@ -722,18 +470,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "compilation-job": {
-      "name": "compilation-job",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$109": {
-      "name": "$109",
-      "description": "aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteTrial": {
       "name": "DeleteTrial",
@@ -1075,12 +811,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "processing-job*": {
-      "name": "processing-job*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "GetSearchSuggestions": {
       "name": "GetSearchSuggestions",
       "description": "Get search suggestions when provided with keyword.",
@@ -1098,12 +828,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$148": {
-      "name": "$148",
-      "description": "sagemaker:TargetModel",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "ListAlgorithms": {
       "name": "ListAlgorithms",
@@ -1541,12 +1265,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$217": {
-      "name": "$217",
-      "description": "sagemaker:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:DomainSharingOutputKmsKey",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateEndpoint": {
       "name": "UpdateEndpoint",
       "description": "Updates an endpoint to use the endpoint configuration specified in the request.",
@@ -1587,12 +1305,6 @@
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
     },
-    "$222": {
-      "name": "$222",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:MaxRuntimeInSeconds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:NetworkIsolation\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:OutputKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VolumeKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSubnets",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateNotebookInstance": {
       "name": "UpdateNotebookInstance",
       "description": "Updates a notebook instance. Notebook instance updates include upgrading or downgrading\n                                                the EC2 instance used for your notebook instance to accommodate changes in your workload\n                                                requirements. You can also update the VPC security groups.",
@@ -1602,12 +1314,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$224": {
-      "name": "$224",
-      "description": "sagemaker:AcceleratorTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:RootAccess",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateNotebookInstanceLifecycleConfig": {
       "name": "UpdateNotebookInstanceLifecycleConfig",
@@ -1648,12 +1354,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$229": {
-      "name": "$229",
-      "description": "sagemaker:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      sagemaker:DomainSharingOutputKmsKey",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateWorkforce": {
       "name": "UpdateWorkforce",

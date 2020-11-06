@@ -27,12 +27,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$3": {
-      "name": "$3",
-      "description": "ecs:cluster\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ecs:capacity-provider\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ecs:task-definition\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateTaskSet": {
       "name": "CreateTaskSet",
       "description": "Creates a new Amazon ECS task set.",
@@ -58,12 +52,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$7": {
-      "name": "$7",
-      "description": "ecs:cluster",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteCapacityProvider": {
       "name": "DeleteCapacityProvider",
@@ -95,12 +83,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$11": {
-      "name": "$11",
-      "description": "ecs:cluster",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "DeleteTaskSet": {
       "name": "DeleteTaskSet",
       "description": "Deletes the specified task set.",
@@ -110,12 +92,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$13": {
-      "name": "$13",
-      "description": "ecs:cluster\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ecs:service",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeregisterContainerInstance": {
       "name": "DeregisterContainerInstance",
@@ -165,12 +141,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$19": {
-      "name": "$19",
-      "description": "ecs:cluster",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "DescribeServices": {
       "name": "DescribeServices",
       "description": "Describes the specified services running in your cluster.",
@@ -180,12 +150,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$21": {
-      "name": "$21",
-      "description": "ecs:cluster",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DescribeTaskDefinition": {
       "name": "DescribeTaskDefinition",
@@ -205,12 +169,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$24": {
-      "name": "$24",
-      "description": "ecs:cluster\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ecs:service",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "DescribeTasks": {
       "name": "DescribeTasks",
       "description": "Describes a specified task or tasks.",
@@ -220,12 +178,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$26": {
-      "name": "$26",
-      "description": "ecs:cluster",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DiscoverPollEndpoint": {
       "name": "DiscoverPollEndpoint",
@@ -289,24 +241,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "container-instance": {
-      "name": "container-instance",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "task": {
-      "name": "task",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "task-definition": {
-      "name": "task-definition",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "ListTaskDefinitionFamilies": {
       "name": "ListTaskDefinitionFamilies",
       "description": "Returns a list of task definition families that are registered to your account (which\n                                                may include task definition families that no longer have any ACTIVE task definitions).",
@@ -333,12 +267,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$40": {
-      "name": "$40",
-      "description": "ecs:cluster",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "Poll": {
       "name": "Poll",
       "description": "Grants permission to an agent to connect with the Amazon ECS service to report status\n                                                and get commands.",
@@ -348,12 +276,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$42": {
-      "name": "$42",
-      "description": "ecs:cluster",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "PutAccountSetting": {
       "name": "PutAccountSetting",
@@ -381,12 +303,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$46": {
-      "name": "$46",
-      "description": "ecs:cluster",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "PutClusterCapacityProviders": {
       "name": "PutClusterCapacityProviders",
       "description": "Modifies the available capacity providers and the default capacity provider strategy\n                                                for a cluster.",
@@ -397,12 +313,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$48": {
-      "name": "$48",
-      "description": "ecs:capacity-provider",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "RegisterContainerInstance": {
       "name": "RegisterContainerInstance",
       "description": "Registers an EC2 instance into the specified cluster.",
@@ -412,12 +322,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$50": {
-      "name": "$50",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "RegisterTaskDefinition": {
       "name": "RegisterTaskDefinition",
@@ -437,12 +341,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$53": {
-      "name": "$53",
-      "description": "ecs:cluster\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ecs:capacity-provider\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "StartTask": {
       "name": "StartTask",
       "description": "Starts a new task from the specified task definition on the specified container instance\n                                                or instances.",
@@ -452,12 +350,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$55": {
-      "name": "$55",
-      "description": "ecs:cluster\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ecs:container-instances\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "StartTelemetrySession": {
       "name": "StartTelemetrySession",
@@ -469,12 +361,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$57": {
-      "name": "$57",
-      "description": "ecs:cluster",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "StopTask": {
       "name": "StopTask",
       "description": "Stops a running task.",
@@ -484,12 +370,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$59": {
-      "name": "$59",
-      "description": "ecs:cluster",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "SubmitAttachmentStateChanges": {
       "name": "SubmitAttachmentStateChanges",
@@ -531,18 +411,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "service": {
-      "name": "service",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$68": {
-      "name": "$68",
-      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UntagResource": {
       "name": "UntagResource",
       "description": "Untags the specified resource.",
@@ -552,12 +420,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$74": {
-      "name": "$74",
-      "description": "aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateClusterSettings": {
       "name": "UpdateClusterSettings",
@@ -579,12 +441,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$77": {
-      "name": "$77",
-      "description": "ecs:cluster",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateContainerInstancesState": {
       "name": "UpdateContainerInstancesState",
       "description": "Enables the user to modify the status of an Amazon ECS container instance.",
@@ -594,12 +450,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$79": {
-      "name": "$79",
-      "description": "ecs:cluster",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateService": {
       "name": "UpdateService",
@@ -611,12 +461,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$81": {
-      "name": "$81",
-      "description": "ecs:cluster\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ecs:capacity-provider\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ecs:task-definition",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateServicePrimaryTaskSet": {
       "name": "UpdateServicePrimaryTaskSet",
       "description": "Modifies the primary task set used in a service.",
@@ -627,12 +471,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$83": {
-      "name": "$83",
-      "description": "ecs:cluster",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateTaskSet": {
       "name": "UpdateTaskSet",
       "description": "Updates the specified task set.",
@@ -642,12 +480,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$85": {
-      "name": "$85",
-      "description": "ecs:cluster\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ecs:service",
-      "accessLevel": "",
-      "resourceTypes": []
     }
   },
   "name": "Amazon Elastic Container Service"

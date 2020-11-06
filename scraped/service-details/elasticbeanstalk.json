@@ -21,36 +21,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "applicationversion": {
-      "name": "applicationversion",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "configurationtemplate": {
-      "name": "configurationtemplate",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "environment": {
-      "name": "environment",
-      "description": "elasticbeanstalk:InApplication",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "platform": {
-      "name": "platform",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$6": {
-      "name": "$6",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "ApplyEnvironmentManagedAction": {
       "name": "ApplyEnvironmentManagedAction",
       "description": "Grants permission to apply a scheduled managed action immediately.",
@@ -89,12 +59,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "applicationversion*": {
-      "name": "applicationversion*",
-      "description": "elasticbeanstalk:InApplication",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateApplication": {
       "name": "CreateApplication",
       "description": "Grants permission to create a new application.",
@@ -104,12 +68,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$13": {
-      "name": "$13",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateApplicationVersion": {
       "name": "CreateApplicationVersion",
@@ -121,12 +79,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$16": {
-      "name": "$16",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateConfigurationTemplate": {
       "name": "CreateConfigurationTemplate",
       "description": "Grants permission to create a configuration template.",
@@ -136,12 +88,6 @@
       ],
       "conditionKeys": "elasticbeanstalk:InApplication",
       "dependentActions": ""
-    },
-    "$18": {
-      "name": "$18",
-      "description": "elasticbeanstalk:FromApplication\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromApplicationVersion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromConfigurationTemplate\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromEnvironment\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromSolutionStack\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromPlatform\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateEnvironment": {
       "name": "CreateEnvironment",
@@ -153,12 +99,6 @@
       "conditionKeys": "elasticbeanstalk:InApplication",
       "dependentActions": ""
     },
-    "$20": {
-      "name": "$20",
-      "description": "elasticbeanstalk:FromApplicationVersion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromConfigurationTemplate\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromSolutionStack\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromPlatform\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreatePlatformVersion": {
       "name": "CreatePlatformVersion",
       "description": "Grants permission to create a new version of a custom platform.",
@@ -168,12 +108,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$22": {
-      "name": "$22",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateStorageLocation": {
       "name": "CreateStorageLocation",
@@ -270,12 +204,6 @@
       ],
       "conditionKeys": "elasticbeanstalk:InApplication",
       "dependentActions": ""
-    },
-    "solutionstack": {
-      "name": "solutionstack",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DescribeConfigurationSettings": {
       "name": "DescribeConfigurationSettings",
@@ -425,12 +353,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "environment*": {
-      "name": "environment*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "RebuildEnvironment": {
       "name": "RebuildEnvironment",
       "description": "Grants permission to delete and recreate all of the AWS resources for an environment\n                                                and to force a restart.",
@@ -450,12 +372,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$65": {
-      "name": "$65",
-      "description": "aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "RequestEnvironmentInfo": {
       "name": "RequestEnvironmentInfo",
@@ -496,12 +412,6 @@
       ],
       "conditionKeys": "elasticbeanstalk:InApplication",
       "dependentActions": ""
-    },
-    "$70": {
-      "name": "$70",
-      "description": "elasticbeanstalk:FromEnvironment",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "TerminateEnvironment": {
       "name": "TerminateEnvironment",
@@ -553,12 +463,6 @@
       "conditionKeys": "elasticbeanstalk:InApplication",
       "dependentActions": ""
     },
-    "$76": {
-      "name": "$76",
-      "description": "elasticbeanstalk:FromApplication\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromApplicationVersion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromConfigurationTemplate\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromEnvironment\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromSolutionStack\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromPlatform",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateEnvironment": {
       "name": "UpdateEnvironment",
       "description": "Grants permission to update an environment.",
@@ -568,12 +472,6 @@
       ],
       "conditionKeys": "elasticbeanstalk:InApplication",
       "dependentActions": ""
-    },
-    "$78": {
-      "name": "$78",
-      "description": "elasticbeanstalk:FromApplicationVersion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromConfigurationTemplate\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromSolutionStack\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticbeanstalk:FromPlatform",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "ValidateConfigurationSettings": {
       "name": "ValidateConfigurationSettings",

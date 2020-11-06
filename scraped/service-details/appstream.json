@@ -11,18 +11,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "stack*": {
-      "name": "stack*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$2": {
-      "name": "$2",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "BatchAssociateUserStack": {
       "name": "BatchAssociateUserStack",
       "description": "Grants permission to associate the specified users with the specified stacks. Users\n                                                in a user pool cannot be assigned to stacks with fleets that are joined to an Active\n                                                Directory domain",
@@ -32,12 +20,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$4": {
-      "name": "$4",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "BatchDisassociateUserStack": {
       "name": "BatchDisassociateUserStack",
@@ -49,12 +31,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$6": {
-      "name": "$6",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CopyImage": {
       "name": "CopyImage",
       "description": "Grants permission to copy the specified image within the same Region or to a new Region\n                                                within the same AWS account",
@@ -64,12 +40,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$8": {
-      "name": "$8",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateDirectoryConfig": {
       "name": "CreateDirectoryConfig",
@@ -89,18 +59,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "image*": {
-      "name": "image*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$12": {
-      "name": "$12",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateImageBuilder": {
       "name": "CreateImageBuilder",
       "description": "Grants permission to create an image builder. An image builder is a virtual machine\n                                                that is used to create an image",
@@ -110,18 +68,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "image-builder*": {
-      "name": "image-builder*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$15": {
-      "name": "$15",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateImageBuilderStreamingURL": {
       "name": "CreateImageBuilderStreamingURL",
@@ -133,12 +79,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$17": {
-      "name": "$17",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateStack": {
       "name": "CreateStack",
       "description": "Grants permission to create a stack to start streaming applications to users. A stack\n                                                consists of an associated fleet, user access policies, and storage configurations",
@@ -149,12 +89,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$19": {
-      "name": "$19",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateStreamingURL": {
       "name": "CreateStreamingURL",
       "description": "Grants permission to create a temporary URL to start an AppStream 2.0 streaming session\n                                                for the specified user. A streaming URL enables application streaming to be tested\n                                                without user setup",
@@ -164,12 +98,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$22": {
-      "name": "$22",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateUsageReportSubscription": {
       "name": "CreateUsageReportSubscription",
@@ -205,12 +133,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$27": {
-      "name": "$27",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "DeleteImage": {
       "name": "DeleteImage",
       "description": "Grants permission to delete the specified image. An image cannot be deleted when it\n                                                is in use",
@@ -220,12 +142,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$29": {
-      "name": "$29",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteImageBuilder": {
       "name": "DeleteImageBuilder",
@@ -237,12 +153,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$31": {
-      "name": "$31",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "DeleteImagePermissions": {
       "name": "DeleteImagePermissions",
       "description": "Grants permission to delete permissions for the specified private image",
@@ -253,12 +163,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$33": {
-      "name": "$33",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "DeleteStack": {
       "name": "DeleteStack",
       "description": "Grants permission to delete the specified stack. After the stack is deleted, the application\n                                                streaming environment provided by the stack is no longer available to users. Also,\n                                                any reservations made for application streaming sessions for the stack are released",
@@ -268,12 +172,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$35": {
-      "name": "$35",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteUsageReportSubscription": {
       "name": "DeleteUsageReportSubscription",
@@ -403,12 +301,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$52": {
-      "name": "$52",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "EnableUser": {
       "name": "EnableUser",
       "description": "Grants permission to enable a user in the user pool",
@@ -479,12 +371,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$61": {
-      "name": "$61",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "StartImageBuilder": {
       "name": "StartImageBuilder",
       "description": "Grants permission to start the specified image builder",
@@ -494,12 +380,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$63": {
-      "name": "$63",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "StopFleet": {
       "name": "StopFleet",
@@ -511,12 +391,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$65": {
-      "name": "$65",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "StopImageBuilder": {
       "name": "StopImageBuilder",
       "description": "Grants permission to stop the specified image builder",
@@ -526,12 +400,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$67": {
-      "name": "$67",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "Stream": {
       "name": "Stream",
@@ -543,12 +411,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$69": {
-      "name": "$69",
-      "description": "appstream:userId",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "TagResource": {
       "name": "TagResource",
       "description": "Grants permission to add or overwrite one or more tags for the specified AppStream\n                                                2.0 resource. The following resources can be tagged: Image builders, images, fleets,\n                                                and stacks",
@@ -559,30 +421,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "image": {
-      "name": "image",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "image-builder": {
-      "name": "image-builder",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "stack": {
-      "name": "stack",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$74": {
-      "name": "$74",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UntagResource": {
       "name": "UntagResource",
       "description": "Grants permission to disassociate one or more tags from the specified AppStream 2.0\n                                                resource",
@@ -592,12 +430,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$79": {
-      "name": "$79",
-      "description": "aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateDirectoryConfig": {
       "name": "UpdateDirectoryConfig",
@@ -617,12 +449,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$83": {
-      "name": "$83",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateImagePermissions": {
       "name": "UpdateImagePermissions",
       "description": "Grants permission to add or update permissions for the specified private image",
@@ -633,12 +459,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$85": {
-      "name": "$85",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateStack": {
       "name": "UpdateStack",
       "description": "Grants permission to update the specified fields for the specified stack",
@@ -648,12 +468,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$87": {
-      "name": "$87",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     }
   },
   "name": "Amazon AppStream 2.0"

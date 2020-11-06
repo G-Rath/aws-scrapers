@@ -99,12 +99,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$10": {
-      "name": "$10",
-      "description": "codecommit:References",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateCommit": {
       "name": "CreateCommit",
       "description": "Grants permission to add, copy, move or update single or multiple files in a branch\n                                                in an AWS CodeCommit repository, and generate a commit for the changes in the specified\n                                                branch.",
@@ -114,12 +108,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$12": {
-      "name": "$12",
-      "description": "codecommit:References",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreatePullRequest": {
       "name": "CreatePullRequest",
@@ -151,12 +139,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$16": {
-      "name": "$16",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateUnreferencedMergeCommit": {
       "name": "CreateUnreferencedMergeCommit",
       "description": "Grants permission to create an unreferenced commit that contains the result of merging\n                                                two commits using either the three-way or the squash merge option; does not control\n                                                Git merge actions",
@@ -166,12 +148,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$18": {
-      "name": "$18",
-      "description": "codecommit:References",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteApprovalRuleTemplate": {
       "name": "DeleteApprovalRuleTemplate",
@@ -190,12 +166,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$21": {
-      "name": "$21",
-      "description": "codecommit:References",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteCommentContent": {
       "name": "DeleteCommentContent",
@@ -216,12 +186,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$24": {
-      "name": "$24",
-      "description": "codecommit:References",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeletePullRequestApprovalRule": {
       "name": "DeletePullRequestApprovalRule",
@@ -421,12 +385,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$45": {
-      "name": "$45",
-      "description": "codecommit:References",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "GetMergeConflicts": {
       "name": "GetMergeConflicts",
       "description": "Grants permission to get information about merge conflicts between the before and\n                                                after commit IDs for a pull request in a repository",
@@ -557,12 +515,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$59": {
-      "name": "$59",
-      "description": "codecommit:References",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "ListApprovalRuleTemplates": {
       "name": "ListApprovalRuleTemplates",
       "description": "Grants permission to list all approval rule templates in an AWS Region for the AWS\n                                                account",
@@ -637,12 +589,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$68": {
-      "name": "$68",
-      "description": "codecommit:References",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "MergeBranchesBySquash": {
       "name": "MergeBranchesBySquash",
       "description": "Grants permission to merge two commits into the specified destination branch using\n                                                the squash merge option",
@@ -652,12 +598,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$70": {
-      "name": "$70",
-      "description": "codecommit:References",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "MergeBranchesByThreeWay": {
       "name": "MergeBranchesByThreeWay",
@@ -669,12 +609,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$72": {
-      "name": "$72",
-      "description": "codecommit:References",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "MergePullRequestByFastForward": {
       "name": "MergePullRequestByFastForward",
       "description": "Grants permission to close a pull request and attempt to merge it into the specified\n                                                destination branch for that pull request at the specified commit using the fast-forward\n                                                merge option",
@@ -684,12 +618,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$74": {
-      "name": "$74",
-      "description": "codecommit:References",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "MergePullRequestBySquash": {
       "name": "MergePullRequestBySquash",
@@ -701,12 +629,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$76": {
-      "name": "$76",
-      "description": "codecommit:References",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "MergePullRequestByThreeWay": {
       "name": "MergePullRequestByThreeWay",
       "description": "Grants permission to close a pull request and attempt to merge it into the specified\n                                                destination branch for that pull request at the specified commit using the three-way\n                                                merge option",
@@ -716,12 +638,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$78": {
-      "name": "$78",
-      "description": "codecommit:References",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "OverridePullRequestApprovalRules": {
       "name": "OverridePullRequestApprovalRules",
@@ -783,12 +699,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$85": {
-      "name": "$85",
-      "description": "codecommit:References",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "PutRepositoryTriggers": {
       "name": "PutRepositoryTriggers",
       "description": "Grants permission to create, update, or delete triggers for a repository",
@@ -809,12 +719,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$88": {
-      "name": "$88",
-      "description": "aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "TestRepositoryTriggers": {
       "name": "TestRepositoryTriggers",
       "description": "Grants permission to test the functionality of repository triggers by sending information\n                                                to the trigger target",
@@ -834,12 +738,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$91": {
-      "name": "$91",
-      "description": "aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateApprovalRuleTemplateContent": {
       "name": "UpdateApprovalRuleTemplateContent",

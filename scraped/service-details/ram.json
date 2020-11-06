@@ -11,12 +11,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$1": {
-      "name": "$1",
-      "description": "ram:ShareOwnerAccountId",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "AssociateResourceShare": {
       "name": "AssociateResourceShare",
       "description": "Associates resource(s) and/or principal(s) to a resource share",
@@ -27,12 +21,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$3": {
-      "name": "$3",
-      "description": "aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:ResourceShareName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:AllowsExternalPrincipals\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:Principal\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:RequestedResourceType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:ResourceArn",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "AssociateResourceSharePermission": {
       "name": "AssociateResourceSharePermission",
       "description": "Associate a Permission with a Resource Share",
@@ -42,18 +30,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "resource-share*": {
-      "name": "resource-share*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$6": {
-      "name": "$6",
-      "description": "aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:AllowsExternalPrincipals\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:ResourceShareName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:PermissionArn",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateResourceShare": {
       "name": "CreateResourceShare",
@@ -73,12 +49,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$9": {
-      "name": "$9",
-      "description": "aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:ResourceShareName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:AllowsExternalPrincipals",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "DisassociateResourceShare": {
       "name": "DisassociateResourceShare",
       "description": "Disassociates resource(s) and/or principal(s) from a resource share",
@@ -89,12 +59,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$11": {
-      "name": "$11",
-      "description": "aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:ResourceShareName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:AllowsExternalPrincipals\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:Principal\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:RequestedResourceType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:ResourceArn",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "DisassociateResourceSharePermission": {
       "name": "DisassociateResourceSharePermission",
       "description": "Disassociate a Permission from a Resource Share",
@@ -104,12 +68,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$14": {
-      "name": "$14",
-      "description": "aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:AllowsExternalPrincipals\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:ResourceShareName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:PermissionArn",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "EnableSharingWithAwsOrganization": {
       "name": "EnableSharingWithAwsOrganization",
@@ -128,12 +86,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$17": {
-      "name": "$17",
-      "description": "ram:PermissionArn",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "GetResourcePolicies": {
       "name": "GetResourcePolicies",
@@ -203,12 +155,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$26": {
-      "name": "$26",
-      "description": "aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:ResourceShareName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:AllowsExternalPrincipals",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "ListResourceTypes": {
       "name": "ListResourceTypes",
       "description": "Lists the shareable resource types supported by AWS RAM",
@@ -245,12 +191,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$31": {
-      "name": "$31",
-      "description": "ram:ShareOwnerAccountId",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "TagResource": {
       "name": "TagResource",
       "description": "Tag the specified resources share",
@@ -260,12 +200,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$33": {
-      "name": "$33",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UntagResource": {
       "name": "UntagResource",
@@ -277,12 +211,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$35": {
-      "name": "$35",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateResourceShare": {
       "name": "UpdateResourceShare",
       "description": "Update attributes of the resource share",
@@ -292,12 +220,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$37": {
-      "name": "$37",
-      "description": "aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:ResourceShareName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:AllowsExternalPrincipals\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:RequestedAllowsExternalPrincipals",
-      "accessLevel": "",
-      "resourceTypes": []
     }
   },
   "name": "AWS Resource Access Manager"

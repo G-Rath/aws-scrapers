@@ -29,12 +29,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$3": {
-      "name": "$3",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateModel": {
       "name": "CreateModel",
       "description": "Creates a model using the specified model type.",
@@ -44,12 +38,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$5": {
-      "name": "$5",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateModelVersion": {
       "name": "CreateModelVersion",
@@ -61,12 +49,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$7": {
-      "name": "$7",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateRule": {
       "name": "CreateRule",
       "description": "Creates a rule for use with the specified detector.",
@@ -76,12 +58,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$9": {
-      "name": "$9",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateVariable": {
       "name": "CreateVariable",
@@ -285,66 +261,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "detector-version": {
-      "name": "detector-version",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "entity-type": {
-      "name": "entity-type",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "event-type": {
-      "name": "event-type",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "external-model": {
-      "name": "external-model",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "label": {
-      "name": "label",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "model": {
-      "name": "model",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "model-version": {
-      "name": "model-version",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "outcome": {
-      "name": "outcome",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "rule": {
-      "name": "rule",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "variable": {
-      "name": "variable",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "PutDetector": {
       "name": "PutDetector",
       "description": "Creates or updates a detector.",
@@ -354,12 +270,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$42": {
-      "name": "$42",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "PutEntityType": {
       "name": "PutEntityType",
@@ -371,12 +281,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$44": {
-      "name": "$44",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "PutEventType": {
       "name": "PutEventType",
       "description": "Creates or updates an event type. An event is a business activity that is evaluated\n                                                for fraud risk. With Amazon Fraud Detector, you generate fraud predictions for events.\n                                                An event type defines the structure for an event sent to Amazon Fraud Detector. This\n                                                includes the variables sent as part of the event, the entity performing the event\n                                                (such as a customer), and the labels that classify the event. Example event types\n                                                include online payment transactions, account registrations, and authentications.",
@@ -387,12 +291,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$46": {
-      "name": "$46",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "PutExternalModel": {
       "name": "PutExternalModel",
       "description": "Creates or updates an Amazon SageMaker model endpoint. You can also use this action\n                                                to update the configuration of the model endpoint, including the IAM role and/or the\n                                                mapped variables.",
@@ -402,12 +300,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$48": {
-      "name": "$48",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "PutKMSEncryptionKey": {
       "name": "PutKMSEncryptionKey",
@@ -427,12 +319,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$51": {
-      "name": "$51",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "PutOutcome": {
       "name": "PutOutcome",
       "description": "Creates or updates an outcome.",
@@ -442,12 +328,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$53": {
-      "name": "$53",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "TagResource": {
       "name": "TagResource",
@@ -459,12 +339,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$65": {
-      "name": "$65",
-      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UntagResource": {
       "name": "UntagResource",
       "description": "Removes tags from a resource.",
@@ -474,12 +348,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$77": {
-      "name": "$77",
-      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateDetectorVersion": {
       "name": "UpdateDetectorVersion",
@@ -531,12 +399,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$83": {
-      "name": "$83",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateModelVersionStatus": {
       "name": "UpdateModelVersionStatus",
       "description": "Updates the status of a model version.",
@@ -564,12 +426,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$87": {
-      "name": "$87",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateVariable": {
       "name": "UpdateVariable",

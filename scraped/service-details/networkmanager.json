@@ -11,24 +11,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "global-network*": {
-      "name": "global-network*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "link": {
-      "name": "link",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$3": {
-      "name": "$3",
-      "description": "networkmanager:cgwArn",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "AssociateLink": {
       "name": "AssociateLink",
       "description": "Grants permission to associate a link to a device",
@@ -39,12 +21,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "link*": {
-      "name": "link*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateDevice": {
       "name": "CreateDevice",
       "description": "Grants permission to create a new device",
@@ -54,12 +30,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$8": {
-      "name": "$8",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateGlobalNetwork": {
       "name": "CreateGlobalNetwork",
@@ -79,18 +49,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "site": {
-      "name": "site",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$12": {
-      "name": "$12",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateSite": {
       "name": "CreateSite",
       "description": "Grants permission to create a new site",
@@ -100,12 +58,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$14": {
-      "name": "$14",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteDevice": {
       "name": "DeleteDevice",
@@ -147,12 +99,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "site*": {
-      "name": "site*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "DeregisterTransitGateway": {
       "name": "DeregisterTransitGateway",
       "description": "Grants permission to deregister a transit gateway from a global network",
@@ -162,12 +108,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$23": {
-      "name": "$23",
-      "description": "networkmanager:tgwArn",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DescribeGlobalNetworks": {
       "name": "DescribeGlobalNetworks",
@@ -188,12 +128,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$26": {
-      "name": "$26",
-      "description": "networkmanager:cgwArn",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DisassociateLink": {
       "name": "DisassociateLink",
@@ -224,12 +158,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "device": {
-      "name": "device",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "GetLinkAssociations": {
       "name": "GetLinkAssociations",
@@ -281,18 +209,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "global-network": {
-      "name": "global-network",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$45": {
-      "name": "$45",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "RegisterTransitGateway": {
       "name": "RegisterTransitGateway",
       "description": "Grants permission to register a transit gateway to a global network",
@@ -302,12 +218,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$47": {
-      "name": "$47",
-      "description": "networkmanager:tgwArn",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "TagResource": {
       "name": "TagResource",
@@ -319,12 +229,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$52": {
-      "name": "$52",
-      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UntagResource": {
       "name": "UntagResource",
       "description": "Grants permission to untag a Network Manager resource",
@@ -334,12 +238,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$57": {
-      "name": "$57",
-      "description": "aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateDevice": {
       "name": "UpdateDevice",

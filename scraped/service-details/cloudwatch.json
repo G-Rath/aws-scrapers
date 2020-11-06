@@ -193,26 +193,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "insight-rule": {
-      "name": "insight-rule",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "SCENARIO: \n                                                   CloudWatch-Alarm": {
-      "name": "SCENARIO: \n                                                   CloudWatch-Alarm",
-      "description": "",
-      "accessLevel": "alarm*",
-      "resourceTypes": [],
-      "conditionKeys": ""
-    },
-    "SCENARIO: \n                                                   CloudWatch-InsightRule": {
-      "name": "SCENARIO: \n                                                   CloudWatch-InsightRule",
-      "description": "",
-      "accessLevel": "insight-rule*",
-      "resourceTypes": [],
-      "conditionKeys": ""
-    },
     "PutAnomalyDetector": {
       "name": "PutAnomalyDetector",
       "description": "Grants permission to create or update an anomaly detection model for a CloudWatch\n                                                metric.",
@@ -230,12 +210,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$26": {
-      "name": "$26",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "PutDashboard": {
       "name": "PutDashboard",
@@ -257,12 +231,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$29": {
-      "name": "$29",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "PutMetricAlarm": {
       "name": "PutMetricAlarm",
       "description": "Grants permission to create or update an alarm and associates it with the specified\n                                                Amazon CloudWatch metric",
@@ -272,12 +240,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$31": {
-      "name": "$31",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "PutMetricData": {
       "name": "PutMetricData",
@@ -307,12 +269,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$36": {
-      "name": "$36",
-      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UntagResource": {
       "name": "UntagResource",
       "description": "Grants permission to remove a tag from an Amazon CloudWatch resource",
@@ -322,12 +278,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$41": {
-      "name": "$41",
-      "description": "aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     }
   },
   "name": "Amazon CloudWatch"

@@ -21,12 +21,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$2": {
-      "name": "$2",
-      "description": "cloudformation:RoleArn",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateChangeSet": {
       "name": "CreateChangeSet",
       "description": "Creates a list of changes for a stack.",
@@ -37,12 +31,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$4": {
-      "name": "$4",
-      "description": "cloudformation:ChangeSetName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      cloudformation:ResourceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      cloudformation:ImportResourceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      cloudformation:RoleArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      cloudformation:StackPolicyUrl\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      cloudformation:TemplateUrl\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateStack": {
       "name": "CreateStack",
       "description": "Creates a stack as specified in the template.",
@@ -52,12 +40,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$6": {
-      "name": "$6",
-      "description": "cloudformation:ResourceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      cloudformation:RoleArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      cloudformation:StackPolicyUrl\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      cloudformation:TemplateUrl\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateStackInstances": {
       "name": "CreateStackInstances",
@@ -95,12 +77,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$11": {
-      "name": "$11",
-      "description": "cloudformation:ChangeSetName",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "DeleteStack": {
       "name": "DeleteStack",
       "description": "Deletes a specified stack.",
@@ -110,12 +86,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$13": {
-      "name": "$13",
-      "description": "cloudformation:RoleArn",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteStackInstances": {
       "name": "DeleteStackInstances",
@@ -162,12 +132,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$19": {
-      "name": "$19",
-      "description": "cloudformation:ChangeSetName",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DescribeStackDriftDetectionStatus": {
       "name": "DescribeStackDriftDetectionStatus",
@@ -321,12 +285,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$36": {
-      "name": "$36",
-      "description": "cloudformation:ChangeSetName",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "GetStackPolicy": {
       "name": "GetStackPolicy",
       "description": "Returns the stack policy for a specified stack.",
@@ -356,12 +314,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "stackset": {
-      "name": "stackset",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "ListChangeSets": {
       "name": "ListChangeSets",
@@ -489,12 +441,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$55": {
-      "name": "$55",
-      "description": "cloudformation:StackPolicyUrl",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "SetTypeDefaultVersion": {
       "name": "SetTypeDefaultVersion",
       "description": "Sets which version of a CloudFormation type applies to CloudFormation operations",
@@ -553,12 +499,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$64": {
-      "name": "$64",
-      "description": "cloudformation:ResourceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      cloudformation:RoleArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      cloudformation:StackPolicyUrl\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      cloudformation:TemplateUrl\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateStackInstances": {
       "name": "UpdateStackInstances",
       "description": "Updates the parameter values for stack instances for the specified accounts, within\n                                                the specified regions.",
@@ -578,12 +518,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$67": {
-      "name": "$67",
-      "description": "cloudformation:RoleArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      cloudformation:TemplateUrl\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateTerminationProtection": {
       "name": "UpdateTerminationProtection",

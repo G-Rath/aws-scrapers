@@ -117,12 +117,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$13": {
-      "name": "$13",
-      "description": "codestar-connections:PassedToService",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "RegisterAppCode": {
       "name": "RegisterAppCode",
       "description": "Grants permission to associate a third party server, such as a GitHub Enterprise Server\n                                                instance, with a Host",
@@ -157,12 +151,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$18": {
-      "name": "$18",
-      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UntagResource": {
       "name": "UntagResource",
       "description": "Removes tags from an AWS resource",
@@ -172,12 +160,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$20": {
-      "name": "$20",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateConnectionInstallation": {
       "name": "UpdateConnectionInstallation",
@@ -189,12 +171,6 @@
       "conditionKeys": "",
       "dependentActions": "codestar-connections:GetIndividualAccessToken\n                                                   \n                                                \n                                                \n                                                \n                                                   codestar-connections:GetInstallationUrl\n                                                   \n                                                \n                                                \n                                                \n                                                   codestar-connections:ListInstallationTargets\n                                                   \n                                                \n                                                \n                                                \n                                                   codestar-connections:StartOAuthHandshake"
     },
-    "$22": {
-      "name": "$22",
-      "description": "codestar-connections:InstallationId",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UseConnection": {
       "name": "UseConnection",
       "description": "Grants permission to use a Connection resource to call provider actions",
@@ -204,12 +180,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$24": {
-      "name": "$24",
-      "description": "codestar-connections:FullRepositoryId\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      codestar-connections:ProviderAction\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      codestar-connections:ProviderPermissionsRequired",
-      "accessLevel": "",
-      "resourceTypes": []
     }
   },
   "name": "AWS CodeStar Connections"

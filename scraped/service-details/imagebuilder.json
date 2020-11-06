@@ -21,18 +21,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "kmsKey": {
-      "name": "kmsKey",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$3": {
-      "name": "$3",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateDistributionConfiguration": {
       "name": "CreateDistributionConfiguration",
       "description": "Create a new distribution configuration",
@@ -42,12 +30,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$5": {
-      "name": "$5",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateImage": {
       "name": "CreateImage",
@@ -59,12 +41,6 @@
       "conditionKeys": "",
       "dependentActions": "imagebuilder:GetImageRecipe\n                                                   \n                                                \n                                                \n                                                \n                                                   imagebuilder:GetInfrastructureConfiguration"
     },
-    "$7": {
-      "name": "$7",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateImagePipeline": {
       "name": "CreateImagePipeline",
       "description": "Create a new image pipeline",
@@ -74,12 +50,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": "imagebuilder:GetImageRecipe"
-    },
-    "$9": {
-      "name": "$9",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateImageRecipe": {
       "name": "CreateImageRecipe",
@@ -91,12 +61,6 @@
       "conditionKeys": "",
       "dependentActions": "imagebuilder:GetComponent"
     },
-    "$11": {
-      "name": "$11",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateInfrastructureConfiguration": {
       "name": "CreateInfrastructureConfiguration",
       "description": "Create a new infrastructure configuration",
@@ -106,12 +70,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
-    },
-    "$13": {
-      "name": "$13",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      imagebuilder:CreatedResourceTagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      imagebuilder:CreatedResourceTag/<key>",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteComponent": {
       "name": "DeleteComponent",
@@ -212,12 +170,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$24": {
-      "name": "$24",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "GetImagePipeline": {
       "name": "GetImagePipeline",
@@ -357,42 +309,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "distributionConfiguration": {
-      "name": "distributionConfiguration",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "image": {
-      "name": "image",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "imagePipeline": {
-      "name": "imagePipeline",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "imageRecipe": {
-      "name": "imageRecipe",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "infrastructureConfiguration": {
-      "name": "infrastructureConfiguration",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$45": {
-      "name": "$45",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "PutComponentPolicy": {
       "name": "PutComponentPolicy",
       "description": "Set the resource policy associated with a component",
@@ -443,12 +359,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$56": {
-      "name": "$56",
-      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UntagResource": {
       "name": "UntagResource",
       "description": "Untag an Image Builder resource",
@@ -458,12 +368,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$63": {
-      "name": "$63",
-      "description": "aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateDistributionConfiguration": {
       "name": "UpdateDistributionConfiguration",
@@ -494,12 +398,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
-    },
-    "$67": {
-      "name": "$67",
-      "description": "aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      imagebuilder:CreatedResourceTagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      imagebuilder:CreatedResourceTag/<key>",
-      "accessLevel": "",
-      "resourceTypes": []
     }
   },
   "name": "Amazon EC2 Image Builder"

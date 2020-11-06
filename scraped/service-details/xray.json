@@ -19,12 +19,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$2": {
-      "name": "$2",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateSamplingRule": {
       "name": "CreateSamplingRule",
       "description": "Grants permission to create a rule to control sampling behavior for instrumented applications",
@@ -34,12 +28,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$4": {
-      "name": "$4",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteGroup": {
       "name": "DeleteGroup",
@@ -51,12 +39,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$6": {
-      "name": "$6",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "DeleteSamplingRule": {
       "name": "DeleteSamplingRule",
       "description": "Grants permission to delete a sampling rule",
@@ -66,12 +48,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$8": {
-      "name": "$8",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "GetEncryptionConfig": {
       "name": "GetEncryptionConfig",
@@ -90,12 +66,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$11": {
-      "name": "$11",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "GetGroups": {
       "name": "GetGroups",
@@ -203,12 +173,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "sampling-rule": {
-      "name": "sampling-rule",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "PutEncryptionConfig": {
       "name": "PutEncryptionConfig",
       "description": "Grants permission to update the encryption configuration for X-Ray data",
@@ -243,12 +207,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$31": {
-      "name": "$31",
-      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UntagResource": {
       "name": "UntagResource",
       "description": "Grants permission to remove tags from an X-Ray resource",
@@ -258,12 +216,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$34": {
-      "name": "$34",
-      "description": "aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateGroup": {
       "name": "UpdateGroup",
@@ -275,12 +227,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$36": {
-      "name": "$36",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateSamplingRule": {
       "name": "UpdateSamplingRule",
       "description": "Grants permission to modify a sampling rule's configuration",
@@ -290,12 +236,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$38": {
-      "name": "$38",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     }
   },
   "name": "AWS X-Ray"

@@ -11,12 +11,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$1": {
-      "name": "$1",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "ConnectCustomKeyStore": {
       "name": "ConnectCustomKeyStore",
       "description": "Controls permission to connect or reconnect a custom key store to its associated AWS\n                                                CloudHSM cluster.",
@@ -34,18 +28,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "key*": {
-      "name": "key*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$5": {
-      "name": "$5",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateCustomKeyStore": {
       "name": "CreateCustomKeyStore",
@@ -65,12 +47,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$8": {
-      "name": "$8",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:GrantConstraintType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:GrantIsForAWSResource\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateKey": {
       "name": "CreateKey",
       "description": "Controls permission to create a customer master key that can be used to protect data\n                                                keys and other sensitive information.",
@@ -89,12 +65,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$11": {
-      "name": "$11",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:EncryptionAlgorithm\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:EncryptionContextKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "DeleteAlias": {
       "name": "DeleteAlias",
       "description": "Controls permission to delete an alias. Aliases are optional friendly names that you\n                                                can associate with customer master keys.",
@@ -104,12 +74,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$14": {
-      "name": "$14",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteCustomKeyStore": {
       "name": "DeleteCustomKeyStore",
@@ -129,12 +93,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$17": {
-      "name": "$17",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "DescribeCustomKeyStores": {
       "name": "DescribeCustomKeyStores",
       "description": "Controls permission to view detailed information about custom key stores in the account\n                                                and region.",
@@ -153,12 +111,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$20": {
-      "name": "$20",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "DisableKey": {
       "name": "DisableKey",
       "description": "Controls permission to disable a customer master key, which prevents it from being\n                                                used in cryptographic operations.",
@@ -169,12 +121,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$22": {
-      "name": "$22",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "DisableKeyRotation": {
       "name": "DisableKeyRotation",
       "description": "Controls permission to disable automatic rotation of a customer managed customer master\n                                                key.",
@@ -184,12 +130,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$24": {
-      "name": "$24",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DisconnectCustomKeyStore": {
       "name": "DisconnectCustomKeyStore",
@@ -209,12 +149,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$27": {
-      "name": "$27",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "EnableKeyRotation": {
       "name": "EnableKeyRotation",
       "description": "Controls permission to enable automatic rotation of the cryptographic material in\n                                                a customer master key.",
@@ -224,12 +158,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$29": {
-      "name": "$29",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "Encrypt": {
       "name": "Encrypt",
@@ -241,12 +169,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$31": {
-      "name": "$31",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:EncryptionAlgorithm\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:EncryptionContextKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "GenerateDataKey": {
       "name": "GenerateDataKey",
       "description": "Controls permission to use the customer master key to generate data keys. You can\n                                                use the data keys to encrypt data outside of AWS KMS.",
@@ -256,12 +178,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$33": {
-      "name": "$33",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:EncryptionAlgorithm\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:EncryptionContextKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "GenerateDataKeyPair": {
       "name": "GenerateDataKeyPair",
@@ -273,12 +189,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$35": {
-      "name": "$35",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:DataKeyPairSpec\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:EncryptionAlgorithm\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:EncryptionContextKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "GenerateDataKeyPairWithoutPlaintext": {
       "name": "GenerateDataKeyPairWithoutPlaintext",
       "description": "Controls permission to use the customer master key to generate data key pairs. Unlike\n                                                the GenerateDataKeyPair operation, this operation returns an encrypted private key\n                                                without a plaintext copy.",
@@ -289,12 +199,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$37": {
-      "name": "$37",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:DataKeyPairSpec\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:EncryptionAlgorithm\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:EncryptionContextKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "GenerateDataKeyWithoutPlaintext": {
       "name": "GenerateDataKeyWithoutPlaintext",
       "description": "Controls permission to use the customer master key to generate a data key. Unlike\n                                                the GenerateDataKey operation, this operation returns an encrypted data key without\n                                                a plaintext version of the data key.",
@@ -304,12 +208,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$39": {
-      "name": "$39",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:EncryptionAlgorithm\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:EncryptionContextKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "GenerateRandom": {
       "name": "GenerateRandom",
@@ -329,12 +227,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$42": {
-      "name": "$42",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "GetKeyRotationStatus": {
       "name": "GetKeyRotationStatus",
       "description": "Controls permission to determine whether automatic key rotation is enabled on the\n                                                customer master key.",
@@ -344,12 +236,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$44": {
-      "name": "$44",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "GetParametersForImport": {
       "name": "GetParametersForImport",
@@ -361,12 +247,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$46": {
-      "name": "$46",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:WrappingAlgorithm\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:WrappingKeySpec",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "GetPublicKey": {
       "name": "GetPublicKey",
       "description": "Controls permission to download the public key of an asymmetric customer master key.",
@@ -377,12 +257,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$48": {
-      "name": "$48",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "ImportKeyMaterial": {
       "name": "ImportKeyMaterial",
       "description": "Controls permission to import cryptographic material into a customer master key.",
@@ -392,12 +266,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$50": {
-      "name": "$50",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ExpirationModel\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ValidTo\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "ListAliases": {
       "name": "ListAliases",
@@ -417,12 +285,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$53": {
-      "name": "$53",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:GrantIsForAWSResource\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "ListKeyPolicies": {
       "name": "ListKeyPolicies",
       "description": "Controls permission to view the names of key policies for a customer master key.",
@@ -432,12 +294,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$55": {
-      "name": "$55",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "ListKeys": {
       "name": "ListKeys",
@@ -456,12 +312,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$58": {
-      "name": "$58",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "ListRetirableGrants": {
       "name": "ListRetirableGrants",
@@ -483,12 +333,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$61": {
-      "name": "$61",
-      "description": "kms:BypassPolicyLockoutSafetyCheck\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "ReEncryptFrom": {
       "name": "ReEncryptFrom",
       "description": "Controls permission to decrypt data as part of the process that decrypts and reencrypts\n                                                the data within AWS KMS.",
@@ -499,12 +343,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$63": {
-      "name": "$63",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:EncryptionAlgorithm\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:EncryptionContextKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ReEncryptOnSameKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "ReEncryptTo": {
       "name": "ReEncryptTo",
       "description": "Controls permission to encrypt data as part of the process that decrypts and reencrypts\n                                                the data within AWS KMS.",
@@ -514,12 +352,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$65": {
-      "name": "$65",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:EncryptionAlgorithm\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:EncryptionContextKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ReEncryptOnSameKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "RetireGrant": {
       "name": "RetireGrant",
@@ -541,12 +373,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$68": {
-      "name": "$68",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:GrantIsForAWSResource\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "ScheduleKeyDeletion": {
       "name": "ScheduleKeyDeletion",
       "description": "Controls permission to schedule deletion of a customer master key.",
@@ -556,12 +382,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$70": {
-      "name": "$70",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "Sign": {
       "name": "Sign",
@@ -573,12 +393,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$72": {
-      "name": "$72",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:MessageType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:SigningAlgorithm\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "TagResource": {
       "name": "TagResource",
       "description": "Controls permission to create or update tags that are attached to a customer master\n                                                key.",
@@ -588,12 +402,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$74": {
-      "name": "$74",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UntagResource": {
       "name": "UntagResource",
@@ -605,12 +413,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$76": {
-      "name": "$76",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateAlias": {
       "name": "UpdateAlias",
       "description": "Controls permission to associate an alias with a different customer master key. An\n                                                alias is an optional friendly name that you can associate with a customer master key.",
@@ -620,12 +422,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$79": {
-      "name": "$79",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateCustomKeyStore": {
       "name": "UpdateCustomKeyStore",
@@ -645,12 +441,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$82": {
-      "name": "$82",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "Verify": {
       "name": "Verify",
       "description": "Controls permission to use the specified customer master key to verify digital signatures.",
@@ -660,12 +450,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$84": {
-      "name": "$84",
-      "description": "kms:CallerAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:MessageType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:SigningAlgorithm\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      kms:ViaService",
-      "accessLevel": "",
-      "resourceTypes": []
     }
   },
   "name": "AWS Key Management Service"

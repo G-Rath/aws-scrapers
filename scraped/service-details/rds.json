@@ -41,66 +41,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "es": {
-      "name": "es",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "og": {
-      "name": "og",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "pg": {
-      "name": "pg",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "proxy": {
-      "name": "proxy",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "ri": {
-      "name": "ri",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "secgrp": {
-      "name": "secgrp",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "snapshot": {
-      "name": "snapshot",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "subgrp": {
-      "name": "subgrp",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "target-group": {
-      "name": "target-group",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$13": {
-      "name": "$13",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      rds:req-tag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "ApplyPendingMaintenanceAction": {
       "name": "ApplyPendingMaintenanceAction",
       "description": "Grants permission to apply a pending maintenance action to a resource",
@@ -110,12 +50,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "db": {
-      "name": "db",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "AuthorizeDBSecurityGroupIngress": {
       "name": "AuthorizeDBSecurityGroupIngress",
@@ -155,12 +89,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$20": {
-      "name": "$20",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CopyDBClusterSnapshot": {
       "name": "CopyDBClusterSnapshot",
       "description": "Grants permission to create a snapshot of a DB cluster",
@@ -170,12 +98,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$22": {
-      "name": "$22",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CopyDBParameterGroup": {
       "name": "CopyDBParameterGroup",
@@ -187,12 +109,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$24": {
-      "name": "$24",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CopyDBSnapshot": {
       "name": "CopyDBSnapshot",
       "description": "Grants permission to copy the specified DB snapshot",
@@ -202,12 +118,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$26": {
-      "name": "$26",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CopyOptionGroup": {
       "name": "CopyOptionGroup",
@@ -219,12 +129,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$28": {
-      "name": "$28",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateDBCluster": {
       "name": "CreateDBCluster",
       "description": "Grants permission to create a new Amazon Aurora DB cluster",
@@ -234,30 +138,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
-    },
-    "cluster-pg*": {
-      "name": "cluster-pg*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "og*": {
-      "name": "og*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "subgrp*": {
-      "name": "subgrp*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$33": {
-      "name": "$33",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      rds:req-tag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      rds:DatabaseEngine\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      rds:DatabaseName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      rds:StorageEncrypted",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateDBClusterEndpoint": {
       "name": "CreateDBClusterEndpoint",
@@ -269,18 +149,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "cluster-endpoint*": {
-      "name": "cluster-endpoint*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$36": {
-      "name": "$36",
-      "description": "rds:EndpointType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateDBClusterParameterGroup": {
       "name": "CreateDBClusterParameterGroup",
       "description": "Grants permission to create a new DB cluster parameter group",
@@ -290,12 +158,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$38": {
-      "name": "$38",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      rds:req-tag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateDBClusterSnapshot": {
       "name": "CreateDBClusterSnapshot",
@@ -307,18 +169,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "cluster-snapshot*": {
-      "name": "cluster-snapshot*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$41": {
-      "name": "$41",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      rds:req-tag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateDBInstance": {
       "name": "CreateDBInstance",
       "description": "Grants permission to create a new DB instance",
@@ -328,24 +178,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
-    },
-    "pg*": {
-      "name": "pg*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "secgrp*": {
-      "name": "secgrp*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$47": {
-      "name": "$47",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      rds:req-tag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateDBInstanceReadReplica": {
       "name": "CreateDBInstanceReadReplica",
@@ -357,12 +189,6 @@
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
     },
-    "$51": {
-      "name": "$51",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      rds:req-tag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateDBParameterGroup": {
       "name": "CreateDBParameterGroup",
       "description": "Grants permission to create a new DB parameter group",
@@ -372,12 +198,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$53": {
-      "name": "$53",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      rds:req-tag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateDBProxy": {
       "name": "CreateDBProxy",
@@ -397,12 +217,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$56": {
-      "name": "$56",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      rds:req-tag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateDBSnapshot": {
       "name": "CreateDBSnapshot",
       "description": "Grants permission to create a DBSnapshot",
@@ -412,18 +226,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "snapshot*": {
-      "name": "snapshot*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$59": {
-      "name": "$59",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      rds:req-tag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateDBSubnetGroup": {
       "name": "CreateDBSubnetGroup",
@@ -435,12 +237,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$61": {
-      "name": "$61",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      rds:req-tag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateEventSubscription": {
       "name": "CreateEventSubscription",
       "description": "Grants permission to create an RDS event notification subscription",
@@ -450,12 +246,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$63": {
-      "name": "$63",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      rds:req-tag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateGlobalCluster": {
       "name": "CreateGlobalCluster",
@@ -467,12 +257,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "global-cluster*": {
-      "name": "global-cluster*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateOptionGroup": {
       "name": "CreateOptionGroup",
       "description": "Grants permission to create a new option group",
@@ -482,12 +266,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$67": {
-      "name": "$67",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      rds:req-tag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CrossRegionCommunication": {
       "name": "CrossRegionCommunication",
@@ -645,24 +423,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "db*": {
-      "name": "db*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "proxy*": {
-      "name": "proxy*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "target-group*": {
-      "name": "target-group*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "DescribeAccountAttributes": {
       "name": "DescribeAccountAttributes",
       "description": "Grants permission to list all of the attributes for a customer account",
@@ -698,12 +458,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "cluster": {
-      "name": "cluster",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DescribeDBClusterParameterGroups": {
       "name": "DescribeDBClusterParameterGroups",
@@ -1227,12 +981,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$166": {
-      "name": "$166",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "RebootDBInstance": {
       "name": "RebootDBInstance",
       "description": "Grants permission to restart the database engine service",
@@ -1303,12 +1051,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$184": {
-      "name": "$184",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      rds:req-tag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "ResetDBClusterParameterGroup": {
       "name": "ResetDBClusterParameterGroup",
       "description": "Grants permission to modify the parameters of a DB cluster parameter group to the\n                                                default value",
@@ -1339,12 +1081,6 @@
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
     },
-    "$188": {
-      "name": "$188",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      rds:req-tag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      rds:DatabaseEngine\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      rds:DatabaseName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      rds:StorageEncrypted",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "RestoreDBClusterFromSnapshot": {
       "name": "RestoreDBClusterFromSnapshot",
       "description": "Grants permission to create a new DB cluster from a DB cluster snapshot",
@@ -1354,12 +1090,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
-    },
-    "$192": {
-      "name": "$192",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      rds:req-tag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "RestoreDBClusterToPointInTime": {
       "name": "RestoreDBClusterToPointInTime",
@@ -1371,12 +1101,6 @@
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
     },
-    "$196": {
-      "name": "$196",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      rds:req-tag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "RestoreDBInstanceFromDBSnapshot": {
       "name": "RestoreDBInstanceFromDBSnapshot",
       "description": "Grants permission to create a new DB instance from a DB snapshot",
@@ -1386,12 +1110,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
-    },
-    "$201": {
-      "name": "$201",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      rds:req-tag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "RestoreDBInstanceFromS3": {
       "name": "RestoreDBInstanceFromS3",
@@ -1403,12 +1121,6 @@
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
     },
-    "$203": {
-      "name": "$203",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      rds:req-tag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "RestoreDBInstanceToPointInTime": {
       "name": "RestoreDBInstanceToPointInTime",
       "description": "Grants permission to restore a DB instance to an arbitrary point in time",
@@ -1418,12 +1130,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
-    },
-    "$207": {
-      "name": "$207",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      rds:req-tag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "RevokeDBSecurityGroupIngress": {
       "name": "RevokeDBSecurityGroupIngress",

@@ -19,12 +19,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "securitygroupingress-ec2securitygroup*": {
-      "name": "securitygroupingress-ec2securitygroup*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "AuthorizeSnapshotAccess": {
       "name": "AuthorizeSnapshotAccess",
       "description": "Grants permission to the specified AWS account to restore a snapshot",
@@ -101,12 +95,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$11": {
-      "name": "$11",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateClusterParameterGroup": {
       "name": "CreateClusterParameterGroup",
       "description": "Grants permission to create an Amazon Redshift parameter group",
@@ -116,12 +104,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$13": {
-      "name": "$13",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateClusterSecurityGroup": {
       "name": "CreateClusterSecurityGroup",
@@ -133,12 +115,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$15": {
-      "name": "$15",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateClusterSnapshot": {
       "name": "CreateClusterSnapshot",
       "description": "Grants permission to create a manual snapshot of the specified cluster",
@@ -148,12 +124,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$17": {
-      "name": "$17",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateClusterSubnetGroup": {
       "name": "CreateClusterSubnetGroup",
@@ -165,12 +135,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$19": {
-      "name": "$19",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateClusterUser": {
       "name": "CreateClusterUser",
       "description": "Grants permission to automatically create the specified Amazon Redshift user if it\n                                                does not exist",
@@ -180,12 +144,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$21": {
-      "name": "$21",
-      "description": "redshift:DbUser",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateEventSubscription": {
       "name": "CreateEventSubscription",
@@ -197,12 +155,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$23": {
-      "name": "$23",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateHsmClientCertificate": {
       "name": "CreateHsmClientCertificate",
       "description": "Grants permission to create an HSM client certificate that a cluster uses to connect\n                                                to an HSM",
@@ -213,12 +165,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$25": {
-      "name": "$25",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateHsmConfiguration": {
       "name": "CreateHsmConfiguration",
       "description": "Grants permission to create an HSM configuration that contains information required\n                                                by a cluster to store and use database encryption keys in a hardware security module\n                                                (HSM)",
@@ -228,12 +174,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$27": {
-      "name": "$27",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateSavedQuery": {
       "name": "CreateSavedQuery",
@@ -261,12 +201,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$31": {
-      "name": "$31",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateSnapshotSchedule": {
       "name": "CreateSnapshotSchedule",
       "description": "Grants permission to create a snapshot schedule",
@@ -277,12 +211,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$33": {
-      "name": "$33",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateTags": {
       "name": "CreateTags",
       "description": "Grants permission to add one or more tags to a specified resource",
@@ -292,96 +220,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "dbgroup": {
-      "name": "dbgroup",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "dbname": {
-      "name": "dbname",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "dbuser": {
-      "name": "dbuser",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "eventsubscription": {
-      "name": "eventsubscription",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "hsmclientcertificate": {
-      "name": "hsmclientcertificate",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "hsmconfiguration": {
-      "name": "hsmconfiguration",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "parametergroup": {
-      "name": "parametergroup",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "securitygroup": {
-      "name": "securitygroup",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "securitygroupingress-cidr": {
-      "name": "securitygroupingress-cidr",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "securitygroupingress-ec2securitygroup": {
-      "name": "securitygroupingress-ec2securitygroup",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "snapshot": {
-      "name": "snapshot",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "snapshotcopygrant": {
-      "name": "snapshotcopygrant",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "snapshotschedule": {
-      "name": "snapshotschedule",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "subnetgroup": {
-      "name": "subnetgroup",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$49": {
-      "name": "$49",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteCluster": {
       "name": "DeleteCluster",
@@ -508,12 +346,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$77": {
-      "name": "$77",
-      "description": "aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DescribeAccountAttributes": {
       "name": "DescribeAccountAttributes",
@@ -839,12 +671,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$132": {
-      "name": "$132",
-      "description": "redshift:DbName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      redshift:DbUser\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      redshift:DurationSeconds",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "GetReservedNodeExchangeOfferings": {
       "name": "GetReservedNodeExchangeOfferings",
       "description": "Grants permission to get an array of DC2 ReservedNodeOfferings that matches the payment\n                                                type, term, and usage price of the given DC1 reserved node",
@@ -1076,12 +902,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "snapshot*": {
-      "name": "snapshot*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "RestoreTableFromClusterSnapshot": {
       "name": "RestoreTableFromClusterSnapshot",

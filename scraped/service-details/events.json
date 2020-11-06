@@ -21,12 +21,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$2": {
-      "name": "$2",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreatePartnerEventSource": {
       "name": "CreatePartnerEventSource",
       "description": "Called by an AWS partner to create a partner event source.",
@@ -197,12 +191,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "rule": {
-      "name": "rule",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "ListTargetsByRule": {
       "name": "ListTargetsByRule",
       "description": "Lists of targets assigned to the rule.",
@@ -249,12 +237,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$27": {
-      "name": "$27",
-      "description": "events:detail.userIdentity.principalId\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      events:detail-type\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      events:source\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      events:detail.service\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      events:detail.eventTypeCode\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "PutTargets": {
       "name": "PutTargets",
       "description": "Adds target(s) to a rule. Targets are the resources that can be invoked when a rule\n                                                is triggered.",
@@ -264,12 +246,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$29": {
-      "name": "$29",
-      "description": "events:TargetArn",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "RemovePermission": {
       "name": "RemovePermission",
@@ -299,12 +275,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$34": {
-      "name": "$34",
-      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "TestEventPattern": {
       "name": "TestEventPattern",
       "description": "Tests whether an event pattern matches the provided event.",
@@ -322,12 +292,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$38": {
-      "name": "$38",
-      "description": "aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     }
   },
   "name": "Amazon EventBridge"

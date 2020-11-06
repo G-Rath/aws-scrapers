@@ -21,12 +21,6 @@
       "conditionKeys": "autoscaling:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
       "dependentActions": ""
     },
-    "$2": {
-      "name": "$2",
-      "description": "autoscaling:TargetGroupARNs",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "AttachLoadBalancers": {
       "name": "AttachLoadBalancers",
       "description": "Attaches one or more load balancers to the specified Auto Scaling group.",
@@ -36,12 +30,6 @@
       ],
       "conditionKeys": "autoscaling:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
       "dependentActions": ""
-    },
-    "$4": {
-      "name": "$4",
-      "description": "autoscaling:LoadBalancerNames",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "BatchDeleteScheduledAction": {
       "name": "BatchDeleteScheduledAction",
@@ -93,12 +81,6 @@
       "conditionKeys": "autoscaling:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
       "dependentActions": ""
     },
-    "$10": {
-      "name": "$10",
-      "description": "autoscaling:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      autoscaling:LaunchConfigurationName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      autoscaling:LaunchTemplateVersionSpecified\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      autoscaling:LoadBalancerNames\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      autoscaling:MaxSize\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      autoscaling:MinSize\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      autoscaling:TargetGroupARNs\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      autoscaling:VPCZoneIdentifiers\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateLaunchConfiguration": {
       "name": "CreateLaunchConfiguration",
       "description": "Creates a launch configuration.",
@@ -109,12 +91,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$12": {
-      "name": "$12",
-      "description": "autoscaling:ImageId\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      autoscaling:InstanceType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      autoscaling:SpotPrice\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      autoscaling:MetadataHttpTokens\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      autoscaling:MetadataHttpPutResponseHopLimit\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      autoscaling:MetadataHttpEndpoint",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateOrUpdateTags": {
       "name": "CreateOrUpdateTags",
       "description": "Creates or updates tags for the specified Auto Scaling group.",
@@ -124,12 +100,6 @@
       ],
       "conditionKeys": "autoscaling:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
       "dependentActions": ""
-    },
-    "$14": {
-      "name": "$14",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteAutoScalingGroup": {
       "name": "DeleteAutoScalingGroup",
@@ -200,12 +170,6 @@
       ],
       "conditionKeys": "autoscaling:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
       "dependentActions": ""
-    },
-    "$22": {
-      "name": "$22",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DescribeAccountLimits": {
       "name": "DescribeAccountLimits",
@@ -379,12 +343,6 @@
       "conditionKeys": "autoscaling:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
       "dependentActions": ""
     },
-    "$44": {
-      "name": "$44",
-      "description": "autoscaling:TargetGroupARNs",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "DetachLoadBalancers": {
       "name": "DetachLoadBalancers",
       "description": "Removes one or more load balancers from the specified Auto Scaling group.",
@@ -394,12 +352,6 @@
       ],
       "conditionKeys": "autoscaling:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
       "dependentActions": ""
-    },
-    "$46": {
-      "name": "$46",
-      "description": "autoscaling:LoadBalancerNames",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DisableMetricsCollection": {
       "name": "DisableMetricsCollection",
@@ -491,12 +443,6 @@
       "conditionKeys": "autoscaling:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
       "dependentActions": ""
     },
-    "$56": {
-      "name": "$56",
-      "description": "autoscaling:MaxSize\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      autoscaling:MinSize",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "RecordLifecycleActionHeartbeat": {
       "name": "RecordLifecycleActionHeartbeat",
       "description": "Records a heartbeat for the lifecycle action associated with the specified token or\n                                                instance.",
@@ -586,12 +532,6 @@
       ],
       "conditionKeys": "autoscaling:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
       "dependentActions": ""
-    },
-    "$66": {
-      "name": "$66",
-      "description": "autoscaling:InstanceTypes\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      autoscaling:LaunchConfigurationName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      autoscaling:LaunchTemplateVersionSpecified\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      autoscaling:MaxSize\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      autoscaling:MinSize\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      autoscaling:VPCZoneIdentifiers",
-      "accessLevel": "",
-      "resourceTypes": []
     }
   },
   "name": "Amazon EC2 Auto Scaling"

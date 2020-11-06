@@ -11,24 +11,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "apigateway": {
-      "name": "apigateway",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "appsync": {
-      "name": "appsync",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "loadbalancer/app/": {
-      "name": "loadbalancer/app/",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CheckCapacity": {
       "name": "CheckCapacity",
       "description": "Grants permission to calculate web ACL capacity unit (WCU) requirements for a specified\n                                                scope and set of rules.",
@@ -47,12 +29,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$6": {
-      "name": "$6",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateRegexPatternSet": {
       "name": "CreateRegexPatternSet",
       "description": "Grants permission to create a RegexPatternSet.",
@@ -62,12 +38,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$8": {
-      "name": "$8",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateRuleGroup": {
       "name": "CreateRuleGroup",
@@ -79,12 +49,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$10": {
-      "name": "$10",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateWebACL": {
       "name": "CreateWebACL",
       "description": "Grants permission to create a WebACL.",
@@ -94,12 +58,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$12": {
-      "name": "$12",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteFirewallManagerRuleGroups": {
       "name": "DeleteFirewallManagerRuleGroups",
@@ -209,12 +167,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$26": {
-      "name": "$26",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "GetLoggingConfiguration": {
       "name": "GetLoggingConfiguration",
       "description": "Grants permission to view LoggingConfiguration about the specified WebACL.",
@@ -224,12 +176,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$28": {
-      "name": "$28",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "GetPermissionPolicy": {
       "name": "GetPermissionPolicy",
@@ -251,12 +197,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$31": {
-      "name": "$31",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "GetRegexPatternSet": {
       "name": "GetRegexPatternSet",
       "description": "Grants permission to view details about the specified RegexPatternSet.",
@@ -267,12 +207,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$33": {
-      "name": "$33",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "GetRuleGroup": {
       "name": "GetRuleGroup",
       "description": "Grants permission to view details about the specified RuleGroup.",
@@ -282,12 +216,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$35": {
-      "name": "$35",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "GetSampledRequests": {
       "name": "GetSampledRequests",
@@ -308,12 +236,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$38": {
-      "name": "$38",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "GetWebACLForResource": {
       "name": "GetWebACLForResource",
@@ -385,30 +307,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "regexpatternset": {
-      "name": "regexpatternset",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "rulegroup": {
-      "name": "rulegroup",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "webacl": {
-      "name": "webacl",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$52": {
-      "name": "$52",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "ListWebACLs": {
       "name": "ListWebACLs",
       "description": "Grants permission to view an array of WebACLSummary objects for the web ACLs that\n                                                you manage.",
@@ -457,12 +355,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$61": {
-      "name": "$61",
-      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UntagResource": {
       "name": "UntagResource",
       "description": "Grants permission to disassociates tags from an AWS resource.",
@@ -472,12 +364,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$66": {
-      "name": "$66",
-      "description": "aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateIPSet": {
       "name": "UpdateIPSet",
@@ -489,12 +375,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$68": {
-      "name": "$68",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateRegexPatternSet": {
       "name": "UpdateRegexPatternSet",
       "description": "Grants permission to update the specified RegexPatternSet.",
@@ -504,12 +384,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$70": {
-      "name": "$70",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateRuleGroup": {
       "name": "UpdateRuleGroup",
@@ -521,12 +395,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$72": {
-      "name": "$72",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateWebACL": {
       "name": "UpdateWebACL",
       "description": "Grants permission to update the specified WebACL.",
@@ -536,12 +404,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$74": {
-      "name": "$74",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     }
   },
   "name": "AWS WAF V2"

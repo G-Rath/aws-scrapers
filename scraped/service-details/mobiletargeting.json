@@ -19,12 +19,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$2": {
-      "name": "$2",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateEmailTemplate": {
       "name": "CreateEmailTemplate",
       "description": "Create an email template.",
@@ -63,12 +57,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$7": {
-      "name": "$7",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreatePushTemplate": {
       "name": "CreatePushTemplate",
       "description": "Create a push notification template.",
@@ -94,12 +82,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$11": {
-      "name": "$11",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateSmsTemplate": {
       "name": "CreateSmsTemplate",
@@ -197,12 +179,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "campaigns*": {
-      "name": "campaigns*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "DeleteEmailChannel": {
       "name": "DeleteEmailChannel",
       "description": "Delete the email channel for an app.",
@@ -263,12 +239,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "journeys*": {
-      "name": "journeys*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "DeletePushTemplate": {
       "name": "DeletePushTemplate",
       "description": "Delete a push notification template or a push notification template version.",
@@ -298,12 +268,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "segments*": {
-      "name": "segments*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteSmsChannel": {
       "name": "DeleteSmsChannel",
@@ -763,18 +727,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "campaigns": {
-      "name": "campaigns",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "segments": {
-      "name": "segments",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "ListTemplateVersions": {
       "name": "ListTemplateVersions",
       "description": "Retrieve all versions about a specific template.",
@@ -865,12 +817,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$103": {
-      "name": "$103",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UntagResource": {
       "name": "UntagResource",
       "description": "Removes tags from a resource.",
@@ -880,12 +826,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$107": {
-      "name": "$107",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateAdmChannel": {
       "name": "UpdateAdmChannel",
@@ -967,12 +907,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$117": {
-      "name": "$117",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateEmailChannel": {
       "name": "UpdateEmailChannel",
       "description": "Update the email channel for an app.",
@@ -992,12 +926,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$120": {
-      "name": "$120",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateEndpoint": {
       "name": "UpdateEndpoint",
@@ -1039,12 +967,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$126": {
-      "name": "$126",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateJourneyState": {
       "name": "UpdateJourneyState",
       "description": "Update a specific journey state.",
@@ -1055,12 +977,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$129": {
-      "name": "$129",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdatePushTemplate": {
       "name": "UpdatePushTemplate",
       "description": "Update a specific push notification template under the same version or generate a\n                                                new version.",
@@ -1070,12 +986,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$131": {
-      "name": "$131",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateRecommenderConfiguration": {
       "name": "UpdateRecommenderConfiguration",
@@ -1097,12 +1007,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$135": {
-      "name": "$135",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateSmsChannel": {
       "name": "UpdateSmsChannel",
       "description": "Update the SMS channel for an app.",
@@ -1122,12 +1026,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$138": {
-      "name": "$138",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateTemplateActiveVersion": {
       "name": "UpdateTemplateActiveVersion",
@@ -1158,12 +1056,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$142": {
-      "name": "$142",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     }
   },
   "name": "Amazon Pinpoint"

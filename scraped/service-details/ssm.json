@@ -11,30 +11,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "maintenancewindow": {
-      "name": "maintenancewindow",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "managed-instance": {
-      "name": "managed-instance",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "parameter": {
-      "name": "parameter",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "patchbaseline": {
-      "name": "patchbaseline",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CancelCommand": {
       "name": "CancelCommand",
       "description": "Grants permission to cancel a specified Run Command command",
@@ -69,12 +45,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "instance": {
-      "name": "instance",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateAssociationBatch": {
       "name": "CreateAssociationBatch",
       "description": "Grants permission to combine entries for multiple CreateAssociation operations in\n                                                a single command",
@@ -94,12 +64,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
-    },
-    "$15": {
-      "name": "$15",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateMaintenanceWindow": {
       "name": "CreateMaintenanceWindow",
@@ -135,12 +99,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$20": {
-      "name": "$20",
-      "description": "ssm:SyncType",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "DeleteActivation": {
       "name": "DeleteActivation",
       "description": "Grants permission to delete a specified activation for managed instances",
@@ -158,12 +116,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "document": {
-      "name": "document",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteDocument": {
       "name": "DeleteDocument",
@@ -203,12 +155,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$30": {
-      "name": "$30",
-      "description": "aws:RequestTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "DeleteParameters": {
       "name": "DeleteParameters",
       "description": "Grants permission to delete multiple specified SSM parameters",
@@ -218,12 +164,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$32": {
-      "name": "$32",
-      "description": "aws:RequestTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeletePatchBaseline": {
       "name": "DeletePatchBaseline",
@@ -244,12 +184,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$35": {
-      "name": "$35",
-      "description": "ssm:SyncType",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeregisterManagedInstance": {
       "name": "DeregisterManagedInstance",
@@ -741,12 +675,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$97": {
-      "name": "$97",
-      "description": "aws:RequestTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "GetParameterHistory": {
       "name": "GetParameterHistory",
       "description": "Grants permission to view details and changes for a specified parameter",
@@ -757,12 +685,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$99": {
-      "name": "$99",
-      "description": "aws:RequestTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "GetParameters": {
       "name": "GetParameters",
       "description": "Grants permission to view information about multiple specified parameters",
@@ -772,12 +694,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$101": {
-      "name": "$101",
-      "description": "aws:RequestTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "GetParametersByPath": {
       "name": "GetParametersByPath",
@@ -985,12 +901,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$131": {
-      "name": "$131",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "RegisterDefaultPatchBaseline": {
       "name": "RegisterDefaultPatchBaseline",
       "description": "Grants permission to specify the default patch baseline for an operating system type",
@@ -1079,12 +989,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$147": {
-      "name": "$147",
-      "description": "aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ssm:resourceTag/tag-key",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "StartAssociationsOnce": {
       "name": "StartAssociationsOnce",
       "description": "Grants permission to run a specified association manually",
@@ -1114,12 +1018,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$152": {
-      "name": "$152",
-      "description": "ssm:SessionDocumentAccessCheck",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "StopAutomationExecution": {
       "name": "StopAutomationExecution",
@@ -1264,12 +1162,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$175": {
-      "name": "$175",
-      "description": "ssm:SyncType",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateServiceSetting": {
       "name": "UpdateServiceSetting",

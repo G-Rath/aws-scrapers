@@ -153,9 +153,25 @@ export class ServiceTopicScraper {
     //   return action;
     // });
 
-    // // todo: somehow handle row span :/
+    let rowsBeingSpanned = 1;
+
     return rowElements
       .map(element => selectTagElements(element.children))
+      .filter(([firstElement]) => {
+        if (rowsBeingSpanned > 1) {
+          rowsBeingSpanned -= 1;
+
+          return false;
+        }
+
+        rowsBeingSpanned = parseInt($(firstElement).attr('rowspan') ?? '');
+
+        if (isNaN(rowsBeingSpanned)) {
+          rowsBeingSpanned = 1;
+        }
+
+        return true;
+      })
       .map(
         ([nameElement, ...rest], index): ServiceAction => {
           const [

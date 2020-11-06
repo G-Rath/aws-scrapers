@@ -11,12 +11,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$1": {
-      "name": "$1",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateConfigurationProfile": {
       "name": "CreateConfigurationProfile",
       "description": "Grants permission to create a configuration profile",
@@ -26,18 +20,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "configurationprofile*": {
-      "name": "configurationprofile*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$4": {
-      "name": "$4",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateDeploymentStrategy": {
       "name": "CreateDeploymentStrategy",
@@ -49,12 +31,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$6": {
-      "name": "$6",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateEnvironment": {
       "name": "CreateEnvironment",
       "description": "Grants permission to create an environment",
@@ -65,18 +41,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "environment*": {
-      "name": "environment*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$9": {
-      "name": "$9",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateHostedConfigurationVersion": {
       "name": "CreateHostedConfigurationVersion",
       "description": "Grants permission to create a hosted configuration version",
@@ -86,12 +50,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "hostedconfigurationversion*": {
-      "name": "hostedconfigurationversion*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteApplication": {
       "name": "DeleteApplication",
@@ -153,12 +111,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$23": {
-      "name": "$23",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "GetConfiguration": {
       "name": "GetConfiguration",
       "description": "Grants permission to view details about a configuration",
@@ -168,12 +120,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$27": {
-      "name": "$27",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "GetConfigurationProfile": {
       "name": "GetConfigurationProfile",
@@ -185,12 +131,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$30": {
-      "name": "$30",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "GetDeployment": {
       "name": "GetDeployment",
       "description": "Grants permission to view details about a deployment",
@@ -200,18 +140,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "deployment*": {
-      "name": "deployment*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$34": {
-      "name": "$34",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "GetDeploymentStrategy": {
       "name": "GetDeploymentStrategy",
@@ -223,12 +151,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$36": {
-      "name": "$36",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "GetEnvironment": {
       "name": "GetEnvironment",
       "description": "Grants permission to view details about an environment",
@@ -238,12 +160,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$39": {
-      "name": "$39",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "GetHostedConfigurationVersion": {
       "name": "GetHostedConfigurationVersion",
@@ -321,36 +237,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "configurationprofile": {
-      "name": "configurationprofile",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "deployment": {
-      "name": "deployment",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "deploymentstrategy": {
-      "name": "deploymentstrategy",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "environment": {
-      "name": "environment",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$56": {
-      "name": "$56",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "StartDeployment": {
       "name": "StartDeployment",
       "description": "Grants permission to initiate a deployment",
@@ -360,12 +246,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "deploymentstrategy*": {
-      "name": "deploymentstrategy*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "StopDeployment": {
       "name": "StopDeployment",
@@ -387,12 +267,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$70": {
-      "name": "$70",
-      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UntagResource": {
       "name": "UntagResource",
       "description": "Grants permission to untag an appconfig resource.",
@@ -402,12 +276,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$76": {
-      "name": "$76",
-      "description": "aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateApplication": {
       "name": "UpdateApplication",
@@ -419,12 +287,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$78": {
-      "name": "$78",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateConfigurationProfile": {
       "name": "UpdateConfigurationProfile",
       "description": "Grants permission to modify a configuration profile",
@@ -434,12 +296,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$81": {
-      "name": "$81",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateDeploymentStrategy": {
       "name": "UpdateDeploymentStrategy",
@@ -451,12 +307,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$83": {
-      "name": "$83",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateEnvironment": {
       "name": "UpdateEnvironment",
       "description": "Grants permission to modify an environment",
@@ -466,12 +316,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$86": {
-      "name": "$86",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "ValidateConfiguration": {
       "name": "ValidateConfiguration",

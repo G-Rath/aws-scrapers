@@ -21,18 +21,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "file-system*": {
-      "name": "file-system*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$3": {
-      "name": "$3",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateDataRepositoryTask": {
       "name": "CreateDataRepositoryTask",
       "description": "This action creates a new task.",
@@ -42,18 +30,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "task*": {
-      "name": "task*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$6": {
-      "name": "$6",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateFileSystem": {
       "name": "CreateFileSystem",
@@ -65,12 +41,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$8": {
-      "name": "$8",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateFileSystemFromBackup": {
       "name": "CreateFileSystemFromBackup",
       "description": "This action creates a new Amazon FSx file system from an existing backup.",
@@ -80,12 +50,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$11": {
-      "name": "$11",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteBackup": {
       "name": "DeleteBackup",
@@ -141,18 +105,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "file-system": {
-      "name": "file-system",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "task": {
-      "name": "task",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "TagResource": {
       "name": "TagResource",
       "description": "This action tags an Amazon FSx resource.",
@@ -163,12 +115,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$23": {
-      "name": "$23",
-      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UntagResource": {
       "name": "UntagResource",
       "description": "This action removes a tag from an Amazon FSx resource.",
@@ -178,12 +124,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$27": {
-      "name": "$27",
-      "description": "aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateFileSystem": {
       "name": "UpdateFileSystem",

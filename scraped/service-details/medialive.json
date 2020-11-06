@@ -11,24 +11,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "input": {
-      "name": "input",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "input-security-group": {
-      "name": "input-security-group",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "multiplex": {
-      "name": "multiplex",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "BatchStart": {
       "name": "BatchStart",
       "description": "Grants permission to start channels and multiplexes.",
@@ -69,18 +51,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "input*": {
-      "name": "input*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$11": {
-      "name": "$11",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateInput": {
       "name": "CreateInput",
       "description": "Grants permission to create an input",
@@ -90,18 +60,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "input-security-group*": {
-      "name": "input-security-group*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$14": {
-      "name": "$14",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateInputSecurityGroup": {
       "name": "CreateInputSecurityGroup",
@@ -113,12 +71,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$16": {
-      "name": "$16",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateMultiplex": {
       "name": "CreateMultiplex",
       "description": "Grants permission to create a multiplex",
@@ -128,12 +80,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$18": {
-      "name": "$18",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateMultiplexProgram": {
       "name": "CreateMultiplexProgram",
@@ -154,18 +100,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "reservation": {
-      "name": "reservation",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$25": {
-      "name": "$25",
-      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteChannel": {
       "name": "DeleteChannel",
@@ -236,12 +170,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$37": {
-      "name": "$37",
-      "description": "aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DescribeChannel": {
       "name": "DescribeChannel",
@@ -426,18 +354,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "reservation*": {
-      "name": "reservation*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$63": {
-      "name": "$63",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "StartChannel": {
       "name": "StartChannel",

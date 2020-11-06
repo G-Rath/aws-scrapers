@@ -11,18 +11,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "routing-profile*": {
-      "name": "routing-profile*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$2": {
-      "name": "$2",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateContactFlow": {
       "name": "CreateContactFlow",
       "description": "Grants permissions to create a contact flow in an Amazon Connect instance.",
@@ -32,12 +20,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$4": {
-      "name": "$4",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateInstance": {
       "name": "CreateInstance",
@@ -57,12 +39,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$8": {
-      "name": "$8",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateUser": {
       "name": "CreateUser",
       "description": "Grants permission to create a user for the specified Amazon Connect instance.",
@@ -72,30 +48,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "security-profile*": {
-      "name": "security-profile*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "user*": {
-      "name": "user*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "hierarchy-group": {
-      "name": "hierarchy-group",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$13": {
-      "name": "$13",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteUser": {
       "name": "DeleteUser",
@@ -107,12 +59,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$15": {
-      "name": "$15",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "DescribeContactFlow": {
       "name": "DescribeContactFlow",
       "description": "Grants permissions to describe a contact flow in an Amazon Connect instance.",
@@ -122,12 +68,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$17": {
-      "name": "$17",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DescribeInstance": {
       "name": "DescribeInstance",
@@ -149,12 +89,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$20": {
-      "name": "$20",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "DescribeUser": {
       "name": "DescribeUser",
       "description": "Grants permissions to describe a user in an Amazon Connect instance.",
@@ -164,12 +98,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$22": {
-      "name": "$22",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DescribeUserHierarchyGroup": {
       "name": "DescribeUserHierarchyGroup",
@@ -210,12 +138,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$27": {
-      "name": "$27",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "GetContactAttributes": {
       "name": "GetContactAttributes",
@@ -335,12 +257,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$40": {
-      "name": "$40",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "ListRoutingProfiles": {
       "name": "ListRoutingProfiles",
       "description": "Grants permissions to list routing profile resources in an Amazon Connect instance.",
@@ -370,24 +286,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "routing-profile": {
-      "name": "routing-profile",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "user": {
-      "name": "user",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$46": {
-      "name": "$46",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "ListUserHierarchyGroups": {
       "name": "ListUserHierarchyGroups",
@@ -499,12 +397,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$60": {
-      "name": "$60",
-      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UntagResource": {
       "name": "UntagResource",
       "description": "Grants permissions to untag an Amazon Connect resource.",
@@ -514,12 +406,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$64": {
-      "name": "$64",
-      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateContactAttributes": {
       "name": "UpdateContactAttributes",
@@ -541,12 +427,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$67": {
-      "name": "$67",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateContactFlowName": {
       "name": "UpdateContactFlowName",
       "description": "Grants permissions to update the name and description of a contact flow in an Amazon\n                                                Connect instance.",
@@ -556,12 +436,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$69": {
-      "name": "$69",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateRoutingProfileConcurrency": {
       "name": "UpdateRoutingProfileConcurrency",
@@ -573,12 +447,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$71": {
-      "name": "$71",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateRoutingProfileDefaultOutboundQueue": {
       "name": "UpdateRoutingProfileDefaultOutboundQueue",
       "description": "Grants permissions to update the outbound queue in a routing profile in an Amazon\n                                                Connect instance.",
@@ -588,12 +456,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$74": {
-      "name": "$74",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateRoutingProfileName": {
       "name": "UpdateRoutingProfileName",
@@ -605,12 +467,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$76": {
-      "name": "$76",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateRoutingProfileQueues": {
       "name": "UpdateRoutingProfileQueues",
       "description": "Grants permissions to update the queues in routing profile in an Amazon Connect instance.",
@@ -620,12 +476,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$78": {
-      "name": "$78",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateUserHierarchy": {
       "name": "UpdateUserHierarchy",
@@ -637,12 +487,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$81": {
-      "name": "$81",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateUserIdentityInfo": {
       "name": "UpdateUserIdentityInfo",
       "description": "Grants permissions to update identity information for a user in an Amazon Connect\n                                                instance.",
@@ -652,12 +496,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$83": {
-      "name": "$83",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateUserPhoneConfig": {
       "name": "UpdateUserPhoneConfig",
@@ -669,12 +507,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$85": {
-      "name": "$85",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateUserRoutingProfile": {
       "name": "UpdateUserRoutingProfile",
       "description": "Grants permissions to update a routing profile for a user in an Amazon Connect instance.",
@@ -685,12 +517,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$88": {
-      "name": "$88",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateUserSecurityProfiles": {
       "name": "UpdateUserSecurityProfiles",
       "description": "Grants permissions to update security profiles for a user in an Amazon Connect instance.",
@@ -700,12 +526,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$91": {
-      "name": "$91",
-      "description": "aws:ResourceTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     }
   },
   "name": "Amazon Connect"

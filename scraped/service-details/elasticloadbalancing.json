@@ -11,12 +11,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "listener/net*": {
-      "name": "listener/net*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "AddTags": {
       "name": "AddTags",
       "description": "Adds the specified tags to the specified load balancer. Each load balancer can have\n                                                a maximum of 10 tags",
@@ -26,48 +20,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "listener-rule/net": {
-      "name": "listener-rule/net",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "listener/app": {
-      "name": "listener/app",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "listener/net": {
-      "name": "listener/net",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "loadbalancer/app/": {
-      "name": "loadbalancer/app/",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "loadbalancer/net/": {
-      "name": "loadbalancer/net/",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "targetgroup": {
-      "name": "targetgroup",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$9": {
-      "name": "$9",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateListener": {
       "name": "CreateListener",
@@ -79,12 +31,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$12": {
-      "name": "$12",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateLoadBalancer": {
       "name": "CreateLoadBalancer",
       "description": "Creates a load balancer",
@@ -94,12 +40,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$15": {
-      "name": "$15",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateRule": {
       "name": "CreateRule",
@@ -111,12 +51,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$18": {
-      "name": "$18",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateTargetGroup": {
       "name": "CreateTargetGroup",
       "description": "Creates a target group.",
@@ -126,12 +60,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$20": {
-      "name": "$20",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteListener": {
       "name": "DeleteListener",
@@ -162,12 +90,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "listener-rule/net*": {
-      "name": "listener-rule/net*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteTargetGroup": {
       "name": "DeleteTargetGroup",
@@ -358,12 +280,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$64": {
-      "name": "$64",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "SetIpAddressType": {
       "name": "SetIpAddressType",

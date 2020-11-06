@@ -80,7 +80,6 @@ a4b:UpdateRoom
 a4b:UpdateSkillGroup
 access-analyzer:CreateAnalyzer
 access-analyzer:CreateArchiveRule
-access-analyzer:ArchiveRule*
 access-analyzer:DeleteAnalyzer
 access-analyzer:DeleteArchiveRule
 access-analyzer:GetAnalyzedResource
@@ -1767,8 +1766,6 @@ config:GetResourceConfigHistory
 config:ListAggregateDiscoveredResources
 config:ListDiscoveredResources
 config:ListTagsForResource
-config:ConfigRule
-config:ConfigurationAggregator
 config:PutAggregationAuthorization
 config:PutConfigRule
 config:PutConfigurationAggregator
@@ -1789,7 +1786,6 @@ config:StartConfigurationRecorder
 config:StartRemediationExecution
 config:StopConfigurationRecorder
 config:TagResource
-config:ConformancePack
 config:UntagResource
 connect:AssociateRoutingProfileQueues
 connect:CreateContactFlow
@@ -2214,18 +2210,12 @@ dlm:TagResource
 dlm:UntagResource
 dlm:UpdateLifecyclePolicy
 dms:AddTagsToResource
-dms:Endpoint
-dms:EventSubscription
-dms:ReplicationInstance
-dms:ReplicationSubnetGroup
-dms:ReplicationTask
 dms:ApplyPendingMaintenanceAction
 dms:CreateEndpoint
 dms:CreateEventSubscription
 dms:CreateReplicationInstance
 dms:CreateReplicationSubnetGroup
 dms:CreateReplicationTask
-dms:ReplicationInstance*
 dms:DeleteCertificate
 dms:DeleteEndpoint
 dms:DeleteEventSubscription
@@ -2252,7 +2242,6 @@ dms:DescribeTableStatistics
 dms:ImportCertificate
 dms:ListTagsForResource
 dms:ModifyEndpoint
-dms:Certificate
 dms:ModifyEventSubscription
 dms:ModifyReplicationInstance
 dms:ModifyReplicationSubnetGroup
@@ -3641,9 +3630,6 @@ groundstation:ListGroundStations
 groundstation:ListMissionProfiles
 groundstation:ListSatellites
 groundstation:ListTagsForResource
-groundstation:Contact
-groundstation:DataflowEndpointGroup
-groundstation:MissionProfile
 groundstation:ReserveContact
 groundstation:TagResource
 groundstation:UntagResource
@@ -4350,7 +4336,6 @@ iq:CreateProject
 ivs:BatchGetChannel
 ivs:BatchGetStreamKey
 ivs:CreateChannel
-ivs:Stream-Key*
 ivs:CreateStreamKey
 ivs:DeleteChannel
 ivs:DeletePlaybackKeyPair
@@ -4365,8 +4350,6 @@ ivs:ListPlaybackKeyPairs
 ivs:ListStreamKeys
 ivs:ListStreams
 ivs:ListTagsForResource
-ivs:Playback-Key-Pair
-ivs:Stream-Key
 ivs:PutMetadata
 ivs:StopStream
 ivs:TagResource
@@ -4686,12 +4669,9 @@ license-manager:UpdateLicenseSpecificationsForResource
 license-manager:UpdateServiceSettings
 lightsail:AllocateStaticIp
 lightsail:AttachDisk
-lightsail:Instance*
 lightsail:AttachInstancesToLoadBalancer
-lightsail:LoadBalancer*
 lightsail:AttachLoadBalancerTlsCertificate
 lightsail:AttachStaticIp
-lightsail:StaticIp*
 lightsail:CloseInstancePublicPorts
 lightsail:CopySnapshot
 lightsail:CreateCloudFormationStack
@@ -4701,7 +4681,6 @@ lightsail:CreateDiskSnapshot
 lightsail:CreateDomain
 lightsail:CreateDomainEntry
 lightsail:CreateInstanceSnapshot
-lightsail:InstanceSnapshot*
 lightsail:CreateInstances
 lightsail:CreateInstancesFromSnapshot
 lightsail:CreateKeyPair
@@ -4755,10 +4734,6 @@ lightsail:GetLoadBalancers
 lightsail:GetOperation
 lightsail:GetOperations
 lightsail:GetOperationsForResource
-lightsail:Instance
-lightsail:InstanceSnapshot
-lightsail:KeyPair
-lightsail:StaticIp
 lightsail:GetRegions
 lightsail:GetRelationalDatabase
 lightsail:GetRelationalDatabaseBlueprints
@@ -4787,11 +4762,6 @@ lightsail:StartRelationalDatabase
 lightsail:StopInstance
 lightsail:StopRelationalDatabase
 lightsail:TagResource
-lightsail:DiskSnapshot
-lightsail:Domain
-lightsail:LoadBalancer
-lightsail:RelationalDatabase
-lightsail:RelationalDatabaseSnapshot
 lightsail:UnpeerVpc
 lightsail:UntagResource
 lightsail:UpdateDomainEntry
@@ -5006,8 +4976,6 @@ mediaconnect:UpdateFlowSource
 mediaconvert:AssociateCertificate
 mediaconvert:CancelJob
 mediaconvert:CreateJob
-mediaconvert:Preset
-mediaconvert:Queue
 mediaconvert:CreateJobTemplate
 mediaconvert:CreatePreset
 mediaconvert:CreateQueue
@@ -6569,7 +6537,6 @@ servicecatalog:AssociatePrincipalWithPortfolio
 servicecatalog:AssociateProductWithPortfolio
 servicecatalog:AssociateServiceActionWithProvisioningArtifact
 servicecatalog:AssociateTagOptionWithResource
-servicecatalog:Product
 servicecatalog:BatchAssociateServiceActionWithProvisioningArtifact
 servicecatalog:BatchDisassociateServiceActionFromProvisioningArtifact
 servicecatalog:CopyProduct
@@ -7049,9 +7016,7 @@ sso-directory:VerifyEmail
 sso:AssociateDirectory
 sso:AssociateProfile
 sso:AttachManagedPolicyToPermissionSet
-sso:PermissionSet*
 sso:CreateAccountAssignment
-sso:Instance*
 sso:CreateApplicationInstance
 sso:CreateApplicationInstanceCertificate
 sso:CreateManagedApplicationInstance

@@ -11,12 +11,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$1": {
-      "name": "$1",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateStateMachine": {
       "name": "CreateStateMachine",
       "description": "Creates a state machine.",
@@ -26,12 +20,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$3": {
-      "name": "$3",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteActivity": {
       "name": "DeleteActivity",
@@ -149,12 +137,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "statemachine": {
-      "name": "statemachine",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "SendTaskFailure": {
       "name": "SendTaskFailure",
       "description": "Used by workers to report that the task identified by the taskToken failed.",
@@ -209,12 +191,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$24": {
-      "name": "$24",
-      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UntagResource": {
       "name": "UntagResource",
       "description": "This action removes a tag from an AWS Step Functions resource.",
@@ -225,12 +201,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$27": {
-      "name": "$27",
-      "description": "aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UpdateStateMachine": {
       "name": "UpdateStateMachine",
       "description": "Updates a state machine.",
@@ -240,12 +210,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$29": {
-      "name": "$29",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     }
   },
   "name": "AWS Step Functions"

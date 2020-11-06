@@ -11,12 +11,6 @@
       "conditionKeys": "",
       "dependentActions": "ec2:DescribeVpcs"
     },
-    "hostedzone": {
-      "name": "hostedzone",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "ChangeResourceRecordSets": {
       "name": "ChangeResourceRecordSets",
       "description": "Grants permission to create, update, or delete a record, which contains authoritative\n                                                DNS information for a specified domain or subdomain name",
@@ -36,12 +30,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "hostedzone*": {
-      "name": "hostedzone*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateHealthCheck": {
       "name": "CreateHealthCheck",
@@ -96,12 +84,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "trafficpolicy*": {
-      "name": "trafficpolicy*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateTrafficPolicyVersion": {
       "name": "CreateTrafficPolicyVersion",
@@ -202,12 +184,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": "ec2:DescribeVpcs"
-    },
-    "vpc": {
-      "name": "vpc",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "GetAccountLimit": {
       "name": "GetAccountLimit",

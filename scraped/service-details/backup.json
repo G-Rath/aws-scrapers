@@ -19,12 +19,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$2": {
-      "name": "$2",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateBackupSelection": {
       "name": "CreateBackupSelection",
       "description": "Creates a new resource assignment in a backup plan.",
@@ -44,12 +38,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$5": {
-      "name": "$5",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteBackupPlan": {
       "name": "DeleteBackupPlan",
@@ -357,18 +345,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "backupVault": {
-      "name": "backupVault",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "recoveryPoint": {
-      "name": "recoveryPoint",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "PutBackupVaultAccessPolicy": {
       "name": "PutBackupVaultAccessPolicy",
       "description": "Adds an access policy to the backup vault.",
@@ -409,12 +385,6 @@
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
     },
-    "$46": {
-      "name": "$46",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "StartRestoreJob": {
       "name": "StartRestoreJob",
       "description": "Starts a new restore job.",
@@ -443,12 +413,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$52": {
-      "name": "$52",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UntagResource": {
       "name": "UntagResource",
       "description": "Untags a resource.",
@@ -458,12 +422,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$56": {
-      "name": "$56",
-      "description": "aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateBackupPlan": {
       "name": "UpdateBackupPlan",

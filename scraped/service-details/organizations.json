@@ -21,30 +21,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "account": {
-      "name": "account",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "organizationalunit": {
-      "name": "organizationalunit",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "root": {
-      "name": "root",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$5": {
-      "name": "$5",
-      "description": "organizations:PolicyType",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CancelHandshake": {
       "name": "CancelHandshake",
       "description": "Grants permission to cancel a handshake.",
@@ -88,12 +64,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$12": {
-      "name": "$12",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreatePolicy": {
       "name": "CreatePolicy",
@@ -141,12 +111,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$18": {
-      "name": "$18",
-      "description": "organizations:PolicyType",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "DeregisterDelegatedAdministrator": {
       "name": "DeregisterDelegatedAdministrator",
       "description": "Grants permission to deregister the specified member AWS account as a delegated administrator\n                                                for the AWS service that is specified by ServicePrincipal.",
@@ -156,12 +120,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$20": {
-      "name": "$20",
-      "description": "organizations:ServicePrincipal",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DescribeAccount": {
       "name": "DescribeAccount",
@@ -190,12 +148,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$24": {
-      "name": "$24",
-      "description": "organizations:PolicyType",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DescribeHandshake": {
       "name": "DescribeHandshake",
@@ -235,12 +187,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$29": {
-      "name": "$29",
-      "description": "organizations:PolicyType",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "DetachPolicy": {
       "name": "DetachPolicy",
       "description": "Grants permission to detach a policy from a target root, organizational unit, or account.",
@@ -250,12 +196,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$34": {
-      "name": "$34",
-      "description": "organizations:PolicyType",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DisableAWSServiceAccess": {
       "name": "DisableAWSServiceAccess",
@@ -274,12 +214,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$37": {
-      "name": "$37",
-      "description": "organizations:PolicyType",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "EnableAWSServiceAccess": {
       "name": "EnableAWSServiceAccess",
@@ -307,12 +241,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$41": {
-      "name": "$41",
-      "description": "organizations:PolicyType",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "InviteAccountToOrganization": {
       "name": "InviteAccountToOrganization",
       "description": "Grants permission to send an invitation to another AWS account, asking it to join\n                                                your organization as a member account.",
@@ -322,12 +250,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$43": {
-      "name": "$43",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "LeaveOrganization": {
       "name": "LeaveOrganization",
@@ -453,12 +375,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$64": {
-      "name": "$64",
-      "description": "organizations:PolicyType",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "ListRoots": {
       "name": "ListRoots",
       "description": "Grants permission to list all of the roots that are defined in the organization.",
@@ -477,12 +393,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "policy": {
-      "name": "policy",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "ListTargetsForPolicy": {
       "name": "ListTargetsForPolicy",
       "description": "Grants permission to list all the roots, OUs, and accounts to which a policy is attached.",
@@ -492,12 +402,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$71": {
-      "name": "$71",
-      "description": "organizations:PolicyType",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "MoveAccount": {
       "name": "MoveAccount",
@@ -519,12 +423,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$76": {
-      "name": "$76",
-      "description": "organizations:ServicePrincipal",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "RemoveAccountFromOrganization": {
       "name": "RemoveAccountFromOrganization",
       "description": "Grants permission to removes the specified account from the organization.",
@@ -545,12 +443,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$82": {
-      "name": "$82",
-      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UntagResource": {
       "name": "UntagResource",
       "description": "Grants permission to remove one or more tags from the specified resource.",
@@ -560,12 +452,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$87": {
-      "name": "$87",
-      "description": "aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateOrganizationalUnit": {
       "name": "UpdateOrganizationalUnit",
@@ -586,12 +472,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$90": {
-      "name": "$90",
-      "description": "organizations:PolicyType",
-      "accessLevel": "",
-      "resourceTypes": []
     }
   },
   "name": "AWS Organizations"

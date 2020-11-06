@@ -47,24 +47,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "project*": {
-      "name": "project*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "deviceinstance": {
-      "name": "deviceinstance",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "upload": {
-      "name": "upload",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateTestGridProject": {
       "name": "CreateTestGridProject",
       "description": "Grants permission to create a project for desktop testing",
@@ -347,12 +329,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "testgrid-session": {
-      "name": "testgrid-session",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "GetUpload": {
       "name": "GetUpload",
       "description": "Grants permission to retireve the information of an uploaded file",
@@ -383,12 +359,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "upload*": {
-      "name": "upload*",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "ListArtifacts": {
       "name": "ListArtifacts",
       "description": "Grants permission to list the artifacts in a project",
@@ -398,24 +368,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "run": {
-      "name": "run",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "suite": {
-      "name": "suite",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "test": {
-      "name": "test",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "ListDeviceInstances": {
       "name": "ListDeviceInstances",
@@ -553,48 +505,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "devicepool": {
-      "name": "devicepool",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "instanceprofile": {
-      "name": "instanceprofile",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "networkprofile": {
-      "name": "networkprofile",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "project": {
-      "name": "project",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "session": {
-      "name": "session",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "testgrid-project": {
-      "name": "testgrid-project",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "vpceconfiguration": {
-      "name": "vpceconfiguration",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "ListTestGridProjects": {
       "name": "ListTestGridProjects",
       "description": "Grants permission to list the information of desktop testing projects for an AWS account",
@@ -697,20 +607,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "SCENARIO: \n                                                   Device Pool as filter": {
-      "name": "SCENARIO: \n                                                   Device Pool as filter",
-      "description": "",
-      "accessLevel": "devicepool*\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      project*\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      upload",
-      "resourceTypes": [],
-      "conditionKeys": ""
-    },
-    "SCENARIO: \n                                                   Device Selection Configuration as filter": {
-      "name": "SCENARIO: \n                                                   Device Selection Configuration as filter",
-      "description": "",
-      "accessLevel": "project*\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      upload",
-      "resourceTypes": [],
-      "conditionKeys": ""
-    },
     "StopJob": {
       "name": "StopJob",
       "description": "Grants permission to terminate a running job",
@@ -751,12 +647,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$101": {
-      "name": "$101",
-      "description": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UntagResource": {
       "name": "UntagResource",
       "description": "Grants permission to remove tags from a resource",
@@ -766,12 +656,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$113": {
-      "name": "$113",
-      "description": "aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateDeviceInstance": {
       "name": "UpdateDeviceInstance",

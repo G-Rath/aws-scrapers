@@ -11,18 +11,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "virtualService": {
-      "name": "virtualService",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$2": {
-      "name": "$2",
-      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateMesh": {
       "name": "CreateMesh",
       "description": "Creates a service mesh.",
@@ -32,12 +20,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$4": {
-      "name": "$4",
-      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateRoute": {
       "name": "CreateRoute",
@@ -49,18 +31,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "virtualNode": {
-      "name": "virtualNode",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$7": {
-      "name": "$7",
-      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateVirtualGateway": {
       "name": "CreateVirtualGateway",
       "description": "Creates a virtual gateway within a service mesh.",
@@ -70,12 +40,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$9": {
-      "name": "$9",
-      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "CreateVirtualNode": {
       "name": "CreateVirtualNode",
@@ -87,12 +51,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$12": {
-      "name": "$12",
-      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateVirtualRouter": {
       "name": "CreateVirtualRouter",
       "description": "Creates a virtual router within a service mesh.",
@@ -103,12 +61,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$14": {
-      "name": "$14",
-      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "CreateVirtualService": {
       "name": "CreateVirtualService",
       "description": "Creates a virtual service within a service mesh.",
@@ -118,18 +70,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "virtualRouter": {
-      "name": "virtualRouter",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "$18": {
-      "name": "$18",
-      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "DeleteGatewayRoute": {
       "name": "DeleteGatewayRoute",
@@ -309,24 +249,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "mesh": {
-      "name": "mesh",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "route": {
-      "name": "route",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
-    "virtualGateway": {
-      "name": "virtualGateway",
-      "description": "",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "ListVirtualGateways": {
       "name": "ListVirtualGateways",
       "description": "Returns a list of existing virtual gateways in a service mesh.",
@@ -387,12 +309,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "$56": {
-      "name": "$56",
-      "description": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
-      "accessLevel": "",
-      "resourceTypes": []
-    },
     "UntagResource": {
       "name": "UntagResource",
       "description": "Deletes specified tags from a resource.",
@@ -402,12 +318,6 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
-    },
-    "$64": {
-      "name": "$64",
-      "description": "aws:TagKeys",
-      "accessLevel": "",
-      "resourceTypes": []
     },
     "UpdateGatewayRoute": {
       "name": "UpdateGatewayRoute",
