@@ -21,40 +21,11 @@ const readInServiceDetails = (): ServiceDetails[] =>
 
 const services = readInServiceDetails();
 
-const isProbablyActuallyAnAction = (actionName: string): boolean => {
-  const firstChar = actionName.charAt(0);
-
-  // we use the index of the action prefixed with a '$' when we can't
-  // determine the name of an action (which happens with a rowspan)
-  if (['$', ' '].includes(firstChar)) {
-    return false;
-  }
-
-  if (actionName.startsWith('SCENARIO')) {
-    return false;
-  }
-
-  // actions start with uppercases
-  return firstChar.length > 0 && firstChar === firstChar.toUpperCase();
-};
-
 console.log('read in the services of', services.length, 'services');
 
-const listOfActions = services.flatMap(service => {
-  const actions = Object.keys(service.actions).filter(action => {
-    if (isProbablyActuallyAnAction(action)) {
-      return true;
-    }
-
-    console.warn(
-      `excluding ${service.servicePrefix}:${action} as it doesnt look like an action`
-    );
-
-    return false;
-  });
-
-  return actions.map(name => `${service.servicePrefix}:${name}`);
-});
+const listOfActions = services.flatMap(service =>
+  Object.keys(service.actions).map(name => `${service.servicePrefix}:${name}`)
+);
 
 console.log('have', listOfActions.length, 'actions');
 
