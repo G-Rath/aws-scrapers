@@ -81,7 +81,7 @@ const handleDuplicatedServicePrefixes = async (
 ): Promise<void> => {
   const duplicatedServicePrefixDetails = findDuplicatedServicePrefixes(details);
 
-  await Promise.all([
+  await Promise.all(
     Object.entries(duplicatedServicePrefixDetails).map(
       async ([, duplicatedDetails]) => {
         const mergedDetails = duplicatedDetails.reduce(mergeDetails);
@@ -95,7 +95,7 @@ const handleDuplicatedServicePrefixes = async (
         await writeToFile(mergedDetails);
       }
     )
-  ]);
+  );
 };
 
 const run = async () => {
