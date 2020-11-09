@@ -2,12 +2,10 @@
 /* eslint-disable node/no-sync */
 
 import fs from 'fs';
-
-const outfile = 'selected-actions.txt';
-const ALL_ACTIONS_FILE = 'all-actions.txt';
+import { ALL_ACTIONS_FILE_PATH, SELECTED_ACTIONS_FILE_PATH } from './utils';
 
 const readInListOfActions = (): string[] =>
-  fs.readFileSync(ALL_ACTIONS_FILE, 'utf-8').trim().split('\n');
+  fs.readFileSync(ALL_ACTIONS_FILE_PATH, 'utf-8').trim().split('\n');
 
 const servicesToIgnore = [];
 
@@ -46,4 +44,4 @@ const listOfActions = actions.filter(shouldMonitorAction);
 
 console.log('selected', listOfActions.length, 'actions');
 
-fs.writeFileSync(outfile, `${listOfActions.join('\n')}\n`);
+fs.writeFileSync(SELECTED_ACTIONS_FILE_PATH, `${listOfActions.join('\n')}\n`);

@@ -8,7 +8,12 @@ import {
   ServiceTopicTuple,
   ServiceTopicsScraper
 } from './scrapers';
-import { chunk, createLogger, mergeDetails } from './utils';
+import {
+  chunk,
+  createLogger,
+  mergeDetails,
+  writeFreshListOfAllActions
+} from './utils';
 
 const SERVICE_DETAILS_OUT_DIR = './scraped/service-details';
 
@@ -119,14 +124,14 @@ const run = async () => {
 
   const details = await scapeDetailsInBatches(topics, 5);
 
+  console.log('\n-- scraped the details of', details.length, 'topics --\n');
+
   // todo: this isn't properly fleshed out, but only affects a few non-core services
   await handleDuplicatedServicePrefixes(details);
 
-  // const details = await scapeDetailsInBatches(topics, 5);
+  console.log('\n-- finished merging duplicates --');
 
-  // await Promise.all(details.map(writeToFile));
-
-  console.log('done', '(scraped the details of', details.length, 'topics)');
+  writeFreshListOfAllActions();
 };
 
 run().catch(console.error);

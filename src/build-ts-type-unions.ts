@@ -2,21 +2,7 @@
 /* eslint-disable node/no-sync */
 
 import fs from 'fs';
-import path from 'path';
-import { ServiceDetails } from './scrapers';
-
-const SERVICE_DETAILS_OUT_DIR = './scraped/service-details';
-
-const readInServiceDetails = (): ServiceDetails[] =>
-  fs
-    .readdirSync(SERVICE_DETAILS_OUT_DIR)
-    .filter(name => name.endsWith('.json'))
-    .map(
-      name =>
-        JSON.parse(
-          fs.readFileSync(path.join(SERVICE_DETAILS_OUT_DIR, name), 'utf-8')
-        ) as ServiceDetails
-    );
+import { UNION_TS_FILE_PATH, readInServiceDetails } from './utils';
 
 const services = readInServiceDetails();
 
@@ -68,4 +54,4 @@ export type ManagementEventType =
   | 'AwsServiceEvent';
 `.trimStart();
 
-fs.writeFileSync('unions.ts', contents);
+fs.writeFileSync(UNION_TS_FILE_PATH, contents);
