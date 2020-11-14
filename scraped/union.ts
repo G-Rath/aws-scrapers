@@ -1,4 +1,4 @@
-type AWSApiCallEventName =
+export type AWSApiCallEventName =
   | 'ApproveSkill'
   | 'AssociateContactWithAddressBook'
   | 'AssociateDeviceWithRoom'
@@ -6485,27 +6485,38 @@ type AWSApiCallEventName =
   | 'PutTraceSegments'
   | 'UpdateSamplingRule';
 
-type AWSServiceEventName =
+export type AWSServiceEventName =
   | 'DeleteExpiredKeyMaterial'
   | 'DeleteKey'
   | 'ReEncrypt'
   | 'RotateKey'
   | 'ConsoleLogin';
 
-export type AWSConsoleSigninEventName = 'ConsoleLogin';
+export type AWSConsoleSignInEventName =
+  | 'ConsoleLogin'
+  | 'SwitchRole'
+  | 'CheckMfa';
 
-export type AWSEventName =
-  | AWSServiceEventName
-  | AWSApiCallEventName
-  | AWSConsoleSigninEventName;
+export type AWSRegion =
+  | 'us-east-1'
+  | 'us-east-2'
+  | 'us-west-1'
+  | 'us-west-2'
+  | 'ap-southeast-1'
+  | 'ap-southeast-2';
 
-export type AWSRegion = 'us-east-2' | 'ap-southeast-2';
 export type CloudTrailEventType =
   | 'AwsApiCall'
   | 'AwsServiceEvent'
-  | 'AwsConsoleSignin';
+  | 'AwsConsoleSignIn';
+
 export type ManagementEventType =
   | 'AwsApiCall'
   | 'AwsConsoleAction'
   | 'AwsConsoleSignIn'
   | 'AwsServiceEvent';
+
+export type AWSEventName =
+  | AWSServiceEventName
+  | AWSApiCallEventName
+  | AWSConsoleSignInEventName;

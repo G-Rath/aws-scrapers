@@ -12,14 +12,6 @@ const listOfActions = Array.from(
   new Set(services.flatMap(service => Object.keys(service.actions)))
 );
 
-const otherEvents = [
-  'DeleteExpiredKeyMaterial',
-  'DeleteKey',
-  'ReEncrypt',
-  'RotateKey',
-  'ConsoleLogin'
-];
-
 console.log('have', listOfActions.length, 'actions');
 
 const buildUnion = (values: string[]): string =>
@@ -28,30 +20,52 @@ const buildUnion = (values: string[]): string =>
     .join('\n')
     .trim();
 
-const contents = `
-type AWSApiCallEventName =
-  ${buildUnion(listOfActions)};
+type Union = [name: string, values: string[]];
 
-type AWSServiceEventName =
-  ${buildUnion(otherEvents)};
+const unions: Union[] = [
+  ['AWSApiCallEventName', listOfActions],
+  [
+    'AWSServiceEventName',
+    [
+      'DeleteExpiredKeyMaterial',
+      'DeleteKey',
+      'ReEncrypt',
+      'RotateKey',
+      'ConsoleLogin'
+    ]
+  ],
+  ['AWSConsoleSignInEventName', ['ConsoleLogin', 'SwitchRole', 'CheckMfa']],
+  [
+    'AWSRegion',
+    [
+      'us-east-1',
+      'us-east-2',
+      'us-west-1',
+      'us-west-2',
+      'ap-southeast-1',
+      'ap-southeast-2'
+    ]
+  ],
+  [
+    'CloudTrailEventType',
+    ['AwsApiCall', 'AwsServiceEvent', 'AwsConsoleSignIn']
+  ],
+  [
+    'ManagementEventType',
+    ['AwsApiCall', 'AwsConsoleAction', 'AwsConsoleSignIn', 'AwsServiceEvent']
+  ]
+];
 
-export type AWSConsoleSigninEventName = 'ConsoleLogin';
-
+const AWSEventNameUnion = `
 export type AWSEventName =
   | AWSServiceEventName
   | AWSApiCallEventName
-  | AWSConsoleSigninEventName;
-
-export type AWSRegion = 'us-east-2' | 'ap-southeast-2';
-export type CloudTrailEventType =
-  | 'AwsApiCall'
-  | 'AwsServiceEvent'
-  | 'AwsConsoleSignin';
-export type ManagementEventType =
-  | 'AwsApiCall'
-  | 'AwsConsoleAction'
-  | 'AwsConsoleSignIn'
-  | 'AwsServiceEvent';
+  | AWSConsoleSignInEventName;
 `.trimStart();
+
+const contents = unions
+  .map(([name, values]) => `export type ${name} =\n  ${buildUnion(values)};`)
+  .concat(AWSEventNameUnion)
+  .join('\n\n');
 
 fs.writeFileSync(UNION_TS_FILE_PATH, contents);
