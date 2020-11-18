@@ -103,6 +103,33 @@ const handleDuplicatedServicePrefixes = async (
   );
 };
 
+const removeRemovedServices = async (details: ServiceDetails[]) => {
+  const existingDetails = await fs.readdir(SERVICE_DETAILS_OUT_DIR);
+  const expectedDetails = details.map(
+    ({ servicePrefix }) => `${servicePrefix}.json`
+  );
+
+  const removedDetails = existingDetails.filter(
+    name => !expectedDetails.includes(name)
+  );
+
+  if (removedDetails.length) {
+    console.log(
+      '\n-- the following',
+      removedDetails.length,
+      'details have been removed:'
+    );
+
+    console.log(` > ${removedDetails.join('\n > ')}`, '\n');
+
+    await Promise.all(
+      removedDetails.map(async name =>
+        fs.unlink(path.join(SERVICE_DETAILS_OUT_DIR, name))
+      )
+    );
+  }
+};
+
 const run = async () => {
   const topics = await ServiceTopicsScraper.scrape();
 
@@ -130,6 +157,8 @@ const run = async () => {
   await handleDuplicatedServicePrefixes(details);
 
   console.log('\n-- finished merging duplicates --');
+
+  await removeRemovedServices(details);
 
   writeFreshListOfAllActions();
 };
