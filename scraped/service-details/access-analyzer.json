@@ -1,6 +1,19 @@
 {
   "servicePrefix": "access-analyzer",
   "actions": {
+    "ApplyArchiveRule": {
+      "name": "ApplyArchiveRule",
+      "topics": [
+        "IAM Access Analyzer"
+      ],
+      "description": "Grants permission to apply an archive rule.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Analyzer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "CreateAnalyzer": {
       "name": "CreateAnalyzer",
       "topics": [

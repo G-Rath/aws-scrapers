@@ -183,6 +183,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DescribeExport": {
+      "name": "DescribeExport",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
+      "description": "Describes an existing Export of a table",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "export*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DescribeGlobalTable": {
       "name": "DescribeGlobalTable",
       "topics": [
@@ -294,6 +307,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ExportTableToPointInTime": {
+      "name": "ExportTableToPointInTime",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
+      "description": "Initiates an Export of a DynamoDB table to S3",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "GetItem": {
       "name": "GetItem",
       "topics": [
@@ -350,6 +376,17 @@
         "Amazon DynamoDB"
       ],
       "description": "Lists the ContributorInsightsSummary for all tables and global secondary indexes associated\n                                                with the current account and endpoint",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListExports": {
+      "name": "ListExports",
+      "topics": [
+        "Amazon DynamoDB"
+      ],
+      "description": "List exports associated with the account and endpoint",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",

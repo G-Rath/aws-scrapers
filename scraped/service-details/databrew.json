@@ -1,0 +1,484 @@
+{
+  "servicePrefix": "databrew",
+  "actions": {
+    "BatchDeleteRecipeVersion": {
+      "name": "BatchDeleteRecipeVersion",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to delete one or more recipe versions",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Recipe*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDataset": {
+      "name": "CreateDataset",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to create a dataset",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateProfileJob": {
+      "name": "CreateProfileJob",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to create a profile job",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateProject": {
+      "name": "CreateProject",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to create a project",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateRecipe": {
+      "name": "CreateRecipe",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to create a recipe",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateRecipeJob": {
+      "name": "CreateRecipeJob",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to create a recipe job",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateSchedule": {
+      "name": "CreateSchedule",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to create a schedule",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "DeleteDataset": {
+      "name": "DeleteDataset",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to delete a dataset",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteJob": {
+      "name": "DeleteJob",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to delete a job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteProject": {
+      "name": "DeleteProject",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to delete a project",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRecipeVersion": {
+      "name": "DeleteRecipeVersion",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to delete a recipe version",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Recipe*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSchedule": {
+      "name": "DeleteSchedule",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to delete a schedule",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Schedule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDataset": {
+      "name": "DescribeDataset",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to view details about a dataset",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeJob": {
+      "name": "DescribeJob",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to view details about a job",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeProject": {
+      "name": "DescribeProject",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to view details about a project",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeRecipe": {
+      "name": "DescribeRecipe",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to view details about a recipe",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Recipe*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeSchedule": {
+      "name": "DescribeSchedule",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to view details about a schedule",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Schedule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDatasets": {
+      "name": "ListDatasets",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to list datasets in your account",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "Dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListJobRuns": {
+      "name": "ListJobRuns",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to list job runs for a given job",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "Job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListJobs": {
+      "name": "ListJobs",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to list jobs in your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProjects": {
+      "name": "ListProjects",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to list projects in your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRecipeVersions": {
+      "name": "ListRecipeVersions",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to list versions in your recipe",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "Recipe*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRecipes": {
+      "name": "ListRecipes",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to list recipes in your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSchedules": {
+      "name": "ListSchedules",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to list schedules in your account",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "Schedule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to retrieve tags associated with a resource",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "Dataset"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PublishRecipe": {
+      "name": "PublishRecipe",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to publish a major verison of a recipe",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Recipe*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendProjectSessionAction": {
+      "name": "SendProjectSessionAction",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to submit an action to the interactive session for a project",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartJobRun": {
+      "name": "StartJobRun",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to start running a job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartProjectSession": {
+      "name": "StartProjectSession",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to start an interactive session for a project",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopJobRun": {
+      "name": "StopJobRun",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to stop a job run for a job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to add tags to a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "Dataset"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to remove tags associated with a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "Dataset"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDataset": {
+      "name": "UpdateDataset",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to modify a dataset",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateProfileJob": {
+      "name": "UpdateProfileJob",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to modify a profile job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateProject": {
+      "name": "UpdateProject",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to modify a project",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRecipe": {
+      "name": "UpdateRecipe",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to modify a recipe",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Recipe*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRecipeJob": {
+      "name": "UpdateRecipeJob",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to modify a recipe job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSchedule": {
+      "name": "UpdateSchedule",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to modify a schedule",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Schedule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "AWS Glue DataBrew"
+  ]
+}

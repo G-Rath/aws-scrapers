@@ -77,7 +77,7 @@
       "description": "Grants permission to create a new document classifier that you can use to categorize\n                                                documents",
       "accessLevel": "Write",
       "resourceTypes": [],
-      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VolumeKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:OutputKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VpcSubnets",
       "dependentActions": ""
     },
     "CreateEndpoint": {
@@ -101,7 +101,7 @@
       "description": "Grants permission to create an entity recognizer using submitted files",
       "accessLevel": "Write",
       "resourceTypes": [],
-      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VolumeKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VpcSubnets",
       "dependentActions": ""
     },
     "DeleteDocumentClassifier": {
@@ -471,7 +471,7 @@
       "description": "Grants permission to start an asynchronous dominant language detection job for a collection\n                                                of documents",
       "accessLevel": "Write",
       "resourceTypes": [],
-      "conditionKeys": "",
+      "conditionKeys": "comprehend:VolumeKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:OutputKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VpcSubnets",
       "dependentActions": ""
     },
     "StartEntitiesDetectionJob": {
@@ -495,7 +495,7 @@
       "description": "Grants permission to start an asynchronous key phrase detection job for a collection\n                                                of documents",
       "accessLevel": "Write",
       "resourceTypes": [],
-      "conditionKeys": "",
+      "conditionKeys": "comprehend:VolumeKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:OutputKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VpcSubnets",
       "dependentActions": ""
     },
     "StartPiiEntitiesDetectionJob": {
@@ -506,7 +506,7 @@
       "description": "Grants permission to start an asynchronous PII entities detection job for a collection\n                                                of documents",
       "accessLevel": "Write",
       "resourceTypes": [],
-      "conditionKeys": "",
+      "conditionKeys": "comprehend:OutputKmsKey",
       "dependentActions": ""
     },
     "StartSentimentDetectionJob": {
@@ -517,7 +517,7 @@
       "description": "Grants permission to start an asynchronous sentiment detection job for a collection\n                                                of documents",
       "accessLevel": "Write",
       "resourceTypes": [],
-      "conditionKeys": "",
+      "conditionKeys": "comprehend:VolumeKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:OutputKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VpcSubnets",
       "dependentActions": ""
     },
     "StartTopicsDetectionJob": {
@@ -528,7 +528,7 @@
       "description": "Grants permission to start an asynchronous job to detect the most common topics in\n                                                the collection of documents and the phrases associated with each topic",
       "accessLevel": "Write",
       "resourceTypes": [],
-      "conditionKeys": "",
+      "conditionKeys": "comprehend:VolumeKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:OutputKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VpcSubnets",
       "dependentActions": ""
     },
     "StopDominantLanguageDetectionJob": {

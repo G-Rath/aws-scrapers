@@ -114,6 +114,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeleteEntityType": {
+      "name": "DeleteEntityType",
+      "topics": [
+        "Amazon Fraud Detector"
+      ],
+      "description": "Deletes an entity type. You cannot delete an entity type that is included in an event\n                                                type.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "entity-type*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteEvent": {
       "name": "DeleteEvent",
       "topics": [
@@ -122,6 +135,84 @@
       "description": "Deletes the specified event.",
       "accessLevel": "Write",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteEventType": {
+      "name": "DeleteEventType",
+      "topics": [
+        "Amazon Fraud Detector"
+      ],
+      "description": "Deletes an event type. You cannot delete an event type that is used in a detector\n                                                or a model.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "event-type*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteExternalModel": {
+      "name": "DeleteExternalModel",
+      "topics": [
+        "Amazon Fraud Detector"
+      ],
+      "description": "Removes a SageMaker model from Amazon Fraud Detector. You can remove an Amazon SageMaker\n                                                model if it is not associated with a detector version.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "external-model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteLabel": {
+      "name": "DeleteLabel",
+      "topics": [
+        "Amazon Fraud Detector"
+      ],
+      "description": "Deletes a label. You cannot delete labels that are included in an event type in Amazon\n                                                Fraud Detector. You cannot delete a label assigned to an event ID. You must first\n                                                delete the relevant event ID.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "label*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteModel": {
+      "name": "DeleteModel",
+      "topics": [
+        "Amazon Fraud Detector"
+      ],
+      "description": "Deletes a model. You can delete models and model versions in Amazon Fraud Detector,\n                                                provided that they are not associated with a detector version.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteModelVersion": {
+      "name": "DeleteModelVersion",
+      "topics": [
+        "Amazon Fraud Detector"
+      ],
+      "description": "Deletes a model version. You can delete models and model versions in Amazon Fraud\n                                                Detector, provided that they are not associated with a detector version.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model-version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteOutcome": {
+      "name": "DeleteOutcome",
+      "topics": [
+        "Amazon Fraud Detector"
+      ],
+      "description": "Deletes an outcome. You cannot delete an outcome that is used in a rule version.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "outcome*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -134,6 +225,19 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteVariable": {
+      "name": "DeleteVariable",
+      "topics": [
+        "Amazon Fraud Detector"
+      ],
+      "description": "Deletes a variable. You cannot delete variables that are included in an event type\n                                                in Amazon Fraud Detector.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "variable*"
       ],
       "conditionKeys": "",
       "dependentActions": ""

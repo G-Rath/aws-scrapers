@@ -6,7 +6,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation activates the gateway you previously deployed on your host.",
+      "description": "Grants permission to activate the gateway you previously deployed on your host",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -17,7 +17,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation configures one or more gateway local disks as cache for a cached-volume\n                                                gateway.",
+      "description": "Grants permission to configure one or more gateway local disks as cache for a cached-volume\n                                                gateway",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
@@ -30,7 +30,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation adds one or more tags to the specified resource.",
+      "description": "Grants permission to add one or more tags to the specified resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "gateway"
@@ -43,7 +43,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation configures one or more gateway local disks as upload buffer for a specified\n                                                gateway.",
+      "description": "Grants permission to configure one or more gateway local disks as upload buffer for\n                                                a specified gateway",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
@@ -56,10 +56,23 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation configures one or more gateway local disks as working storage for a\n                                                gateway.",
+      "description": "Grants permission to configure one or more gateway local disks as working storage\n                                                for a gateway",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssignTapePool": {
+      "name": "AssignTapePool",
+      "topics": [
+        "Amazon Storage Gateway"
+      ],
+      "description": "Grants permission to move a tape to the target pool specified",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "tape*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -69,10 +82,23 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation connects a volume to an iSCSI connection and then attaches the volume\n                                                to the specified gateway.",
+      "description": "Grants permission to connect a volume to an iSCSI connection and then attaches the\n                                                volume to the specified gateway",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BypassGovernanceRetention": {
+      "name": "BypassGovernanceRetention",
+      "topics": [
+        "Amazon Storage Gateway"
+      ],
+      "description": "Grants permission to allow the governance retention lock on a pool to be bypassed",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "tapepool*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -82,7 +108,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "Cancels archiving of a virtual tape to the virtual tape shelf (VTS) after the archiving\n                                                process is initiated.",
+      "description": "Grants permission to cancel archiving of a virtual tape to the virtual tape shelf\n                                                (VTS) after the archiving process is initiated",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
@@ -95,7 +121,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "Cancels retrieval of a virtual tape from the virtual tape shelf (VTS) to a gateway\n                                                after the retrieval process is initiated.",
+      "description": "Grants permission to cancel retrieval of a virtual tape from the virtual tape shelf\n                                                (VTS) to a gateway after the retrieval process is initiated",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
@@ -108,7 +134,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation creates a cached volume on a specified cached gateway. This operation\n                                                is supported only for the gateway-cached volume architecture.",
+      "description": "Grants permission to create a cached volume on a specified cached gateway. This operation\n                                                is supported only for the gateway-cached volume architecture",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
@@ -121,7 +147,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation creates a NFS file share on an existing file gateway.",
+      "description": "Grants permission to create a NFS file share on an existing file gateway",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
@@ -134,7 +160,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation creates a SMB file share on an existing file gateway.",
+      "description": "Grants permission to create a SMB file share on an existing file gateway",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
@@ -147,7 +173,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation initiates a snapshot of a volume.",
+      "description": "Grants permission to initiate a snapshot of a volume",
       "accessLevel": "Write",
       "resourceTypes": [
         "volume*"
@@ -160,7 +186,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation initiates a snapshot of a gateway from a volume recovery point.",
+      "description": "Grants permission to initiate a snapshot of a gateway from a volume recovery point",
       "accessLevel": "Write",
       "resourceTypes": [
         "volume*"
@@ -173,7 +199,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation creates a volume on a specified gateway.",
+      "description": "Grants permission to create a volume on a specified gateway",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
@@ -181,12 +207,23 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "CreateTapePool": {
+      "name": "CreateTapePool",
+      "topics": [
+        "Amazon Storage Gateway"
+      ],
+      "description": "Grants permission to create a tape pool",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
     "CreateTapeWithBarcode": {
       "name": "CreateTapeWithBarcode",
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "Creates a virtual tape by using your own barcode.",
+      "description": "Grants permission to create a virtual tape by using your own barcode",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
@@ -199,7 +236,20 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "Creates one or more virtual tapes. You write data to the virtual tapes and then archive\n                                                the tapes.",
+      "description": "Grants permission to create one or more virtual tapes. You write data to the virtual\n                                                tapes and then archive the tapes",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAutomaticTapeCreationPolicy": {
+      "name": "DeleteAutomaticTapeCreationPolicy",
+      "topics": [
+        "Amazon Storage Gateway"
+      ],
+      "description": "Grants permission to delete the automatic tape creation policy configured on a gateway-VTL",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
@@ -212,7 +262,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation deletes the bandwidth rate limits of a gateway.",
+      "description": "Grants permission to delete the bandwidth rate limits of a gateway",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
@@ -225,7 +275,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation deletes Challenge-Handshake Authentication Protocol (CHAP) credentials\n                                                for a specified iSCSI target and initiator pair.",
+      "description": "Grants permission to delete Challenge-Handshake Authentication Protocol (CHAP) credentials\n                                                for a specified iSCSI target and initiator pair",
       "accessLevel": "Write",
       "resourceTypes": [
         "target*"
@@ -238,7 +288,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation deletes a file share from a file gateway.",
+      "description": "Grants permission to delete a file share from a file gateway",
       "accessLevel": "Write",
       "resourceTypes": [
         "share*"
@@ -251,7 +301,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation deletes a gateway.",
+      "description": "Grants permission to delete a gateway",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
@@ -264,7 +314,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation deletes a snapshot of a volume.",
+      "description": "Grants permission to delete a snapshot of a volume",
       "accessLevel": "Write",
       "resourceTypes": [
         "volume*"
@@ -277,7 +327,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "Deletes the specified virtual tape.",
+      "description": "Grants permission to delete the specified virtual tape",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
@@ -290,9 +340,22 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "Deletes the specified virtual tape from the virtual tape shelf (VTS).",
+      "description": "Grants permission to delete the specified virtual tape from the virtual tape shelf\n                                                (VTS)",
       "accessLevel": "Write",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteTapePool": {
+      "name": "DeleteTapePool",
+      "topics": [
+        "Amazon Storage Gateway"
+      ],
+      "description": "Grants permission to delete the specified tape pool",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "tapepool*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -301,7 +364,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation deletes the specified gateway volume that you previously created using\n                                                the CreateCachediSCSIVolume or CreateStorediSCSIVolume API.",
+      "description": "Grants permission to delete the specified gateway volume that you previously created\n                                                using the CreateCachediSCSIVolume or CreateStorediSCSIVolume API",
       "accessLevel": "Write",
       "resourceTypes": [
         "volume*"
@@ -314,7 +377,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation returns the bandwidth rate limits of a gateway.",
+      "description": "Grants permission to get the bandwidth rate limits of a gateway",
       "accessLevel": "Read",
       "resourceTypes": [
         "gateway*"
@@ -327,7 +390,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation returns information about the cache of a gateway. This operation is\n                                                supported only for the gateway-cached volume architecture.",
+      "description": "Grants permission to get information about the cache of a gateway. This operation\n                                                is supported only for the gateway-cached volume architecture",
       "accessLevel": "Read",
       "resourceTypes": [
         "gateway*"
@@ -340,7 +403,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation returns a description of the gateway volumes specified in the request.\n                                                This operation is supported only for the gateway-cached volume architecture.",
+      "description": "Grants permission to get a description of the gateway volumes specified in the request.\n                                                This operation is supported only for the gateway-cached volume architecture",
       "accessLevel": "Read",
       "resourceTypes": [
         "volume*"
@@ -353,7 +416,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation returns an array of Challenge-Handshake Authentication Protocol (CHAP)\n                                                credentials information for a specified iSCSI target, one for each target-initiator\n                                                pair.",
+      "description": "Grants permission to get an array of Challenge-Handshake Authentication Protocol (CHAP)\n                                                credentials information for a specified iSCSI target, one for each target-initiator\n                                                pair",
       "accessLevel": "Read",
       "resourceTypes": [
         "target*"
@@ -366,7 +429,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation returns metadata about a gateway such as its name, network interfaces,\n                                                configured time zone, and the state (whether the gateway is running or not).",
+      "description": "Grants permission to get metadata about a gateway such as its name, network interfaces,\n                                                configured time zone, and the state (whether the gateway is running or not)",
       "accessLevel": "Read",
       "resourceTypes": [
         "gateway*"
@@ -379,7 +442,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation returns your gateway's weekly maintenance start time including the\n                                                day and time of the week.",
+      "description": "Grants permission to get your gateway's weekly maintenance start time including the\n                                                day and time of the week",
       "accessLevel": "Read",
       "resourceTypes": [
         "gateway*"
@@ -392,7 +455,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation gets a description for one or more file shares from a file gateway.",
+      "description": "Grants permission to get a description for one or more file shares from a file gateway",
       "accessLevel": "Read",
       "resourceTypes": [
         "share*"
@@ -405,7 +468,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation gets a description for one or more file shares from a file gateway.",
+      "description": "Grants permission to get a description for one or more file shares from a file gateway",
       "accessLevel": "Read",
       "resourceTypes": [
         "share*"
@@ -418,7 +481,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation gets a description of a Server Message Block (SMB) file share settings\n                                                from a file gateway.",
+      "description": "Grants permission to get a description of a Server Message Block (SMB) file share\n                                                settings from a file gateway",
       "accessLevel": "Read",
       "resourceTypes": [
         "gateway*"
@@ -431,7 +494,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation describes the snapshot schedule for the specified gateway volume.",
+      "description": "Grants permission to describe the snapshot schedule for the specified gateway volume",
       "accessLevel": "Read",
       "resourceTypes": [
         "volume*"
@@ -444,7 +507,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation returns the description of the gateway volumes specified in the request.",
+      "description": "Grants permission to get the description of the gateway volumes specified in the request",
       "accessLevel": "Read",
       "resourceTypes": [
         "volume*"
@@ -457,7 +520,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "Returns a description of specified virtual tapes in the virtual tape shelf (VTS).",
+      "description": "Grants permission to get a description of specified virtual tapes in the virtual tape\n                                                shelf (VTS)",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -468,7 +531,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "Returns a list of virtual tape recovery points that are available for the specified\n                                                gateway-VTL.",
+      "description": "Grants permission to get a list of virtual tape recovery points that are available\n                                                for the specified gateway-VTL",
       "accessLevel": "Read",
       "resourceTypes": [
         "gateway*"
@@ -481,7 +544,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "Returns a description of the specified Amazon Resource Name (ARN) of virtual tapes.",
+      "description": "Grants permission to get a description of the specified Amazon Resource Name (ARN)\n                                                of virtual tapes",
       "accessLevel": "Read",
       "resourceTypes": [
         "gateway*"
@@ -494,7 +557,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation returns information about the upload buffer of a gateway.",
+      "description": "Grants permission to get information about the upload buffer of a gateway",
       "accessLevel": "Read",
       "resourceTypes": [
         "gateway*"
@@ -507,7 +570,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "Returns a description of virtual tape library (VTL) devices for the specified gateway.",
+      "description": "Grants permission to get a description of virtual tape library (VTL) devices for the\n                                                specified gateway",
       "accessLevel": "Read",
       "resourceTypes": [
         "gateway*"
@@ -520,7 +583,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation returns information about the working storage of a gateway.",
+      "description": "Grants permission to get information about the working storage of a gateway",
       "accessLevel": "Read",
       "resourceTypes": [
         "gateway*"
@@ -533,7 +596,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation disconnects a volume from an iSCSI connection and then detaches the\n                                                volume from the specified gateway.",
+      "description": "Grants permission to disconnect a volume from an iSCSI connection and then detaches\n                                                the volume from the specified gateway",
       "accessLevel": "Write",
       "resourceTypes": [
         "volume*"
@@ -546,7 +609,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "Disables a gateway when the gateway is no longer functioning.",
+      "description": "Grants permission to disable a gateway when the gateway is no longer functioning",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
@@ -559,8 +622,21 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation enables you to join an Active Directory Domain.",
+      "description": "Grants permission to enable you to join an Active Directory Domain",
       "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAutomaticTapeCreationPolicies": {
+      "name": "ListAutomaticTapeCreationPolicies",
+      "topics": [
+        "Amazon Storage Gateway"
+      ],
+      "description": "Grants permission to list the automatic tape creation policies configured on the specified\n                                                gateway-VTL or all gateway-VTLs owned by your account",
+      "accessLevel": "List",
       "resourceTypes": [
         "gateway*"
       ],
@@ -572,7 +648,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation gets a list of the file shares for a specific file gateway, or the\n                                                list of file shares that belong to the calling user account.",
+      "description": "Grants permission to get a list of the file shares for a specific file gateway, or\n                                                the list of file shares that belong to the calling user account",
       "accessLevel": "List",
       "resourceTypes": [
         "gateway*"
@@ -585,7 +661,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation lists gateways owned by an AWS account in a region specified in the\n                                                request. The returned list is ordered by gateway Amazon Resource Name (ARN).",
+      "description": "Grants permission to list gateways owned by an AWS account in a region specified in\n                                                the request. The returned list is ordered by gateway Amazon Resource Name (ARN)",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -596,7 +672,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation returns a list of the gateway's local disks.",
+      "description": "Grants permission to get a list of the gateway's local disks",
       "accessLevel": "List",
       "resourceTypes": [
         "gateway*"
@@ -609,10 +685,23 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation lists the tags that have been added to the specified resource.",
-      "accessLevel": "Read",
+      "description": "Grants permission to get the tags that have been added to the specified resource",
+      "accessLevel": "List",
       "resourceTypes": [
         "gateway"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTapePools": {
+      "name": "ListTapePools",
+      "topics": [
+        "Amazon Storage Gateway"
+      ],
+      "description": "Grants permission to list tape pools owned by your AWS account",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "tapepool*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -622,8 +711,8 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "Lists virtual tapes in your virtual tape library (VTL) and your virtual tape shelf\n                                                (VTS).",
-      "accessLevel": "Read",
+      "description": "Grants permission to list virtual tapes in your virtual tape library (VTL) and your\n                                                virtual tape shelf (VTS)",
+      "accessLevel": "List",
       "resourceTypes": [
         "tape*"
       ],
@@ -635,8 +724,8 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation lists iSCSI initiators that are connected to a volume.",
-      "accessLevel": "Read",
+      "description": "Grants permission to list iSCSI initiators that are connected to a volume",
+      "accessLevel": "List",
       "resourceTypes": [
         "volume*"
       ],
@@ -648,7 +737,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation lists the recovery points for a specified gateway.",
+      "description": "Grants permission to list the recovery points for a specified gateway",
       "accessLevel": "List",
       "resourceTypes": [
         "gateway*"
@@ -661,7 +750,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation lists the iSCSI stored volumes of a gateway.",
+      "description": "Grants permission to list the iSCSI stored volumes of a gateway",
       "accessLevel": "List",
       "resourceTypes": [
         "gateway*"
@@ -674,7 +763,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This action sends you a notification through CloudWatch Events when all files written\n                                                to your NFS file share have been uploaded to Amazon S3.",
+      "description": "Grants permission to send you a notification through CloudWatch Events when all files\n                                                written to your NFS file share have been uploaded to Amazon S3",
       "accessLevel": "Write",
       "resourceTypes": [
         "share*"
@@ -687,7 +776,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation refreshes the cache for the specified file share.",
+      "description": "Grants permission to refresh the cache for the specified file share",
       "accessLevel": "Write",
       "resourceTypes": [
         "share*"
@@ -700,7 +789,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation removes one or more tags from the specified resource.",
+      "description": "Grants permission to remove one or more tags from the specified resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "gateway"
@@ -713,7 +802,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation resets all cache disks that have encountered a error and makes the\n                                                disks available for reconfiguration as cache storage.",
+      "description": "Grants permission to reset all cache disks that have encountered a error and makes\n                                                the disks available for reconfiguration as cache storage",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
@@ -726,7 +815,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "Retrieves an archived virtual tape from the virtual tape shelf (VTS) to a gateway-VTL.",
+      "description": "Grants permission to retrieve an archived virtual tape from the virtual tape shelf\n                                                (VTS) to a gateway-VTL",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
@@ -739,7 +828,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "Retrieves the recovery point for the specified virtual tape.",
+      "description": "Grants permission to retrieve the recovery point for the specified virtual tape",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
@@ -752,7 +841,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "Sets the password for your VM local console.",
+      "description": "Grants permission to set the password for your VM local console",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
@@ -765,7 +854,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "Sets the password for SMB Guest user.",
+      "description": "Grants permission to set the password for SMB Guest user",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
@@ -778,7 +867,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation shuts down a gateway.",
+      "description": "Grants permission to shut down a gateway",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
@@ -791,7 +880,20 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation starts a gateway that you previously shut down.",
+      "description": "Grants permission to start a gateway that you previously shut down",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAutomaticTapeCreationPolicy": {
+      "name": "UpdateAutomaticTapeCreationPolicy",
+      "topics": [
+        "Amazon Storage Gateway"
+      ],
+      "description": "Grants permission to update the automatic tape creation policy configured on a gateway-VTL",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
@@ -804,7 +906,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation updates the bandwidth rate limits of a gateway.",
+      "description": "Grants permission to update the bandwidth rate limits of a gateway",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
@@ -817,7 +919,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation updates the Challenge-Handshake Authentication Protocol (CHAP) credentials\n                                                for a specified iSCSI target.",
+      "description": "Grants permission to update the Challenge-Handshake Authentication Protocol (CHAP)\n                                                credentials for a specified iSCSI target",
       "accessLevel": "Write",
       "resourceTypes": [
         "target*"
@@ -830,7 +932,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation updates a gateway's metadata, which includes the gateway's name and\n                                                time zone.",
+      "description": "Grants permission to update a gateway's metadata, which includes the gateway's name\n                                                and time zone",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
@@ -843,7 +945,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation updates the gateway virtual machine (VM) software.",
+      "description": "Grants permission to update the gateway virtual machine (VM) software",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
@@ -856,7 +958,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation updates a gateway's weekly maintenance start time information, including\n                                                day and time of the week. The maintenance time is the time in your gateway's time\n                                                zone.",
+      "description": "Grants permission to update a gateway's weekly maintenance start time information,\n                                                including day and time of the week. The maintenance time is the time in your gateway's\n                                                time zone",
       "accessLevel": "Write",
       "resourceTypes": [
         "gateway*"
@@ -869,7 +971,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation updates a NFS file share.",
+      "description": "Grants permission to update a NFS file share",
       "accessLevel": "Write",
       "resourceTypes": [
         "share*"
@@ -882,7 +984,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation updates a SMB file share.",
+      "description": "Grants permission to update a SMB file share",
       "accessLevel": "Write",
       "resourceTypes": [
         "share*"
@@ -895,7 +997,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation updates a snapshot schedule configured for a gateway volume.",
+      "description": "Grants permission to update a snapshot schedule configured for a gateway volume",
       "accessLevel": "Write",
       "resourceTypes": [
         "volume*"
@@ -908,7 +1010,7 @@
       "topics": [
         "Amazon Storage Gateway"
       ],
-      "description": "This operation updates the type of medium changer in a gateway-VTL.",
+      "description": "Grants permission to update the type of medium changer in a gateway-VTL",
       "accessLevel": "Write",
       "resourceTypes": [
         "device*"

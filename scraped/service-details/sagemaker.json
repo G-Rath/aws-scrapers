@@ -79,6 +79,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "CreateAppImageConfig": {
+      "name": "CreateAppImageConfig",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to create an AppImageConfig",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-image-config*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "CreateAutoMLJob": {
       "name": "CreateAutoMLJob",
       "topics": [
@@ -208,6 +221,32 @@
       ],
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
+    },
+    "CreateImage": {
+      "name": "CreateImage",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permissions to create a SageMaker Image.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "image*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "CreateImageVersion": {
+      "name": "CreateImageVersion",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permissions to create a SageMaker ImageVersion.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "image*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
     },
     "CreateLabelingJob": {
       "name": "CreateLabelingJob",
@@ -443,6 +482,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeleteAppImageConfig": {
+      "name": "DeleteAppImageConfig",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to delete an AppImageConfig",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-image-config*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteCodeRepository": {
       "name": "DeleteCodeRepository",
       "topics": [
@@ -530,6 +582,32 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "human-loop*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteImage": {
+      "name": "DeleteImage",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permissions to delete a SageMaker Image.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "image*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteImageVersion": {
+      "name": "DeleteImageVersion",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permissions to delete a SageMaker ImageVersion.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "image-version*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -703,6 +781,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DescribeAppImageConfig": {
+      "name": "DescribeAppImageConfig",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to describe an AppImageConfig",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "app-image-config*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DescribeAutoMLJob": {
       "name": "DescribeAutoMLJob",
       "topics": [
@@ -842,6 +933,32 @@
       "accessLevel": "Read",
       "resourceTypes": [
         "hyper-parameter-tuning-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeImage": {
+      "name": "DescribeImage",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permissions to return information about a SageMaker Image.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "image*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeImageVersion": {
+      "name": "DescribeImageVersion",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permissions to return information about a SageMaker ImageVersion.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "image-version*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1089,6 +1206,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ListAppImageConfigs": {
+      "name": "ListAppImageConfigs",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to list the AppImageConfigs in your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ListApps": {
       "name": "ListApps",
       "topics": [
@@ -1227,6 +1355,30 @@
         "Amazon SageMaker"
       ],
       "description": "Lists hyper parameter tuning jobs that was created using Amazon SageMaker.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListImageVersions": {
+      "name": "ListImageVersions",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permissions to list ImageVersions that belong to a SageMaker Image.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "image*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListImages": {
+      "name": "ListImages",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permissions to list SageMaker Images in your account.",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1638,6 +1790,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "UpdateAppImageConfig": {
+      "name": "UpdateAppImageConfig",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to update an AppImageConfig",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-image-config*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "UpdateCodeRepository": {
       "name": "UpdateCodeRepository",
       "topics": [
@@ -1702,6 +1867,19 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
+    },
+    "UpdateImage": {
+      "name": "UpdateImage",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permissions to update the properties of a SageMaker Image.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "image*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
     },
     "UpdateMonitoringSchedule": {
       "name": "UpdateMonitoringSchedule",

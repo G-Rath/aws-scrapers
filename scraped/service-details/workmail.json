@@ -123,7 +123,7 @@
       "topics": [
         "Amazon WorkMail"
       ],
-      "description": "Creates an organization, either using an existing directory or creates a new directory\n                                                on-the-fly. Also creates and enables the complementary mail domain. Optionally creates\n                                                KMS key",
+      "description": "Creates a new Amazon WorkMail organization.",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -277,7 +277,7 @@
       "topics": [
         "Amazon WorkMail"
       ],
-      "description": "Removes an organization from an account, either removing the directory from directory\n                                                services or leaving it available for re-use",
+      "description": "Deletes an Amazon WorkMail organization and all underlying AWS resources managed by\n                                                Amazon WorkMail as part of the organization.",
       "accessLevel": "Write",
       "resourceTypes": [
         "organization*"

@@ -6,10 +6,36 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Activates a partner event source that has been deactivated. Once activated, your matching\n                                                event bus will start receiving events from the event source.",
+      "description": "Grants permission to activate partner event sources",
       "accessLevel": "Write",
       "resourceTypes": [
         "event-source*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CancelReplay": {
+      "name": "CancelReplay",
+      "topics": [
+        "Amazon EventBridge"
+      ],
+      "description": "Grants permission to cancel a replay",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "replay*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateArchive": {
+      "name": "CreateArchive",
+      "topics": [
+        "Amazon EventBridge"
+      ],
+      "description": "Grants permission to create a new archive",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "archive*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -19,7 +45,7 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Creates a new event bus within your account. This can be a custom event bus which\n                                                you can use to receive events from your own custom applications and services, or it\n                                                can be a partner event bus which can be matched to a partner event source.",
+      "description": "Grants permission to create event buses",
       "accessLevel": "Write",
       "resourceTypes": [
         "event-bus*"
@@ -32,7 +58,7 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Called by an AWS partner to create a partner event source.",
+      "description": "Grants permission to create partner event sources",
       "accessLevel": "Write",
       "resourceTypes": [
         "event-source*"
@@ -45,10 +71,23 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Called by an AWS partner to create a partner event source.",
+      "description": "Grants permission to deactivate event sources",
       "accessLevel": "Write",
       "resourceTypes": [
         "event-source*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteArchive": {
+      "name": "DeleteArchive",
+      "topics": [
+        "Amazon EventBridge"
+      ],
+      "description": "Grants permission to delete an archive",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "archive*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -58,7 +97,7 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Deletes the specified custom event bus or partner event bus. All rules associated\n                                                with this event bus are also deleted. You can't delete your account's default event\n                                                bus.",
+      "description": "Grants permission to delete event buses",
       "accessLevel": "Write",
       "resourceTypes": [
         "event-bus*"
@@ -71,7 +110,7 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Called by an AWS partner to delete a partner event source.",
+      "description": "Grants permission to delete partner event sources",
       "accessLevel": "Write",
       "resourceTypes": [
         "event-source*"
@@ -84,10 +123,23 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Deletes a rule. You must remove all targets from a rule using RemoveTargets before\n                                                you can delete the rule.",
+      "description": "Grants permission to delete rules",
       "accessLevel": "Write",
       "resourceTypes": [
         "rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeArchive": {
+      "name": "DescribeArchive",
+      "topics": [
+        "Amazon EventBridge"
+      ],
+      "description": "Grants permission to retrieve details about an archive",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "archive*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -97,7 +149,7 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Displays the external AWS accounts that are permitted to write events to your account\n                                                using your account's event bus, and the associated policy.",
+      "description": "Grants permission to retrieve details about event buses",
       "accessLevel": "Read",
       "resourceTypes": [
         "event-bus"
@@ -110,7 +162,7 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Describes the details of the specified partner event source that is shared with your\n                                                account.",
+      "description": "Grants permission to retrieve details about event sources",
       "accessLevel": "Read",
       "resourceTypes": [
         "event-source*"
@@ -123,10 +175,23 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Called by an AWS partner describe the details of the specified partner event source\n                                                that they have created.",
+      "description": "Grants permission to retrieve details about partner event sources",
       "accessLevel": "Read",
       "resourceTypes": [
         "event-source*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeReplay": {
+      "name": "DescribeReplay",
+      "topics": [
+        "Amazon EventBridge"
+      ],
+      "description": "Grants permission to retrieve the details of a replay",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "replay*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -136,7 +201,7 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Describes the details of the specified rule.",
+      "description": "Grants permission to retrieve details about rules",
       "accessLevel": "Read",
       "resourceTypes": [
         "rule*"
@@ -149,7 +214,7 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Disables a rule. A disabled rule won't match any events, and won't self-trigger if\n                                                it has a schedule expression.",
+      "description": "Grants permission to disable rules",
       "accessLevel": "Write",
       "resourceTypes": [
         "rule*"
@@ -162,11 +227,22 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Enables a rule. If the rule does not exist, the operation fails.",
+      "description": "Grants permissions to enable rules",
       "accessLevel": "Write",
       "resourceTypes": [
         "rule*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListArchives": {
+      "name": "ListArchives",
+      "topics": [
+        "Amazon EventBridge"
+      ],
+      "description": "Grants permission to retrieve a list of archives",
+      "accessLevel": "List",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -175,7 +251,7 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Lists all the event buses in your account, including the default event bus, custom\n                                                event buses, and partner event buses.",
+      "description": "Grants permission to to retrieve a list of the event buses in your account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -186,7 +262,7 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Lists the event sources shared with this account.",
+      "description": "Grants permission to to retrieve a list of event sources shared with this account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -197,7 +273,7 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Called by an AWS partner to display the AWS account ID that the specified partner\n                                                event source is associated with.",
+      "description": "Grants permission to retrieve a list of AWS account IDs associated with an event source",
       "accessLevel": "List",
       "resourceTypes": [
         "event-source*"
@@ -210,7 +286,18 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Called by an AWS partner to list all the partner event sources that they have created.",
+      "description": "Grants permission to retrieve a list partner event sources",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListReplays": {
+      "name": "ListReplays",
+      "topics": [
+        "Amazon EventBridge"
+      ],
+      "description": "Grants permission to retrieve a list of replays",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -221,7 +308,7 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Lists the names of the rules that the given target is put to.",
+      "description": "Grants permission to retrieve a list of the names of the rules associated with a target",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -232,7 +319,7 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Lists the Amazon EventBridge rules in your account.",
+      "description": "Grants permission to retrieve a list of the Amazon EventBridge rules in the account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -243,7 +330,7 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "This action lists tags for an Amazon EventBridge resource.",
+      "description": "Grants permission to retrieve a list of tags associated with an Amazon EventBridge\n                                                resource",
       "accessLevel": "List",
       "resourceTypes": [
         "event-bus"
@@ -256,7 +343,7 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Lists of targets assigned to the rule.",
+      "description": "Grants permission to retrieve a list of targets defined for a rule",
       "accessLevel": "List",
       "resourceTypes": [
         "rule*"
@@ -269,7 +356,7 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Sends custom events to Amazon EventBridge so that they can be matched to rules.",
+      "description": "Grants permission to send custom events to Amazon EventBridge",
       "accessLevel": "Write",
       "resourceTypes": [
         "event-bus*"
@@ -282,7 +369,7 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Sends custom events to Amazon EventBridge so that they can be matched to rules.",
+      "description": "Grants permission to sends custom events to Amazon EventBridge",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -293,7 +380,7 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Running PutPermission permits the specified AWS account to put events to your account's\n                                                default event bus.",
+      "description": "Grants permission to use the PutPermission action to grants permission to another\n                                                AWS account to put events to your default event bus",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -304,7 +391,7 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Creates or updates a rule. Rules are enabled by default, or based on value of the\n                                                State parameter.",
+      "description": "Grants permission to create or updates rules",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "rule*"
@@ -317,7 +404,7 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Adds target(s) to a rule. Targets are the resources that can be invoked when a rule\n                                                is triggered.",
+      "description": "Grants permission to add targets to a rule",
       "accessLevel": "Write",
       "resourceTypes": [
         "rule*"
@@ -330,7 +417,7 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Revokes the permission of another AWS account to be able to put events to your default\n                                                event bus.",
+      "description": "Grants permission to revoke the permission of another AWS account to put events to\n                                                your default event bus",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -341,10 +428,23 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Removes target(s) from a rule so that when the rule is triggered, those targets will\n                                                no longer be invoked.",
+      "description": "Grants permission to removes targets from a rule",
       "accessLevel": "Write",
       "resourceTypes": [
         "rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartReplay": {
+      "name": "StartReplay",
+      "topics": [
+        "Amazon EventBridge"
+      ],
+      "description": "Grants permission to start a replay of an archive",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "archive*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -354,7 +454,7 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "This action tags an Amazon EventBridge resource.",
+      "description": "Grants permission to add a tag to an Amazon EventBridge resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "event-bus"
@@ -367,7 +467,7 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "Tests whether an event pattern matches the provided event.",
+      "description": "Grants permissions to test whether an event pattern matches the provided event",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -378,10 +478,23 @@
       "topics": [
         "Amazon EventBridge"
       ],
-      "description": "This action removes a tag from an Amazon EventBridge resource.",
+      "description": "Grants permission to remove a tag from an Amazon EventBridge resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "event-bus"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateArchive": {
+      "name": "UpdateArchive",
+      "topics": [
+        "Amazon EventBridge"
+      ],
+      "description": "Grants permission to update an archive",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "archive*"
       ],
       "conditionKeys": "",
       "dependentActions": ""

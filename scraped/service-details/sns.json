@@ -47,7 +47,7 @@
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "iam:PassRole"
     },
     "CreatePlatformEndpoint": {
       "name": "CreatePlatformEndpoint",
@@ -71,7 +71,7 @@
         "topic*"
       ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "iam:PassRole"
     },
     "DeleteEndpoint": {
       "name": "DeleteEndpoint",
@@ -303,7 +303,7 @@
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "iam:PassRole"
     },
     "SetSMSAttributes": {
       "name": "SetSMSAttributes",
@@ -338,7 +338,7 @@
         "topic*"
       ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "iam:PassRole"
     },
     "Subscribe": {
       "name": "Subscribe",
