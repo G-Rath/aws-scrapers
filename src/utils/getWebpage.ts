@@ -7,7 +7,9 @@ import path from 'path';
 const hashString = (str: string): string =>
   crypto.createHash('md5').update(str).digest('hex');
 
-const cacheDir = './.tmp/docs-cache/';
+const cacheDirPostfix = process.env.CACHE_DIR_POSTFIX ?? 1;
+
+const cacheDir = `./.tmp/docs-cache-${cacheDirPostfix}/`;
 
 // ensure the cache dir exists
 mkdirSync(cacheDir, { recursive: true });
