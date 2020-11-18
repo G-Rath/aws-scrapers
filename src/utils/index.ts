@@ -2,6 +2,8 @@ export * from './writeFreshListOfAllActions';
 export * from './readInServiceDetails';
 export * from './createLogger';
 export * from './mergeDetails';
+export * from './FileWatcher';
 export * from './getWebpage';
 export * from './constants';
+export * from './cursor';
 export * from './chunk';
