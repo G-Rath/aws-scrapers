@@ -6603,8 +6603,10 @@ export type AWSServiceEventName =
 
 export type AWSConsoleSignInEventName =
   | 'ConsoleLogin'
+  | 'CheckMfa'
   | 'SwitchRole'
-  | 'CheckMfa';
+  | 'RenewRole'
+  | 'ExitRole';
 
 export type AWSRegion =
   | 'us-east-1'

@@ -34,7 +34,10 @@ const unions: Union[] = [
       'ConsoleLogin'
     ]
   ],
-  ['AWSConsoleSignInEventName', ['ConsoleLogin', 'SwitchRole', 'CheckMfa']],
+  [
+    'AWSConsoleSignInEventName',
+    ['ConsoleLogin', 'CheckMfa', 'SwitchRole', 'RenewRole', 'ExitRole']
+  ],
   [
     'AWSRegion',
     [
