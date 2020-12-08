@@ -17,8 +17,8 @@ export interface ServiceDetails {
   topics: string[];
 }
 
-const selectTagElements = (elements: cheerio.Element[]): cheerio.Element[] =>
-  elements.filter(element => element.type === 'tag');
+const selectTagElements = (elements: cheerio.Element[]): cheerio.TagElement[] =>
+  elements.filter((ele): ele is cheerio.TagElement => ele.type === 'tag');
 
 export class ServiceTopicScraper {
   private readonly _name: string;
@@ -64,7 +64,7 @@ export class ServiceTopicScraper {
       | cheerio.Element
       | undefined;
 
-    if (!firstCodeElement) {
+    if (!firstCodeElement || firstCodeElement.type === 'text') {
       console.warn(
         'unable to find service prefix: failed to find any code elements'
       );
@@ -76,7 +76,7 @@ export class ServiceTopicScraper {
       console.warn('code element has more than one child');
     }
 
-    const { data } = firstCodeElement.firstChild;
+    const { data } = firstCodeElement.firstChild ?? {};
 
     if (!data) {
       this._logger.warn(
@@ -123,10 +123,9 @@ export class ServiceTopicScraper {
       );
     }
 
-    const rowElements = $table
-      .find('tbody')
-      .find('tr')
-      .get() as cheerio.Element[];
+    const rowElements = selectTagElements(
+      $table.find('tbody').find('tr').get() as cheerio.Element[]
+    );
 
     // const groupedRowElements = this._groupRowsBasedOnRowSpans($, rowElements);
     //
@@ -221,7 +220,7 @@ export class ServiceTopicScraper {
 
   private _countColumnsSpanned(
     $: cheerio.Root,
-    element: cheerio.Element
+    element: cheerio.TagElement
   ): number {
     return selectTagElements(element.children).findIndex(
       ele => $(ele).attr('rowspan') === undefined
@@ -230,7 +229,7 @@ export class ServiceTopicScraper {
 
   private _getActionName(
     $: cheerio.Root,
-    tableRowElement: cheerio.Element,
+    tableRowElement: cheerio.TagElement,
     index: number
   ): string {
     const [firstTag] = selectTagElements(tableRowElement.children);

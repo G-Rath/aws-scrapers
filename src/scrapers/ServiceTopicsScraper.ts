@@ -22,7 +22,8 @@ export class ServiceTopicsScraper {
     }
 
     return ($highlightsList.find('li a').get() as cheerio.Element[])
-      .map(element => [element.firstChild.data, element.attribs.href])
+      .filter((ele): ele is cheerio.TagElement => ele.type === 'tag')
+      .map(element => [element.firstChild?.data, element.attribs.href])
       .filter((topic): topic is ServiceTopicTuple => {
         if (!topic[1]) {
           console.warn('skipping', topic[0], 'as topic has no link');
