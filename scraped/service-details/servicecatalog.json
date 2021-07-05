@@ -19,7 +19,7 @@
       "topics": [
         "AWS Service Catalog"
       ],
-      "description": "Grants permission to associate an attribute group with an application.",
+      "description": "Grants permission to associate an attribute group with an application",
       "accessLevel": "Write",
       "resourceTypes": [
         "Application*"
@@ -67,7 +67,7 @@
       "topics": [
         "AWS Service Catalog"
       ],
-      "description": "Grants permission to associate a resource with an application.",
+      "description": "Grants permission to associate a resource with an application",
       "accessLevel": "Write",
       "resourceTypes": [
         "Application*"
@@ -139,20 +139,20 @@
       "topics": [
         "AWS Service Catalog"
       ],
-      "description": "Grants permission to create an application.",
+      "description": "Grants permission to create an application",
       "accessLevel": "Write",
       "resourceTypes": [
         "Application*"
       ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "iam:CreateServiceLinkedRole"
     },
     "CreateAttributeGroup": {
       "name": "CreateAttributeGroup",
       "topics": [
         "AWS Service Catalog"
       ],
-      "description": "Grants permission to create an attribute group.",
+      "description": "Grants permission to create an attribute group",
       "accessLevel": "Write",
       "resourceTypes": [
         "AttributeGroup*"
@@ -263,7 +263,7 @@
       "topics": [
         "AWS Service Catalog"
       ],
-      "description": "Grants permission to delete an application if all associations have been removed from\n                                                the application.",
+      "description": "Grants permission to delete an application if all associations have been removed from\n                                                the application",
       "accessLevel": "Write",
       "resourceTypes": [
         "Application*"
@@ -276,7 +276,7 @@
       "topics": [
         "AWS Service Catalog"
       ],
-      "description": "Grants permission to delete an attribute group if all associations have been removed\n                                                from the attribute group.",
+      "description": "Grants permission to delete an attribute group if all associations have been removed\n                                                from the attribute group",
       "accessLevel": "Write",
       "resourceTypes": [
         "AttributeGroup*"
@@ -426,6 +426,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DescribePortfolioShares": {
+      "name": "DescribePortfolioShares",
+      "topics": [
+        "AWS Service Catalog"
+      ],
+      "description": "Grants permission to view a summary of each of the portfolio shares that were created\n                                                for the specified portfolio",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "Portfolio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DescribeProduct": {
       "name": "DescribeProduct",
       "topics": [
@@ -571,7 +584,7 @@
       "topics": [
         "AWS Service Catalog"
       ],
-      "description": "Grants permission to disassociate an attribute group from an application.",
+      "description": "Grants permission to disassociate an attribute group from an application",
       "accessLevel": "Write",
       "resourceTypes": [
         "Application*"
@@ -619,7 +632,7 @@
       "topics": [
         "AWS Service Catalog"
       ],
-      "description": "Grants permission to disassociate a resource from an application.",
+      "description": "Grants permission to disassociate a resource from an application",
       "accessLevel": "Write",
       "resourceTypes": [
         "Application*"
@@ -702,7 +715,7 @@
       "topics": [
         "AWS Service Catalog"
       ],
-      "description": "Grants permission to get an application.",
+      "description": "Grants permission to get an application",
       "accessLevel": "Read",
       "resourceTypes": [
         "Application*"
@@ -715,11 +728,22 @@
       "topics": [
         "AWS Service Catalog"
       ],
-      "description": "Grants permission to get an attribute group.",
+      "description": "Grants permission to get an attribute group",
       "accessLevel": "Read",
       "resourceTypes": [
         "AttributeGroup*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetProvisionedProductOutputs": {
+      "name": "GetProvisionedProductOutputs",
+      "topics": [
+        "AWS Service Catalog"
+      ],
+      "description": "Grants permission to get the provisioned product output with either provisioned product\n                                                id or name",
+      "accessLevel": "Read",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -728,7 +752,7 @@
       "topics": [
         "AWS Service Catalog"
       ],
-      "description": "Grants permission to import a resource into a provisioned product.",
+      "description": "Grants permission to import a resource into a provisioned product",
       "accessLevel": "Write",
       "resourceTypes": [
         "Product*"
@@ -752,7 +776,7 @@
       "topics": [
         "AWS Service Catalog"
       ],
-      "description": "Grants permission to list the applications in your account.",
+      "description": "Grants permission to list the applications in your account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -763,7 +787,7 @@
       "topics": [
         "AWS Service Catalog"
       ],
-      "description": "Grants permission to list the attribute groups associated with an application.",
+      "description": "Grants permission to list the attribute groups associated with an application",
       "accessLevel": "List",
       "resourceTypes": [
         "Application*"
@@ -776,7 +800,7 @@
       "topics": [
         "AWS Service Catalog"
       ],
-      "description": "Grants permission to list the resources associated with an application.",
+      "description": "Grants permission to list the resources associated with an application",
       "accessLevel": "List",
       "resourceTypes": [
         "Application*"
@@ -789,7 +813,7 @@
       "topics": [
         "AWS Service Catalog"
       ],
-      "description": "Grants permission to list the attribute groups in your account.",
+      "description": "Grants permission to list the attribute groups in your account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -994,6 +1018,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "AWS Service Catalog"
+      ],
+      "description": "Grants permission to list the tags for a service catalog appregistry resource",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "Application"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ProvisionProduct": {
       "name": "ProvisionProduct",
       "topics": [
@@ -1064,6 +1101,30 @@
       "conditionKeys": "servicecatalog:accountLevel\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      servicecatalog:roleLevel\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      servicecatalog:userLevel",
       "dependentActions": ""
     },
+    "SyncResource": {
+      "name": "SyncResource",
+      "topics": [
+        "AWS Service Catalog"
+      ],
+      "description": "Grants permission to sync a resource with its current state in AppRegistry",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "AWS Service Catalog"
+      ],
+      "description": "Grants permission to tag a service catalog appregistry resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "Application"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "TerminateProvisionedProduct": {
       "name": "TerminateProvisionedProduct",
       "topics": [
@@ -1075,25 +1136,38 @@
       "conditionKeys": "servicecatalog:accountLevel\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      servicecatalog:roleLevel\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      servicecatalog:userLevel",
       "dependentActions": ""
     },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "AWS Service Catalog"
+      ],
+      "description": "Grants permission to remove a tag from a service catalog appregistry resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "Application"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "UpdateApplication": {
       "name": "UpdateApplication",
       "topics": [
         "AWS Service Catalog"
       ],
-      "description": "Grants permission to update the attributes of an existing application.",
+      "description": "Grants permission to update the attributes of an existing application",
       "accessLevel": "Write",
       "resourceTypes": [
         "Application*"
       ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "iam:CreateServiceLinkedRole"
     },
     "UpdateAttributeGroup": {
       "name": "UpdateAttributeGroup",
       "topics": [
         "AWS Service Catalog"
       ],
-      "description": "Grants permission to update the attributes of an existing attribute group.",
+      "description": "Grants permission to update the attributes of an existing attribute group",
       "accessLevel": "Write",
       "resourceTypes": [
         "AttributeGroup*"
@@ -1119,6 +1193,19 @@
       ],
       "description": "Grants permission to update the metadata fields and/or tags of an existing portfolio",
       "accessLevel": "Write",
+      "resourceTypes": [
+        "Portfolio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdatePortfolioShare": {
+      "name": "UpdatePortfolioShare",
+      "topics": [
+        "AWS Service Catalog"
+      ],
+      "description": "Grants permission to enable or disable resource sharing for an existing portfolio\n                                                share",
+      "accessLevel": "Permissions management",
       "resourceTypes": [
         "Portfolio*"
       ],

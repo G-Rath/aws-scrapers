@@ -1,0 +1,609 @@
+{
+  "servicePrefix": "geo",
+  "actions": {
+    "AssociateTrackerConsumer": {
+      "name": "AssociateTrackerConsumer",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to create an association between a geofence-collection and a tracker\n                                                resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "tracker*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchDeleteDevicePositionHistory": {
+      "name": "BatchDeleteDevicePositionHistory",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to delete a batch of device position histories from a tracker resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "tracker*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchDeleteGeofence": {
+      "name": "BatchDeleteGeofence",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to delete a batch of geofences from a geofence collection",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "geofence-collection*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchEvaluateGeofences": {
+      "name": "BatchEvaluateGeofences",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to evaluate device positions against the position of geofences in\n                                                a given geofence collection",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "geofence-collection*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchGetDevicePosition": {
+      "name": "BatchGetDevicePosition",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to send a batch request to retrieve device positions",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "tracker*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchPutGeofence": {
+      "name": "BatchPutGeofence",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to send a batch request for adding geofences into a given geofence\n                                                collection",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "geofence-collection*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchUpdateDevicePosition": {
+      "name": "BatchUpdateDevicePosition",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to upload a position update for one or more devices to a tracker\n                                                resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "tracker*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CalculateRoute": {
+      "name": "CalculateRoute",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to calculate routes using a given route calculator resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "route-calculator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateGeofenceCollection": {
+      "name": "CreateGeofenceCollection",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to create a geofence-collection",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "geofence-collection*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateMap": {
+      "name": "CreateMap",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to create a map resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "map*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreatePlaceIndex": {
+      "name": "CreatePlaceIndex",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to create a place index resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "place-index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateRouteCalculator": {
+      "name": "CreateRouteCalculator",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to create a route calculator resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "route-calculator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateTracker": {
+      "name": "CreateTracker",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to create a tracker resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "tracker*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteGeofenceCollection": {
+      "name": "DeleteGeofenceCollection",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to delete a geofence-collection",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "geofence-collection*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteMap": {
+      "name": "DeleteMap",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to delete a map resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "map*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeletePlaceIndex": {
+      "name": "DeletePlaceIndex",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to delete a place index resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "place-index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRouteCalculator": {
+      "name": "DeleteRouteCalculator",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to delete a route calculator resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "route-calculator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteTracker": {
+      "name": "DeleteTracker",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to delete a tracker resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "tracker*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeGeofenceCollection": {
+      "name": "DescribeGeofenceCollection",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to retrieve geofence collection details",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "geofence-collection*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeMap": {
+      "name": "DescribeMap",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to retrieve map resource details",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "map*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribePlaceIndex": {
+      "name": "DescribePlaceIndex",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to retrieve place-index resource details",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "place-index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeRouteCalculator": {
+      "name": "DescribeRouteCalculator",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to retrieve route calculator resource details",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "route-calculator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTracker": {
+      "name": "DescribeTracker",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to retrieve a tracker resource details",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "tracker*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateTrackerConsumer": {
+      "name": "DisassociateTrackerConsumer",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to remove the association between a tracker resource and a geofence-collection",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "tracker*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDevicePosition": {
+      "name": "GetDevicePosition",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to retrieve the latest device position",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "tracker*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDevicePositionHistory": {
+      "name": "GetDevicePositionHistory",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grant permission to retrieve the device position history",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "tracker*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetGeofence": {
+      "name": "GetGeofence",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to retrieve the geofence details from a geofence-collection.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "geofence-collection*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMapGlyphs": {
+      "name": "GetMapGlyphs",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to retrieve the glyph file for a map resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "map*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMapSprites": {
+      "name": "GetMapSprites",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to retrieve the sprite file for a map resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "map*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMapStyleDescriptor": {
+      "name": "GetMapStyleDescriptor",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to retrieve the map style descriptor from a map resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "map*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMapTile": {
+      "name": "GetMapTile",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to retrieve the map tile from the map resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "map*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDevicePositions": {
+      "name": "ListDevicePositions",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to retrieve a list of devices and their latest positions from the\n                                                given tracker resource",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "tracker*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGeofenceCollections": {
+      "name": "ListGeofenceCollections",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to lists geofence-collections",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGeofences": {
+      "name": "ListGeofences",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to list geofences stored in a given geofence collection",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "geofence-collection*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMaps": {
+      "name": "ListMaps",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to list map resources",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPlaceIndexes": {
+      "name": "ListPlaceIndexes",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to return a list of place index resources",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRouteCalculators": {
+      "name": "ListRouteCalculators",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to return a list of route calculator resources",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to list the tags (metadata) which you have assigned to the resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "geofence-collection"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTrackerConsumers": {
+      "name": "ListTrackerConsumers",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to retrieve a list of geofence collections currently associated\n                                                to the given tracker resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "tracker*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTrackers": {
+      "name": "ListTrackers",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to return a list of tracker resources",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutGeofence": {
+      "name": "PutGeofence",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to add a new geofence or update an existing geofence to a given\n                                                geofence-collection",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "geofence-collection*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchPlaceIndexForPosition": {
+      "name": "SearchPlaceIndexForPosition",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to reverse geocodes a given coordinate",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "place-index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchPlaceIndexForText": {
+      "name": "SearchPlaceIndexForText",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to geocode free-form text, such as an address, name, city or region",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "place-index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to adds to or modifies the tags of the given resource. Tags are\n                                                metadata which can be used to manage a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "geofence-collection"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to remove the given tags (metadata) from the resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "geofence-collection"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateGeofenceCollection": {
+      "name": "UpdateGeofenceCollection",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to update the description of a geofence collection",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "geofence-collection*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateTracker": {
+      "name": "UpdateTracker",
+      "topics": [
+        "Amazon Location"
+      ],
+      "description": "Grants permission to update the description of a tracker resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "tracker*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "Amazon Location"
+  ]
+}

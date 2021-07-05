@@ -113,6 +113,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "BatchCreateChannelMembership": {
+      "name": "BatchCreateChannelMembership",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to add multiple users to a channel",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "BatchCreateRoomMembership": {
       "name": "BatchCreateRoomMembership",
       "topics": [
@@ -179,6 +192,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "Connect": {
+      "name": "Connect",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to establish a web socket connection for app instance user to the\n                                                messaging session endpoint",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ConnectDirectory": {
       "name": "ConnectDirectory",
       "topics": [
@@ -210,6 +236,41 @@
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAppInstance": {
+      "name": "CreateAppInstance",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to create an app instance under the AWS account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "dependentActions": ""
+    },
+    "CreateAppInstanceAdmin": {
+      "name": "CreateAppInstanceAdmin",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to promote an AppInstanceUser to an AppInstanceAdmin",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAppInstanceUser": {
+      "name": "CreateAppInstanceUser",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to create a user under an Amazon Chime AppInstance",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
       "dependentActions": ""
     },
     "CreateAttendee": {
@@ -258,6 +319,58 @@
       "conditionKeys": "",
       "dependentActions": "s3:CreateBucket\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:ListAllMyBuckets"
     },
+    "CreateChannel": {
+      "name": "CreateChannel",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to create a channel for an app instance under the AWS account",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateChannelBan": {
+      "name": "CreateChannelBan",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to ban a user from a channel",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateChannelMembership": {
+      "name": "CreateChannelMembership",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to add a user to a channel",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateChannelModerator": {
+      "name": "CreateChannelModerator",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to create a channel moderator",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "CreateMeeting": {
       "name": "CreateMeeting",
       "topics": [
@@ -267,6 +380,19 @@
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateMeetingDialOut": {
+      "name": "CreateMeetingDialOut",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to call a phone number to join the specified Amazon Chime SDK meeting",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "meeting*"
+      ],
+      "conditionKeys": "",
       "dependentActions": ""
     },
     "CreateMeetingWithAttendees": {
@@ -319,6 +445,39 @@
         "Amazon Chime"
       ],
       "description": "Grants permission to add a room member",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateSipMediaApplication": {
+      "name": "CreateSipMediaApplication",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to create an Amazon Chime SIP media application under the administrator's\n                                                AWS account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateSipMediaApplicationCall": {
+      "name": "CreateSipMediaApplicationCall",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to create outbound call for Amazon Chime SIP media application under\n                                                the administrator's AWS account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateSipRule": {
+      "name": "CreateSipRule",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to create an Amazon Chime SIP rule under the administrator's AWS\n                                                account",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -390,6 +549,58 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeleteAppInstance": {
+      "name": "DeleteAppInstance",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to delete an AppInstance",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAppInstanceAdmin": {
+      "name": "DeleteAppInstanceAdmin",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to demote an AppInstanceAdmin to an AppInstanceUser",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAppInstanceStreamingConfigurations": {
+      "name": "DeleteAppInstanceStreamingConfigurations",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to disable data streaming for the app instance",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAppInstanceUser": {
+      "name": "DeleteAppInstanceUser",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to delete an AppInstanceUser",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteAttendee": {
       "name": "DeleteAttendee",
       "topics": [
@@ -413,6 +624,71 @@
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": "s3:DeleteBucket"
+    },
+    "DeleteChannel": {
+      "name": "DeleteChannel",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to delete a channel",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteChannelBan": {
+      "name": "DeleteChannelBan",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to remove a user from a channel's ban list",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteChannelMembership": {
+      "name": "DeleteChannelMembership",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to remove a member from a channel",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteChannelMessage": {
+      "name": "DeleteChannelMessage",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to delete a channel message",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteChannelModerator": {
+      "name": "DeleteChannelModerator",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to delete a channel moderator",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
     },
     "DeleteDelegate": {
       "name": "DeleteDelegate",
@@ -515,6 +791,28 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeleteSipMediaApplication": {
+      "name": "DeleteSipMediaApplication",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to delete Amazon Chime SIP media application under the administrator's\n                                                AWS account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSipRule": {
+      "name": "DeleteSipRule",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to delete Amazon Chime SIP rule under the administrator's AWS account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteVoiceConnector": {
       "name": "DeleteVoiceConnector",
       "topics": [
@@ -600,6 +898,123 @@
       "description": "Grants permission to delete SIP termination credentials for the specified Amazon Chime\n                                                Voice Connector",
       "accessLevel": "Write",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAppInstance": {
+      "name": "DescribeAppInstance",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to get the full details of an AppInstance",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "app-instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAppInstanceAdmin": {
+      "name": "DescribeAppInstanceAdmin",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to get the full details of an AppInstanceAdmin",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "app-instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAppInstanceUser": {
+      "name": "DescribeAppInstanceUser",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to get the full details of an AppInstanceUser",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeChannel": {
+      "name": "DescribeChannel",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to get the full details of a channel",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeChannelBan": {
+      "name": "DescribeChannelBan",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to get the full details of a channel ban",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeChannelMembership": {
+      "name": "DescribeChannelMembership",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to get the full details of a channel membership",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeChannelMembershipForAppInstanceUser": {
+      "name": "DescribeChannelMembershipForAppInstanceUser",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to get the details of a channel based on the membership of the specified\n                                                AppInstanceUser",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeChannelModeratedByAppInstanceUser": {
+      "name": "DescribeChannelModeratedByAppInstanceUser",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to get the full details of a channel moderated by the specified\n                                                AppInstanceUser",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeChannelModerator": {
+      "name": "DescribeChannelModerator",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to get the full details of a single ChannelModerator",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -702,6 +1117,32 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "GetAppInstanceRetentionSettings": {
+      "name": "GetAppInstanceRetentionSettings",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to get retention settings for an app instance",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "app-instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAppInstanceStreamingConfigurations": {
+      "name": "GetAppInstanceStreamingConfigurations",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to get the streaming configurations for an app instance",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "app-instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "GetAttendee": {
       "name": "GetAttendee",
       "topics": [
@@ -736,6 +1177,19 @@
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": "s3:GetBucketAcl\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:GetBucketLocation\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:GetBucketLogging\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:GetBucketVersioning\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:GetBucketWebsite"
+    },
+    "GetChannelMessage": {
+      "name": "GetChannelMessage",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to get the full details of a channel message",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
     },
     "GetDomain": {
       "name": "GetDomain",
@@ -789,6 +1243,17 @@
         "Amazon Chime"
       ],
       "description": "Grants permission to get attendee, connection, and other details for a meeting",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMessagingSessionEndpoint": {
+      "name": "GetMessagingSessionEndpoint",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to get the endpoint for the messaging session",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -855,6 +1320,39 @@
         "Amazon Chime"
       ],
       "description": "Grants permission to retrieve a room",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSipMediaApplication": {
+      "name": "GetSipMediaApplication",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to get details of Amazon Chime SIP media application under the administrator's\n                                                AWS account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSipMediaApplicationLoggingConfiguration": {
+      "name": "GetSipMediaApplicationLoggingConfiguration",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to get logging configuration settings for Amazon Chime SIP media\n                                                application under the administrator's AWS account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSipRule": {
+      "name": "GetSipRule",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to get details of Amazon Chime SIP rule under the administrator's\n                                                AWS account",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1080,13 +1578,52 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ListAppInstanceAdmins": {
+      "name": "ListAppInstanceAdmins",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to list administrators in the app instance",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "app-instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAppInstanceUsers": {
+      "name": "ListAppInstanceUsers",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to list all AppInstanceUsers created under a single app instance",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAppInstances": {
+      "name": "ListAppInstances",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to list all Amazon Chime app instances created under a single AWS\n                                                account",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "app-instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ListAttendeeTags": {
       "name": "ListAttendeeTags",
       "topics": [
         "Amazon Chime"
       ],
       "description": "Grants permission to list the tags applied to an Amazon Chime SDK attendee resource",
-      "accessLevel": "Read",
+      "accessLevel": "List",
       "resourceTypes": [
         "meeting*"
       ],
@@ -1099,7 +1636,7 @@
         "Amazon Chime"
       ],
       "description": "Grants permission to list up to 100 attendees for a specified Amazon Chime SDK meeting",
-      "accessLevel": "Read",
+      "accessLevel": "List",
       "resourceTypes": [
         "meeting*"
       ],
@@ -1136,6 +1673,97 @@
       "description": "Grants permission to list the calling regions available for the administrator's AWS\n                                                account",
       "accessLevel": "List",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListChannelBans": {
+      "name": "ListChannelBans",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to list all the users banned from a particular channel",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListChannelMemberships": {
+      "name": "ListChannelMemberships",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to list all channel memberships in a channel",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListChannelMembershipsForAppInstanceUser": {
+      "name": "ListChannelMembershipsForAppInstanceUser",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to list all channels that a particular AppInstanceUser is a part\n                                                of",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListChannelMessages": {
+      "name": "ListChannelMessages",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to list all the messages in a channel",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListChannelModerators": {
+      "name": "ListChannelModerators",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to list all the moderators for a channel",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListChannels": {
+      "name": "ListChannels",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to list all the Channels created under a single Chime AppInstance",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListChannelsModeratedByAppInstanceUser": {
+      "name": "ListChannelsModeratedByAppInstanceUser",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to list all channels moderated by an app instance user",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -1200,7 +1828,7 @@
         "Amazon Chime"
       ],
       "description": "Grants permission to list the tags applied to an Amazon Chime SDK meeting resource.",
-      "accessLevel": "Read",
+      "accessLevel": "List",
       "resourceTypes": [
         "meeting*"
       ],
@@ -1213,7 +1841,7 @@
         "Amazon Chime"
       ],
       "description": "Grants permission to list up to 100 active Amazon Chime SDK meetings",
-      "accessLevel": "Read",
+      "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1268,7 +1896,7 @@
         "Amazon Chime"
       ],
       "description": "Grants permission to list all room members",
-      "accessLevel": "Read",
+      "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1279,7 +1907,40 @@
         "Amazon Chime"
       ],
       "description": "Grants permission to list rooms",
-      "accessLevel": "Read",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSipMediaApplications": {
+      "name": "ListSipMediaApplications",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to list all Amazon Chime SIP media applications under the administrator's\n                                                AWS account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSipRules": {
+      "name": "ListSipRules",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to list all Amazon Chime SIP rules under the administrator's AWS\n                                                account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSupportedPhoneNumberCountries": {
+      "name": "ListSupportedPhoneNumberCountries",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to list the phone number countries supported by the AWS account",
+      "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1289,10 +1950,10 @@
       "topics": [
         "Amazon Chime"
       ],
-      "description": "Grants permission to list the tags applied to an Amazon Chime SDK meeting resource.",
-      "accessLevel": "Read",
+      "description": "Grants permission to list the tags applied to an Amazon Chime resource.",
+      "accessLevel": "List",
       "resourceTypes": [
-        "meeting"
+        "channel"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1352,6 +2013,32 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "PutAppInstanceRetentionSettings": {
+      "name": "PutAppInstanceRetentionSettings",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to enable data retention for the app instance",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutAppInstanceStreamingConfigurations": {
+      "name": "PutAppInstanceStreamingConfigurations",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to configure data streaming for the app instance",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "PutEventsConfiguration": {
       "name": "PutEventsConfiguration",
       "topics": [
@@ -1369,6 +2056,17 @@
         "Amazon Chime"
       ],
       "description": "Puts retention settings for the specified Amazon Chime account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutSipMediaApplicationLoggingConfiguration": {
+      "name": "PutSipMediaApplicationLoggingConfiguration",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to update logging configuration settings for Amazon Chime SIP media\n                                                application under the administrator's AWS account",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1448,6 +2146,19 @@
       "description": "Grants permission to add SIP termination credentials for the specified Amazon Chime\n                                                Voice Connector",
       "accessLevel": "Write",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RedactChannelMessage": {
+      "name": "RedactChannelMessage",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to redact message content",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -1561,6 +2272,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "SendChannelMessage": {
+      "name": "SendChannelMessage",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to send a message to a particular channel that the member is a part\n                                                of",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "StartDataExport": {
       "name": "StartDataExport",
       "topics": [
@@ -1625,10 +2349,10 @@
       "topics": [
         "Amazon Chime"
       ],
-      "description": "Grants permission to apply the specified tags to the specified Amazon Chime SDK meeting\n                                                resource.",
+      "description": "Grants permission to apply the specified tags to the specified Amazon Chime resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
-        "meeting"
+        "channel"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1675,10 +2399,10 @@
       "topics": [
         "Amazon Chime"
       ],
-      "description": "Grants permission to untag the specified tags from the specified Amazon Chime SDK\n                                                meeting resource.",
+      "description": "Grants permission to untag the specified tags from the specified Amazon Chime resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
-        "meeting"
+        "channel"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1727,6 +2451,32 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "UpdateAppInstance": {
+      "name": "UpdateAppInstance",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to update AppInstance metadata",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAppInstanceUser": {
+      "name": "UpdateAppInstanceUser",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to update the details for an AppInstanceUser",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "UpdateBot": {
       "name": "UpdateBot",
       "topics": [
@@ -1748,6 +2498,45 @@
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": "s3:CreateBucket\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:DeleteBucket\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:ListAllMyBuckets"
+    },
+    "UpdateChannel": {
+      "name": "UpdateChannel",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to update a channel's attributes",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateChannelMessage": {
+      "name": "UpdateChannelMessage",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to update the content of a message",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateChannelReadMarker": {
+      "name": "UpdateChannelReadMarker",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to set the timestamp to the point when a user last read messages\n                                                in a channel",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app-instance-user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
     },
     "UpdateGlobalSettings": {
       "name": "UpdateGlobalSettings",
@@ -1810,6 +2599,39 @@
         "Amazon Chime"
       ],
       "description": "Grants permission to update room membership role",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSipMediaApplication": {
+      "name": "UpdateSipMediaApplication",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to update properties of Amazon Chime SIP media application under\n                                                the administrator's AWS account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSipMediaApplicationCall": {
+      "name": "UpdateSipMediaApplicationCall",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to update an Amazon Chime SIP media application call under the administrator's\n                                                AWS account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSipRule": {
+      "name": "UpdateSipRule",
+      "topics": [
+        "Amazon Chime"
+      ],
+      "description": "Grants permission to update properties of Amazon Chime SIP rule under the administrator's\n                                                AWS account",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",

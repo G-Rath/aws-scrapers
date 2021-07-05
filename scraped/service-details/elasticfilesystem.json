@@ -6,7 +6,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Starts a backup job for an existing file system.",
+      "description": "Grants permission to start a backup job for an existing file system",
       "accessLevel": "Write",
       "resourceTypes": [
         "file-system*"
@@ -19,7 +19,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Permission for allowing read-access to a file system.",
+      "description": "Grants permission to allow an NFS client read-access to a file system",
       "accessLevel": "Read",
       "resourceTypes": [
         "file-system*"
@@ -32,7 +32,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Permission for allowing root-access to a file system.",
+      "description": "Grants permission to allow an NFS client root-access to a file system",
       "accessLevel": "Write",
       "resourceTypes": [
         "file-system*"
@@ -45,7 +45,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Permission for allowing write-access to a file system.",
+      "description": "Grants permission to allow an NFS client write-access to a file system",
       "accessLevel": "Write",
       "resourceTypes": [
         "file-system*"
@@ -58,7 +58,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Creates an access point for the specified file system.",
+      "description": "Grants permission to create an access point for the specified file system",
       "accessLevel": "Write",
       "resourceTypes": [
         "file-system*"
@@ -71,8 +71,8 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Creates a new, empty file system.",
-      "accessLevel": "Tagging",
+      "description": "Grants permission to create a new, empty file system",
+      "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      elasticfilesystem:Encrypted",
       "dependentActions": ""
@@ -82,7 +82,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Creates a mount target for a file system.",
+      "description": "Grants permission to create a mount target for a file system",
       "accessLevel": "Write",
       "resourceTypes": [
         "file-system*"
@@ -95,7 +95,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Creates or overwrites tags associated with a file system.",
+      "description": "Grants permission to create or overwrite tags associated with a file system; deprecated,\n                                                see TagResource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "file-system*"
@@ -108,7 +108,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Deletes the specified access point.",
+      "description": "Grants permission to delete the specified access point",
       "accessLevel": "Write",
       "resourceTypes": [
         "access-point*"
@@ -121,7 +121,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Deletes a file system, permanently severing access to its contents.",
+      "description": "Grants permission to delete a file system, permanently severing access to its contents",
       "accessLevel": "Write",
       "resourceTypes": [
         "file-system*"
@@ -134,7 +134,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Clears the resource-level policy for a given file system.",
+      "description": "Grants permission to delete the resource-level policy for a file system",
       "accessLevel": "Write",
       "resourceTypes": [
         "file-system*"
@@ -147,7 +147,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Deletes the specified mount target.",
+      "description": "Grants permission to delete the specified mount target",
       "accessLevel": "Write",
       "resourceTypes": [
         "file-system*"
@@ -160,7 +160,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Deletes the specified tags from a file system.",
+      "description": "Grants permission to delete the specified tags from a file system; deprecated, see\n                                                UntagResource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "file-system*"
@@ -173,11 +173,22 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Returns the descriptions of Amazon EFS access points.",
+      "description": "Grants permission to view the descriptions of Amazon EFS access points",
       "accessLevel": "List",
       "resourceTypes": [
         "access-point"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAccountPreferences": {
+      "name": "DescribeAccountPreferences",
+      "topics": [
+        "Amazon Elastic File System"
+      ],
+      "description": "Grants permission to view the account preferences in effect for an account",
+      "accessLevel": "List",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -186,7 +197,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Returns the current BackupPolicy object for the specified Amazon EFS file system.",
+      "description": "Grants permission to view the BackupPolicy object for an Amazon EFS file system",
       "accessLevel": "Read",
       "resourceTypes": [
         "file-system*"
@@ -199,7 +210,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Returns the current resource-level policy for a given file system.",
+      "description": "Grants permission to view the resource-level policy for an Amazon EFS file system",
       "accessLevel": "Read",
       "resourceTypes": [
         "file-system"
@@ -212,7 +223,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Returns the description of a specific Amazon EFS file system if either the file system\n                                                CreationToken or the FileSystemId is provided; otherwise, returns descriptions of\n                                                all file systems owned by the caller's AWS account in the AWS region of the endpoint\n                                                that you're calling.",
+      "description": "Grants permission to view the description of an Amazon EFS file system specified by\n                                                file system CreationToken or FileSystemId; or to view the description of all file\n                                                systems owned by the caller's AWS account in the AWS region of the endpoint that is\n                                                being called",
       "accessLevel": "List",
       "resourceTypes": [
         "file-system"
@@ -225,7 +236,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Returns the current LifecycleConfiguration object for the specified Amazon EFS file\n                                                system.",
+      "description": "Grants permission to view the LifecycleConfiguration object for an Amazon EFS file\n                                                system",
       "accessLevel": "Read",
       "resourceTypes": [
         "file-system*"
@@ -238,7 +249,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Returns the security groups currently in effect for a mount target.",
+      "description": "Grants permission to view the security groups in effect for a mount target",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -249,7 +260,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Returns the descriptions of all the current mount targets, or a specific mount target,\n                                                for a file system.",
+      "description": "Grants permission to view the descriptions of all mount targets, or a specific mount\n                                                target, for a file system",
       "accessLevel": "Read",
       "resourceTypes": [
         "file-system*"
@@ -262,7 +273,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Returns the tags associated with a file system.",
+      "description": "Grants permission to view the tags associated with a file system",
       "accessLevel": "Read",
       "resourceTypes": [
         "file-system*"
@@ -275,7 +286,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Returns the tags associated with the specified Amazon EFS resource.",
+      "description": "Grants permission to view the tags associated with the specified Amazon EFS resource",
       "accessLevel": "Read",
       "resourceTypes": [
         "access-point"
@@ -288,7 +299,18 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Modifies the set of security groups in effect for a mount target.",
+      "description": "Grants permission to modify the set of security groups in effect for a mount target",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutAccountPreferences": {
+      "name": "PutAccountPreferences",
+      "topics": [
+        "Amazon Elastic File System"
+      ],
+      "description": "Grants permission to set the account preferences of an account",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -299,7 +321,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Enables automatic backups with AWS Backup by creating a new BackupPolicy object.",
+      "description": "Grants permission to enable or disable automatic backups with AWS Backup by creating\n                                                a new BackupPolicy object",
       "accessLevel": "Write",
       "resourceTypes": [
         "file-system*"
@@ -312,7 +334,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Apply a resource-level policy granting and/or restricting actions from given actors\n                                                for the specified file system.",
+      "description": "Grants permission to apply a resource-level policy that defines the actions allowed\n                                                or denied from given actors for the specified file system",
       "accessLevel": "Write",
       "resourceTypes": [
         "file-system*"
@@ -325,7 +347,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Enables lifecycle management by creating a new LifecycleConfiguration object.",
+      "description": "Grants permission to enable lifecycle management by creating a new LifecycleConfiguration\n                                                object",
       "accessLevel": "Write",
       "resourceTypes": [
         "file-system*"
@@ -338,7 +360,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Starts a restore job for an existing file system.",
+      "description": "Grants permission to start a restore job for a backup of a file system",
       "accessLevel": "Write",
       "resourceTypes": [
         "file-system*"
@@ -351,7 +373,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Creates or overwrites tags associated with the specified Amazon EFS resource.",
+      "description": "Grants permission to create or overwrite tags associated with the specified Amazon\n                                                EFS resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "access-point"
@@ -364,7 +386,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Deletes the specified tags from a specified Amazon EFS resource.",
+      "description": "Grants permission to delete the specified tags from an Amazon EFS resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "access-point"
@@ -377,7 +399,7 @@
       "topics": [
         "Amazon Elastic File System"
       ],
-      "description": "Updates the throughput mode or the amount of provisioned throughput of an existing\n                                                file system.",
+      "description": "Grants permission to update the throughput mode or the amount of provisioned throughput\n                                                of an existing file system",
       "accessLevel": "Write",
       "resourceTypes": [
         "file-system*"

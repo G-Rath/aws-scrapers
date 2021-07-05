@@ -6,7 +6,7 @@
       "topics": [
         "AWS Firewall Manager"
       ],
-      "description": "Sets the AWS Firewall Manager administrator account and enables the service in all\n                                                organization accounts",
+      "description": "Grants permission to set the AWS Firewall Manager administrator account and enables\n                                                the service in all organization accounts",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -17,7 +17,7 @@
       "topics": [
         "AWS Firewall Manager"
       ],
-      "description": "Grants permission to permanently deletes an AWS Firewall Manager applications list.",
+      "description": "Grants permission to permanently deletes an AWS Firewall Manager applications list",
       "accessLevel": "Write",
       "resourceTypes": [
         "applications-list*"
@@ -30,7 +30,7 @@
       "topics": [
         "AWS Firewall Manager"
       ],
-      "description": "Deletes an AWS Firewall Manager association with the IAM role and the Amazon Simple\n                                                Notification Service (SNS) topic that is used to notify the FM administrator about\n                                                major FM events and errors across the organization.",
+      "description": "Grants permission to delete an AWS Firewall Manager association with the IAM role\n                                                and the Amazon Simple Notification Service (SNS) topic that is used to notify the\n                                                FM administrator about major FM events and errors across the organization",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -41,7 +41,7 @@
       "topics": [
         "AWS Firewall Manager"
       ],
-      "description": "Permanently deletes an AWS Firewall Manager policy.",
+      "description": "Grants permission to permanently delete an AWS Firewall Manager policy",
       "accessLevel": "Write",
       "resourceTypes": [
         "policy*"
@@ -54,7 +54,7 @@
       "topics": [
         "AWS Firewall Manager"
       ],
-      "description": "Grants permission to permanently deletes an AWS Firewall Manager protocols list.",
+      "description": "Grants permission to permanently deletes an AWS Firewall Manager protocols list",
       "accessLevel": "Write",
       "resourceTypes": [
         "protocols-list*"
@@ -67,7 +67,7 @@
       "topics": [
         "AWS Firewall Manager"
       ],
-      "description": "Disassociates the account that has been set as the AWS Firewall Manager administrator\n                                                account and and disables the service in all organization accounts",
+      "description": "Grants permission to disassociate the account that has been set as the AWS Firewall\n                                                Manager administrator account and and disables the service in all organization accounts",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -78,7 +78,7 @@
       "topics": [
         "AWS Firewall Manager"
       ],
-      "description": "Returns the AWS Organizations master account that is associated with AWS Firewall\n                                                Manager as the AWS Firewall Manager administrator.",
+      "description": "Grants permission to retrieve the AWS Organizations master account that is associated\n                                                with AWS Firewall Manager as the AWS Firewall Manager administrator",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -89,7 +89,7 @@
       "topics": [
         "AWS Firewall Manager"
       ],
-      "description": "Grants permission to return information about the specified AWS Firewall Manager applications\n                                                list.",
+      "description": "Grants permission to return information about the specified AWS Firewall Manager applications\n                                                list",
       "accessLevel": "Read",
       "resourceTypes": [
         "applications-list*"
@@ -102,7 +102,7 @@
       "topics": [
         "AWS Firewall Manager"
       ],
-      "description": "Returns detailed compliance information about the specified member account. Details\n                                                include resources that are in and out of compliance with the specified policy.",
+      "description": "Grants permission to retrieve detailed compliance information about the specified\n                                                member account. Details include resources that are in and out of compliance with the\n                                                specified policy",
       "accessLevel": "Read",
       "resourceTypes": [
         "policy*"
@@ -115,7 +115,7 @@
       "topics": [
         "AWS Firewall Manager"
       ],
-      "description": "Returns information about the Amazon Simple Notification Service (SNS) topic that\n                                                is used to record AWS Firewall Manager SNS logs.",
+      "description": "Grants permission to retrieve information about the Amazon Simple Notification Service\n                                                (SNS) topic that is used to record AWS Firewall Manager SNS logs",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -126,7 +126,7 @@
       "topics": [
         "AWS Firewall Manager"
       ],
-      "description": "Returns information about the specified AWS Firewall Manager policy.",
+      "description": "Grants permission to retrieve information about the specified AWS Firewall Manager\n                                                policy",
       "accessLevel": "Read",
       "resourceTypes": [
         "policy*"
@@ -139,7 +139,7 @@
       "topics": [
         "AWS Firewall Manager"
       ],
-      "description": "Returns policy-level attack summary information in the event of a potential DDoS attack.",
+      "description": "Grants permission to retrieve policy-level attack summary information in the event\n                                                of a potential DDoS attack",
       "accessLevel": "Read",
       "resourceTypes": [
         "policy*"
@@ -152,10 +152,23 @@
       "topics": [
         "AWS Firewall Manager"
       ],
-      "description": "Grants permission to return information about the specified AWS Firewall Manager protocols\n                                                list.",
+      "description": "Grants permission to return information about the specified AWS Firewall Manager protocols\n                                                list",
       "accessLevel": "Read",
       "resourceTypes": [
         "protocols-list*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetViolationDetails": {
+      "name": "GetViolationDetails",
+      "topics": [
+        "AWS Firewall Manager"
+      ],
+      "description": "Grants permission to retrieve violations for a resource based on the specified AWS\n                                                Firewall Manager policy and AWS account",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "policy*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -165,7 +178,7 @@
       "topics": [
         "AWS Firewall Manager"
       ],
-      "description": "Grants permission to return an array of AppsListDataSummary objects.",
+      "description": "Grants permission to return an array of AppsListDataSummary objects",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -176,7 +189,7 @@
       "topics": [
         "AWS Firewall Manager"
       ],
-      "description": "Returns an array of PolicyComplianceStatus objects in the response. Use PolicyComplianceStatus\n                                                to get a summary of which member accounts are protected by the specified policy.",
+      "description": "Grants permission to retrieve an array of PolicyComplianceStatus objects in the response.\n                                                Use PolicyComplianceStatus to get a summary of which member accounts are protected\n                                                by the specified policy",
       "accessLevel": "List",
       "resourceTypes": [
         "policy*"
@@ -189,7 +202,7 @@
       "topics": [
         "AWS Firewall Manager"
       ],
-      "description": "Returns an array of member account ids if the caller is FMS admin account.",
+      "description": "Grants permission to retrieve an array of member account ids if the caller is FMS\n                                                admin account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -200,7 +213,7 @@
       "topics": [
         "AWS Firewall Manager"
       ],
-      "description": "Returns an array of PolicySummary objects in the response.",
+      "description": "Grants permission to retrieve an array of PolicySummary objects in the response",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -211,7 +224,7 @@
       "topics": [
         "AWS Firewall Manager"
       ],
-      "description": "Grants permission to return an array of ProtocolsListDataSummary objects.",
+      "description": "Grants permission to return an array of ProtocolsListDataSummary objects",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -222,7 +235,7 @@
       "topics": [
         "AWS Firewall Manager"
       ],
-      "description": "Lists the Tags for a given resource.",
+      "description": "Grants permission to list Tags for a given resource",
       "accessLevel": "Read",
       "resourceTypes": [
         "policy*"
@@ -235,7 +248,7 @@
       "topics": [
         "AWS Firewall Manager"
       ],
-      "description": "Grants permission to create an AWS Firewall Manager applications list.",
+      "description": "Grants permission to create an AWS Firewall Manager applications list",
       "accessLevel": "Write",
       "resourceTypes": [
         "applications-list*"
@@ -248,7 +261,7 @@
       "topics": [
         "AWS Firewall Manager"
       ],
-      "description": "Designates the IAM role and Amazon Simple Notification Service (SNS) topic that AWS\n                                                Firewall Manager (FM) could use to notify the FM administrator about major FM events\n                                                and errors across the organization.",
+      "description": "Grants permission to designate the IAM role and Amazon Simple Notification Service\n                                                (SNS) topic that AWS Firewall Manager (FM) could use to notify the FM administrator\n                                                about major FM events and errors across the organization",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -259,7 +272,7 @@
       "topics": [
         "AWS Firewall Manager"
       ],
-      "description": "Creates an AWS Firewall Manager policy.",
+      "description": "Grants permission to create an AWS Firewall Manager policy",
       "accessLevel": "Write",
       "resourceTypes": [
         "policy*"
@@ -272,7 +285,7 @@
       "topics": [
         "AWS Firewall Manager"
       ],
-      "description": "Grants permission to creates an AWS Firewall Manager protocols list.",
+      "description": "Grants permission to creates an AWS Firewall Manager protocols list",
       "accessLevel": "Write",
       "resourceTypes": [
         "protocols-list*"
@@ -285,7 +298,7 @@
       "topics": [
         "AWS Firewall Manager"
       ],
-      "description": "Adds a Tag to a given resource.",
+      "description": "Grants permission to add a Tag to a given resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "policy*"
@@ -298,7 +311,7 @@
       "topics": [
         "AWS Firewall Manager"
       ],
-      "description": "Removes a Tag from a given resource.",
+      "description": "Grants permission to remove a Tag from a given resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "policy*"

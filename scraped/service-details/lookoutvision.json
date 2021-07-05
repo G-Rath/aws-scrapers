@@ -1,0 +1,274 @@
+{
+  "servicePrefix": "lookoutvision",
+  "actions": {
+    "CreateDataset": {
+      "name": "CreateDataset",
+      "topics": [
+        "Amazon Lookout for Vision"
+      ],
+      "description": "Grants permission to create a dataset manifest",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateModel": {
+      "name": "CreateModel",
+      "topics": [
+        "Amazon Lookout for Vision"
+      ],
+      "description": "Grants permission to create a new anomaly detection model",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateProject": {
+      "name": "CreateProject",
+      "topics": [
+        "Amazon Lookout for Vision"
+      ],
+      "description": "Grants permission to create a new project",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDataset": {
+      "name": "DeleteDataset",
+      "topics": [
+        "Amazon Lookout for Vision"
+      ],
+      "description": "Grants permission to delete a dataset",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteModel": {
+      "name": "DeleteModel",
+      "topics": [
+        "Amazon Lookout for Vision"
+      ],
+      "description": "Grants permission to delete a model and all associated assets",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteProject": {
+      "name": "DeleteProject",
+      "topics": [
+        "Amazon Lookout for Vision"
+      ],
+      "description": "Grants permission to permanently remove a project",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDataset": {
+      "name": "DescribeDataset",
+      "topics": [
+        "Amazon Lookout for Vision"
+      ],
+      "description": "Grants permission to show detailed information about dataset manifest",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeModel": {
+      "name": "DescribeModel",
+      "topics": [
+        "Amazon Lookout for Vision"
+      ],
+      "description": "Grants permission to show detailed information about a model",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeProject": {
+      "name": "DescribeProject",
+      "topics": [
+        "Amazon Lookout for Vision"
+      ],
+      "description": "Grants permission to show detailed information about a project",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTrialDetection": {
+      "name": "DescribeTrialDetection",
+      "topics": [
+        "Amazon Lookout for Vision"
+      ],
+      "description": "Grants permission to provides state information about a running anomaly detection\n                                                job",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DetectAnomalies": {
+      "name": "DetectAnomalies",
+      "topics": [
+        "Amazon Lookout for Vision"
+      ],
+      "description": "Grants permission to invoke detection of anomalies",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDatasetEntries": {
+      "name": "ListDatasetEntries",
+      "topics": [
+        "Amazon Lookout for Vision"
+      ],
+      "description": "Grants permission to list the contents of dataset manifest",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListModels": {
+      "name": "ListModels",
+      "topics": [
+        "Amazon Lookout for Vision"
+      ],
+      "description": "Grants permission to list all models associated with a project",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProjects": {
+      "name": "ListProjects",
+      "topics": [
+        "Amazon Lookout for Vision"
+      ],
+      "description": "Grants permission to list all projects",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "Amazon Lookout for Vision"
+      ],
+      "description": "Grant permission to list tags for a resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "model"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTrialDetections": {
+      "name": "ListTrialDetections",
+      "topics": [
+        "Amazon Lookout for Vision"
+      ],
+      "description": "Grants permission to list all anomaly detection jobs",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartModel": {
+      "name": "StartModel",
+      "topics": [
+        "Amazon Lookout for Vision"
+      ],
+      "description": "Grants permission to start anomaly detection model",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartTrialDetection": {
+      "name": "StartTrialDetection",
+      "topics": [
+        "Amazon Lookout for Vision"
+      ],
+      "description": "Grants permission to start bulk detection of anomalies for a set of images stored\n                                                in an S3 bucket",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopModel": {
+      "name": "StopModel",
+      "topics": [
+        "Amazon Lookout for Vision"
+      ],
+      "description": "Grants permission to stop anomaly detection model",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "Amazon Lookout for Vision"
+      ],
+      "description": "Grant permission to tag a resource with given key value pairs",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "model"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "Amazon Lookout for Vision"
+      ],
+      "description": "Grant permission to remove the tag with the given key from a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "model"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDatasetEntries": {
+      "name": "UpdateDatasetEntries",
+      "topics": [
+        "Amazon Lookout for Vision"
+      ],
+      "description": "Grants permission to update a training or test dataset manifest",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "Amazon Lookout for Vision"
+  ]
+}

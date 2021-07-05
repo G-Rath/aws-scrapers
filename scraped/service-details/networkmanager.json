@@ -27,6 +27,32 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "AssociateTransitGatewayConnectPeer": {
+      "name": "AssociateTransitGatewayConnectPeer",
+      "topics": [
+        "Network Manager"
+      ],
+      "description": "Grants permission to associate a transit gateway connect peer to a device",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateConnection": {
+      "name": "CreateConnection",
+      "topics": [
+        "Network Manager"
+      ],
+      "description": "Grants permission to create a new connection",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "global-network*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "CreateDevice": {
       "name": "CreateDevice",
       "topics": [
@@ -73,6 +99,19 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "global-network*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteConnection": {
+      "name": "DeleteConnection",
+      "topics": [
+        "Network Manager"
+      ],
+      "description": "Grants permission to delete a connection",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "connection*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -181,6 +220,32 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DisassociateTransitGatewayConnectPeer": {
+      "name": "DisassociateTransitGatewayConnectPeer",
+      "topics": [
+        "Network Manager"
+      ],
+      "description": "Grants permission to disassociate a transit gateway connect peer from a device",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "global-network*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetConnections": {
+      "name": "GetConnections",
+      "topics": [
+        "Network Manager"
+      ],
+      "description": "Grants permission to describe connections",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "global-network*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "GetCustomerGatewayAssociations": {
       "name": "GetCustomerGatewayAssociations",
       "topics": [
@@ -246,6 +311,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "GetTransitGatewayConnectPeerAssociations": {
+      "name": "GetTransitGatewayConnectPeerAssociations",
+      "topics": [
+        "Network Manager"
+      ],
+      "description": "Grants permission to describe transit gateway connect peer associations",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "global-network*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "GetTransitGatewayRegistrations": {
       "name": "GetTransitGatewayRegistrations",
       "topics": [
@@ -267,7 +345,7 @@
       "description": "Grants permission to lists tag for a Network Manager resource",
       "accessLevel": "Read",
       "resourceTypes": [
-        "device"
+        "connection"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -293,7 +371,7 @@
       "description": "Grants permission to tag a Network Manager resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
-        "device"
+        "connection"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -306,7 +384,20 @@
       "description": "Grants permission to untag a Network Manager resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
-        "device"
+        "connection"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateConnection": {
+      "name": "UpdateConnection",
+      "topics": [
+        "Network Manager"
+      ],
+      "description": "Grants permission to update a connection",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "connection*"
       ],
       "conditionKeys": "",
       "dependentActions": ""

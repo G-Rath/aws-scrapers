@@ -213,7 +213,137 @@
       "description": "Grants permission to list tags for a resource",
       "accessLevel": "Read",
       "resourceTypes": [
-        "ledger"
+        "catalog"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PartiQLCreateIndex": {
+      "name": "PartiQLCreateIndex",
+      "topics": [
+        "Amazon QLDB"
+      ],
+      "description": "Grants permission to create an index on a table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PartiQLCreateTable": {
+      "name": "PartiQLCreateTable",
+      "topics": [
+        "Amazon QLDB"
+      ],
+      "description": "Grants permission to create a table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PartiQLDelete": {
+      "name": "PartiQLDelete",
+      "topics": [
+        "Amazon QLDB"
+      ],
+      "description": "Grants permission to delete documents from a table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PartiQLDropIndex": {
+      "name": "PartiQLDropIndex",
+      "topics": [
+        "Amazon QLDB"
+      ],
+      "description": "Grants permission to drop an index from a table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PartiQLDropTable": {
+      "name": "PartiQLDropTable",
+      "topics": [
+        "Amazon QLDB"
+      ],
+      "description": "Grants permission to drop a table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PartiQLHistoryFunction": {
+      "name": "PartiQLHistoryFunction",
+      "topics": [
+        "Amazon QLDB"
+      ],
+      "description": "Grants permission to use the history function on a table",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PartiQLInsert": {
+      "name": "PartiQLInsert",
+      "topics": [
+        "Amazon QLDB"
+      ],
+      "description": "Grants permission to insert documents into a table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PartiQLSelect": {
+      "name": "PartiQLSelect",
+      "topics": [
+        "Amazon QLDB"
+      ],
+      "description": "Grants permission to select documents from a table",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "catalog"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PartiQLUndropTable": {
+      "name": "PartiQLUndropTable",
+      "topics": [
+        "Amazon QLDB"
+      ],
+      "description": "Grants permission to undrop a table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PartiQLUpdate": {
+      "name": "PartiQLUpdate",
+      "topics": [
+        "Amazon QLDB"
+      ],
+      "description": "Grants permission to update existing documents in a table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -265,7 +395,7 @@
       "description": "Grants permission to add one or more tags to a resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
-        "ledger"
+        "catalog"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -275,10 +405,10 @@
       "topics": [
         "Amazon QLDB"
       ],
-      "description": "Grants permission to remove one or more tags to a resource",
+      "description": "Grants permission to remove one or more tags from a resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
-        "ledger"
+        "catalog"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -289,6 +419,19 @@
         "Amazon QLDB"
       ],
       "description": "Grants permission to update properties on a ledger",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ledger*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateLedgerPermissionsMode": {
+      "name": "UpdateLedgerPermissionsMode",
+      "topics": [
+        "Amazon QLDB"
+      ],
+      "description": "Grants permission to update the permissions mode on a ledger",
       "accessLevel": "Write",
       "resourceTypes": [
         "ledger*"

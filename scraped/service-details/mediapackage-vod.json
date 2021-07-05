@@ -164,7 +164,7 @@
         "AWS Elemental MediaPackage VOD"
       ],
       "description": "Grants permission to assign tags to a PackagingGroup, PackagingConfiguration, or Asset.",
-      "accessLevel": "Write",
+      "accessLevel": "Tagging",
       "resourceTypes": [
         "assets"
       ],
@@ -177,9 +177,22 @@
         "AWS Elemental MediaPackage VOD"
       ],
       "description": "Grants permission to delete tags from a PackagingGroup, PackagingConfiguration, or\n                                                Asset.",
-      "accessLevel": "Write",
+      "accessLevel": "Tagging",
       "resourceTypes": [
         "assets"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdatePackagingGroup": {
+      "name": "UpdatePackagingGroup",
+      "topics": [
+        "AWS Elemental MediaPackage VOD"
+      ],
+      "description": "Grants permission to update a packaging group in AWS Elemental MediaPackage",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "packaging-groups*"
       ],
       "conditionKeys": "",
       "dependentActions": ""

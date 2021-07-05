@@ -158,6 +158,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "CheckSchemaVersionValidity": {
+      "name": "CheckSchemaVersionValidity",
+      "topics": [
+        "AWS Glue"
+      ],
+      "description": "Grants permission to retrieve a check the validity of schema version",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "CreateClassifier": {
       "name": "CreateClassifier",
       "topics": [
@@ -248,6 +259,32 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateRegistry": {
+      "name": "CreateRegistry",
+      "topics": [
+        "AWS Glue"
+      ],
+      "description": "Grants permission to create a new schema registry",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "registry*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateSchema": {
+      "name": "CreateSchema",
+      "topics": [
+        "AWS Glue"
+      ],
+      "description": "Grants permission to create a new schema container",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "registry*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -418,15 +455,54 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeleteRegistry": {
+      "name": "DeleteRegistry",
+      "topics": [
+        "AWS Glue"
+      ],
+      "description": "Grants permission to delete a schema registry",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "registry*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteResourcePolicy": {
       "name": "DeleteResourcePolicy",
       "topics": [
         "AWS Glue"
       ],
       "description": "Grants permission to delete a resource policy",
-      "accessLevel": "Write",
+      "accessLevel": "Permissions management",
       "resourceTypes": [
         "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSchema": {
+      "name": "DeleteSchema",
+      "topics": [
+        "AWS Glue"
+      ],
+      "description": "Grants permission to delete a schema container",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "registry*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSchemaVersions": {
+      "name": "DeleteSchemaVersions",
+      "topics": [
+        "AWS Glue"
+      ],
+      "description": "Grants permission to delete a range of schema versions",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "registry*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -778,7 +854,7 @@
         "AWS Glue"
       ],
       "description": "Grants permission to create a mapping",
-      "accessLevel": "Write",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -820,6 +896,32 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "GetRegistry": {
+      "name": "GetRegistry",
+      "topics": [
+        "AWS Glue"
+      ],
+      "description": "Grants permission to retrieve a schema registry",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "registry*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetResourcePolicies": {
+      "name": "GetResourcePolicies",
+      "topics": [
+        "AWS Glue"
+      ],
+      "description": "Grants permission to retrieve resource policies",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "GetResourcePolicy": {
       "name": "GetResourcePolicy",
       "topics": [
@@ -829,6 +931,58 @@
       "accessLevel": "Read",
       "resourceTypes": [
         "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSchema": {
+      "name": "GetSchema",
+      "topics": [
+        "AWS Glue"
+      ],
+      "description": "Grants permission to retrieve a schema container",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "registry*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSchemaByDefinition": {
+      "name": "GetSchemaByDefinition",
+      "topics": [
+        "AWS Glue"
+      ],
+      "description": "Grants permission to retrieve a schema version based on schema definition",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "registry*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSchemaVersion": {
+      "name": "GetSchemaVersion",
+      "topics": [
+        "AWS Glue"
+      ],
+      "description": "Grants permission to retrieve a schema version",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "registry"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSchemaVersionsDiff": {
+      "name": "GetSchemaVersionsDiff",
+      "topics": [
+        "AWS Glue"
+      ],
+      "description": "Grants permission to compare two schema versions in schema registry",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "registry*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1069,6 +1223,43 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ListRegistries": {
+      "name": "ListRegistries",
+      "topics": [
+        "AWS Glue"
+      ],
+      "description": "Grants permission to retrieve a list of schema registries",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSchemaVersions": {
+      "name": "ListSchemaVersions",
+      "topics": [
+        "AWS Glue"
+      ],
+      "description": "Grants permission to retrieve a list of schema versions",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "registry*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSchemas": {
+      "name": "ListSchemas",
+      "topics": [
+        "AWS Glue"
+      ],
+      "description": "Grants permission to retrieve a list of schema containers",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "registry"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ListTriggers": {
       "name": "ListTriggers",
       "topics": [
@@ -1108,9 +1299,22 @@
         "AWS Glue"
       ],
       "description": "Grants permission to update a resource policy",
-      "accessLevel": "Write",
+      "accessLevel": "Permissions management",
       "resourceTypes": [
         "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutSchemaVersionMetadata": {
+      "name": "PutSchemaVersionMetadata",
+      "topics": [
+        "AWS Glue"
+      ],
+      "description": "Grants permission to add metadata to schema version",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "registry"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1126,12 +1330,62 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "QuerySchemaVersionMetadata": {
+      "name": "QuerySchemaVersionMetadata",
+      "topics": [
+        "AWS Glue"
+      ],
+      "description": "Grants permission to fetch metadata for a schema version",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "registry"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterSchemaVersion": {
+      "name": "RegisterSchemaVersion",
+      "topics": [
+        "AWS Glue"
+      ],
+      "description": "Grants permission to create a new schema version",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "registry*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemoveSchemaVersionMetadata": {
+      "name": "RemoveSchemaVersionMetadata",
+      "topics": [
+        "AWS Glue"
+      ],
+      "description": "Grants permission to remove metadata from schema version",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "registry"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ResetJobBookmark": {
       "name": "ResetJobBookmark",
       "topics": [
         "AWS Glue"
       ],
       "description": "Grants permission to reset a job bookmark",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ResumeWorkflowRun": {
+      "name": "ResumeWorkflowRun",
+      "topics": [
+        "AWS Glue"
+      ],
+      "description": "Grants permission to resume a workflow run",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1290,6 +1544,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "StopWorkflowRun": {
+      "name": "StopWorkflowRun",
+      "topics": [
+        "AWS Glue"
+      ],
+      "description": "Grants permission to stop a workflow run",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "TagResource": {
       "name": "TagResource",
       "topics": [
@@ -1419,6 +1684,32 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "catalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRegistry": {
+      "name": "UpdateRegistry",
+      "topics": [
+        "AWS Glue"
+      ],
+      "description": "Grants permission to update a schema registry",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "registry*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSchema": {
+      "name": "UpdateSchema",
+      "topics": [
+        "AWS Glue"
+      ],
+      "description": "Grants permission to update a schema container",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "registry*"
       ],
       "conditionKeys": "",
       "dependentActions": ""

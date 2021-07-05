@@ -1,6 +1,19 @@
 {
   "servicePrefix": "route53resolver",
   "actions": {
+    "AssociateFirewallRuleGroup": {
+      "name": "AssociateFirewallRuleGroup",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to associate an Amazon VPC with a specified firewall rule group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "firewall-rule-group-association*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "ec2:DescribeVpcs"
+    },
     "AssociateResolverEndpointIpAddress": {
       "name": "AssociateResolverEndpointIpAddress",
       "topics": [
@@ -36,6 +49,45 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "resolver-rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateFirewallDomainList": {
+      "name": "CreateFirewallDomainList",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to create a Firewall domain list",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "firewall-domain-list*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateFirewallRule": {
+      "name": "CreateFirewallRule",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to create a Firewall rule within a Firewall rule group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "firewall-rule-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateFirewallRuleGroup": {
+      "name": "CreateFirewallRuleGroup",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to create a Firewall rule group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "firewall-rule-group*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -79,6 +131,45 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeleteFirewallDomainList": {
+      "name": "DeleteFirewallDomainList",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to delete a Firewall domain list",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "firewall-domain-list*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteFirewallRule": {
+      "name": "DeleteFirewallRule",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to delete a Firewall rule within a Firewall rule group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "firewall-rule-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteFirewallRuleGroup": {
+      "name": "DeleteFirewallRuleGroup",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to delete a Firewall rule group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "firewall-rule-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteResolverEndpoint": {
       "name": "DeleteResolverEndpoint",
       "topics": [
@@ -118,6 +209,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DisassociateFirewallRuleGroup": {
+      "name": "DisassociateFirewallRuleGroup",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to remove the association between a specified Firewall rule group\n                                                and a specified VPC",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "firewall-rule-group-association*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DisassociateResolverEndpointIpAddress": {
       "name": "DisassociateResolverEndpointIpAddress",
       "topics": [
@@ -153,6 +257,84 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "resolver-rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFirewallConfig": {
+      "name": "GetFirewallConfig",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to get information about a specified Firewall config",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "firewall-config*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "ec2:DescribeVpcs"
+    },
+    "GetFirewallDomainList": {
+      "name": "GetFirewallDomainList",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to get information about a specified Firewall domain list",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "firewall-domain-list*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFirewallRuleGroup": {
+      "name": "GetFirewallRuleGroup",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to get information about a specified Firewall rule group",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "firewall-rule-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFirewallRuleGroupAssociation": {
+      "name": "GetFirewallRuleGroupAssociation",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to get information about an association between a specified Firewall\n                                                rule group and a VPC",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "firewall-rule-group-association*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFirewallRuleGroupPolicy": {
+      "name": "GetFirewallRuleGroupPolicy",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to get information about a specified Firewall rule group policy,\n                                                which specifies the Firewall rule group operations and resources that you want to\n                                                allow another AWS account to use",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "firewall-rule-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetResolverDnssecConfig": {
+      "name": "GetResolverDnssecConfig",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to get the DNSSEC validation support status for DNS queries within\n                                                the specified resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "resolver-dnssec-config*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -214,7 +396,7 @@
       "topics": [
         "Amazon Route 53 Resolver"
       ],
-      "description": "Grants permission to get information about a specified Resolver rule, such as the\n                                                domain name that the rule forwards DNS queries for and the IP address that queries\n                                                are forwarded to.",
+      "description": "Grants permission to get information about a specified Resolver rule, such as the\n                                                domain name that the rule forwards DNS queries for and the IP address that queries\n                                                are forwarded to",
       "accessLevel": "Read",
       "resourceTypes": [
         "resolver-rule*"
@@ -244,6 +426,104 @@
       "accessLevel": "Read",
       "resourceTypes": [
         "resolver-rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ImportFirewallDomains": {
+      "name": "ImportFirewallDomains",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to add, remove or replace Firewall domains in a Firewall domain\n                                                list",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "firewall-domain-list*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFirewallConfigs": {
+      "name": "ListFirewallConfigs",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to list all the Firewall config that current AWS account is able\n                                                to check",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "firewall-config*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "ec2:DescribeVpcs"
+    },
+    "ListFirewallDomainLists": {
+      "name": "ListFirewallDomainLists",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to list all the Firewall domain list that current AWS account is\n                                                able to use",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFirewallDomains": {
+      "name": "ListFirewallDomains",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to list all the Firewall domain under a speicfied Firewall domain\n                                                list",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "firewall-domain-list*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFirewallRuleGroupAssociations": {
+      "name": "ListFirewallRuleGroupAssociations",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to list information about associations between Amazon VPCs and Firewall\n                                                rule group",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFirewallRuleGroups": {
+      "name": "ListFirewallRuleGroups",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to list all the Firewall rule group that current AWS account is\n                                                able to use",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFirewallRules": {
+      "name": "ListFirewallRules",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to list all the Firewall rule under a speicfied Firewall rule group",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "firewall-rule-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListResolverDnssecConfigs": {
+      "name": "ListResolverDnssecConfigs",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to list the DNSSEC validation support status for DNS queries",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "resolver-dnssec-config*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -333,6 +613,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "PutFirewallRuleGroupPolicy": {
+      "name": "PutFirewallRuleGroupPolicy",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to specify an AWS account that you want to share a Firewall rule\n                                                group with, the Firewall rule group that you want to share, and the operations that\n                                                you want the account to be able to perform on the configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "firewall-rule-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "PutResolverQueryLogConfigPolicy": {
       "name": "PutResolverQueryLogConfigPolicy",
       "topics": [
@@ -381,6 +674,71 @@
       "accessLevel": "Tagging",
       "resourceTypes": [
         "resolver-endpoint"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateFirewallConfig": {
+      "name": "UpdateFirewallConfig",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to update selected settings for an Firewall config",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "firewall-config*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "ec2:DescribeVpcs"
+    },
+    "UpdateFirewallDomains": {
+      "name": "UpdateFirewallDomains",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to add, remove or replace Firewall domains in a Firewall domain\n                                                list",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "firewall-domain-list*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateFirewallRule": {
+      "name": "UpdateFirewallRule",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to update selected settings for an Firewall rule in a Firewall rule\n                                                group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "firewall-rule-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateFirewallRuleGroupAssociation": {
+      "name": "UpdateFirewallRuleGroupAssociation",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to update selected settings for an Firewall rule group association",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "firewall-rule-group-association*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateResolverDnssecConfig": {
+      "name": "UpdateResolverDnssecConfig",
+      "topics": [
+        "Amazon Route 53 Resolver"
+      ],
+      "description": "Grants permission to update the DNSSEC validation support status for DNS queries within\n                                                the specified resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "resolver-dnssec-config*"
       ],
       "conditionKeys": "",
       "dependentActions": ""

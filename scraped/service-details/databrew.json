@@ -171,6 +171,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DescribeJobRun": {
+      "name": "DescribeJobRun",
+      "topics": [
+        "AWS Glue DataBrew"
+      ],
+      "description": "Grants permission to view details about job run for a given job",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DescribeProject": {
       "name": "DescribeProject",
       "topics": [
@@ -216,10 +229,8 @@
         "AWS Glue DataBrew"
       ],
       "description": "Grants permission to list datasets in your account",
-      "accessLevel": "List",
-      "resourceTypes": [
-        "Dataset*"
-      ],
+      "accessLevel": "Read",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -229,7 +240,7 @@
         "AWS Glue DataBrew"
       ],
       "description": "Grants permission to list job runs for a given job",
-      "accessLevel": "List",
+      "accessLevel": "Read",
       "resourceTypes": [
         "Job*"
       ],
@@ -242,7 +253,7 @@
         "AWS Glue DataBrew"
       ],
       "description": "Grants permission to list jobs in your account",
-      "accessLevel": "List",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -253,7 +264,7 @@
         "AWS Glue DataBrew"
       ],
       "description": "Grants permission to list projects in your account",
-      "accessLevel": "List",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -264,7 +275,7 @@
         "AWS Glue DataBrew"
       ],
       "description": "Grants permission to list versions in your recipe",
-      "accessLevel": "List",
+      "accessLevel": "Read",
       "resourceTypes": [
         "Recipe*"
       ],
@@ -277,7 +288,7 @@
         "AWS Glue DataBrew"
       ],
       "description": "Grants permission to list recipes in your account",
-      "accessLevel": "List",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -288,7 +299,7 @@
         "AWS Glue DataBrew"
       ],
       "description": "Grants permission to list schedules in your account",
-      "accessLevel": "List",
+      "accessLevel": "Read",
       "resourceTypes": [
         "Schedule*"
       ],
@@ -301,7 +312,7 @@
         "AWS Glue DataBrew"
       ],
       "description": "Grants permission to retrieve tags associated with a resource",
-      "accessLevel": "List",
+      "accessLevel": "Read",
       "resourceTypes": [
         "Dataset"
       ],

@@ -6,7 +6,7 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "Cancel an image creation",
+      "description": "Grants permission to cancel an image creation",
       "accessLevel": "Write",
       "resourceTypes": [
         "image*"
@@ -19,88 +19,114 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "Create a new component",
+      "description": "Grants permission to create a new component",
       "accessLevel": "Write",
       "resourceTypes": [
         "component*"
       ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "iam:CreateServiceLinkedRole\n                                                   \n                                                \n                                                \n                                                \n                                                   imagebuilder:TagResource\n                                                   \n                                                \n                                                \n                                                \n                                                   kms:Encrypt\n                                                   \n                                                \n                                                \n                                                \n                                                   kms:GenerateDataKey\n                                                   \n                                                \n                                                \n                                                \n                                                   kms:GenerateDataKeyWithoutPlaintext"
+    },
+    "CreateContainerRecipe": {
+      "name": "CreateContainerRecipe",
+      "topics": [
+        "Amazon EC2 Image Builder"
+      ],
+      "description": "Grants permission to create a new Container Recipe",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "containerRecipe*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "ecr:DescribeImages\n                                                   \n                                                \n                                                \n                                                \n                                                   ecr:DescribeRepositories\n                                                   \n                                                \n                                                \n                                                \n                                                   iam:CreateServiceLinkedRole\n                                                   \n                                                \n                                                \n                                                \n                                                   imagebuilder:GetComponent\n                                                   \n                                                \n                                                \n                                                \n                                                   imagebuilder:GetImage\n                                                   \n                                                \n                                                \n                                                \n                                                   imagebuilder:TagResource\n                                                   \n                                                \n                                                \n                                                \n                                                   kms:Encrypt\n                                                   \n                                                \n                                                \n                                                \n                                                   kms:GenerateDataKey\n                                                   \n                                                \n                                                \n                                                \n                                                   kms:GenerateDataKeyWithoutPlaintext"
     },
     "CreateDistributionConfiguration": {
       "name": "CreateDistributionConfiguration",
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "Create a new distribution configuration",
+      "description": "Grants permission to create a new distribution configuration",
       "accessLevel": "Write",
       "resourceTypes": [
         "distributionConfiguration*"
       ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "iam:CreateServiceLinkedRole\n                                                   \n                                                \n                                                \n                                                \n                                                   imagebuilder:TagResource"
     },
     "CreateImage": {
       "name": "CreateImage",
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "Create a new image",
+      "description": "Grants permission to create a new image",
       "accessLevel": "Write",
       "resourceTypes": [
         "image*"
       ],
       "conditionKeys": "",
-      "dependentActions": "imagebuilder:GetImageRecipe\n                                                   \n                                                \n                                                \n                                                \n                                                   imagebuilder:GetInfrastructureConfiguration"
+      "dependentActions": "iam:CreateServiceLinkedRole\n                                                   \n                                                \n                                                \n                                                \n                                                   imagebuilder:GetContainerRecipe\n                                                   \n                                                \n                                                \n                                                \n                                                   imagebuilder:GetDistributionConfiguration\n                                                   \n                                                \n                                                \n                                                \n                                                   imagebuilder:GetImageRecipe\n                                                   \n                                                \n                                                \n                                                \n                                                   imagebuilder:GetInfrastructureConfiguration\n                                                   \n                                                \n                                                \n                                                \n                                                   imagebuilder:TagResource"
     },
     "CreateImagePipeline": {
       "name": "CreateImagePipeline",
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "Create a new image pipeline",
+      "description": "Grants permission to create a new image pipeline",
       "accessLevel": "Write",
       "resourceTypes": [
         "imagePipeline*"
       ],
       "conditionKeys": "",
-      "dependentActions": "imagebuilder:GetImageRecipe"
+      "dependentActions": "iam:CreateServiceLinkedRole\n                                                   \n                                                \n                                                \n                                                \n                                                   imagebuilder:GetContainerRecipe\n                                                   \n                                                \n                                                \n                                                \n                                                   imagebuilder:GetImageRecipe\n                                                   \n                                                \n                                                \n                                                \n                                                   imagebuilder:TagResource"
     },
     "CreateImageRecipe": {
       "name": "CreateImageRecipe",
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "Create a new Image Recipe",
+      "description": "Grants permission to create a new Image Recipe",
       "accessLevel": "Write",
       "resourceTypes": [
         "imageRecipe*"
       ],
       "conditionKeys": "",
-      "dependentActions": "imagebuilder:GetComponent"
+      "dependentActions": "ec2:DescribeImages\n                                                   \n                                                \n                                                \n                                                \n                                                   iam:CreateServiceLinkedRole\n                                                   \n                                                \n                                                \n                                                \n                                                   imagebuilder:GetComponent\n                                                   \n                                                \n                                                \n                                                \n                                                   imagebuilder:GetImage\n                                                   \n                                                \n                                                \n                                                \n                                                   imagebuilder:TagResource"
     },
     "CreateInfrastructureConfiguration": {
       "name": "CreateInfrastructureConfiguration",
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "Create a new infrastructure configuration",
+      "description": "Grants permission to create a new infrastructure configuration",
       "accessLevel": "Write",
       "resourceTypes": [
         "infrastructureConfiguration*"
       ],
       "conditionKeys": "",
-      "dependentActions": "iam:PassRole"
+      "dependentActions": "iam:CreateServiceLinkedRole\n                                                   \n                                                \n                                                \n                                                \n                                                   iam:PassRole\n                                                   \n                                                \n                                                \n                                                \n                                                   imagebuilder:TagResource\n                                                   \n                                                \n                                                \n                                                \n                                                   sns:Publish"
     },
     "DeleteComponent": {
       "name": "DeleteComponent",
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "Delete a component",
+      "description": "Grants permission to delete a component",
       "accessLevel": "Write",
       "resourceTypes": [
         "component*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteContainerRecipe": {
+      "name": "DeleteContainerRecipe",
+      "topics": [
+        "Amazon EC2 Image Builder"
+      ],
+      "description": "Grants permission to delete a container recipe",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "containerRecipe*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -110,7 +136,7 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "Delete a distribution configuration",
+      "description": "Grants permission to delete a distribution configuration",
       "accessLevel": "Write",
       "resourceTypes": [
         "distributionConfiguration*"
@@ -123,7 +149,7 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "Delete an image",
+      "description": "Grants permission to delete an image",
       "accessLevel": "Write",
       "resourceTypes": [
         "image*"
@@ -136,7 +162,7 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "Delete an image pipeline",
+      "description": "Grants permission to delete an image pipeline",
       "accessLevel": "Write",
       "resourceTypes": [
         "imagePipeline*"
@@ -162,7 +188,7 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "Delete an infrastructure configuration",
+      "description": "Grants permission to delete an infrastructure configuration",
       "accessLevel": "Write",
       "resourceTypes": [
         "infrastructureConfiguration*"
@@ -175,7 +201,20 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "View details about a component",
+      "description": "Grants permission to view details about a component",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "component*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "kms:Decrypt"
+    },
+    "GetComponentPolicy": {
+      "name": "GetComponentPolicy",
+      "topics": [
+        "Amazon EC2 Image Builder"
+      ],
+      "description": "Grants permission to view the resource policy associated with a component",
       "accessLevel": "Read",
       "resourceTypes": [
         "component*"
@@ -183,15 +222,28 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "GetComponentPolicy": {
-      "name": "GetComponentPolicy",
+    "GetContainerRecipe": {
+      "name": "GetContainerRecipe",
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "View the resource policy associated with a component",
-      "accessLevel": "Permissions management",
+      "description": "Grants permission to view details about a container recipe",
+      "accessLevel": "Read",
       "resourceTypes": [
-        "component*"
+        "containerRecipe*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetContainerRecipePolicy": {
+      "name": "GetContainerRecipePolicy",
+      "topics": [
+        "Amazon EC2 Image Builder"
+      ],
+      "description": "Grants permission to view the resource policy associated with a container recipe",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "containerRecipe*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -201,7 +253,7 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "View details about a distribution configuration",
+      "description": "Grants permission to view details about a distribution configuration",
       "accessLevel": "Read",
       "resourceTypes": [
         "distributionConfiguration*"
@@ -214,7 +266,7 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "View details about an image",
+      "description": "Grants permission to view details about an image",
       "accessLevel": "Read",
       "resourceTypes": [
         "image*"
@@ -227,7 +279,7 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "View details about an image pipeline",
+      "description": "Grants permission to view details about an image pipeline",
       "accessLevel": "Read",
       "resourceTypes": [
         "imagePipeline*"
@@ -240,8 +292,8 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "View the resource policy associated with an image",
-      "accessLevel": "Permissions management",
+      "description": "Grants permission to view the resource policy associated with an image",
+      "accessLevel": "Read",
       "resourceTypes": [
         "image*"
       ],
@@ -253,7 +305,7 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "View details about an image recipe",
+      "description": "Grants permission to view details about an image recipe",
       "accessLevel": "Read",
       "resourceTypes": [
         "imageRecipe*"
@@ -266,8 +318,8 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "View the resource policy associated with an image recipe",
-      "accessLevel": "Permissions management",
+      "description": "Grants permission to view the resource policy associated with an image recipe",
+      "accessLevel": "Read",
       "resourceTypes": [
         "imageRecipe*"
       ],
@@ -279,7 +331,7 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "View details about an infrastructure configuration",
+      "description": "Grants permission to view details about an infrastructure configuration",
       "accessLevel": "Read",
       "resourceTypes": [
         "infrastructureConfiguration*"
@@ -287,12 +339,25 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ImportComponent": {
+      "name": "ImportComponent",
+      "topics": [
+        "Amazon EC2 Image Builder"
+      ],
+      "description": "Grants permission to import a new component",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "component*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:CreateServiceLinkedRole\n                                                   \n                                                \n                                                \n                                                \n                                                   imagebuilder:TagResource\n                                                   \n                                                \n                                                \n                                                \n                                                   kms:Encrypt\n                                                   \n                                                \n                                                \n                                                \n                                                   kms:GenerateDataKey\n                                                   \n                                                \n                                                \n                                                \n                                                   kms:GenerateDataKeyWithoutPlaintext"
+    },
     "ListComponentBuildVersions": {
       "name": "ListComponentBuildVersions",
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "List the component build versions in your account",
+      "description": "Grants permission to list the component build versions in your account",
       "accessLevel": "List",
       "resourceTypes": [
         "componentVersion*"
@@ -305,7 +370,18 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "List the component versions owned by or shared with your account",
+      "description": "Grants permission to list the component versions owned by or shared with your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListContainerRecipes": {
+      "name": "ListContainerRecipes",
+      "topics": [
+        "Amazon EC2 Image Builder"
+      ],
+      "description": "Grants permission to list the container recipes owned by or shared with your account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -316,7 +392,7 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "List the distribution configurations in your account",
+      "description": "Grants permission to list the distribution configurations in your account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -327,10 +403,23 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "List the image build versions in your account",
+      "description": "Grants permission to list the image build versions in your account",
       "accessLevel": "List",
       "resourceTypes": [
         "imageVersion*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListImagePackages": {
+      "name": "ListImagePackages",
+      "topics": [
+        "Amazon EC2 Image Builder"
+      ],
+      "description": "Grants permission to returns a list of packages installed on the specified image",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "image*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -340,7 +429,7 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "Returns a list of images created by the specified pipeline",
+      "description": "Grants permission to returns a list of images created by the specified pipeline",
       "accessLevel": "List",
       "resourceTypes": [
         "imagePipeline*"
@@ -353,7 +442,7 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "List the image pipelines in your account",
+      "description": "Grants permission to list the image pipelines in your account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -364,7 +453,7 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "List the image recipes owned by or shared with your account",
+      "description": "Grants permission to list the image recipes owned by or shared with your account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -375,7 +464,7 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "List the image versions owned by or shared with your account",
+      "description": "Grants permission to list the image versions owned by or shared with your account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -386,7 +475,7 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "List the infrastructure configurations in your account",
+      "description": "Grants permission to list the infrastructure configurations in your account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -397,7 +486,7 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "List tag for an Image Builder resource",
+      "description": "Grants permission to list tag for an Image Builder resource",
       "accessLevel": "Read",
       "resourceTypes": [
         "component"
@@ -410,10 +499,23 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "Set the resource policy associated with a component",
+      "description": "Grants permission to set the resource policy associated with a component",
       "accessLevel": "Permissions management",
       "resourceTypes": [
         "component*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutContainerRecipePolicy": {
+      "name": "PutContainerRecipePolicy",
+      "topics": [
+        "Amazon EC2 Image Builder"
+      ],
+      "description": "Grants permission to set the resource policy associated with a container recipe",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "containerRecipe*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -423,7 +525,7 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "Set the resource policy associated with an image",
+      "description": "Grants permission to set the resource policy associated with an image",
       "accessLevel": "Permissions management",
       "resourceTypes": [
         "image*"
@@ -436,7 +538,7 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "Set the resource policy associated with an image recipe",
+      "description": "Grants permission to set the resource policy associated with an image recipe",
       "accessLevel": "Permissions management",
       "resourceTypes": [
         "imageRecipe*"
@@ -449,20 +551,20 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "Create a new image from a pipeline",
+      "description": "Grants permission to create a new image from a pipeline",
       "accessLevel": "Write",
       "resourceTypes": [
         "imagePipeline*"
       ],
       "conditionKeys": "",
-      "dependentActions": "imagebuilder:GetImagePipeline"
+      "dependentActions": "iam:CreateServiceLinkedRole\n                                                   \n                                                \n                                                \n                                                \n                                                   imagebuilder:GetImagePipeline"
     },
     "TagResource": {
       "name": "TagResource",
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "Tag an Image Builder resource",
+      "description": "Grants permission to tag an Image Builder resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "component"
@@ -475,7 +577,7 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "Untag an Image Builder resource",
+      "description": "Grants permission to untag an Image Builder resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "component"
@@ -488,7 +590,7 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "Update an existing distribution configuration",
+      "description": "Grants permission to update an existing distribution configuration",
       "accessLevel": "Write",
       "resourceTypes": [
         "distributionConfiguration*"
@@ -501,7 +603,7 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "Update an existing image pipeline",
+      "description": "Grants permission to update an existing image pipeline",
       "accessLevel": "Write",
       "resourceTypes": [
         "imagePipeline*"
@@ -514,13 +616,13 @@
       "topics": [
         "Amazon EC2 Image Builder"
       ],
-      "description": "Update an existing infrastructure configuration",
+      "description": "Grants permission to update an existing infrastructure configuration",
       "accessLevel": "Write",
       "resourceTypes": [
         "infrastructureConfiguration*"
       ],
       "conditionKeys": "",
-      "dependentActions": "iam:PassRole"
+      "dependentActions": "iam:PassRole\n                                                   \n                                                \n                                                \n                                                \n                                                   sns:Publish"
     }
   },
   "topics": [

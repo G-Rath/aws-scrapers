@@ -1,12 +1,45 @@
 {
   "servicePrefix": "mediaconnect",
   "actions": {
+    "AddFlowMediaStreams": {
+      "name": "AddFlowMediaStreams",
+      "topics": [
+        "AWS Elemental MediaConnect"
+      ],
+      "description": "Grants permission to add media streams to any flow",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "AddFlowOutputs": {
       "name": "AddFlowOutputs",
       "topics": [
         "AWS Elemental MediaConnect"
       ],
-      "description": "Grants permission to add outputs to any flow.",
+      "description": "Grants permission to add outputs to any flow",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AddFlowSources": {
+      "name": "AddFlowSources",
+      "topics": [
+        "AWS Elemental MediaConnect"
+      ],
+      "description": "Grants permission to add sources to any flow",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AddFlowVpcInterfaces": {
+      "name": "AddFlowVpcInterfaces",
+      "topics": [
+        "AWS Elemental MediaConnect"
+      ],
+      "description": "Grants permission to add VPC interfaces to any flow",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -17,7 +50,7 @@
       "topics": [
         "AWS Elemental MediaConnect"
       ],
-      "description": "Grants permission to create flows.",
+      "description": "Grants permission to create flows",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -28,7 +61,7 @@
       "topics": [
         "AWS Elemental MediaConnect"
       ],
-      "description": "Grants permission to delete flows.",
+      "description": "Grants permission to delete flows",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -39,7 +72,29 @@
       "topics": [
         "AWS Elemental MediaConnect"
       ],
-      "description": "Grants permission to display the details of a flow including the flow ARN, name, and\n                                                Availability Zone, as well as details about the source, outputs, and entitlements.",
+      "description": "Grants permission to display the details of a flow including the flow ARN, name, and\n                                                Availability Zone, as well as details about the source, outputs, and entitlements",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeOffering": {
+      "name": "DescribeOffering",
+      "topics": [
+        "AWS Elemental MediaConnect"
+      ],
+      "description": "Grants permission to display the details of an offering",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeReservation": {
+      "name": "DescribeReservation",
+      "topics": [
+        "AWS Elemental MediaConnect"
+      ],
+      "description": "Grants permission to display the details of a reservation",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -50,7 +105,7 @@
       "topics": [
         "AWS Elemental MediaConnect"
       ],
-      "description": "Grants permission to grant entitlements on any flow.",
+      "description": "Grants permission to grant entitlements on any flow",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -61,7 +116,7 @@
       "topics": [
         "AWS Elemental MediaConnect"
       ],
-      "description": "Grants permission to display a list of all entitlements that have been granted to\n                                                the account.",
+      "description": "Grants permission to display a list of all entitlements that have been granted to\n                                                the account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -72,8 +127,63 @@
       "topics": [
         "AWS Elemental MediaConnect"
       ],
-      "description": "Grants permission to display a list of flows that are associated with this account.",
+      "description": "Grants permission to display a list of flows that are associated with this account",
       "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListOfferings": {
+      "name": "ListOfferings",
+      "topics": [
+        "AWS Elemental MediaConnect"
+      ],
+      "description": "Grants permission to display a list of all offerings that are available to the account\n                                                in the current AWS Region",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListReservations": {
+      "name": "ListReservations",
+      "topics": [
+        "AWS Elemental MediaConnect"
+      ],
+      "description": "Grants permission to display a list of all reservations that have been purchased by\n                                                the account in the current AWS Region",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "AWS Elemental MediaConnect"
+      ],
+      "description": "Grants permission to display a list of all tags associated with a resource",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PurchaseOffering": {
+      "name": "PurchaseOffering",
+      "topics": [
+        "AWS Elemental MediaConnect"
+      ],
+      "description": "Grants permission to purchase an offering",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemoveFlowMediaStream": {
+      "name": "RemoveFlowMediaStream",
+      "topics": [
+        "AWS Elemental MediaConnect"
+      ],
+      "description": "Grants permission to remove media streams from any flow",
+      "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -83,7 +193,29 @@
       "topics": [
         "AWS Elemental MediaConnect"
       ],
-      "description": "Grants permission to remove outputs from any flow.",
+      "description": "Grants permission to remove outputs from any flow",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemoveFlowSource": {
+      "name": "RemoveFlowSource",
+      "topics": [
+        "AWS Elemental MediaConnect"
+      ],
+      "description": "Grants permission to remove sources from any flow",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemoveFlowVpcInterface": {
+      "name": "RemoveFlowVpcInterface",
+      "topics": [
+        "AWS Elemental MediaConnect"
+      ],
+      "description": "Grants permission to remove VPC interfaces from any flow",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -94,7 +226,7 @@
       "topics": [
         "AWS Elemental MediaConnect"
       ],
-      "description": "Grants permission to revoke entitlements on any flow.",
+      "description": "Grants permission to revoke entitlements on any flow",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -105,7 +237,7 @@
       "topics": [
         "AWS Elemental MediaConnect"
       ],
-      "description": "Grants permission to start flows.",
+      "description": "Grants permission to start flows",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -116,7 +248,40 @@
       "topics": [
         "AWS Elemental MediaConnect"
       ],
-      "description": "Grants permission to stop flows.",
+      "description": "Grants permission to stop flows",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "AWS Elemental MediaConnect"
+      ],
+      "description": "Grants permission to associate tags with resources",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "AWS Elemental MediaConnect"
+      ],
+      "description": "Grants permission to remove tags from resources",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateFlow": {
+      "name": "UpdateFlow",
+      "topics": [
+        "AWS Elemental MediaConnect"
+      ],
+      "description": "Grants permission to update flows",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -127,7 +292,18 @@
       "topics": [
         "AWS Elemental MediaConnect"
       ],
-      "description": "Grants permission to update entitlements on any flow.",
+      "description": "Grants permission to update entitlements on any flow",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateFlowMediaStream": {
+      "name": "UpdateFlowMediaStream",
+      "topics": [
+        "AWS Elemental MediaConnect"
+      ],
+      "description": "Grants permission to update media streams on any flow",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -138,7 +314,7 @@
       "topics": [
         "AWS Elemental MediaConnect"
       ],
-      "description": "Grants permission to update outputs on any flow.",
+      "description": "Grants permission to update outputs on any flow",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -149,7 +325,7 @@
       "topics": [
         "AWS Elemental MediaConnect"
       ],
-      "description": "Grants permission to update the source of any flow.",
+      "description": "Grants permission to update the source of any flow",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",

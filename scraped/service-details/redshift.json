@@ -290,6 +290,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "CreateUsageLimit": {
+      "name": "CreateUsageLimit",
+      "topics": [
+        "Amazon Redshift"
+      ],
+      "description": "Grants permission to create a usage limit",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "usagelimit*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteCluster": {
       "name": "DeleteCluster",
       "topics": [
@@ -451,6 +464,19 @@
       "accessLevel": "Tagging",
       "resourceTypes": [
         "cluster"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteUsageLimit": {
+      "name": "DeleteUsageLimit",
+      "topics": [
+        "Amazon Redshift"
+      ],
+      "description": "Grants permission to delete a usage limit",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "usagelimit*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -806,6 +832,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DescribeUsageLimits": {
+      "name": "DescribeUsageLimits",
+      "topics": [
+        "Amazon Redshift"
+      ],
+      "description": "Grants permission to describe usage limits",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "usagelimit*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DisableLogging": {
       "name": "DisableLogging",
       "topics": [
@@ -958,6 +997,19 @@
       "description": "Grants permission to list tables through the Amazon Redshift console",
       "accessLevel": "List",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ModifyAquaConfiguration": {
+      "name": "ModifyAquaConfiguration",
+      "topics": [
+        "Amazon Redshift"
+      ],
+      "description": "Grants permission to modify the AQUA configuration of a cluster",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cluster*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -1120,6 +1172,19 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "snapshotschedule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ModifyUsageLimit": {
+      "name": "ModifyUsageLimit",
+      "topics": [
+        "Amazon Redshift"
+      ],
+      "description": "Grants permission to modify a usage limit",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "usagelimit*"
       ],
       "conditionKeys": "",
       "dependentActions": ""

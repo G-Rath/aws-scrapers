@@ -6,7 +6,7 @@
       "topics": [
         "Amazon Elasticsearch Service"
       ],
-      "description": "Allows the destination domain owner to accept an inbound cross-cluster search connection\n                                                request",
+      "description": "Grants permission to the destination domain owner to accept an inbound cross-cluster\n                                                search connection request",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -19,6 +19,32 @@
       ],
       "description": "Grants permission to attach resource tags to an Amazon ES domain.",
       "accessLevel": "Tagging",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociatePackage": {
+      "name": "AssociatePackage",
+      "topics": [
+        "Amazon Elasticsearch Service"
+      ],
+      "description": "Grants permission to associate a package with an Amazon ES domain",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CancelElasticsearchServiceSoftwareUpdate": {
+      "name": "CancelElasticsearchServiceSoftwareUpdate",
+      "topics": [
+        "Amazon Elasticsearch Service"
+      ],
+      "description": "Grants permission to cancel elastic search software update of a domain to given version",
+      "accessLevel": "Write",
       "resourceTypes": [
         "domain*"
       ],
@@ -54,11 +80,22 @@
       "topics": [
         "Amazon Elasticsearch Service"
       ],
-      "description": "Creates a new cross-cluster search connection from a source domain to a destination\n                                                domain",
+      "description": "Grants permission to create a new cross-cluster search connection from a source domain\n                                                to a destination domain",
       "accessLevel": "Write",
       "resourceTypes": [
         "domain*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreatePackage": {
+      "name": "CreatePackage",
+      "topics": [
+        "Amazon Elasticsearch Service"
+      ],
+      "description": "Grants permission to add a package for use with Amazon ES domains",
+      "accessLevel": "Write",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -91,7 +128,7 @@
       "topics": [
         "Amazon Elasticsearch Service"
       ],
-      "description": "Allows the destination domain owner to delete an existing inbound cross-cluster search\n                                                connection",
+      "description": "Grants permission to the destination domain owner to delete an existing inbound cross-cluster\n                                                search connection",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -102,7 +139,18 @@
       "topics": [
         "Amazon Elasticsearch Service"
       ],
-      "description": "Allows the source domain owner to delete an existing outbound cross-cluster search\n                                                connection",
+      "description": "Grants permission to the source domain owner to delete an existing outbound cross-cluster\n                                                search connection",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeletePackage": {
+      "name": "DeletePackage",
+      "topics": [
+        "Amazon Elasticsearch Service"
+      ],
+      "description": "Grants permission to delete a package from Amazon ES. The package must not be associated\n                                                with any Amazon ES domain.",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -163,7 +211,7 @@
       "topics": [
         "Amazon Elasticsearch Service"
       ],
-      "description": "Lists all the inbound cross-cluster search connections for a destination domain",
+      "description": "Grants permission to list all the inbound cross-cluster search connections for a destination\n                                                domain",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -174,8 +222,19 @@
       "topics": [
         "Amazon Elasticsearch Service"
       ],
-      "description": "Lists all the outbound cross-cluster search connections for a source domain",
+      "description": "Grants permission to list all the outbound cross-cluster search connections for a\n                                                source domain",
       "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribePackages": {
+      "name": "DescribePackages",
+      "topics": [
+        "Amazon Elasticsearch Service"
+      ],
+      "description": "Grants permission to describe all packages available to Amazon ES domain",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -199,6 +258,19 @@
       "description": "Grants permission to fetch ES reserved instances already purchased by customer",
       "accessLevel": "List",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DissociatePackage": {
+      "name": "DissociatePackage",
+      "topics": [
+        "Amazon Elasticsearch Service"
+      ],
+      "description": "Grants permission to remove a package from the specified Amazon ES domain",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -306,6 +378,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "GetPackageVersionHistory": {
+      "name": "GetPackageVersionHistory",
+      "topics": [
+        "Amazon Elasticsearch Service"
+      ],
+      "description": "Grants permission to fetch the version history for a package",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "GetUpgradeHistory": {
       "name": "GetUpgradeHistory",
       "topics": [
@@ -338,6 +421,17 @@
         "Amazon Elasticsearch Service"
       ],
       "description": "Grants permission to display the names of all Amazon ES domains that the current user\n                                                owns.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDomainsForPackage": {
+      "name": "ListDomainsForPackage",
+      "topics": [
+        "Amazon Elasticsearch Service"
+      ],
+      "description": "Grants permission to list all Amazon ES domains that a package is associated with",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -376,6 +470,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ListPackagesForDomain": {
+      "name": "ListPackagesForDomain",
+      "topics": [
+        "Amazon Elasticsearch Service"
+      ],
+      "description": "Grants permission to list all packages associated with the Amazon ES domain",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ListTags": {
       "name": "ListTags",
       "topics": [
@@ -405,7 +512,7 @@
       "topics": [
         "Amazon Elasticsearch Service"
       ],
-      "description": "Allows the destination domain owner to reject an inbound cross-cluster search connection\n                                                request",
+      "description": "Grants permission to the destination domain owner to reject an inbound cross-cluster\n                                                search connection request",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -424,6 +531,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "StartElasticsearchServiceSoftwareUpdate": {
+      "name": "StartElasticsearchServiceSoftwareUpdate",
+      "topics": [
+        "Amazon Elasticsearch Service"
+      ],
+      "description": "Grants permission to start elastic search software update of a domain to given version",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "UpdateElasticsearchDomainConfig": {
       "name": "UpdateElasticsearchDomainConfig",
       "topics": [
@@ -434,6 +554,17 @@
       "resourceTypes": [
         "domain*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdatePackage": {
+      "name": "UpdatePackage",
+      "topics": [
+        "Amazon Elasticsearch Service"
+      ],
+      "description": "Grants permission to update a package for use with Amazon ES domains",
+      "accessLevel": "Write",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },

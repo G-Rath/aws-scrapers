@@ -228,6 +228,19 @@
       "conditionKeys": "",
       "dependentActions": "codestar-connections:GetIndividualAccessToken\n                                                   \n                                                \n                                                \n                                                \n                                                   codestar-connections:GetInstallationUrl\n                                                   \n                                                \n                                                \n                                                \n                                                   codestar-connections:ListInstallationTargets\n                                                   \n                                                \n                                                \n                                                \n                                                   codestar-connections:StartOAuthHandshake"
     },
+    "UpdateHost": {
+      "name": "UpdateHost",
+      "topics": [
+        "AWS CodeStar Connections"
+      ],
+      "description": "Grants permission to update a host resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Host*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "UseConnection": {
       "name": "UseConnection",
       "topics": [

@@ -1,15 +1,26 @@
 {
   "servicePrefix": "backup",
   "actions": {
+    "CopyFromBackupVault": {
+      "name": "CopyFromBackupVault",
+      "topics": [
+        "AWS Backup"
+      ],
+      "description": "Grants permission to copy from a backup vault",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "backup:CopyTargets\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      backup:CopyTargetOrgPaths",
+      "dependentActions": ""
+    },
     "CopyIntoBackupVault": {
       "name": "CopyIntoBackupVault",
       "topics": [
         "AWS Backup"
       ],
-      "description": "Copy into a backup vault",
+      "description": "Grants permission to copy into a backup vault",
       "accessLevel": "Write",
       "resourceTypes": [],
-      "conditionKeys": "",
+      "conditionKeys": "aws:RequestTag/${TagKey}",
       "dependentActions": ""
     },
     "CreateBackupPlan": {
@@ -17,7 +28,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Creates a new backup plan",
+      "description": "Grants permission to create a new backup plan",
       "accessLevel": "Write",
       "resourceTypes": [
         "backupPlan*"
@@ -30,7 +41,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Creates a new resource assignment in a backup plan.",
+      "description": "Grants permission to create a new resource assignment in a backup plan",
       "accessLevel": "Write",
       "resourceTypes": [
         "backupPlan*"
@@ -43,7 +54,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Creates a new backup vault.",
+      "description": "Grants permission to create a new backup vault",
       "accessLevel": "Write",
       "resourceTypes": [
         "backupVault*"
@@ -56,7 +67,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Deletes a backup plan.",
+      "description": "Grants permission to delete a backup plan",
       "accessLevel": "Write",
       "resourceTypes": [
         "backupPlan*"
@@ -69,7 +80,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Deletes a resource assignment from a backup plan.",
+      "description": "Grants permission to delete a resource assignment from a backup plan",
       "accessLevel": "Write",
       "resourceTypes": [
         "backupPlan*"
@@ -82,7 +93,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Deletes a backup vault.",
+      "description": "Grants permission to delete a backup vault",
       "accessLevel": "Write",
       "resourceTypes": [
         "backupVault*"
@@ -95,7 +106,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Deletes backup vault access policy.",
+      "description": "Grants permission to delete backup vault access policy",
       "accessLevel": "Write",
       "resourceTypes": [
         "backupVault*"
@@ -108,7 +119,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Remove notifications from backup vault.",
+      "description": "Grants permission to remove notifications from backup vault",
       "accessLevel": "Write",
       "resourceTypes": [
         "backupVault*"
@@ -121,7 +132,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Deletes a recovery point from a backup vault.",
+      "description": "Grants permission to delete a recovery point from a backup vault",
       "accessLevel": "Write",
       "resourceTypes": [
         "recoveryPoint*"
@@ -134,7 +145,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Describes a backup job",
+      "description": "Grants permission to describe a backup job",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -145,7 +156,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Creates a new backup vault with the specified name.",
+      "description": "Grants permission to describe a new backup vault with the specified name",
       "accessLevel": "Read",
       "resourceTypes": [
         "backupVault*"
@@ -158,10 +169,21 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Describes a copy job",
+      "description": "Grants permission to describe a copy job",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "DescribeGlobalSettings": {
+      "name": "DescribeGlobalSettings",
+      "topics": [
+        "AWS Backup"
+      ],
+      "description": "Grants permission to describe global settings",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
       "dependentActions": ""
     },
     "DescribeProtectedResource": {
@@ -169,7 +191,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Describes a protected resource.",
+      "description": "Grants permission to describe a protected resource",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -180,7 +202,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Describes a recovery point.",
+      "description": "Grants permission to describe a recovery point",
       "accessLevel": "Read",
       "resourceTypes": [
         "recoveryPoint*"
@@ -193,7 +215,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Describes region settings",
+      "description": "Grants permission to describe region settings",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -204,9 +226,22 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Describes a restore job.",
+      "description": "Grants permission to describe a restore job",
       "accessLevel": "Read",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateRecoveryPoint": {
+      "name": "DisassociateRecoveryPoint",
+      "topics": [
+        "AWS Backup"
+      ],
+      "description": "Grants permission to disassociate a recovery point from a backup vault",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "recoveryPoint*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -215,7 +250,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Exports a backup plan as a JSON.",
+      "description": "Grants permission to export a backup plan as a JSON",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -226,7 +261,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Gets a backup plan.",
+      "description": "Grants permission to get a backup plan",
       "accessLevel": "Read",
       "resourceTypes": [
         "backupPlan*"
@@ -239,7 +274,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Transforms a JSON to a backup plan.",
+      "description": "Grants permission to transform a JSON to a backup plan",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -250,7 +285,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Transforms a template to a backup plan.",
+      "description": "Grants permission to transform a template to a backup plan",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -261,7 +296,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Gets a backup plan resource assignment.",
+      "description": "Grants permission to get a backup plan resource assignment",
       "accessLevel": "Read",
       "resourceTypes": [
         "backupPlan*"
@@ -274,7 +309,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Gets backup vault access policy.",
+      "description": "Grants permission to get backup vault access policy",
       "accessLevel": "Read",
       "resourceTypes": [
         "backupVault*"
@@ -287,7 +322,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Gets backup vault notifications.",
+      "description": "Grants permission to get backup vault notifications",
       "accessLevel": "Read",
       "resourceTypes": [
         "backupVault*"
@@ -300,7 +335,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Gets recovery point restore metadata.",
+      "description": "Grants permission to get recovery point restore metadata",
       "accessLevel": "Read",
       "resourceTypes": [
         "recoveryPoint*"
@@ -313,7 +348,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Gets supported resource types.",
+      "description": "Grants permission to get supported resource types",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -324,7 +359,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Lists backup jobs.",
+      "description": "Grants permission to list backup jobs",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -335,7 +370,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Lists backup plan templates provided by AWS Backup.",
+      "description": "Grants permission to list backup plan templates provided by AWS Backup",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -346,7 +381,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Lists backup plan versions.",
+      "description": "Grants permission to list backup plan versions",
       "accessLevel": "List",
       "resourceTypes": [
         "backupPlan*"
@@ -359,7 +394,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Lists backup plans.",
+      "description": "Grants permision to list backup plans",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -370,7 +405,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Lists resource assignments for a specific backup plan.",
+      "description": "Grants permission to list resource assignments for a specific backup plan",
       "accessLevel": "List",
       "resourceTypes": [
         "backupPlan*"
@@ -383,7 +418,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Lists backup vaults.",
+      "description": "Grants permission to list backup vaults.",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -394,7 +429,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "List copy jobs",
+      "description": "Grants permission to list copy jobs",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -405,7 +440,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Lists protected resources by AWS Backup.",
+      "description": "Grants permission to list protected resources by AWS Backup",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -416,7 +451,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Lists recovery points inside a backup vault.",
+      "description": "Grants permission to list recovery points inside a backup vault",
       "accessLevel": "List",
       "resourceTypes": [
         "backupVault*"
@@ -429,7 +464,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Lists recovery points for a resource.",
+      "description": "Grants permission to list recovery points for a resource",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -440,7 +475,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Lists restore jobs.",
+      "description": "Grants permission to lists restore jobs",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -451,8 +486,8 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Lists tags for a resource.",
-      "accessLevel": "List",
+      "description": "Grants permission to list tags for a resource",
+      "accessLevel": "Read",
       "resourceTypes": [
         "backupPlan"
       ],
@@ -464,7 +499,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Adds an access policy to the backup vault.",
+      "description": "Grants permission to add an access policy to the backup vault",
       "accessLevel": "Write",
       "resourceTypes": [
         "backupVault*"
@@ -477,7 +512,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Adds an SNS topic to the backup vault.",
+      "description": "Grants permission to add an SNS topic to the backup vault",
       "accessLevel": "Write",
       "resourceTypes": [
         "backupVault*"
@@ -490,7 +525,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Starts a new backup job.",
+      "description": "Grants permission to start a new backup job",
       "accessLevel": "Write",
       "resourceTypes": [
         "backupVault*"
@@ -503,7 +538,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Copy a backup from a source region to a destination region.",
+      "description": "Grants permission to copy a backup from a source backup vault to a destination backup\n                                                vault",
       "accessLevel": "Write",
       "resourceTypes": [
         "recoveryPoint*"
@@ -516,7 +551,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Starts a new restore job.",
+      "description": "Grants permission to start a new restore job",
       "accessLevel": "Write",
       "resourceTypes": [
         "recoveryPoint*"
@@ -529,7 +564,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Stops a backup job.",
+      "description": "Grants permission to stop a backup job",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -540,7 +575,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Tags a resource.",
+      "description": "Grants permission to tag a resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "backupPlan"
@@ -553,7 +588,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Untags a resource.",
+      "description": "Grants permission to untag a resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "backupPlan"
@@ -566,11 +601,22 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Updates a backup plan.",
+      "description": "Grants permission to update a backup plan",
       "accessLevel": "Write",
       "resourceTypes": [
         "backupPlan*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateGlobalSettings": {
+      "name": "UpdateGlobalSettings",
+      "topics": [
+        "AWS Backup"
+      ],
+      "description": "Grants permission to update the current global settings for the AWS Account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -579,7 +625,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Updates the lifecycle of the recovery point.",
+      "description": "Grants permission to update the lifecycle of the recovery point",
       "accessLevel": "Write",
       "resourceTypes": [
         "recoveryPoint*"
@@ -592,7 +638,7 @@
       "topics": [
         "AWS Backup"
       ],
-      "description": "Describes region settings",
+      "description": "Grants permission to update the current service opt-in settings for the Region",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",

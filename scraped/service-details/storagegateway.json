@@ -77,6 +77,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "AssociateFileSystem": {
+      "name": "AssociateFileSystem",
+      "topics": [
+        "Amazon Storage Gateway"
+      ],
+      "description": "Grants permission to associate an Amazon FSx file system with the Amazon FSx file\n                                                gateway",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "AttachVolume": {
       "name": "AttachVolume",
       "topics": [
@@ -372,12 +385,38 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DescribeAvailabilityMonitorTest": {
+      "name": "DescribeAvailabilityMonitorTest",
+      "topics": [
+        "Amazon Storage Gateway"
+      ],
+      "description": "Grants permission to get the information about the most recent high availability monitoring\n                                                test that was performed on the gateway",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DescribeBandwidthRateLimit": {
       "name": "DescribeBandwidthRateLimit",
       "topics": [
         "Amazon Storage Gateway"
       ],
       "description": "Grants permission to get the bandwidth rate limits of a gateway",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeBandwidthRateLimitSchedule": {
+      "name": "DescribeBandwidthRateLimitSchedule",
+      "topics": [
+        "Amazon Storage Gateway"
+      ],
+      "description": "Grants permission to get the bandwidth rate limit schedule of a gateway",
       "accessLevel": "Read",
       "resourceTypes": [
         "gateway*"
@@ -420,6 +459,19 @@
       "accessLevel": "Read",
       "resourceTypes": [
         "target*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeFileSystemAssociations": {
+      "name": "DescribeFileSystemAssociations",
+      "topics": [
+        "Amazon Storage Gateway"
+      ],
+      "description": "Grants permission to get a description for one or more file system associations",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "fs-association*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -617,6 +669,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DisassociateFileSystem": {
+      "name": "DisassociateFileSystem",
+      "topics": [
+        "Amazon Storage Gateway"
+      ],
+      "description": "Grants permission to disassociate an Amazon FSx file system from an Amazon FSx file\n                                                gateway",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "fs-association*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "JoinDomain": {
       "name": "JoinDomain",
       "topics": [
@@ -649,6 +714,19 @@
         "Amazon Storage Gateway"
       ],
       "description": "Grants permission to get a list of the file shares for a specific file gateway, or\n                                                the list of file shares that belong to the calling user account",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFileSystemAssociations": {
+      "name": "ListFileSystemAssociations",
+      "topics": [
+        "Amazon Storage Gateway"
+      ],
+      "description": "Grants permission to get a list of the file system associations for the specified\n                                                gateway",
       "accessLevel": "List",
       "resourceTypes": [
         "gateway*"
@@ -875,6 +953,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "StartAvailabilityMonitorTest": {
+      "name": "StartAvailabilityMonitorTest",
+      "topics": [
+        "Amazon Storage Gateway"
+      ],
+      "description": "Grants permission to start a test that verifies that the specified gateway is configured\n                                                for High Availability monitoring in your host environment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "StartGateway": {
       "name": "StartGateway",
       "topics": [
@@ -914,6 +1005,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "UpdateBandwidthRateLimitSchedule": {
+      "name": "UpdateBandwidthRateLimitSchedule",
+      "topics": [
+        "Amazon Storage Gateway"
+      ],
+      "description": "Grants permission to update the bandwidth rate limit schedule of a gateway",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "UpdateChapCredentials": {
       "name": "UpdateChapCredentials",
       "topics": [
@@ -923,6 +1027,19 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "target*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateFileSystemAssociation": {
+      "name": "UpdateFileSystemAssociation",
+      "topics": [
+        "Amazon Storage Gateway"
+      ],
+      "description": "Grants permission to update a file system association",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "fs-association*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -988,6 +1105,32 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "share*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSMBFileShareVisibility": {
+      "name": "UpdateSMBFileShareVisibility",
+      "topics": [
+        "Amazon Storage Gateway"
+      ],
+      "description": "Grants permission to update whether the shares on a gateway are visible in a net view\n                                                or browse list",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSMBSecurityStrategy": {
+      "name": "UpdateSMBSecurityStrategy",
+      "topics": [
+        "Amazon Storage Gateway"
+      ],
+      "description": "Grants permission to update the SMB security strategy on a file gateway",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
       ],
       "conditionKeys": "",
       "dependentActions": ""

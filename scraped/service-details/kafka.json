@@ -6,7 +6,7 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Grants permission to associate one or more Scram Secrets with an Amazon MSK cluster.",
+      "description": "Grants permission to associate one or more Scram Secrets with an Amazon MSK cluster",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -17,7 +17,7 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Grants permission to disassociate one or more Scram Secrets from an Amazon MSK cluster.",
+      "description": "Grants permission to disassociate one or more Scram Secrets from an Amazon MSK cluster",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -28,7 +28,7 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Grants permission to create a cluster",
+      "description": "Grants permission to create an MSK cluster",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -39,7 +39,7 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Grants permission to create a configuration.",
+      "description": "Grants permission to create an MSK configuration",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -50,7 +50,7 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Grants permission to delete a cluster.",
+      "description": "Grants permission to delete an MSK cluster",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -61,7 +61,7 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Grants permission to delete the specified MSK configuration.",
+      "description": "Grants permission to delete the specified MSK configuration",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -72,7 +72,7 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Grants permission to describe a cluster.",
+      "description": "Grants permission to describe an MSK cluster",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -83,7 +83,7 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Returns a description of the cluster operation specified by the ARN.",
+      "description": "Grants permission to describe the cluster operation that is specified by the given\n                                                ARN",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -94,7 +94,7 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Grants permission to describe a configuration.",
+      "description": "Grants permission to describe an MSK configuration",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -105,7 +105,7 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Grants permission to describe a configuration revision.",
+      "description": "Grants permission to describe an MSK configuration revision",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -116,7 +116,7 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Grants permission to get connection details for the broker nodes in a cluster.",
+      "description": "Grants permission to get connection details for the brokers in an MSK cluster",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -127,7 +127,7 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Returns a list of the Apache Kafka versions to which you can update this cluster.",
+      "description": "Grants permission to get a list of the Apache Kafka versions to which you can update\n                                                an MSK cluster",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -138,7 +138,7 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Returns a list of all the operations that have been performed on the specified MSK\n                                                cluster.",
+      "description": "Grants permission to return a list of all the operations that have been performed\n                                                on the specified MSK cluster",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -149,7 +149,18 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Grants permission to return a list of all clusters in the current account.",
+      "description": "Grants permission to list all MSK clusters in this account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListConfigurationRevisions": {
+      "name": "ListConfigurationRevisions",
+      "topics": [
+        "Amazon Managed Streaming for Apache Kafka"
+      ],
+      "description": "Grants permission to list all revisions for an MSK configuration in this account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -160,7 +171,18 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Grants permission to return a list of all configurations in the current account.",
+      "description": "Grants permission to list all MSK configurations in this account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListKafkaVersions": {
+      "name": "ListKafkaVersions",
+      "topics": [
+        "Amazon Managed Streaming for Apache Kafka"
+      ],
+      "description": "Grants permission to list all Apache Kafka versions supported by Amazon MSK",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -171,7 +193,7 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Grants permission to return a list of nodes in a cluster.",
+      "description": "Grants permission to list brokers in an MSK cluster",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -182,7 +204,7 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Grants permission to return a list of the Scram Secrets associated with an Amazon\n                                                MSK cluster.",
+      "description": "Grants permission to list the Scram Secrets associated with an Amazon MSK cluster",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -193,11 +215,22 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Grants permission to list tags of a MSK resource.",
+      "description": "Grants permission to list tags of an MSK resource",
       "accessLevel": "List",
       "resourceTypes": [
         "cluster"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RebootBroker": {
+      "name": "RebootBroker",
+      "topics": [
+        "Amazon Managed Streaming for Apache Kafka"
+      ],
+      "description": "Grants permission to reboot broker",
+      "accessLevel": "Write",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -206,7 +239,7 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Grants permission to tag a MSK resource.",
+      "description": "Grants permission to tag an MSK resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "cluster"
@@ -219,7 +252,7 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Grants permission to remove tags from a MSK resource.",
+      "description": "Grants permission to remove tags from an MSK resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "cluster"
@@ -232,7 +265,7 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Updates the number of broker nodes of the cluster.",
+      "description": "Grants permission to update the number of brokers of the MSK cluster",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -243,7 +276,18 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Updates the storage size of the broker nodes of the cluster",
+      "description": "Grants permission to update the storage size of the brokers of the MSK cluster",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateBrokerType": {
+      "name": "UpdateBrokerType",
+      "topics": [
+        "Amazon Managed Streaming for Apache Kafka"
+      ],
+      "description": "Grants permission to update the broker type of an Amazon MSK cluster",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -254,7 +298,7 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Update Kafka configuration running on a cluster.",
+      "description": "Grants permission to update the configuration of the MSK cluster",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -265,7 +309,7 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Updates the cluster to the specified Apache Kafka version.",
+      "description": "Grants permission to update the MSK cluster to the specified Apache Kafka version",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -276,7 +320,7 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Grants permission to create a new revision of the configuration.",
+      "description": "Grants permission to create a new revision of the MSK configuration",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -287,7 +331,7 @@
       "topics": [
         "Amazon Managed Streaming for Apache Kafka"
       ],
-      "description": "Updates the monitoring settings for the cluster.",
+      "description": "Grants permission to update the monitoring settings for the MSK cluster",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",

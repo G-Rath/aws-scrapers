@@ -1,14 +1,29 @@
 {
   "servicePrefix": "workspaces",
   "actions": {
+    "AssociateConnectionAlias": {
+      "name": "AssociateConnectionAlias",
+      "topics": [
+        "Amazon WorkSpaces"
+      ],
+      "description": "Grants permission to associate connection aliases with directories",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "connectionalias*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "AssociateIpGroups": {
       "name": "AssociateIpGroups",
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Associates the specified IP access control group with the specified directory.",
+      "description": "Grants permission to associate IP access control groups with directories",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "directoryid*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -17,7 +32,7 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Adds one or more rules to the specified IP access control group.",
+      "description": "Grants permission to add rules to IP access control groups",
       "accessLevel": "Write",
       "resourceTypes": [
         "workspaceipgroup*"
@@ -25,15 +40,39 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "CopyWorkspaceImage": {
+      "name": "CopyWorkspaceImage",
+      "topics": [
+        "Amazon WorkSpaces"
+      ],
+      "description": "Grants permission to copy a WorkSpace image",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workspaceimage*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "workspaces:DescribeWorkspaceImages"
+    },
+    "CreateConnectionAlias": {
+      "name": "CreateConnectionAlias",
+      "topics": [
+        "Amazon WorkSpaces"
+      ],
+      "description": "Grants permission to create connection aliases for use with cross-Region redirection",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
     "CreateIpGroup": {
       "name": "CreateIpGroup",
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Creates an IP access control group.",
+      "description": "Grants permission to create IP access control groups",
       "accessLevel": "Write",
       "resourceTypes": [],
-      "conditionKeys": "",
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
       "dependentActions": ""
     },
     "CreateTags": {
@@ -41,21 +80,47 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Creates tags for a WorkSpace.",
+      "description": "Grants permission to create tags for WorkSpaces resources",
       "accessLevel": "Tagging",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
+    },
+    "CreateWorkspaceBundle": {
+      "name": "CreateWorkspaceBundle",
+      "topics": [
+        "Amazon WorkSpaces"
+      ],
+      "description": "Grants permission to create a WorkSpace bundle",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workspaceimage*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "workspaces:CreateTags"
     },
     "CreateWorkspaces": {
       "name": "CreateWorkspaces",
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Creates one or more WorkSpaces.",
+      "description": "Grants permission to create one or more WorkSpaces",
       "accessLevel": "Write",
       "resourceTypes": [
         "directoryid*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteConnectionAlias": {
+      "name": "DeleteConnectionAlias",
+      "topics": [
+        "Amazon WorkSpaces"
+      ],
+      "description": "Grants permission to delete connection aliases",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "connectionalias*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -65,7 +130,7 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Deletes the specified IP access control group.",
+      "description": "Grants permission to delete IP access control groups",
       "accessLevel": "Write",
       "resourceTypes": [
         "workspaceipgroup*"
@@ -78,9 +143,22 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Deletes tags from a Workspace.",
-      "accessLevel": "Write",
+      "description": "Grants permission to delete tags from WorkSpaces resources",
+      "accessLevel": "Tagging",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteWorkspaceBundle": {
+      "name": "DeleteWorkspaceBundle",
+      "topics": [
+        "Amazon WorkSpaces"
+      ],
+      "description": "Grants permission to delete WorkSpace bundles",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workspacebundle*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -89,9 +167,24 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Deletes the specified workspace image.",
+      "description": "Grants permission to delete WorkSpace images",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "workspaceimage*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeregisterWorkspaceDirectory": {
+      "name": "DeregisterWorkspaceDirectory",
+      "topics": [
+        "Amazon WorkSpaces"
+      ],
+      "description": "Grants permission to deregister directories from use with Amazon WorkSpaces",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directoryid*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -100,8 +193,8 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Retrieves a list that describes the configuration of bring your own license (BYOL)\n                                                for the specified account.",
-      "accessLevel": "List",
+      "description": "Grants permission to retrieve the configuration of Bring Your Own License (BYOL) for\n                                                WorkSpaces accounts",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -111,8 +204,8 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Retrieves a list that describes modifications to the configuration of bring your own\n                                                license (BYOL) for the specified account.",
-      "accessLevel": "List",
+      "description": "Grants permission to retrieve modifications to the configuration of Bring Your Own\n                                                License (BYOL) for WorkSpaces accounts",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -122,11 +215,35 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Describe client properties about the specified resources.",
+      "description": "Grants permission to retrieve information about WorkSpaces clients",
       "accessLevel": "List",
       "resourceTypes": [
         "directoryid*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeConnectionAliasPermissions": {
+      "name": "DescribeConnectionAliasPermissions",
+      "topics": [
+        "Amazon WorkSpaces"
+      ],
+      "description": "Grants permission to retrieve the permissions that the owners of connection aliases\n                                                have granted to other AWS accounts for connection aliases",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "connectionalias*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeConnectionAliases": {
+      "name": "DescribeConnectionAliases",
+      "topics": [
+        "Amazon WorkSpaces"
+      ],
+      "description": "Grants permission to retrieve a list that describes the connection aliases used for\n                                                cross-Region redirection",
+      "accessLevel": "Read",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -135,8 +252,8 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Retrieves information about the IP access control groups of your account in the region.",
-      "accessLevel": "List",
+      "description": "Grants permission to retrieve information about IP access control groups",
+      "accessLevel": "Read",
       "resourceTypes": [
         "workspaceipgroup*"
       ],
@@ -148,7 +265,7 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Describes tags for a WorkSpace.",
+      "description": "Grants permission to describe the tags for WorkSpaces resources",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -159,11 +276,9 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Obtains information about the WorkSpace bundles that are available to your account\n                                                in the specified region.",
+      "description": "Grants permission to obtain information about WorkSpace bundles",
       "accessLevel": "List",
-      "resourceTypes": [
-        "workspacebundle*"
-      ],
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -172,9 +287,22 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Retrieves information about the AWS Directory Service directories in the region that\n                                                are registered with Amazon WorkSpaces and are available to your account.",
-      "accessLevel": "List",
+      "description": "Grants permission to retrieve information about directories that are registered with\n                                                WorkSpaces",
+      "accessLevel": "Read",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeWorkspaceImagePermissions": {
+      "name": "DescribeWorkspaceImagePermissions",
+      "topics": [
+        "Amazon WorkSpaces"
+      ],
+      "description": "Grants permission to retrieve information about WorkSpace image permissions",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "workspaceimage*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -183,9 +311,22 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Retrieves a list that describes one or more specified images.",
+      "description": "Grants permission to retrieve information about WorkSpace images",
       "accessLevel": "List",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeWorkspaceSnapshots": {
+      "name": "DescribeWorkspaceSnapshots",
+      "topics": [
+        "Amazon WorkSpaces"
+      ],
+      "description": "Grants permission to retrieve information about WorkSpace snapshots",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "workspaceid*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -194,7 +335,7 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Obtains information about the specified WorkSpaces.",
+      "description": "Grants permission to obtain information about WorkSpaces",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -205,9 +346,22 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Describes the connection status of a specified WorkSpace.",
+      "description": "Grants permission to obtain the connection status of WorkSpaces",
       "accessLevel": "Read",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateConnectionAlias": {
+      "name": "DisassociateConnectionAlias",
+      "topics": [
+        "Amazon WorkSpaces"
+      ],
+      "description": "Grants permission to disassociate connection aliases from directories",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "connectionalias*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -216,9 +370,11 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Disassociates the specified IP access control group from the specified directory.",
+      "description": "Grants permission to disassociate IP access control groups from directories",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "directoryid*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -227,20 +383,33 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Import a licensed EC2 image to into Amazon WorkSpaces.",
+      "description": "Grants permission to import Bring Your Own License (BYOL) images into Amazon WorkSpaces",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "ec2:DescribeImages\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:ModifyImageAttribute"
     },
     "ListAvailableManagementCidrRanges": {
       "name": "ListAvailableManagementCidrRanges",
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "List available CIDR ranges for a CIDR range constraint.",
+      "description": "Grants permission to list the available CIDR ranges for enabling Bring Your Own License\n                                                (BYOL) for WorkSpaces accounts",
       "accessLevel": "List",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "MigrateWorkspace": {
+      "name": "MigrateWorkspace",
+      "topics": [
+        "Amazon WorkSpaces"
+      ],
+      "description": "Grants permission to migrate WorkSpaces",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workspacebundle*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -249,7 +418,7 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Modify the configuration of bring your own license (BYOL) for the specified account.",
+      "description": "Grants permission to modify the configuration of Bring Your Own License (BYOL) for\n                                                WorkSpaces accounts",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -260,7 +429,46 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Modify the client properties of a specified resource.",
+      "description": "Grants permission to modify the properties of WorkSpaces clients",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directoryid*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ModifySelfservicePermissions": {
+      "name": "ModifySelfservicePermissions",
+      "topics": [
+        "Amazon WorkSpaces"
+      ],
+      "description": "Grants permission to modify the self-service WorkSpace management capabilities for\n                                                your users",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "directoryid*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ModifyWorkspaceAccessProperties": {
+      "name": "ModifyWorkspaceAccessProperties",
+      "topics": [
+        "Amazon WorkSpaces"
+      ],
+      "description": "Grants permission to specify which devices and operating systems users can use to\n                                                access their WorkSpaces",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directoryid*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ModifyWorkspaceCreationProperties": {
+      "name": "ModifyWorkspaceCreationProperties",
+      "topics": [
+        "Amazon WorkSpaces"
+      ],
+      "description": "Grants permission to modify the default properties used to create WorkSpaces",
       "accessLevel": "Write",
       "resourceTypes": [
         "directoryid*"
@@ -273,7 +481,7 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Modifies the WorkSpace properties, including the running mode and AutoStop time.",
+      "description": "Grants permission to modify WorkSpace properties, including the running mode and the\n                                                AutoStop period",
       "accessLevel": "Write",
       "resourceTypes": [
         "workspaceid*"
@@ -286,7 +494,7 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Modify the state of specified WorkSpaces.",
+      "description": "Grants permission to modify the state of WorkSpaces",
       "accessLevel": "Write",
       "resourceTypes": [
         "workspaceid*"
@@ -299,7 +507,7 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Reboots the specified WorkSpaces.",
+      "description": "Grants permission to reboot WorkSpaces",
       "accessLevel": "Write",
       "resourceTypes": [
         "workspaceid*"
@@ -312,7 +520,33 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Rebuilds the specified WorkSpaces.",
+      "description": "Grants permission to rebuild WorkSpaces",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workspaceid*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterWorkspaceDirectory": {
+      "name": "RegisterWorkspaceDirectory",
+      "topics": [
+        "Amazon WorkSpaces"
+      ],
+      "description": "Grants permission to register directories for use with Amazon WorkSpaces",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directoryid*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RestoreWorkspace": {
+      "name": "RestoreWorkspace",
+      "topics": [
+        "Amazon WorkSpaces"
+      ],
+      "description": "Grants permission to restore WorkSpaces",
       "accessLevel": "Write",
       "resourceTypes": [
         "workspaceid*"
@@ -325,7 +559,7 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Removes one or more rules from the specified IP access control group.",
+      "description": "Grants permission to remove rules from IP access control groups",
       "accessLevel": "Write",
       "resourceTypes": [
         "workspaceipgroup*"
@@ -338,7 +572,7 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Starts the specified WorkSpaces.",
+      "description": "Grants permission to start AutoStop WorkSpaces",
       "accessLevel": "Write",
       "resourceTypes": [
         "workspaceid*"
@@ -351,7 +585,7 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Stops the specified WorkSpaces.",
+      "description": "Grants permission to stop AutoStop WorkSpaces",
       "accessLevel": "Write",
       "resourceTypes": [
         "workspaceid*"
@@ -364,10 +598,23 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Terminates the specified WorkSpaces.",
+      "description": "Grants permission to terminate WorkSpaces",
       "accessLevel": "Write",
       "resourceTypes": [
         "workspaceid*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateConnectionAliasPermission": {
+      "name": "UpdateConnectionAliasPermission",
+      "topics": [
+        "Amazon WorkSpaces"
+      ],
+      "description": "Grants permission to share or unshare connection aliases with other accounts",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "connectionalias*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -377,10 +624,36 @@
       "topics": [
         "Amazon WorkSpaces"
       ],
-      "description": "Replaces the current rules of the specified IP access control group with the specified\n                                                rules.",
+      "description": "Grants permission to replace rules for IP access control groups",
       "accessLevel": "Write",
       "resourceTypes": [
         "workspaceipgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateWorkspaceBundle": {
+      "name": "UpdateWorkspaceBundle",
+      "topics": [
+        "Amazon WorkSpaces"
+      ],
+      "description": "Grants permission to update the WorkSpace images used in WorkSpace bundles",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workspacebundle*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateWorkspaceImagePermission": {
+      "name": "UpdateWorkspaceImagePermission",
+      "topics": [
+        "Amazon WorkSpaces"
+      ],
+      "description": "Grants permission to share or unshare WorkSpace images with other accounts by specifying\n                                                whether other accounts have permission to copy the image",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "workspaceimage*"
       ],
       "conditionKeys": "",
       "dependentActions": ""

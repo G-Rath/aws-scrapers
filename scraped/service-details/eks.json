@@ -1,12 +1,64 @@
 {
   "servicePrefix": "eks",
   "actions": {
+    "AccessKubernetesApi": {
+      "name": "AccessKubernetesApi",
+      "topics": [
+        "Amazon Elastic Kubernetes Service"
+      ],
+      "description": "Grants permission to view Kubernetes objects via AWS EKS console",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "cluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociateEncryptionConfig": {
+      "name": "AssociateEncryptionConfig",
+      "topics": [
+        "Amazon Elastic Kubernetes Service"
+      ],
+      "description": "Grants permission to associate encryption configuration to a cluster",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociateIdentityProviderConfig": {
+      "name": "AssociateIdentityProviderConfig",
+      "topics": [
+        "Amazon Elastic Kubernetes Service"
+      ],
+      "description": "Grants permission to associate an identity provider configuration to a cluster",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAddon": {
+      "name": "CreateAddon",
+      "topics": [
+        "Amazon Elastic Kubernetes Service"
+      ],
+      "description": "Grants permission to create an Amazon EKS add-on",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "CreateCluster": {
       "name": "CreateCluster",
       "topics": [
-        "Amazon Elastic Container Service for Kubernetes"
+        "Amazon Elastic Kubernetes Service"
       ],
-      "description": "Creates an Amazon EKS cluster.",
+      "description": "Grants permission to create an Amazon EKS cluster",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -15,9 +67,9 @@
     "CreateFargateProfile": {
       "name": "CreateFargateProfile",
       "topics": [
-        "Amazon Elastic Container Service for Kubernetes"
+        "Amazon Elastic Kubernetes Service"
       ],
-      "description": "Creates an AWS Fargate profile.",
+      "description": "Grants permission to create an AWS Fargate profile",
       "accessLevel": "Write",
       "resourceTypes": [
         "cluster*"
@@ -28,9 +80,9 @@
     "CreateNodegroup": {
       "name": "CreateNodegroup",
       "topics": [
-        "Amazon Elastic Container Service for Kubernetes"
+        "Amazon Elastic Kubernetes Service"
       ],
-      "description": "Creates an Amazon EKS Nodegroup.",
+      "description": "Grants permission to create an Amazon EKS Nodegroup",
       "accessLevel": "Write",
       "resourceTypes": [
         "cluster*"
@@ -38,12 +90,25 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeleteAddon": {
+      "name": "DeleteAddon",
+      "topics": [
+        "Amazon Elastic Kubernetes Service"
+      ],
+      "description": "Grants permission to delete an Amazon EKS add-on",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "addon*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteCluster": {
       "name": "DeleteCluster",
       "topics": [
-        "Amazon Elastic Container Service for Kubernetes"
+        "Amazon Elastic Kubernetes Service"
       ],
-      "description": "Deletes an Amazon EKS cluster.",
+      "description": "Grants permission to delete an Amazon EKS cluster",
       "accessLevel": "Write",
       "resourceTypes": [
         "cluster*"
@@ -54,9 +119,9 @@
     "DeleteFargateProfile": {
       "name": "DeleteFargateProfile",
       "topics": [
-        "Amazon Elastic Container Service for Kubernetes"
+        "Amazon Elastic Kubernetes Service"
       ],
-      "description": "Deletes an AWS Fargate profile.",
+      "description": "Grants permission to delete an AWS Fargate profile",
       "accessLevel": "Write",
       "resourceTypes": [
         "fargateprofile*"
@@ -67,9 +132,9 @@
     "DeleteNodegroup": {
       "name": "DeleteNodegroup",
       "topics": [
-        "Amazon Elastic Container Service for Kubernetes"
+        "Amazon Elastic Kubernetes Service"
       ],
-      "description": "Deletes an Amazon EKS Nodegroup.",
+      "description": "Grants permission to delete an Amazon EKS Nodegroup",
       "accessLevel": "Write",
       "resourceTypes": [
         "nodegroup*"
@@ -77,12 +142,36 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DescribeAddon": {
+      "name": "DescribeAddon",
+      "topics": [
+        "Amazon Elastic Kubernetes Service"
+      ],
+      "description": "Grants permission to retrieve descriptive information about an Amazon EKS add-on",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "addon*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAddonVersions": {
+      "name": "DescribeAddonVersions",
+      "topics": [
+        "Amazon Elastic Kubernetes Service"
+      ],
+      "description": "Grants permission to retrieve descriptive version information about the add-ons that\n                                                Amazon EKS Add-ons supports",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DescribeCluster": {
       "name": "DescribeCluster",
       "topics": [
-        "Amazon Elastic Container Service for Kubernetes"
+        "Amazon Elastic Kubernetes Service"
       ],
-      "description": "Returns descriptive information about an Amazon EKS cluster.",
+      "description": "Grants permission to retrieve descriptive information about an Amazon EKS cluster",
       "accessLevel": "Read",
       "resourceTypes": [
         "cluster*"
@@ -93,9 +182,9 @@
     "DescribeFargateProfile": {
       "name": "DescribeFargateProfile",
       "topics": [
-        "Amazon Elastic Container Service for Kubernetes"
+        "Amazon Elastic Kubernetes Service"
       ],
-      "description": "Returns descriptive information about an AWS Fargate profile associated with a cluster.",
+      "description": "Grants permission to retrieve descriptive information about an AWS Fargate profile\n                                                associated with a cluster",
       "accessLevel": "Read",
       "resourceTypes": [
         "fargateprofile*"
@@ -103,12 +192,25 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DescribeIdentityProviderConfig": {
+      "name": "DescribeIdentityProviderConfig",
+      "topics": [
+        "Amazon Elastic Kubernetes Service"
+      ],
+      "description": "Grants permission to retrieve descriptive information about an Idp config associated\n                                                with a cluster",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "identityproviderconfig*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DescribeNodegroup": {
       "name": "DescribeNodegroup",
       "topics": [
-        "Amazon Elastic Container Service for Kubernetes"
+        "Amazon Elastic Kubernetes Service"
       ],
-      "description": "Returns descriptive information about an Amazon EKS nodegroup.",
+      "description": "Grants permission to retrieve descriptive information about an Amazon EKS nodegroup",
       "accessLevel": "Read",
       "resourceTypes": [
         "nodegroup*"
@@ -119,10 +221,36 @@
     "DescribeUpdate": {
       "name": "DescribeUpdate",
       "topics": [
-        "Amazon Elastic Container Service for Kubernetes"
+        "Amazon Elastic Kubernetes Service"
       ],
-      "description": "Describes a given update for a given Amazon EKS cluster/nodegroup (in the specified\n                                                or default region).",
+      "description": "Grants permission to retrieve a given update for a given Amazon EKS cluster/nodegroup/add-on\n                                                (in the specified or default region)",
       "accessLevel": "Read",
+      "resourceTypes": [
+        "cluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateIdentityProviderConfig": {
+      "name": "DisassociateIdentityProviderConfig",
+      "topics": [
+        "Amazon Elastic Kubernetes Service"
+      ],
+      "description": "Grants permission to delete an asssociated Idp config",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "identityproviderconfig*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAddons": {
+      "name": "ListAddons",
+      "topics": [
+        "Amazon Elastic Kubernetes Service"
+      ],
+      "description": "Grants permission to list the Amazon EKS add-ons in your AWS account (in the specified\n                                                or default region) for a given cluster",
+      "accessLevel": "List",
       "resourceTypes": [
         "cluster*"
       ],
@@ -132,9 +260,9 @@
     "ListClusters": {
       "name": "ListClusters",
       "topics": [
-        "Amazon Elastic Container Service for Kubernetes"
+        "Amazon Elastic Kubernetes Service"
       ],
-      "description": "Lists the Amazon EKS clusters in your AWS account (in the specified or default region).",
+      "description": "Grants permission to list the Amazon EKS clusters in your AWS account (in the specified\n                                                or default region)",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -143,9 +271,22 @@
     "ListFargateProfiles": {
       "name": "ListFargateProfiles",
       "topics": [
-        "Amazon Elastic Container Service for Kubernetes"
+        "Amazon Elastic Kubernetes Service"
       ],
-      "description": "Lists the AWS Fargate profiles in your AWS account (in the specified or default region)\n                                                associated with a given cluster.",
+      "description": "Grants permission to list the AWS Fargate profiles in your AWS account (in the specified\n                                                or default region) associated with a given cluster",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "cluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListIdentityProviderConfigs": {
+      "name": "ListIdentityProviderConfigs",
+      "topics": [
+        "Amazon Elastic Kubernetes Service"
+      ],
+      "description": "Grants permission to list the Idp configs in your AWS account (in the specified or\n                                                default region) associated with a given cluster",
       "accessLevel": "List",
       "resourceTypes": [
         "cluster*"
@@ -156,9 +297,9 @@
     "ListNodegroups": {
       "name": "ListNodegroups",
       "topics": [
-        "Amazon Elastic Container Service for Kubernetes"
+        "Amazon Elastic Kubernetes Service"
       ],
-      "description": "Lists the Amazon EKS nodegroups in your AWS account (in the specified or default region)\n                                                attached to given cluster.",
+      "description": "Grants permission to list the Amazon EKS nodegroups in your AWS account (in the specified\n                                                or default region) attached to given cluster",
       "accessLevel": "List",
       "resourceTypes": [
         "cluster*"
@@ -169,12 +310,12 @@
     "ListTagsForResource": {
       "name": "ListTagsForResource",
       "topics": [
-        "Amazon Elastic Container Service for Kubernetes"
+        "Amazon Elastic Kubernetes Service"
       ],
-      "description": "List tags for the specified resource.",
-      "accessLevel": "List",
+      "description": "Grants permission to list tags for the specified resource",
+      "accessLevel": "Read",
       "resourceTypes": [
-        "cluster"
+        "addon"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -182,9 +323,9 @@
     "ListUpdates": {
       "name": "ListUpdates",
       "topics": [
-        "Amazon Elastic Container Service for Kubernetes"
+        "Amazon Elastic Kubernetes Service"
       ],
-      "description": "Lists the updates for a given Amazon EKS cluster/nodegroup (in the specified or default\n                                                region).",
+      "description": "Grants permission to list the updates for a given Amazon EKS cluster/nodegroup/add-on\n                                                (in the specified or default region)",
       "accessLevel": "List",
       "resourceTypes": [
         "cluster*"
@@ -195,12 +336,12 @@
     "TagResource": {
       "name": "TagResource",
       "topics": [
-        "Amazon Elastic Container Service for Kubernetes"
+        "Amazon Elastic Kubernetes Service"
       ],
-      "description": "Tags the specified resource.",
+      "description": "Grants permission to tag the specified resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
-        "cluster"
+        "addon"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -208,12 +349,25 @@
     "UntagResource": {
       "name": "UntagResource",
       "topics": [
-        "Amazon Elastic Container Service for Kubernetes"
+        "Amazon Elastic Kubernetes Service"
       ],
-      "description": "Untags the specified resource.",
+      "description": "Grants permission to untag the specified resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
-        "cluster"
+        "addon"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAddon": {
+      "name": "UpdateAddon",
+      "topics": [
+        "Amazon Elastic Kubernetes Service"
+      ],
+      "description": "Grants permission to update Amazon EKS add-on configurations, such as the VPC-CNI\n                                                version",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "addon*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -221,9 +375,9 @@
     "UpdateClusterConfig": {
       "name": "UpdateClusterConfig",
       "topics": [
-        "Amazon Elastic Container Service for Kubernetes"
+        "Amazon Elastic Kubernetes Service"
       ],
-      "description": "Update Amazon EKS cluster configurations (eg: API server endpoint access).",
+      "description": "Grants permission to update Amazon EKS cluster configurations (eg: API server endpoint\n                                                access)",
       "accessLevel": "Write",
       "resourceTypes": [
         "cluster*"
@@ -234,9 +388,9 @@
     "UpdateClusterVersion": {
       "name": "UpdateClusterVersion",
       "topics": [
-        "Amazon Elastic Container Service for Kubernetes"
+        "Amazon Elastic Kubernetes Service"
       ],
-      "description": "Update the Kubernetes version of an Amazon EKS cluster.",
+      "description": "Grants permission to update the Kubernetes version of an Amazon EKS cluster",
       "accessLevel": "Write",
       "resourceTypes": [
         "cluster*"
@@ -247,9 +401,9 @@
     "UpdateNodegroupConfig": {
       "name": "UpdateNodegroupConfig",
       "topics": [
-        "Amazon Elastic Container Service for Kubernetes"
+        "Amazon Elastic Kubernetes Service"
       ],
-      "description": "Update Amazon EKS nodegroup configurations (eg: min/max/desired capacity or labels).",
+      "description": "Grants permission to update Amazon EKS nodegroup configurations (eg: min/max/desired\n                                                capacity or labels)",
       "accessLevel": "Write",
       "resourceTypes": [
         "nodegroup*"
@@ -260,9 +414,9 @@
     "UpdateNodegroupVersion": {
       "name": "UpdateNodegroupVersion",
       "topics": [
-        "Amazon Elastic Container Service for Kubernetes"
+        "Amazon Elastic Kubernetes Service"
       ],
-      "description": "Update the Kubernetes version of an Amazon EKS nodegroup.",
+      "description": "Grants permission to update the Kubernetes version of an Amazon EKS nodegroup",
       "accessLevel": "Write",
       "resourceTypes": [
         "nodegroup*"
@@ -272,6 +426,6 @@
     }
   },
   "topics": [
-    "Amazon Elastic Container Service for Kubernetes"
+    "Amazon Elastic Kubernetes Service"
   ]
 }

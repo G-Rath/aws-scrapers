@@ -1,13 +1,35 @@
 {
   "servicePrefix": "elemental-activations",
   "actions": {
+    "CompleteAccountRegistration": {
+      "name": "CompleteAccountRegistration",
+      "topics": [
+        "AWS Elemental Appliances and Software Activation Service"
+      ],
+      "description": "Grants permission to complete the process of registering customer account for AWS\n                                                Elemental Appliances and Software Purchases",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CompleteFileUpload": {
+      "name": "CompleteFileUpload",
+      "topics": [
+        "AWS Elemental Appliances and Software Activation Service"
+      ],
+      "description": "Grants permission to complete the process of uploading a Software file for AWS Elemental\n                                                Appliances and Software Purchases",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DownloadSoftware": {
       "name": "DownloadSoftware",
       "topics": [
-        "Elemental Activations"
+        "AWS Elemental Appliances and Software Activation Service"
       ],
-      "description": "Download the Software files for AWS Elemental Appliances and Software Purchases",
-      "accessLevel": "List",
+      "description": "Grants permission to download the Software files for AWS Elemental Appliances and\n                                                Software Purchases",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -15,10 +37,10 @@
     "GenerateLicenses": {
       "name": "GenerateLicenses",
       "topics": [
-        "Elemental Activations"
+        "AWS Elemental Appliances and Software Activation Service"
       ],
-      "description": "Generate Software Licenses for AWS Elemental Appliances and Software Purchases",
-      "accessLevel": "List",
+      "description": "Grants permission to generate Software Licenses for AWS Elemental Appliances and Software\n                                                Purchases",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -26,9 +48,9 @@
     "GetActivation": {
       "name": "GetActivation",
       "topics": [
-        "Elemental Activations"
+        "AWS Elemental Appliances and Software Activation Service"
       ],
-      "description": "Describe an activation",
+      "description": "Grants permission to describe an activation",
       "accessLevel": "Read",
       "resourceTypes": [
         "activation*"
@@ -39,9 +61,9 @@
     "ListTagsForResource": {
       "name": "ListTagsForResource",
       "topics": [
-        "Elemental Activations"
+        "AWS Elemental Appliances and Software Activation Service"
       ],
-      "description": "This action lists tags for an AWS Elemental Activations resource",
+      "description": "Grants permission to list tags for an AWS Elemental Activations resource",
       "accessLevel": "Read",
       "resourceTypes": [
         "activation"
@@ -49,12 +71,34 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "StartAccountRegistration": {
+      "name": "StartAccountRegistration",
+      "topics": [
+        "AWS Elemental Appliances and Software Activation Service"
+      ],
+      "description": "Grants permission to start the process of registering customer account for AWS Elemental\n                                                Appliances and Software Purchases",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartFileUpload": {
+      "name": "StartFileUpload",
+      "topics": [
+        "AWS Elemental Appliances and Software Activation Service"
+      ],
+      "description": "Grants permission to start the process of uploading a Software file for AWS Elemental\n                                                Appliances and Software Purchases",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "TagResource": {
       "name": "TagResource",
       "topics": [
-        "Elemental Activations"
+        "AWS Elemental Appliances and Software Activation Service"
       ],
-      "description": "This action adds a tag for an AWS Elemental Activations resource",
+      "description": "Grants permission to add a tag for an AWS Elemental Activations resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "activation"
@@ -65,9 +109,9 @@
     "UntagResource": {
       "name": "UntagResource",
       "topics": [
-        "Elemental Activations"
+        "AWS Elemental Appliances and Software Activation Service"
       ],
-      "description": "This action removes a tag from an AWS Elemental Activations resource",
+      "description": "Grants permission to remove a tag from an AWS Elemental Activations resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "activation"
@@ -77,6 +121,6 @@
     }
   },
   "topics": [
-    "Elemental Activations"
+    "AWS Elemental Appliances and Software Activation Service"
   ]
 }

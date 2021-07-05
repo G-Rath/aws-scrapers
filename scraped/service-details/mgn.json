@@ -1,0 +1,637 @@
+{
+  "servicePrefix": "mgn",
+  "actions": {
+    "BatchCreateVolumeSnapshotGroupForMgn": {
+      "name": "BatchCreateVolumeSnapshotGroupForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to create volume snapshot group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchDeleteSnapshotRequestForMgn": {
+      "name": "BatchDeleteSnapshotRequestForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to batch delete snapshot request",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ChangeServerLifeCycleState": {
+      "name": "ChangeServerLifeCycleState",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to change source server life cycle state",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateReplicationConfigurationTemplate": {
+      "name": "CreateReplicationConfigurationTemplate",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to create replication configuration template",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "DeleteJob": {
+      "name": "DeleteJob",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to delete job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "JobResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteReplicationConfigurationTemplate": {
+      "name": "DeleteReplicationConfigurationTemplate",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to delete replication configuration template",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ReplicationConfigurationTemplateResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSourceServer": {
+      "name": "DeleteSourceServer",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to delete source server",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeJobLogItems": {
+      "name": "DescribeJobLogItems",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to describe job log items",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "JobResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeJobs": {
+      "name": "DescribeJobs",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to describe jobs",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeReplicationConfigurationTemplates": {
+      "name": "DescribeReplicationConfigurationTemplates",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to describe replication configuration template",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeReplicationServerAssociationsForMgn": {
+      "name": "DescribeReplicationServerAssociationsForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to describe replication server associations",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeSnapshotRequestsForMgn": {
+      "name": "DescribeSnapshotRequestsForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to describe snapshots requests",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeSourceServers": {
+      "name": "DescribeSourceServers",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to describe source servers",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisconnectFromService": {
+      "name": "DisconnectFromService",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to disconnect source server from service",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "FinalizeCutover": {
+      "name": "FinalizeCutover",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to finalize cutover",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAgentCommandForMgn": {
+      "name": "GetAgentCommandForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to get agent command",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAgentConfirmedResumeInfoForMgn": {
+      "name": "GetAgentConfirmedResumeInfoForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to get agent confirmed resume info",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAgentInstallationAssetsForMgn": {
+      "name": "GetAgentInstallationAssetsForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to get agent installation assets",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAgentReplicationInfoForMgn": {
+      "name": "GetAgentReplicationInfoForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to get agent replication info",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAgentRuntimeConfigurationForMgn": {
+      "name": "GetAgentRuntimeConfigurationForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to get agent runtime configuration",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAgentSnapshotCreditsForMgn": {
+      "name": "GetAgentSnapshotCreditsForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to get agent snapshots credits",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetChannelCommandsForMgn": {
+      "name": "GetChannelCommandsForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to get channel commands",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLaunchConfiguration": {
+      "name": "GetLaunchConfiguration",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to get launch configuration",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetReplicationConfiguration": {
+      "name": "GetReplicationConfiguration",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to get replication configuration",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "InitializeService": {
+      "name": "InitializeService",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to initialize service",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "iam:AddRoleToInstanceProfile\n                                                   \n                                                \n                                                \n                                                \n                                                   iam:CreateInstanceProfile\n                                                   \n                                                \n                                                \n                                                \n                                                   iam:CreateServiceLinkedRole\n                                                   \n                                                \n                                                \n                                                \n                                                   iam:GetInstanceProfile"
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to list tags for a resource",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "MarkAsArchived": {
+      "name": "MarkAsArchived",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to mark source server as archived",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "NotifyAgentAuthenticationForMgn": {
+      "name": "NotifyAgentAuthenticationForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to notify agent authentication",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "NotifyAgentConnectedForMgn": {
+      "name": "NotifyAgentConnectedForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to notify agent is connected",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "NotifyAgentDisconnectedForMgn": {
+      "name": "NotifyAgentDisconnectedForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to notify agent is disconnected",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "NotifyAgentReplicationProgressForMgn": {
+      "name": "NotifyAgentReplicationProgressForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to notify agent replication progress",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterAgentForMgn": {
+      "name": "RegisterAgentForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to register agent",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "RetryDataReplication": {
+      "name": "RetryDataReplication",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to retry replication",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendAgentLogsForMgn": {
+      "name": "SendAgentLogsForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to send agent logs",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendAgentMetricsForMgn": {
+      "name": "SendAgentMetricsForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to send agent metrics",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendChannelCommandResultForMgn": {
+      "name": "SendChannelCommandResultForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to send channel command result",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendClientLogsForMgn": {
+      "name": "SendClientLogsForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to send client logs",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendClientMetricsForMgn": {
+      "name": "SendClientMetricsForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to send client metrics",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartCutover": {
+      "name": "StartCutover",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to start cutover",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "ec2:AttachVolume\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:AuthorizeSecurityGroupEgress\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:AuthorizeSecurityGroupIngress\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:CreateLaunchTemplate\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:CreateLaunchTemplateVersion\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:CreateSecurityGroup\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:CreateSnapshot\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:CreateTags\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:CreateVolume\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DeleteLaunchTemplateVersions\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DeleteSnapshot\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DeleteVolume\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeAccountAttributes\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeAvailabilityZones\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeImages\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeInstanceAttribute\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeInstanceStatus\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeInstanceTypes\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeInstances\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeLaunchTemplateVersions\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeLaunchTemplates\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeSecurityGroups\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeSnapshots\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeSubnets\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeVolumes\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DetachVolume\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:ModifyInstanceAttribute\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:ModifyLaunchTemplate\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:ReportInstanceStatus\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:RevokeSecurityGroupEgress\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:RunInstances\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:StartInstances\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:StopInstances\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:TerminateInstances\n                                                   \n                                                \n                                                \n                                                \n                                                   iam:PassRole\n                                                   \n                                                \n                                                \n                                                \n                                                   mgn:ListTagsForResource"
+    },
+    "StartTest": {
+      "name": "StartTest",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to start test",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "ec2:AttachVolume\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:AuthorizeSecurityGroupEgress\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:AuthorizeSecurityGroupIngress\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:CreateLaunchTemplate\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:CreateLaunchTemplateVersion\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:CreateSecurityGroup\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:CreateSnapshot\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:CreateTags\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:CreateVolume\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DeleteLaunchTemplateVersions\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DeleteSnapshot\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DeleteVolume\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeAccountAttributes\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeAvailabilityZones\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeImages\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeInstanceAttribute\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeInstanceStatus\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeInstanceTypes\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeInstances\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeLaunchTemplateVersions\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeLaunchTemplates\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeSecurityGroups\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeSnapshots\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeSubnets\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeVolumes\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DetachVolume\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:ModifyInstanceAttribute\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:ModifyLaunchTemplate\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:ReportInstanceStatus\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:RevokeSecurityGroupEgress\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:RunInstances\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:StartInstances\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:StopInstances\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:TerminateInstances\n                                                   \n                                                \n                                                \n                                                \n                                                   iam:PassRole\n                                                   \n                                                \n                                                \n                                                \n                                                   mgn:ListTagsForResource"
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to assign a resource tag",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "TerminateTargetInstances": {
+      "name": "TerminateTargetInstances",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to terminate target instances",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "ec2:DeleteVolume\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeInstances\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeVolumes\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:TerminateInstances"
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to untag a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "aws:TagKeys",
+      "dependentActions": ""
+    },
+    "UpdateAgentBacklogForMgn": {
+      "name": "UpdateAgentBacklogForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to update agent backlog",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAgentConversionInfoForMgn": {
+      "name": "UpdateAgentConversionInfoForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to update agent conversion info",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAgentReplicationInfoForMgn": {
+      "name": "UpdateAgentReplicationInfoForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to update agent replication info",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAgentReplicationProcessStateForMgn": {
+      "name": "UpdateAgentReplicationProcessStateForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to update agent replication process state",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAgentSourcePropertiesForMgn": {
+      "name": "UpdateAgentSourcePropertiesForMgn",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to update agent source properties",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateLaunchConfiguration": {
+      "name": "UpdateLaunchConfiguration",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to update launch configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateReplicationConfiguration": {
+      "name": "UpdateReplicationConfiguration",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to update replication configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SourceServerResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateReplicationConfigurationTemplate": {
+      "name": "UpdateReplicationConfigurationTemplate",
+      "topics": [
+        "AWS Application Migration Service"
+      ],
+      "description": "Grants permission to update replication configuration template",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ReplicationConfigurationTemplateResource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "AWS Application Migration Service"
+  ]
+}

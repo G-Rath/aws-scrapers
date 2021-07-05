@@ -1,15 +1,41 @@
 {
   "servicePrefix": "wellarchitected",
   "actions": {
+    "AssociateLenses": {
+      "name": "AssociateLenses",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to associate a lens to the specified workload",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workload*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateMilestone": {
+      "name": "CreateMilestone",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to create a new milestone for the specified workload",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workload*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "CreateWorkload": {
       "name": "CreateWorkload",
       "topics": [
         "AWS Well-Architected Tool"
       ],
-      "description": "Creates a new workload.",
+      "description": "Grants permission to create a new workload",
       "accessLevel": "Write",
       "resourceTypes": [],
-      "conditionKeys": "",
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
       "dependentActions": ""
     },
     "CreateWorkloadShare": {
@@ -17,7 +43,7 @@
       "topics": [
         "AWS Well-Architected Tool"
       ],
-      "description": "Shares a workload with another account.",
+      "description": "Grants permission to share a workload with another account",
       "accessLevel": "Write",
       "resourceTypes": [
         "workload*"
@@ -30,8 +56,97 @@
       "topics": [
         "AWS Well-Architected Tool"
       ],
-      "description": "Deletes an existing workload.",
+      "description": "Grants permission to delete an existing workload",
       "accessLevel": "Write",
+      "resourceTypes": [
+        "workload*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteWorkloadShare": {
+      "name": "DeleteWorkloadShare",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to delete an existing workload share",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workload*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateLenses": {
+      "name": "DisassociateLenses",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to disassociate a lens from the specified workload",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workload*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAnswer": {
+      "name": "GetAnswer",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to retrieve the specified answer from the specified lens review",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "workload*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLensReview": {
+      "name": "GetLensReview",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to retrieve the specified lens review of the specified workload",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "workload*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLensReviewReport": {
+      "name": "GetLensReviewReport",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to retrieve the report for the specified lens review",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "workload*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLensVersionDifference": {
+      "name": "GetLensVersionDifference",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to get the difference between the specified lens version and latest\n                                                available lens version",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMilestone": {
+      "name": "GetMilestone",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to retrieve the specified milestone of the specified workload",
+      "accessLevel": "Read",
       "resourceTypes": [
         "workload*"
       ],
@@ -43,8 +158,119 @@
       "topics": [
         "AWS Well-Architected Tool"
       ],
-      "description": "Retrieves the specified workload.",
+      "description": "Grants permission to retrieve the specified workload",
       "accessLevel": "Read",
+      "resourceTypes": [
+        "workload*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAnswers": {
+      "name": "ListAnswers",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to list the answers from the specified lens review",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "workload*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListLensReviewImprovements": {
+      "name": "ListLensReviewImprovements",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to list the improvements of the specified lens review",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "workload*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListLensReviews": {
+      "name": "ListLensReviews",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to list the lens reviews of the specified workload",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "workload*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListLenses": {
+      "name": "ListLenses",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to list the lenses available to this account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMilestones": {
+      "name": "ListMilestones",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to list the milestones of the specified workload",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "workload*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListNotifications": {
+      "name": "ListNotifications",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to list notifications related to the account or specified resource",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListShareInvitations": {
+      "name": "ListShareInvitations",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to list the workload share invitations of the specified account\n                                                or user",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to list tags for a Well-Architected resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "workload*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListWorkloadShares": {
+      "name": "ListWorkloadShares",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to list the workload shares of the specified workload",
+      "accessLevel": "List",
       "resourceTypes": [
         "workload*"
       ],
@@ -56,9 +282,113 @@
       "topics": [
         "AWS Well-Architected Tool"
       ],
-      "description": "Lists the workloads in this account.",
+      "description": "Grants permission to list the workloads in this account",
       "accessLevel": "List",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to tag a Well-Architected resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "workload*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to untag a Well-Architected resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "workload*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAnswer": {
+      "name": "UpdateAnswer",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to update properties of the specified answer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workload*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateLensReview": {
+      "name": "UpdateLensReview",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to update properties of the specified lens review",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workload*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateShareInvitation": {
+      "name": "UpdateShareInvitation",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to update status of the specified workload share invitation",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workload*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateWorkload": {
+      "name": "UpdateWorkload",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to update properties of the specified workload",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workload*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateWorkloadShare": {
+      "name": "UpdateWorkloadShare",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to update properties of the specified workload",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workload*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpgradeLensReview": {
+      "name": "UpgradeLensReview",
+      "topics": [
+        "AWS Well-Architected Tool"
+      ],
+      "description": "Grants permission to upgrade the specified lens review to use the latest version of\n                                                the associated lens",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workload*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     }

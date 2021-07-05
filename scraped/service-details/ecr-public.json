@@ -1,0 +1,305 @@
+{
+  "servicePrefix": "ecr-public",
+  "actions": {
+    "BatchCheckLayerAvailability": {
+      "name": "BatchCheckLayerAvailability",
+      "topics": [
+        "Amazon Elastic Container Registry Public"
+      ],
+      "description": "Grants permission to check the availability of multiple image layers in a specified\n                                                registry and repository",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchDeleteImage": {
+      "name": "BatchDeleteImage",
+      "topics": [
+        "Amazon Elastic Container Registry Public"
+      ],
+      "description": "Grants permission to delete a list of specified images within a specified repository",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CompleteLayerUpload": {
+      "name": "CompleteLayerUpload",
+      "topics": [
+        "Amazon Elastic Container Registry Public"
+      ],
+      "description": "Grants permission to inform Amazon ECR that the image layer upload for a specified\n                                                registry, repository name, and upload ID, has completed",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateRepository": {
+      "name": "CreateRepository",
+      "topics": [
+        "Amazon Elastic Container Registry Public"
+      ],
+      "description": "Grants permission to create an image repository",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRepository": {
+      "name": "DeleteRepository",
+      "topics": [
+        "Amazon Elastic Container Registry Public"
+      ],
+      "description": "Grants permission to delete an existing image repository",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRepositoryPolicy": {
+      "name": "DeleteRepositoryPolicy",
+      "topics": [
+        "Amazon Elastic Container Registry Public"
+      ],
+      "description": "Grants permission to delete the repository policy from a specified repository",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeImageTags": {
+      "name": "DescribeImageTags",
+      "topics": [
+        "Amazon Elastic Container Registry Public"
+      ],
+      "description": "Grants permission to describe all the image tags for a given repository",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeImages": {
+      "name": "DescribeImages",
+      "topics": [
+        "Amazon Elastic Container Registry Public"
+      ],
+      "description": "Grants permission to get metadata about the images in a repository, including image\n                                                size, image tags, and creation date",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeRegistries": {
+      "name": "DescribeRegistries",
+      "topics": [
+        "Amazon Elastic Container Registry Public"
+      ],
+      "description": "Grants permission to retrieve the catalog data associated with a registry",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "registry*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeRepositories": {
+      "name": "DescribeRepositories",
+      "topics": [
+        "Amazon Elastic Container Registry Public"
+      ],
+      "description": "Grants permission to describe image repositories in a registry",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "repository"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAuthorizationToken": {
+      "name": "GetAuthorizationToken",
+      "topics": [
+        "Amazon Elastic Container Registry Public"
+      ],
+      "description": "Grants permission to retrieve a token that is valid for a specified registry for 12\n                                                hours",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRegistryCatalogData": {
+      "name": "GetRegistryCatalogData",
+      "topics": [
+        "Amazon Elastic Container Registry Public"
+      ],
+      "description": "Grants permission to retrieve the catalog data associated with a registry",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "registry*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRepositoryCatalogData": {
+      "name": "GetRepositoryCatalogData",
+      "topics": [
+        "Amazon Elastic Container Registry Public"
+      ],
+      "description": "Grants permission to retrieve the catalog data associated with a repository",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRepositoryPolicy": {
+      "name": "GetRepositoryPolicy",
+      "topics": [
+        "Amazon Elastic Container Registry Public"
+      ],
+      "description": "Grants permission to retrieve the repository policy for a specified repository",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "InitiateLayerUpload": {
+      "name": "InitiateLayerUpload",
+      "topics": [
+        "Amazon Elastic Container Registry Public"
+      ],
+      "description": "Grants permission to notify Amazon ECR that you intend to upload an image layer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "Amazon Elastic Container Registry Public"
+      ],
+      "description": "Grants permission to list the tags for an Amazon ECR resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutImage": {
+      "name": "PutImage",
+      "topics": [
+        "Amazon Elastic Container Registry Public"
+      ],
+      "description": "Grants permission to create or update the image manifest associated with an image",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutRegistryCatalogData": {
+      "name": "PutRegistryCatalogData",
+      "topics": [
+        "Amazon Elastic Container Registry Public"
+      ],
+      "description": "Grants permission to create and update the catalog data associated with a registry",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "registry*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutRepositoryCatalogData": {
+      "name": "PutRepositoryCatalogData",
+      "topics": [
+        "Amazon Elastic Container Registry Public"
+      ],
+      "description": "Grants permission to update the catalog data associated with a repository",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetRepositoryPolicy": {
+      "name": "SetRepositoryPolicy",
+      "topics": [
+        "Amazon Elastic Container Registry Public"
+      ],
+      "description": "Grants permission to apply a repository policy on a specified repository to control\n                                                access permissions",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "Amazon Elastic Container Registry Public"
+      ],
+      "description": "Grants permission to tag an Amazon ECR resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "Amazon Elastic Container Registry Public"
+      ],
+      "description": "Grants permission to untag an Amazon ECR resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UploadLayerPart": {
+      "name": "UploadLayerPart",
+      "topics": [
+        "Amazon Elastic Container Registry Public"
+      ],
+      "description": "Grants permission to upload an image layer part to Amazon ECR Public",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "Amazon Elastic Container Registry Public"
+  ]
+}

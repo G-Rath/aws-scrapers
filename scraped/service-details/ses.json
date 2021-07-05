@@ -6,7 +6,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Creates a receipt rule set by cloning an existing one",
+      "description": "Grants permission to create a receipt rule set by cloning an existing one",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -15,22 +15,24 @@
     "CreateConfigurationSet": {
       "name": "CreateConfigurationSet",
       "topics": [
-        "Amazon SES"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Creates a new configuration set",
+      "description": "Grants permission to create a new configuration set",
       "accessLevel": "Write",
       "resourceTypes": [],
-      "conditionKeys": "",
+      "conditionKeys": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
       "dependentActions": ""
     },
     "CreateConfigurationSetEventDestination": {
       "name": "CreateConfigurationSetEventDestination",
       "topics": [
-        "Amazon SES"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Creates a configuration set event destination",
+      "description": "Grants permission to create a configuration set event destination",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "configuration-set*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -39,42 +41,66 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Creates an association between a configuration set and a custom domain for open and\n                                                click event tracking",
+      "description": "Grants permission to creates an association between a configuration set and a custom\n                                                domain for open and click event tracking",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "CreateContact": {
+      "name": "CreateContact",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to create a contact",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact-list*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateContactList": {
+      "name": "CreateContactList",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to create a contact list",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "dependentActions": ""
+    },
     "CreateCustomVerificationEmailTemplate": {
       "name": "CreateCustomVerificationEmailTemplate",
       "topics": [
-        "Amazon SES"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Creates a new custom verification email template",
+      "description": "Grants permission to create a new custom verification email template",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "identity*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
     "CreateDedicatedIpPool": {
       "name": "CreateDedicatedIpPool",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Create a new pool of dedicated IP addresses",
+      "description": "Grants permission to create a new pool of dedicated IP addresses",
       "accessLevel": "Write",
-      "resourceTypes": [
-        "dedicated-ip-pool*"
-      ],
-      "conditionKeys": "",
+      "resourceTypes": [],
+      "conditionKeys": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
       "dependentActions": ""
     },
     "CreateDeliverabilityTestReport": {
       "name": "CreateDeliverabilityTestReport",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Create a new predictive inbox placement test.",
+      "description": "Grants permission to create a new predictive inbox placement test",
       "accessLevel": "Write",
       "resourceTypes": [
         "identity*"
@@ -85,13 +111,46 @@
     "CreateEmailIdentity": {
       "name": "CreateEmailIdentity",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Verifies an email identity for use with Amazon Pinpoint",
+      "description": "Grants permission to start the process of verifying an email identity",
       "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "dependentActions": ""
+    },
+    "CreateEmailIdentityPolicy": {
+      "name": "CreateEmailIdentityPolicy",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to create the specified sending authorization policy for the given\n                                                identity",
+      "accessLevel": "Permissions management",
       "resourceTypes": [
         "identity*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateEmailTemplate": {
+      "name": "CreateEmailTemplate",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to create an email template",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateImportJob": {
+      "name": "CreateImportJob",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to creates an import job for a data destination",
+      "accessLevel": "Write",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -100,7 +159,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Creates a new IP address filter",
+      "description": "Grants permission to create a new IP address filter",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -111,7 +170,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Creates a receipt rule",
+      "description": "Grants permission to create a receipt rule",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -122,7 +181,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Creates an empty receipt rule set",
+      "description": "Grants permission to create an empty receipt rule set",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -133,7 +192,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Creates an email template",
+      "description": "Grants permission to creates an email template",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -142,22 +201,26 @@
     "DeleteConfigurationSet": {
       "name": "DeleteConfigurationSet",
       "topics": [
-        "Amazon SES"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Deletes the configuration set",
+      "description": "Grants permission to delete an existing configuration set",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "configuration-set*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
     "DeleteConfigurationSetEventDestination": {
       "name": "DeleteConfigurationSetEventDestination",
       "topics": [
-        "Amazon SES"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Deletes a configuration set event destination",
+      "description": "Grants permission to delete an event destination",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "configuration-set*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -166,29 +229,57 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Deletes an association between a configuration set and a custom domain for open and\n                                                click event tracking",
+      "description": "Grants permission to delete an association between a configuration set and a custom\n                                                domain for open and click event tracking",
       "accessLevel": "Write",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteContact": {
+      "name": "DeleteContact",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to delete a contact from a contact list",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact-list*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteContactList": {
+      "name": "DeleteContactList",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to delete a contact list with all of its contacts",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact-list*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
     "DeleteCustomVerificationEmailTemplate": {
       "name": "DeleteCustomVerificationEmailTemplate",
       "topics": [
-        "Amazon SES"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Deletes an existing custom verification email template",
+      "description": "Grants permission to delete an existing custom verification email template",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "custom-verification-email-template*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
     "DeleteDedicatedIpPool": {
       "name": "DeleteDedicatedIpPool",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Delete a dedicated IP pool",
+      "description": "Grants permission to delete a dedicated IP pool",
       "accessLevel": "Write",
       "resourceTypes": [
         "dedicated-ip-pool*"
@@ -199,12 +290,38 @@
     "DeleteEmailIdentity": {
       "name": "DeleteEmailIdentity",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Deletes an email identity that you previously verified for use with Amazon Pinpoint",
+      "description": "Grants permission to delete an email identity",
       "accessLevel": "Write",
       "resourceTypes": [
         "identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteEmailIdentityPolicy": {
+      "name": "DeleteEmailIdentityPolicy",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to delete the specified sending authorization policy for the given\n                                                identity (an email address or a domain)",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteEmailTemplate": {
+      "name": "DeleteEmailTemplate",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to delete an email template",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "template*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -214,9 +331,11 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Deletes the specified identity (an email address or a domain) from the list of verified\n                                                identities",
+      "description": "Grants permission to delete the specified identity",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "identity*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -225,9 +344,11 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Deletes the specified identity (an email address or a domain) from the list of verified\n                                                identities",
-      "accessLevel": "Write",
-      "resourceTypes": [],
+      "description": "Grants permission to delete the specified sending authorization policy for the given\n                                                identity (an email address or a domain)",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "identity*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -236,7 +357,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Deletes the specified IP address filter",
+      "description": "Grants permission to delete the specified IP address filter",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -247,7 +368,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Deletes the specified receipt rule",
+      "description": "Grants permission to delete the specified receipt rule",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -258,7 +379,18 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Deletes the specified receipt rule set and all of the receipt rules it contains",
+      "description": "Grants permission to delete the specified receipt rule set and all of the receipt\n                                                rules it contains",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSuppressedDestination": {
+      "name": "DeleteSuppressedDestination",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to remove an email address from the suppression list for your account",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -269,7 +401,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Deletes an email template",
+      "description": "Grants permission to delete an email template",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -280,9 +412,11 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Deletes the specified email address from the list of verified addresses",
+      "description": "Grants permission to delete the specified email address from the list of verified\n                                                addresses",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "identity*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -291,7 +425,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Returns the metadata and receipt rules for the receipt rule set that is currently\n                                                active",
+      "description": "Grants permission to return the metadata and receipt rules for the receipt rule set\n                                                that is currently active",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -302,7 +436,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Returns the details of the specified configuration set",
+      "description": "Grants permission to return the details of the specified configuration set",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -313,7 +447,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Returns the details of the specified receipt rule",
+      "description": "Grants permission to return the details of the specified receipt rule",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -324,7 +458,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Returns the details of the specified receipt rule set",
+      "description": "Grants permission to return the details of the specified receipt rule set",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -333,9 +467,9 @@
     "GetAccount": {
       "name": "GetAccount",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Obtain information about the email-sending status and capabilities",
+      "description": "Grants permission to get information about the email-sending status and capabilities\n                                                for your account",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -346,7 +480,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Returns the email sending status of the Amazon SES account for the current region",
+      "description": "Grants permission to return the email sending status of your account",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -355,9 +489,9 @@
     "GetBlacklistReports": {
       "name": "GetBlacklistReports",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Retrieve a list of the blacklists that your dedicated IP addresses appear on",
+      "description": "Grants permission to retrieve a list of the deny lists on which your dedicated IP\n                                                addresses or tracked domains appear",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -366,9 +500,9 @@
     "GetConfigurationSet": {
       "name": "GetConfigurationSet",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Get information about an existing configuration set",
+      "description": "Grants permission to get information about an existing configuration set",
       "accessLevel": "Read",
       "resourceTypes": [
         "configuration-set*"
@@ -379,9 +513,9 @@
     "GetConfigurationSetEventDestinations": {
       "name": "GetConfigurationSetEventDestinations",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Retrieve a list of event destinations that are associated with a configuration set",
+      "description": "Grants permission to retrieve a list of event destinations that are associated with\n                                                a configuration set",
       "accessLevel": "Read",
       "resourceTypes": [
         "configuration-set*"
@@ -389,23 +523,51 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "GetContact": {
+      "name": "GetContact",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to return a contact from a contact list",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "contact-list*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetContactList": {
+      "name": "GetContactList",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to return contact list metadata",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "contact-list*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "GetCustomVerificationEmailTemplate": {
       "name": "GetCustomVerificationEmailTemplate",
       "topics": [
-        "Amazon SES"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Returns the custom email verification template for the template name you specify",
+      "description": "Grants permission to return the custom email verification template for the template\n                                                name you specify",
       "accessLevel": "Read",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "custom-verification-email-template*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
     "GetDedicatedIp": {
       "name": "GetDedicatedIp",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Get information about a dedicated IP address",
+      "description": "Grants permission to get information about a dedicated IP address",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -414,9 +576,9 @@
     "GetDedicatedIps": {
       "name": "GetDedicatedIps",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "List the dedicated IP addresses that are associated with your Amazon Pinpoint account",
+      "description": "Grants permission to list the dedicated IP addresses a dedicated IP pool",
       "accessLevel": "Read",
       "resourceTypes": [
         "dedicated-ip-pool*"
@@ -427,9 +589,9 @@
     "GetDeliverabilityDashboardOptions": {
       "name": "GetDeliverabilityDashboardOptions",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Show the status of the Deliverability dashboard",
+      "description": "Grants permission to get the status of the Deliverability dashboard",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -438,9 +600,9 @@
     "GetDeliverabilityTestReport": {
       "name": "GetDeliverabilityTestReport",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Retrieve the results of a predictive inbox placement test",
+      "description": "Grants permission to retrieve the results of a predictive inbox placement test",
       "accessLevel": "Read",
       "resourceTypes": [
         "deliverability-test-report*"
@@ -448,12 +610,23 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "GetDomainDeliverabilityCampaign": {
+      "name": "GetDomainDeliverabilityCampaign",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to retrieve all the deliverability data for a specific campaign",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "GetDomainStatisticsReport": {
       "name": "GetDomainStatisticsReport",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Retrieve inbox placement and engagement rates for the domains that you use to send\n                                                email",
+      "description": "Grants permission to retrieve inbox placement and engagement rates for the domains\n                                                that you use to send email",
       "accessLevel": "Read",
       "resourceTypes": [
         "identity*"
@@ -464,12 +637,38 @@
     "GetEmailIdentity": {
       "name": "GetEmailIdentity",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Provides information about a specific identity associated with your Amazon Pinpoint\n                                                account",
+      "description": "Grants permission to get information about a specific identity",
       "accessLevel": "Read",
       "resourceTypes": [
         "identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEmailIdentityPolicies": {
+      "name": "GetEmailIdentityPolicies",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to return the requested sending authorization policies for the given\n                                                identity (an email address or a domain)",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEmailTemplate": {
+      "name": "GetEmailTemplate",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to return the template object, which includes the subject line,\n                                                HTML part, and text part for the template you specify",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "template*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -479,9 +678,11 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Returns the current status of Easy DKIM signing for an entity",
+      "description": "Grants permission to return the current status of Easy DKIM signing for an entity",
       "accessLevel": "Read",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "identity*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -490,9 +691,11 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Returns the custom MAIL FROM attributes for a list of identities (email addresses\n                                                and/or domains)",
+      "description": "Grants permission to return the custom MAIL FROM attributes for a list of identities\n                                                (email addresses and/or domains)",
       "accessLevel": "Read",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "identity*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -501,9 +704,11 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Given a list of verified identities (email addresses and/or domains), returns a structure\n                                                describing identity notification attributes",
+      "description": "Grants permission to return a structure describing identity notification attributes\n                                                for a list of verified identities (email addresses and/or domains),",
       "accessLevel": "Read",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "identity*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -512,9 +717,11 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Returns the requested sending authorization policies for the given identity (an email\n                                                address or a domain)",
+      "description": "Grants permission to return the requested sending authorization policies for the given\n                                                identity (an email address or a domain)",
       "accessLevel": "Read",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "identity*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -523,9 +730,24 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Given a list of identities (email addresses and/or domains), returns the verification\n                                                status and (for domain identities) the verification token for each identity",
+      "description": "Grants permission to return the verification status and (for domain identities) the\n                                                verification token for a list of identities",
       "accessLevel": "Read",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetImportJob": {
+      "name": "GetImportJob",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to provide information about an import job",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "import-job*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -534,7 +756,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Returns the user's current sending limits",
+      "description": "Grants permission to return the user's current sending limits",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -545,7 +767,18 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Returns the user's sending statistics. The result is a list of data points, representing\n                                                the last two weeks of sending activity",
+      "description": "Grants permission to returns the user's sending statistics",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSuppressedDestination": {
+      "name": "GetSuppressedDestination",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to retrieve information about a specific email address that's on\n                                                the suppression list for your account",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -556,7 +789,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Returns the template object (which includes the Subject line, HTML part and text part)\n                                                for the template you specify",
+      "description": "Grants permission to return the template object, which includes the subject line,\n                                                HTML par, and text part for the template you specify",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -565,20 +798,44 @@
     "ListConfigurationSets": {
       "name": "ListConfigurationSets",
       "topics": [
-        "Amazon SES"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Returns a list of the configuration sets associated with your Amazon SES account in\n                                                the current AWS Region",
+      "description": "Grants permission to list all of the configuration sets for your account",
       "accessLevel": "List",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListContactLists": {
+      "name": "ListContactLists",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to list all of the contact lists available for your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListContacts": {
+      "name": "ListContacts",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to list the contacts present in a specific contact list",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "contact-list*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
     "ListCustomVerificationEmailTemplates": {
       "name": "ListCustomVerificationEmailTemplates",
       "topics": [
-        "Amazon SES"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Lists the existing custom verification email templates for your account in the current\n                                                AWS Region",
+      "description": "Grants permission to list all of the existing custom verification email templates\n                                                for your account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -587,9 +844,9 @@
     "ListDedicatedIpPools": {
       "name": "ListDedicatedIpPools",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "List all of the dedicated IP pools that exist in your Amazon Pinpoint account in the\n                                                current AWS Region",
+      "description": "Grants permission to list all of the dedicated IP pools for your account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -598,10 +855,21 @@
     "ListDeliverabilityTestReports": {
       "name": "ListDeliverabilityTestReports",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Show a list of the predictive inbox placement tests that you've performed, regardless\n                                                of their statuses",
+      "description": "Grants permission to retrieve the list of the predictive inbox placement tests that\n                                                you've performed, regardless of their statuses, for your account",
       "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDomainDeliverabilityCampaigns": {
+      "name": "ListDomainDeliverabilityCampaigns",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to list deliverability data for campaigns that used a specific domain\n                                                to send email during a specified time range",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -609,9 +877,20 @@
     "ListEmailIdentities": {
       "name": "ListEmailIdentities",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Returns a list of all of the email identities that are associated with your Amazon\n                                                Pinpoint account",
+      "description": "Grants permission to list the email identities for your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEmailTemplates": {
+      "name": "ListEmailTemplates",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to list all of the email templates for your account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -622,7 +901,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Returns a list containing all of the identities (email addresses and domains) for\n                                                your AWS account, regardless of verification status",
+      "description": "Grants permission to list the email identities for your account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -633,7 +912,18 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Returns a list of sending authorization policies that are attached to the given identity\n                                                (an email address or a domain)",
+      "description": "Grants permission to list all of the email templates for your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListImportJobs": {
+      "name": "ListImportJobs",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to list all of the import jobs for your account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -644,8 +934,8 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Lists the IP address filters associated with your AWS account",
-      "accessLevel": "List",
+      "description": "Grants permission to list the IP address filters associated with your account",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -655,8 +945,19 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Lists the receipt rule sets that exist under your AWS account",
-      "accessLevel": "List",
+      "description": "Grants permission to list the receipt rule sets that exist under your account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSuppressedDestinations": {
+      "name": "ListSuppressedDestinations",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to list email addresses that are on the suppression list for your\n                                                account",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -664,9 +965,9 @@
     "ListTagsForResource": {
       "name": "ListTagsForResource",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Retrieve a list of the tags (keys and values) that are associated with a specific\n                                                resource.",
+      "description": "Grants permission to retrieve a list of the tags (keys and values) that are associated\n                                                with a specific resource for your account",
       "accessLevel": "Read",
       "resourceTypes": [
         "configuration-set"
@@ -679,7 +980,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Lists the email templates present in your Amazon SES account in the current AWS Region",
+      "description": "Grants permission to list the email templates present in your account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -690,8 +991,8 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Returns a list containing all of the email addresses that have been verified",
-      "accessLevel": "List",
+      "description": "Grants permission to list all of the email addresses that have been verified in your\n                                                account",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -699,9 +1000,20 @@
     "PutAccountDedicatedIpWarmupAttributes": {
       "name": "PutAccountDedicatedIpWarmupAttributes",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Enable or disable the automatic warm-up feature for dedicated IP addresses",
+      "description": "Grants permission to enable or disable the automatic warm-up feature for dedicated\n                                                IP addresses",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutAccountDetails": {
+      "name": "PutAccountDetails",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to update your account details",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -710,9 +1022,20 @@
     "PutAccountSendingAttributes": {
       "name": "PutAccountSendingAttributes",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Enable or disable the ability of your account to send email",
+      "description": "Grants permission to enable or disable the ability to send email for your account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutAccountSuppressionAttributes": {
+      "name": "PutAccountSuppressionAttributes",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to change the settings for the account-level suppression list",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -721,9 +1044,9 @@
     "PutConfigurationSetDeliveryOptions": {
       "name": "PutConfigurationSetDeliveryOptions",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Associate a configuration set with a dedicated IP pool",
+      "description": "Grants permission to associate a configuration set with a dedicated IP pool",
       "accessLevel": "Write",
       "resourceTypes": [
         "configuration-set*"
@@ -734,9 +1057,9 @@
     "PutConfigurationSetReputationOptions": {
       "name": "PutConfigurationSetReputationOptions",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Enable or disable collection of reputation metrics for emails that you send using\n                                                a particular configuration set in a specific AWS Region",
+      "description": "Grants permission to enable or disable collection of reputation metrics for emails\n                                                that you send using a particular configuration set",
       "accessLevel": "Write",
       "resourceTypes": [
         "configuration-set*"
@@ -747,9 +1070,22 @@
     "PutConfigurationSetSendingOptions": {
       "name": "PutConfigurationSetSendingOptions",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Enable or disable email sending for messages that use a particular configuration set\n                                                in a specific AWS Region",
+      "description": "Grants permission to enable or disable email sending for messages that use a particular\n                                                configuration set",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "configuration-set*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutConfigurationSetSuppressionOptions": {
+      "name": "PutConfigurationSetSuppressionOptions",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to specify the account suppression list preferences for a particular\n                                                configuration set",
       "accessLevel": "Write",
       "resourceTypes": [
         "configuration-set*"
@@ -760,9 +1096,9 @@
     "PutConfigurationSetTrackingOptions": {
       "name": "PutConfigurationSetTrackingOptions",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Specify a custom domain to use for open and click tracking elements in email that\n                                                you send using Amazon Pinpoint",
+      "description": "Grants permission to specify a custom domain to use for open and click tracking elements\n                                                in email that you send for a particular configuration set",
       "accessLevel": "Write",
       "resourceTypes": [
         "configuration-set*"
@@ -773,9 +1109,9 @@
     "PutDedicatedIpInPool": {
       "name": "PutDedicatedIpInPool",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Move a dedicated IP address to an existing dedicated IP pool",
+      "description": "Grants permission to move a dedicated IP address to an existing dedicated IP pool",
       "accessLevel": "Write",
       "resourceTypes": [
         "dedicated-ip-pool*"
@@ -786,9 +1122,9 @@
     "PutDedicatedIpWarmupAttributes": {
       "name": "PutDedicatedIpWarmupAttributes",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Put Dedicated IP warm up attributes",
+      "description": "Grants permission to put Dedicated IP warm up attributes",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -797,20 +1133,46 @@
     "PutDeliverabilityDashboardOption": {
       "name": "PutDeliverabilityDashboardOption",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Enable or disable the Deliverability dashboard",
+      "description": "Grants permission to enable or disable the Deliverability dashboard",
       "accessLevel": "Write",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutEmailIdentityConfigurationSetAttributes": {
+      "name": "PutEmailIdentityConfigurationSetAttributes",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to associate a configuration set with an email identity",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "identity*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
     "PutEmailIdentityDkimAttributes": {
       "name": "PutEmailIdentityDkimAttributes",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Used to enable or disable DKIM authentication for an email identity",
+      "description": "Grants permission to enable or disable DKIM authentication for an email identity",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutEmailIdentityDkimSigningAttributes": {
+      "name": "PutEmailIdentityDkimSigningAttributes",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to configure or change the DKIM authentication settings for an email\n                                                domain identity",
       "accessLevel": "Write",
       "resourceTypes": [
         "identity*"
@@ -821,9 +1183,9 @@
     "PutEmailIdentityFeedbackAttributes": {
       "name": "PutEmailIdentityFeedbackAttributes",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Used to enable or disable feedback forwarding for an identity",
+      "description": "Grants permission to enable or disable feedback forwarding for an email identity",
       "accessLevel": "Write",
       "resourceTypes": [
         "identity*"
@@ -834,9 +1196,9 @@
     "PutEmailIdentityMailFromAttributes": {
       "name": "PutEmailIdentityMailFromAttributes",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Used to enable or disable the custom Mail-From domain configuration for an email identity",
+      "description": "Grants permission to enable or disable the custom MAIL FROM domain configuration for\n                                                an email identity",
       "accessLevel": "Write",
       "resourceTypes": [
         "identity*"
@@ -849,7 +1211,20 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Adds or updates a sending authorization policy for the specified identity (an email\n                                                address or a domain)",
+      "description": "Grants permission to add or update a sending authorization policy for the specified\n                                                identity (an email address or a domain)",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutSuppressedDestination": {
+      "name": "PutSuppressedDestination",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to add an email address to the suppression list",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -860,7 +1235,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Reorders the receipt rules within a receipt rule set",
+      "description": "Grants permission to reorder the receipt rules within a receipt rule set",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -871,10 +1246,23 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Generates and sends a bounce message to the sender of an email you received through\n                                                Amazon SES",
+      "description": "Grants permission to generate and send a bounce message to the sender of an email\n                                                you received through Amazon SES",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendBulkEmail": {
+      "name": "SendBulkEmail",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to compose an email message to multiple destinations",
       "accessLevel": "Write",
       "resourceTypes": [],
-      "conditionKeys": "ses:FromAddress",
+      "conditionKeys": "",
       "dependentActions": ""
     },
     "SendBulkTemplatedEmail": {
@@ -882,7 +1270,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Composes an email message to multiple destinations",
+      "description": "Grants permission to compose an email message to multiple destinations",
       "accessLevel": "Write",
       "resourceTypes": [
         "identity*"
@@ -893,12 +1281,12 @@
     "SendCustomVerificationEmail": {
       "name": "SendCustomVerificationEmail",
       "topics": [
-        "Amazon SES"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Adds an email address to the list of identities for your Amazon SES account in the\n                                                current AWS Region and attempts to verify it",
+      "description": "Grants permission to add an email address to the list of identities and attempts to\n                                                verify it",
       "accessLevel": "Write",
       "resourceTypes": [
-        "identity*"
+        "custom-verification-email-template*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -906,9 +1294,9 @@
     "SendEmail": {
       "name": "SendEmail",
       "topics": [
-        "Amazon SES"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Composes an email message based on input data, and then immediately queues the message\n                                                for sending",
+      "description": "Grants permission to send an email message",
       "accessLevel": "Write",
       "resourceTypes": [
         "identity*"
@@ -921,7 +1309,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Sends an email message, with header and content specified by the client",
+      "description": "Grants permission to send an email message, with header and content specified by the\n                                                client",
       "accessLevel": "Write",
       "resourceTypes": [
         "identity*"
@@ -934,12 +1322,10 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Composes an email message using an email template and immediately queues it for sending",
+      "description": "Grants permission to compose an email message using an email template",
       "accessLevel": "Write",
-      "resourceTypes": [
-        "identity*"
-      ],
-      "conditionKeys": "",
+      "resourceTypes": [],
+      "conditionKeys": "ses:FeedbackAddress\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ses:FromAddress\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ses:FromDisplayName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ses:Recipients",
       "dependentActions": ""
     },
     "SetActiveReceiptRuleSet": {
@@ -947,7 +1333,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Sets the specified receipt rule set as the active receipt rule set",
+      "description": "Grants permission to set the specified receipt rule set as the active receipt rule\n                                                set",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -958,9 +1344,11 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Enables or disables Easy DKIM signing of email sent from an identity",
+      "description": "Grants permission to enable or disable Easy DKIM signing of email sent from an identity",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "identity*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -969,9 +1357,11 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Given an identity (an email address or a domain), enables or disables whether Amazon\n                                                SES forwards bounce and complaint notifications as email",
+      "description": "Grants permission to enable or disable whether Amazon SES forwards bounce and complaint\n                                                notifications for an identity (an email address or a domain)",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "identity*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -980,9 +1370,11 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Given an identity (an email address or a domain), sets whether Amazon SES includes\n                                                the original email headers in the Amazon Simple Notification Service (Amazon SNS)\n                                                notifications of a specified type",
+      "description": "Grants permission to set whether Amazon SES includes the original email headers in\n                                                the Amazon Simple Notification Service (Amazon SNS) notifications of a specified type\n                                                for a given identity (an email address or a domain)",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "identity*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -991,9 +1383,11 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Enables or disables the custom MAIL FROM domain setup for a verified identity (an\n                                                email address or a domain)",
+      "description": "Grants permission to enable or disable the custom MAIL FROM domain setup for a verified\n                                                identity",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "identity*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -1002,9 +1396,11 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Given an identity (an email address or a domain), sets the Amazon Simple Notification\n                                                Service (Amazon SNS) topic to which Amazon SES will publish bounce, complaint, and/or\n                                                delivery notifications for emails sent with that identity as the Source",
+      "description": "Grants permission to set an Amazon Simple Notification Service (Amazon SNS) topic\n                                                to use when delivering notifications for a verified identity",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "identity*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -1013,7 +1409,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Sets the position of the specified receipt rule in the receipt rule set",
+      "description": "Grants permission to set the position of the specified receipt rule in the receipt\n                                                rule set",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1022,12 +1418,25 @@
     "TagResource": {
       "name": "TagResource",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Add one or more tags (keys and values) to a specified resource.",
+      "description": "Grants permission to add one or more tags (keys and values) to a specified resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "configuration-set"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TestRenderEmailTemplate": {
+      "name": "TestRenderEmailTemplate",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to create a preview of the MIME content of an email when provided\n                                                with a template and a set of replacement data",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "template*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1037,7 +1446,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Creates a preview of the MIME content of an email when provided with a template and\n                                                a set of replacement data",
+      "description": "Grants permission to create a preview of the MIME content of an email when provided\n                                                with a template and a set of replacement data",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1046,9 +1455,9 @@
     "UntagResource": {
       "name": "UntagResource",
       "topics": [
-        "Amazon Pinpoint Email Service"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Remove one or more tags (keys and values) from a specified resource.",
+      "description": "Grants permission to remove one or more tags (keys and values) from a specified resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "configuration-set"
@@ -1061,7 +1470,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Enables or disables email sending across your entire Amazon SES account in the current\n                                                AWS Region",
+      "description": "Grants permission to enable or disable email sending for your account",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1070,11 +1479,13 @@
     "UpdateConfigurationSetEventDestination": {
       "name": "UpdateConfigurationSetEventDestination",
       "topics": [
-        "Amazon SES"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Updates the event destination of a configuration set",
+      "description": "Grants permission to update the configuration of an event destination for a configuration\n                                                set",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "configuration-set*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -1083,7 +1494,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Enables or disables the publishing of reputation metrics for emails sent using a specific\n                                                configuration set in a given AWS Region",
+      "description": "Grants permission to enable or disable the publishing of reputation metrics for emails\n                                                sent using a specific configuration set",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1094,7 +1505,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Enables or disables email sending for messages sent using a specific configuration\n                                                set in a given AWS Region",
+      "description": "Grants permission  to enable or disable email sending for messages sent using a specific\n                                                configuration set",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1105,20 +1516,74 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Modifies an association between a configuration set and a custom domain for open and\n                                                click event tracking",
+      "description": "Grants permission to modify an association between a configuration set and a custom\n                                                domain for open and click event tracking",
       "accessLevel": "Write",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateContact": {
+      "name": "UpdateContact",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to update a contact's preferences for a list",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact-list*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateContactList": {
+      "name": "UpdateContactList",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to update contact list metadata",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact-list*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
     "UpdateCustomVerificationEmailTemplate": {
       "name": "UpdateCustomVerificationEmailTemplate",
       "topics": [
-        "Amazon SES"
+        "Amazon Simple Email Service v2"
       ],
-      "description": "Updates an existing custom verification email template",
+      "description": "Grants permission to update an existing custom verification email template",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "custom-verification-email-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateEmailIdentityPolicy": {
+      "name": "UpdateEmailIdentityPolicy",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to update the specified sending authorization policy for the given\n                                                identity (an email address or a domain)",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "identity*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateEmailTemplate": {
+      "name": "UpdateEmailTemplate",
+      "topics": [
+        "Amazon Simple Email Service v2"
+      ],
+      "description": "Grants permission to update an email template",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "template*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -1127,7 +1592,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Updates a receipt rule",
+      "description": "Grants permission to update a receipt rule",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1138,7 +1603,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Updates an email template",
+      "description": "Grants permission to update an email template",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1149,9 +1614,11 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Returns a set of DKIM tokens for a domain",
+      "description": "Grants permission to return a set of DKIM tokens for a domain",
       "accessLevel": "Read",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "identity*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -1160,7 +1627,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Verifies a domain",
+      "description": "Grants permission to verify a domain",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1171,7 +1638,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Verifies an email address. This action causes a confirmation email message to be sent\n                                                to the specified address. This action is throttled at one request per second",
+      "description": "Grants permission to verify an email address",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1182,7 +1649,7 @@
       "topics": [
         "Amazon SES"
       ],
-      "description": "Verifies an email address.  This action causes a confirmation email message to be\n                                                sent to the specified address. This action is throttled at one request per second",
+      "description": "Grants permission to verify an email identity",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1191,6 +1658,7 @@
   },
   "topics": [
     "Amazon Pinpoint Email Service",
-    "Amazon SES"
+    "Amazon SES",
+    "Amazon Simple Email Service v2"
   ]
 }

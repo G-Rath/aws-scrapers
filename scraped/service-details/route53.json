@@ -1,6 +1,19 @@
 {
   "servicePrefix": "route53",
   "actions": {
+    "ActivateKeySigningKey": {
+      "name": "ActivateKeySigningKey",
+      "topics": [
+        "Amazon Route 53"
+      ],
+      "description": "Grants permission to activate a key-signing key so that it can be used for signing\n                                                by DNSSEC",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hostedzone*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "AssociateVPCWithHostedZone": {
       "name": "AssociateVPCWithHostedZone",
       "topics": [
@@ -63,6 +76,19 @@
       ],
       "conditionKeys": "",
       "dependentActions": "ec2:DescribeVpcs"
+    },
+    "CreateKeySigningKey": {
+      "name": "CreateKeySigningKey",
+      "topics": [
+        "Amazon Route 53"
+      ],
+      "description": "Grants permission to create a new key-signing key associated with a hosted zone",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hostedzone*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
     },
     "CreateQueryLoggingConfig": {
       "name": "CreateQueryLoggingConfig",
@@ -138,6 +164,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeactivateKeySigningKey": {
+      "name": "DeactivateKeySigningKey",
+      "topics": [
+        "Amazon Route 53"
+      ],
+      "description": "Grants permission to deactivate a key-signing key so that it will not be used for\n                                                signing by DNSSEC",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hostedzone*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteHealthCheck": {
       "name": "DeleteHealthCheck",
       "topics": [
@@ -157,6 +196,19 @@
         "Amazon Route 53"
       ],
       "description": "Grants permission to delete a hosted zone",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hostedzone*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteKeySigningKey": {
+      "name": "DeleteKeySigningKey",
+      "topics": [
+        "Amazon Route 53"
+      ],
+      "description": "Grants permission to delete a key-signing key",
       "accessLevel": "Write",
       "resourceTypes": [
         "hostedzone*"
@@ -229,6 +281,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DisableHostedZoneDNSSEC": {
+      "name": "DisableHostedZoneDNSSEC",
+      "topics": [
+        "Amazon Route 53"
+      ],
+      "description": "Grants permission to disable DNSSEC signing in a specific hosted zone",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hostedzone*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DisassociateVPCFromHostedZone": {
       "name": "DisassociateVPCFromHostedZone",
       "topics": [
@@ -241,6 +306,19 @@
       ],
       "conditionKeys": "",
       "dependentActions": "ec2:DescribeVpcs"
+    },
+    "EnableHostedZoneDNSSEC": {
+      "name": "EnableHostedZoneDNSSEC",
+      "topics": [
+        "Amazon Route 53"
+      ],
+      "description": "Grants permission to enable DNSSEC signing in a specific hosted zone",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hostedzone*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
     },
     "GetAccountLimit": {
       "name": "GetAccountLimit",
@@ -274,6 +352,19 @@
       "description": "Grants permission to get a list of the IP ranges that are used by Route 53 health\n                                                checkers to check the health of your resources",
       "accessLevel": "List",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDNSSEC": {
+      "name": "GetDNSSEC",
+      "topics": [
+        "Amazon Route 53"
+      ],
+      "description": "Grants permission to get information about DNSSEC for a specific hosted zone, including\n                                                the key-signing keys in the hosted zone",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "hostedzone*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },

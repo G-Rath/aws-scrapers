@@ -1,0 +1,160 @@
+{
+  "servicePrefix": "monitron",
+  "actions": {
+    "AssociateProjectAdminUser": {
+      "name": "AssociateProjectAdminUser",
+      "topics": [
+        "Amazon Monitron"
+      ],
+      "description": "Grants permission to associate a user with the project as an administrator",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "sso-directory:DescribeUsers\n                                                   \n                                                \n                                                \n                                                \n                                                   sso:AssociateProfile\n                                                   \n                                                \n                                                \n                                                \n                                                   sso:GetManagedApplicationInstance\n                                                   \n                                                \n                                                \n                                                \n                                                   sso:GetProfile\n                                                   \n                                                \n                                                \n                                                \n                                                   sso:ListDirectoryAssociations\n                                                   \n                                                \n                                                \n                                                \n                                                   sso:ListProfiles"
+    },
+    "CreateProject": {
+      "name": "CreateProject",
+      "topics": [
+        "Amazon Monitron"
+      ],
+      "description": "Grants permission to create a project",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": "iam:CreateServiceLinkedRole\n                                                   \n                                                \n                                                \n                                                \n                                                   kms:CreateGrant\n                                                   \n                                                \n                                                \n                                                \n                                                   sso:CreateManagedApplicationInstance\n                                                   \n                                                \n                                                \n                                                \n                                                   sso:DeleteManagedApplicationInstance"
+    },
+    "DeleteProject": {
+      "name": "DeleteProject",
+      "topics": [
+        "Amazon Monitron"
+      ],
+      "description": "Grants permission to delete a project",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "sso:DeleteManagedApplicationInstance"
+    },
+    "DisassociateProjectAdminUser": {
+      "name": "DisassociateProjectAdminUser",
+      "topics": [
+        "Amazon Monitron"
+      ],
+      "description": "Grants permission to disassociate an administrator from the project",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "sso-directory:DescribeUsers\n                                                   \n                                                \n                                                \n                                                \n                                                   sso:DisassociateProfile\n                                                   \n                                                \n                                                \n                                                \n                                                   sso:GetManagedApplicationInstance\n                                                   \n                                                \n                                                \n                                                \n                                                   sso:GetProfile\n                                                   \n                                                \n                                                \n                                                \n                                                   sso:ListDirectoryAssociations\n                                                   \n                                                \n                                                \n                                                \n                                                   sso:ListProfiles"
+    },
+    "GetProject": {
+      "name": "GetProject",
+      "topics": [
+        "Amazon Monitron"
+      ],
+      "description": "Grants permission to get information about a project",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetProjectAdminUser": {
+      "name": "GetProjectAdminUser",
+      "topics": [
+        "Amazon Monitron"
+      ],
+      "description": "Grants permission to describe an administrator who is associated with the project",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "sso-directory:DescribeUsers\n                                                   \n                                                \n                                                \n                                                \n                                                   sso:GetManagedApplicationInstance"
+    },
+    "ListProjectAdminUsers": {
+      "name": "ListProjectAdminUsers",
+      "topics": [
+        "Amazon Monitron"
+      ],
+      "description": "Grants permission to list all administrators associated with the project",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "sso-directory:DescribeUsers\n                                                   \n                                                \n                                                \n                                                \n                                                   sso:GetManagedApplicationInstance"
+    },
+    "ListProjects": {
+      "name": "ListProjects",
+      "topics": [
+        "Amazon Monitron"
+      ],
+      "description": "Grants permission to list all projects",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "Amazon Monitron"
+      ],
+      "description": "Grants permission to list all tags for a resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "project"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "Amazon Monitron"
+      ],
+      "description": "Grants permission to tag a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "project"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "Amazon Monitron"
+      ],
+      "description": "Grants permission to untag a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "project"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateProject": {
+      "name": "UpdateProject",
+      "topics": [
+        "Amazon Monitron"
+      ],
+      "description": "Grants permission to update a project",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "Amazon Monitron"
+  ]
+}

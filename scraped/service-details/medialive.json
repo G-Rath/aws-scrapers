@@ -1,12 +1,25 @@
 {
   "servicePrefix": "medialive",
   "actions": {
+    "AcceptInputDeviceTransfer": {
+      "name": "AcceptInputDeviceTransfer",
+      "topics": [
+        "AWS Elemental MediaLive"
+      ],
+      "description": "Grants permission to accept an input device transfer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "input-device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "BatchDelete": {
       "name": "BatchDelete",
       "topics": [
         "AWS Elemental MediaLive"
       ],
-      "description": "Grants permission to delete channels, inputs, input security groups, and multiplexes.",
+      "description": "Grants permission to delete channels, inputs, input security groups, and multiplexes",
       "accessLevel": "Write",
       "resourceTypes": [
         "channel"
@@ -19,7 +32,7 @@
       "topics": [
         "AWS Elemental MediaLive"
       ],
-      "description": "Grants permission to start channels and multiplexes.",
+      "description": "Grants permission to start channels and multiplexes",
       "accessLevel": "Write",
       "resourceTypes": [
         "channel"
@@ -32,7 +45,7 @@
       "topics": [
         "AWS Elemental MediaLive"
       ],
-      "description": "Grants permission to stop channels and multiplexes.",
+      "description": "Grants permission to stop channels and multiplexes",
       "accessLevel": "Write",
       "resourceTypes": [
         "channel"
@@ -45,10 +58,23 @@
       "topics": [
         "AWS Elemental MediaLive"
       ],
-      "description": "Grants permission to add and remove actions from a channel's schedule.",
+      "description": "Grants permission to add and remove actions from a channel's schedule",
       "accessLevel": "Write",
       "resourceTypes": [
         "channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CancelInputDeviceTransfer": {
+      "name": "CancelInputDeviceTransfer",
+      "topics": [
+        "AWS Elemental MediaLive"
+      ],
+      "description": "Grants permission to cancel an input device transfer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "input-device*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -123,7 +149,7 @@
       "topics": [
         "AWS Elemental MediaLive"
       ],
-      "description": "Grants permission to create tags for channels, inputs, input security groups, multiplexes,\n                                                and reservations.",
+      "description": "Grants permission to create tags for channels, inputs, input security groups, multiplexes,\n                                                and reservations",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "channel"
@@ -209,12 +235,25 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeleteSchedule": {
+      "name": "DeleteSchedule",
+      "topics": [
+        "AWS Elemental MediaLive"
+      ],
+      "description": "Grants permission to delete all schedule actions for a channel",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteTags": {
       "name": "DeleteTags",
       "topics": [
         "AWS Elemental MediaLive"
       ],
-      "description": "Grants permission to delete tags from channels, inputs, input security groups, multiplexes,\n                                                and reservations.",
+      "description": "Grants permission to delete tags from channels, inputs, input security groups, multiplexes,\n                                                and reservations",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "channel"
@@ -344,7 +383,7 @@
       "topics": [
         "AWS Elemental MediaLive"
       ],
-      "description": "Grants permission to view a list of actions scheduled on a channel.",
+      "description": "Grants permission to view a list of actions scheduled on a channel",
       "accessLevel": "Read",
       "resourceTypes": [
         "channel*"
@@ -358,6 +397,17 @@
         "AWS Elemental MediaLive"
       ],
       "description": "Grants permission to list channels",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListInputDeviceTransfers": {
+      "name": "ListInputDeviceTransfers",
+      "topics": [
+        "AWS Elemental MediaLive"
+      ],
+      "description": "Grants permission to list input device transfers",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -445,7 +495,7 @@
       "topics": [
         "AWS Elemental MediaLive"
       ],
-      "description": "Grants permission to list tags for channels, inputs, input security groups, multiplexes,\n                                                and reservations.",
+      "description": "Grants permission to list tags for channels, inputs, input security groups, multiplexes,\n                                                and reservations",
       "accessLevel": "List",
       "resourceTypes": [
         "channel"
@@ -462,6 +512,19 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "offering*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RejectInputDeviceTransfer": {
+      "name": "RejectInputDeviceTransfer",
+      "topics": [
+        "AWS Elemental MediaLive"
+      ],
+      "description": "Grants permission to reject an input device transfer",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "input-device*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -514,6 +577,19 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "multiplex*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TransferInputDevice": {
+      "name": "TransferInputDevice",
+      "topics": [
+        "AWS Elemental MediaLive"
+      ],
+      "description": "Grants permission to transfer an input device",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "input-device*"
       ],
       "conditionKeys": "",
       "dependentActions": ""

@@ -6,10 +6,23 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Creates a static IP address that can be attached to an instance.",
+      "description": "Creates a static IP address that can be attached to an instance",
       "accessLevel": "Write",
       "resourceTypes": [
         "StaticIp*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AttachCertificateToDistribution": {
+      "name": "AttachCertificateToDistribution",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to attach an SSL/TLS certificate to your Amazon Lightsail content\n                                                delivery network (CDN) distribution",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Certificate*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -19,7 +32,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Attaches a disk to an instance.",
+      "description": "Attaches a disk to an instance",
       "accessLevel": "Write",
       "resourceTypes": [
         "Disk*"
@@ -32,7 +45,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Attaches one or more instances to a load balancer.",
+      "description": "Attaches one or more instances to a load balancer",
       "accessLevel": "Write",
       "resourceTypes": [
         "Instance*"
@@ -45,7 +58,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Attaches a TLS certificate to a load balancer.",
+      "description": "Attaches a TLS certificate to a load balancer",
       "accessLevel": "Write",
       "resourceTypes": [
         "LoadBalancer*"
@@ -58,7 +71,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Attaches a static IP address to an instance.",
+      "description": "Attaches a static IP address to an instance",
       "accessLevel": "Write",
       "resourceTypes": [
         "Instance*"
@@ -71,7 +84,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Closes a public port of an instance.",
+      "description": "Closes a public port of an instance",
       "accessLevel": "Write",
       "resourceTypes": [
         "Instance*"
@@ -84,9 +97,24 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Copies a snapshot from one AWS Region to another in Amazon Lightsail.",
+      "description": "Copies a snapshot from one AWS Region to another in Amazon Lightsail",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "DiskSnapshot"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateCertificate": {
+      "name": "CreateCertificate",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to create an SSL/TLS certificate",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Certificate*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -95,11 +123,59 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Creates a new Amazon EC2 instance from an exported Amazon Lightsail snapshot.",
+      "description": "Creates a new Amazon EC2 instance from an exported Amazon Lightsail snapshot",
       "accessLevel": "Write",
       "resourceTypes": [
         "ExportSnapshotRecord*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateContactMethod": {
+      "name": "CreateContactMethod",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to create an email or SMS text message contact method",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateContainerService": {
+      "name": "CreateContainerService",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to create an Amazon Lightsail container service",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ContainerService*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateContainerServiceDeployment": {
+      "name": "CreateContainerServiceDeployment",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to create a deployment for your Amazon Lightsail container service",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ContainerService*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateContainerServiceRegistryLogin": {
+      "name": "CreateContainerServiceRegistryLogin",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to create a temporary set of log in credentials that you can use\n                                                to log in to the Docker process on your local machine",
+      "accessLevel": "Write",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -108,7 +184,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Creates a disk.",
+      "description": "Creates a disk",
       "accessLevel": "Write",
       "resourceTypes": [
         "Disk*"
@@ -121,7 +197,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Creates a disk from snapshot.",
+      "description": "Creates a disk from snapshot",
       "accessLevel": "Write",
       "resourceTypes": [
         "Disk*"
@@ -134,10 +210,23 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Creates a disk snapshot.",
+      "description": "Creates a disk snapshot",
       "accessLevel": "Write",
       "resourceTypes": [
         "Disk*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDistribution": {
+      "name": "CreateDistribution",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to create an Amazon Lightsail content delivery network (CDN) distribution",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Distribution*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -147,7 +236,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Creates a domain resource for the specified domain name.",
+      "description": "Creates a domain resource for the specified domain name",
       "accessLevel": "Write",
       "resourceTypes": [
         "Domain*"
@@ -160,7 +249,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Creates one or more DNS record entries for a domain resource: Address (A), canonical\n                                                name (CNAME), mail exchanger (MX), name server (NS), start of authority (SOA), service\n                                                locator (SRV), or text (TXT).",
+      "description": "Creates one or more DNS record entries for a domain resource: Address (A), canonical\n                                                name (CNAME), mail exchanger (MX), name server (NS), start of authority (SOA), service\n                                                locator (SRV), or text (TXT)",
       "accessLevel": "Write",
       "resourceTypes": [
         "Domain*"
@@ -173,7 +262,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Creates an instance snapshot.",
+      "description": "Creates an instance snapshot",
       "accessLevel": "Write",
       "resourceTypes": [
         "Instance*"
@@ -186,7 +275,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Creates one or more instances.",
+      "description": "Creates one or more instances",
       "accessLevel": "Write",
       "resourceTypes": [
         "KeyPair*"
@@ -199,7 +288,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Creates one or more instances based on an instance snapshot.",
+      "description": "Creates one or more instances based on an instance snapshot",
       "accessLevel": "Write",
       "resourceTypes": [
         "Instance*"
@@ -212,7 +301,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Creates a key pair used to authenticate and connect to an instance.",
+      "description": "Creates a key pair used to authenticate and connect to an instance",
       "accessLevel": "Write",
       "resourceTypes": [
         "KeyPair*"
@@ -225,7 +314,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Creates a load balancer.",
+      "description": "Creates a load balancer",
       "accessLevel": "Write",
       "resourceTypes": [
         "LoadBalancer*"
@@ -238,7 +327,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Creates a load balancer TLS certificate.",
+      "description": "Creates a load balancer TLS certificate",
       "accessLevel": "Write",
       "resourceTypes": [
         "LoadBalancer*"
@@ -251,7 +340,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Creates a new relational database.",
+      "description": "Creates a new relational database",
       "accessLevel": "Write",
       "resourceTypes": [
         "RelationalDatabase*"
@@ -264,7 +353,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Creates a new relational database from a snapshot.",
+      "description": "Creates a new relational database from a snapshot",
       "accessLevel": "Write",
       "resourceTypes": [
         "RelationalDatabase*"
@@ -277,10 +366,88 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Creates a relational database snapshot.",
+      "description": "Creates a relational database snapshot",
       "accessLevel": "Write",
       "resourceTypes": [
         "RelationalDatabaseSnapshot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAlarm": {
+      "name": "DeleteAlarm",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to delete an alarm",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Alarm*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAutoSnapshot": {
+      "name": "DeleteAutoSnapshot",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to delete an automatic snapshot of an instance or disk",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Disk"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteCertificate": {
+      "name": "DeleteCertificate",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to delete an SSL/TLS certificate",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Certificate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteContactMethod": {
+      "name": "DeleteContactMethod",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to delete a contact method",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ContactMethod*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteContainerImage": {
+      "name": "DeleteContainerImage",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to delete a container image that is registered to your Amazon Lightsail\n                                                container service",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ContainerService*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteContainerService": {
+      "name": "DeleteContainerService",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to delete your Amazon Lightsail container service",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ContainerService*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -290,7 +457,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Deletes a disk.",
+      "description": "Deletes a disk",
       "accessLevel": "Write",
       "resourceTypes": [
         "Disk*"
@@ -303,10 +470,23 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Deletes a disk snapshot.",
+      "description": "Deletes a disk snapshot",
       "accessLevel": "Write",
       "resourceTypes": [
         "Disk*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDistribution": {
+      "name": "DeleteDistribution",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to delete your Amazon Lightsail content delivery network (CDN) distribution",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Distribution*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -316,7 +496,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Deletes a domain resource and all of its DNS records.",
+      "description": "Deletes a domain resource and all of its DNS records",
       "accessLevel": "Write",
       "resourceTypes": [
         "Domain*"
@@ -329,7 +509,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Deletes a DNS record entry for a domain resource.",
+      "description": "Deletes a DNS record entry for a domain resource",
       "accessLevel": "Write",
       "resourceTypes": [
         "Domain*"
@@ -342,7 +522,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Deletes an instance.",
+      "description": "Deletes an instance",
       "accessLevel": "Write",
       "resourceTypes": [
         "Instance*"
@@ -355,7 +535,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Deletes an instance snapshot.",
+      "description": "Deletes an instance snapshot",
       "accessLevel": "Write",
       "resourceTypes": [
         "InstanceSnapshot*"
@@ -368,7 +548,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Deletes a key pair used to authenticate and connect to an instance.",
+      "description": "Deletes a key pair used to authenticate and connect to an instance",
       "accessLevel": "Write",
       "resourceTypes": [
         "KeyPair*"
@@ -381,7 +561,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Deletes the known host key or certificate used by the Amazon Lightsail browser-based\n                                                SSH or RDP clients to authenticate an instance.",
+      "description": "Deletes the known host key or certificate used by the Amazon Lightsail browser-based\n                                                SSH or RDP clients to authenticate an instance",
       "accessLevel": "Write",
       "resourceTypes": [
         "Instance*"
@@ -394,7 +574,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Deletes a load balancer.",
+      "description": "Deletes a load balancer",
       "accessLevel": "Write",
       "resourceTypes": [
         "LoadBalancer*"
@@ -407,7 +587,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Deletes a load balancer TLS certificate.",
+      "description": "Deletes a load balancer TLS certificate",
       "accessLevel": "Write",
       "resourceTypes": [
         "LoadBalancer*"
@@ -420,7 +600,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Deletes a relational database.",
+      "description": "Deletes a relational database",
       "accessLevel": "Write",
       "resourceTypes": [
         "RelationalDatabase*"
@@ -433,10 +613,23 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Deletes relational database snapshot.",
+      "description": "Deletes relational database snapshot",
       "accessLevel": "Write",
       "resourceTypes": [
         "RelationalDatabaseSnapshot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DetachCertificateFromDistribution": {
+      "name": "DetachCertificateFromDistribution",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to detach an SSL/TLS certificate from your Amazon Lightsail content\n                                                delivery network (CDN) distribution",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Distribution*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -446,7 +639,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Detaches a disk from an instance.",
+      "description": "Detaches a disk from an instance",
       "accessLevel": "Write",
       "resourceTypes": [
         "Disk*"
@@ -459,7 +652,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Detaches one or more instances from a load balancer.",
+      "description": "Detaches one or more instances from a load balancer",
       "accessLevel": "Write",
       "resourceTypes": [
         "Instance*"
@@ -472,10 +665,23 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Detaches a static IP from an instance to which it is attached.",
+      "description": "Detaches a static IP from an instance to which it is attached",
       "accessLevel": "Write",
       "resourceTypes": [
         "Instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisableAddOn": {
+      "name": "DisableAddOn",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to disable an add-on for an Amazon Lightsail resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Disk"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -485,10 +691,23 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Downloads the default key pair used to authenticate and connect to instances in a\n                                                specific AWS Region.",
+      "description": "Downloads the default key pair used to authenticate and connect to instances in a\n                                                specific AWS Region",
       "accessLevel": "Write",
       "resourceTypes": [
         "KeyPair*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "EnableAddOn": {
+      "name": "EnableAddOn",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to enable or modify an add-on for an Amazon Lightsail resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Disk"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -498,7 +717,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Exports an Amazon Lightsail snapshot to Amazon EC2.",
+      "description": "Exports an Amazon Lightsail snapshot to Amazon EC2",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -509,7 +728,29 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns the names of all active (not deleted) resources.",
+      "description": "Returns the names of all active (not deleted) resources",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAlarms": {
+      "name": "GetAlarms",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to view information about the configured alarms",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAutoSnapshots": {
+      "name": "GetAutoSnapshots",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to view the available automatic snapshots for an instance or disk",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -520,8 +761,8 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns a list of instance images, or blueprints. You can use a blueprint to create\n                                                a new instance already running a specific operating system, as well as a pre-installed\n                                                application or development stack. The software that runs on your instance depends\n                                                on the blueprint you define when creating the instance.",
-      "accessLevel": "List",
+      "description": "Returns a list of instance images, or blueprints. You can use a blueprint to create\n                                                a new instance already running a specific operating system, as well as a pre-installed\n                                                application or development stack. The software that runs on your instance depends\n                                                on the blueprint you define when creating the instance",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -531,8 +772,19 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns a list of instance bundles. You can use a bundle to create a new instance\n                                                with a set of performance specifications, such as CPU count, disk size, RAM size,\n                                                and network transfer allowance. The cost of your instance depends on the bundle you\n                                                define when creating the instance.",
-      "accessLevel": "List",
+      "description": "Returns a list of instance bundles. You can use a bundle to create a new instance\n                                                with a set of performance specifications, such as CPU count, disk size, RAM size,\n                                                and network transfer allowance. The cost of your instance depends on the bundle you\n                                                define when creating the instance",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetCertificates": {
+      "name": "GetCertificates",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to view information about one or more Amazon Lightsail SSL/TLS certificates",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -542,11 +794,99 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns information about all CloudFormation stacks used to create Amazon EC2 resources\n                                                from exported Amazon Lightsail snapshots.",
-      "accessLevel": "List",
+      "description": "Returns information about all CloudFormation stacks used to create Amazon EC2 resources\n                                                from exported Amazon Lightsail snapshots",
+      "accessLevel": "Read",
       "resourceTypes": [
         "CloudFormationStackRecord*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetContactMethods": {
+      "name": "GetContactMethods",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to view information about the configured contact methods",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetContainerAPIMetadata": {
+      "name": "GetContainerAPIMetadata",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to view information about Amazon Lightsail containers, such as the\n                                                current version of the Lightsail Control (lightsailctl) plugin",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetContainerImages": {
+      "name": "GetContainerImages",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to view the container images that are registered to your Amazon\n                                                Lightsail container service",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetContainerLog": {
+      "name": "GetContainerLog",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to view the log events of a container of your Amazon Lightsail container\n                                                service",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetContainerServiceDeployments": {
+      "name": "GetContainerServiceDeployments",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to view the deployments for your Amazon Lightsail container service",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetContainerServiceMetricData": {
+      "name": "GetContainerServiceMetricData",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to view the data points of a specific metric of your Amazon Lightsail\n                                                container service",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetContainerServicePowers": {
+      "name": "GetContainerServicePowers",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to view the list of powers that can be specified for your Amazon\n                                                Lightsail container services",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetContainerServices": {
+      "name": "GetContainerServices",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to view information about one or more of your Amazon Lightsail container\n                                                services",
+      "accessLevel": "Read",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -555,7 +895,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns information about a disk.",
+      "description": "Returns information about a disk",
       "accessLevel": "Read",
       "resourceTypes": [
         "Disk*"
@@ -568,7 +908,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns information about a disk snapshot.",
+      "description": "Returns information about a disk snapshot",
       "accessLevel": "Read",
       "resourceTypes": [
         "Disk*"
@@ -581,8 +921,8 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns information about all disk snapshots.",
-      "accessLevel": "List",
+      "description": "Returns information about all disk snapshots",
+      "accessLevel": "Read",
       "resourceTypes": [
         "Disk*"
       ],
@@ -594,8 +934,52 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns information about all disks.",
-      "accessLevel": "List",
+      "description": "Returns information about all disks",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDistributionBundles": {
+      "name": "GetDistributionBundles",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to view the list of bundles that can be applied to you Amazon Lightsail\n                                                content delivery network (CDN) distributions",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDistributionLatestCacheReset": {
+      "name": "GetDistributionLatestCacheReset",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to view the timestamp and status of the last cache reset of a specific\n                                                Amazon Lightsail content delivery network (CDN) distribution",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDistributionMetricData": {
+      "name": "GetDistributionMetricData",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to view the data points of a specific metric for an Amazon Lightsail\n                                                content delivery network (CDN) distribution",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDistributions": {
+      "name": "GetDistributions",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to view information about one or more of your Amazon Lightsail content\n                                                delivery network (CDN) distributions",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -605,7 +989,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns DNS records for a domain resource.",
+      "description": "Returns DNS records for a domain resource",
       "accessLevel": "Read",
       "resourceTypes": [
         "Domain*"
@@ -618,7 +1002,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns DNS records for all domain resources.",
+      "description": "Returns DNS records for all domain resources",
       "accessLevel": "Read",
       "resourceTypes": [
         "Domain*"
@@ -631,8 +1015,8 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns information about all records to export Amazon Lightsail snapshots to Amazon\n                                                EC2.",
-      "accessLevel": "List",
+      "description": "Returns information about all records to export Amazon Lightsail snapshots to Amazon\n                                                EC2",
+      "accessLevel": "Read",
       "resourceTypes": [
         "ExportSnapshotRecord*"
       ],
@@ -644,7 +1028,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns information about an instance.",
+      "description": "Returns information about an instance",
       "accessLevel": "Read",
       "resourceTypes": [
         "Instance*"
@@ -657,7 +1041,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns temporary keys you can use to authenticate and connect to an instance.",
+      "description": "Returns temporary keys you can use to authenticate and connect to an instance",
       "accessLevel": "Write",
       "resourceTypes": [
         "Instance*"
@@ -670,7 +1054,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns the data points for the specified metric of an instance.",
+      "description": "Returns the data points for the specified metric of an instance",
       "accessLevel": "Read",
       "resourceTypes": [
         "Instance*"
@@ -683,7 +1067,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns the port states of an instance.",
+      "description": "Returns the port states of an instance",
       "accessLevel": "Read",
       "resourceTypes": [
         "Instance*"
@@ -696,7 +1080,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns information about an instance snapshot.",
+      "description": "Returns information about an instance snapshot",
       "accessLevel": "Read",
       "resourceTypes": [
         "InstanceSnapshot*"
@@ -709,8 +1093,8 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns information about all instance snapshots.",
-      "accessLevel": "List",
+      "description": "Returns information about all instance snapshots",
+      "accessLevel": "Read",
       "resourceTypes": [
         "InstanceSnapshot*"
       ],
@@ -722,7 +1106,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns the state of an instance.",
+      "description": "Returns the state of an instance",
       "accessLevel": "Read",
       "resourceTypes": [
         "Instance*"
@@ -735,7 +1119,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns information about all instances.",
+      "description": "Returns information about all instances",
       "accessLevel": "Read",
       "resourceTypes": [
         "Instance*"
@@ -748,8 +1132,8 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns information about a key pair.",
-      "accessLevel": "List",
+      "description": "Returns information about a key pair",
+      "accessLevel": "Read",
       "resourceTypes": [
         "KeyPair*"
       ],
@@ -761,7 +1145,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns information about all key pairs.",
+      "description": "Returns information about all key pairs",
       "accessLevel": "Read",
       "resourceTypes": [
         "KeyPair*"
@@ -774,7 +1158,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns information about a load balancer.",
+      "description": "Returns information about a load balancer",
       "accessLevel": "Read",
       "resourceTypes": [
         "LoadBalancer*"
@@ -787,7 +1171,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns the data points for the specified metric of a load balancer.",
+      "description": "Returns the data points for the specified metric of a load balancer",
       "accessLevel": "Read",
       "resourceTypes": [
         "LoadBalancer*"
@@ -800,7 +1184,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns information about a load balancer TLS certificate.",
+      "description": "Returns information about a load balancer TLS certificate",
       "accessLevel": "Read",
       "resourceTypes": [
         "LoadBalancer*"
@@ -813,7 +1197,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns information about load balancers.",
+      "description": "Returns information about load balancers",
       "accessLevel": "Read",
       "resourceTypes": [
         "LoadBalancer*"
@@ -826,7 +1210,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns information about an operation. Operations include events such as when you\n                                                create an instance, allocate a static IP, attach a static IP, and so on.",
+      "description": "Returns information about an operation. Operations include events such as when you\n                                                create an instance, allocate a static IP, attach a static IP, and so on",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -837,7 +1221,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns information about all operations. Operations include events such as when you\n                                                create an instance, allocate a static IP, attach a static IP, and so on.",
+      "description": "Returns information about all operations. Operations include events such as when you\n                                                create an instance, allocate a static IP, attach a static IP, and so on",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -848,7 +1232,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns operations for a resource.",
+      "description": "Returns operations for a resource",
       "accessLevel": "Read",
       "resourceTypes": [
         "Domain"
@@ -861,8 +1245,8 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns a list of all valid AWS Regions for Amazon Lightsail.",
-      "accessLevel": "List",
+      "description": "Returns a list of all valid AWS Regions for Amazon Lightsail",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -872,8 +1256,8 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns information about a relational database.",
-      "accessLevel": "List",
+      "description": "Returns information about a relational database",
+      "accessLevel": "Read",
       "resourceTypes": [
         "RelationalDatabase*"
       ],
@@ -885,8 +1269,8 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns a list of relational database images, or blueprints. You can use a blueprint\n                                                to create a new database running a specific database engine. The database engine that\n                                                runs on your database depends on the blueprint you define when creating the relational\n                                                database.",
-      "accessLevel": "List",
+      "description": "Returns a list of relational database images, or blueprints. You can use a blueprint\n                                                to create a new database running a specific database engine. The database engine that\n                                                runs on your database depends on the blueprint you define when creating the relational\n                                                database",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -896,8 +1280,8 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns a list of relational database bundles. You can use a bundle to create a new\n                                                database with a set of performance specifications, such as CPU count, disk size, RAM\n                                                size, network transfer allowance, and standard of high availability. The cost of your\n                                                database depends on the bundle you define when creating the relational database.",
-      "accessLevel": "List",
+      "description": "Returns a list of relational database bundles. You can use a bundle to create a new\n                                                database with a set of performance specifications, such as CPU count, disk size, RAM\n                                                size, network transfer allowance, and standard of high availability. The cost of your\n                                                database depends on the bundle you define when creating the relational database",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -907,7 +1291,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns events for a relational database.",
+      "description": "Returns events for a relational database",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -918,7 +1302,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns events for the specified log stream of a relational database.",
+      "description": "Returns events for the specified log stream of a relational database",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -929,7 +1313,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns the log streams available for a relational database.",
+      "description": "Returns the log streams available for a relational database",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -940,7 +1324,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns the master user password of a relational database.",
+      "description": "Returns the master user password of a relational database",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -951,7 +1335,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns the data points for the specified metric of a relational database.",
+      "description": "Returns the data points for the specified metric of a relational database",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -962,8 +1346,8 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns the parameters of a relational database.",
-      "accessLevel": "List",
+      "description": "Returns the parameters of a relational database",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -973,8 +1357,8 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns information about a relational database snapshot.",
-      "accessLevel": "List",
+      "description": "Returns information about a relational database snapshot",
+      "accessLevel": "Read",
       "resourceTypes": [
         "RelationalDatabase*"
       ],
@@ -986,8 +1370,8 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns information about all relational database snapshots.",
-      "accessLevel": "List",
+      "description": "Returns information about all relational database snapshots",
+      "accessLevel": "Read",
       "resourceTypes": [
         "RelationalDatabase*"
       ],
@@ -999,7 +1383,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Return information about all relational databases.",
+      "description": "Return information about all relational databases",
       "accessLevel": "Read",
       "resourceTypes": [
         "RelationalDatabase*"
@@ -1012,7 +1396,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns information about a static IP.",
+      "description": "Returns information about a static IP",
       "accessLevel": "Read",
       "resourceTypes": [
         "StaticIp*"
@@ -1025,7 +1409,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns information about all static IPs.",
+      "description": "Returns information about all static IPs",
       "accessLevel": "Read",
       "resourceTypes": [
         "StaticIp*"
@@ -1038,7 +1422,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Imports a public key from a key pair.",
+      "description": "Imports a public key from a key pair",
       "accessLevel": "Write",
       "resourceTypes": [
         "KeyPair*"
@@ -1051,7 +1435,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Returns a boolean value indicating whether the Amazon Lightsail virtual private cloud\n                                                (VPC) is peered.",
+      "description": "Returns a boolean value indicating whether the Amazon Lightsail virtual private cloud\n                                                (VPC) is peered",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1062,7 +1446,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Adds, or opens a public port of an instance.",
+      "description": "Adds, or opens a public port of an instance",
       "accessLevel": "Write",
       "resourceTypes": [
         "Instance*"
@@ -1075,9 +1459,22 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Tries to peer the Amazon Lightsail virtual private cloud (VPC) with the default VPC.",
+      "description": "Tries to peer the Amazon Lightsail virtual private cloud (VPC) with the default VPC",
       "accessLevel": "Write",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutAlarm": {
+      "name": "PutAlarm",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to creates or update an alarm, and associate it with the specified\n                                                metric",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Alarm*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -1086,7 +1483,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Sets the specified open ports for an instance, and closes all ports for every protocol\n                                                not included in the request.",
+      "description": "Sets the specified open ports for an instance, and closes all ports for every protocol\n                                                not included in the request",
       "accessLevel": "Write",
       "resourceTypes": [
         "Instance*"
@@ -1099,7 +1496,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Reboots an instance that is in a running state.",
+      "description": "Reboots an instance that is in a running state",
       "accessLevel": "Write",
       "resourceTypes": [
         "Instance*"
@@ -1112,10 +1509,23 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Reboots a relational database that is in a running state.",
+      "description": "Reboots a relational database that is in a running state",
       "accessLevel": "Write",
       "resourceTypes": [
         "RelationalDatabase*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterContainerImage": {
+      "name": "RegisterContainerImage",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to register a container image to your Amazon Lightsail container\n                                                service",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ContainerService*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1125,10 +1535,49 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Deletes a static IP.",
+      "description": "Deletes a static IP",
       "accessLevel": "Write",
       "resourceTypes": [
         "StaticIp*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ResetDistributionCache": {
+      "name": "ResetDistributionCache",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to delete currently cached content from your Amazon Lightsail content\n                                                delivery network (CDN) distribution",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Distribution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendContactMethodVerification": {
+      "name": "SendContactMethodVerification",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to send a verification request to an email contact method to ensure\n                                                it's owned by the requester",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ContactMethod*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetIpAddressType": {
+      "name": "SetIpAddressType",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to set the IP address type for a Amazon Lightsail resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Distribution"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1138,7 +1587,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Starts an instance that is in a stopped state.",
+      "description": "Starts an instance that is in a stopped state",
       "accessLevel": "Write",
       "resourceTypes": [
         "Instance*"
@@ -1151,7 +1600,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Starts a relational database that is in a stopped state.",
+      "description": "Starts a relational database that is in a stopped state",
       "accessLevel": "Write",
       "resourceTypes": [
         "RelationalDatabase*"
@@ -1164,7 +1613,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Stops an instance that is in a running state.",
+      "description": "Stops an instance that is in a running state",
       "accessLevel": "Write",
       "resourceTypes": [
         "Instance*"
@@ -1177,7 +1626,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Stops a relational database that is in a running state.",
+      "description": "Stops a relational database that is in a running state",
       "accessLevel": "Write",
       "resourceTypes": [
         "RelationalDatabase*"
@@ -1190,10 +1639,23 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Tags a resource.",
-      "accessLevel": "Write",
+      "description": "Tags a resource",
+      "accessLevel": "Tagging",
       "resourceTypes": [
         "Disk"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TestAlarm": {
+      "name": "TestAlarm",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to test an alarm by displaying a banner on the Amazon Lightsail\n                                                console or if a notification trigger is configured for the specified alarm, by sending\n                                                a notification to the notification protocol",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Alarm*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1203,7 +1665,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Attempts to unpeer the Amazon Lightsail virtual private cloud (VPC) from the default\n                                                VPC.",
+      "description": "Attempts to unpeer the Amazon Lightsail virtual private cloud (VPC) from the default\n                                                VPC",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1214,10 +1676,49 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Untags a resource.",
-      "accessLevel": "Write",
+      "description": "Untags a resource",
+      "accessLevel": "Tagging",
       "resourceTypes": [
         "Disk"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateContainerService": {
+      "name": "UpdateContainerService",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to update the configuration of your Amazon Lightsail container service,\n                                                such as its power, scale, and public domain names",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ContainerService*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDistribution": {
+      "name": "UpdateDistribution",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to update an existing Amazon Lightsail content delivery network\n                                                (CDN) distribution or its configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Distribution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDistributionBundle": {
+      "name": "UpdateDistributionBundle",
+      "topics": [
+        "Amazon Lightsail"
+      ],
+      "description": "Grants permission to update the bundle of your Amazon Lightsail content delivery network\n                                                (CDN) distribution",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Distribution*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1227,7 +1728,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Updates a domain recordset after it is created.",
+      "description": "Updates a domain recordset after it is created",
       "accessLevel": "Write",
       "resourceTypes": [
         "Domain*"
@@ -1240,7 +1741,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Updates a load balancer attribute, such as the health check path and session stickiness.",
+      "description": "Updates a load balancer attribute, such as the health check path and session stickiness",
       "accessLevel": "Write",
       "resourceTypes": [
         "LoadBalancer*"
@@ -1253,7 +1754,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Updates a relational database.",
+      "description": "Updates a relational database",
       "accessLevel": "Write",
       "resourceTypes": [
         "RelationalDatabase*"
@@ -1266,7 +1767,7 @@
       "topics": [
         "Amazon Lightsail"
       ],
-      "description": "Updates the parameters of a relational database.",
+      "description": "Updates the parameters of a relational database",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",

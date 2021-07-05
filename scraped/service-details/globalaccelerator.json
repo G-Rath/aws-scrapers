@@ -1,14 +1,40 @@
 {
   "servicePrefix": "globalaccelerator",
   "actions": {
+    "AddCustomRoutingEndpoints": {
+      "name": "AddCustomRoutingEndpoints",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
+      "description": "Grants permission to add a virtual private cloud (VPC) subnet endpoint to a custom\n                                                routing accelerator endpoint group.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "endpointgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "AdvertiseByoipCidr": {
       "name": "AdvertiseByoipCidr",
       "topics": [
         "AWS Global Accelerator"
       ],
-      "description": "Advertises an IPv4 address range that is provisioned for use with your accelerator\n                                                through bring your own IP addresses (BYOIP).",
+      "description": "Grants permission to advertises an IPv4 address range that is provisioned for use\n                                                with your accelerator through bring your own IP addresses (BYOIP).",
       "accessLevel": "Write",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AllowCustomRoutingTraffic": {
+      "name": "AllowCustomRoutingTraffic",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
+      "description": "Grants permission to allows custom routing of user traffic to a private destination\n                                                IP:PORT in a specific VPC subnet.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "endpointgroup*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -17,10 +43,47 @@
       "topics": [
         "AWS Global Accelerator"
       ],
-      "description": "Create an accelerator.",
+      "description": "Grants permission to create a standard accelerator.",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateCustomRoutingAccelerator": {
+      "name": "CreateCustomRoutingAccelerator",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
+      "description": "Grants permission to create a Custom Routing accelerator",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateCustomRoutingEndpointGroup": {
+      "name": "CreateCustomRoutingEndpointGroup",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
+      "description": "Grants permission to create an endpoint group for the specified listener for a custom\n                                                routing accelerator.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "listener*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateCustomRoutingListener": {
+      "name": "CreateCustomRoutingListener",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
+      "description": "Grants permission to create a listener to process inbound connections from clients\n                                                to a custom routing accelerator.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "accelerator*"
+      ],
+      "conditionKeys": "",
       "dependentActions": ""
     },
     "CreateEndpointGroup": {
@@ -28,7 +91,7 @@
       "topics": [
         "AWS Global Accelerator"
       ],
-      "description": "Add an endpoint group.",
+      "description": "Grants permission to add an endpoint group to a standard accelerator listener.",
       "accessLevel": "Write",
       "resourceTypes": [
         "listener*"
@@ -41,7 +104,7 @@
       "topics": [
         "AWS Global Accelerator"
       ],
-      "description": "Add a listener.",
+      "description": "Grants permission to add a listener to a standard accelerator.",
       "accessLevel": "Write",
       "resourceTypes": [
         "accelerator*"
@@ -54,10 +117,49 @@
       "topics": [
         "AWS Global Accelerator"
       ],
-      "description": "Delete the accelerator.",
+      "description": "Grants permission to delete a standard accelerator.",
       "accessLevel": "Write",
       "resourceTypes": [
         "accelerator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteCustomRoutingAccelerator": {
+      "name": "DeleteCustomRoutingAccelerator",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
+      "description": "Grants permission to delete a custom routing accelerator.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "accelerator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteCustomRoutingEndpointGroup": {
+      "name": "DeleteCustomRoutingEndpointGroup",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
+      "description": "Grants permission to delete an endpoint group from a listener for a custom routing\n                                                accelerator.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "endpointgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteCustomRoutingListener": {
+      "name": "DeleteCustomRoutingListener",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
+      "description": "Grants permission to delete a listener for a custom routing accelerator.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "listener*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -67,7 +169,7 @@
       "topics": [
         "AWS Global Accelerator"
       ],
-      "description": "Delete the endpoint group.",
+      "description": "Grants permission to delete an endpoint group associated with a standard accelerator\n                                                listener.",
       "accessLevel": "Write",
       "resourceTypes": [
         "endpointgroup*"
@@ -80,10 +182,23 @@
       "topics": [
         "AWS Global Accelerator"
       ],
-      "description": "Delete the listener.",
+      "description": "Grants permission to delete a listener from a standard accelerator.",
       "accessLevel": "Write",
       "resourceTypes": [
         "listener*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DenyCustomRoutingTraffic": {
+      "name": "DenyCustomRoutingTraffic",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
+      "description": "Grants permission to disallows custom routing of user traffic to a private destination\n                                                IP:PORT in a specific VPC subnet.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "endpointgroup*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -93,7 +208,7 @@
       "topics": [
         "AWS Global Accelerator"
       ],
-      "description": "Releases the specified address range that you provisioned for use with your accelerator\n                                                through bring your own IP addresses (BYOIP) and deletes the corresponding address\n                                                pool.",
+      "description": "Grants permission to releases the specified address range that you provisioned for\n                                                use with your accelerator through bring your own IP addresses (BYOIP).",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -104,7 +219,7 @@
       "topics": [
         "AWS Global Accelerator"
       ],
-      "description": "Describe the accelerator.",
+      "description": "Grants permissions to describe a standard accelerator.",
       "accessLevel": "Read",
       "resourceTypes": [
         "accelerator*"
@@ -117,10 +232,62 @@
       "topics": [
         "AWS Global Accelerator"
       ],
-      "description": "Describe the accelerator Attributes.",
+      "description": "Grants permission to describe a standard accelerator attributes.",
       "accessLevel": "Read",
       "resourceTypes": [
         "accelerator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeCustomRoutingAccelerator": {
+      "name": "DescribeCustomRoutingAccelerator",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
+      "description": "Grants permission to describe a custom routing accelerator.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "accelerator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeCustomRoutingAcceleratorAttributes": {
+      "name": "DescribeCustomRoutingAcceleratorAttributes",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
+      "description": "Grants permission to describe the attributes of a custom routing accelerator.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "accelerator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeCustomRoutingEndpointGroup": {
+      "name": "DescribeCustomRoutingEndpointGroup",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
+      "description": "Grants permission to describe an endpoint group for a custom routing accelerator.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "endpointgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeCustomRoutingListener": {
+      "name": "DescribeCustomRoutingListener",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
+      "description": "Grants permission to describe a listener for a custom routing accelerator.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "listener*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -130,7 +297,7 @@
       "topics": [
         "AWS Global Accelerator"
       ],
-      "description": "Describe the endpoint group.",
+      "description": "Grants permission to describe a standard accelerator endpoint group.",
       "accessLevel": "Read",
       "resourceTypes": [
         "endpointgroup*"
@@ -143,7 +310,7 @@
       "topics": [
         "AWS Global Accelerator"
       ],
-      "description": "Describe the listener.",
+      "description": "Grants permission to describe a standard accelerator listener.",
       "accessLevel": "Read",
       "resourceTypes": [
         "listener*"
@@ -156,7 +323,7 @@
       "topics": [
         "AWS Global Accelerator"
       ],
-      "description": "List the accelerators.",
+      "description": "Grants permission to list all standard accelerators.",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -167,7 +334,68 @@
       "topics": [
         "AWS Global Accelerator"
       ],
-      "description": "List the byoip cidrs.",
+      "description": "Grants permission to list the BYOIP cidrs.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListCustomRoutingAccelerators": {
+      "name": "ListCustomRoutingAccelerators",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
+      "description": "Grants permission to list the custom routing accelerators for an AWS account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListCustomRoutingEndpointGroups": {
+      "name": "ListCustomRoutingEndpointGroups",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
+      "description": "Grants permission to list the endpoint groups that are associated with a listener\n                                                for a custom routing accelerator.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "listener*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListCustomRoutingListeners": {
+      "name": "ListCustomRoutingListeners",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
+      "description": "Grants permission to list the listeners for a custom routing accelerator.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "accelerator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListCustomRoutingPortMappings": {
+      "name": "ListCustomRoutingPortMappings",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
+      "description": "Grants permission to list the port mappings for a custom routing accelerator.",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "accelerator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListCustomRoutingPortMappingsByDestination": {
+      "name": "ListCustomRoutingPortMappingsByDestination",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
+      "description": "Grants permission to list the port mappings for a specific endpoint IP address (a\n                                                destination address) in a subnet",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -178,7 +406,7 @@
       "topics": [
         "AWS Global Accelerator"
       ],
-      "description": "List the endpoint groups.",
+      "description": "Grants permission to list all endpoint groups associated with a standard accelerator\n                                                listener.",
       "accessLevel": "List",
       "resourceTypes": [
         "listener*"
@@ -191,7 +419,7 @@
       "topics": [
         "AWS Global Accelerator"
       ],
-      "description": "List the listeners.",
+      "description": "Grants permission to list all listeners associated with a standard accelerator.",
       "accessLevel": "List",
       "resourceTypes": [
         "accelerator*"
@@ -204,7 +432,7 @@
       "topics": [
         "AWS Global Accelerator"
       ],
-      "description": "List tags for a globalaccelerator resource.",
+      "description": "Grants permission to list tags for a globalaccelerator resource.",
       "accessLevel": "Read",
       "resourceTypes": [
         "accelerator"
@@ -217,9 +445,22 @@
       "topics": [
         "AWS Global Accelerator"
       ],
-      "description": "Provisions an address range for use with your accelerator through bring your own IP\n                                                addresses (BYOIP) and creates a corresponding address pool.",
+      "description": "Grants permission to provisions an address range for use with your accelerator through\n                                                bring your own IP addresses (BYOIP).",
       "accessLevel": "Write",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemoveCustomRoutingEndpoints": {
+      "name": "RemoveCustomRoutingEndpoints",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
+      "description": "Grants permission to remove virtual private cloud (VPC) subnet endpoints from a custom\n                                                routing accelerator endpoint group.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "endpointgroup*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -228,7 +469,7 @@
       "topics": [
         "AWS Global Accelerator"
       ],
-      "description": "Add tags to globalaccelerator resource.",
+      "description": "Grants permission to add tags to a globalaccelerator resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "accelerator"
@@ -241,7 +482,7 @@
       "topics": [
         "AWS Global Accelerator"
       ],
-      "description": "Remove tags from globalaccelerator resource.",
+      "description": "Grants permission to remove tags from a globalaccelerator resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "accelerator"
@@ -254,7 +495,7 @@
       "topics": [
         "AWS Global Accelerator"
       ],
-      "description": "Update the accelerator.",
+      "description": "Grants permission to update a standard accelerator.",
       "accessLevel": "Write",
       "resourceTypes": [
         "accelerator*"
@@ -267,10 +508,49 @@
       "topics": [
         "AWS Global Accelerator"
       ],
-      "description": "Update the accelerator attributes.",
+      "description": "Grants permission to update a standard accelerator attributes.",
       "accessLevel": "Write",
       "resourceTypes": [
         "accelerator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateCustomRoutingAccelerator": {
+      "name": "UpdateCustomRoutingAccelerator",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
+      "description": "Grants permission to update a custom routing accelerator.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "accelerator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateCustomRoutingAcceleratorAttributes": {
+      "name": "UpdateCustomRoutingAcceleratorAttributes",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
+      "description": "Grants permission to update the attributes for a custom routing accelerator.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "accelerator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateCustomRoutingListener": {
+      "name": "UpdateCustomRoutingListener",
+      "topics": [
+        "AWS Global Accelerator"
+      ],
+      "description": "Grants permission to update a listener for a custom routing accelerator.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "listener*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -280,7 +560,7 @@
       "topics": [
         "AWS Global Accelerator"
       ],
-      "description": "Update the endpoint group.",
+      "description": "Grants permission to update an endpoint group on a standard accelerator listener.",
       "accessLevel": "Write",
       "resourceTypes": [
         "endpointgroup*"
@@ -293,7 +573,7 @@
       "topics": [
         "AWS Global Accelerator"
       ],
-      "description": "Update the listener.",
+      "description": "Grants permission to update a listener on a standard accelerator.",
       "accessLevel": "Write",
       "resourceTypes": [
         "listener*"
@@ -306,7 +586,7 @@
       "topics": [
         "AWS Global Accelerator"
       ],
-      "description": "Stops advertising an IPv4 address range that is provisioned as an address pool.",
+      "description": "Grants permission to stops advertising a BYOIP IPv4 address.",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",

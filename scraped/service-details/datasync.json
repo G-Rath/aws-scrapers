@@ -4,9 +4,9 @@
     "CancelTaskExecution": {
       "name": "CancelTaskExecution",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Cancels execution of a sync task.",
+      "description": "Grants permission to cancel execution of a sync task",
       "accessLevel": "Write",
       "resourceTypes": [
         "taskexecution*"
@@ -17,9 +17,9 @@
     "CreateAgent": {
       "name": "CreateAgent",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Activates an agent that you have deployed on your host.",
+      "description": "Grants permission to activate an agent that you have deployed on your host",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -28,9 +28,9 @@
     "CreateLocationEfs": {
       "name": "CreateLocationEfs",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Creates an endpoint for an Amazon EFS file system.",
+      "description": "Grants permission to create an endpoint for an Amazon EFS file system",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -39,9 +39,9 @@
     "CreateLocationFsxWindows": {
       "name": "CreateLocationFsxWindows",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Creates an endpoint for an Amazon FSx Windows File Server file system.",
+      "description": "Grants permission to create an endpoint for an Amazon FSx Windows File Server file\n                                                system",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -50,9 +50,9 @@
     "CreateLocationNfs": {
       "name": "CreateLocationNfs",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Creates an endpoint for a NFS file system.",
+      "description": "Grants permission to create an endpoint for a NFS file system",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -61,9 +61,9 @@
     "CreateLocationObjectStorage": {
       "name": "CreateLocationObjectStorage",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Creates an endpoint for a self-managed object storage bucket.",
+      "description": "Grants permission to create an endpoint for a self-managed object storage bucket",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -72,9 +72,9 @@
     "CreateLocationS3": {
       "name": "CreateLocationS3",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Creates an endpoint for an Amazon S3 bucket.",
+      "description": "Grants permission to create an endpoint for an Amazon S3 bucket",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -83,9 +83,9 @@
     "CreateLocationSmb": {
       "name": "CreateLocationSmb",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Creates an endpoint for an SMB file system.",
+      "description": "Grants permission to create an endpoint for an SMB file system",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -94,9 +94,9 @@
     "CreateTask": {
       "name": "CreateTask",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Creates a sync task.",
+      "description": "Grants permission to create a sync task.",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -105,9 +105,9 @@
     "DeleteAgent": {
       "name": "DeleteAgent",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Deletes an agent.",
+      "description": "Grants permission to delete an agent",
       "accessLevel": "Write",
       "resourceTypes": [
         "agent*"
@@ -118,9 +118,9 @@
     "DeleteLocation": {
       "name": "DeleteLocation",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Deletes the configuration of a location used by AWS DataSync.",
+      "description": "Grants permission to delete a location used by AWS DataSync",
       "accessLevel": "Write",
       "resourceTypes": [
         "location*"
@@ -131,9 +131,9 @@
     "DeleteTask": {
       "name": "DeleteTask",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Deletes a sync task.",
+      "description": "Grants permission to delete a sync task",
       "accessLevel": "Write",
       "resourceTypes": [
         "task*"
@@ -144,9 +144,9 @@
     "DescribeAgent": {
       "name": "DescribeAgent",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Returns metadata such as name, network interfaces, and the status (that is, whether\n                                                the agent is running or not) about a sync agent.",
+      "description": "Grants permission to view metadata such as name, network interfaces, and the status\n                                                (that is, whether the agent is running or not) about a sync agent",
       "accessLevel": "Read",
       "resourceTypes": [
         "agent*"
@@ -157,9 +157,9 @@
     "DescribeLocationEfs": {
       "name": "DescribeLocationEfs",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Returns metadata, such as the path information about an Amazon EFS sync location.",
+      "description": "Grants permission to view metadata, such as the path information about an Amazon EFS\n                                                sync location",
       "accessLevel": "Read",
       "resourceTypes": [
         "location*"
@@ -170,9 +170,9 @@
     "DescribeLocationFsxWindows": {
       "name": "DescribeLocationFsxWindows",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Returns metadata, such as the path information about an Amazon FSx Windows sync location.",
+      "description": "Grants permission to view metadata, such as the path information about an Amazon FSx\n                                                Windows sync location",
       "accessLevel": "Read",
       "resourceTypes": [
         "location*"
@@ -183,9 +183,9 @@
     "DescribeLocationNfs": {
       "name": "DescribeLocationNfs",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Returns metadata, such as the path information, about a NFS sync location.",
+      "description": "Grants permission to view metadata, such as the path information, about a NFS sync\n                                                location",
       "accessLevel": "Read",
       "resourceTypes": [
         "location*"
@@ -196,9 +196,9 @@
     "DescribeLocationObjectStorage": {
       "name": "DescribeLocationObjectStorage",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Returns metadata about a self-managed object storage server location.",
+      "description": "Grants permission to view metadata about a self-managed object storage server location",
       "accessLevel": "Read",
       "resourceTypes": [
         "location*"
@@ -209,9 +209,9 @@
     "DescribeLocationS3": {
       "name": "DescribeLocationS3",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Returns metadata, such as bucket name, about an Amazon S3 bucket sync location.",
+      "description": "Grants permission to view metadata, such as bucket name, about an Amazon S3 bucket\n                                                sync location",
       "accessLevel": "Read",
       "resourceTypes": [
         "location*"
@@ -222,9 +222,9 @@
     "DescribeLocationSmb": {
       "name": "DescribeLocationSmb",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Returns metadata, such as the path information, about an SMB sync location.",
+      "description": "Grants permission to view metadata, such as the path information, about an SMB sync\n                                                location",
       "accessLevel": "Read",
       "resourceTypes": [
         "location*"
@@ -235,9 +235,9 @@
     "DescribeTask": {
       "name": "DescribeTask",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Returns metadata about a sync task.",
+      "description": "Grants permission to view metadata about a sync task",
       "accessLevel": "Read",
       "resourceTypes": [
         "task*"
@@ -248,9 +248,9 @@
     "DescribeTaskExecution": {
       "name": "DescribeTaskExecution",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Returns detailed metadata about a sync task that is being executed.",
+      "description": "Grants permission to view metadata about a sync task that is being executed",
       "accessLevel": "Read",
       "resourceTypes": [
         "taskexecution*"
@@ -261,9 +261,9 @@
     "ListAgents": {
       "name": "ListAgents",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Returns a list of agents owned by an AWS account in a region specified in the request.",
+      "description": "Grants permission to list agents owned by an AWS account in a region specified in\n                                                the request",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -272,9 +272,9 @@
     "ListLocations": {
       "name": "ListLocations",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Returns a lists of source and destination sync locations.",
+      "description": "Grants permission to list source and destination sync locations",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -283,9 +283,9 @@
     "ListTagsForResource": {
       "name": "ListTagsForResource",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "This operation lists the tags that have been added to the specified resource.",
+      "description": "Grants permission to list tags that have been added to the specified resource",
       "accessLevel": "Read",
       "resourceTypes": [
         "agent"
@@ -296,9 +296,9 @@
     "ListTaskExecutions": {
       "name": "ListTaskExecutions",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Returns a list of executed sync tasks.",
+      "description": "Grants permission to list executed sync tasks",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -307,9 +307,9 @@
     "ListTasks": {
       "name": "ListTasks",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Returns a list of all the sync tasks.",
+      "description": "Grants permission to list of all the sync tasks",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -318,9 +318,9 @@
     "StartTaskExecution": {
       "name": "StartTaskExecution",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Starts a specific invocation of a sync task.",
+      "description": "Grants permission to start a specific invocation of a sync task",
       "accessLevel": "Write",
       "resourceTypes": [
         "task*"
@@ -331,9 +331,9 @@
     "TagResource": {
       "name": "TagResource",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Applies a key-value pair to an AWS resource.",
+      "description": "Grants permission to apply a key-value pair to an AWS resource",
       "accessLevel": "Write",
       "resourceTypes": [
         "agent"
@@ -344,9 +344,9 @@
     "UntagResource": {
       "name": "UntagResource",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "This operation removes one or more tags from the specified resource.",
+      "description": "Grants permission to remove one or more tags from the specified resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "agent"
@@ -357,9 +357,9 @@
     "UpdateAgent": {
       "name": "UpdateAgent",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Updates the name of an agent.",
+      "description": "Grants permission to update the name of an agent.",
       "accessLevel": "Write",
       "resourceTypes": [
         "agent*"
@@ -370,18 +370,31 @@
     "UpdateTask": {
       "name": "UpdateTask",
       "topics": [
-        "DataSync"
+        "AWSDataSync"
       ],
-      "description": "Updates the metadata associated with a sync task.",
+      "description": "Grants permission to update metadata associated with a sync task",
       "accessLevel": "Write",
       "resourceTypes": [
         "task*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
+    },
+    "UpdateTaskExecution": {
+      "name": "UpdateTaskExecution",
+      "topics": [
+        "AWSDataSync"
+      ],
+      "description": "Grants permission to update execution of a sync task",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "taskexecution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
     }
   },
   "topics": [
-    "DataSync"
+    "AWSDataSync"
   ]
 }

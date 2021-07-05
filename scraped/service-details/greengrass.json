@@ -6,7 +6,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to associate a role with a group. The role's permissions must allow\n                                                Greengrass core Lambda functions and connectors to perform actions in other AWS services.",
+      "description": "Grants permission to associate a role with a group. The role's permissions must allow\n                                                Greengrass core Lambda functions and connectors to perform actions in other AWS services",
       "accessLevel": "Write",
       "resourceTypes": [
         "group*"
@@ -19,9 +19,35 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to associate a role with your account. AWS IoT Greengrass uses this\n                                                role to access your Lambda functions and AWS IoT resources.",
+      "description": "Grants permission to associate a role with your account. AWS IoT Greengrass uses this\n                                                role to access your Lambda functions and AWS IoT resources",
       "accessLevel": "Permissions management",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CancelDeployment": {
+      "name": "CancelDeployment",
+      "topics": [
+        "AWS IoT Greengrass V2"
+      ],
+      "description": "Grants permission to cancel a deployment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "deployment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iot:CancelJob\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:DeleteThingShadow\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:DescribeJob\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:DescribeThing\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:DescribeThingGroup\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:GetThingShadow\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:UpdateJob\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:UpdateThingShadow"
+    },
+    "CreateComponentVersion": {
+      "name": "CreateComponentVersion",
+      "topics": [
+        "AWS IoT Greengrass V2"
+      ],
+      "description": "Grants permission to create a component",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "component*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -30,7 +56,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to create  a connector definition.",
+      "description": "Grants permission to create  a connector definition",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -41,7 +67,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to create a version of an existing connector definition.",
+      "description": "Grants permission to create a version of an existing connector definition",
       "accessLevel": "Write",
       "resourceTypes": [
         "connectorDefinition*"
@@ -54,7 +80,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to create a core definition.",
+      "description": "Grants permission to create a core definition",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -65,7 +91,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to create a version of an existing core definition. Greengrass groups\n                                                must each contain exactly one Greengrass core.",
+      "description": "Grants permission to create a version of an existing core definition. Greengrass groups\n                                                must each contain exactly one Greengrass core",
       "accessLevel": "Write",
       "resourceTypes": [
         "coreDefinition*"
@@ -76,22 +102,20 @@
     "CreateDeployment": {
       "name": "CreateDeployment",
       "topics": [
-        "AWS IoT Greengrass"
+        "AWS IoT Greengrass V2"
       ],
-      "description": "Grants permission to create a deployment.",
+      "description": "Grants permission to create a deployment",
       "accessLevel": "Write",
-      "resourceTypes": [
-        "group*"
-      ],
-      "conditionKeys": "",
-      "dependentActions": ""
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": "iot:CancelJob\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:CreateJob\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:DeleteThingShadow\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:DescribeJob\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:DescribeThing\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:DescribeThingGroup\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:GetThingShadow\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:UpdateJob\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:UpdateThingShadow"
     },
     "CreateDeviceDefinition": {
       "name": "CreateDeviceDefinition",
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to create a device definition.",
+      "description": "Grants permission to create a device definition",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -102,7 +126,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to create a version of an existing device definition.",
+      "description": "Grants permission to create a version of an existing device definition",
       "accessLevel": "Write",
       "resourceTypes": [
         "deviceDefinition*"
@@ -115,7 +139,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to create a Lambda function definition to be used in a group that\n                                                contains a list of Lambda functions and their configurations.",
+      "description": "Grants permission to create a Lambda function definition to be used in a group that\n                                                contains a list of Lambda functions and their configurations",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -126,7 +150,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to create a version of an existing Lambda function definition.",
+      "description": "Grants permission to create a version of an existing Lambda function definition",
       "accessLevel": "Write",
       "resourceTypes": [
         "functionDefinition*"
@@ -150,7 +174,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to create a CA for the group, or rotate the existing CA.",
+      "description": "Grants permission to create a CA for the group, or rotate the existing CA",
       "accessLevel": "Write",
       "resourceTypes": [
         "group*"
@@ -163,7 +187,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to create a version of a group that has already been defined.",
+      "description": "Grants permission to create a version of a group that has already been defined",
       "accessLevel": "Write",
       "resourceTypes": [
         "group*"
@@ -176,7 +200,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to create a logger definition.",
+      "description": "Grants permission to create a logger definition",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -187,7 +211,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to create a version of an existing logger definition.",
+      "description": "Grants permission to create a version of an existing logger definition",
       "accessLevel": "Write",
       "resourceTypes": [
         "loggerDefinition*"
@@ -200,7 +224,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to create a resource definition that contains a list of resources\n                                                to be used in a group.",
+      "description": "Grants permission to create a resource definition that contains a list of resources\n                                                to be used in a group",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -211,7 +235,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to create a version of an existing resource definition.",
+      "description": "Grants permission to create a version of an existing resource definition",
       "accessLevel": "Write",
       "resourceTypes": [
         "resourceDefinition*"
@@ -224,7 +248,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to create an AWS IoT job that will trigger your Greengrass cores\n                                                to update the software they are running.",
+      "description": "Grants permission to create an AWS IoT job that will trigger your Greengrass cores\n                                                to update the software they are running",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -235,7 +259,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to create a subscription definition.",
+      "description": "Grants permission to create a subscription definition",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -246,10 +270,23 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to create a version of an existing subscription definition.",
+      "description": "Grants permission to create a version of an existing subscription definition",
       "accessLevel": "Write",
       "resourceTypes": [
         "subscriptionDefinition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteComponent": {
+      "name": "DeleteComponent",
+      "topics": [
+        "AWS IoT Greengrass V2"
+      ],
+      "description": "Grants permission to delete a component",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "componentVersion*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -259,7 +296,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to delete a connector definition.",
+      "description": "Grants permission to delete a connector definition",
       "accessLevel": "Write",
       "resourceTypes": [
         "connectorDefinition*"
@@ -272,7 +309,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to delete a core definition. Deleting a definition that is currently\n                                                in use in a deployment affects future deployments.",
+      "description": "Grants permission to delete a core definition. Deleting a definition that is currently\n                                                in use in a deployment affects future deployments",
       "accessLevel": "Write",
       "resourceTypes": [
         "coreDefinition*"
@@ -280,12 +317,25 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeleteCoreDevice": {
+      "name": "DeleteCoreDevice",
+      "topics": [
+        "AWS IoT Greengrass V2"
+      ],
+      "description": "Grants permission to delete a AWS IoT Greengrass core device, which is an AWS IoT\n                                                thing. This operation removes the core device from the list of core devices. This\n                                                operation doesn't delete the AWS IoT thing",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "coreDevice*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iot:DescribeJobExecution"
+    },
     "DeleteDeviceDefinition": {
       "name": "DeleteDeviceDefinition",
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to delete a device definition. Deleting a definition that is currently\n                                                in use in a deployment affects future deployments.",
+      "description": "Grants permission to delete a device definition. Deleting a definition that is currently\n                                                in use in a deployment affects future deployments",
       "accessLevel": "Write",
       "resourceTypes": [
         "deviceDefinition*"
@@ -298,7 +348,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to delete a Lambda function definition. Deleting a definition that\n                                                is currently in use in a deployment affects future deployments.",
+      "description": "Grants permission to delete a Lambda function definition. Deleting a definition that\n                                                is currently in use in a deployment affects future deployments",
       "accessLevel": "Write",
       "resourceTypes": [
         "functionDefinition*"
@@ -311,7 +361,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to delete a group that is not currently in use in a deployment.",
+      "description": "Grants permission to delete a group that is not currently in use in a deployment",
       "accessLevel": "Write",
       "resourceTypes": [
         "group*"
@@ -324,7 +374,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to delete a logger definition. Deleting a definition that is currently\n                                                in use in a deployment affects future deployments.",
+      "description": "Grants permission to delete a logger definition. Deleting a definition that is currently\n                                                in use in a deployment affects future deployments",
       "accessLevel": "Write",
       "resourceTypes": [
         "loggerDefinition*"
@@ -337,7 +387,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to delete a resource definition.",
+      "description": "Grants permission to delete a resource definition",
       "accessLevel": "Write",
       "resourceTypes": [
         "resourceDefinition*"
@@ -350,10 +400,23 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to delete a subscription definition. Deleting a definition that\n                                                is currently in use in a deployment affects future deployments.",
+      "description": "Grants permission to delete a subscription definition. Deleting a definition that\n                                                is currently in use in a deployment affects future deployments",
       "accessLevel": "Write",
       "resourceTypes": [
         "subscriptionDefinition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeComponent": {
+      "name": "DescribeComponent",
+      "topics": [
+        "AWS IoT Greengrass V2"
+      ],
+      "description": "Grants permission to retrieve metadata for a version of a component",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "componentVersion*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -363,7 +426,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to disassociate the role from a group.",
+      "description": "Grants permission to disassociate the role from a group",
       "accessLevel": "Write",
       "resourceTypes": [
         "group*"
@@ -376,7 +439,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to disassociate the service role from an account. Without a service\n                                                role, deployments will not work.",
+      "description": "Grants permission to disassociate the service role from an account. Without a service\n                                                role, deployments will not work",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -387,7 +450,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve information required to connect to a Greengrass core.",
+      "description": "Grants permission to retrieve information required to connect to a Greengrass core",
       "accessLevel": "Read",
       "resourceTypes": [
         "thing*"
@@ -400,7 +463,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve the role associated with a group.",
+      "description": "Grants permission to retrieve the role associated with a group",
       "accessLevel": "Read",
       "resourceTypes": [
         "group*"
@@ -413,10 +476,36 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to return the status of a bulk deployment.",
+      "description": "Grants permission to return the status of a bulk deployment",
       "accessLevel": "Read",
       "resourceTypes": [
         "bulkDeployment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetComponent": {
+      "name": "GetComponent",
+      "topics": [
+        "AWS IoT Greengrass V2"
+      ],
+      "description": "Grants permission to get the recipe for a version of a component",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "componentVersion*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetComponentVersionArtifact": {
+      "name": "GetComponentVersionArtifact",
+      "topics": [
+        "AWS IoT Greengrass V2"
+      ],
+      "description": "Grants permission to get the pre-signed URL to download a public component artifact",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "componentVersion*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -426,7 +515,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve the connectivity information for a core.",
+      "description": "Grants permission to retrieve the connectivity information for a core",
       "accessLevel": "Read",
       "resourceTypes": [
         "connectivityInfo*"
@@ -439,7 +528,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve information about a connector definition.",
+      "description": "Grants permission to retrieve information about a connector definition",
       "accessLevel": "Read",
       "resourceTypes": [
         "connectorDefinition*"
@@ -452,7 +541,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve information about a connector definition version.",
+      "description": "Grants permission to retrieve information about a connector definition version",
       "accessLevel": "Read",
       "resourceTypes": [
         "connectorDefinition*"
@@ -465,7 +554,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve information about a core definition.",
+      "description": "Grants permission to retrieve information about a core definition",
       "accessLevel": "Read",
       "resourceTypes": [
         "coreDefinition*"
@@ -478,7 +567,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve information about a core definition version.",
+      "description": "Grants permission to retrieve information about a core definition version",
       "accessLevel": "Read",
       "resourceTypes": [
         "coreDefinition*"
@@ -486,12 +575,38 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "GetCoreDevice": {
+      "name": "GetCoreDevice",
+      "topics": [
+        "AWS IoT Greengrass V2"
+      ],
+      "description": "Grants permission to retrieves metadata for a AWS IoT Greengrass core device",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "coreDevice*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDeployment": {
+      "name": "GetDeployment",
+      "topics": [
+        "AWS IoT Greengrass V2"
+      ],
+      "description": "Grants permission to get a deployment",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "deployment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iot:DescribeJob\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:DescribeThing\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:DescribeThingGroup\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:GetThingShadow"
+    },
     "GetDeploymentStatus": {
       "name": "GetDeploymentStatus",
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to return the status of a deployment.",
+      "description": "Grants permission to return the status of a deployment",
       "accessLevel": "Read",
       "resourceTypes": [
         "deployment*"
@@ -504,7 +619,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve information about a device definition.",
+      "description": "Grants permission to retrieve information about a device definition",
       "accessLevel": "Read",
       "resourceTypes": [
         "deviceDefinition*"
@@ -517,7 +632,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve information about a device definition version.",
+      "description": "Grants permission to retrieve information about a device definition version",
       "accessLevel": "Read",
       "resourceTypes": [
         "deviceDefinition*"
@@ -530,7 +645,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve information about a Lambda function definition, such\n                                                as its creation time and latest version.",
+      "description": "Grants permission to retrieve information about a Lambda function definition, such\n                                                as its creation time and latest version",
       "accessLevel": "Read",
       "resourceTypes": [
         "functionDefinition*"
@@ -543,7 +658,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve information about a Lambda function definition version,\n                                                such as which Lambda functions are included in the version and their configurations.",
+      "description": "Grants permission to retrieve information about a Lambda function definition version,\n                                                such as which Lambda functions are included in the version and their configurations",
       "accessLevel": "Read",
       "resourceTypes": [
         "functionDefinition*"
@@ -556,7 +671,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve information about a group.",
+      "description": "Grants permission to retrieve information about a group",
       "accessLevel": "Read",
       "resourceTypes": [
         "group*"
@@ -569,7 +684,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to return the public key of the CA associated with a group.",
+      "description": "Grants permission to return the public key of the CA associated with a group",
       "accessLevel": "Read",
       "resourceTypes": [
         "certificateAuthority*"
@@ -582,7 +697,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve the current configuration for the CA used by a group.",
+      "description": "Grants permission to retrieve the current configuration for the CA used by a group",
       "accessLevel": "Read",
       "resourceTypes": [
         "group*"
@@ -595,7 +710,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve information about a group version.",
+      "description": "Grants permission to retrieve information about a group version",
       "accessLevel": "Read",
       "resourceTypes": [
         "group*"
@@ -608,7 +723,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve information about a logger definition.",
+      "description": "Grants permission to retrieve information about a logger definition",
       "accessLevel": "Read",
       "resourceTypes": [
         "loggerDefinition*"
@@ -621,7 +736,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve information about a logger definition version.",
+      "description": "Grants permission to retrieve information about a logger definition version",
       "accessLevel": "Read",
       "resourceTypes": [
         "loggerDefinition*"
@@ -634,7 +749,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve information about a resource definition, such as its\n                                                creation time and latest version.",
+      "description": "Grants permission to retrieve information about a resource definition, such as its\n                                                creation time and latest version",
       "accessLevel": "Read",
       "resourceTypes": [
         "resourceDefinition*"
@@ -647,7 +762,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve information about a resource definition version, such\n                                                as which resources are included in the version.",
+      "description": "Grants permission to retrieve information about a resource definition version, such\n                                                as which resources are included in the version",
       "accessLevel": "Read",
       "resourceTypes": [
         "resourceDefinition*"
@@ -660,7 +775,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve the service role that is attached to an account.",
+      "description": "Grants permission to retrieve the service role that is attached to an account",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -671,7 +786,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve information about a subscription definition.",
+      "description": "Grants permission to retrieve information about a subscription definition",
       "accessLevel": "Read",
       "resourceTypes": [
         "subscriptionDefinition*"
@@ -684,10 +799,23 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve information about a subscription definition version.",
+      "description": "Grants permission to retrieve information about a subscription definition version",
       "accessLevel": "Read",
       "resourceTypes": [
         "subscriptionDefinition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetThingRuntimeConfiguration": {
+      "name": "GetThingRuntimeConfiguration",
+      "topics": [
+        "AWS IoT Greengrass"
+      ],
+      "description": "Grants permission to retrieve runtime configuration of a thing",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "thingRuntimeConfig*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -697,8 +825,8 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve a paginated list of the deployments that have been started\n                                                in a bulk deployment operation and their current deployment status.",
-      "accessLevel": "List",
+      "description": "Grants permission to retrieve a paginated list of the deployments that have been started\n                                                in a bulk deployment operation and their current deployment status",
+      "accessLevel": "Read",
       "resourceTypes": [
         "bulkDeployment*"
       ],
@@ -710,7 +838,42 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve a list of bulk deployments.",
+      "description": "Grants permission to retrieve a list of bulk deployments",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListComponents": {
+      "name": "ListComponents",
+      "topics": [
+        "AWS IoT Greengrass V2"
+      ],
+      "description": "Grants permission to retrieve a paginated list of component summaries",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListComponentVersions": {
+      "name": "ListComponentVersions",
+      "topics": [
+        "AWS IoT Greengrass V2"
+      ],
+      "description": "Grants permission to retrieve a paginated list of all versions for a component",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "component*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListConnectorDefinitions": {
+      "name": "ListConnectorDefinitions",
+      "topics": [
+        "AWS IoT Greengrass"
+      ],
+      "description": "Grants permission to retrieve a list of connector definitions",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -721,7 +884,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to list the versions of a connector definition.",
+      "description": "Grants permission to list the versions of a connector definition",
       "accessLevel": "List",
       "resourceTypes": [
         "connectorDefinition*"
@@ -729,12 +892,12 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "ListConnectorDefinitions": {
-      "name": "ListConnectorDefinitions",
+    "ListCoreDefinitions": {
+      "name": "ListCoreDefinitions",
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve a list of connector definitions.",
+      "description": "Grants permission to retrieve a list of core definitions",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -745,7 +908,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to list the versions of a core definition.",
+      "description": "Grants permission to list the versions of a core definition",
       "accessLevel": "List",
       "resourceTypes": [
         "coreDefinition*"
@@ -753,12 +916,12 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "ListCoreDefinitions": {
-      "name": "ListCoreDefinitions",
+    "ListCoreDevices": {
+      "name": "ListCoreDevices",
       "topics": [
-        "AWS IoT Greengrass"
+        "AWS IoT Greengrass V2"
       ],
-      "description": "Grants permission to retrieve a list of core definitions.",
+      "description": "Grants permission to retrieve a paginated list of AWS IoT Greengrass core devices",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -767,13 +930,22 @@
     "ListDeployments": {
       "name": "ListDeployments",
       "topics": [
+        "AWS IoT Greengrass V2"
+      ],
+      "description": "Grants permission to retrieves a paginated list of deployments",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "iot:DescribeJob\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:DescribeThing\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:DescribeThingGroup\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:GetThingShadow"
+    },
+    "ListDeviceDefinitions": {
+      "name": "ListDeviceDefinitions",
+      "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve a list of all deployments for a group.",
+      "description": "Grants permission to retrieve a list of device definitions",
       "accessLevel": "List",
-      "resourceTypes": [
-        "group*"
-      ],
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -782,7 +954,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to list the versions of a device definition.",
+      "description": "Grants permission to list the versions of a device definition",
       "accessLevel": "List",
       "resourceTypes": [
         "deviceDefinition*"
@@ -790,12 +962,25 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "ListDeviceDefinitions": {
-      "name": "ListDeviceDefinitions",
+    "ListEffectiveDeployments": {
+      "name": "ListEffectiveDeployments",
+      "topics": [
+        "AWS IoT Greengrass V2"
+      ],
+      "description": "Grants permission to retrieves a paginated list of deployment jobs that AWS IoT Greengrass\n                                                sends to AWS IoT Greengrass core devices",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "coreDevice*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iot:DescribeJob\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:DescribeJobExecution\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:DescribeThing\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:DescribeThingGroup\n                                                   \n                                                \n                                                \n                                                \n                                                   iot:GetThingShadow"
+    },
+    "ListFunctionDefinitions": {
+      "name": "ListFunctionDefinitions",
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve a list of device definitions.",
+      "description": "Grants permission to retrieve a list of Lambda function definitions",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -806,22 +991,11 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to list the versions of a Lambda function definition.",
+      "description": "Grants permission to list the versions of a Lambda function definition",
       "accessLevel": "List",
       "resourceTypes": [
         "functionDefinition*"
       ],
-      "conditionKeys": "",
-      "dependentActions": ""
-    },
-    "ListFunctionDefinitions": {
-      "name": "ListFunctionDefinitions",
-      "topics": [
-        "AWS IoT Greengrass"
-      ],
-      "description": "Grants permission to retrieve a list of Lambda function definitions.",
-      "accessLevel": "List",
-      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -830,20 +1004,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve a list of current CAs for a group.",
-      "accessLevel": "List",
-      "resourceTypes": [
-        "group*"
-      ],
-      "conditionKeys": "",
-      "dependentActions": ""
-    },
-    "ListGroupVersions": {
-      "name": "ListGroupVersions",
-      "topics": [
-        "AWS IoT Greengrass"
-      ],
-      "description": "Grants permission to list the versions of a group.",
+      "description": "Grants permission to retrieve a list of current CAs for a group",
       "accessLevel": "List",
       "resourceTypes": [
         "group*"
@@ -856,7 +1017,44 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve a list of groups.",
+      "description": "Grants permission to retrieve a list of groups",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGroupVersions": {
+      "name": "ListGroupVersions",
+      "topics": [
+        "AWS IoT Greengrass"
+      ],
+      "description": "Grants permission to list the versions of a group",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListInstalledComponents": {
+      "name": "ListInstalledComponents",
+      "topics": [
+        "AWS IoT Greengrass V2"
+      ],
+      "description": "Grants permission to retrieve a paginated list of the components that a AWS IoT Greengrass\n                                                core device runs",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "coreDevice*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListLoggerDefinitions": {
+      "name": "ListLoggerDefinitions",
+      "topics": [
+        "AWS IoT Greengrass"
+      ],
+      "description": "Grants permission to retrieve a list of logger definitions",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -867,7 +1065,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to list the versions of a logger definition.",
+      "description": "Grants permission to list the versions of a logger definition",
       "accessLevel": "List",
       "resourceTypes": [
         "loggerDefinition*"
@@ -875,12 +1073,12 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "ListLoggerDefinitions": {
-      "name": "ListLoggerDefinitions",
+    "ListResourceDefinitions": {
+      "name": "ListResourceDefinitions",
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve a list of logger definitions.",
+      "description": "Grants permission to retrieve a list of resource definitions",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -891,7 +1089,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to list the versions of a resource definition.",
+      "description": "Grants permission to list the versions of a resource definition",
       "accessLevel": "List",
       "resourceTypes": [
         "resourceDefinition*"
@@ -899,12 +1097,12 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "ListResourceDefinitions": {
-      "name": "ListResourceDefinitions",
+    "ListSubscriptionDefinitions": {
+      "name": "ListSubscriptionDefinitions",
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to retrieve a list of resource definitions.",
+      "description": "Grants permission to retrieve a list of subscription definitions",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -915,7 +1113,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to list the versions of a subscription definition.",
+      "description": "Grants permission to list the versions of a subscription definition",
       "accessLevel": "List",
       "resourceTypes": [
         "subscriptionDefinition*"
@@ -923,26 +1121,15 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "ListSubscriptionDefinitions": {
-      "name": "ListSubscriptionDefinitions",
-      "topics": [
-        "AWS IoT Greengrass"
-      ],
-      "description": "Grants permission to retrieve a list of subscription definitions.",
-      "accessLevel": "List",
-      "resourceTypes": [],
-      "conditionKeys": "",
-      "dependentActions": ""
-    },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
       "topics": [
-        "AWS IoT Greengrass"
+        "AWS IoT Greengrass V2"
       ],
-      "description": "Grants permission to list the tags for a resource.",
+      "description": "Grants permission to list the tags for a resource",
       "accessLevel": "List",
       "resourceTypes": [
-        "bulkDeployment"
+        "component"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -952,10 +1139,23 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to reset a group's deployments.",
+      "description": "Grants permission to reset a group's deployments",
       "accessLevel": "Write",
       "resourceTypes": [
         "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ResolveComponentCandidates": {
+      "name": "ResolveComponentCandidates",
+      "topics": [
+        "AWS IoT Greengrass V2"
+      ],
+      "description": "Grants permission to list components that meet the component, version, and platform\n                                                requirements of a deployment",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "componentVersion*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -965,10 +1165,10 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to deploy multiple groups in one operation.",
+      "description": "Grants permission to deploy multiple groups in one operation",
       "accessLevel": "Write",
       "resourceTypes": [],
-      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "conditionKeys": "",
       "dependentActions": ""
     },
     "StopBulkDeployment": {
@@ -976,7 +1176,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to stop the execution of a bulk deployment.",
+      "description": "Grants permission to stop the execution of a bulk deployment",
       "accessLevel": "Write",
       "resourceTypes": [
         "bulkDeployment*"
@@ -987,12 +1187,12 @@
     "TagResource": {
       "name": "TagResource",
       "topics": [
-        "AWS IoT Greengrass"
+        "AWS IoT Greengrass V2"
       ],
-      "description": "Grants permission to add tags to a resource.",
+      "description": "Grants permission to add tags to a resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
-        "bulkDeployment"
+        "component"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1000,12 +1200,12 @@
     "UntagResource": {
       "name": "UntagResource",
       "topics": [
-        "AWS IoT Greengrass"
+        "AWS IoT Greengrass V2"
       ],
-      "description": "Grants permission to remove tags from a resource.",
+      "description": "Grants permission to remove tags from a resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
-        "bulkDeployment"
+        "component"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1015,7 +1215,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to update the connectivity information for a Greengrass core. Any\n                                                devices that belong to the group that has this core will receive this information\n                                                in order to find the location of the core and connect to it.",
+      "description": "Grants permission to update the connectivity information for a Greengrass core. Any\n                                                devices that belong to the group that has this core will receive this information\n                                                in order to find the location of the core and connect to it",
       "accessLevel": "Write",
       "resourceTypes": [
         "connectivityInfo*"
@@ -1028,7 +1228,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to update a connector definition.",
+      "description": "Grants permission to update a connector definition",
       "accessLevel": "Write",
       "resourceTypes": [
         "connectorDefinition*"
@@ -1041,7 +1241,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to update a core definition.",
+      "description": "Grants permission to update a core definition",
       "accessLevel": "Write",
       "resourceTypes": [
         "coreDefinition*"
@@ -1054,7 +1254,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to update a device definition.",
+      "description": "Grants permission to update a device definition",
       "accessLevel": "Write",
       "resourceTypes": [
         "deviceDefinition*"
@@ -1067,7 +1267,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to update a Lambda function definition.",
+      "description": "Grants permission to update a Lambda function definition",
       "accessLevel": "Write",
       "resourceTypes": [
         "functionDefinition*"
@@ -1080,7 +1280,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to update a group.",
+      "description": "Grants permission to update a group",
       "accessLevel": "Write",
       "resourceTypes": [
         "group*"
@@ -1093,7 +1293,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to update the certificate expiry time for a group.",
+      "description": "Grants permission to update the certificate expiry time for a group",
       "accessLevel": "Write",
       "resourceTypes": [
         "group*"
@@ -1106,7 +1306,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to update a logger definition.",
+      "description": "Grants permission to update a logger definition",
       "accessLevel": "Write",
       "resourceTypes": [
         "loggerDefinition*"
@@ -1119,7 +1319,7 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to update a resource definition.",
+      "description": "Grants permission to update a resource definition",
       "accessLevel": "Write",
       "resourceTypes": [
         "resourceDefinition*"
@@ -1132,16 +1332,30 @@
       "topics": [
         "AWS IoT Greengrass"
       ],
-      "description": "Grants permission to update a subscription definition.",
+      "description": "Grants permission to update a subscription definition",
       "accessLevel": "Write",
       "resourceTypes": [
         "subscriptionDefinition*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
+    },
+    "UpdateThingRuntimeConfiguration": {
+      "name": "UpdateThingRuntimeConfiguration",
+      "topics": [
+        "AWS IoT Greengrass"
+      ],
+      "description": "Grants permission to update runtime configuration of a thing",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "thingRuntimeConfig*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
     }
   },
   "topics": [
-    "AWS IoT Greengrass"
+    "AWS IoT Greengrass",
+    "AWS IoT Greengrass V2"
   ]
 }

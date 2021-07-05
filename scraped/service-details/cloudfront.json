@@ -73,6 +73,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "CreateFunction": {
+      "name": "CreateFunction",
+      "topics": [
+        "Amazon CloudFront"
+      ],
+      "description": "This action creates a CloudFront function",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "CreateInvalidation": {
       "name": "CreateInvalidation",
       "topics": [
@@ -83,6 +94,28 @@
       "resourceTypes": [
         "distribution*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateKeyGroup": {
+      "name": "CreateKeyGroup",
+      "topics": [
+        "Amazon CloudFront"
+      ],
+      "description": "This action adds a new key group to CloudFront",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateMonitoringSubscription": {
+      "name": "CreateMonitoringSubscription",
+      "topics": [
+        "Amazon CloudFront"
+      ],
+      "description": "This action enables additional CloudWatch metrics for the specified CloudFront distribution.\n                                                The additional metrics incur an additional cost",
+      "accessLevel": "Write",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -103,6 +136,17 @@
         "Amazon CloudFront"
       ],
       "description": "This action adds a new public key to CloudFront.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateRealtimeLogConfig": {
+      "name": "CreateRealtimeLogConfig",
+      "topics": [
+        "Amazon CloudFront"
+      ],
+      "description": "This action creates a real-time log configuration",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -193,6 +237,39 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeleteFunction": {
+      "name": "DeleteFunction",
+      "topics": [
+        "Amazon CloudFront"
+      ],
+      "description": "This action deletes a CloudFront function",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteKeyGroup": {
+      "name": "DeleteKeyGroup",
+      "topics": [
+        "Amazon CloudFront"
+      ],
+      "description": "This action deletes a key group",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteMonitoringSubscription": {
+      "name": "DeleteMonitoringSubscription",
+      "topics": [
+        "Amazon CloudFront"
+      ],
+      "description": "This action disables additional CloudWatch metrics for the specified CloudFront distribution",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteOriginRequestPolicy": {
       "name": "DeleteOriginRequestPolicy",
       "topics": [
@@ -215,6 +292,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeleteRealtimeLogConfig": {
+      "name": "DeleteRealtimeLogConfig",
+      "topics": [
+        "Amazon CloudFront"
+      ],
+      "description": "This action deletes a real-time log configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteStreamingDistribution": {
       "name": "DeleteStreamingDistribution",
       "topics": [
@@ -225,6 +313,17 @@
       "resourceTypes": [
         "streaming-distribution*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeFunction": {
+      "name": "DescribeFunction",
+      "topics": [
+        "Amazon CloudFront"
+      ],
+      "description": "This action gets a CloudFront function summary",
+      "accessLevel": "Read",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -346,6 +445,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "GetFunction": {
+      "name": "GetFunction",
+      "topics": [
+        "Amazon CloudFront"
+      ],
+      "description": "This action gets a CloudFront function's code",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "GetInvalidation": {
       "name": "GetInvalidation",
       "topics": [
@@ -356,6 +466,39 @@
       "resourceTypes": [
         "distribution*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetKeyGroup": {
+      "name": "GetKeyGroup",
+      "topics": [
+        "Amazon CloudFront"
+      ],
+      "description": "This action gets a key group",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetKeyGroupConfig": {
+      "name": "GetKeyGroupConfig",
+      "topics": [
+        "Amazon CloudFront"
+      ],
+      "description": "This action gets a key group configuration",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMonitoringSubscription": {
+      "name": "GetMonitoringSubscription",
+      "topics": [
+        "Amazon CloudFront"
+      ],
+      "description": "This action gets information about whether additional CloudWatch metrics are enabled\n                                                for the specified CloudFront distribution",
+      "accessLevel": "Read",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -398,6 +541,17 @@
         "Amazon CloudFront"
       ],
       "description": "Get the public key configuration information.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRealtimeLogConfig": {
+      "name": "GetRealtimeLogConfig",
+      "topics": [
+        "Amazon CloudFront"
+      ],
+      "description": "This action gets a real-time log configuration",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -473,12 +627,34 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ListDistributionsByKeyGroup": {
+      "name": "ListDistributionsByKeyGroup",
+      "topics": [
+        "Amazon CloudFront"
+      ],
+      "description": "This action lists distribution IDs for distributions that have a cache behavior that's\n                                                associated with the specified key group",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ListDistributionsByOriginRequestPolicyId": {
       "name": "ListDistributionsByOriginRequestPolicyId",
       "topics": [
         "Amazon CloudFront"
       ],
       "description": "List distribution IDs for distributions that have a cache behavior that's associated\n                                                with the specified origin request policy.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDistributionsByRealtimeLogConfig": {
+      "name": "ListDistributionsByRealtimeLogConfig",
+      "topics": [
+        "Amazon CloudFront"
+      ],
+      "description": "This action gets a list of distributions that have a cache behavior that’s associated\n                                                with the specified real-time log configuration",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -517,6 +693,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ListFunctions": {
+      "name": "ListFunctions",
+      "topics": [
+        "Amazon CloudFront"
+      ],
+      "description": "This action gets a list of CloudFront functions",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ListInvalidations": {
       "name": "ListInvalidations",
       "topics": [
@@ -527,6 +714,17 @@
       "resourceTypes": [
         "distribution*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListKeyGroups": {
+      "name": "ListKeyGroups",
+      "topics": [
+        "Amazon CloudFront"
+      ],
+      "description": "This action lists all key groups that have been created in CloudFront for this account",
+      "accessLevel": "List",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -547,6 +745,17 @@
         "Amazon CloudFront"
       ],
       "description": "List all public keys that have been added to CloudFront for this account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRealtimeLogConfigs": {
+      "name": "ListRealtimeLogConfigs",
+      "topics": [
+        "Amazon CloudFront"
+      ],
+      "description": "This action gets a list of real-time log configurations",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -576,6 +785,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "PublishFunction": {
+      "name": "PublishFunction",
+      "topics": [
+        "Amazon CloudFront"
+      ],
+      "description": "This action publishes a CloudFront function",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "TagResource": {
       "name": "TagResource",
       "topics": [
@@ -586,6 +806,17 @@
       "resourceTypes": [
         "distribution"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TestFunction": {
+      "name": "TestFunction",
+      "topics": [
+        "Amazon CloudFront"
+      ],
+      "description": "This action tests a CloudFront function",
+      "accessLevel": "Write",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -661,6 +892,28 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "UpdateFunction": {
+      "name": "UpdateFunction",
+      "topics": [
+        "Amazon CloudFront"
+      ],
+      "description": "This action updates a CloudFront function",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateKeyGroup": {
+      "name": "UpdateKeyGroup",
+      "topics": [
+        "Amazon CloudFront"
+      ],
+      "description": "This action updates a key group",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "UpdateOriginRequestPolicy": {
       "name": "UpdateOriginRequestPolicy",
       "topics": [
@@ -678,6 +931,17 @@
         "Amazon CloudFront"
       ],
       "description": "This action updates public key information.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRealtimeLogConfig": {
+      "name": "UpdateRealtimeLogConfig",
+      "topics": [
+        "Amazon CloudFront"
+      ],
+      "description": "This action updates a real-time log configuration",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",

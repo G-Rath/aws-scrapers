@@ -71,7 +71,7 @@
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "ec2:CreateNetworkInterface\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeSecurityGroups\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeSubnets\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeVpcs\n                                                   \n                                                \n                                                \n                                                \n                                                   iam:CreateServiceLinkedRole"
     },
     "CreateTestGridUrl": {
       "name": "CreateTestGridUrl",
@@ -940,7 +940,7 @@
         "testgrid-project*"
       ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "ec2:CreateNetworkInterface\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeSecurityGroups\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeSubnets\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeVpcs\n                                                   \n                                                \n                                                \n                                                \n                                                   iam:CreateServiceLinkedRole"
     },
     "UpdateUpload": {
       "name": "UpdateUpload",

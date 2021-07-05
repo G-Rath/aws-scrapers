@@ -1,6 +1,19 @@
 {
   "servicePrefix": "securityhub",
   "actions": {
+    "AcceptAdministratorInvitation": {
+      "name": "AcceptAdministratorInvitation",
+      "topics": [
+        "AWS Security Hub"
+      ],
+      "description": "Grants permission to accept Security Hub invitations to become a member account",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "AcceptInvitation": {
       "name": "AcceptInvitation",
       "topics": [
@@ -196,6 +209,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DescribeOrganizationConfiguration": {
+      "name": "DescribeOrganizationConfiguration",
+      "topics": [
+        "AWS Security Hub"
+      ],
+      "description": "Grants permission to describe the organization configuration for Security Hub",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DescribeProducts": {
       "name": "DescribeProducts",
       "topics": [
@@ -248,12 +274,38 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DisableOrganizationAdminAccount": {
+      "name": "DisableOrganizationAdminAccount",
+      "topics": [
+        "AWS Security Hub"
+      ],
+      "description": "Grants permission to remove the Security Hub administrator account for your organization",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "organizations:DescribeOrganization"
+    },
     "DisableSecurityHub": {
       "name": "DisableSecurityHub",
       "topics": [
         "AWS Security Hub"
       ],
       "description": "Grants permission to disable Security Hub",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateFromAdministratorAccount": {
+      "name": "DisassociateFromAdministratorAccount",
+      "topics": [
+        "AWS Security Hub"
+      ],
+      "description": "Grants permission to a Security Hub member account to disassociate from the associated\n                                                administrator account",
       "accessLevel": "Write",
       "resourceTypes": [
         "hub"
@@ -279,7 +331,7 @@
       "topics": [
         "AWS Security Hub"
       ],
-      "description": "Grants permission to disassociate Security Hub member accounts from the associated\n                                                master account",
+      "description": "Grants permission to disassociate Security Hub member accounts from the associated\n                                                administrator account",
       "accessLevel": "Write",
       "resourceTypes": [
         "hub"
@@ -300,6 +352,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "EnableOrganizationAdminAccount": {
+      "name": "EnableOrganizationAdminAccount",
+      "topics": [
+        "AWS Security Hub"
+      ],
+      "description": "Grants permission to designate a Security Hub administrator account for your organization",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "organizations:DescribeOrganization\n                                                   \n                                                \n                                                \n                                                \n                                                   organizations:EnableAWSServiceAccess\n                                                   \n                                                \n                                                \n                                                \n                                                   organizations:RegisterDelegatedAdministrator"
+    },
     "EnableSecurityHub": {
       "name": "EnableSecurityHub",
       "topics": [
@@ -307,6 +372,45 @@
       ],
       "description": "Grants permission to enable Security Hub",
       "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAdhocInsightResults": {
+      "name": "GetAdhocInsightResults",
+      "topics": [
+        "AWS Security Hub"
+      ],
+      "description": "Grants permission to retrieve insight results by providing a set of filters instead\n                                                of an insight ARN",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAdministratorAccount": {
+      "name": "GetAdministratorAccount",
+      "topics": [
+        "AWS Security Hub"
+      ],
+      "description": "Grants permission to retrieve details about the Security Hub administrator account",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetControlFindingSummary": {
+      "name": "GetControlFindingSummary",
+      "topics": [
+        "AWS Security Hub"
+      ],
+      "description": "Grants permission to retrieve a security score and counts of finding and control statuses\n                                                for a security standard",
+      "accessLevel": "Read",
       "resourceTypes": [
         "hub"
       ],
@@ -332,6 +436,45 @@
         "AWS Security Hub"
       ],
       "description": "Grants permission to retrieve a list of findings from Security Hub",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFreeTrialEndDate": {
+      "name": "GetFreeTrialEndDate",
+      "topics": [
+        "AWS Security Hub"
+      ],
+      "description": "Grants permission to retrieve the end date for an account's free trial of Security\n                                                Hub",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFreeTrialUsage": {
+      "name": "GetFreeTrialUsage",
+      "topics": [
+        "AWS Security Hub"
+      ],
+      "description": "Grants permission to retrieve information about Security Hub usage during the free\n                                                trial period",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetInsightFindingTrend": {
+      "name": "GetInsightFindingTrend",
+      "topics": [
+        "AWS Security Hub"
+      ],
+      "description": "Grants permission to retrieve an insight finding trend from Security Hub in order\n                                                to generate a graph",
       "accessLevel": "Read",
       "resourceTypes": [
         "hub"
@@ -404,6 +547,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "GetUsage": {
+      "name": "GetUsage",
+      "topics": [
+        "AWS Security Hub"
+      ],
+      "description": "Grants permission to retrieve information about Security Hub usage by accounts",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "InviteMembers": {
       "name": "InviteMembers",
       "topics": [
@@ -411,6 +567,19 @@
       ],
       "description": "Grants permission to invite other AWS accounts to become Security Hub member accounts",
       "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListControlEvaluationSummaries": {
+      "name": "ListControlEvaluationSummaries",
+      "topics": [
+        "AWS Security Hub"
+      ],
+      "description": "Grants permission to retrieve a list of controls for a standard, including the control\n                                                IDs, statuses and finding counts",
+      "accessLevel": "Read",
       "resourceTypes": [
         "hub"
       ],
@@ -448,7 +617,7 @@
       "topics": [
         "AWS Security Hub"
       ],
-      "description": "Grants permission to retrieve details about Security Hub member accounts associated\n                                                with the master account",
+      "description": "Grants permission to retrieve details about Security Hub member accounts associated\n                                                with the administrator account",
       "accessLevel": "List",
       "resourceTypes": [
         "hub"
@@ -456,15 +625,54 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ListOrganizationAdminAccounts": {
+      "name": "ListOrganizationAdminAccounts",
+      "topics": [
+        "AWS Security Hub"
+      ],
+      "description": "Grants permission to list the Security Hub administrator accounts for your organization",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "organizations:DescribeOrganization"
+    },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
       "topics": [
         "AWS Security Hub"
       ],
       "description": "Grants permission to list of tags associated with a resource",
-      "accessLevel": "List",
+      "accessLevel": "Read",
       "resourceTypes": [
         "hub*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendFindingEvents": {
+      "name": "SendFindingEvents",
+      "topics": [
+        "AWS Security Hub"
+      ],
+      "description": "Grants permission to use a custom action to send Security Hub findings to Amazon EventBridge",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendInsightEvents": {
+      "name": "SendInsightEvents",
+      "topics": [
+        "AWS Security Hub"
+      ],
+      "description": "Grants permission to use a custom action to send Security Hub insights to Amazon EventBridge",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "hub"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -475,7 +683,7 @@
         "AWS Security Hub"
       ],
       "description": "Grants permission to add tags to a Security Hub resource",
-      "accessLevel": "Write",
+      "accessLevel": "Tagging",
       "resourceTypes": [
         "hub*"
       ],
@@ -488,7 +696,7 @@
         "AWS Security Hub"
       ],
       "description": "Grants permission to remove tags from a Security Hub resource",
-      "accessLevel": "Write",
+      "accessLevel": "Tagging",
       "resourceTypes": [
         "hub*"
       ],
@@ -527,6 +735,19 @@
         "AWS Security Hub"
       ],
       "description": "Grants permission to update insights in Security Hub",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "hub"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateOrganizationConfiguration": {
+      "name": "UpdateOrganizationConfiguration",
+      "topics": [
+        "AWS Security Hub"
+      ],
+      "description": "Grants permission to update the organization configuration for Security Hub",
       "accessLevel": "Write",
       "resourceTypes": [
         "hub"

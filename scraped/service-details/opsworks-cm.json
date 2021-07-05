@@ -6,7 +6,7 @@
       "topics": [
         "AWS OpsWorks Configuration Management"
       ],
-      "description": "Associate a node to a configuration management server.",
+      "description": "Grants permission to associate a node to a configuration management server",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -17,7 +17,7 @@
       "topics": [
         "AWS OpsWorks Configuration Management"
       ],
-      "description": "Create a backup for the specified server.",
+      "description": "Grants permission to create a backup for the specified server",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -28,7 +28,7 @@
       "topics": [
         "AWS OpsWorks Configuration Management"
       ],
-      "description": "Create a new server.",
+      "description": "Grants permission to create a new server",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -39,7 +39,7 @@
       "topics": [
         "AWS OpsWorks Configuration Management"
       ],
-      "description": "Delete the specified backup and possibly its S3 bucket.",
+      "description": "Grants permission to delete the specified backup and possibly its S3 bucket",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -50,7 +50,7 @@
       "topics": [
         "AWS OpsWorks Configuration Management"
       ],
-      "description": "Deletes the specified server with his corresponding CF stack and possibly the S3 bucket.",
+      "description": "Grants permission to delete the specified server with its corresponding CloudFormation\n                                                stack and possibly the S3 bucket",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -61,7 +61,7 @@
       "topics": [
         "AWS OpsWorks Configuration Management"
       ],
-      "description": "Describe the service limits for the user's account.",
+      "description": "Grants permission to describe the service limits for the user's account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -72,7 +72,7 @@
       "topics": [
         "AWS OpsWorks Configuration Management"
       ],
-      "description": "Describe a single backup, all backups of a specified server or all backups of the\n                                                user's account.",
+      "description": "Grants permission to describe a single backup, all backups of a specified server or\n                                                all backups of the user's account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -83,7 +83,7 @@
       "topics": [
         "AWS OpsWorks Configuration Management"
       ],
-      "description": "Describe all events of the specified server.",
+      "description": "Grants permission to describe all events of the specified server",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -94,7 +94,7 @@
       "topics": [
         "AWS OpsWorks Configuration Management"
       ],
-      "description": "Describe the association status for the specified node token and the specified server.",
+      "description": "Grants permission to describe the association status for the specified node token\n                                                and the specified server",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -105,7 +105,7 @@
       "topics": [
         "AWS OpsWorks Configuration Management"
       ],
-      "description": "Describes the specified server or all servers of the user's account.",
+      "description": "Grants permission to describe the specified server or all servers of the user's account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -116,8 +116,19 @@
       "topics": [
         "AWS OpsWorks Configuration Management"
       ],
-      "description": "Disassociates a specified node from a server.",
+      "description": "Grants permission to disassociate a specified node from a server",
       "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ExportServerEngineAttribute": {
+      "name": "ExportServerEngineAttribute",
+      "topics": [
+        "AWS OpsWorks Configuration Management"
+      ],
+      "description": "Grants permission to export an engine attribute from a server",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -127,8 +138,8 @@
       "topics": [
         "AWS OpsWorks Configuration Management"
       ],
-      "description": "List the tags that are applied to the specified server or backup.",
-      "accessLevel": "List",
+      "description": "Grants permission to list the tags that are applied to the specified server or backup",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -138,7 +149,7 @@
       "topics": [
         "AWS OpsWorks Configuration Management"
       ],
-      "description": "Applies a backup to specified server. Possibly swaps out the ec2-instance if specified.",
+      "description": "Grants permission to apply a backup to specified server. Possibly swaps out the ec2-instance\n                                                if specified",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -149,7 +160,7 @@
       "topics": [
         "AWS OpsWorks Configuration Management"
       ],
-      "description": "Start the server maintenance immediately.",
+      "description": "Grants permission to start the server maintenance immediately",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -160,7 +171,7 @@
       "topics": [
         "AWS OpsWorks Configuration Management"
       ],
-      "description": "Applies tags to the specified server or backup.",
+      "description": "Grants permission to apply tags to the specified server or backup",
       "accessLevel": "Tagging",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -171,7 +182,7 @@
       "topics": [
         "AWS OpsWorks Configuration Management"
       ],
-      "description": "Removes tags from the specified server or backup.",
+      "description": "Grants permission to remove tags from the specified server or backup",
       "accessLevel": "Tagging",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -182,7 +193,7 @@
       "topics": [
         "AWS OpsWorks Configuration Management"
       ],
-      "description": "Update general server settings.",
+      "description": "Grants permission to update general server settings",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -193,7 +204,7 @@
       "topics": [
         "AWS OpsWorks Configuration Management"
       ],
-      "description": "Update server settings specific to the configuration management type.",
+      "description": "Grants permission to update server settings specific to the configuration management\n                                                type",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",

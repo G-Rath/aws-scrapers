@@ -40,6 +40,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "CreateAccessPointForObjectLambda": {
+      "name": "CreateAccessPointForObjectLambda",
+      "topics": [
+        "Amazon S3"
+      ],
+      "description": "Grants permission to create an object lambda enabled accesspoint",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "CreateBucket": {
       "name": "CreateBucket",
       "topics": [
@@ -61,7 +74,7 @@
       "description": "Grants permission to create a new Amazon S3 Batch Operations job",
       "accessLevel": "Write",
       "resourceTypes": [],
-      "conditionKeys": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:RequestJobPriority\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:RequestJobOperation\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "conditionKeys": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:ResourceAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:TlsVersion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:RequestJobPriority\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:RequestJobOperation\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
       "dependentActions": "iam:PassRole"
     },
     "DeleteAccessPoint": {
@@ -77,6 +90,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeleteAccessPointForObjectLambda": {
+      "name": "DeleteAccessPointForObjectLambda",
+      "topics": [
+        "Amazon S3"
+      ],
+      "description": "Grants permission to delete the object lambda enabled access point named in the URI",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteAccessPointPolicy": {
       "name": "DeleteAccessPointPolicy",
       "topics": [
@@ -86,6 +112,19 @@
       "accessLevel": "Permissions management",
       "resourceTypes": [
         "accesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAccessPointPolicyForObjectLambda": {
+      "name": "DeleteAccessPointPolicyForObjectLambda",
+      "topics": [
+        "Amazon S3"
+      ],
+      "description": "Grants permission to delete the policy on a specified object lambda enabled access\n                                                point",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -207,6 +246,32 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeleteStorageLensConfiguration": {
+      "name": "DeleteStorageLensConfiguration",
+      "topics": [
+        "Amazon S3"
+      ],
+      "description": "Grants permission to delete an existing Amazon S3 Storage Lens configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "storagelensconfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteStorageLensConfigurationTagging": {
+      "name": "DeleteStorageLensConfigurationTagging",
+      "topics": [
+        "Amazon S3"
+      ],
+      "description": "Grants permission to remove tags from an existing Amazon S3 Storage Lens configuration",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "storagelensconfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DescribeJob": {
       "name": "DescribeJob",
       "topics": [
@@ -241,7 +306,33 @@
       "description": "Grants permission to return configuration information about the specified access point",
       "accessLevel": "Read",
       "resourceTypes": [],
-      "conditionKeys": "s3:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "conditionKeys": "s3:DataAccessPointAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:DataAccessPointArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:AccessPointNetworkOrigin\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:ResourceAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:TlsVersion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "dependentActions": ""
+    },
+    "GetAccessPointConfigurationForObjectLambda": {
+      "name": "GetAccessPointConfigurationForObjectLambda",
+      "topics": [
+        "Amazon S3"
+      ],
+      "description": "Grants permission to retrieve the configuration of the object lambda enabled access\n                                                point",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAccessPointForObjectLambda": {
+      "name": "GetAccessPointForObjectLambda",
+      "topics": [
+        "Amazon S3"
+      ],
+      "description": "Grants permission to create an object lambda enabled accesspoint",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
+      ],
+      "conditionKeys": "",
       "dependentActions": ""
     },
     "GetAccessPointPolicy": {
@@ -253,6 +344,19 @@
       "accessLevel": "Read",
       "resourceTypes": [
         "accesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAccessPointPolicyForObjectLambda": {
+      "name": "GetAccessPointPolicyForObjectLambda",
+      "topics": [
+        "Amazon S3"
+      ],
+      "description": "Grants permission to returns the access point policy associated with the specified\n                                                object lambda enabled access point",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -270,6 +374,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "GetAccessPointPolicyStatusForObjectLambda": {
+      "name": "GetAccessPointPolicyStatusForObjectLambda",
+      "topics": [
+        "Amazon S3"
+      ],
+      "description": "Grants permission to return the policy status for a specific object lambda access\n                                                point policy",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "GetAccountPublicAccessBlock": {
       "name": "GetAccountPublicAccessBlock",
       "topics": [
@@ -278,7 +395,7 @@
       "description": "Grants permission to retrieve the PublicAccessBlock configuration for an AWS account",
       "accessLevel": "Read",
       "resourceTypes": [],
-      "conditionKeys": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "conditionKeys": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:ResourceAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:TlsVersion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
       "dependentActions": ""
     },
     "GetAnalyticsConfiguration": {
@@ -482,6 +599,19 @@
         "Amazon S3"
       ],
       "description": "Grants permission to return the default encryption configuration an Amazon S3 bucket",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetIntelligentTieringConfiguration": {
+      "name": "GetIntelligentTieringConfiguration",
+      "topics": [
+        "Amazon S3"
+      ],
+      "description": "Grants permission to get an or list all Amazon S3 Intelligent Tiering configuration\n                                                in a S3 Bucket",
       "accessLevel": "Read",
       "resourceTypes": [
         "bucket*"
@@ -697,6 +827,45 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "GetStorageLensConfiguration": {
+      "name": "GetStorageLensConfiguration",
+      "topics": [
+        "Amazon S3"
+      ],
+      "description": "Grants permission to get an Amazon S3 Storage Lens configuration",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "storagelensconfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetStorageLensConfigurationTagging": {
+      "name": "GetStorageLensConfigurationTagging",
+      "topics": [
+        "Amazon S3"
+      ],
+      "description": "Grants permission to get the tag set of an existing Amazon S3 Storage Lens configuration",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "storagelensconfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetStorageLensDashboard": {
+      "name": "GetStorageLensDashboard",
+      "topics": [
+        "Amazon S3"
+      ],
+      "description": "Grants permission to get an Amazon S3 Storage Lens dashboard",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "storagelensconfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ListAccessPoints": {
       "name": "ListAccessPoints",
       "topics": [
@@ -705,7 +874,18 @@
       "description": "Grants permission to list access points",
       "accessLevel": "Read",
       "resourceTypes": [],
-      "conditionKeys": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "conditionKeys": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:ResourceAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:TlsVersion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "dependentActions": ""
+    },
+    "ListAccessPointsForObjectLambda": {
+      "name": "ListAccessPointsForObjectLambda",
+      "topics": [
+        "Amazon S3"
+      ],
+      "description": "Grants permission to list object lambda enabled accesspoints",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:ResourceAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:TlsVersion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
       "dependentActions": ""
     },
     "ListAllMyBuckets": {
@@ -716,7 +896,7 @@
       "description": "Grants permission to list all buckets owned by the authenticated sender of the request",
       "accessLevel": "List",
       "resourceTypes": [],
-      "conditionKeys": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "conditionKeys": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:ResourceAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:TlsVersion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
       "dependentActions": ""
     },
     "ListBucket": {
@@ -766,7 +946,7 @@
       "description": "Grants permission to list current jobs and jobs that have ended recently",
       "accessLevel": "List",
       "resourceTypes": [],
-      "conditionKeys": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "conditionKeys": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:ResourceAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:TlsVersion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
       "dependentActions": ""
     },
     "ListMultipartUploadParts": {
@@ -780,6 +960,17 @@
         "object*"
       ],
       "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListStorageLensConfigurations": {
+      "name": "ListStorageLensConfigurations",
+      "topics": [
+        "Amazon S3"
+      ],
+      "description": "Grants permission to list Amazon S3 Storage Lens configurations",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:ResourceAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:TlsVersion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
       "dependentActions": ""
     },
     "ObjectOwnerOverrideToBucketOwner": {
@@ -808,6 +999,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "PutAccessPointConfigurationForObjectLambda": {
+      "name": "PutAccessPointConfigurationForObjectLambda",
+      "topics": [
+        "Amazon S3"
+      ],
+      "description": "Grants permission to set the configuration of the object lambda enabled access point",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "PutAccessPointPolicy": {
       "name": "PutAccessPointPolicy",
       "topics": [
@@ -821,6 +1025,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "PutAccessPointPolicyForObjectLambda": {
+      "name": "PutAccessPointPolicyForObjectLambda",
+      "topics": [
+        "Amazon S3"
+      ],
+      "description": "Grants permission to associate an access policy with a specified object lambda enabled\n                                                access point",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "PutAccountPublicAccessBlock": {
       "name": "PutAccountPublicAccessBlock",
       "topics": [
@@ -829,7 +1046,7 @@
       "description": "Grants permission to create or modify the PublicAccessBlock configuration for an AWS\n                                                account",
       "accessLevel": "Permissions management",
       "resourceTypes": [],
-      "conditionKeys": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
+      "conditionKeys": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:ResourceAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:TlsVersion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256",
       "dependentActions": ""
     },
     "PutAnalyticsConfiguration": {
@@ -1014,6 +1231,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "PutIntelligentTieringConfiguration": {
+      "name": "PutIntelligentTieringConfiguration",
+      "topics": [
+        "Amazon S3"
+      ],
+      "description": "Grants permission to create new or update or delete an existing Amazon S3 Intelligent\n                                                Tiering configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bucket*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "PutInventoryConfiguration": {
       "name": "PutInventoryConfiguration",
       "topics": [
@@ -1169,6 +1399,30 @@
       ],
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
+    },
+    "PutStorageLensConfiguration": {
+      "name": "PutStorageLensConfiguration",
+      "topics": [
+        "Amazon S3"
+      ],
+      "description": "Grants permission to create or update an Amazon S3 Storage Lens configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "s3:authType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:ResourceAccount\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureAge\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:signatureversion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:TlsVersion\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      s3:x-amz-content-sha256\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "dependentActions": ""
+    },
+    "PutStorageLensConfigurationTagging": {
+      "name": "PutStorageLensConfigurationTagging",
+      "topics": [
+        "Amazon S3"
+      ],
+      "description": "Grants permission to put or replace tags on an existing Amazon S3 Storage Lens configuration",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "storagelensconfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
     },
     "ReplicateDelete": {
       "name": "ReplicateDelete",

@@ -6,7 +6,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Registers player acceptance or rejection of a proposed FlexMatch match.",
+      "description": "Grants permission to register player acceptance or rejection of a proposed FlexMatch\n                                                match",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -17,7 +17,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Locates and reserves a game server to host a new game session.",
+      "description": "Grants permission to locate and reserve a game server to host a new game session",
       "accessLevel": "Write",
       "resourceTypes": [
         "gameServerGroup*"
@@ -30,7 +30,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Defines a new alias for a fleet.",
+      "description": "Grants permission to define a new alias for a fleet",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -41,7 +41,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Creates a new game build using files stored in an Amazon S3 bucket.",
+      "description": "Grants permission to create a new game build using files stored in an Amazon S3 bucket",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -52,10 +52,23 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Creates a new fleet of computing resources to run your game servers.",
+      "description": "Grants permission to create a new fleet of computing resources to run your game servers",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateFleetLocations": {
+      "name": "CreateFleetLocations",
+      "topics": [
+        "Amazon GameLift"
+      ],
+      "description": "Grants permission to specify additional locations for a fleet",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
       "dependentActions": ""
     },
     "CreateGameServerGroup": {
@@ -63,7 +76,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Creates a new game server group, sets up a corresponding Auto Scaling group, and launches\n                                                instances to host game servers.",
+      "description": "Grants permission to create a new game server group, set up a corresponding Auto Scaling\n                                                group, and launche instances to host game servers",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -74,7 +87,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Starts a new game session on a specified fleet.",
+      "description": "Grants permission to start a new game session on a specified fleet",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -85,7 +98,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Sets up a new queue for processing new game session placement requests.",
+      "description": "Grants permission to set up a new queue for processing game session placement requests",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -96,7 +109,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Creates a new FlexMatch matchmaker.",
+      "description": "Grants permission to create a new FlexMatch matchmaker",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -107,7 +120,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Creates a new matchmaking rule set for FlexMatch.",
+      "description": "Grants permission to create a new matchmaking rule set for FlexMatch",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -118,7 +131,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Reserves an available game session slot for a player.",
+      "description": "Grants permission to reserve an available game session slot for a player",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -129,7 +142,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Reserves available game session slots for multiple players.",
+      "description": "Grants permission to reserve available game session slots for multiple players",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -140,7 +153,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Creates a new Realtime Servers script.",
+      "description": "Grants permission to create a new Realtime Servers script",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -151,7 +164,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Allows GameLift to create or delete a peering connection between a GameLift fleet\n                                                VPC and a VPC on another AWS account.",
+      "description": "Grants permission to allow GameLift to create or delete a peering connection between\n                                                a GameLift fleet VPC and a VPC on another AWS account",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -162,7 +175,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Establishes a peering connection between your GameLift fleet VPC and a VPC on another\n                                                account.",
+      "description": "Grants permission to establish a peering connection between your GameLift fleet VPC\n                                                and a VPC on another account",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -173,7 +186,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Deletes an alias.",
+      "description": "Grants permission to delete an alias",
       "accessLevel": "Write",
       "resourceTypes": [
         "alias*"
@@ -186,7 +199,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Deletes a game build.",
+      "description": "Grants permission to delete a game build",
       "accessLevel": "Write",
       "resourceTypes": [
         "build*"
@@ -199,7 +212,20 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Deletes an empty fleet.",
+      "description": "Grants permission to delete an empty fleet",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteFleetLocations": {
+      "name": "DeleteFleetLocations",
+      "topics": [
+        "Amazon GameLift"
+      ],
+      "description": "Grants permission to delete locations for a fleet",
       "accessLevel": "Write",
       "resourceTypes": [
         "fleet*"
@@ -212,7 +238,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Permanently deletes a game server group and terminates FleetIQ activity for the corresponding\n                                                Auto Scaling group.",
+      "description": "Grants permission to permanently delete a game server group and terminate FleetIQ\n                                                activity for the corresponding Auto Scaling group",
       "accessLevel": "Write",
       "resourceTypes": [
         "gameServerGroup*"
@@ -225,7 +251,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Deletes an existing game session queue.",
+      "description": "Grants permission to delete an existing game session queue",
       "accessLevel": "Write",
       "resourceTypes": [
         "gameSessionQueue*"
@@ -238,7 +264,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Deletes an existing FlexMatch matchmaker.",
+      "description": "Grants permission to delete an existing FlexMatch matchmaker",
       "accessLevel": "Write",
       "resourceTypes": [
         "matchmakingConfiguration*"
@@ -251,7 +277,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Deletes an existing FlexMatch matchmaking rule set.",
+      "description": "Grants permission to delete an existing FlexMatch matchmaking rule set",
       "accessLevel": "Write",
       "resourceTypes": [
         "matchmakingRuleSet*"
@@ -264,7 +290,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Deletes a set of auto-scaling rules.",
+      "description": "Grants permission to delete a set of auto-scaling rules",
       "accessLevel": "Write",
       "resourceTypes": [
         "fleet*"
@@ -277,7 +303,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Deletes a Realtime Servers script.",
+      "description": "Grants permission to delete a Realtime Servers script",
       "accessLevel": "Write",
       "resourceTypes": [
         "script*"
@@ -290,7 +316,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Cancels a VPC peering authorization.",
+      "description": "Grants permission to cancel a VPC peering authorization",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -301,7 +327,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Removes a peering connection between VPCs.",
+      "description": "Grants permission to remove a peering connection between VPCs",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -312,7 +338,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Removes a game server from a game server group.",
+      "description": "Grants permission to remove a game server from a game server group",
       "accessLevel": "Write",
       "resourceTypes": [
         "gameServerGroup*"
@@ -325,7 +351,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves properties for an alias.",
+      "description": "Grants permission to retrieve properties for an alias",
       "accessLevel": "Read",
       "resourceTypes": [
         "alias*"
@@ -338,7 +364,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves properties for a game build.",
+      "description": "Grants permission to retrieve properties for a game build",
       "accessLevel": "Read",
       "resourceTypes": [
         "build*"
@@ -351,7 +377,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves the maximum allowed and current usage for EC2 instance types.",
+      "description": "Grants permission to retrieve the maximum allowed and current usage for EC2 instance\n                                                types",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -362,7 +388,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves general properties, including status, for fleets.",
+      "description": "Grants permission to retrieve general properties, including status, for fleets",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -373,7 +399,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves the current capacity setting for fleets.",
+      "description": "Grants permission to retrieve the current capacity setting for fleets",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -384,7 +410,46 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves entries from a fleet's event log.",
+      "description": "Grants permission to retrieve entries from a fleet's event log",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeFleetLocationAttributes": {
+      "name": "DescribeFleetLocationAttributes",
+      "topics": [
+        "Amazon GameLift"
+      ],
+      "description": "Grants permission to retrieve general properties, including statuses, for a fleet's\n                                                locations",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeFleetLocationCapacity": {
+      "name": "DescribeFleetLocationCapacity",
+      "topics": [
+        "Amazon GameLift"
+      ],
+      "description": "Grants permission to retrieve the current capacity setting for a fleet's location",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeFleetLocationUtilization": {
+      "name": "DescribeFleetLocationUtilization",
+      "topics": [
+        "Amazon GameLift"
+      ],
+      "description": "Grants permission to retrieve utilization statistics for fleet's location",
       "accessLevel": "Read",
       "resourceTypes": [
         "fleet*"
@@ -397,7 +462,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves the inbound connection permissions for a fleet.",
+      "description": "Grants permission to retrieve the inbound connection permissions for a fleet",
       "accessLevel": "Read",
       "resourceTypes": [
         "fleet*"
@@ -410,7 +475,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves utilization statistics for fleets.",
+      "description": "Grants permission to retrieve utilization statistics for fleets",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -421,7 +486,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves properties for a game server.",
+      "description": "Grants permission to retrieve properties for a game server",
       "accessLevel": "Read",
       "resourceTypes": [
         "gameServerGroup*"
@@ -434,7 +499,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves properties for a game server group.",
+      "description": "Grants permission to retrieve properties for a game server group",
       "accessLevel": "Read",
       "resourceTypes": [
         "gameServerGroup*"
@@ -447,7 +512,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves the status of EC2 instances in a game server group.",
+      "description": "Grants permission to retrieve the status of EC2 instances in a game server group",
       "accessLevel": "Read",
       "resourceTypes": [
         "gameServerGroup*"
@@ -460,7 +525,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves properties for game sessions in a fleet, including the protection policy.",
+      "description": "Grants permission to retrieve properties for game sessions in a fleet, including the\n                                                protection policy",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -471,7 +536,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves details of a game session placement request.",
+      "description": "Grants permission to retrieve details of a game session placement request",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -482,7 +547,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves properties for game session queues.",
+      "description": "Grants permission to retrieve properties for game session queues",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -493,7 +558,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves properties for game sessions in a fleet.",
+      "description": "Grants permission to retrieve properties for game sessions in a fleet",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -504,7 +569,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves information about instances in a fleet.",
+      "description": "Grants permission to retrieve information about instances in a fleet",
       "accessLevel": "Read",
       "resourceTypes": [
         "fleet*"
@@ -517,7 +582,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves details of matchmaking tickets.",
+      "description": "Grants permission to retrieve details of matchmaking tickets",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -528,7 +593,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves properties for FlexMatch matchmakers.",
+      "description": "Grants permission to retrieve properties for FlexMatch matchmakers",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -539,7 +604,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves properties for FlexMatch matchmaking rule sets.",
+      "description": "Grants permission to retrieve properties for FlexMatch matchmaking rule sets",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -550,7 +615,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves properties for player sessions in a game session.",
+      "description": "Grants permission to retrieve properties for player sessions in a game session",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -561,7 +626,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves the current runtime configuration for a fleet.",
+      "description": "Grants permission to retrieve the current runtime configuration for a fleet",
       "accessLevel": "Read",
       "resourceTypes": [
         "fleet*"
@@ -574,7 +639,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves all scaling policies that are applied to a fleet.",
+      "description": "Grants permission to retrieve all scaling policies that are applied to a fleet",
       "accessLevel": "Read",
       "resourceTypes": [
         "fleet*"
@@ -587,7 +652,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves properties for a Realtime Servers script.",
+      "description": "Grants permission to retrieve properties for a Realtime Servers script",
       "accessLevel": "Read",
       "resourceTypes": [
         "script*"
@@ -600,7 +665,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves valid VPC peering authorizations.",
+      "description": "Grants permission to retrieve valid VPC peering authorizations",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -611,7 +676,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves details on active or pending VPC peering connections.",
+      "description": "Grants permission to retrieve details on active or pending VPC peering connections",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -622,7 +687,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves the location of stored logs for a game session.",
+      "description": "Grants permission to retrieve the location of stored logs for a game session",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -633,7 +698,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Requests remote access to a specified fleet instance.",
+      "description": "Grants permission to request remote access to a specified fleet instance",
       "accessLevel": "Read",
       "resourceTypes": [
         "fleet*"
@@ -646,7 +711,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves all aliases that are defined in the current region.",
+      "description": "Grants permission to retrieve all aliases that are defined in the current region",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -657,7 +722,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves all game build in the current region.",
+      "description": "Grants permission to retrieve all game build in the current region",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -668,7 +733,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves a list of fleet IDs for all fleets in the current region.",
+      "description": "Grants permission to retrieve a list of fleet IDs for all fleets in the current region",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -679,7 +744,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves all game server groups that are defined in the current region.",
+      "description": "Grants permission to retrieve all game server groups that are defined in the current\n                                                region",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -690,7 +755,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves all game servers that are currently running in a game server group.",
+      "description": "Grants permission to retrieve all game servers that are currently running in a game\n                                                server group",
       "accessLevel": "List",
       "resourceTypes": [
         "gameServerGroup*"
@@ -703,7 +768,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves properties for all Realtime Servers scripts in the current region.",
+      "description": "Grants permission to retrieve properties for all Realtime Servers scripts in the current\n                                                region",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -714,8 +779,8 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Lists tags for GameLift resources",
-      "accessLevel": "List",
+      "description": "Grants permission to retrieve tags for GameLift resources",
+      "accessLevel": "Read",
       "resourceTypes": [
         "alias"
       ],
@@ -727,7 +792,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Creates or updates a fleet auto-scaling policy.",
+      "description": "Grants permission to create or update a fleet auto-scaling policy",
       "accessLevel": "Write",
       "resourceTypes": [
         "fleet*"
@@ -740,7 +805,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Notifies GameLift FleetIQ when a new game server is ready to host gameplay.",
+      "description": "Grants permission to notify GameLift FleetIQ when a new game server is ready to host\n                                                gameplay",
       "accessLevel": "Write",
       "resourceTypes": [
         "gameServerGroup*"
@@ -753,7 +818,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves fresh upload credentials to use when uploading a new game build.",
+      "description": "Grants permission to retrieve fresh upload credentials to use when uploading a new\n                                                game build",
       "accessLevel": "Read",
       "resourceTypes": [
         "build*"
@@ -766,7 +831,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves the fleet ID associated with an alias.",
+      "description": "Grants permission to retrieve the fleet ID associated with an alias",
       "accessLevel": "Read",
       "resourceTypes": [
         "alias*"
@@ -779,7 +844,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Reinstates suspended FleetIQ activity for a game server group.",
+      "description": "Grants permission to reinstate suspended FleetIQ activity for a game server group",
       "accessLevel": "Write",
       "resourceTypes": [
         "gameServerGroup*"
@@ -792,7 +857,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Retrieves game sessions that match a set of search criteria.",
+      "description": "Grants permission to retrieve game sessions that match a set of search criteria",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -803,7 +868,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Resumes auto-scaling activity on a fleet after it was suspended with StopFleetActions().",
+      "description": "Grants permission to resume auto-scaling activity on a fleet after it was suspended\n                                                with StopFleetActions()",
       "accessLevel": "Write",
       "resourceTypes": [
         "fleet*"
@@ -816,7 +881,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Sends a game session placement request to a game session queue.",
+      "description": "Grants permission to send a game session placement request to a game session queue",
       "accessLevel": "Write",
       "resourceTypes": [
         "gameSessionQueue*"
@@ -829,7 +894,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Requests FlexMatch matchmaking to fill available player slots in an existing game\n                                                session.",
+      "description": "Grants permission to request FlexMatch matchmaking to fill available player slots\n                                                in an existing game session",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -840,7 +905,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Requests FlexMatch matchmaking for one or a group of players and game session placement\n                                                for a resulting match.",
+      "description": "Grants permission to request FlexMatch matchmaking for one or a group of players and\n                                                initiate game session placement",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -851,7 +916,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Suspends auto-scaling activity on a fleet.",
+      "description": "Grants permission to suspend auto-scaling activity on a fleet",
       "accessLevel": "Write",
       "resourceTypes": [
         "fleet*"
@@ -864,7 +929,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Cancels a game session placement request that is in progress.",
+      "description": "Grants permission to cancel a game session placement request that is in progress",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -875,7 +940,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Cancels a matchmaking or match backfill request that is in progress.",
+      "description": "Grants permission to cancel a matchmaking or match backfill request that is in progress",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -886,7 +951,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Temporarily stops FleetIQ activity for a game server group.",
+      "description": "Grants permission to temporarily stop FleetIQ activity for a game server group",
       "accessLevel": "Write",
       "resourceTypes": [
         "gameServerGroup*"
@@ -899,7 +964,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Tags GameLift resources",
+      "description": "Grants permission to tag GameLift resources",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "alias"
@@ -912,7 +977,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Untags GameLift resources",
+      "description": "Grants permission to untag GameLift resources",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "alias"
@@ -925,7 +990,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Updates the properties of an existing alias.",
+      "description": "Grants permission to update the properties of an existing alias",
       "accessLevel": "Write",
       "resourceTypes": [
         "alias*"
@@ -938,7 +1003,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Updates an existing build's metadata.",
+      "description": "Grants permission to update an existing build's metadata",
       "accessLevel": "Write",
       "resourceTypes": [
         "build*"
@@ -951,7 +1016,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Updates the general properties of an existing fleet.",
+      "description": "Grants permission to update the general properties of an existing fleet",
       "accessLevel": "Write",
       "resourceTypes": [
         "fleet*"
@@ -964,7 +1029,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Adjusts a fleet's capacity settings.",
+      "description": "Grants permission to adjust a fleet's capacity settings",
       "accessLevel": "Write",
       "resourceTypes": [
         "fleet*"
@@ -977,7 +1042,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Adjusts a fleet's port settings.",
+      "description": "Grants permission to adjust a fleet's port settings",
       "accessLevel": "Write",
       "resourceTypes": [
         "fleet*"
@@ -990,7 +1055,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Changes game server properties, health status, or utilization status.",
+      "description": "Grants permission to change game server properties, health status, or utilization\n                                                status",
       "accessLevel": "Write",
       "resourceTypes": [
         "gameServerGroup*"
@@ -1003,7 +1068,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Updates properties for game server group, including allowed instance types.",
+      "description": "Grants permission to update properties for game server group, including allowed instance\n                                                types",
       "accessLevel": "Write",
       "resourceTypes": [
         "gameServerGroup*"
@@ -1016,7 +1081,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Updates the properties of an existing game session.",
+      "description": "Grants permission to update the properties of an existing game session",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1027,7 +1092,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Updates properties of an existing game session queue.",
+      "description": "Grants permission to update properties of an existing game session queue",
       "accessLevel": "Write",
       "resourceTypes": [
         "gameSessionQueue*"
@@ -1040,7 +1105,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Updates properties of an existing FlexMatch matchmaking configuration.",
+      "description": "Grants permission to update properties of an existing FlexMatch matchmaking configuration",
       "accessLevel": "Write",
       "resourceTypes": [
         "matchmakingConfiguration*"
@@ -1053,7 +1118,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Updates how server processes are configured on instances in an existing fleet.",
+      "description": "Grants permission to update how server processes are configured on instances in an\n                                                existing fleet",
       "accessLevel": "Write",
       "resourceTypes": [
         "fleet*"
@@ -1066,7 +1131,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Updates the metadata and content of an existing Realtime Servers script.",
+      "description": "Grants permission to update the metadata and content of an existing Realtime Servers\n                                                script",
       "accessLevel": "Write",
       "resourceTypes": [
         "script*"
@@ -1079,7 +1144,7 @@
       "topics": [
         "Amazon GameLift"
       ],
-      "description": "Validates the syntax of a FlexMatch matchmaking rule set.",
+      "description": "Grants permission to validate the syntax of a FlexMatch matchmaking rule set",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",

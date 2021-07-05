@@ -190,7 +190,7 @@
         "Amazon AppFlow"
       ],
       "description": "Grants permission to list tags for a flow",
-      "accessLevel": "List",
+      "accessLevel": "Read",
       "resourceTypes": [
         "flow*"
       ],
@@ -270,7 +270,7 @@
       "description": "Grants permission to update a login profile configured in Amazon AppFlow",
       "accessLevel": "Write",
       "resourceTypes": [
-        "flow*"
+        "connectorprofile*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -284,6 +284,19 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "flow*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UseConnectorProfile": {
+      "name": "UseConnectorProfile",
+      "topics": [
+        "Amazon AppFlow"
+      ],
+      "description": "Grants permission to use a connector profile while creating a flow in Amazon AppFlow",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "connectorprofile*"
       ],
       "conditionKeys": "",
       "dependentActions": ""

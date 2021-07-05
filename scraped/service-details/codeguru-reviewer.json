@@ -6,20 +6,33 @@
       "topics": [
         "Amazon CodeGuru Reviewer"
       ],
-      "description": "Grants permission to associates a repository with Amazon CodeGuru Reviewer.",
+      "description": "Grants permission to associates a repository with Amazon CodeGuru Reviewer",
       "accessLevel": "Write",
       "resourceTypes": [
-        "repository"
+        "association*"
       ],
       "conditionKeys": "",
-      "dependentActions": "codecommit:ListRepositories\n                                                   \n                                                \n                                                \n                                                \n                                                   codecommit:TagResource\n                                                   \n                                                \n                                                \n                                                \n                                                   events:PutRule\n                                                   \n                                                \n                                                \n                                                \n                                                   events:PutTargets\n                                                   \n                                                \n                                                \n                                                \n                                                   iam:CreateServiceLinkedRole"
+      "dependentActions": "codecommit:ListRepositories\n                                                   \n                                                \n                                                \n                                                \n                                                   codecommit:TagResource\n                                                   \n                                                \n                                                \n                                                \n                                                   events:PutRule\n                                                   \n                                                \n                                                \n                                                \n                                                   events:PutTargets\n                                                   \n                                                \n                                                \n                                                \n                                                   iam:CreateServiceLinkedRole\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:CreateBucket\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:ListBucket\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:PutBucketPolicy\n                                                   \n                                                \n                                                \n                                                \n                                                   s3:PutLifecycleConfiguration"
+    },
+    "CreateCodeReview": {
+      "name": "CreateCodeReview",
+      "topics": [
+        "Amazon CodeGuru Reviewer"
+      ],
+      "description": "Grants permission to create a code review",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "association*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "s3:GetObject"
     },
     "CreateConnectionToken": {
       "name": "CreateConnectionToken",
       "topics": [
         "Amazon CodeGuru Reviewer"
       ],
-      "description": "Grants permission to perform webbased oauth handshake for 3rd party providers.",
+      "description": "Grants permission to perform webbased oauth handshake for 3rd party providers",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -30,10 +43,10 @@
       "topics": [
         "Amazon CodeGuru Reviewer"
       ],
-      "description": "Grants permission to describe a code review.",
+      "description": "Grants permission to describe a code review",
       "accessLevel": "Read",
       "resourceTypes": [
-        "codereview*"
+        "association*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -43,10 +56,10 @@
       "topics": [
         "Amazon CodeGuru Reviewer"
       ],
-      "description": "Grants permission to describe a recommendation feedback on a code review.",
+      "description": "Grants permission to describe a recommendation feedback on a code review",
       "accessLevel": "Read",
       "resourceTypes": [
-        "codereview*"
+        "association*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -56,7 +69,7 @@
       "topics": [
         "Amazon CodeGuru Reviewer"
       ],
-      "description": "Grants permission to describe a repository association.",
+      "description": "Grants permission to describe a repository association",
       "accessLevel": "Read",
       "resourceTypes": [
         "association*"
@@ -69,7 +82,7 @@
       "topics": [
         "Amazon CodeGuru Reviewer"
       ],
-      "description": "Grants permission to disassociate a repository with Amazon CodeGuru Reviewer.",
+      "description": "Grants permission to disassociate a repository with Amazon CodeGuru Reviewer",
       "accessLevel": "Write",
       "resourceTypes": [
         "association*"
@@ -82,7 +95,7 @@
       "topics": [
         "Amazon CodeGuru Reviewer"
       ],
-      "description": "Grants permission to view pull request metrics in console.",
+      "description": "Grants permission to view pull request metrics in console",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -93,7 +106,7 @@
       "topics": [
         "Amazon CodeGuru Reviewer"
       ],
-      "description": "Grants permission to list summary of code reviews.",
+      "description": "Grants permission to list summary of code reviews",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -104,10 +117,10 @@
       "topics": [
         "Amazon CodeGuru Reviewer"
       ],
-      "description": "Grants permission to list summary of recommendation feedback on a code review.",
+      "description": "Grants permission to list summary of recommendation feedback on a code review",
       "accessLevel": "List",
       "resourceTypes": [
-        "codereview*"
+        "association*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -120,7 +133,7 @@
       "description": "Grants permission to list summary of recommendations on a code review",
       "accessLevel": "List",
       "resourceTypes": [
-        "codereview*"
+        "association*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -130,9 +143,22 @@
       "topics": [
         "Amazon CodeGuru Reviewer"
       ],
-      "description": "Grants permission to list summary of repository associations.",
+      "description": "Grants permission to list summary of repository associations",
       "accessLevel": "List",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "Amazon CodeGuru Reviewer"
+      ],
+      "description": "Grants permission to list the resource attached to a associated repository ARN",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "association*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -141,7 +167,7 @@
       "topics": [
         "Amazon CodeGuru Reviewer"
       ],
-      "description": "Grants permission to list 3rd party providers repositories in console.",
+      "description": "Grants permission to list 3rd party providers repositories in console",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -152,10 +178,36 @@
       "topics": [
         "Amazon CodeGuru Reviewer"
       ],
-      "description": "Grants permission to put feedback for a recommendation on a code review.",
+      "description": "Grants permission to put feedback for a recommendation on a code review",
       "accessLevel": "Write",
       "resourceTypes": [
-        "codereview*"
+        "association*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "Amazon CodeGuru Reviewer"
+      ],
+      "description": "Grants permission to attach resource tags to an associated repository ARN",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "association*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UnTagResource": {
+      "name": "UnTagResource",
+      "topics": [
+        "Amazon CodeGuru Reviewer"
+      ],
+      "description": "Grants permission to disassociate resource tags from an associated repository ARN",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "association*"
       ],
       "conditionKeys": "",
       "dependentActions": ""

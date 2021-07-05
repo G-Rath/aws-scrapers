@@ -1,12 +1,34 @@
 {
   "servicePrefix": "translate",
   "actions": {
+    "CreateParallelData": {
+      "name": "CreateParallelData",
+      "topics": [
+        "Amazon Translate"
+      ],
+      "description": "Grants permission to create a Parallel Data",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteParallelData": {
+      "name": "DeleteParallelData",
+      "topics": [
+        "Amazon Translate"
+      ],
+      "description": "Grants permission to delete a Parallel Data",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteTerminology": {
       "name": "DeleteTerminology",
       "topics": [
         "Amazon Translate"
       ],
-      "description": "A synchronous action that deletes a custom terminology.",
+      "description": "Grants permission to delete a terminology",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -17,7 +39,18 @@
       "topics": [
         "Amazon Translate"
       ],
-      "description": "Gets the properties associated with an asynchronous batch translation job including\n                                                name, ID, status, source and target languages, input/output S3 buckets, and so on.",
+      "description": "Grants permission to get the properties associated with an asynchronous batch translation\n                                                job",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetParallelData": {
+      "name": "GetParallelData",
+      "topics": [
+        "Amazon Translate"
+      ],
+      "description": "Grants permission to get a Parallel Data",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -28,7 +61,7 @@
       "topics": [
         "Amazon Translate"
       ],
-      "description": "Retrieves a custom terminology.",
+      "description": "Grants permission to retrieve a terminology",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -39,8 +72,19 @@
       "topics": [
         "Amazon Translate"
       ],
-      "description": "Creates or updates a custom terminology, depending on whether or not one already exists\n                                                for the given terminology name.",
+      "description": "Grants permission to create or update a terminology, depending on whether or not one\n                                                already exists for the given terminology name",
       "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListParallelData": {
+      "name": "ListParallelData",
+      "topics": [
+        "Amazon Translate"
+      ],
+      "description": "Grants permission to list Parallel Data associated with your account",
+      "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -50,8 +94,8 @@
       "topics": [
         "Amazon Translate"
       ],
-      "description": "Provides a list of custom terminologies associated with your account.",
-      "accessLevel": "Read",
+      "description": "Grants permission to list terminologies associated with your account",
+      "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -61,8 +105,8 @@
       "topics": [
         "Amazon Translate"
       ],
-      "description": "Gets a list of the batch translation jobs that you have submitted.",
-      "accessLevel": "Read",
+      "description": "Grants permission to list batch translation jobs that you have submitted",
+      "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -72,7 +116,7 @@
       "topics": [
         "Amazon Translate"
       ],
-      "description": "Starts an asynchronous batch translation job. Batch translation jobs can be used to\n                                                translate large volumes of text across multiple documents at once.",
+      "description": "Grants permission to start an asynchronous batch translation job. Batch translation\n                                                jobs can be used to translate large volumes of text across multiple documents at once",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -83,7 +127,7 @@
       "topics": [
         "Amazon Translate"
       ],
-      "description": "Stops an asynchronous batch translation job that is in progress.",
+      "description": "Grants permission to stop an asynchronous batch translation job that is in progress",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -94,8 +138,19 @@
       "topics": [
         "Amazon Translate"
       ],
-      "description": "Translate text from a source language to a target language.",
+      "description": "Grants permission to translate text from a source language to a target language",
       "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateParallelData": {
+      "name": "UpdateParallelData",
+      "topics": [
+        "Amazon Translate"
+      ],
+      "description": "Grants permission to update an existing Parallel Data",
+      "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""

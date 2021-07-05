@@ -1,15 +1,28 @@
 {
   "servicePrefix": "apigateway",
   "actions": {
+    "AddCertificateToDomain": {
+      "name": "AddCertificateToDomain",
+      "topics": [
+        "Amazon API Gateway Management"
+      ],
+      "description": "Grants permission to add certificates for mutual TLS authentication to a domain name.\n                                                This is an additional authorization control for managing the DomainName resource due\n                                                to the sensitive nature of mTLS",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "DomainName"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DELETE": {
       "name": "DELETE",
       "topics": [
-        "Manage Amazon API Gateway"
+        "Amazon API Gateway Management V2"
       ],
-      "description": "Used to delete resources",
+      "description": "Grants permission to delete a particular resource",
       "accessLevel": "Write",
       "resourceTypes": [
-        "apigateway-general*"
+        "AccessLogSettings"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -17,12 +30,12 @@
     "GET": {
       "name": "GET",
       "topics": [
-        "Manage Amazon API Gateway"
+        "Amazon API Gateway Management V2"
       ],
-      "description": "Used to get information about resources",
+      "description": "Grants permission to read a particular resource",
       "accessLevel": "Read",
       "resourceTypes": [
-        "apigateway-general*"
+        "AccessLogSettings"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -30,12 +43,12 @@
     "PATCH": {
       "name": "PATCH",
       "topics": [
-        "Manage Amazon API Gateway"
+        "Amazon API Gateway Management V2"
       ],
-      "description": "Used to update resources",
+      "description": "Grants permission to update a particular resource",
       "accessLevel": "Write",
       "resourceTypes": [
-        "apigateway-general*"
+        "Api"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -43,12 +56,12 @@
     "POST": {
       "name": "POST",
       "topics": [
-        "Manage Amazon API Gateway"
+        "Amazon API Gateway Management V2"
       ],
-      "description": "Used to create child resources",
+      "description": "Grants permission to create a particular resource",
       "accessLevel": "Write",
       "resourceTypes": [
-        "apigateway-general*"
+        "ApiMappings"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -56,12 +69,25 @@
     "PUT": {
       "name": "PUT",
       "topics": [
-        "Manage Amazon API Gateway"
+        "Amazon API Gateway Management V2"
       ],
-      "description": "Used to update resources (and, although not recommended, can be used to create child\n                                                resources)",
+      "description": "Grants permission to update a particular resource",
       "accessLevel": "Write",
       "resourceTypes": [
-        "apigateway-general*"
+        "Apis"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemoveCertificateFromDomain": {
+      "name": "RemoveCertificateFromDomain",
+      "topics": [
+        "Amazon API Gateway Management"
+      ],
+      "description": "Grants permission to remove certificates for mutual TLS authentication from a domain\n                                                name. This is an additional authorization control for managing the DomainName resource\n                                                due to the sensitive nature of mTLS",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "DomainName"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -69,12 +95,12 @@
     "SetWebACL": {
       "name": "SetWebACL",
       "topics": [
-        "Manage Amazon API Gateway"
+        "Amazon API Gateway Management"
       ],
-      "description": "Gives WebAcl permissions to WAF",
-      "accessLevel": "Write",
+      "description": "Grants permission set a WAF access control list (ACL). This is an additional authorization\n                                                control for managing the Stage resource due to the sensitive nature of WebAcl's",
+      "accessLevel": "Permissions management",
       "resourceTypes": [
-        "apigateway-general*"
+        "Stage"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -82,18 +108,19 @@
     "UpdateRestApiPolicy": {
       "name": "UpdateRestApiPolicy",
       "topics": [
-        "Manage Amazon API Gateway"
+        "Amazon API Gateway Management"
       ],
-      "description": "Used to update the Resource Policy for a given API",
-      "accessLevel": "Write",
+      "description": "Grants permission to manage the IAM resource policy for an API. This is an additional\n                                                authorization control for managing an API due to the sensitive nature of the resource\n                                                policy",
+      "accessLevel": "Permissions management",
       "resourceTypes": [
-        "apigateway-general*"
+        "RestApi"
       ],
       "conditionKeys": "",
       "dependentActions": ""
     }
   },
   "topics": [
-    "Manage Amazon API Gateway"
+    "Amazon API Gateway Management",
+    "Amazon API Gateway Management V2"
   ]
 }

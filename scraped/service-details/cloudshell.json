@@ -1,0 +1,123 @@
+{
+  "servicePrefix": "cloudshell",
+  "actions": {
+    "CreateEnvironment": {
+      "name": "CreateEnvironment",
+      "topics": [
+        "AWS CloudShell"
+      ],
+      "description": "Grants permissions to create a CloudShell environment",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateSession": {
+      "name": "CreateSession",
+      "topics": [
+        "AWS CloudShell"
+      ],
+      "description": "Grants permissions to connect to a CloudShell environment from the AWS Management\n                                                Console",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Environment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteEnvironment": {
+      "name": "DeleteEnvironment",
+      "topics": [
+        "AWS CloudShell"
+      ],
+      "description": "Grants permission to delete a CloudShell environment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Environment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEnvironmentStatus": {
+      "name": "GetEnvironmentStatus",
+      "topics": [
+        "AWS CloudShell"
+      ],
+      "description": "Grants permission to read a CloudShell environment status",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Environment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFileDownloadUrls": {
+      "name": "GetFileDownloadUrls",
+      "topics": [
+        "AWS CloudShell"
+      ],
+      "description": "Grants permissions to download files from a CloudShell environment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Environment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFileUploadUrls": {
+      "name": "GetFileUploadUrls",
+      "topics": [
+        "AWS CloudShell"
+      ],
+      "description": "Grants permissions to upload files to a CloudShell environment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Environment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutCredentials": {
+      "name": "PutCredentials",
+      "topics": [
+        "AWS CloudShell"
+      ],
+      "description": "Grants permissions to forward console credentials to the environment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Environment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartEnvironment": {
+      "name": "StartEnvironment",
+      "topics": [
+        "AWS CloudShell"
+      ],
+      "description": "Grants permission to start a stopped CloudShell environment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Environment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopEnvironment": {
+      "name": "StopEnvironment",
+      "topics": [
+        "AWS CloudShell"
+      ],
+      "description": "Grants permission to stop a running CloudShell environment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Environment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "AWS CloudShell"
+  ]
+}

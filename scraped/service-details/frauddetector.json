@@ -6,7 +6,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Creates a batch of variables.",
+      "description": "Grants permission to create a batch of variables",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -17,10 +17,36 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Gets a batch of variables.",
+      "description": "Grants permission to get a batch of variables",
       "accessLevel": "List",
       "resourceTypes": [
         "variable"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CancelBatchPredictionJob": {
+      "name": "CancelBatchPredictionJob",
+      "topics": [
+        "Amazon Fraud Detector"
+      ],
+      "description": "Grants permission to cancel the specified batch prediction job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "batch-prediction*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateBatchPredictionJob": {
+      "name": "CreateBatchPredictionJob",
+      "topics": [
+        "Amazon Fraud Detector"
+      ],
+      "description": "Grants permission to create a batch prediction job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "batch-prediction*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -30,7 +56,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Creates a detector version. The detector version starts in a DRAFT status.",
+      "description": "Grants permission to create a detector version. The detector version starts in a DRAFT\n                                                status",
       "accessLevel": "Write",
       "resourceTypes": [
         "detector*"
@@ -43,7 +69,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Creates a model using the specified model type.",
+      "description": "Grants permission to create a model using the specified model type",
       "accessLevel": "Write",
       "resourceTypes": [
         "model*"
@@ -56,7 +82,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Creates a version of the model using the specified model type and model id.",
+      "description": "Grants permission to create a version of the model using the specified model type\n                                                and model id",
       "accessLevel": "Write",
       "resourceTypes": [
         "model*"
@@ -69,7 +95,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Creates a rule for use with the specified detector.",
+      "description": "Grants permission to create a rule for use with the specified detector",
       "accessLevel": "Write",
       "resourceTypes": [
         "detector*"
@@ -82,10 +108,23 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Creates a variable.",
+      "description": "Grants permission to create a variable",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "DeleteBatchPredictionJob": {
+      "name": "DeleteBatchPredictionJob",
+      "topics": [
+        "Amazon Fraud Detector"
+      ],
+      "description": "Grants permission to delete a batch prediction job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "batch-prediction*"
+      ],
+      "conditionKeys": "",
       "dependentActions": ""
     },
     "DeleteDetector": {
@@ -93,7 +132,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Deletes the detector. Before deleting a detector, you must first delete all detector\n                                                versions and rule versions associated with the detector.",
+      "description": "Grants permission to delete the detector. Before deleting a detector, you must first\n                                                delete all detector versions and rule versions associated with the detector",
       "accessLevel": "Write",
       "resourceTypes": [
         "detector*"
@@ -106,7 +145,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Deletes the detector version. You cannot delete detector versions that are in ACTIVE\n                                                status.",
+      "description": "Grants permission to delete the detector version. You cannot delete detector versions\n                                                that are in ACTIVE status",
       "accessLevel": "Write",
       "resourceTypes": [
         "detector-version*"
@@ -119,7 +158,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Deletes an entity type. You cannot delete an entity type that is included in an event\n                                                type.",
+      "description": "Grants permission to delete an entity type. You cannot delete an entity type that\n                                                is included in an event type",
       "accessLevel": "Write",
       "resourceTypes": [
         "entity-type*"
@@ -132,7 +171,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Deletes the specified event.",
+      "description": "Grants permission to deletes the specified event",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -143,7 +182,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Deletes an event type. You cannot delete an event type that is used in a detector\n                                                or a model.",
+      "description": "Grants permission to delete an event type. You cannot delete an event type that is\n                                                used in a detector or a model",
       "accessLevel": "Write",
       "resourceTypes": [
         "event-type*"
@@ -156,7 +195,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Removes a SageMaker model from Amazon Fraud Detector. You can remove an Amazon SageMaker\n                                                model if it is not associated with a detector version.",
+      "description": "Grants permission to remove a SageMaker model from Amazon Fraud Detector. You can\n                                                remove an Amazon SageMaker model if it is not associated with a detector version",
       "accessLevel": "Write",
       "resourceTypes": [
         "external-model*"
@@ -169,7 +208,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Deletes a label. You cannot delete labels that are included in an event type in Amazon\n                                                Fraud Detector. You cannot delete a label assigned to an event ID. You must first\n                                                delete the relevant event ID.",
+      "description": "Grants permission to delete a label. You cannot delete labels that are included in\n                                                an event type in Amazon Fraud Detector. You cannot delete a label assigned to an event\n                                                ID. You must first delete the relevant event ID",
       "accessLevel": "Write",
       "resourceTypes": [
         "label*"
@@ -182,7 +221,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Deletes a model. You can delete models and model versions in Amazon Fraud Detector,\n                                                provided that they are not associated with a detector version.",
+      "description": "Grants permission to delete a model. You can delete models and model versions in Amazon\n                                                Fraud Detector, provided that they are not associated with a detector version",
       "accessLevel": "Write",
       "resourceTypes": [
         "model*"
@@ -195,7 +234,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Deletes a model version. You can delete models and model versions in Amazon Fraud\n                                                Detector, provided that they are not associated with a detector version.",
+      "description": "Grants permission to delete a model version. You can delete models and model versions\n                                                in Amazon Fraud Detector, provided that they are not associated with a detector version",
       "accessLevel": "Write",
       "resourceTypes": [
         "model-version*"
@@ -208,7 +247,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Deletes an outcome. You cannot delete an outcome that is used in a rule version.",
+      "description": "Grants permission to delete an outcome. You cannot delete an outcome that is used\n                                                in a rule version",
       "accessLevel": "Write",
       "resourceTypes": [
         "outcome*"
@@ -221,7 +260,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Deletes the rule. You cannot delete a rule if it is used by an ACTIVE or INACTIVE\n                                                detector version.",
+      "description": "Grants permission to delete the rule. You cannot delete a rule if it is used by an\n                                                ACTIVE or INACTIVE detector version",
       "accessLevel": "Write",
       "resourceTypes": [
         "rule*"
@@ -234,7 +273,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Deletes a variable. You cannot delete variables that are included in an event type\n                                                in Amazon Fraud Detector.",
+      "description": "Grants permission to delete a variable. You cannot delete variables that are included\n                                                in an event type in Amazon Fraud Detector",
       "accessLevel": "Write",
       "resourceTypes": [
         "variable*"
@@ -247,7 +286,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Gets all versions for a specified detector.",
+      "description": "Grants permission to get all versions for a specified detector",
       "accessLevel": "Read",
       "resourceTypes": [
         "detector*"
@@ -260,10 +299,23 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Gets all of the model versions for the specified model type or for the specified model\n                                                type and model ID. You can also get details for a single, specified model version.",
+      "description": "Grants permission to get all of the model versions for the specified model type or\n                                                for the specified model type and model ID. You can also get details for a single,\n                                                specified model version",
       "accessLevel": "Read",
       "resourceTypes": [
         "model-version"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBatchPredictionJobs": {
+      "name": "GetBatchPredictionJobs",
+      "topics": [
+        "Amazon Fraud Detector"
+      ],
+      "description": "Grants permission to get all batch prediction jobs or a specific job if you specify\n                                                a job ID. This is a paginated API. If you provide a null maxResults, this action retrieves\n                                                a maximum of 50 records per page. If you provide a maxResults, the value must be between\n                                                1 and 50. To get the next page results, provide the pagination token from the GetBatchPredictionJobsResponse\n                                                as part of your request. A null pagination token fetches the records from the beginning",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "batch-prediction"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -273,7 +325,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Gets a particular detector version.",
+      "description": "Grants permission to get a particular detector version",
       "accessLevel": "List",
       "resourceTypes": [
         "detector-version*"
@@ -286,7 +338,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Gets all detectors or a single detector if a detectorId is specified. This is a paginated\n                                                API. If you provide a null maxResults, this action retrieves a maximum of 10 records\n                                                per page. If you provide a maxResults, the value must be between 5 and 10. To get\n                                                the next page results, provide the pagination token from the GetDetectorsResponse\n                                                as part of your request. A null pagination token fetches the records from the beginning.",
+      "description": "Grants permission to get all detectors or a single detector if a detectorId is specified.\n                                                This is a paginated API. If you provide a null maxResults, this action retrieves a\n                                                maximum of 10 records per page. If you provide a maxResults, the value must be between\n                                                5 and 10. To get the next page results, provide the pagination token from the GetDetectorsResponse\n                                                as part of your request. A null pagination token fetches the records from the beginning",
       "accessLevel": "List",
       "resourceTypes": [
         "detector"
@@ -299,7 +351,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Gets all entity types or a specific entity type if a name is specified. This is a\n                                                paginated API. If you provide a null maxResults, this action retrieves a maximum of\n                                                10 records per page. If you provide a maxResults, the value must be between 5 and\n                                                10. To get the next page results, provide the pagination token from the GetEntityTypesResponse\n                                                as part of your request. A null pagination token fetches the records from the beginning.",
+      "description": "Grants permission to get all entity types or a specific entity type if a name is specified.\n                                                This is a paginated API. If you provide a null maxResults, this action retrieves a\n                                                maximum of 10 records per page. If you provide a maxResults, the value must be between\n                                                5 and 10. To get the next page results, provide the pagination token from the GetEntityTypesResponse\n                                                as part of your request. A null pagination token fetches the records from the beginning",
       "accessLevel": "List",
       "resourceTypes": [
         "entity-type"
@@ -312,7 +364,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Evaluates an event against a detector version. If a version ID is not provided, the\n                                                detector’s (ACTIVE) version is used.",
+      "description": "Grants permission to evaluate an event against a detector version. If a version ID\n                                                is not provided, the detector’s (ACTIVE) version is used",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -323,7 +375,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Gets all event types or a specific event type if name is provided. This is a paginated\n                                                API. If you provide a null maxResults, this action retrieves a maximum of 10 records\n                                                per page. If you provide a maxResults, the value must be between 5 and 10. To get\n                                                the next page results, provide the pagination token from the GetEventTypesResponse\n                                                as part of your request. A null pagination token fetches the records from the beginning.",
+      "description": "Grants permission to get all event types or a specific event type if name is provided.\n                                                This is a paginated API. If you provide a null maxResults, this action retrieves a\n                                                maximum of 10 records per page. If you provide a maxResults, the value must be between\n                                                5 and 10. To get the next page results, provide the pagination token from the GetEventTypesResponse\n                                                as part of your request. A null pagination token fetches the records from the beginning",
       "accessLevel": "List",
       "resourceTypes": [
         "event-type"
@@ -336,7 +388,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Gets the details for one or more Amazon SageMaker models that have been imported into\n                                                the service. This is a paginated API. If you provide a null maxResults, this actions\n                                                retrieves a maximum of 10 records per page. If you provide a maxResults, the value\n                                                must be between 5 and 10. To get the next page results, provide the pagination token\n                                                from the GetExternalModelsResult as part of your request. A null pagination token\n                                                fetches the records from the beginning.",
+      "description": "Grants permission to get the details for one or more Amazon SageMaker models that\n                                                have been imported into the service. This is a paginated API. If you provide a null\n                                                maxResults, this actions retrieves a maximum of 10 records per page. If you provide\n                                                a maxResults, the value must be between 5 and 10. To get the next page results, provide\n                                                the pagination token from the GetExternalModelsResult as part of your request. A null\n                                                pagination token fetches the records from the beginning",
       "accessLevel": "List",
       "resourceTypes": [
         "external-model"
@@ -349,7 +401,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Gets the encryption key if a Key Management Service (KMS) customer master key (CMK)\n                                                has been specified to be used to encrypt content in Amazon Fraud Detector.",
+      "description": "Grants permission to get the encryption key if a Key Management Service (KMS) customer\n                                                master key (CMK) has been specified to be used to encrypt content in Amazon Fraud\n                                                Detector",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -360,7 +412,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Gets all labels or a specific label if name is provided. This is a paginated API.\n                                                If you provide a null maxResults, this action retrieves a maximum of 50 records per\n                                                page. If you provide a maxResults, the value must be between 10 and 50. To get the\n                                                next page results, provide the pagination token from the GetGetLabelsResponse as part\n                                                of your request. A null pagination token fetches the records from the beginning.",
+      "description": "Grants permission to get all labels or a specific label if name is provided. This\n                                                is a paginated API. If you provide a null maxResults, this action retrieves a maximum\n                                                of 50 records per page. If you provide a maxResults, the value must be between 10\n                                                and 50. To get the next page results, provide the pagination token from the GetGetLabelsResponse\n                                                as part of your request. A null pagination token fetches the records from the beginning",
       "accessLevel": "List",
       "resourceTypes": [
         "label"
@@ -373,7 +425,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Gets the details of the specified model version.",
+      "description": "Grants permission to get the details of the specified model version",
       "accessLevel": "List",
       "resourceTypes": [
         "model-version*"
@@ -386,7 +438,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Gets one or more models. Gets all models for the AWS account if no model type and\n                                                no model id provided. Gets all models for the AWS account and model type, if the model\n                                                type is specified but model id is not provided. Gets a specific model if (model type,\n                                                model id) tuple is specified.",
+      "description": "Grants permission to get one or more models. Gets all models for the AWS account if\n                                                no model type and no model id provided. Gets all models for the AWS account and model\n                                                type, if the model type is specified but model id is not provided. Gets a specific\n                                                model if (model type, model id) tuple is specified",
       "accessLevel": "List",
       "resourceTypes": [
         "model"
@@ -399,7 +451,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Gets one or more outcomes. This is a paginated API. If you provide a null maxResults,\n                                                this actions retrieves a maximum of 100 records per page. If you provide a maxResults,\n                                                the value must be between 50 and 100. To get the next page results, provide the pagination\n                                                token from the GetOutcomesResult as part of your request. A null pagination token\n                                                fetches the records from the beginning.",
+      "description": "Grants permission to get one or more outcomes. This is a paginated API. If you provide\n                                                a null maxResults, this actions retrieves a maximum of 100 records per page. If you\n                                                provide a maxResults, the value must be between 50 and 100. To get the next page results,\n                                                provide the pagination token from the GetOutcomesResult as part of your request. A\n                                                null pagination token fetches the records from the beginning",
       "accessLevel": "List",
       "resourceTypes": [
         "outcome"
@@ -412,7 +464,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Get all rules for a detector (paginated) if ruleId and ruleVersion are not specified.\n                                                Gets all rules for the detector and the ruleId if present (paginated). Gets a specific\n                                                rule if both the ruleId and the ruleVersion are specified.",
+      "description": "Grants permission to get all rules for a detector (paginated) if ruleId and ruleVersion\n                                                are not specified. Gets all rules for the detector and the ruleId if present (paginated).\n                                                Gets a specific rule if both the ruleId and the ruleVersion are specified",
       "accessLevel": "List",
       "resourceTypes": [
         "rule"
@@ -425,7 +477,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Gets all of the variables or the specific variable. This is a paginated API. Providing\n                                                null maxSizePerPage results in retrieving maximum of 100 records per page. If you\n                                                provide maxSizePerPage the value must be between 50 and 100. To get the next page\n                                                result, a provide a pagination token from GetVariablesResult as part of your request.\n                                                Null pagination token fetches the records from the beginning.",
+      "description": "Grants permission to get all of the variables or the specific variable. This is a\n                                                paginated API. Providing null maxSizePerPage results in retrieving maximum of 100\n                                                records per page. If you provide maxSizePerPage the value must be between 50 and 100.\n                                                To get the next page result, a provide a pagination token from GetVariablesResult\n                                                as part of your request. Null pagination token fetches the records from the beginning",
       "accessLevel": "List",
       "resourceTypes": [
         "variable"
@@ -438,7 +490,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Lists all tags associated with the resource. This is a paginated API. To get the next\n                                                page results, provide the pagination token from the response as part of your request.\n                                                A null pagination token fetches the records from the beginning.",
+      "description": "Grants permission to list all tags associated with the resource. This is a paginated\n                                                API. To get the next page results, provide the pagination token from the response\n                                                as part of your request. A null pagination token fetches the records from the beginning",
       "accessLevel": "List",
       "resourceTypes": [
         "detector"
@@ -451,7 +503,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Creates or updates a detector.",
+      "description": "Grants permission to create or update a detector",
       "accessLevel": "Write",
       "resourceTypes": [
         "detector*"
@@ -464,7 +516,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Creates or updates an entity type. An entity represents who is performing the event.\n                                                As part of a fraud prediction, you pass the entity ID to indicate the specific entity\n                                                who performed the event. An entity type classifies the entity. Example classifications\n                                                include customer, merchant, or account.",
+      "description": "Grants permission to create or update an entity type. An entity represents who is\n                                                performing the event. As part of a fraud prediction, you pass the entity ID to indicate\n                                                the specific entity who performed the event. An entity type classifies the entity.\n                                                Example classifications include customer, merchant, or account",
       "accessLevel": "Write",
       "resourceTypes": [
         "entity-type*"
@@ -477,7 +529,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Creates or updates an event type. An event is a business activity that is evaluated\n                                                for fraud risk. With Amazon Fraud Detector, you generate fraud predictions for events.\n                                                An event type defines the structure for an event sent to Amazon Fraud Detector. This\n                                                includes the variables sent as part of the event, the entity performing the event\n                                                (such as a customer), and the labels that classify the event. Example event types\n                                                include online payment transactions, account registrations, and authentications.",
+      "description": "Grants permission to create or update an event type. An event is a business activity\n                                                that is evaluated for fraud risk. With Amazon Fraud Detector, you generate fraud predictions\n                                                for events. An event type defines the structure for an event sent to Amazon Fraud\n                                                Detector. This includes the variables sent as part of the event, the entity performing\n                                                the event (such as a customer), and the labels that classify the event. Example event\n                                                types include online payment transactions, account registrations, and authentications",
       "accessLevel": "Write",
       "resourceTypes": [
         "event-type*"
@@ -490,7 +542,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Creates or updates an Amazon SageMaker model endpoint. You can also use this action\n                                                to update the configuration of the model endpoint, including the IAM role and/or the\n                                                mapped variables.",
+      "description": "Grants permission to create or update an Amazon SageMaker model endpoint. You can\n                                                also use this action to update the configuration of the model endpoint, including\n                                                the IAM role and/or the mapped variables",
       "accessLevel": "Write",
       "resourceTypes": [
         "external-model*"
@@ -503,7 +555,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Specifies the Key Management Service (KMS) customer master key (CMK) to be used to\n                                                encrypt content in Amazon Fraud Detector.",
+      "description": "Grants permission to specify the Key Management Service (KMS) customer master key\n                                                (CMK) to be used to encrypt content in Amazon Fraud Detector",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -514,7 +566,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Creates or updates label. A label classifies an event as fraudulent or legitimate.\n                                                Labels are associated with event types and used to train supervised machine learning\n                                                models in Amazon Fraud Detector.",
+      "description": "Grants permission to create or update label. A label classifies an event as fraudulent\n                                                or legitimate. Labels are associated with event types and used to train supervised\n                                                machine learning models in Amazon Fraud Detector",
       "accessLevel": "Write",
       "resourceTypes": [
         "label*"
@@ -527,7 +579,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Creates or updates an outcome.",
+      "description": "Grants permission to create or update an outcome",
       "accessLevel": "Write",
       "resourceTypes": [
         "outcome*"
@@ -540,7 +592,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Assigns tags to a resource.",
+      "description": "Grants permission to assign tags to a resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "detector"
@@ -553,7 +605,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Removes tags from a resource.",
+      "description": "Grants permission to remove tags from a resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "detector"
@@ -566,7 +618,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Updates a detector version. The detector version attributes that you can update include\n                                                models, external model endpoints, rules, rule execution mode, and description. You\n                                                can only update a DRAFT detector version.",
+      "description": "Grants permission to update a detector version. The detector version attributes that\n                                                you can update include models, external model endpoints, rules, rule execution mode,\n                                                and description. You can only update a DRAFT detector version",
       "accessLevel": "Write",
       "resourceTypes": [
         "detector*"
@@ -579,7 +631,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Updates the detector version's description. You can update the metadata for any detector\n                                                version (DRAFT, ACTIVE, or INACTIVE).",
+      "description": "Grants permission to update the detector version's description. You can update the\n                                                metadata for any detector version (DRAFT, ACTIVE, or INACTIVE)",
       "accessLevel": "Write",
       "resourceTypes": [
         "detector-version*"
@@ -592,7 +644,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Updates the detector version’s status. You can perform the following promotions or\n                                                demotions using UpdateDetectorVersionStatus: DRAFT to ACTIVE, ACTIVE to INACTIVE,\n                                                and INACTIVE to ACTIVE.",
+      "description": "Grants permission to update the detector version’s status. You can perform the following\n                                                promotions or demotions using UpdateDetectorVersionStatus: DRAFT to ACTIVE, ACTIVE\n                                                to INACTIVE, and INACTIVE to ACTIVE",
       "accessLevel": "Write",
       "resourceTypes": [
         "detector-version*"
@@ -605,7 +657,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Updates a model. You can update the description attribute using this action.",
+      "description": "Grants permission to update a model. You can update the description attribute using\n                                                this action",
       "accessLevel": "Write",
       "resourceTypes": [
         "model*"
@@ -618,7 +670,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Updates a model version. Updating a model version retrains an existing model version\n                                                using updated training data and produces a new minor version of the model. You can\n                                                update the training data set location and data access role attributes using this action.\n                                                This action creates and trains a new minor version of the model, for example version\n                                                1.01, 1.02, 1.03.",
+      "description": "Grants permission to update a model version. Updating a model version retrains an\n                                                existing model version using updated training data and produces a new minor version\n                                                of the model. You can update the training data set location and data access role attributes\n                                                using this action. This action creates and trains a new minor version of the model,\n                                                for example version 1.01, 1.02, 1.03",
       "accessLevel": "Write",
       "resourceTypes": [
         "model*"
@@ -631,7 +683,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Updates the status of a model version.",
+      "description": "Grants permission to update the status of a model version",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -642,7 +694,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Updates a rule's metadata. The description attribute can be updated.",
+      "description": "Grants permission to update a rule's metadata. The description attribute can be updated",
       "accessLevel": "Write",
       "resourceTypes": [
         "rule*"
@@ -655,7 +707,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Updates a rule version resulting in a new rule version. Updates a rule version resulting\n                                                in a new rule version (version 1, 2, 3 ...).",
+      "description": "Grants permission to update a rule version resulting in a new rule version. Updates\n                                                a rule version resulting in a new rule version (version 1, 2, 3 ...)",
       "accessLevel": "Write",
       "resourceTypes": [
         "rule*"
@@ -668,7 +720,7 @@
       "topics": [
         "Amazon Fraud Detector"
       ],
-      "description": "Updates a variable.",
+      "description": "Grants permission to update a variable",
       "accessLevel": "Write",
       "resourceTypes": [
         "variable*"

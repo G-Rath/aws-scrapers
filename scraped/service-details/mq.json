@@ -6,7 +6,7 @@
       "topics": [
         "Amazon MQ"
       ],
-      "description": "Grants permission to create a broker.",
+      "description": "Grants permission to create a broker",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -17,7 +17,7 @@
       "topics": [
         "Amazon MQ"
       ],
-      "description": "Grants permission to create a new configuration for the specified configuration name.\n                                                Amazon MQ uses the default configuration (the engine type and engine version).",
+      "description": "Grants permission to create a new configuration for the specified configuration name.\n                                                Amazon MQ uses the default configuration (the engine type and engine version)",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -28,8 +28,8 @@
       "topics": [
         "Amazon MQ"
       ],
-      "description": "Grants permission to create tags.",
-      "accessLevel": "Write",
+      "description": "Grants permission to create tags",
+      "accessLevel": "Tagging",
       "resourceTypes": [
         "brokers"
       ],
@@ -41,7 +41,7 @@
       "topics": [
         "Amazon MQ"
       ],
-      "description": "Grants permission to create an ActiveMQ user.",
+      "description": "Grants permission to create an ActiveMQ user",
       "accessLevel": "Write",
       "resourceTypes": [
         "brokers*"
@@ -54,7 +54,7 @@
       "topics": [
         "Amazon MQ"
       ],
-      "description": "Grants permission to delete a broker.",
+      "description": "Grants permission to delete a broker",
       "accessLevel": "Write",
       "resourceTypes": [
         "brokers*"
@@ -67,8 +67,8 @@
       "topics": [
         "Amazon MQ"
       ],
-      "description": "Grants permission to delete tags.",
-      "accessLevel": "Write",
+      "description": "Grants permission to delete tags",
+      "accessLevel": "Tagging",
       "resourceTypes": [
         "brokers"
       ],
@@ -80,7 +80,7 @@
       "topics": [
         "Amazon MQ"
       ],
-      "description": "Grants permission to delete an ActiveMQ user.",
+      "description": "Grants permission to delete an ActiveMQ user",
       "accessLevel": "Write",
       "resourceTypes": [
         "brokers*"
@@ -93,7 +93,7 @@
       "topics": [
         "Amazon MQ"
       ],
-      "description": "Grants permission to return information about the specified broker.",
+      "description": "Grants permission to return information about the specified broker",
       "accessLevel": "Read",
       "resourceTypes": [
         "brokers*"
@@ -106,7 +106,7 @@
       "topics": [
         "Amazon MQ"
       ],
-      "description": "Grants permission to return information about broker engines.",
+      "description": "Grants permission to return information about broker engines",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -128,7 +128,7 @@
       "topics": [
         "Amazon MQ"
       ],
-      "description": "Grants permission to return information about the specified configuration.",
+      "description": "Grants permission to return information about the specified configuration",
       "accessLevel": "Read",
       "resourceTypes": [
         "configurations*"
@@ -141,7 +141,7 @@
       "topics": [
         "Amazon MQ"
       ],
-      "description": "Grants permission to return the specified configuration revision for the specified\n                                                configuration.",
+      "description": "Grants permission to return the specified configuration revision for the specified\n                                                configuration",
       "accessLevel": "Read",
       "resourceTypes": [
         "configurations*"
@@ -154,7 +154,7 @@
       "topics": [
         "Amazon MQ"
       ],
-      "description": "Grants permission to return information about an ActiveMQ user.",
+      "description": "Grants permission to return information about an ActiveMQ user",
       "accessLevel": "Read",
       "resourceTypes": [
         "brokers*"
@@ -167,7 +167,7 @@
       "topics": [
         "Amazon MQ"
       ],
-      "description": "Grants permission to return a list of all brokers.",
+      "description": "Grants permission to return a list of all brokers",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -178,7 +178,7 @@
       "topics": [
         "Amazon MQ"
       ],
-      "description": "Grants permission to return a list of all existing revisions for the specified configuration.",
+      "description": "Grants permission to return a list of all existing revisions for the specified configuration",
       "accessLevel": "List",
       "resourceTypes": [
         "configurations*"
@@ -191,7 +191,7 @@
       "topics": [
         "Amazon MQ"
       ],
-      "description": "Grants permission to return a list of all configurations.",
+      "description": "Grants permission to return a list of all configurations",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -202,7 +202,7 @@
       "topics": [
         "Amazon MQ"
       ],
-      "description": "Grants permission to return a list of tags.",
+      "description": "Grants permission to return a list of tags",
       "accessLevel": "List",
       "resourceTypes": [
         "brokers"
@@ -215,7 +215,7 @@
       "topics": [
         "Amazon MQ"
       ],
-      "description": "Grants permission to return a list of all ActiveMQ users.",
+      "description": "Grants permission to return a list of all ActiveMQ users",
       "accessLevel": "List",
       "resourceTypes": [
         "brokers*"
@@ -228,7 +228,7 @@
       "topics": [
         "Amazon MQ"
       ],
-      "description": "Grants permission to reboot a broker.",
+      "description": "Grants permission to reboot a broker",
       "accessLevel": "Write",
       "resourceTypes": [
         "brokers*"
@@ -241,7 +241,7 @@
       "topics": [
         "Amazon MQ"
       ],
-      "description": "Grants permission to add a pending configuration change to a broker.",
+      "description": "Grants permission to add a pending configuration change to a broker",
       "accessLevel": "Write",
       "resourceTypes": [
         "brokers*"
@@ -254,7 +254,7 @@
       "topics": [
         "Amazon MQ"
       ],
-      "description": "Grants permission to update the specified configuration.",
+      "description": "Grants permission to update the specified configuration",
       "accessLevel": "Write",
       "resourceTypes": [
         "configurations*"
@@ -267,7 +267,7 @@
       "topics": [
         "Amazon MQ"
       ],
-      "description": "Grants permission to update the information for an ActiveMQ user.",
+      "description": "Grants permission to update the information for an ActiveMQ user",
       "accessLevel": "Write",
       "resourceTypes": [
         "brokers*"

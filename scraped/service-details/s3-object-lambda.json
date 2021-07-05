@@ -1,0 +1,242 @@
+{
+  "servicePrefix": "s3-object-lambda",
+  "actions": {
+    "AbortMultipartUpload": {
+      "name": "AbortMultipartUpload",
+      "topics": [
+        "Amazon S3 Object Lambda"
+      ],
+      "description": "Grants permission to abort a multipart upload",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteObject": {
+      "name": "DeleteObject",
+      "topics": [
+        "Amazon S3 Object Lambda"
+      ],
+      "description": "Grants permission to remove the null version of an object and insert a delete marker,\n                                                which becomes the current version of the object",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteObjectTagging": {
+      "name": "DeleteObjectTagging",
+      "topics": [
+        "Amazon S3 Object Lambda"
+      ],
+      "description": "Grants permission to use the tagging subresource to remove the entire tag set from\n                                                the specified object",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetObject": {
+      "name": "GetObject",
+      "topics": [
+        "Amazon S3 Object Lambda"
+      ],
+      "description": "Grants permission to retrieve objects from Amazon S3",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetObjectAcl": {
+      "name": "GetObjectAcl",
+      "topics": [
+        "Amazon S3 Object Lambda"
+      ],
+      "description": "Grants permission to return the access control list (ACL) of an object",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetObjectLegalHold": {
+      "name": "GetObjectLegalHold",
+      "topics": [
+        "Amazon S3 Object Lambda"
+      ],
+      "description": "Grants permission to get an object's current Legal Hold status",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetObjectRetention": {
+      "name": "GetObjectRetention",
+      "topics": [
+        "Amazon S3 Object Lambda"
+      ],
+      "description": "Grants permission to retrieve the retention settings for an object",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetObjectTagging": {
+      "name": "GetObjectTagging",
+      "topics": [
+        "Amazon S3 Object Lambda"
+      ],
+      "description": "Grants permission to return the tag set of an object",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetObjectVersion": {
+      "name": "GetObjectVersion",
+      "topics": [
+        "Amazon S3 Object Lambda"
+      ],
+      "description": "Grants permission to retrieve a specific version of an object",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListBucket": {
+      "name": "ListBucket",
+      "topics": [
+        "Amazon S3 Object Lambda"
+      ],
+      "description": "Grants permission to list some or all of the objects in an Amazon S3 bucket (up to\n                                                1000)",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMultipartUploadParts": {
+      "name": "ListMultipartUploadParts",
+      "topics": [
+        "Amazon S3 Object Lambda"
+      ],
+      "description": "Grants permission to list the parts that have been uploaded for a specific multipart\n                                                upload",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutObject": {
+      "name": "PutObject",
+      "topics": [
+        "Amazon S3 Object Lambda"
+      ],
+      "description": "Grants permission to add an object to a bucket",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutObjectAcl": {
+      "name": "PutObjectAcl",
+      "topics": [
+        "Amazon S3 Object Lambda"
+      ],
+      "description": "Grants permission to set the access control list (ACL) permissions for new or existing\n                                                objects in an S3 bucket.",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutObjectLegalHold": {
+      "name": "PutObjectLegalHold",
+      "topics": [
+        "Amazon S3 Object Lambda"
+      ],
+      "description": "Grants permission to apply a Legal Hold configuration to the specified object",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutObjectRetention": {
+      "name": "PutObjectRetention",
+      "topics": [
+        "Amazon S3 Object Lambda"
+      ],
+      "description": "Grants permission to place an Object Retention configuration on an object",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutObjectTagging": {
+      "name": "PutObjectTagging",
+      "topics": [
+        "Amazon S3 Object Lambda"
+      ],
+      "description": "Grants permission to set the supplied tag-set to an object that already exists in\n                                                a bucket",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RestoreObject": {
+      "name": "RestoreObject",
+      "topics": [
+        "Amazon S3 Object Lambda"
+      ],
+      "description": "Grants permission to restore an archived copy of an object back into Amazon S3",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "WriteGetObjectResponse": {
+      "name": "WriteGetObjectResponse",
+      "topics": [
+        "Amazon S3 Object Lambda"
+      ],
+      "description": "Grants permission to provide data for GetObject requests send to S3 Object Lambda",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "objectlambdaaccesspoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "Amazon S3 Object Lambda"
+  ]
+}

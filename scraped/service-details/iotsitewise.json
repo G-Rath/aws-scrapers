@@ -59,7 +59,7 @@
         "AWS IoT SiteWise"
       ],
       "description": "Grants permission to create an access policy for a portal or a project",
-      "accessLevel": "Permissions management",
+      "accessLevel": "Write",
       "resourceTypes": [
         "portal"
       ],
@@ -144,7 +144,7 @@
         "AWS IoT SiteWise"
       ],
       "description": "Grants permission to delete an access policy",
-      "accessLevel": "Permissions management",
+      "accessLevel": "Write",
       "resourceTypes": [
         "access-policy*"
       ],
@@ -235,7 +235,7 @@
         "AWS IoT SiteWise"
       ],
       "description": "Grants permission to describe an access policy",
-      "accessLevel": "Permissions management",
+      "accessLevel": "Read",
       "resourceTypes": [
         "access-policy*"
       ],
@@ -291,6 +291,17 @@
       "resourceTypes": [
         "dashboard*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDefaultEncryptionConfiguration": {
+      "name": "DescribeDefaultEncryptionConfiguration",
+      "topics": [
+        "AWS IoT SiteWise"
+      ],
+      "description": "Grants permission to describe the default encryption configuration for the AWS account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -415,7 +426,7 @@
         "AWS IoT SiteWise"
       ],
       "description": "Grants permission to list all access policies for an identity or a resource",
-      "accessLevel": "Permissions management",
+      "accessLevel": "List",
       "resourceTypes": [
         "portal"
       ],
@@ -430,6 +441,19 @@
       "description": "Grants permission to list all asset models",
       "accessLevel": "List",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAssetRelationships": {
+      "name": "ListAssetRelationships",
+      "topics": [
+        "AWS IoT SiteWise"
+      ],
+      "description": "Grants permission to list the asset relationship graph for an asset",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "asset*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -533,6 +557,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "PutDefaultEncryptionConfiguration": {
+      "name": "PutDefaultEncryptionConfiguration",
+      "topics": [
+        "AWS IoT SiteWise"
+      ],
+      "description": "Grants permission to set the default encryption configuration for the AWS account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "PutLoggingOptions": {
       "name": "PutLoggingOptions",
       "topics": [
@@ -576,7 +611,7 @@
         "AWS IoT SiteWise"
       ],
       "description": "Grants permission to update an access policy",
-      "accessLevel": "Permissions management",
+      "accessLevel": "Write",
       "resourceTypes": [
         "access-policy*"
       ],
@@ -602,6 +637,19 @@
         "AWS IoT SiteWise"
       ],
       "description": "Grants permission to update an asset model",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "asset-model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAssetModelPropertyRouting": {
+      "name": "UpdateAssetModelPropertyRouting",
+      "topics": [
+        "AWS IoT SiteWise"
+      ],
+      "description": "Grants permission to update an AssetModel property routing",
       "accessLevel": "Write",
       "resourceTypes": [
         "asset-model*"

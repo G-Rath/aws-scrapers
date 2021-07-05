@@ -1,0 +1,199 @@
+{
+  "servicePrefix": "healthlake",
+  "actions": {
+    "CreateFHIRDatastore": {
+      "name": "CreateFHIRDatastore",
+      "topics": [
+        "Amazon HealthLake"
+      ],
+      "description": "Grants permission to create a datastore that can ingest and export FHIR data",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateResource": {
+      "name": "CreateResource",
+      "topics": [
+        "Amazon HealthLake"
+      ],
+      "description": "Grants permission to create resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "datastore*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteFHIRDatastore": {
+      "name": "DeleteFHIRDatastore",
+      "topics": [
+        "Amazon HealthLake"
+      ],
+      "description": "Grants permission to delete a datastore",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "datastore*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteResource": {
+      "name": "DeleteResource",
+      "topics": [
+        "Amazon HealthLake"
+      ],
+      "description": "Grants permission to delete resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "datastore*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeFHIRDatastore": {
+      "name": "DescribeFHIRDatastore",
+      "topics": [
+        "Amazon HealthLake"
+      ],
+      "description": "Grants permission to get the properties associated with the FHIR datastore, including\n                                                the datastore ID, datastore ARN, datastore name, datastore status, created at, datastore\n                                                type version, and datastore endpoint",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "datastore*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeFHIRExportJob": {
+      "name": "DescribeFHIRExportJob",
+      "topics": [
+        "Amazon HealthLake"
+      ],
+      "description": "Grants permission to display the properties of a FHIR export job, including the ID,\n                                                ARN, name, and the status of the datastore",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "datastore*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeFHIRImportJob": {
+      "name": "DescribeFHIRImportJob",
+      "topics": [
+        "Amazon HealthLake"
+      ],
+      "description": "Grants permission to display the properties of a FHIR import job, including the ID,\n                                                ARN, name, and the status of the datastore",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "datastore*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetCapabilities": {
+      "name": "GetCapabilities",
+      "topics": [
+        "Amazon HealthLake"
+      ],
+      "description": "Grants permission to lists all FHIR datastores that are in the user’s account, regardless\n                                                of datastore status",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "datastore*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFHIRDatastores": {
+      "name": "ListFHIRDatastores",
+      "topics": [
+        "Amazon HealthLake"
+      ],
+      "description": "Grants permission to list all FHIR datastores that are in the user’s account, regardless\n                                                of datastore status",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ReadResource": {
+      "name": "ReadResource",
+      "topics": [
+        "Amazon HealthLake"
+      ],
+      "description": "Grants permission to read resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "datastore*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchWithGet": {
+      "name": "SearchWithGet",
+      "topics": [
+        "Amazon HealthLake"
+      ],
+      "description": "Grants permission to search resources with GET method",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "datastore*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchWithPost": {
+      "name": "SearchWithPost",
+      "topics": [
+        "Amazon HealthLake"
+      ],
+      "description": "Grants permission to search resources with POST method",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "datastore*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartFHIRExportJob": {
+      "name": "StartFHIRExportJob",
+      "topics": [
+        "Amazon HealthLake"
+      ],
+      "description": "Grants permission to begin a FHIR Export job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "datastore*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartFHIRImportJob": {
+      "name": "StartFHIRImportJob",
+      "topics": [
+        "Amazon HealthLake"
+      ],
+      "description": "Grants permission to begin a FHIR Import job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "datastore*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateResource": {
+      "name": "UpdateResource",
+      "topics": [
+        "Amazon HealthLake"
+      ],
+      "description": "Grants permission to update resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "datastore*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "Amazon HealthLake"
+  ]
+}

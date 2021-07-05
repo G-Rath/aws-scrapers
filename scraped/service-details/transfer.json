@@ -6,7 +6,7 @@
       "topics": [
         "AWS Transfer for SFTP"
       ],
-      "description": "Enables the caller to create a server.",
+      "description": "Grants permission to create a server",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
@@ -17,7 +17,7 @@
       "topics": [
         "AWS Transfer for SFTP"
       ],
-      "description": "Enables the caller to add a user associated with a server.",
+      "description": "Grants permission to add a user associated with a server",
       "accessLevel": "Write",
       "resourceTypes": [
         "server*"
@@ -30,7 +30,7 @@
       "topics": [
         "AWS Transfer for SFTP"
       ],
-      "description": "Enables the caller to delete a server.",
+      "description": "Grants permission to delete a server",
       "accessLevel": "Write",
       "resourceTypes": [
         "server*"
@@ -43,7 +43,7 @@
       "topics": [
         "AWS Transfer for SFTP"
       ],
-      "description": "Enables the caller to delete an SSH public key from a user.",
+      "description": "Grants permission to delete an SSH public key from a user",
       "accessLevel": "Write",
       "resourceTypes": [
         "user*"
@@ -56,11 +56,22 @@
       "topics": [
         "AWS Transfer for SFTP"
       ],
-      "description": "Enables the caller to delete a user associated with a server.",
+      "description": "Grants permission to delete a user associated with a server",
       "accessLevel": "Write",
       "resourceTypes": [
         "user*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeSecurityPolicy": {
+      "name": "DescribeSecurityPolicy",
+      "topics": [
+        "AWS Transfer for SFTP"
+      ],
+      "description": "Grants permission to describe a security policy",
+      "accessLevel": "Read",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -69,7 +80,7 @@
       "topics": [
         "AWS Transfer for SFTP"
       ],
-      "description": "Enables the caller to describe a server.",
+      "description": "Grants permission to describe a server",
       "accessLevel": "Read",
       "resourceTypes": [
         "server*"
@@ -82,7 +93,7 @@
       "topics": [
         "AWS Transfer for SFTP"
       ],
-      "description": "Enables the caller to describe a user associated with a server.",
+      "description": "Grants permission to describe a user associated with a server",
       "accessLevel": "Read",
       "resourceTypes": [
         "user*"
@@ -95,11 +106,22 @@
       "topics": [
         "AWS Transfer for SFTP"
       ],
-      "description": "Enables the caller to add an SSH public key to a user.",
+      "description": "Grants permission to add an SSH public key to a user",
       "accessLevel": "Write",
       "resourceTypes": [
         "user*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSecurityPolicies": {
+      "name": "ListSecurityPolicies",
+      "topics": [
+        "AWS Transfer for SFTP"
+      ],
+      "description": "Grants permission to list security policies",
+      "accessLevel": "List",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -108,7 +130,7 @@
       "topics": [
         "AWS Transfer for SFTP"
       ],
-      "description": "Enables the caller to list servers",
+      "description": "Grants permission to list servers",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -119,7 +141,7 @@
       "topics": [
         "AWS Transfer for SFTP"
       ],
-      "description": "Enables the caller to list tags for a server or a user.",
+      "description": "Grants permission to list tags for a server or a user",
       "accessLevel": "Read",
       "resourceTypes": [
         "server"
@@ -132,7 +154,7 @@
       "topics": [
         "AWS Transfer for SFTP"
       ],
-      "description": "Enables the caller to list users associated with a server.",
+      "description": "Grants permission to list users associated with a server",
       "accessLevel": "List",
       "resourceTypes": [
         "server*"
@@ -145,7 +167,7 @@
       "topics": [
         "AWS Transfer for SFTP"
       ],
-      "description": "Enables the caller to start a server.",
+      "description": "Grants permission to start a server",
       "accessLevel": "Write",
       "resourceTypes": [
         "server*"
@@ -158,7 +180,7 @@
       "topics": [
         "AWS Transfer for SFTP"
       ],
-      "description": "Enables the caller to stop a server.",
+      "description": "Grants permission to stop a server",
       "accessLevel": "Write",
       "resourceTypes": [
         "server*"
@@ -171,7 +193,7 @@
       "topics": [
         "AWS Transfer for SFTP"
       ],
-      "description": "Enables the caller to tag a server or a user.",
+      "description": "Grants permission to tag a server or a user",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "server"
@@ -184,7 +206,7 @@
       "topics": [
         "AWS Transfer for SFTP"
       ],
-      "description": "Enables the caller to test a server's custom identity provider.",
+      "description": "Grants permission to test a server's custom identity provider",
       "accessLevel": "Read",
       "resourceTypes": [
         "user*"
@@ -197,7 +219,7 @@
       "topics": [
         "AWS Transfer for SFTP"
       ],
-      "description": "Enables the caller to untag a server or a user.",
+      "description": "Grants permission to untag a server or a user",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "server"
@@ -210,7 +232,7 @@
       "topics": [
         "AWS Transfer for SFTP"
       ],
-      "description": "Enables the caller to update the configuration of a server",
+      "description": "Grants permission to update the configuration of a server",
       "accessLevel": "Write",
       "resourceTypes": [
         "server*"
@@ -223,7 +245,7 @@
       "topics": [
         "AWS Transfer for SFTP"
       ],
-      "description": "Enables the caller to update the configuration of a user",
+      "description": "Grants permission to update the configuration of a user",
       "accessLevel": "Write",
       "resourceTypes": [
         "user*"

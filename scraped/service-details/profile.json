@@ -1,0 +1,356 @@
+{
+  "servicePrefix": "profile",
+  "actions": {
+    "AddProfileKey": {
+      "name": "AddProfileKey",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to add a profile key",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domains*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDomain": {
+      "name": "CreateDomain",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to create a Domain",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateProfile": {
+      "name": "CreateProfile",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to create a profile in the domain",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domains*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDomain": {
+      "name": "DeleteDomain",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to delete a Domain",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domains*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteIntegration": {
+      "name": "DeleteIntegration",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to delete a integration in a domain",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domains*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteProfile": {
+      "name": "DeleteProfile",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to delete a profile",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domains*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteProfileKey": {
+      "name": "DeleteProfileKey",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to delete a profile key",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domains*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteProfileObject": {
+      "name": "DeleteProfileObject",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to delete a profile object",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domains*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteProfileObjectType": {
+      "name": "DeleteProfileObjectType",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to delete a specific profile object type in the domain",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domains*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDomain": {
+      "name": "GetDomain",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to get a specific domain in an account",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "domains*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetIntegration": {
+      "name": "GetIntegration",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to get a specific integrations in a domain",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "domains*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetProfileObjectType": {
+      "name": "GetProfileObjectType",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to get a specific profile object type in the domain",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "domains*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetProfileObjectTypeTemplate": {
+      "name": "GetProfileObjectTypeTemplate",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to get a specific object type template",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAccountIntegrations": {
+      "name": "ListAccountIntegrations",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to list all the integrations in the account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDomains": {
+      "name": "ListDomains",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to list all the domains in an account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListIntegrations": {
+      "name": "ListIntegrations",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to list all the integrations in a specific domain",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "domains*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProfileObjectTypeTemplates": {
+      "name": "ListProfileObjectTypeTemplates",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to list all the profile object type templates in the account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProfileObjectTypes": {
+      "name": "ListProfileObjectTypes",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to list all the profile object types in the domain",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "domains*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProfileObjects": {
+      "name": "ListProfileObjects",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to list all the profile objects for a profile",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "domains*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to list tags for a resource",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutIntegration": {
+      "name": "PutIntegration",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to put a integration in a domain",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domains*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutProfileObject": {
+      "name": "PutProfileObject",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to put an object for a profile",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domains*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutProfileObjectType": {
+      "name": "PutProfileObjectType",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to put a specific profile object type in the domain",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domains*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SearchProfiles": {
+      "name": "SearchProfiles",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to search for profiles in a domain",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "domains*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to adds tags to a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to remove tags from a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "UpdateDomain": {
+      "name": "UpdateDomain",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to update a Domain",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domains*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateProfile": {
+      "name": "UpdateProfile",
+      "topics": [
+        "Amazon Connect Customer Profiles"
+      ],
+      "description": "Grants permission to update a profile in the domain",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "domains*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "Amazon Connect Customer Profiles"
+  ]
+}

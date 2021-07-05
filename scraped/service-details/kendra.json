@@ -6,7 +6,7 @@
       "topics": [
         "Amazon Kendra"
       ],
-      "description": "Batch Delete document",
+      "description": "Grant permission to batch delete document",
       "accessLevel": "Write",
       "resourceTypes": [
         "index*"
@@ -19,7 +19,20 @@
       "topics": [
         "Amazon Kendra"
       ],
-      "description": "Batch put document",
+      "description": "Grant permission to batch put document",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ClearQuerySuggestions": {
+      "name": "ClearQuerySuggestions",
+      "topics": [
+        "Amazon Kendra"
+      ],
+      "description": "Grant permission to clear out the suggestions for a given index, generated so far",
       "accessLevel": "Write",
       "resourceTypes": [
         "index*"
@@ -32,7 +45,7 @@
       "topics": [
         "Amazon Kendra"
       ],
-      "description": "Create a data source",
+      "description": "Grant permission to create a data source",
       "accessLevel": "Write",
       "resourceTypes": [
         "index*"
@@ -45,7 +58,7 @@
       "topics": [
         "Amazon Kendra"
       ],
-      "description": "Create an Faq",
+      "description": "Grant permission to create an Faq",
       "accessLevel": "Write",
       "resourceTypes": [
         "index*"
@@ -58,10 +71,36 @@
       "topics": [
         "Amazon Kendra"
       ],
-      "description": "Create an Index",
+      "description": "Grant permission to create an Index",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateQuerySuggestionsBlockList": {
+      "name": "CreateQuerySuggestionsBlockList",
+      "topics": [
+        "Amazon Kendra"
+      ],
+      "description": "Grant permission to create a QuerySuggestions BlockList",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateThesaurus": {
+      "name": "CreateThesaurus",
+      "topics": [
+        "Amazon Kendra"
+      ],
+      "description": "Grant permission to create a Thesaurus",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
       "dependentActions": ""
     },
     "DeleteDataSource": {
@@ -69,7 +108,7 @@
       "topics": [
         "Amazon Kendra"
       ],
-      "description": "Delete a data source",
+      "description": "Grant permission to delete a data source",
       "accessLevel": "Write",
       "resourceTypes": [
         "data-source*"
@@ -82,7 +121,7 @@
       "topics": [
         "Amazon Kendra"
       ],
-      "description": "Delete an Faq",
+      "description": "Grant permission to delete an Faq",
       "accessLevel": "Write",
       "resourceTypes": [
         "faq*"
@@ -95,7 +134,33 @@
       "topics": [
         "Amazon Kendra"
       ],
-      "description": "Delete an Index",
+      "description": "Grant permission to delete an Index",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteQuerySuggestionsBlockList": {
+      "name": "DeleteQuerySuggestionsBlockList",
+      "topics": [
+        "Amazon Kendra"
+      ],
+      "description": "Grant permission to delete a QuerySuggestions BlockList",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteThesaurus": {
+      "name": "DeleteThesaurus",
+      "topics": [
+        "Amazon Kendra"
+      ],
+      "description": "Grant permission to delete a Thesaurus",
       "accessLevel": "Write",
       "resourceTypes": [
         "index*"
@@ -108,7 +173,7 @@
       "topics": [
         "Amazon Kendra"
       ],
-      "description": "Describe a data source",
+      "description": "Grant permission to describe a data source",
       "accessLevel": "Read",
       "resourceTypes": [
         "data-source*"
@@ -121,7 +186,7 @@
       "topics": [
         "Amazon Kendra"
       ],
-      "description": "Describe an Faq",
+      "description": "Grant permission to describe an Faq",
       "accessLevel": "Read",
       "resourceTypes": [
         "faq*"
@@ -134,7 +199,59 @@
       "topics": [
         "Amazon Kendra"
       ],
-      "description": "Describe an Index",
+      "description": "Grant permission to describe an Index",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeQuerySuggestionsBlockList": {
+      "name": "DescribeQuerySuggestionsBlockList",
+      "topics": [
+        "Amazon Kendra"
+      ],
+      "description": "Grant permission to describe a QuerySuggestions BlockList",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeQuerySuggestionsConfig": {
+      "name": "DescribeQuerySuggestionsConfig",
+      "topics": [
+        "Amazon Kendra"
+      ],
+      "description": "Grant permission to describe the query suggestions configuration for an index",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeThesaurus": {
+      "name": "DescribeThesaurus",
+      "topics": [
+        "Amazon Kendra"
+      ],
+      "description": "Grant permission to describe a Thesaurus",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetQuerySuggestions": {
+      "name": "GetQuerySuggestions",
+      "topics": [
+        "Amazon Kendra"
+      ],
+      "description": "Grant permission to get suggestions for a query prefix",
       "accessLevel": "Read",
       "resourceTypes": [
         "index*"
@@ -147,7 +264,7 @@
       "topics": [
         "Amazon Kendra"
       ],
-      "description": "Get Data Source sync job history",
+      "description": "Grant permission to get Data Source sync job history",
       "accessLevel": "List",
       "resourceTypes": [
         "data-source*"
@@ -160,7 +277,7 @@
       "topics": [
         "Amazon Kendra"
       ],
-      "description": "List the data sources",
+      "description": "Grant permission to list the data sources",
       "accessLevel": "List",
       "resourceTypes": [
         "index*"
@@ -173,7 +290,7 @@
       "topics": [
         "Amazon Kendra"
       ],
-      "description": "List the Faqs",
+      "description": "Grant permission to list the Faqs",
       "accessLevel": "List",
       "resourceTypes": [
         "index*"
@@ -186,9 +303,22 @@
       "topics": [
         "Amazon Kendra"
       ],
-      "description": "List the indexes",
+      "description": "Grant permission to list the indexes",
       "accessLevel": "List",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListQuerySuggestionsBlockLists": {
+      "name": "ListQuerySuggestionsBlockLists",
+      "topics": [
+        "Amazon Kendra"
+      ],
+      "description": "Grant permission to list the QuerySuggestions BlockLists",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "index*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -197,10 +327,23 @@
       "topics": [
         "Amazon Kendra"
       ],
-      "description": "Lists tags for a resource",
-      "accessLevel": "List",
+      "description": "Grant permission to list tags for a resource",
+      "accessLevel": "Read",
       "resourceTypes": [
         "data-source"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListThesauri": {
+      "name": "ListThesauri",
+      "topics": [
+        "Amazon Kendra"
+      ],
+      "description": "Grant permission to list the Thesauri",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "index*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -210,7 +353,7 @@
       "topics": [
         "Amazon Kendra"
       ],
-      "description": "Query documents and Faqs",
+      "description": "Grant permission to query documents and faqs",
       "accessLevel": "Read",
       "resourceTypes": [
         "index*"
@@ -223,7 +366,7 @@
       "topics": [
         "Amazon Kendra"
       ],
-      "description": "Start Data Source sync job",
+      "description": "Grant permission to start Data Source sync job",
       "accessLevel": "Write",
       "resourceTypes": [
         "data-source*"
@@ -236,7 +379,7 @@
       "topics": [
         "Amazon Kendra"
       ],
-      "description": "Stop Data Source sync job",
+      "description": "Grant permission to stop Data Source sync job",
       "accessLevel": "Write",
       "resourceTypes": [
         "data-source*"
@@ -249,7 +392,7 @@
       "topics": [
         "Amazon Kendra"
       ],
-      "description": "Send feedback about a query results",
+      "description": "Grant permission to send feedback about a query results",
       "accessLevel": "Write",
       "resourceTypes": [
         "index*"
@@ -262,7 +405,7 @@
       "topics": [
         "Amazon Kendra"
       ],
-      "description": "Tags a resource with given key value pairs",
+      "description": "Grant permission to tag a resource with given key value pairs",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "data-source"
@@ -275,7 +418,7 @@
       "topics": [
         "Amazon Kendra"
       ],
-      "description": "Removes the tag with the given key from a resource",
+      "description": "Grant permission to remove the tag with the given key from a resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "data-source"
@@ -288,7 +431,7 @@
       "topics": [
         "Amazon Kendra"
       ],
-      "description": "Update a data source",
+      "description": "Grant permission to update a data source",
       "accessLevel": "Write",
       "resourceTypes": [
         "data-source*"
@@ -301,7 +444,46 @@
       "topics": [
         "Amazon Kendra"
       ],
-      "description": "Update an Index",
+      "description": "Grant permission to update an Index",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateQuerySuggestionsBlockList": {
+      "name": "UpdateQuerySuggestionsBlockList",
+      "topics": [
+        "Amazon Kendra"
+      ],
+      "description": "Grant permission to update a QuerySuggestions BlockList",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateQuerySuggestionsConfig": {
+      "name": "UpdateQuerySuggestionsConfig",
+      "topics": [
+        "Amazon Kendra"
+      ],
+      "description": "Grant permission to update the query suggestions configuration for an index",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "index*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateThesaurus": {
+      "name": "UpdateThesaurus",
+      "topics": [
+        "Amazon Kendra"
+      ],
+      "description": "Grant permission to update a thesaurus",
       "accessLevel": "Write",
       "resourceTypes": [
         "index*"

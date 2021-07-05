@@ -17,7 +17,7 @@
       "topics": [
         "AWS Outposts"
       ],
-      "description": "Grants permission to delete an outpost",
+      "description": "Grants permission to delete an Outpost",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -74,6 +74,39 @@
       ],
       "description": "Grants permission to list the sites for your AWS account",
       "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "AWS Outposts"
+      ],
+      "description": "Grants permission to list tags for a resource",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "AWS Outposts"
+      ],
+      "description": "Grants permission to add tags to a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "AWS Outposts"
+      ],
+      "description": "Grants permission to remove tags from a resource",
+      "accessLevel": "Tagging",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""

@@ -6,7 +6,7 @@
       "topics": [
         "Amazon Polly"
       ],
-      "description": "Deletes the specified pronunciation lexicon stored in an AWS Region",
+      "description": "Grants permissions to delete the specified pronunciation lexicon stored in an AWS\n                                                Region",
       "accessLevel": "Write",
       "resourceTypes": [
         "lexicon*"
@@ -19,7 +19,7 @@
       "topics": [
         "Amazon Polly"
       ],
-      "description": "Returns the list of voices that are available for use when requesting speech synthesis.",
+      "description": "Grants permissions to describe the list of voices that are available for use when\n                                                requesting speech synthesis",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -30,7 +30,7 @@
       "topics": [
         "Amazon Polly"
       ],
-      "description": "Returns the content of the specified pronunciation lexicon stored in an AWS Region.",
+      "description": "Grants permissions to retrieve the content of the specified pronunciation lexicon\n                                                stored in an AWS Region",
       "accessLevel": "Read",
       "resourceTypes": [
         "lexicon*"
@@ -43,7 +43,7 @@
       "topics": [
         "Amazon Polly"
       ],
-      "description": "Enables the user to get information about specific speech synthesis task.",
+      "description": "Grants permissions to get information about specific speech synthesis task",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -54,7 +54,7 @@
       "topics": [
         "Amazon Polly"
       ],
-      "description": "Returns a list of pronunciation lexicons stored in an AWS Region.",
+      "description": "Grants permisions to list the pronunciation lexicons stored in an AWS Region",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -65,7 +65,7 @@
       "topics": [
         "Amazon Polly"
       ],
-      "description": "Enables the user to list requested speech synthesis tasks.",
+      "description": "Grants permissions to list requested speech synthesis tasks",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -76,9 +76,11 @@
       "topics": [
         "Amazon Polly"
       ],
-      "description": "Stores a pronunciation lexicon in an AWS Region.",
+      "description": "Grants permissions to store a pronunciation lexicon in an AWS Region",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "lexicon*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -87,7 +89,7 @@
       "topics": [
         "Amazon Polly"
       ],
-      "description": "Enables the user to synthesize long inputs to provided S3 location.",
+      "description": "Grants permissions to synthesize long inputs to the provided S3 location",
       "accessLevel": "Write",
       "resourceTypes": [
         "lexicon"
@@ -100,7 +102,7 @@
       "topics": [
         "Amazon Polly"
       ],
-      "description": "Synthesizes UTF-8 input, plain text or SSML, to a stream of bytes.",
+      "description": "Grants permissions to synthesize speech",
       "accessLevel": "Read",
       "resourceTypes": [
         "lexicon"

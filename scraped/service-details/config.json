@@ -6,7 +6,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns the current configuration items for resources that are present in your AWS\n                                                Config aggregator",
+      "description": "Grants permission to return the current configuration items for resources that are\n                                                present in your AWS Config aggregator",
       "accessLevel": "Read",
       "resourceTypes": [
         "ConfigurationAggregator*"
@@ -19,7 +19,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns the current configuration for one or more requested resources",
+      "description": "Grants permission to return the current configuration for one or more requested resources",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -30,7 +30,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Deletes the authorization granted to the specified configuration aggregator account\n                                                in a specified region",
+      "description": "Grants permission to delete the authorization granted to the specified configuration\n                                                aggregator account in a specified region",
       "accessLevel": "Write",
       "resourceTypes": [
         "AggregationAuthorization*"
@@ -43,7 +43,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Deletes the specified AWS Config rule and all of its evaluation results",
+      "description": "Grants permission to delete the specified AWS Config rule and all of its evaluation\n                                                results",
       "accessLevel": "Write",
       "resourceTypes": [
         "ConfigRule*"
@@ -56,7 +56,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Deletes the specified configuration aggregator and the aggregated data associated\n                                                with the aggregator",
+      "description": "Grants permission to delete the specified configuration aggregator and the aggregated\n                                                data associated with the aggregator",
       "accessLevel": "Write",
       "resourceTypes": [
         "ConfigurationAggregator*"
@@ -69,7 +69,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Deletes the configuration recorder",
+      "description": "Grants permission to delete the configuration recorder",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -80,7 +80,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Deletes the specified conformance pack and all the AWS Config rules and all evaluation\n                                                results within that conformance pack.",
+      "description": "Grants permission to delete the specified conformance pack and all the AWS Config\n                                                rules and all evaluation results within that conformance pack",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -91,7 +91,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Deletes the delivery channel",
+      "description": "Grants permission to delete the delivery channel",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -102,7 +102,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Deletes the evaluation results for the specified Config rule",
+      "description": "Grants permission to delete the evaluation results for the specified Config rule",
       "accessLevel": "Write",
       "resourceTypes": [
         "ConfigRule*"
@@ -115,7 +115,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Deletes the specified organization config rule and all of its evaluation results from\n                                                all member accounts in that organization.",
+      "description": "Grants permission to delete the specified organization config rule and all of its\n                                                evaluation results from all member accounts in that organization",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -126,7 +126,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Deletes the specified organization conformance pack and all of its evaluation results\n                                                from all member accounts in that organization.",
+      "description": "Grants permission to delete the specified organization conformance pack and all of\n                                                its evaluation results from all member accounts in that organization",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -137,7 +137,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Deletes pending authorization requests for a specified aggregator account in a specified\n                                                region",
+      "description": "Grants permission to delete pending authorization requests for a specified aggregator\n                                                account in a specified region",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -148,7 +148,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Deletes the remediation configuration",
+      "description": "Grants permission to delete the remediation configuration",
       "accessLevel": "Write",
       "resourceTypes": [
         "RemediationConfiguration*"
@@ -161,7 +161,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Deletes one or more remediation exceptions for specific resource keys for a specific\n                                                AWS Config Rule.",
+      "description": "Grants permission to delete one or more remediation exceptions for specific resource\n                                                keys for a specific AWS Config Rule",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -172,7 +172,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Records the configuration state for a custom resource that has been deleted.",
+      "description": "Grants permission to record the configuration state for a custom resource that has\n                                                been deleted",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -183,9 +183,22 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Deletes the retention configuration",
+      "description": "Grants permission to delete the retention configuration",
       "accessLevel": "Write",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteStoredQuery": {
+      "name": "DeleteStoredQuery",
+      "topics": [
+        "AWS Config"
+      ],
+      "description": "Grants permission to delete the stored query for an AWS account in an AWS Region",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "StoredQuery*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -194,7 +207,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Schedules delivery of a configuration snapshot to the Amazon S3 bucket in the specified\n                                                delivery channel",
+      "description": "Grants permission to schedule delivery of a configuration snapshot to the Amazon S3\n                                                bucket in the specified delivery channel",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -205,8 +218,21 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns a list of compliant and noncompliant rules with the number of resources for\n                                                compliant and noncompliant rules",
-      "accessLevel": "List",
+      "description": "Grants permission to return a list of compliant and noncompliant rules with the number\n                                                of resources for compliant and noncompliant rules",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ConfigurationAggregator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAggregateComplianceByConformancePacks": {
+      "name": "DescribeAggregateComplianceByConformancePacks",
+      "topics": [
+        "AWS Config"
+      ],
+      "description": "Grants permission to return a list of compliant and noncompliant conformance packs\n                                                along with count of compliant, non-compliant and total rules within each conformance\n                                                pack",
+      "accessLevel": "Read",
       "resourceTypes": [
         "ConfigurationAggregator*"
       ],
@@ -218,7 +244,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns a list of authorizations granted to various aggregator accounts and regions",
+      "description": "Grants permission to return a list of authorizations granted to various aggregator\n                                                accounts and regions",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -229,8 +255,8 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Indicates whether the specified AWS Config rules are compliant",
-      "accessLevel": "List",
+      "description": "Grants permission to indicate whether the specified AWS Config rules are compliant",
+      "accessLevel": "Read",
       "resourceTypes": [
         "ConfigRule*"
       ],
@@ -242,8 +268,8 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Indicates whether the specified AWS resources are compliant",
-      "accessLevel": "List",
+      "description": "Grants permission to indicate whether the specified AWS resources are compliant",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -253,8 +279,8 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns status information for each of your AWS managed Config rules",
-      "accessLevel": "List",
+      "description": "Grants permission to return status information for each of your AWS managed Config\n                                                rules",
+      "accessLevel": "Read",
       "resourceTypes": [
         "ConfigRule*"
       ],
@@ -266,7 +292,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns details about your AWS Config rules",
+      "description": "Grants permission to return details about your AWS Config rules",
       "accessLevel": "List",
       "resourceTypes": [
         "ConfigRule*"
@@ -279,8 +305,8 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns status information for sources within an aggregator",
-      "accessLevel": "List",
+      "description": "Grants permission to return status information for sources within an aggregator",
+      "accessLevel": "Read",
       "resourceTypes": [
         "ConfigurationAggregator*"
       ],
@@ -292,7 +318,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns the details of one or more configuration aggregators",
+      "description": "Grants permission to return the details of one or more configuration aggregators",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -303,8 +329,8 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns the current status of the specified configuration recorder",
-      "accessLevel": "List",
+      "description": "Grants permission to return the current status of the specified configuration recorder",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -314,7 +340,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns the name of one or more specified configuration recorders",
+      "description": "Grants permission to return the names of one or more specified configuration recorders",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -325,7 +351,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns compliance information for each rule in that conformance pack.",
+      "description": "Grants permission to return compliance information for each rule in that conformance\n                                                pack",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -336,7 +362,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Provides one or more conformance packs deployment status.",
+      "description": "Grants permission to provide one or more conformance packs deployment status",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -347,8 +373,8 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns a list of one or more conformance packs.",
-      "accessLevel": "Read",
+      "description": "Grants permission to return a list of one or more conformance packs",
+      "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -358,8 +384,8 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns the current status of the specified delivery channel",
-      "accessLevel": "List",
+      "description": "Grants permission to return the current status of the specified delivery channel",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -369,7 +395,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns details about the specified delivery channel",
+      "description": "Grants permission to return details about the specified delivery channel",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -380,7 +406,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Provides organization config rule deployment status for an organization.",
+      "description": "Grants permission to provide organization config rule deployment status for an organization",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -391,8 +417,8 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns a list of organization config rules.",
-      "accessLevel": "Read",
+      "description": "Grants permission to return a list of organization config rules",
+      "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -402,7 +428,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Provides organization conformance pack deployment status for an organization.",
+      "description": "Grants permission to provide organization conformance pack deployment status for an\n                                                organization",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -413,8 +439,8 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns a list of organization conformance packs.",
-      "accessLevel": "Read",
+      "description": "Grants permission to return a list of organization conformance packs",
+      "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -424,7 +450,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns a list of all pending aggregation requests",
+      "description": "Grants permission to return a list of all pending aggregation requests",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -435,7 +461,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns the details of one or more remediation configurations",
+      "description": "Grants permission to return the details of one or more remediation configurations",
       "accessLevel": "List",
       "resourceTypes": [
         "RemediationConfiguration*"
@@ -448,7 +474,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns the details of one or more remediation exceptions.",
+      "description": "Grants permission to return the details of one or more remediation exceptions",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -459,8 +485,8 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Provides a detailed view of a Remediation Execution for a set of resources including\n                                                state, timestamps and any error messages for steps that have failed",
-      "accessLevel": "List",
+      "description": "Grants permission to provide a detailed view of a Remediation Execution for a set\n                                                of resources including state, timestamps and any error messages for steps that have\n                                                failed",
+      "accessLevel": "Read",
       "resourceTypes": [
         "RemediationConfiguration*"
       ],
@@ -472,7 +498,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns the details of one or more retention configurations",
+      "description": "Grants permission to return the details of one or more retention configurations",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -483,7 +509,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns the evaluation results for the specified AWS Config rule for a specific resource\n                                                in a rule",
+      "description": "Grants permission to return the evaluation results for the specified AWS Config rule\n                                                for a specific resource in a rule",
       "accessLevel": "Read",
       "resourceTypes": [
         "ConfigurationAggregator*"
@@ -496,7 +522,20 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns the number of compliant and noncompliant rules for one or more accounts and\n                                                regions in an aggregator",
+      "description": "Grants permission to return the number of compliant and noncompliant rules for one\n                                                or more accounts and regions in an aggregator",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ConfigurationAggregator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAggregateConformancePackComplianceSummary": {
+      "name": "GetAggregateConformancePackComplianceSummary",
+      "topics": [
+        "AWS Config"
+      ],
+      "description": "Grants permission to return the number of compliant and noncompliant conformance packs\n                                                for one or more accounts and regions in an aggregator",
       "accessLevel": "Read",
       "resourceTypes": [
         "ConfigurationAggregator*"
@@ -509,7 +548,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns the resource counts across accounts and regions that are present in your AWS\n                                                Config aggregator",
+      "description": "Grants permission to return the resource counts across accounts and regions that are\n                                                present in your AWS Config aggregator",
       "accessLevel": "Read",
       "resourceTypes": [
         "ConfigurationAggregator*"
@@ -522,7 +561,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns configuration item that is aggregated for your specific resource in a specific\n                                                source account and region",
+      "description": "Grants permission to return configuration item that is aggregated for your specific\n                                                resource in a specific source account and region",
       "accessLevel": "Read",
       "resourceTypes": [
         "ConfigurationAggregator*"
@@ -535,7 +574,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns the evaluation results for the specified AWS Config rule",
+      "description": "Grants permission to return the evaluation results for the specified AWS Config rule",
       "accessLevel": "Read",
       "resourceTypes": [
         "ConfigRule*"
@@ -548,7 +587,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns the evaluation results for the specified AWS resource",
+      "description": "Grants permission to return the evaluation results for the specified AWS resource",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -559,7 +598,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns the number of AWS Config rules that are compliant and noncompliant, up to\n                                                a maximum of 25 for each",
+      "description": "Grants permission to return the number of AWS Config rules that are compliant and\n                                                noncompliant, up to a maximum of 25 for each",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -570,7 +609,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns the number of resources that are compliant and the number that are noncompliant",
+      "description": "Grants permission to return the number of resources that are compliant and the number\n                                                that are noncompliant",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -581,7 +620,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns compliance details of a conformance pack for all AWS resources that are monitered\n                                                by conformance pack.",
+      "description": "Grants permission to return compliance details of a conformance pack for all AWS resources\n                                                that are monitered by conformance pack",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -592,7 +631,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Provides compliance summary for one or more conformance packs.",
+      "description": "Grants permission to provide compliance summary for one or more conformance packs",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -603,7 +642,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns the resource types, the number of each resource type, and the total number\n                                                of resources that AWS Config is recording in this region for your AWS account",
+      "description": "Grants permission to return the resource types, the number of each resource type,\n                                                and the total number of resources that AWS Config is recording in this region for\n                                                your AWS account",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -614,7 +653,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns detailed status for each member account within an organization for a given\n                                                organization config rule.",
+      "description": "Grants permission to return detailed status for each member account within an organization\n                                                for a given organization config rule",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -625,7 +664,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns detailed status for each member account within an organization for a given\n                                                organization conformance pack.",
+      "description": "Grants permission to return detailed status for each member account within an organization\n                                                for a given organization conformance pack",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -636,9 +675,22 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Returns a list of configuration items for the specified resource",
+      "description": "Grants permission to return a list of configuration items for the specified resource",
       "accessLevel": "Read",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetStoredQuery": {
+      "name": "GetStoredQuery",
+      "topics": [
+        "AWS Config"
+      ],
+      "description": "Grants permission to return the details of a specific stored query",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "StoredQuery*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -647,7 +699,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Accepts a resource type and returns a list of resource identifiers that are aggregated\n                                                for a specific resource type across accounts and regions",
+      "description": "Grants permission to accept a resource type and returns a list of resource identifiers\n                                                that are aggregated for a specific resource type across accounts and regions",
       "accessLevel": "List",
       "resourceTypes": [
         "ConfigurationAggregator*"
@@ -660,9 +712,22 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Accepts a resource type and returns a list of resource identifiers for the resources\n                                                of that type",
+      "description": "Grants permission to accept a resource type and returns a list of resource identifiers\n                                                for the resources of that type",
       "accessLevel": "List",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListStoredQueries": {
+      "name": "ListStoredQueries",
+      "topics": [
+        "AWS Config"
+      ],
+      "description": "Grants permission to list the stored queries for an AWS account in an AWS Region",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "StoredQuery*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -671,8 +736,8 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "List the tags for AWS Config resource",
-      "accessLevel": "List",
+      "description": "Grants permission to list the tags for AWS Config resource",
+      "accessLevel": "Read",
       "resourceTypes": [
         "AggregationAuthorization"
       ],
@@ -684,7 +749,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Authorizes the aggregator account and region to collect data from the source account\n                                                and region",
+      "description": "Grants permission to authorize the aggregator account and region to collect data from\n                                                the source account and region",
       "accessLevel": "Write",
       "resourceTypes": [
         "AggregationAuthorization*"
@@ -697,7 +762,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Adds or updates an AWS Config rule for evaluating whether your AWS resources comply\n                                                with your desired configurations",
+      "description": "Grants permission to add or update an AWS Config rule for evaluating whether your\n                                                AWS resources comply with your desired configurations",
       "accessLevel": "Write",
       "resourceTypes": [
         "ConfigRule*"
@@ -710,7 +775,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Creates and updates the configuration aggregator with the selected source accounts\n                                                and regions",
+      "description": "Grants permission to create and update the configuration aggregator with the selected\n                                                source accounts and regions",
       "accessLevel": "Write",
       "resourceTypes": [
         "ConfigurationAggregator*"
@@ -723,7 +788,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Creates a new configuration recorder to record the selected resource configurations",
+      "description": "Grants permission to create a new configuration recorder to record the selected resource\n                                                configurations",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -734,7 +799,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Creates or updates a conformance pack.",
+      "description": "Grants permission to create or update a conformance pack",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -745,7 +810,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Creates a delivery channel object to deliver configuration information to an Amazon\n                                                S3 bucket and Amazon SNS topic",
+      "description": "Grants permission to create a delivery channel object to deliver configuration information\n                                                to an Amazon S3 bucket and Amazon SNS topic",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -756,7 +821,18 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Used by an AWS Lambda function to deliver evaluation results to AWS Config",
+      "description": "Grants permission to be used by an AWS Lambda function to deliver evaluation results\n                                                to AWS Config",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutExternalEvaluation": {
+      "name": "PutExternalEvaluation",
+      "topics": [
+        "AWS Config"
+      ],
+      "description": "Grants permission to deliver evaluation result to AWS Config",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -767,7 +843,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Adds or updates organization config rule for your entire organization evaluating whether\n                                                your AWS resources comply with your desired configurations.",
+      "description": "Grants permission to add or update organization config rule for your entire organization\n                                                evaluating whether your AWS resources comply with your desired configurations",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -778,7 +854,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Adds or updates organization conformance pack for your entire organization evaluating\n                                                whether your AWS resources comply with your desired configurations.",
+      "description": "Grants permission to add or update organization conformance pack for your entire organization\n                                                evaluating whether your AWS resources comply with your desired configurations",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -789,20 +865,20 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Adds or updates the remediation configuration with a specific AWS Config rule with\n                                                the selected target or action",
+      "description": "Grants permission to add or update the remediation configuration with a specific AWS\n                                                Config rule with the selected target or action",
       "accessLevel": "Write",
       "resourceTypes": [
         "RemediationConfiguration*"
       ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "iam:PassRole"
     },
     "PutRemediationExceptions": {
       "name": "PutRemediationExceptions",
       "topics": [
         "AWS Config"
       ],
-      "description": "Adds or updates remediation exceptions for specific resources for a specific AWS Config\n                                                rule.",
+      "description": "Grants permission to add or update remediation exceptions for specific resources for\n                                                a specific AWS Config rule",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -813,7 +889,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Records the configuration state for the resource provided in the request.",
+      "description": "Grants permission to record the configuration state for the resource provided in the\n                                                request",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -824,9 +900,22 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Creates and updates the retention configuration with details about retention period\n                                                (number of days) that AWS Config stores your historical information",
+      "description": "Grants permission to create and update the retention configuration with details about\n                                                retention period (number of days) that AWS Config stores your historical information",
       "accessLevel": "Write",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutStoredQuery": {
+      "name": "PutStoredQuery",
+      "topics": [
+        "AWS Config"
+      ],
+      "description": "Grants permission to save a new query or updates an existing saved query",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "StoredQuery*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -835,7 +924,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Accepts a structured query language (SQL) SELECT command and an aggregator to query\n                                                configuration state of AWS resources across multiple accounts and regions, performs\n                                                the corresponding search, and returns resource configurations matching the properties.",
+      "description": "Grants permission to accept a structured query language (SQL) SELECT command and an\n                                                aggregator to query configuration state of AWS resources across multiple accounts\n                                                and regions, performs the corresponding search, and returns resource configurations\n                                                matching the properties",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -846,7 +935,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Accepts a structured query language (SQL) SELECT command, performs the corresponding\n                                                search, and returns resource configurations matching the properties",
+      "description": "Grants permission to accept a structured query language (SQL) SELECT command, performs\n                                                the corresponding search, and returns resource configurations matching the properties",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -857,7 +946,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Evaluates your resources against the specified Config rules",
+      "description": "Grants permission to evaluate your resources against the specified Config rules",
       "accessLevel": "Write",
       "resourceTypes": [
         "ConfigRule*"
@@ -870,7 +959,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Starts recording configurations of the AWS resources you have selected to record in\n                                                your AWS account",
+      "description": "Grants permission to start recording configurations of the AWS resources you have\n                                                selected to record in your AWS account",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -881,20 +970,20 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Runs an on-demand remediation for the specified AWS Config rules against the last\n                                                known remediation configuration",
+      "description": "Grants permission to run an on-demand remediation for the specified AWS Config rules\n                                                against the last known remediation configuration",
       "accessLevel": "Write",
       "resourceTypes": [
         "RemediationConfiguration*"
       ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "iam:PassRole"
     },
     "StopConfigurationRecorder": {
       "name": "StopConfigurationRecorder",
       "topics": [
         "AWS Config"
       ],
-      "description": "Stops recording configurations of the AWS resources you have selected to record in\n                                                your AWS account",
+      "description": "Grants permission to stop recording configurations of the AWS resources you have selected\n                                                to record in your AWS account",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -905,7 +994,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Associates the specified tags to a resource with the specified resourceArn",
+      "description": "Grants permission to associate the specified tags to a resource with the specified\n                                                resourceArn",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "AggregationAuthorization"
@@ -918,7 +1007,7 @@
       "topics": [
         "AWS Config"
       ],
-      "description": "Deletes specified tags from a resource",
+      "description": "Grants permission to delete specified tags from a resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "AggregationAuthorization"

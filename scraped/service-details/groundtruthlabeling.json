@@ -1,12 +1,23 @@
 {
   "servicePrefix": "groundtruthlabeling",
   "actions": {
+    "AssociatePatchToManifestJob": {
+      "name": "AssociatePatchToManifestJob",
+      "topics": [
+        "Amazon GroundTruth Labeling"
+      ],
+      "description": "Grants permission to associate a patch file with the manifest file to update the manifest\n                                                file",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DescribeConsoleJob": {
       "name": "DescribeConsoleJob",
       "topics": [
         "Amazon GroundTruth Labeling"
       ],
-      "description": "Get status of GroundTruthLabeling Jobs.",
+      "description": "Grants permission to get status of GroundTruthLabeling Jobs",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -17,7 +28,7 @@
       "topics": [
         "Amazon GroundTruth Labeling"
       ],
-      "description": "Paginated list API to list dataset objects in a manifest file.",
+      "description": "Grants permission to list dataset objects in a manifest file",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -28,7 +39,7 @@
       "topics": [
         "Amazon GroundTruth Labeling"
       ],
-      "description": "Filter records from a manifest file using S3 select. Get sample entries based on random\n                                                sampling.",
+      "description": "Grants permission to filter records from a manifest file using S3 select. Get sample\n                                                entries based on random sampling",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -39,7 +50,7 @@
       "topics": [
         "Amazon GroundTruth Labeling"
       ],
-      "description": "List a S3 prefix and create manifest files from objects in that location.",
+      "description": "Grants permission to list a S3 prefix and create manifest files from objects in that\n                                                location",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",

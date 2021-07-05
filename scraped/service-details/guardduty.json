@@ -379,6 +379,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "GetMemberDetectors": {
+      "name": "GetMemberDetectors",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
+      "description": "Grants permission to describe which data sources are enabled for member accounts detectors",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "GetMembers": {
       "name": "GetMembers",
       "topics": [
@@ -398,6 +411,19 @@
         "Amazon GuardDuty"
       ],
       "description": "Grants permission to retrieve GuardDuty ThreatIntelSets",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetUsageStatistics": {
+      "name": "GetUsageStatistics",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
+      "description": "Grants permission to list Amazon GuardDuty usage statistics over the last 30 days\n                                                for the specified detector ID",
       "accessLevel": "Read",
       "resourceTypes": [
         "detector*"
@@ -652,6 +678,19 @@
         "Amazon GuardDuty"
       ],
       "description": "Grants permission to update GuardDuty IPSets",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "detector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateMemberDetectors": {
+      "name": "UpdateMemberDetectors",
+      "topics": [
+        "Amazon GuardDuty"
+      ],
+      "description": "Grants permission to update which data sources are enabled for member accounts detectors",
       "accessLevel": "Write",
       "resourceTypes": [
         "detector*"

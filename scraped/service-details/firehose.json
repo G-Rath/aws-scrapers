@@ -6,7 +6,7 @@
       "topics": [
         "Amazon Kinesis Firehose"
       ],
-      "description": "Creates a delivery stream.",
+      "description": "Grants permissions to create a delivery stream",
       "accessLevel": "Write",
       "resourceTypes": [
         "deliverystream*"
@@ -19,7 +19,7 @@
       "topics": [
         "Amazon Kinesis Firehose"
       ],
-      "description": "Deletes a delivery stream and its data.",
+      "description": "Grants permission to delete a delivery stream and its data",
       "accessLevel": "Write",
       "resourceTypes": [
         "deliverystream*"
@@ -32,8 +32,8 @@
       "topics": [
         "Amazon Kinesis Firehose"
       ],
-      "description": "Describes the specified delivery stream and gets the status.",
-      "accessLevel": "List",
+      "description": "Grants permission to describe the specified delivery stream and gets the status",
+      "accessLevel": "Read",
       "resourceTypes": [
         "deliverystream*"
       ],
@@ -45,7 +45,7 @@
       "topics": [
         "Amazon Kinesis Firehose"
       ],
-      "description": "Lists your delivery streams.",
+      "description": "Grants permissions to list your delivery streams",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -56,7 +56,7 @@
       "topics": [
         "Amazon Kinesis Firehose"
       ],
-      "description": "Lists the tags for the specified delivery stream.",
+      "description": "Grants permissions to list the tags for the specified delivery stream",
       "accessLevel": "List",
       "resourceTypes": [
         "deliverystream*"
@@ -69,7 +69,7 @@
       "topics": [
         "Amazon Kinesis Firehose"
       ],
-      "description": "Writes a single data record into an Amazon Kinesis Firehose delivery stream.",
+      "description": "Grants permissions to write a single data record into an Amazon Kinesis Firehose delivery\n                                                stream",
       "accessLevel": "Write",
       "resourceTypes": [
         "deliverystream*"
@@ -82,7 +82,7 @@
       "topics": [
         "Amazon Kinesis Firehose"
       ],
-      "description": "Writes multiple data records into a delivery stream in a single call, which can achieve\n                                                higher throughput per producer than when writing single records.",
+      "description": "Grants permissions to write multiple data records into a delivery stream in a single\n                                                call, which can achieve higher throughput per producer than when writing single records",
       "accessLevel": "Write",
       "resourceTypes": [
         "deliverystream*"
@@ -95,7 +95,7 @@
       "topics": [
         "Amazon Kinesis Firehose"
       ],
-      "description": "Enables server-side encryption (SSE) for the delivery stream.",
+      "description": "Grants permissions to enable server-side encryption (SSE) for the delivery stream",
       "accessLevel": "Write",
       "resourceTypes": [
         "deliverystream*"
@@ -108,7 +108,7 @@
       "topics": [
         "Amazon Kinesis Firehose"
       ],
-      "description": "Disables the specified destination of the specified delivery stream.",
+      "description": "Grants permissions to disable the specified destination of the specified delivery\n                                                stream",
       "accessLevel": "Write",
       "resourceTypes": [
         "deliverystream*"
@@ -121,8 +121,8 @@
       "topics": [
         "Amazon Kinesis Firehose"
       ],
-      "description": "Adds or updates tags for the specified delivery stream.",
-      "accessLevel": "Write",
+      "description": "Grants permissions to add or update tags for the specified delivery stream",
+      "accessLevel": "Tagging",
       "resourceTypes": [
         "deliverystream*"
       ],
@@ -134,8 +134,8 @@
       "topics": [
         "Amazon Kinesis Firehose"
       ],
-      "description": "Removes tags from the specified delivery stream.",
-      "accessLevel": "Write",
+      "description": "Grants permissions to remove tags from the specified delivery stream",
+      "accessLevel": "Tagging",
       "resourceTypes": [
         "deliverystream*"
       ],
@@ -147,7 +147,7 @@
       "topics": [
         "Amazon Kinesis Firehose"
       ],
-      "description": "Updates the specified destination of the specified delivery stream.",
+      "description": "Grants permissions to update the specified destination of the specified delivery stream",
       "accessLevel": "Write",
       "resourceTypes": [
         "deliverystream*"

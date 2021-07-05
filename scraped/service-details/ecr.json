@@ -79,6 +79,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeleteRegistryPolicy": {
+      "name": "DeleteRegistryPolicy",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
+      "description": "Grants permission to delete the registry policy",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteRepository": {
       "name": "DeleteRepository",
       "topics": [
@@ -128,6 +139,17 @@
       "resourceTypes": [
         "repository*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeRegistry": {
+      "name": "DescribeRegistry",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
+      "description": "Grants permission to describe the registry settings",
+      "accessLevel": "Read",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -191,6 +213,17 @@
       "resourceTypes": [
         "repository*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRegistryPolicy": {
+      "name": "GetRegistryPolicy",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
+      "description": "Grants permission to retrieve the registry policy",
+      "accessLevel": "Read",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -291,6 +324,41 @@
         "Amazon Elastic Container Registry"
       ],
       "description": "Grants permission to create or update a lifecycle policy",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutRegistryPolicy": {
+      "name": "PutRegistryPolicy",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
+      "description": "Grants permission to update the registry policy",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutReplicationConfiguration": {
+      "name": "PutReplicationConfiguration",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
+      "description": "Grants permission to update the replication configuration for the registry",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ReplicateImage": {
+      "name": "ReplicateImage",
+      "topics": [
+        "Amazon Elastic Container Registry"
+      ],
+      "description": "Grants permission to replicate images to the destination registry",
       "accessLevel": "Write",
       "resourceTypes": [
         "repository*"

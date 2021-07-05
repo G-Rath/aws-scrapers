@@ -6,7 +6,7 @@
       "topics": [
         "AWS Shield"
       ],
-      "description": "Authorizes the DDoS Response team to access the specified Amazon S3 bucket containing\n                                                your flow logs",
+      "description": "Grants permission to authorize the DDoS Response team to access the specified Amazon\n                                                S3 bucket containing your flow logs",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -17,23 +17,56 @@
       "topics": [
         "AWS Shield"
       ],
-      "description": "Authorizes the DDoS Response team using the specified role, to access your AWS account\n                                                to assist with DDoS attack mitigation during potential attacks",
+      "description": "Grants permission to authorize the DDoS Response team using the specified role, to\n                                                access your AWS account to assist with DDoS attack mitigation during potential attacks",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": "iam:GetRole\n                                                   \n                                                \n                                                \n                                                \n                                                   iam:ListAttachedRolePolicies\n                                                   \n                                                \n                                                \n                                                \n                                                   iam:PassRole"
+    },
+    "AssociateHealthCheck": {
+      "name": "AssociateHealthCheck",
+      "topics": [
+        "AWS Shield"
+      ],
+      "description": "Grants permission to add health-based detection to the Shield Advanced protection\n                                                for a resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "protection*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "route53:GetHealthCheck"
+    },
+    "AssociateProactiveEngagementDetails": {
+      "name": "AssociateProactiveEngagementDetails",
+      "topics": [
+        "AWS Shield"
+      ],
+      "description": "Grants permission to initialize proactive engagement and set the list of contacts\n                                                for the DDoS Response Team (DRT) to use",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
     },
     "CreateProtection": {
       "name": "CreateProtection",
       "topics": [
         "AWS Shield"
       ],
-      "description": "Activate DDoS protection service for a given resource ARN",
+      "description": "Grants permission to activate DDoS protection service for a given resource ARN",
       "accessLevel": "Write",
-      "resourceTypes": [
-        "protection*"
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateProtectionGroup": {
+      "name": "CreateProtectionGroup",
+      "topics": [
+        "AWS Shield"
       ],
-      "conditionKeys": "",
+      "description": "Grants permission to create a grouping of protected resources so they can be handled\n                                                as a collective",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
       "dependentActions": ""
     },
     "CreateSubscription": {
@@ -41,7 +74,7 @@
       "topics": [
         "AWS Shield"
       ],
-      "description": "Activate subscription",
+      "description": "Grants permission to activate subscription",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -52,10 +85,23 @@
       "topics": [
         "AWS Shield"
       ],
-      "description": "Delete an existing protection",
+      "description": "Grants permission to delete an existing protection",
       "accessLevel": "Write",
       "resourceTypes": [
         "protection*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteProtectionGroup": {
+      "name": "DeleteProtectionGroup",
+      "topics": [
+        "AWS Shield"
+      ],
+      "description": "Grants permission to remove the specified protection group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "protection-group*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -65,7 +111,7 @@
       "topics": [
         "AWS Shield"
       ],
-      "description": "Deactivate subscription",
+      "description": "Grants permission to deactivate subscription",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -76,11 +122,22 @@
       "topics": [
         "AWS Shield"
       ],
-      "description": "Get attack details",
+      "description": "Grants permission to get attack details",
       "accessLevel": "Read",
       "resourceTypes": [
         "attack*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAttackStatistics": {
+      "name": "DescribeAttackStatistics",
+      "topics": [
+        "AWS Shield"
+      ],
+      "description": "Grants permission to describe information about the number and type of attacks AWS\n                                                Shield has detected in the last year",
+      "accessLevel": "Read",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -89,7 +146,7 @@
       "topics": [
         "AWS Shield"
       ],
-      "description": "Returns the current role and list of Amazon S3 log buckets used by the DDoS Response\n                                                team to access your AWS account while assisting with attack mitigation",
+      "description": "Grants permission to describe the current role and list of Amazon S3 log buckets used\n                                                by the DDoS Response team to access your AWS account while assisting with attack mitigation",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -100,7 +157,7 @@
       "topics": [
         "AWS Shield"
       ],
-      "description": "Lists the email addresses that the DRT can use to contact you during a suspected attack",
+      "description": "Grants permission to list the email addresses that the DRT can use to contact you\n                                                during a suspected attack",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -111,10 +168,23 @@
       "topics": [
         "AWS Shield"
       ],
-      "description": "Get protection details",
+      "description": "Grants permission to get protection details",
       "accessLevel": "Read",
       "resourceTypes": [
         "protection*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeProtectionGroup": {
+      "name": "DescribeProtectionGroup",
+      "topics": [
+        "AWS Shield"
+      ],
+      "description": "Grants permission to describe the specification for the specified protection group",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "protection-group*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -124,8 +194,19 @@
       "topics": [
         "AWS Shield"
       ],
-      "description": "Get subscription details, such as start time",
+      "description": "Grants permission to get subscription details, such as start time",
       "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisableProactiveEngagement": {
+      "name": "DisableProactiveEngagement",
+      "topics": [
+        "AWS Shield"
+      ],
+      "description": "Grants permission to remove authorization from the DDoS Response Team (DRT) to notify\n                                                contacts about escalations",
+      "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -135,7 +216,7 @@
       "topics": [
         "AWS Shield"
       ],
-      "description": "Removes the DDoS Response team's access to the specified Amazon S3 bucket containing\n                                                your flow logs",
+      "description": "Grants permission to remove the DDoS Response team's access to the specified Amazon\n                                                S3 bucket containing your flow logs",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -146,7 +227,31 @@
       "topics": [
         "AWS Shield"
       ],
-      "description": "Removes the DDoS Response team's access to your AWS account",
+      "description": "Grants permission to remove the DDoS Response team's access to your AWS account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateHealthCheck": {
+      "name": "DisassociateHealthCheck",
+      "topics": [
+        "AWS Shield"
+      ],
+      "description": "Grants permission to remove health-based detection from the Shield Advanced protection\n                                                for a resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "protection*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "EnableProactiveEngagement": {
+      "name": "EnableProactiveEngagement",
+      "topics": [
+        "AWS Shield"
+      ],
+      "description": "Grants permission to authorize the DDoS Response Team (DRT) to use email and phone\n                                                to notify contacts about escalations",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -157,7 +262,7 @@
       "topics": [
         "AWS Shield"
       ],
-      "description": "Get subscription state",
+      "description": "Grants permission to get subscription state",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -168,7 +273,18 @@
       "topics": [
         "AWS Shield"
       ],
-      "description": "List all existing attacks",
+      "description": "Grants permission to list all existing attacks",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProtectionGroups": {
+      "name": "ListProtectionGroups",
+      "topics": [
+        "AWS Shield"
+      ],
+      "description": "Grants permission to retrieve the protection groups for the account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -179,9 +295,61 @@
       "topics": [
         "AWS Shield"
       ],
-      "description": "List all existing protections",
+      "description": "Grants permission to list all existing protections",
       "accessLevel": "List",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListResourcesInProtectionGroup": {
+      "name": "ListResourcesInProtectionGroup",
+      "topics": [
+        "AWS Shield"
+      ],
+      "description": "Grants permission to retrieve the resources that are included in the protection group",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "protection-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "AWS Shield"
+      ],
+      "description": "Grants permission to get information about AWS tags for a specified Amazon Resource\n                                                Name (ARN) in AWS Shield",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "protection"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "AWS Shield"
+      ],
+      "description": "Grants permission to add or updates tags for a resource in AWS Shield",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "protection"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "AWS Shield"
+      ],
+      "description": "Grants permission to remove tags from a resource in AWS Shield",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "protection"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -190,9 +358,22 @@
       "topics": [
         "AWS Shield"
       ],
-      "description": "Updates the details of the list of email addresses that the DRT can use to contact\n                                                you during a suspected attack",
+      "description": "Grants permission to update the details of the list of email addresses that the DRT\n                                                can use to contact you during a suspected attack",
       "accessLevel": "Write",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateProtectionGroup": {
+      "name": "UpdateProtectionGroup",
+      "topics": [
+        "AWS Shield"
+      ],
+      "description": "Grants permission to update an existing protection group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "protection-group*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -201,7 +382,7 @@
       "topics": [
         "AWS Shield"
       ],
-      "description": "Updates the details of an existing subscription",
+      "description": "Grants permission to update the details of an existing subscription",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",

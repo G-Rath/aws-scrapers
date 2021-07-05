@@ -28,7 +28,7 @@
       "topics": [
         "AWS Marketplace Metering Service"
       ],
-      "description": "Called from a SaaS application listed on the AWS Marketplace to post metering records\n                                                for a set of customers.",
+      "description": "Grants permission to post metering records for a set of customers for SaaS applications",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -73,17 +73,6 @@
         "AWS Private Marketplace"
       ],
       "description": "Creates a Private Marketplace for the individual account, or for the entire AWS Organization\n                                                if one exists. This action can only be performed by the master account if using an\n                                                AWS Organization.",
-      "accessLevel": "Write",
-      "resourceTypes": [],
-      "conditionKeys": "",
-      "dependentActions": ""
-    },
-    "CreatePrivateMarketplaceProfile": {
-      "name": "CreatePrivateMarketplaceProfile",
-      "topics": [
-        "AWS Private Marketplace"
-      ],
-      "description": "Creates a Private Marketplace Profile that customizes the white label experience on\n                                                the AWS Marketplace website for the individual account, or for the entire AWS Organization\n                                                if one exists. This action can only be performed by the master account if using an\n                                                AWS Organization.",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -144,28 +133,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "DescribePrivateMarketplaceProducts": {
-      "name": "DescribePrivateMarketplaceProducts",
-      "topics": [
-        "AWS Private Marketplace"
-      ],
-      "description": "Describes the status of requested products in the Private Marketplace for administrative\n                                                purposes. This action can be performed by any account in an AWS Organization, provided\n                                                the user has permissions to do so, and the Organization's Service Control Policies\n                                                allow it.",
-      "accessLevel": "List",
-      "resourceTypes": [],
-      "conditionKeys": "",
-      "dependentActions": ""
-    },
-    "DescribePrivateMarketplaceProfile": {
-      "name": "DescribePrivateMarketplaceProfile",
-      "topics": [
-        "AWS Private Marketplace"
-      ],
-      "description": "Describes details about the Private Marketplace Profile for administrative purposes.\n                                                This action can be performed by any account in an AWS Organization, provided the user\n                                                has permissions to do so, and the Organization's Service Control Policies allow it.",
-      "accessLevel": "Read",
-      "resourceTypes": [],
-      "conditionKeys": "",
-      "dependentActions": ""
-    },
     "DescribePrivateMarketplaceRequests": {
       "name": "DescribePrivateMarketplaceRequests",
       "topics": [
@@ -173,17 +140,6 @@
       ],
       "description": "Describes requests and associated products in the Private Marketplace. This action\n                                                can be performed by any account in an AWS Organization, provided the user has permissions\n                                                to do so, and the Organization's Service Control Policies allow it.",
       "accessLevel": "List",
-      "resourceTypes": [],
-      "conditionKeys": "",
-      "dependentActions": ""
-    },
-    "DescribePrivateMarketplaceSettings": {
-      "name": "DescribePrivateMarketplaceSettings",
-      "topics": [
-        "AWS Private Marketplace"
-      ],
-      "description": "Describes the Private Marketplace settings. This includes setting for enabling requests\n                                                from end users and preferences for notifications. This action can be performed by\n                                                any account in an AWS Organization, provided the user has permissions to do so, and\n                                                the Organization's Service Control Policies allow it.",
-      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -331,17 +287,6 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "ListPrivateMarketplaceProducts": {
-      "name": "ListPrivateMarketplaceProducts",
-      "topics": [
-        "AWS Private Marketplace"
-      ],
-      "description": "Queryable list for the products and status of products in the Private Marketplace\n                                                for administrative purposes. This action can be performed by any account in an AWS\n                                                Organization, provided the user has permissions to do so, and the Organization's Service\n                                                Control Policies allow it.",
-      "accessLevel": "List",
-      "resourceTypes": [],
-      "conditionKeys": "",
-      "dependentActions": ""
-    },
     "ListPrivateMarketplaceRequests": {
       "name": "ListPrivateMarketplaceRequests",
       "topics": [
@@ -369,7 +314,7 @@
       "topics": [
         "AWS Marketplace Metering Service"
       ],
-      "description": "Emits metering records.",
+      "description": "Grants permission to emit metering records",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -391,7 +336,7 @@
       "topics": [
         "AWS Marketplace Metering Service"
       ],
-      "description": "Allows you to verify that the customer running your paid software is subscribed to\n                                                your product on AWS Marketplace, enabling you to guard against unauthorized use. Meters\n                                                software use per ECS task, per hour, with usage prorated to the second.",
+      "description": "Grants permission to to verify that the customer running your paid software is subscribed\n                                                to your product on AWS Marketplace, enabling you to guard against unauthorized use.\n                                                Meters software use per ECS task, per hour, with usage prorated to the second",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -413,7 +358,7 @@
       "topics": [
         "AWS Marketplace Metering Service"
       ],
-      "description": "Resolves a registration token to obtain a CustomerIdentifier and product code.",
+      "description": "Grants permission to resolve a registration token to obtain a CustomerIdentifier and\n                                                product code",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -452,28 +397,6 @@
       "conditionKeys": "catalog:ChangeType",
       "dependentActions": ""
     },
-    "StartPrivateMarketplace": {
-      "name": "StartPrivateMarketplace",
-      "topics": [
-        "AWS Private Marketplace"
-      ],
-      "description": "Starts the Private Marketplace, enabling the customized AWS Marketplace experience,\n                                                and enabling restrictions on the procurement of products based on what is available\n                                                in the Private Marketplace. This action can be performed by any account in an AWS\n                                                Organization, provided the user has permissions to do so, and the Organization's Service\n                                                Control Policies allow it.",
-      "accessLevel": "Write",
-      "resourceTypes": [],
-      "conditionKeys": "",
-      "dependentActions": ""
-    },
-    "StopPrivateMarketplace": {
-      "name": "StopPrivateMarketplace",
-      "topics": [
-        "AWS Private Marketplace"
-      ],
-      "description": "Stops the Private Marketplace, disabling the customized AWS Marketplace experience\n                                                and removing the Private Marketplace procurement restrictions on products. This action\n                                                can be performed by any account in an AWS Organization, provided the user has permissions\n                                                to do so, and the Organization's Service Control Policies allow it.",
-      "accessLevel": "Write",
-      "resourceTypes": [],
-      "conditionKeys": "",
-      "dependentActions": ""
-    },
     "Subscribe": {
       "name": "Subscribe",
       "topics": [
@@ -502,28 +425,6 @@
         "AWS Marketplace"
       ],
       "description": "Allows users to make changes to an incoming subscription request, including the ability\n                                                to delete the prospective subscriber's information (for providers who provide products\n                                                that require subscription verification).",
-      "accessLevel": "Write",
-      "resourceTypes": [],
-      "conditionKeys": "",
-      "dependentActions": ""
-    },
-    "UpdatePrivateMarketplaceProfile": {
-      "name": "UpdatePrivateMarketplaceProfile",
-      "topics": [
-        "AWS Private Marketplace"
-      ],
-      "description": "Updates the Private Marketplace Profile that customizes the white label experience\n                                                on the AWS Marketplace website for the individual account, or for the entire AWS Organization\n                                                if one exists. This action can be performed by any account in an AWS Organization,\n                                                provided the user has permissions to do so, and the Organization's Service Control\n                                                Policies allow it.",
-      "accessLevel": "Write",
-      "resourceTypes": [],
-      "conditionKeys": "",
-      "dependentActions": ""
-    },
-    "UpdatePrivateMarketplaceSettings": {
-      "name": "UpdatePrivateMarketplaceSettings",
-      "topics": [
-        "AWS Private Marketplace"
-      ],
-      "description": "Updates the Private Marketplace settings. This includes setting for enabling requests\n                                                from end users and preferences for notifications. This action can be performed by\n                                                any account in an AWS Organization, provided the user has permissions to do so, and\n                                                the Organization's Service Control Policies allow it.",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",

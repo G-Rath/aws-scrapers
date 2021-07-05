@@ -1,0 +1,255 @@
+{
+  "servicePrefix": "kafka-cluster",
+  "actions": {
+    "AlterCluster": {
+      "name": "AlterCluster",
+      "topics": [
+        "Apache Kafka APIs for Amazon MSK clusters"
+      ],
+      "description": "Grants permission to alter various aspects of the cluster, equivalent to Apache Kafka's\n                                                ALTER CLUSTER ACL",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "kafka-cluster:Connect\n                                                   \n                                                \n                                                \n                                                \n                                                   kafka-cluster:DescribeCluster"
+    },
+    "AlterClusterDynamicConfiguration": {
+      "name": "AlterClusterDynamicConfiguration",
+      "topics": [
+        "Apache Kafka APIs for Amazon MSK clusters"
+      ],
+      "description": "Grants permission to alter the dynamic configuration of a cluster, equivalent to Apache\n                                                Kafka's ALTER_CONFIGS CLUSTER ACL",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "kafka-cluster:Connect\n                                                   \n                                                \n                                                \n                                                \n                                                   kafka-cluster:DescribeClusterDynamicConfiguration"
+    },
+    "AlterGroup": {
+      "name": "AlterGroup",
+      "topics": [
+        "Apache Kafka APIs for Amazon MSK clusters"
+      ],
+      "description": "Grants permission to join groups on a cluster, equivalent to Apache Kafka's READ GROUP\n                                                ACL",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "kafka-cluster:Connect\n                                                   \n                                                \n                                                \n                                                \n                                                   kafka-cluster:DescribeGroup"
+    },
+    "AlterTopic": {
+      "name": "AlterTopic",
+      "topics": [
+        "Apache Kafka APIs for Amazon MSK clusters"
+      ],
+      "description": "Grants permission to alter topics on a cluster, equivalent to Apache Kafka's ALTER\n                                                TOPIC ACL",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "topic*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "kafka-cluster:Connect\n                                                   \n                                                \n                                                \n                                                \n                                                   kafka-cluster:DescribeTopic"
+    },
+    "AlterTopicDynamicConfiguration": {
+      "name": "AlterTopicDynamicConfiguration",
+      "topics": [
+        "Apache Kafka APIs for Amazon MSK clusters"
+      ],
+      "description": "Grants permission to alter the dynamic configuration of topics on a cluster, equivalent\n                                                to Apache Kafka's ALTER_CONFIGS TOPIC ACL",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "topic*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "kafka-cluster:Connect\n                                                   \n                                                \n                                                \n                                                \n                                                   kafka-cluster:DescribeTopicDynamicConfiguration"
+    },
+    "AlterTransactionalId": {
+      "name": "AlterTransactionalId",
+      "topics": [
+        "Apache Kafka APIs for Amazon MSK clusters"
+      ],
+      "description": "Grants permission to alter transactional IDs on a cluster, equivalent to Apache Kafka's\n                                                WRITE TRANSACTIONAL_ID ACL",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "transactional-id*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "kafka-cluster:Connect\n                                                   \n                                                \n                                                \n                                                \n                                                   kafka-cluster:DescribeTransactionalId\n                                                   \n                                                \n                                                \n                                                \n                                                   kafka-cluster:WriteData"
+    },
+    "Connect": {
+      "name": "Connect",
+      "topics": [
+        "Apache Kafka APIs for Amazon MSK clusters"
+      ],
+      "description": "Grants permission to connect and authenticate to the cluster",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateTopic": {
+      "name": "CreateTopic",
+      "topics": [
+        "Apache Kafka APIs for Amazon MSK clusters"
+      ],
+      "description": "Grants permission to create topics on a cluster, equivalent to Apache Kafka's CREATE\n                                                CLUSTER/TOPIC ACL",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "topic*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "kafka-cluster:Connect"
+    },
+    "DeleteGroup": {
+      "name": "DeleteGroup",
+      "topics": [
+        "Apache Kafka APIs for Amazon MSK clusters"
+      ],
+      "description": "Grants permission to delete groups on a cluster, equivalent to Apache Kafka's DELETE\n                                                GROUP ACL",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "kafka-cluster:Connect\n                                                   \n                                                \n                                                \n                                                \n                                                   kafka-cluster:DescribeGroup"
+    },
+    "DeleteTopic": {
+      "name": "DeleteTopic",
+      "topics": [
+        "Apache Kafka APIs for Amazon MSK clusters"
+      ],
+      "description": "Grants permission to delete topics on a cluster, equivalent to Apache Kafka's DELETE\n                                                TOPIC ACL",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "topic*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "kafka-cluster:Connect\n                                                   \n                                                \n                                                \n                                                \n                                                   kafka-cluster:DescribeTopic"
+    },
+    "DescribeCluster": {
+      "name": "DescribeCluster",
+      "topics": [
+        "Apache Kafka APIs for Amazon MSK clusters"
+      ],
+      "description": "Grants permission to describe various aspects of the cluster, equivalent to Apache\n                                                Kafka's DESCRIBE CLUSTER ACL",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "cluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "kafka-cluster:Connect"
+    },
+    "DescribeClusterDynamicConfiguration": {
+      "name": "DescribeClusterDynamicConfiguration",
+      "topics": [
+        "Apache Kafka APIs for Amazon MSK clusters"
+      ],
+      "description": "Grants permission to describe the dynamic configuration of a cluster, equivalent to\n                                                Apache Kafka's DESCRIBE_CONFIGS CLUSTER ACL",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "cluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "kafka-cluster:Connect"
+    },
+    "DescribeGroup": {
+      "name": "DescribeGroup",
+      "topics": [
+        "Apache Kafka APIs for Amazon MSK clusters"
+      ],
+      "description": "Grants permission to describe groups on a cluster, equivalent to Apache Kafka's DESCRIBE\n                                                GROUP ACL",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "kafka-cluster:Connect"
+    },
+    "DescribeTopic": {
+      "name": "DescribeTopic",
+      "topics": [
+        "Apache Kafka APIs for Amazon MSK clusters"
+      ],
+      "description": "Grants permission to describe topics on a cluster, equivalent to Apache Kafka's DESCRIBE\n                                                TOPIC ACL",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "topic*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "kafka-cluster:Connect"
+    },
+    "DescribeTopicDynamicConfiguration": {
+      "name": "DescribeTopicDynamicConfiguration",
+      "topics": [
+        "Apache Kafka APIs for Amazon MSK clusters"
+      ],
+      "description": "Grants permission to describe the dynamic configuration of topics on a cluster, equivalent\n                                                to Apache Kafka's DESCRIBE_CONFIGS TOPIC ACL",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "topic*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "kafka-cluster:Connect"
+    },
+    "DescribeTransactionalId": {
+      "name": "DescribeTransactionalId",
+      "topics": [
+        "Apache Kafka APIs for Amazon MSK clusters"
+      ],
+      "description": "Grants permission to describe transactional IDs on a cluster, equivalent to Apache\n                                                Kafka's DESCRIBE TRANSACTIONAL_ID ACL",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "transactional-id*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "kafka-cluster:Connect"
+    },
+    "ReadData": {
+      "name": "ReadData",
+      "topics": [
+        "Apache Kafka APIs for Amazon MSK clusters"
+      ],
+      "description": "Grants permission to read data from topics on a cluster, equivalent to Apache Kafka's\n                                                READ TOPIC ACL",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "topic*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "kafka-cluster:AlterGroup\n                                                   \n                                                \n                                                \n                                                \n                                                   kafka-cluster:Connect\n                                                   \n                                                \n                                                \n                                                \n                                                   kafka-cluster:DescribeTopic"
+    },
+    "WriteData": {
+      "name": "WriteData",
+      "topics": [
+        "Apache Kafka APIs for Amazon MSK clusters"
+      ],
+      "description": "Grants permission to write data to topics on a cluster, equivalent to Apache Kafka's\n                                                WRITE TOPIC ACL",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "topic*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "kafka-cluster:Connect\n                                                   \n                                                \n                                                \n                                                \n                                                   kafka-cluster:DescribeTopic"
+    },
+    "WriteDataIdempotently": {
+      "name": "WriteDataIdempotently",
+      "topics": [
+        "Apache Kafka APIs for Amazon MSK clusters"
+      ],
+      "description": "Grants permission to write data idempotently on a cluster, equivalent to Apache Kafka's\n                                                IDEMPOTENT_WRITE CLUSTER ACL",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "kafka-cluster:Connect\n                                                   \n                                                \n                                                \n                                                \n                                                   kafka-cluster:WriteData"
+    }
+  },
+  "topics": [
+    "Apache Kafka APIs for Amazon MSK clusters"
+  ]
+}

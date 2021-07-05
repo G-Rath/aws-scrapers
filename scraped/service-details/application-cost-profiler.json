@@ -1,0 +1,74 @@
+{
+  "servicePrefix": "application-cost-profiler",
+  "actions": {
+    "DeleteReportDefinition": {
+      "name": "DeleteReportDefinition",
+      "topics": [
+        "AWS Application Cost Profiler Service"
+      ],
+      "description": "Grants permission to delete the configuration with specific Application Cost Profiler\n                                                Report thereby effectively disabling report generation",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetReportDefinition": {
+      "name": "GetReportDefinition",
+      "topics": [
+        "AWS Application Cost Profiler Service"
+      ],
+      "description": "Grants permission to fetch the configuration with specific Application Cost Profiler\n                                                Report request",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ImportApplicationUsage": {
+      "name": "ImportApplicationUsage",
+      "topics": [
+        "AWS Application Cost Profiler Service"
+      ],
+      "description": "Grants permission to import the application usage from S3",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListReportDefinitions": {
+      "name": "ListReportDefinitions",
+      "topics": [
+        "AWS Application Cost Profiler Service"
+      ],
+      "description": "Grants permission to get a list of the different Application Cost Profiler Report\n                                                configurations they have created",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutReportDefinition": {
+      "name": "PutReportDefinition",
+      "topics": [
+        "AWS Application Cost Profiler Service"
+      ],
+      "description": "Grants permission to create Application Cost Profiler Report configurations",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateReportDefinition": {
+      "name": "UpdateReportDefinition",
+      "topics": [
+        "AWS Application Cost Profiler Service"
+      ],
+      "description": "Grants permission to update an existing Application Cost Profiler Report configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "AWS Application Cost Profiler Service"
+  ]
+}

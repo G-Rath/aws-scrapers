@@ -1,15 +1,163 @@
 {
   "servicePrefix": "license-manager",
   "actions": {
+    "AcceptGrant": {
+      "name": "AcceptGrant",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to accept a grant",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "grant*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CheckInLicense": {
+      "name": "CheckInLicense",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to check in license entitlements back to pool",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CheckoutBorrowLicense": {
+      "name": "CheckoutBorrowLicense",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to check out license entitlements for borrow use case",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "license*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CheckoutLicense": {
+      "name": "CheckoutLicense",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to check out license entitlements",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateGrant": {
+      "name": "CreateGrant",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to create a new grant for license",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "license*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateGrantVersion": {
+      "name": "CreateGrantVersion",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to create new version of grant",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "grant*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateLicense": {
+      "name": "CreateLicense",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to create a new license",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "CreateLicenseConfiguration": {
       "name": "CreateLicenseConfiguration",
       "topics": [
         "AWS License Manager"
       ],
-      "description": "Creates a new license configuration",
+      "description": "Grants permission to create a new license configuration",
       "accessLevel": "Tagging",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateLicenseManagerReportGenerator": {
+      "name": "CreateLicenseManagerReportGenerator",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to create a report generator for a license configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateLicenseVersion": {
+      "name": "CreateLicenseVersion",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to create new version of license.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "license*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateToken": {
+      "name": "CreateToken",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to create a new token for license",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "license*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteGrant": {
+      "name": "DeleteGrant",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Deletes a grant",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "grant*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteLicense": {
+      "name": "DeleteLicense",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to delete a license",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "license*"
+      ],
+      "conditionKeys": "",
       "dependentActions": ""
     },
     "DeleteLicenseConfiguration": {
@@ -17,10 +165,82 @@
       "topics": [
         "AWS License Manager"
       ],
-      "description": "Permanently deletes a license configuration",
+      "description": "Grants permission to permanently delete a license configuration",
       "accessLevel": "Write",
       "resourceTypes": [
         "license-configuration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteLicenseManagerReportGenerator": {
+      "name": "DeleteLicenseManagerReportGenerator",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to delete a report generator",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "report-generator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteToken": {
+      "name": "DeleteToken",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to delete token",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ExtendLicenseConsumption": {
+      "name": "ExtendLicenseConsumption",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to extend consumption period of already checkout license entitlements",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAccessToken": {
+      "name": "GetAccessToken",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to get access token",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetGrant": {
+      "name": "GetGrant",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to get a grant",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "grant*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLicense": {
+      "name": "GetLicense",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to get a license",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "license*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -30,10 +250,36 @@
       "topics": [
         "AWS License Manager"
       ],
-      "description": "Gets a license configuration",
-      "accessLevel": "List",
+      "description": "Grants permission to get a license configuration",
+      "accessLevel": "Read",
       "resourceTypes": [
         "license-configuration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLicenseManagerReportGenerator": {
+      "name": "GetLicenseManagerReportGenerator",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to get a report generator",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "report-generator*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLicenseUsage": {
+      "name": "GetLicenseUsage",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to get a license usage",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "license*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -43,7 +289,7 @@
       "topics": [
         "AWS License Manager"
       ],
-      "description": "Gets service settings",
+      "description": "Grants permission to get service settings",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -54,11 +300,22 @@
       "topics": [
         "AWS License Manager"
       ],
-      "description": "Lists associations for a selected license configuration",
+      "description": "Grants permission to list associations for a selected license configuration",
       "accessLevel": "List",
       "resourceTypes": [
         "license-configuration*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDistributedGrants": {
+      "name": "ListDistributedGrants",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to list distributed grants",
+      "accessLevel": "List",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -67,7 +324,7 @@
       "topics": [
         "AWS License Manager"
       ],
-      "description": "Lists the license configuration operations that failed",
+      "description": "Grants permission to list the license configuration operations that failed",
       "accessLevel": "List",
       "resourceTypes": [
         "license-configuration*"
@@ -80,9 +337,22 @@
       "topics": [
         "AWS License Manager"
       ],
-      "description": "Lists license configurations",
+      "description": "Grants permission to list license configurations",
       "accessLevel": "List",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListLicenseManagerReportGenerators": {
+      "name": "ListLicenseManagerReportGenerators",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to list report generators",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "license-configuration"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -91,7 +361,53 @@
       "topics": [
         "AWS License Manager"
       ],
-      "description": "Lists license specifications associated with a selected resource",
+      "description": "Grants permission to list license specifications associated with a selected resource",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListLicenseVersions": {
+      "name": "ListLicenseVersions",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to list license versions",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "license*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListLicenses": {
+      "name": "ListLicenses",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to list licenses",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListReceivedGrants": {
+      "name": "ListReceivedGrants",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to list received grants",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListReceivedLicenses": {
+      "name": "ListReceivedLicenses",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to list received licenses",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -102,7 +418,7 @@
       "topics": [
         "AWS License Manager"
       ],
-      "description": "Lists resource inventory",
+      "description": "Grants permission to list resource inventory",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -113,11 +429,22 @@
       "topics": [
         "AWS License Manager"
       ],
-      "description": "Lists tags for a selected resource",
+      "description": "Grants permission to list tags for a selected resource",
       "accessLevel": "List",
       "resourceTypes": [
         "license-configuration*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTokens": {
+      "name": "ListTokens",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to list tokens",
+      "accessLevel": "List",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -126,10 +453,23 @@
       "topics": [
         "AWS License Manager"
       ],
-      "description": "Lists usage records for selected license configuration",
+      "description": "Grants permission to list usage records for selected license configuration",
       "accessLevel": "List",
       "resourceTypes": [
         "license-configuration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RejectGrant": {
+      "name": "RejectGrant",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to reject a grant",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "grant*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -139,7 +479,7 @@
       "topics": [
         "AWS License Manager"
       ],
-      "description": "Tags a selected resource",
+      "description": "Grants permission to tag a selected resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "license-configuration*"
@@ -152,7 +492,7 @@
       "topics": [
         "AWS License Manager"
       ],
-      "description": "Untags a selected resource",
+      "description": "Grants permission to untag a selected resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "license-configuration*"
@@ -165,10 +505,23 @@
       "topics": [
         "AWS License Manager"
       ],
-      "description": "Updates an existing license configuration",
+      "description": "Grants permission to update an existing license configuration",
       "accessLevel": "Write",
       "resourceTypes": [
         "license-configuration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateLicenseManagerReportGenerator": {
+      "name": "UpdateLicenseManagerReportGenerator",
+      "topics": [
+        "AWS License Manager"
+      ],
+      "description": "Grants permission to update a report generator for a license configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "report-generator*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -178,7 +531,7 @@
       "topics": [
         "AWS License Manager"
       ],
-      "description": "Updates license specifications for a selected resource",
+      "description": "Grants permission to updates license specifications for a selected resource",
       "accessLevel": "Write",
       "resourceTypes": [
         "license-configuration*"
@@ -191,7 +544,7 @@
       "topics": [
         "AWS License Manager"
       ],
-      "description": "Updates service settings",
+      "description": "Grants permission to updates service settings",
       "accessLevel": "Permissions management",
       "resourceTypes": [],
       "conditionKeys": "",

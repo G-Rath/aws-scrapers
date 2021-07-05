@@ -1,0 +1,631 @@
+{
+  "servicePrefix": "auditmanager",
+  "actions": {
+    "AssociateAssessmentReportEvidenceFolder": {
+      "name": "AssociateAssessmentReportEvidenceFolder",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to associate an evidence folder with an assessment report in AWS\n                                                Audit Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "assessment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchAssociateAssessmentReportEvidence": {
+      "name": "BatchAssociateAssessmentReportEvidence",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to associate a list of evidence to an assessment report in AWS Audit\n                                                Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "assessment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchCreateDelegationByAssessment": {
+      "name": "BatchCreateDelegationByAssessment",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to create delegations for an assessment in AWS Audit Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "assessment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchDeleteDelegationByAssessment": {
+      "name": "BatchDeleteDelegationByAssessment",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to delete delegations for an assessment in AWS Audit Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "assessment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchDisassociateAssessmentReportEvidence": {
+      "name": "BatchDisassociateAssessmentReportEvidence",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to disassociate a list of evidence from an assessment report in\n                                                AWS Audit Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "assessment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchImportEvidenceToAssessmentControl": {
+      "name": "BatchImportEvidenceToAssessmentControl",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to import a list of evidence to an assessment control in AWS Audit\n                                                Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "assessmentControlSet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAssessment": {
+      "name": "CreateAssessment",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to create an assessment to be used with AWS Audit Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateAssessmentFramework": {
+      "name": "CreateAssessmentFramework",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to create a framework for use in AWS Audit Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAssessmentReport": {
+      "name": "CreateAssessmentReport",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to create an assessment report in AWS Audit Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "assessment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateControl": {
+      "name": "CreateControl",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to create a control to be used in AWS Audit Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "DeleteAssessment": {
+      "name": "DeleteAssessment",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to delete an assessment in AWS Audit Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "assessment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAssessmentFramework": {
+      "name": "DeleteAssessmentFramework",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to delete an assessment framework in AWS Audit Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "assessmentFramework*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAssessmentReport": {
+      "name": "DeleteAssessmentReport",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to delete an assessment report in AWS Audit Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "assessment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteControl": {
+      "name": "DeleteControl",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to delete a control in AWS Audit Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "control*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeregisterAccount": {
+      "name": "DeregisterAccount",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to deregister an account in AWS Audit Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeregisterOrganizationAdminAccount": {
+      "name": "DeregisterOrganizationAdminAccount",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to deregister the delegated administrator account for AWS Audit\n                                                Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateAssessmentReportEvidenceFolder": {
+      "name": "DisassociateAssessmentReportEvidenceFolder",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to disassociate an evidence folder from an assessment report in\n                                                AWS Audit Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "assessment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAccountStatus": {
+      "name": "GetAccountStatus",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to get the status of an account in AWS Audit Manager",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAssessment": {
+      "name": "GetAssessment",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to get an assessment created in AWS Audit Manager",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "assessment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAssessmentFramework": {
+      "name": "GetAssessmentFramework",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to get an assessment framework in AWS Audit Manager",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "assessmentFramework*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAssessmentReportUrl": {
+      "name": "GetAssessmentReportUrl",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to get the URL for an assessment report in AWS Audit Manager",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "assessment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetChangeLogs": {
+      "name": "GetChangeLogs",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to get changelogs for an assessment in AWS Audit Manager",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "assessment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetControl": {
+      "name": "GetControl",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to get a control in AWS Audit Manager",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "control*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDelegations": {
+      "name": "GetDelegations",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to get all delegations in AWS Audit Manager",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEvidence": {
+      "name": "GetEvidence",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to get evidence from AWS Audit Manager",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "assessmentControlSet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEvidenceByEvidenceFolder": {
+      "name": "GetEvidenceByEvidenceFolder",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to get all the evidence from an evidence folder in AWS Audit Manager",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "assessmentControlSet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEvidenceFolder": {
+      "name": "GetEvidenceFolder",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to get the evidence folder from AWS Audit Manager",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "assessmentControlSet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEvidenceFoldersByAssessment": {
+      "name": "GetEvidenceFoldersByAssessment",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to get the evidence folders from an assessment in AWS Audit Manager",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "assessment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEvidenceFoldersByAssessmentControl": {
+      "name": "GetEvidenceFoldersByAssessmentControl",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to get the evidence folders from an assessment control in AWS Audit\n                                                Manager",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "assessmentControlSet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetOrganizationAdminAccount": {
+      "name": "GetOrganizationAdminAccount",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to get the delegated administrator account in AWS Audit Manager",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetServicesInScope": {
+      "name": "GetServicesInScope",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to get the services in scope for an assessment in AWS Audit Manager",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSettings": {
+      "name": "GetSettings",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to get all settings configured in AWS Audit Manager",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAssessmentFrameworks": {
+      "name": "ListAssessmentFrameworks",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to list all assessment frameworks in AWS Audit Manager",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAssessmentReports": {
+      "name": "ListAssessmentReports",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to list all assessment reports in AWS Audit Manager",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAssessments": {
+      "name": "ListAssessments",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to list all assessments in AWS Audit Manager",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListControls": {
+      "name": "ListControls",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to list all controls in AWS Audit Manager",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListKeywordsForDataSource": {
+      "name": "ListKeywordsForDataSource",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to list all the data source keywords in AWS Audit Manager",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListNotifications": {
+      "name": "ListNotifications",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to list all notifications in AWS Audit Manager",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to list tags for an AWS Audit Manager resource",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "assessment"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterAccount": {
+      "name": "RegisterAccount",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to register an account in AWS Audit Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterOrganizationAdminAccount": {
+      "name": "RegisterOrganizationAdminAccount",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to register an account within the organization as the delegated\n                                                administrator for AWS Audit Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to tag an AWS Audit Manager resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "assessment"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to untag an AWS Audit Manager resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "assessment"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAssessment": {
+      "name": "UpdateAssessment",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to update an assessment in AWS Audit Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "assessment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAssessmentControl": {
+      "name": "UpdateAssessmentControl",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to update an assessment control in AWS Audit Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "assessmentControlSet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAssessmentControlSetStatus": {
+      "name": "UpdateAssessmentControlSetStatus",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to update the status of an assessment control set in AWS Audit Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "assessmentControlSet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAssessmentFramework": {
+      "name": "UpdateAssessmentFramework",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to update an assessment framework in AWS Audit Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "assessmentFramework*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAssessmentStatus": {
+      "name": "UpdateAssessmentStatus",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to update the status of an assessment in AWS Audit Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "assessment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateControl": {
+      "name": "UpdateControl",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to update a control in AWS Audit Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "control*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSettings": {
+      "name": "UpdateSettings",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to update settings in AWS Audit Manager",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ValidateAssessmentReportIntegrity": {
+      "name": "ValidateAssessmentReportIntegrity",
+      "topics": [
+        "AWS Audit Manager"
+      ],
+      "description": "Grants permission to validate the integrity of an assessment report in AWS Audit Manager",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "AWS Audit Manager"
+  ]
+}

@@ -1,0 +1,727 @@
+{
+  "servicePrefix": "iotwireless",
+  "actions": {
+    "AssociateAwsAccountWithPartnerAccount": {
+      "name": "AssociateAwsAccountWithPartnerAccount",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to link partner accounts with Aws account",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SidewalkAccount*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociateWirelessDeviceWithThing": {
+      "name": "AssociateWirelessDeviceWithThing",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to associate the wireless device with AWS IoT thing for a given\n                                                wirelessDeviceId",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "WirelessDevice*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iot:DescribeThing"
+    },
+    "AssociateWirelessGatewayWithCertificate": {
+      "name": "AssociateWirelessGatewayWithCertificate",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to associate a WirelessGateway with the IoT Core Identity certificate",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "WirelessGateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociateWirelessGatewayWithThing": {
+      "name": "AssociateWirelessGatewayWithThing",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to associate the wireless gateway with AWS IoT thing for a given\n                                                wirelessGatewayId",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "WirelessGateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iot:DescribeThing"
+    },
+    "CreateDestination": {
+      "name": "CreateDestination",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to create a Destination resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Destination*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDeviceProfile": {
+      "name": "CreateDeviceProfile",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to create a DeviceProfile resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "DeviceProfile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateServiceProfile": {
+      "name": "CreateServiceProfile",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to create a ServiceProfile resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ServiceProfile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateWirelessDevice": {
+      "name": "CreateWirelessDevice",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to create a WirelessDevice resource with given Destination",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Destination*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateWirelessGateway": {
+      "name": "CreateWirelessGateway",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to create a WirelessGateway resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "WirelessGateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateWirelessGatewayTask": {
+      "name": "CreateWirelessGatewayTask",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to create a task for a given WirelessGateway",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "WirelessGateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateWirelessGatewayTaskDefinition": {
+      "name": "CreateWirelessGatewayTaskDefinition",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to create a WirelessGateway task definition",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "WirelessGatewayTaskDefinition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDestination": {
+      "name": "DeleteDestination",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to delete a Destination",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Destination*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDeviceProfile": {
+      "name": "DeleteDeviceProfile",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to delete a DeviceProfile",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "DeviceProfile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteServiceProfile": {
+      "name": "DeleteServiceProfile",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to delete a ServiceProfile",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ServiceProfile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteWirelessDevice": {
+      "name": "DeleteWirelessDevice",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to delete a WirelessDevice",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "WirelessDevice*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteWirelessGateway": {
+      "name": "DeleteWirelessGateway",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to delete a WirelessGateway",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "WirelessGateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteWirelessGatewayTask": {
+      "name": "DeleteWirelessGatewayTask",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to delete task for a given WirelessGateway",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "WirelessGateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteWirelessGatewayTaskDefinition": {
+      "name": "DeleteWirelessGatewayTaskDefinition",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to delete a WirelessGateway task definition",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "WirelessGatewayTaskDefinition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateAwsAccountFromPartnerAccount": {
+      "name": "DisassociateAwsAccountFromPartnerAccount",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to disassociate an AWS account from a partner account",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SidewalkAccount*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateWirelessDeviceFromThing": {
+      "name": "DisassociateWirelessDeviceFromThing",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to disassociate a wireless device from a AWS IoT thing",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "WirelessDevice*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iot:DescribeThing"
+    },
+    "DisassociateWirelessGatewayFromCertificate": {
+      "name": "DisassociateWirelessGatewayFromCertificate",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to disassociate a WirelessGateway from a IoT Core Identity certificate",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "WirelessGateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateWirelessGatewayFromThing": {
+      "name": "DisassociateWirelessGatewayFromThing",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to disassociate a WirelessGateway from a IoT Core thing",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "WirelessGateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iot:DescribeThing"
+    },
+    "GetDestination": {
+      "name": "GetDestination",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to get the Destination",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Destination*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDeviceProfile": {
+      "name": "GetDeviceProfile",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to get the DeviceProfile",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "DeviceProfile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLogLevelsByResourceTypes": {
+      "name": "GetLogLevelsByResourceTypes",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to get log levels by resource types",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPartnerAccount": {
+      "name": "GetPartnerAccount",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to get the associated PartnerAccount",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "SidewalkAccount*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetResourceLogLevel": {
+      "name": "GetResourceLogLevel",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to get resource log level",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "WirelessDevice"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetServiceEndpoint": {
+      "name": "GetServiceEndpoint",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to retrieve the customer account specific endpoint for CUPS protocol\n                                                connection or LoRaWAN Network Server (LNS) protocol connection, and optionally server\n                                                trust certificate in PEM format",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetServiceProfile": {
+      "name": "GetServiceProfile",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to get the ServiceProfile",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ServiceProfile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetWirelessDevice": {
+      "name": "GetWirelessDevice",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to get the WirelessDevice",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "WirelessDevice*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetWirelessDeviceStatistics": {
+      "name": "GetWirelessDeviceStatistics",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to get statistics info for a given WirelessDevice",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "WirelessDevice*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetWirelessGateway": {
+      "name": "GetWirelessGateway",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to get the WirelessGateway",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "WirelessGateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetWirelessGatewayCertificate": {
+      "name": "GetWirelessGatewayCertificate",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to get the IoT Core Identity certificate id associated with the\n                                                WirelessGateway",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "WirelessGateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetWirelessGatewayFirmwareInformation": {
+      "name": "GetWirelessGatewayFirmwareInformation",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to get Current firmware version and other information for the WirelessGateway",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "WirelessGateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetWirelessGatewayStatistics": {
+      "name": "GetWirelessGatewayStatistics",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to get statistics info for a given WirelessGateway",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "WirelessGateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetWirelessGatewayTask": {
+      "name": "GetWirelessGatewayTask",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to get the task for a given WirelessGateway",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "WirelessGateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetWirelessGatewayTaskDefinition": {
+      "name": "GetWirelessGatewayTaskDefinition",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to get the given WirelessGateway task definition",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "WirelessGatewayTaskDefinition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDestinations": {
+      "name": "ListDestinations",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "List information of available Destinations based on the AWS account.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDeviceProfiles": {
+      "name": "ListDeviceProfiles",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to list information of available DeviceProfiles based on the AWS\n                                                account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPartnerAccounts": {
+      "name": "ListPartnerAccounts",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to list the available partner accounts",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListServiceProfiles": {
+      "name": "ListServiceProfiles",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to list information of available ServiceProfiles based on the AWS\n                                                account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to list all tags for a given resource",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "Destination"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListWirelessDevices": {
+      "name": "ListWirelessDevices",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to list information of available WirelessDevices based on the AWS\n                                                account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListWirelessGatewayTaskDefinitions": {
+      "name": "ListWirelessGatewayTaskDefinitions",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to list information of available WirelessGateway task definitions\n                                                based on the AWS account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListWirelessGateways": {
+      "name": "ListWirelessGateways",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to list information of available WirelessGateways based on the AWS\n                                                account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutResourceLogLevel": {
+      "name": "PutResourceLogLevel",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to put resource log level",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "WirelessDevice"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ResetAllResourceLogLevels": {
+      "name": "ResetAllResourceLogLevels",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to reset all resource log levels",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ResetResourceLogLevel": {
+      "name": "ResetResourceLogLevel",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to reset resource log level",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "WirelessDevice"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendDataToWirelessDevice": {
+      "name": "SendDataToWirelessDevice",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to send the decrypted application data frame to the target device",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "WirelessDevice*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to tag a given resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "Destination"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TestWirelessDevice": {
+      "name": "TestWirelessDevice",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to simulate a provisioned device to send an uplink data with payload\n                                                of 'Hello'",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "WirelessDevice*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to remove the given tags from the resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "Destination"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDestination": {
+      "name": "UpdateDestination",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to update a Destination resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Destination*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateLogLevelsByResourceTypes": {
+      "name": "UpdateLogLevelsByResourceTypes",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to update log levels by resource types",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdatePartnerAccount": {
+      "name": "UpdatePartnerAccount",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to update a partner account",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "SidewalkAccount*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateWirelessDevice": {
+      "name": "UpdateWirelessDevice",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to update a WirelessDevice resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "WirelessDevice*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateWirelessGateway": {
+      "name": "UpdateWirelessGateway",
+      "topics": [
+        "AWS IoT Core for LoRaWAN"
+      ],
+      "description": "Grants permission to update a WirelessGateway resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "WirelessGateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "AWS IoT Core for LoRaWAN"
+  ]
+}

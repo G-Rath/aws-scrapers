@@ -1,0 +1,186 @@
+{
+  "servicePrefix": "bugbust",
+  "actions": {
+    "CreateEvent": {
+      "name": "CreateEvent",
+      "topics": [
+        "AWS BugBust"
+      ],
+      "description": "Grants permission to create a BugBust event",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "EvaluateProfilingGroups": {
+      "name": "EvaluateProfilingGroups",
+      "topics": [
+        "AWS BugBust"
+      ],
+      "description": "Grants permission to evaluate checked-in profiling groups",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Event*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEvent": {
+      "name": "GetEvent",
+      "topics": [
+        "AWS BugBust"
+      ],
+      "description": "Grants permission to view customer details about an event",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Event*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetJoinEventStatus": {
+      "name": "GetJoinEventStatus",
+      "topics": [
+        "AWS BugBust"
+      ],
+      "description": "Grants permission to view the status of a BugBust player's attempt to join a BugBust\n                                                event",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Event*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "JoinEvent": {
+      "name": "JoinEvent",
+      "topics": [
+        "AWS BugBust"
+      ],
+      "description": "Grants permission to join an event",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Event*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListBugs": {
+      "name": "ListBugs",
+      "topics": [
+        "AWS BugBust"
+      ],
+      "description": "Grants permission to view the bugs that were imported into an event for players to\n                                                work on",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Event*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "codeguru-reviewer:DescribeCodeReview\n                                                   \n                                                \n                                                \n                                                \n                                                   codeguru-reviewer:ListRecommendations"
+    },
+    "ListEventParticipants": {
+      "name": "ListEventParticipants",
+      "topics": [
+        "AWS BugBust"
+      ],
+      "description": "Grants permission to view the participants of an event",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Event*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEventScores": {
+      "name": "ListEventScores",
+      "topics": [
+        "AWS BugBust"
+      ],
+      "description": "Grants permission to view the scores of an event's players",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Event*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEvents": {
+      "name": "ListEvents",
+      "topics": [
+        "AWS BugBust"
+      ],
+      "description": "Grants permission to List BugBust events",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProfilingGroups": {
+      "name": "ListProfilingGroups",
+      "topics": [
+        "AWS BugBust"
+      ],
+      "description": "Grants permission to view the profiling groups that were imported into an event for\n                                                players to work on",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Event*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPullRequests": {
+      "name": "ListPullRequests",
+      "topics": [
+        "AWS BugBust"
+      ],
+      "description": "Grants permission to view the pull requests used by players to submit fixes to their\n                                                claimed bugs in an event",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Event*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateEvent": {
+      "name": "UpdateEvent",
+      "topics": [
+        "AWS BugBust"
+      ],
+      "description": "Grants permission to update a BugBust event",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Event*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "codeguru-profiler:DescribeProfilingGroup\n                                                   \n                                                \n                                                \n                                                \n                                                   codeguru-profiler:ListProfilingGroups\n                                                   \n                                                \n                                                \n                                                \n                                                   codeguru-reviewer:DescribeCodeReview\n                                                   \n                                                \n                                                \n                                                \n                                                   codeguru-reviewer:ListCodeReviews\n                                                   \n                                                \n                                                \n                                                \n                                                   codeguru-reviewer:ListRecommendations\n                                                   \n                                                \n                                                \n                                                \n                                                   codeguru-reviewer:TagResource\n                                                   \n                                                \n                                                \n                                                \n                                                   codeguru-reviewer:UnTagResource"
+    },
+    "UpdateWorkItem": {
+      "name": "UpdateWorkItem",
+      "topics": [
+        "AWS BugBust"
+      ],
+      "description": "Grants permission to update a work item as claimed or unclaimed (bug or profiling\n                                                group)",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Event*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateWorkItemAdmin": {
+      "name": "UpdateWorkItemAdmin",
+      "topics": [
+        "AWS BugBust"
+      ],
+      "description": "Grants permission to update an event's work item (bug or profiling group)",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Event*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "AWS BugBust"
+  ]
+}

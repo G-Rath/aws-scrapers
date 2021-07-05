@@ -1,12 +1,45 @@
 {
   "servicePrefix": "route53domains",
   "actions": {
+    "AcceptDomainTransferFromAnotherAwsAccount": {
+      "name": "AcceptDomainTransferFromAnotherAwsAccount",
+      "topics": [
+        "Amazon Route 53 Domains"
+      ],
+      "description": "Grants permission to accept the transfer of a domain from another AWS account to the\n                                                current AWS account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CancelDomainTransferToAnotherAwsAccount": {
+      "name": "CancelDomainTransferToAnotherAwsAccount",
+      "topics": [
+        "Amazon Route 53 Domains"
+      ],
+      "description": "Grants permission to cancel the transfer of a domain from the current AWS account\n                                                to another AWS account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "CheckDomainAvailability": {
       "name": "CheckDomainAvailability",
       "topics": [
-        "Amazon Route53 Domains"
+        "Amazon Route 53 Domains"
       ],
       "description": "Grants permission to check the availability of one domain name",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CheckDomainTransferability": {
+      "name": "CheckDomainTransferability",
+      "topics": [
+        "Amazon Route 53 Domains"
+      ],
+      "description": "Grants permission to check whether a domain name can be transferred to Amazon Route\n                                                53",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -15,7 +48,7 @@
     "DeleteTagsForDomain": {
       "name": "DeleteTagsForDomain",
       "topics": [
-        "Amazon Route53 Domains"
+        "Amazon Route 53 Domains"
       ],
       "description": "Grants permission to delete the specified tags for a domain",
       "accessLevel": "Tagging",
@@ -26,7 +59,7 @@
     "DisableDomainAutoRenew": {
       "name": "DisableDomainAutoRenew",
       "topics": [
-        "Amazon Route53 Domains"
+        "Amazon Route 53 Domains"
       ],
       "description": "Grants permission to configure Amazon Route 53 to automatically renew the specified\n                                                domain before the domain registration expires",
       "accessLevel": "Write",
@@ -37,7 +70,7 @@
     "DisableDomainTransferLock": {
       "name": "DisableDomainTransferLock",
       "topics": [
-        "Amazon Route53 Domains"
+        "Amazon Route 53 Domains"
       ],
       "description": "Grants permission to remove the transfer lock on the domain (specifically the clientTransferProhibited\n                                                status) to allow domain transfers",
       "accessLevel": "Write",
@@ -48,7 +81,7 @@
     "EnableDomainAutoRenew": {
       "name": "EnableDomainAutoRenew",
       "topics": [
-        "Amazon Route53 Domains"
+        "Amazon Route 53 Domains"
       ],
       "description": "Grants permission to configure Amazon Route 53 to automatically renew the specified\n                                                domain before the domain registration expires",
       "accessLevel": "Write",
@@ -59,7 +92,7 @@
     "EnableDomainTransferLock": {
       "name": "EnableDomainTransferLock",
       "topics": [
-        "Amazon Route53 Domains"
+        "Amazon Route 53 Domains"
       ],
       "description": "Grants permission to set the transfer lock on the domain (specifically the clientTransferProhibited\n                                                status) to prevent domain transfers",
       "accessLevel": "Write",
@@ -70,7 +103,7 @@
     "GetContactReachabilityStatus": {
       "name": "GetContactReachabilityStatus",
       "topics": [
-        "Amazon Route53 Domains"
+        "Amazon Route 53 Domains"
       ],
       "description": "For operations that require confirmation that the email address for the registrant\n                                                contact is valid, such as registering a new domain, grants permission to get information\n                                                about whether the registrant contact has responded",
       "accessLevel": "Read",
@@ -81,7 +114,7 @@
     "GetDomainDetail": {
       "name": "GetDomainDetail",
       "topics": [
-        "Amazon Route53 Domains"
+        "Amazon Route 53 Domains"
       ],
       "description": "Grants permission to get detailed information about a domain",
       "accessLevel": "Read",
@@ -92,7 +125,7 @@
     "GetDomainSuggestions": {
       "name": "GetDomainSuggestions",
       "topics": [
-        "Amazon Route53 Domains"
+        "Amazon Route 53 Domains"
       ],
       "description": "Grants permission to get a list of suggested domain names given a string, which can\n                                                either be a domain name or simply a word or phrase (without spaces)",
       "accessLevel": "Read",
@@ -103,7 +136,7 @@
     "GetOperationDetail": {
       "name": "GetOperationDetail",
       "topics": [
-        "Amazon Route53 Domains"
+        "Amazon Route 53 Domains"
       ],
       "description": "Grants permission to get the current status of an operation that is not completed",
       "accessLevel": "Read",
@@ -114,7 +147,7 @@
     "ListDomains": {
       "name": "ListDomains",
       "topics": [
-        "Amazon Route53 Domains"
+        "Amazon Route 53 Domains"
       ],
       "description": "Grants permission to list all the domain names registered with Amazon Route 53 for\n                                                the current AWS account",
       "accessLevel": "List",
@@ -125,7 +158,7 @@
     "ListOperations": {
       "name": "ListOperations",
       "topics": [
-        "Amazon Route53 Domains"
+        "Amazon Route 53 Domains"
       ],
       "description": "Grants permission to list the operation IDs of operations that are not yet complete",
       "accessLevel": "List",
@@ -136,7 +169,7 @@
     "ListTagsForDomain": {
       "name": "ListTagsForDomain",
       "topics": [
-        "Amazon Route53 Domains"
+        "Amazon Route 53 Domains"
       ],
       "description": "Grants permission to list all the tags that are associated with the specified domain",
       "accessLevel": "List",
@@ -147,9 +180,20 @@
     "RegisterDomain": {
       "name": "RegisterDomain",
       "topics": [
-        "Amazon Route53 Domains"
+        "Amazon Route 53 Domains"
       ],
       "description": "Grants permission to register domains",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RejectDomainTransferFromAnotherAwsAccount": {
+      "name": "RejectDomainTransferFromAnotherAwsAccount",
+      "topics": [
+        "Amazon Route 53 Domains"
+      ],
+      "description": "Grants permission to reject the transfer of a domain from another AWS account to the\n                                                current AWS account",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -158,7 +202,7 @@
     "RenewDomain": {
       "name": "RenewDomain",
       "topics": [
-        "Amazon Route53 Domains"
+        "Amazon Route 53 Domains"
       ],
       "description": "Grants permission to renew domains for the specified number of years",
       "accessLevel": "Write",
@@ -169,7 +213,7 @@
     "ResendContactReachabilityEmail": {
       "name": "ResendContactReachabilityEmail",
       "topics": [
-        "Amazon Route53 Domains"
+        "Amazon Route 53 Domains"
       ],
       "description": "For operations that require confirmation that the email address for the registrant\n                                                contact is valid, such as registering a new domain, grants permission to resend the\n                                                confirmation email to the current email address for the registrant contact",
       "accessLevel": "Write",
@@ -180,7 +224,7 @@
     "RetrieveDomainAuthCode": {
       "name": "RetrieveDomainAuthCode",
       "topics": [
-        "Amazon Route53 Domains"
+        "Amazon Route 53 Domains"
       ],
       "description": "Grants permission to get the AuthCode for the domain",
       "accessLevel": "Write",
@@ -191,9 +235,20 @@
     "TransferDomain": {
       "name": "TransferDomain",
       "topics": [
-        "Amazon Route53 Domains"
+        "Amazon Route 53 Domains"
       ],
       "description": "Grants permission to transfer a domain from another registrar to Amazon Route 53",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TransferDomainToAnotherAwsAccount": {
+      "name": "TransferDomainToAnotherAwsAccount",
+      "topics": [
+        "Amazon Route 53 Domains"
+      ],
+      "description": "Grants permission to transfer a domain from the current AWS account to another AWS\n                                                account",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -202,7 +257,7 @@
     "UpdateDomainContact": {
       "name": "UpdateDomainContact",
       "topics": [
-        "Amazon Route53 Domains"
+        "Amazon Route 53 Domains"
       ],
       "description": "Grants permission to update the contact information for domain",
       "accessLevel": "Write",
@@ -213,7 +268,7 @@
     "UpdateDomainContactPrivacy": {
       "name": "UpdateDomainContactPrivacy",
       "topics": [
-        "Amazon Route53 Domains"
+        "Amazon Route 53 Domains"
       ],
       "description": "Grants permission to update the domain contact privacy setting",
       "accessLevel": "Write",
@@ -224,7 +279,7 @@
     "UpdateDomainNameservers": {
       "name": "UpdateDomainNameservers",
       "topics": [
-        "Amazon Route53 Domains"
+        "Amazon Route 53 Domains"
       ],
       "description": "Grants permission to replace the current set of name servers for a domain with the\n                                                specified set of name servers",
       "accessLevel": "Write",
@@ -235,7 +290,7 @@
     "UpdateTagsForDomain": {
       "name": "UpdateTagsForDomain",
       "topics": [
-        "Amazon Route53 Domains"
+        "Amazon Route 53 Domains"
       ],
       "description": "Grants permission to add or update tags for a specified domain",
       "accessLevel": "Tagging",
@@ -246,7 +301,7 @@
     "ViewBilling": {
       "name": "ViewBilling",
       "topics": [
-        "Amazon Route53 Domains"
+        "Amazon Route 53 Domains"
       ],
       "description": "Grants permission to get all the domain-related billing records for the current AWS\n                                                account for a specified period",
       "accessLevel": "Read",
@@ -256,6 +311,6 @@
     }
   },
   "topics": [
-    "Amazon Route53 Domains"
+    "Amazon Route 53 Domains"
   ]
 }

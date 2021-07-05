@@ -6,11 +6,77 @@
       "topics": [
         "Amazon Elastic Inference"
       ],
-      "description": "Connects customer to Elastic Inference accelerator",
+      "description": "Grants permission to customer for connecting to Elastic Inference accelerator",
       "accessLevel": "Write",
       "resourceTypes": [
         "accelerator*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAcceleratorOfferings": {
+      "name": "DescribeAcceleratorOfferings",
+      "topics": [
+        "Amazon Elastic Inference"
+      ],
+      "description": "Grants permission to describe the locations in which a given accelerator type or set\n                                                of types is present in a given region",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAcceleratorTypes": {
+      "name": "DescribeAcceleratorTypes",
+      "topics": [
+        "Amazon Elastic Inference"
+      ],
+      "description": "Grants permission to describe the accelerator types available in a given region, as\n                                                well as their characteristics, such as memory and throughput",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAccelerators": {
+      "name": "DescribeAccelerators",
+      "topics": [
+        "Amazon Elastic Inference"
+      ],
+      "description": "Grants permission to describe information over a provided set of accelerators belonging\n                                                to an account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "Amazon Elastic Inference"
+      ],
+      "description": "Grants permission to list all tags on an Amazon RDS resource",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "Amazon Elastic Inference"
+      ],
+      "description": "Grants permission to assign one or more tags (key-value pairs) to the specified QuickSight\n                                                resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "Amazon Elastic Inference"
+      ],
+      "description": "Grants permission to remove a tag or tags from a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     }

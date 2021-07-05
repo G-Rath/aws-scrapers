@@ -6,7 +6,7 @@
       "topics": [
         "Amazon CloudWatch Synthetics"
       ],
-      "description": "Create a canary.",
+      "description": "Grants permission to create a canary",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -17,7 +17,7 @@
       "topics": [
         "Amazon CloudWatch Synthetics"
       ],
-      "description": "Deletes a canary. Amazon Synthetics deletes all the resources except for the Lambda\n                                                function and the CloudWatch Alarms if you created one.",
+      "description": "Grants permission to delete a canary. Amazon Synthetics deletes all the resources\n                                                except for the Lambda function and the CloudWatch Alarms if you created one",
       "accessLevel": "Write",
       "resourceTypes": [
         "canary*"
@@ -30,7 +30,7 @@
       "topics": [
         "Amazon CloudWatch Synthetics"
       ],
-      "description": "Returns information of all canaries.",
+      "description": "Grants permission to list information of all canaries",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -41,9 +41,33 @@
       "topics": [
         "Amazon CloudWatch Synthetics"
       ],
-      "description": "Returns information about the last test run associated with all canaries.",
+      "description": "Grants permission to list information about the last test run associated with all\n                                                canaries",
       "accessLevel": "Read",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeRuntimeVersions": {
+      "name": "DescribeRuntimeVersions",
+      "topics": [
+        "Amazon CloudWatch Synthetics"
+      ],
+      "description": "Grants permission to list information about Synthetics canary runtime versions",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetCanary": {
+      "name": "GetCanary",
+      "topics": [
+        "Amazon CloudWatch Synthetics"
+      ],
+      "description": "Grants permission to get a canary details",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "canary*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -52,7 +76,7 @@
       "topics": [
         "Amazon CloudWatch Synthetics"
       ],
-      "description": "Returns information about all the test runs associated with a canary.",
+      "description": "Grants permission to list information about all the test runs associated with a canary",
       "accessLevel": "Read",
       "resourceTypes": [
         "canary*"
@@ -65,7 +89,7 @@
       "topics": [
         "Amazon CloudWatch Synthetics"
       ],
-      "description": "Returns a list of all tags and values associated with a canary.",
+      "description": "Grants permission to list all tags and values associated with a canary",
       "accessLevel": "Read",
       "resourceTypes": [
         "canary"
@@ -78,7 +102,7 @@
       "topics": [
         "Amazon CloudWatch Synthetics"
       ],
-      "description": "Starts a canary, so that Amazon Synthetics starts monitoring a website.",
+      "description": "Grants permission to start a canary, so that Amazon CloudWatch Synthetics starts monitoring\n                                                a website",
       "accessLevel": "Write",
       "resourceTypes": [
         "canary*"
@@ -91,7 +115,7 @@
       "topics": [
         "Amazon CloudWatch Synthetics"
       ],
-      "description": "Stops a canary.",
+      "description": "Grants permission to stop a canary",
       "accessLevel": "Write",
       "resourceTypes": [
         "canary*"
@@ -104,7 +128,7 @@
       "topics": [
         "Amazon CloudWatch Synthetics"
       ],
-      "description": "Adds one or more tags to a canary.",
+      "description": "Grants permission to add one or more tags to a canary",
       "accessLevel": "Write",
       "resourceTypes": [
         "canary"
@@ -117,7 +141,7 @@
       "topics": [
         "Amazon CloudWatch Synthetics"
       ],
-      "description": "Removes one or more tags from a canary.",
+      "description": "Grants permission to remove one or more tags from a canary",
       "accessLevel": "Write",
       "resourceTypes": [
         "canary"
@@ -130,7 +154,7 @@
       "topics": [
         "Amazon CloudWatch Synthetics"
       ],
-      "description": "Updates a canary.",
+      "description": "Grants permission to update a canary",
       "accessLevel": "Write",
       "resourceTypes": [
         "canary*"

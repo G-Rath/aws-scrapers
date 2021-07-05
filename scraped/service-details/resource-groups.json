@@ -6,7 +6,7 @@
       "topics": [
         "AWS Resource Groups"
       ],
-      "description": "Creates a group with a specified name, description, and resource query.",
+      "description": "Grants permission to create a resource group with a specified name, description, and\n                                                resource query",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -17,7 +17,7 @@
       "topics": [
         "AWS Resource Groups"
       ],
-      "description": "Deletes a specified resource group",
+      "description": "Grants permission to delete a specified resource group",
       "accessLevel": "Write",
       "resourceTypes": [
         "group*"
@@ -30,7 +30,20 @@
       "topics": [
         "AWS Resource Groups"
       ],
-      "description": "Gets information of a specified resource group",
+      "description": "Grants permission to get information of a specified resource group",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetGroupConfiguration": {
+      "name": "GetGroupConfiguration",
+      "topics": [
+        "AWS Resource Groups"
+      ],
+      "description": "Grants permission to get the service configuration associated with the specified resource\n                                                group",
       "accessLevel": "Read",
       "resourceTypes": [
         "group*"
@@ -43,7 +56,7 @@
       "topics": [
         "AWS Resource Groups"
       ],
-      "description": "Gets the query associated with a specified resource group",
+      "description": "Grants permission to get the query associated with a specified resource group",
       "accessLevel": "Read",
       "resourceTypes": [
         "group*"
@@ -56,8 +69,21 @@
       "topics": [
         "AWS Resource Groups"
       ],
-      "description": "Gets the tags associated with a specified resource group",
+      "description": "Grants permission to get the tags associated with a specified resource group",
       "accessLevel": "Read",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GroupResources": {
+      "name": "GroupResources",
+      "topics": [
+        "AWS Resource Groups"
+      ],
+      "description": "Grants permission to add the specified resources to the specified group",
+      "accessLevel": "Write",
       "resourceTypes": [
         "group*"
       ],
@@ -69,22 +95,48 @@
       "topics": [
         "AWS Resource Groups"
       ],
-      "description": "Lists the resources that are member of a specified resource group",
+      "description": "Grants permission to list the resources that are members of a specified resource group",
       "accessLevel": "List",
       "resourceTypes": [
         "group*"
       ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "cloudformation:DescribeStacks\n                                                   \n                                                \n                                                \n                                                \n                                                   cloudformation:ListStackResources\n                                                   \n                                                \n                                                \n                                                \n                                                   tag:GetResources"
     },
     "ListGroups": {
       "name": "ListGroups",
       "topics": [
         "AWS Resource Groups"
       ],
-      "description": "Lists all resource groups",
+      "description": "Grants permission to list all resource groups in your account",
       "accessLevel": "List",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutGroupConfiguration": {
+      "name": "PutGroupConfiguration",
+      "topics": [
+        "AWS Resource Groups"
+      ],
+      "description": "Grants permission to put the service configuration associated with the specified resource\n                                                group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutGroupPolicy": {
+      "name": "PutGroupPolicy",
+      "topics": [
+        "AWS Resource Groups"
+      ],
+      "description": "Grants permission to add a resource-based policy for the specified group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "group*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -93,19 +145,32 @@
       "topics": [
         "AWS Resource Groups"
       ],
-      "description": "Returns a list of AWS resource identifiers matching the given query",
+      "description": "Grants permission to search for AWS resources matching the given query",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "cloudformation:DescribeStacks\n                                                   \n                                                \n                                                \n                                                \n                                                   cloudformation:ListStackResources\n                                                   \n                                                \n                                                \n                                                \n                                                   tag:GetResources"
     },
     "Tag": {
       "name": "Tag",
       "topics": [
         "AWS Resource Groups"
       ],
-      "description": "Tags a specified resource group",
+      "description": "Grants permission to tag a specified resource group",
       "accessLevel": "Tagging",
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UngroupResources": {
+      "name": "UngroupResources",
+      "topics": [
+        "AWS Resource Groups"
+      ],
+      "description": "Grants permission to remove the specified resources from the specified group",
+      "accessLevel": "Write",
       "resourceTypes": [
         "group*"
       ],
@@ -117,7 +182,7 @@
       "topics": [
         "AWS Resource Groups"
       ],
-      "description": "Removes tags associated with a specified resource group",
+      "description": "Grants permission to remove tags associated with a specified resource group",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "group*"
@@ -130,7 +195,7 @@
       "topics": [
         "AWS Resource Groups"
       ],
-      "description": "Updates a specified resource group",
+      "description": "Grants permission to update a specified resource group",
       "accessLevel": "Write",
       "resourceTypes": [
         "group*"
@@ -143,7 +208,7 @@
       "topics": [
         "AWS Resource Groups"
       ],
-      "description": "Updates the query associated with a specified resource group",
+      "description": "Grants permission to update the query associated with a specified resource group",
       "accessLevel": "Write",
       "resourceTypes": [
         "group*"

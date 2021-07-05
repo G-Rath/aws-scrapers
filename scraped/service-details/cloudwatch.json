@@ -19,7 +19,7 @@
       "topics": [
         "Amazon CloudWatch"
       ],
-      "description": "Grants permission to delete the specified anomaly detection model from your account.",
+      "description": "Grants permission to delete the specified anomaly detection model from your account",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -47,6 +47,19 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "insight-rule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteMetricStream": {
+      "name": "DeleteMetricStream",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
+      "description": "Grants permission to delete the CloudWatch metric stream that you specify",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "metric-stream*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -93,7 +106,7 @@
       "topics": [
         "Amazon CloudWatch"
       ],
-      "description": "Grants permission to lists the anomaly detection models that you have created in your\n                                                account.",
+      "description": "Grants permission to list the anomaly detection models that you have created in your\n                                                account",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -210,6 +223,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "GetMetricStream": {
+      "name": "GetMetricStream",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
+      "description": "Grants permission to return the details of a CloudWatch metric stream",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "metric-stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "GetMetricWidgetImage": {
       "name": "GetMetricWidgetImage",
       "topics": [
@@ -227,6 +253,17 @@
         "Amazon CloudWatch"
       ],
       "description": "Grants permission to return a list of all CloudWatch dashboards in your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMetricStreams": {
+      "name": "ListMetricStreams",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
+      "description": "Grants permission to return a list of all CloudWatch metric streams in your account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -261,7 +298,7 @@
       "topics": [
         "Amazon CloudWatch"
       ],
-      "description": "Grants permission to create or update an anomaly detection model for a CloudWatch\n                                                metric.",
+      "description": "Grants permission to create or update an anomaly detection model for a CloudWatch\n                                                metric",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -330,6 +367,19 @@
       "conditionKeys": "cloudwatch:namespace",
       "dependentActions": ""
     },
+    "PutMetricStream": {
+      "name": "PutMetricStream",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
+      "description": "Grants permission to create a CloudWatch metric stream, or update an existing metric\n                                                stream if it already exists",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "metric-stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "SetAlarmState": {
       "name": "SetAlarmState",
       "topics": [
@@ -339,6 +389,32 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "alarm*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartMetricStreams": {
+      "name": "StartMetricStreams",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
+      "description": "Grants permission to start all CloudWatch metric streams that you specify",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "metric-stream*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopMetricStreams": {
+      "name": "StopMetricStreams",
+      "topics": [
+        "Amazon CloudWatch"
+      ],
+      "description": "Grants permission to stop all CloudWatch metric streams that you specify",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "metric-stream*"
       ],
       "conditionKeys": "",
       "dependentActions": ""

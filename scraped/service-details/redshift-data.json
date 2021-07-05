@@ -9,7 +9,7 @@
       "description": "Grants permission to cancel a running query",
       "accessLevel": "Write",
       "resourceTypes": [],
-      "conditionKeys": "",
+      "conditionKeys": "redshift-data:statement-owner-iam-userid",
       "dependentActions": ""
     },
     "DescribeStatement": {
@@ -20,7 +20,7 @@
       "description": "Grants permission to retrieve detailed information about a statement execution",
       "accessLevel": "Read",
       "resourceTypes": [],
-      "conditionKeys": "",
+      "conditionKeys": "redshift-data:statement-owner-iam-userid",
       "dependentActions": ""
     },
     "DescribeTable": {
@@ -53,7 +53,7 @@
       "description": "Grants permission to fetch the result of a query",
       "accessLevel": "Read",
       "resourceTypes": [],
-      "conditionKeys": "",
+      "conditionKeys": "redshift-data:statement-owner-iam-userid",
       "dependentActions": ""
     },
     "ListDatabases": {
@@ -62,7 +62,7 @@
         "Amazon Redshift Data API"
       ],
       "description": "Grants permission to list databases for a given cluster",
-      "accessLevel": "List",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -73,7 +73,7 @@
         "Amazon Redshift Data API"
       ],
       "description": "Grants permission to list schemas for a given cluster",
-      "accessLevel": "List",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -86,7 +86,7 @@
       "description": "Grants permission to list queries for a given principal",
       "accessLevel": "List",
       "resourceTypes": [],
-      "conditionKeys": "",
+      "conditionKeys": "redshift-data:statement-owner-iam-userid",
       "dependentActions": ""
     },
     "ListTables": {

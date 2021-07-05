@@ -1,0 +1,342 @@
+{
+  "servicePrefix": "lookoutmetrics",
+  "actions": {
+    "ActivateAnomalyDetector": {
+      "name": "ActivateAnomalyDetector",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to activate an anomaly detector",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "AnomalyDetector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BackTestAnomalyDetector": {
+      "name": "BackTestAnomalyDetector",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to run a backtest with an anomaly detector",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "AnomalyDetector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAlert": {
+      "name": "CreateAlert",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to create an alert for an anomaly detector",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Alert*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAnomalyDetector": {
+      "name": "CreateAnomalyDetector",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to create an anomaly detector",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "AnomalyDetector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateMetricSet": {
+      "name": "CreateMetricSet",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to create a dataset",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "AnomalyDetector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAlert": {
+      "name": "DeleteAlert",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to delete an alert",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Alert*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAnomalyDetector": {
+      "name": "DeleteAnomalyDetector",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to delete an anomaly detector",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "AnomalyDetector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAlert": {
+      "name": "DescribeAlert",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to get details about an alert",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Alert*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAnomalyDetectionExecutions": {
+      "name": "DescribeAnomalyDetectionExecutions",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to get information about an anomaly detection job",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "AnomalyDetector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAnomalyDetector": {
+      "name": "DescribeAnomalyDetector",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to get details about an anomaly detector",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "AnomalyDetector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeMetricSet": {
+      "name": "DescribeMetricSet",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to get details about a dataset",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "MetricSet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAnomalyGroup": {
+      "name": "GetAnomalyGroup",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to get details about a group of affected metrics",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "AnomalyDetector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDataQualityMetrics": {
+      "name": "GetDataQualityMetrics",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to get data quality metrics for an anomaly detector",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "AnomalyDetector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFeedback": {
+      "name": "GetFeedback",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to get feedback on affected metrics for an anomaly group",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "AnomalyDetector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSampleData": {
+      "name": "GetSampleData",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to get a selection of sample records from an Amazon S3 datasource",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAlerts": {
+      "name": "ListAlerts",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to get a list of alerts for a detector",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "AnomalyDetector"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAnomalyDetectors": {
+      "name": "ListAnomalyDetectors",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to get a list of anomaly detectors",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAnomalyGroupSummaries": {
+      "name": "ListAnomalyGroupSummaries",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to get a list of anomaly groups",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "AnomalyDetector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAnomalyGroupTimeSeries": {
+      "name": "ListAnomalyGroupTimeSeries",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to get a list of affected metrics for a measure in an anomaly group",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "AnomalyDetector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListMetricSets": {
+      "name": "ListMetricSets",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to get a list of datasets",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "AnomalyDetector"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to get a list of tags for a detector, dataset, or alert",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Alert"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutFeedback": {
+      "name": "PutFeedback",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to add feedback for an affected metric in an anomaly group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "AnomalyDetector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to add tags to a detector, dataset, or alert",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "Alert"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to remove tags from a detector, dataset, or alert",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "Alert"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAnomalyDetector": {
+      "name": "UpdateAnomalyDetector",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to update an anomaly detector",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "AnomalyDetector*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateMetricSet": {
+      "name": "UpdateMetricSet",
+      "topics": [
+        "Amazon Lookout for Metrics"
+      ],
+      "description": "Grants permission to update a dataset",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "MetricSet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "Amazon Lookout for Metrics"
+  ]
+}

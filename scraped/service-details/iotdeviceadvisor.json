@@ -1,0 +1,171 @@
+{
+  "servicePrefix": "iotdeviceadvisor",
+  "actions": {
+    "CreateSuiteDefinition": {
+      "name": "CreateSuiteDefinition",
+      "topics": [
+        "AWS IoT Core Device Advisor"
+      ],
+      "description": "Grants permission to create a suite definition",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "DeleteSuiteDefinition": {
+      "name": "DeleteSuiteDefinition",
+      "topics": [
+        "AWS IoT Core Device Advisor"
+      ],
+      "description": "Grants permission to delete a suite definition",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "suitedefinition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSuiteDefinition": {
+      "name": "GetSuiteDefinition",
+      "topics": [
+        "AWS IoT Core Device Advisor"
+      ],
+      "description": "Grants permission to get a suite definition",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "suitedefinition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSuiteRun": {
+      "name": "GetSuiteRun",
+      "topics": [
+        "AWS IoT Core Device Advisor"
+      ],
+      "description": "Grants permission to get a suite run",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "suiterun*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSuiteRunReport": {
+      "name": "GetSuiteRunReport",
+      "topics": [
+        "AWS IoT Core Device Advisor"
+      ],
+      "description": "Grants permission to get the qualification report for a suite run",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "suiterun*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSuiteDefinitions": {
+      "name": "ListSuiteDefinitions",
+      "topics": [
+        "AWS IoT Core Device Advisor"
+      ],
+      "description": "Grants permission to list suite definitions",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSuiteRuns": {
+      "name": "ListSuiteRuns",
+      "topics": [
+        "AWS IoT Core Device Advisor"
+      ],
+      "description": "Grants permission to list suite runs",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "suitedefinition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "AWS IoT Core Device Advisor"
+      ],
+      "description": "Grants permission to list the tags (metadata) assigned to a resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "suitedefinition"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartSuiteRun": {
+      "name": "StartSuiteRun",
+      "topics": [
+        "AWS IoT Core Device Advisor"
+      ],
+      "description": "Grants permission to start a suite run",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "StopSuiteRun": {
+      "name": "StopSuiteRun",
+      "topics": [
+        "AWS IoT Core Device Advisor"
+      ],
+      "description": "Grants permission to stop a suite run",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "suiterun*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "AWS IoT Core Device Advisor"
+      ],
+      "description": "Grants permission to add to or modify the tags of the given resource. Tags are metadata\n                                                which can be used to manage a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "suitedefinition"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "AWS IoT Core Device Advisor"
+      ],
+      "description": "Grants permission to remove the given tags (metadata) from a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "suitedefinition"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSuiteDefinition": {
+      "name": "UpdateSuiteDefinition",
+      "topics": [
+        "AWS IoT Core Device Advisor"
+      ],
+      "description": "Grants permission to update a suite definition",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "suitedefinition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "AWS IoT Core Device Advisor"
+  ]
+}

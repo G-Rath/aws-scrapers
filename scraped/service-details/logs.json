@@ -136,6 +136,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeleteQueryDefinition": {
+      "name": "DeleteQueryDefinition",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
+      "description": "Deletes a saved CloudWatch Logs Insights query definition",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteResourcePolicy": {
       "name": "DeleteResourcePolicy",
       "topics": [
@@ -240,6 +251,17 @@
         "Amazon CloudWatch Logs"
       ],
       "description": "Returns a list of CloudWatch Logs Insights queries that are scheduled, executing,\n                                                or have been executed recently in this account. You can request all queries, or limit\n                                                it to queries of a specific log group or queries with a certain status.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeQueryDefinitions": {
+      "name": "DescribeQueryDefinitions",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
+      "description": "Returns a paginated list of your saved CloudWatch Logs Insights query definitions",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -423,6 +445,17 @@
       "resourceTypes": [
         "log-group*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutQueryDefinition": {
+      "name": "PutQueryDefinition",
+      "topics": [
+        "Amazon CloudWatch Logs"
+      ],
+      "description": "Creates or updates a metric filter and associates it with the specified log group",
+      "accessLevel": "Write",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },

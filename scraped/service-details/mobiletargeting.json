@@ -496,6 +496,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "GetApplicationDateRangeKpi": {
+      "name": "GetApplicationDateRangeKpi",
+      "topics": [
+        "Amazon Pinpoint"
+      ],
+      "description": "Retrieves (queries) pre-aggregated data for a standard metric that applies to an application.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "apps*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "GetApplicationSettings": {
       "name": "GetApplicationSettings",
       "topics": [
@@ -555,6 +568,19 @@
       ],
       "description": "Retrieve information about the activities performed by a campaign.",
       "accessLevel": "List",
+      "resourceTypes": [
+        "apps*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetCampaignDateRangeKpi": {
+      "name": "GetCampaignDateRangeKpi",
+      "topics": [
+        "Amazon Pinpoint"
+      ],
+      "description": "Retrieves (queries) pre-aggregated data for a standard metric that applies to a campaign.",
+      "accessLevel": "Read",
       "resourceTypes": [
         "apps*"
       ],
@@ -736,6 +762,45 @@
         "Amazon Pinpoint"
       ],
       "description": "Retrieve information about a specific journey.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "apps*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetJourneyDateRangeKpi": {
+      "name": "GetJourneyDateRangeKpi",
+      "topics": [
+        "Amazon Pinpoint"
+      ],
+      "description": "Retrieves (queries) pre-aggregated data for a standard engagement metric that applies\n                                                to a journey.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "apps*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetJourneyExecutionActivityMetrics": {
+      "name": "GetJourneyExecutionActivityMetrics",
+      "topics": [
+        "Amazon Pinpoint"
+      ],
+      "description": "Retrieves (queries) pre-aggregated data for a standard execution metric that applies\n                                                to a journey activity.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "apps*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetJourneyExecutionMetrics": {
+      "name": "GetJourneyExecutionMetrics",
+      "topics": [
+        "Amazon Pinpoint"
+      ],
+      "description": "Retrieves (queries) pre-aggregated data for a standard execution metric that applies\n                                                to a journey.",
       "accessLevel": "Read",
       "resourceTypes": [
         "apps*"
@@ -983,7 +1048,7 @@
       "description": "Obtain metadata for a phone number, such as the number type (mobile, landline, or\n                                                VoIP), location, and provider.",
       "accessLevel": "Read",
       "resourceTypes": [
-        "apps*"
+        "phone-number-validate*"
       ],
       "conditionKeys": "",
       "dependentActions": ""

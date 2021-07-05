@@ -1,0 +1,320 @@
+{
+  "servicePrefix": "amplifybackend",
+  "actions": {
+    "CloneBackend": {
+      "name": "CloneBackend",
+      "topics": [
+        "AWS Amplify Admin"
+      ],
+      "description": "Grants permission to clone an existing Amplify Admin backend environment into a new\n                                                Amplify Admin backend enviroment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backend*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateBackend": {
+      "name": "CreateBackend",
+      "topics": [
+        "AWS Amplify Admin"
+      ],
+      "description": "Grants permission to create a new Amplify Admin backend environment by Amplify appId",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backend*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateBackendAPI": {
+      "name": "CreateBackendAPI",
+      "topics": [
+        "AWS Amplify Admin"
+      ],
+      "description": "Grants permission to create an API for an existing Amplify Admin backend environment\n                                                by appId and backendEnvironmentName",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "api*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateBackendAuth": {
+      "name": "CreateBackendAuth",
+      "topics": [
+        "AWS Amplify Admin"
+      ],
+      "description": "Grants permission to create an auth resource for an existing Amplify Admin backend\n                                                environment by appId and backendEnvironmentName",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "auth*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateBackendConfig": {
+      "name": "CreateBackendConfig",
+      "topics": [
+        "AWS Amplify Admin"
+      ],
+      "description": "Grants permission to create a new Amplify Admin backend config by Amplify appId",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backend*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateToken": {
+      "name": "CreateToken",
+      "topics": [
+        "AWS Amplify Admin"
+      ],
+      "description": "Grants permission to create an Amplify Admin challenge token by appId",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backend*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteBackend": {
+      "name": "DeleteBackend",
+      "topics": [
+        "AWS Amplify Admin"
+      ],
+      "description": "Grants permission to delete an existing Amplify Admin backend environment by appId\n                                                and backendEnvironmentName",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backend*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteBackendAPI": {
+      "name": "DeleteBackendAPI",
+      "topics": [
+        "AWS Amplify Admin"
+      ],
+      "description": "Grants permission to delete an API of an existing Amplify Admin backend environment\n                                                by appId and backendEnvironmentName",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "api*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteBackendAuth": {
+      "name": "DeleteBackendAuth",
+      "topics": [
+        "AWS Amplify Admin"
+      ],
+      "description": "Grants permission to delete an auth resource of an existing Amplify Admin backend\n                                                environment by appId and backendEnvironmentName",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "auth*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteToken": {
+      "name": "DeleteToken",
+      "topics": [
+        "AWS Amplify Admin"
+      ],
+      "description": "Grants permission to delete an Amplify Admin challenge token by appId",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backend*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GenerateBackendAPIModels": {
+      "name": "GenerateBackendAPIModels",
+      "topics": [
+        "AWS Amplify Admin"
+      ],
+      "description": "Grants permission to generate models for an API of an existing Amplify Admin backend\n                                                environment by appId and backendEnvironmentName",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "api*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBackend": {
+      "name": "GetBackend",
+      "topics": [
+        "AWS Amplify Admin"
+      ],
+      "description": "Grants permission to retrieve an existing Amplify Admin backend environment by appId\n                                                and backendEnvironmentName",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "backend*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBackendAPI": {
+      "name": "GetBackendAPI",
+      "topics": [
+        "AWS Amplify Admin"
+      ],
+      "description": "Grants permission to retrieve an API of an existing Amplify Admin backend environment\n                                                by appId and backendEnvironmentName",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "api*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBackendAPIModels": {
+      "name": "GetBackendAPIModels",
+      "topics": [
+        "AWS Amplify Admin"
+      ],
+      "description": "Grants permission to retrieve models for an API of an existing Amplify Admin backend\n                                                environment by appId and backendEnvironmentName",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "api*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBackendAuth": {
+      "name": "GetBackendAuth",
+      "topics": [
+        "AWS Amplify Admin"
+      ],
+      "description": "Grants permission to retrieve an auth resource of an existing Amplify Admin backend\n                                                environment by appId and backendEnvironmentName",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "auth*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetBackendJob": {
+      "name": "GetBackendJob",
+      "topics": [
+        "AWS Amplify Admin"
+      ],
+      "description": "Grants permission to retrieve a job of an existing Amplify Admin backend environment\n                                                by appId and backendEnvironmentName",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "backend*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetToken": {
+      "name": "GetToken",
+      "topics": [
+        "AWS Amplify Admin"
+      ],
+      "description": "Grants permission to retrieve an Amplify Admin challenge token by appId",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "backend*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListBackendJobs": {
+      "name": "ListBackendJobs",
+      "topics": [
+        "AWS Amplify Admin"
+      ],
+      "description": "Grants permission to retrieve the jobs of an existing Amplify Admin backend environment\n                                                by appId and backendEnvironmentName",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "backend*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemoveAllBackends": {
+      "name": "RemoveAllBackends",
+      "topics": [
+        "AWS Amplify Admin"
+      ],
+      "description": "Grants permission to delete all existing Amplify Admin backend environments by appId",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backend*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemoveBackendConfig": {
+      "name": "RemoveBackendConfig",
+      "topics": [
+        "AWS Amplify Admin"
+      ],
+      "description": "Grants permission to delete an Amplify Admin backend config by Amplify appId",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backend*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateBackendAPI": {
+      "name": "UpdateBackendAPI",
+      "topics": [
+        "AWS Amplify Admin"
+      ],
+      "description": "Grants permission to update an API of an existing Amplify Admin backend environment\n                                                by appId and backendEnvironmentName",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "api*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateBackendAuth": {
+      "name": "UpdateBackendAuth",
+      "topics": [
+        "AWS Amplify Admin"
+      ],
+      "description": "Grants permission to update an auth resource of an existing Amplify Admin backend\n                                                environment by appId and backendEnvironmentName",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "auth*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateBackendConfig": {
+      "name": "UpdateBackendConfig",
+      "topics": [
+        "AWS Amplify Admin"
+      ],
+      "description": "Grants permission to update an Amplify Admin backend config by Amplify appId",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backend*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateBackendJob": {
+      "name": "UpdateBackendJob",
+      "topics": [
+        "AWS Amplify Admin"
+      ],
+      "description": "Grants permission to update a job of an existing Amplify Admin backend environment\n                                                by appId and backendEnvironmentName",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backend*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "AWS Amplify Admin"
+  ]
+}

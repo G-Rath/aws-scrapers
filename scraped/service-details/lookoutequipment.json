@@ -1,0 +1,286 @@
+{
+  "servicePrefix": "lookoutequipment",
+  "actions": {
+    "CreateDataset": {
+      "name": "CreateDataset",
+      "topics": [
+        "Amazon Lookout for Equipment"
+      ],
+      "description": "Grants permission to create a dataset",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateInferenceScheduler": {
+      "name": "CreateInferenceScheduler",
+      "topics": [
+        "Amazon Lookout for Equipment"
+      ],
+      "description": "Grants permission to create an inference scheduler for a trained model",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "inference-scheduler*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateModel": {
+      "name": "CreateModel",
+      "topics": [
+        "Amazon Lookout for Equipment"
+      ],
+      "description": "Grants permission to create a model that is trained on a dataset",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDataset": {
+      "name": "DeleteDataset",
+      "topics": [
+        "Amazon Lookout for Equipment"
+      ],
+      "description": "Grants permission to delete a dataset",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteInferenceScheduler": {
+      "name": "DeleteInferenceScheduler",
+      "topics": [
+        "Amazon Lookout for Equipment"
+      ],
+      "description": "Grants permission to delete an inference scheduler",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "inference-scheduler*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteModel": {
+      "name": "DeleteModel",
+      "topics": [
+        "Amazon Lookout for Equipment"
+      ],
+      "description": "Grants permission to delete a model",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDataIngestionJob": {
+      "name": "DescribeDataIngestionJob",
+      "topics": [
+        "Amazon Lookout for Equipment"
+      ],
+      "description": "Grants permission to describe a data ingestion job",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDataset": {
+      "name": "DescribeDataset",
+      "topics": [
+        "Amazon Lookout for Equipment"
+      ],
+      "description": "Grants permission to describe a dataset",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeInferenceScheduler": {
+      "name": "DescribeInferenceScheduler",
+      "topics": [
+        "Amazon Lookout for Equipment"
+      ],
+      "description": "Grants permission to describe an inference scheduler",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "inference-scheduler*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeModel": {
+      "name": "DescribeModel",
+      "topics": [
+        "Amazon Lookout for Equipment"
+      ],
+      "description": "Grants permission to describe a model",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDataIngestionJobs": {
+      "name": "ListDataIngestionJobs",
+      "topics": [
+        "Amazon Lookout for Equipment"
+      ],
+      "description": "Grants permission to list the data ingestion jobs in your account or for a particular\n                                                dataset",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDatasets": {
+      "name": "ListDatasets",
+      "topics": [
+        "Amazon Lookout for Equipment"
+      ],
+      "description": "Grants permission to list the datasets in your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListInferenceExecutions": {
+      "name": "ListInferenceExecutions",
+      "topics": [
+        "Amazon Lookout for Equipment"
+      ],
+      "description": "Grants permission to list the inference executions for an inference scheduler",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "inference-scheduler*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListInferenceSchedulers": {
+      "name": "ListInferenceSchedulers",
+      "topics": [
+        "Amazon Lookout for Equipment"
+      ],
+      "description": "Grants permission to list the inference schedulers in your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListModels": {
+      "name": "ListModels",
+      "topics": [
+        "Amazon Lookout for Equipment"
+      ],
+      "description": "Grants permission to list the models in your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "Amazon Lookout for Equipment"
+      ],
+      "description": "Grants permission to list the tags for a resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "dataset"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartDataIngestionJob": {
+      "name": "StartDataIngestionJob",
+      "topics": [
+        "Amazon Lookout for Equipment"
+      ],
+      "description": "Grants permission to start a data ingestion job for a dataset",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dataset*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartInferenceScheduler": {
+      "name": "StartInferenceScheduler",
+      "topics": [
+        "Amazon Lookout for Equipment"
+      ],
+      "description": "Grants permission to start an inference scheduler",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "inference-scheduler*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopInferenceScheduler": {
+      "name": "StopInferenceScheduler",
+      "topics": [
+        "Amazon Lookout for Equipment"
+      ],
+      "description": "Grants permission to stop an inference scheduler",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "inference-scheduler*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "Amazon Lookout for Equipment"
+      ],
+      "description": "Grants permission to tag a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "dataset"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "Amazon Lookout for Equipment"
+      ],
+      "description": "Grants permission to untag a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "dataset"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateInferenceScheduler": {
+      "name": "UpdateInferenceScheduler",
+      "topics": [
+        "Amazon Lookout for Equipment"
+      ],
+      "description": "Grants permission to update an inference scheduler",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "inference-scheduler*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "Amazon Lookout for Equipment"
+  ]
+}

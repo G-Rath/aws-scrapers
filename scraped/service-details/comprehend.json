@@ -69,6 +69,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ContainsPiiEntities": {
+      "name": "ContainsPiiEntities",
+      "topics": [
+        "Amazon Comprehend"
+      ],
+      "description": "Grants permission to classify the personally identifiable information within given\n                                                documents at realtime",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "CreateDocumentClassifier": {
       "name": "CreateDocumentClassifier",
       "topics": [
@@ -77,7 +88,7 @@
       "description": "Grants permission to create a new document classifier that you can use to categorize\n                                                documents",
       "accessLevel": "Write",
       "resourceTypes": [],
-      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VolumeKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:OutputKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VpcSubnets",
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VolumeKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:ModelKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:OutputKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VpcSubnets",
       "dependentActions": ""
     },
     "CreateEndpoint": {
@@ -101,7 +112,7 @@
       "description": "Grants permission to create an entity recognizer using submitted files",
       "accessLevel": "Write",
       "resourceTypes": [],
-      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VolumeKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VpcSubnets",
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VolumeKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:ModelKmsKey\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VpcSecurityGroupIds\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      comprehend:VpcSubnets",
       "dependentActions": ""
     },
     "DeleteDocumentClassifier": {
@@ -212,6 +223,17 @@
       "resourceTypes": [
         "entity-recognizer*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeEventsDetectionJob": {
+      "name": "DescribeEventsDetectionJob",
+      "topics": [
+        "Amazon Comprehend"
+      ],
+      "description": "Grants permission to get the properties associated with an Events detection job",
+      "accessLevel": "Read",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -393,6 +415,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ListEventsDetectionJobs": {
+      "name": "ListEventsDetectionJobs",
+      "topics": [
+        "Amazon Comprehend"
+      ],
+      "description": "Grants permission to get a list of Events detection jobs that you have submitted",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ListKeyPhrasesDetectionJobs": {
       "name": "ListKeyPhrasesDetectionJobs",
       "topics": [
@@ -487,6 +520,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "StartEventsDetectionJob": {
+      "name": "StartEventsDetectionJob",
+      "topics": [
+        "Amazon Comprehend"
+      ],
+      "description": "Grants permission to start an asynchronous Events detection job for a collection of\n                                                documents",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "comprehend:OutputKmsKey",
+      "dependentActions": ""
+    },
     "StartKeyPhrasesDetectionJob": {
       "name": "StartKeyPhrasesDetectionJob",
       "topics": [
@@ -548,6 +592,17 @@
         "Amazon Comprehend"
       ],
       "description": "Grants permission to stop an entity detection job",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopEventsDetectionJob": {
+      "name": "StopEventsDetectionJob",
+      "topics": [
+        "Amazon Comprehend"
+      ],
+      "description": "Grants permission to stop an Events detection job",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",

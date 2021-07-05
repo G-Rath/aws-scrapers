@@ -1,0 +1,121 @@
+{
+  "servicePrefix": "grafana",
+  "actions": {
+    "AssociateLicense": {
+      "name": "AssociateLicense",
+      "topics": [
+        "Amazon Managed Service for Grafana"
+      ],
+      "description": "Grants permission to upgrade a workspace with a license",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workspace*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "aws-marketplace:ViewSubscriptions"
+    },
+    "CreateWorkspace": {
+      "name": "CreateWorkspace",
+      "topics": [
+        "Amazon Managed Service for Grafana"
+      ],
+      "description": "Grants permission to create a workspace",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "organizations:DescribeOrganization\n                                                   \n                                                \n                                                \n                                                \n                                                   sso:CreateManagedApplicationInstance\n                                                   \n                                                \n                                                \n                                                \n                                                   sso:DescribeRegisteredRegions\n                                                   \n                                                \n                                                \n                                                \n                                                   sso:GetSharedSsoConfiguration"
+    },
+    "DeleteWorkspace": {
+      "name": "DeleteWorkspace",
+      "topics": [
+        "Amazon Managed Service for Grafana"
+      ],
+      "description": "Grants permission to delete a workspace",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workspace*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "sso:DeleteManagedApplicationInstance"
+    },
+    "DescribeWorkspace": {
+      "name": "DescribeWorkspace",
+      "topics": [
+        "Amazon Managed Service for Grafana"
+      ],
+      "description": "Grants permission to describe a workspace",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "workspace*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateLicense": {
+      "name": "DisassociateLicense",
+      "topics": [
+        "Amazon Managed Service for Grafana"
+      ],
+      "description": "Grants permission to remove a license from a workspace",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workspace*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPermissions": {
+      "name": "ListPermissions",
+      "topics": [
+        "Amazon Managed Service for Grafana"
+      ],
+      "description": "Grants permission to list the permissions on a wokspace",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "workspace*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListWorkspaces": {
+      "name": "ListWorkspaces",
+      "topics": [
+        "Amazon Managed Service for Grafana"
+      ],
+      "description": "Grants permission to list workspaces",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdatePermissions": {
+      "name": "UpdatePermissions",
+      "topics": [
+        "Amazon Managed Service for Grafana"
+      ],
+      "description": "Grants permission to modify the permissions on a workspace",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "workspace*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateWorkspace": {
+      "name": "UpdateWorkspace",
+      "topics": [
+        "Amazon Managed Service for Grafana"
+      ],
+      "description": "Grants permission to modify a workspace",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workspace*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "Amazon Managed Service for Grafana"
+  ]
+}

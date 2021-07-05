@@ -6,7 +6,7 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to get information about one or more named queries.",
+      "description": "Grants permissions to get information about one or more named queries",
       "accessLevel": "Read",
       "resourceTypes": [
         "workgroup*"
@@ -19,7 +19,7 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to get information about one or more query executions.",
+      "description": "Grants permissions to get information about one or more query executions",
       "accessLevel": "Read",
       "resourceTypes": [
         "workgroup*"
@@ -32,8 +32,8 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to create a datacatalog.",
-      "accessLevel": "Tagging",
+      "description": "Grants permissions to create a datacatalog",
+      "accessLevel": "Write",
       "resourceTypes": [
         "datacatalog*"
       ],
@@ -45,7 +45,20 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to create a named query.",
+      "description": "Grants permissions to create a named query",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreatePreparedStatement": {
+      "name": "CreatePreparedStatement",
+      "topics": [
+        "Amazon Athena"
+      ],
+      "description": "Grants permissions to create a prepared statement.",
       "accessLevel": "Write",
       "resourceTypes": [
         "workgroup*"
@@ -58,8 +71,8 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to create a workgroup.",
-      "accessLevel": "Tagging",
+      "description": "Grants permissions to create a workgroup",
+      "accessLevel": "Write",
       "resourceTypes": [
         "workgroup*"
       ],
@@ -71,7 +84,7 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to delete a datacatalog.",
+      "description": "Grants permissions to delete a datacatalog",
       "accessLevel": "Write",
       "resourceTypes": [
         "datacatalog*"
@@ -84,7 +97,20 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to delete a named query specified.",
+      "description": "Grants permissions to delete a named query specified",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeletePreparedStatement": {
+      "name": "DeletePreparedStatement",
+      "topics": [
+        "Amazon Athena"
+      ],
+      "description": "Grants permissions to delete a prepared statement specified.",
       "accessLevel": "Write",
       "resourceTypes": [
         "workgroup*"
@@ -97,7 +123,7 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to delete a workgroup.",
+      "description": "Grants permissions to delete a workgroup",
       "accessLevel": "Write",
       "resourceTypes": [
         "workgroup*"
@@ -110,7 +136,7 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to get a datacatalog.",
+      "description": "Grants permissions to get a datacatalog",
       "accessLevel": "Read",
       "resourceTypes": [
         "datacatalog*"
@@ -123,7 +149,7 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to get a database for a given datacatalog.",
+      "description": "Grants permissions to get a database for a given datacatalog",
       "accessLevel": "Read",
       "resourceTypes": [
         "datacatalog*"
@@ -136,7 +162,20 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to get information about the specified named query.",
+      "description": "Grants permissions to get information about the specified named query",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "workgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetPreparedStatement": {
+      "name": "GetPreparedStatement",
+      "topics": [
+        "Amazon Athena"
+      ],
+      "description": "Grants permissions to get information about the specified prepared statement.",
       "accessLevel": "Read",
       "resourceTypes": [
         "workgroup*"
@@ -149,7 +188,7 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to get information about the specified query execution.",
+      "description": "Grants permissions to get information about the specified query execution",
       "accessLevel": "Read",
       "resourceTypes": [
         "workgroup*"
@@ -162,7 +201,7 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to get the query results.",
+      "description": "Grants permissions to get the query results",
       "accessLevel": "Read",
       "resourceTypes": [
         "workgroup*"
@@ -175,7 +214,7 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to get the query results stream.",
+      "description": "Grants permissions to get the query results stream",
       "accessLevel": "Read",
       "resourceTypes": [
         "workgroup*"
@@ -188,7 +227,7 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to get a metadata about a table for a given datacatalog.",
+      "description": "Grants permissions to get a metadata about a table for a given datacatalog",
       "accessLevel": "Read",
       "resourceTypes": [
         "datacatalog*"
@@ -201,7 +240,7 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to get a workgroup.",
+      "description": "Grants permissions to get a workgroup",
       "accessLevel": "Read",
       "resourceTypes": [
         "workgroup*"
@@ -214,7 +253,7 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to return a list of datacatalogs for the specified AWS account.",
+      "description": "Grants permissions to return a list of datacatalogs for the specified AWS account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -225,11 +264,22 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to return a list of databases for a given datacatalog.",
+      "description": "Grants permissions to return a list of databases for a given datacatalog",
       "accessLevel": "List",
       "resourceTypes": [
         "datacatalog*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEngineVersions": {
+      "name": "ListEngineVersions",
+      "topics": [
+        "Amazon Athena"
+      ],
+      "description": "Grants permissions to return a list of athena engine versions for the specified AWS\n                                                account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -238,7 +288,20 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to return a list of named queries in Amazon Athena for the specified\n                                                AWS account.",
+      "description": "Grants permissions to return a list of named queries in Amazon Athena for the specified\n                                                AWS account",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "workgroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPreparedStatements": {
+      "name": "ListPreparedStatements",
+      "topics": [
+        "Amazon Athena"
+      ],
+      "description": "Grants permissions to return a list of prepared statements for the specified workgroup.",
       "accessLevel": "List",
       "resourceTypes": [
         "workgroup*"
@@ -251,8 +314,8 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to return a list of query executions for the specified AWS account.",
-      "accessLevel": "List",
+      "description": "Grants permissions to return a list of query executions for the specified AWS account",
+      "accessLevel": "Read",
       "resourceTypes": [
         "workgroup*"
       ],
@@ -264,8 +327,8 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to return a list of table metadata in a database for a given datacatalog.",
-      "accessLevel": "List",
+      "description": "Grants permissions to return a list of table metadata in a database for a given datacatalog",
+      "accessLevel": "Read",
       "resourceTypes": [
         "datacatalog*"
       ],
@@ -277,7 +340,7 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to return a list of tags for a resource.",
+      "description": "Grants permissions to return a list of tags for a resource",
       "accessLevel": "Read",
       "resourceTypes": [
         "datacatalog*"
@@ -290,7 +353,7 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to return a list of workgroups for the specified AWS account.",
+      "description": "Grants permissions to return a list of workgroups for the specified AWS account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -301,7 +364,7 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to start a query execution using an SQL query provided as a string.",
+      "description": "Grants permissions to start a query execution using an SQL query provided as a string",
       "accessLevel": "Write",
       "resourceTypes": [
         "workgroup*"
@@ -314,7 +377,7 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to stop the specified query execution.",
+      "description": "Grants permissions to stop the specified query execution",
       "accessLevel": "Write",
       "resourceTypes": [
         "workgroup*"
@@ -327,7 +390,7 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to add a tag to a resource.",
+      "description": "Grants permissions to add a tag to a resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "datacatalog*"
@@ -340,7 +403,7 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to remove a tag from a resource.",
+      "description": "Grants permissions to remove a tag from a resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "datacatalog*"
@@ -353,10 +416,23 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to update a datacatalog.",
+      "description": "Grants permissions to update a datacatalog",
       "accessLevel": "Write",
       "resourceTypes": [
         "datacatalog*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdatePreparedStatement": {
+      "name": "UpdatePreparedStatement",
+      "topics": [
+        "Amazon Athena"
+      ],
+      "description": "Grants permissions to update a prepared statement.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workgroup*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -366,7 +442,7 @@
       "topics": [
         "Amazon Athena"
       ],
-      "description": "Grants permissions to update a workgroup.",
+      "description": "Grants permissions to update a workgroup",
       "accessLevel": "Write",
       "resourceTypes": [
         "workgroup*"

@@ -12,6 +12,115 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "BatchCreateTableRows": {
+      "name": "BatchCreateTableRows",
+      "topics": [
+        "Amazon Honeycode"
+      ],
+      "description": "Grants permission to create new rows in a table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchDeleteTableRows": {
+      "name": "BatchDeleteTableRows",
+      "topics": [
+        "Amazon Honeycode"
+      ],
+      "description": "Grants permission to delete rows from a table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchUpdateTableRows": {
+      "name": "BatchUpdateTableRows",
+      "topics": [
+        "Amazon Honeycode"
+      ],
+      "description": "Grants permission to update rows in a table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchUpsertTableRows": {
+      "name": "BatchUpsertTableRows",
+      "topics": [
+        "Amazon Honeycode"
+      ],
+      "description": "Grants permission to upsert rows in a table",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateTeam": {
+      "name": "CreateTeam",
+      "topics": [
+        "Amazon Honeycode"
+      ],
+      "description": "Grants permission to create a new Amazon Honeycode team for your AWS Account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateTenant": {
+      "name": "CreateTenant",
+      "topics": [
+        "Amazon Honeycode"
+      ],
+      "description": "Grants permission to create a new tenant within Amazon Honeycode for your AWS Account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeregisterGroups": {
+      "name": "DeregisterGroups",
+      "topics": [
+        "Amazon Honeycode"
+      ],
+      "description": "Grants permission to remove groups from an Amazon Honeycode team for your AWS Account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTableDataImportJob": {
+      "name": "DescribeTableDataImportJob",
+      "topics": [
+        "Amazon Honeycode"
+      ],
+      "description": "Grants permission to get details about a table data import job",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTeam": {
+      "name": "DescribeTeam",
+      "topics": [
+        "Amazon Honeycode"
+      ],
+      "description": "Grants permission to get details about Amazon Honeycode teams for your AWS Account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "GetScreenData": {
       "name": "GetScreenData",
       "topics": [
@@ -38,6 +147,67 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ListDomains": {
+      "name": "ListDomains",
+      "topics": [
+        "Amazon Honeycode"
+      ],
+      "description": "Grants permission to list all Amazon Honeycode domains and their verification status\n                                                for your AWS Account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGroups": {
+      "name": "ListGroups",
+      "topics": [
+        "Amazon Honeycode"
+      ],
+      "description": "Grants permission to list all groups in an Amazon Honeycode team for your AWS Account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTableColumns": {
+      "name": "ListTableColumns",
+      "topics": [
+        "Amazon Honeycode"
+      ],
+      "description": "Grants permission to list the columns in a table",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTableRows": {
+      "name": "ListTableRows",
+      "topics": [
+        "Amazon Honeycode"
+      ],
+      "description": "Grants permission to list the rows in a table",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTables": {
+      "name": "ListTables",
+      "topics": [
+        "Amazon Honeycode"
+      ],
+      "description": "Grants permission to list the tables in a workbook",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "workbook*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ListTeamAssociations": {
       "name": "ListTeamAssociations",
       "topics": [
@@ -49,12 +219,93 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ListTenants": {
+      "name": "ListTenants",
+      "topics": [
+        "Amazon Honeycode"
+      ],
+      "description": "Grants permission to list all tenants of Amazon Honeycode for your AWS Account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "QueryTableRows": {
+      "name": "QueryTableRows",
+      "topics": [
+        "Amazon Honeycode"
+      ],
+      "description": "Grants permission to query the rows of a table using a filter",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterDomainForVerification": {
+      "name": "RegisterDomainForVerification",
+      "topics": [
+        "Amazon Honeycode"
+      ],
+      "description": "Grants permission to request verification of the Amazon Honeycode domains for your\n                                                AWS Account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterGroups": {
+      "name": "RegisterGroups",
+      "topics": [
+        "Amazon Honeycode"
+      ],
+      "description": "Grants permission to add groups to an Amazon Honeycode team for your AWS Account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "RejectTeamAssociation": {
       "name": "RejectTeamAssociation",
       "topics": [
         "Amazon Honeycode"
       ],
       "description": "Grants permission to reject a team association request for your AWS Account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RestartDomainVerification": {
+      "name": "RestartDomainVerification",
+      "topics": [
+        "Amazon Honeycode"
+      ],
+      "description": "Grants permission to restart verification of the Amazon Honeycode domains for your\n                                                AWS Account",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartTableDataImportJob": {
+      "name": "StartTableDataImportJob",
+      "topics": [
+        "Amazon Honeycode"
+      ],
+      "description": "Grants permission to start a table data import job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "table*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateTeam": {
+      "name": "UpdateTeam",
+      "topics": [
+        "Amazon Honeycode"
+      ],
+      "description": "Grants permission to update an Amazon Honeycode team for your AWS Account",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",

@@ -663,7 +663,9 @@
       ],
       "description": "Grants permission to generate a service last accessed data report for an IAM resource",
       "accessLevel": "Read",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "group*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -1089,6 +1091,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ListInstanceProfileTags": {
+      "name": "ListInstanceProfileTags",
+      "topics": [
+        "Identity And Access Management"
+      ],
+      "description": "Grants permission to list the tags that are attached to the specified instance profile",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "instance-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ListInstanceProfiles": {
       "name": "ListInstanceProfiles",
       "topics": [
@@ -1115,6 +1130,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ListMFADeviceTags": {
+      "name": "ListMFADeviceTags",
+      "topics": [
+        "Identity And Access Management"
+      ],
+      "description": "Grants permission to list the tags that are attached to the specified virtual mfa\n                                                device",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "mfa*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ListMFADevices": {
       "name": "ListMFADevices",
       "topics": [
@@ -1124,6 +1152,19 @@
       "accessLevel": "List",
       "resourceTypes": [
         "user"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListOpenIDConnectProviderTags": {
+      "name": "ListOpenIDConnectProviderTags",
+      "topics": [
+        "Identity And Access Management"
+      ],
+      "description": "Grants permission to list the tags that are attached to the specified OpenID Connect\n                                                provider",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "oidc-provider*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1157,7 +1198,22 @@
       ],
       "description": "Grants permission to list information about the policies that grant an entity access\n                                                to a specific service",
       "accessLevel": "List",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPolicyTags": {
+      "name": "ListPolicyTags",
+      "topics": [
+        "Identity And Access Management"
+      ],
+      "description": "Grants permission to list the tags that are attached to the specified managed policy",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "policy*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -1192,7 +1248,7 @@
       "topics": [
         "Identity And Access Management"
       ],
-      "description": "Grants permission to list the tags that are attached to the specified IAM role.",
+      "description": "Grants permission to list the tags that are attached to the specified IAM role",
       "accessLevel": "List",
       "resourceTypes": [
         "role*"
@@ -1208,6 +1264,19 @@
       "description": "Grants permission to list the IAM roles that have the specified path prefix",
       "accessLevel": "List",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSAMLProviderTags": {
+      "name": "ListSAMLProviderTags",
+      "topics": [
+        "Identity And Access Management"
+      ],
+      "description": "Grants permission to list the tags that are attached to the specified SAML provider",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "saml-provider*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -1231,6 +1300,19 @@
       "accessLevel": "List",
       "resourceTypes": [
         "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListServerCertificateTags": {
+      "name": "ListServerCertificateTags",
+      "topics": [
+        "Identity And Access Management"
+      ],
+      "description": "Grants permission to list the tags that are attached to the specified server certificate",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "server-certificate*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1290,7 +1372,7 @@
       "topics": [
         "Identity And Access Management"
       ],
-      "description": "Grants permission to list the tags that are attached to the specified IAM user.",
+      "description": "Grants permission to list the tags that are attached to the specified IAM user",
       "accessLevel": "List",
       "resourceTypes": [
         "user*"
@@ -1511,15 +1593,93 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "TagInstanceProfile": {
+      "name": "TagInstanceProfile",
+      "topics": [
+        "Identity And Access Management"
+      ],
+      "description": "Grants permission to add tags to an instance profile",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "instance-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagMFADevice": {
+      "name": "TagMFADevice",
+      "topics": [
+        "Identity And Access Management"
+      ],
+      "description": "Grants permission to add tags to a virtual mfa device",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "mfa*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagOpenIDConnectProvider": {
+      "name": "TagOpenIDConnectProvider",
+      "topics": [
+        "Identity And Access Management"
+      ],
+      "description": "Grants permission to add tags to an OpenID Connect provider",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "oidc-provider*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagPolicy": {
+      "name": "TagPolicy",
+      "topics": [
+        "Identity And Access Management"
+      ],
+      "description": "Grants permission to add tags to a managed policy",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "policy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "TagRole": {
       "name": "TagRole",
       "topics": [
         "Identity And Access Management"
       ],
-      "description": "Grants permission to add tags to an IAM role.",
+      "description": "Grants permission to add tags to an IAM role",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagSAMLProvider": {
+      "name": "TagSAMLProvider",
+      "topics": [
+        "Identity And Access Management"
+      ],
+      "description": "Grants permission to add tags to a SAML Provider",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "saml-provider*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagServerCertificate": {
+      "name": "TagServerCertificate",
+      "topics": [
+        "Identity And Access Management"
+      ],
+      "description": "Grants permission to add tags to a server certificate",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "server-certificate*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1529,10 +1689,62 @@
       "topics": [
         "Identity And Access Management"
       ],
-      "description": "Grants permission to add tags to an IAM user.",
+      "description": "Grants permission to add tags to an IAM user",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "user*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagInstanceProfile": {
+      "name": "UntagInstanceProfile",
+      "topics": [
+        "Identity And Access Management"
+      ],
+      "description": "Grants permission to remove the specified tags from the instance profile",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "instance-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagMFADevice": {
+      "name": "UntagMFADevice",
+      "topics": [
+        "Identity And Access Management"
+      ],
+      "description": "Grants permission to remove the specified tags from the virtual mfa device",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "mfa*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagOpenIDConnectProvider": {
+      "name": "UntagOpenIDConnectProvider",
+      "topics": [
+        "Identity And Access Management"
+      ],
+      "description": "Grants permission to remove the specified tags from the OpenID Connect provider",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "oidc-provider*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagPolicy": {
+      "name": "UntagPolicy",
+      "topics": [
+        "Identity And Access Management"
+      ],
+      "description": "Grants permission to remove the specified tags from the managed policy",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "policy*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1542,10 +1754,36 @@
       "topics": [
         "Identity And Access Management"
       ],
-      "description": "Grants permission to remove the specified tags from the role.",
+      "description": "Grants permission to remove the specified tags from the role",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagSAMLProvider": {
+      "name": "UntagSAMLProvider",
+      "topics": [
+        "Identity And Access Management"
+      ],
+      "description": "Grants permission to remove the specified tags from the SAML Provider",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "saml-provider*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagServerCertificate": {
+      "name": "UntagServerCertificate",
+      "topics": [
+        "Identity And Access Management"
+      ],
+      "description": "Grants permission to remove the specified tags from the server certificate",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "server-certificate*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1555,7 +1793,7 @@
       "topics": [
         "Identity And Access Management"
       ],
-      "description": "Grants permission to remove the specified tags from the user.",
+      "description": "Grants permission to remove the specified tags from the user",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "user*"

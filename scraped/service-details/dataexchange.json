@@ -131,7 +131,7 @@
         "AWS Data Exchange"
       ],
       "description": "Grants permissions to get information about a job.",
-      "accessLevel": "Write",
+      "accessLevel": "Read",
       "resourceTypes": [
         "jobs*"
       ],
@@ -212,6 +212,19 @@
       "accessLevel": "Read",
       "resourceTypes": [
         "data-sets"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PublishDataSet": {
+      "name": "PublishDataSet",
+      "topics": [
+        "AWS Data Exchange"
+      ],
+      "description": "Grants permission to publish a data set.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "data-sets*"
       ],
       "conditionKeys": "",
       "dependentActions": ""

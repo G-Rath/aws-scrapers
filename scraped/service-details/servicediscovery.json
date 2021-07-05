@@ -6,7 +6,7 @@
       "topics": [
         "AWS Cloud Map"
       ],
-      "description": "Creates an HTTP namespace.",
+      "description": "Grants permission to create an HTTP namespace",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
@@ -17,7 +17,7 @@
       "topics": [
         "AWS Cloud Map"
       ],
-      "description": "Creates a private namespace based on DNS, which will be visible only inside a specified\n                                                Amazon VPC.",
+      "description": "Grants permission to create a private namespace based on DNS, which will be visible\n                                                only inside a specified Amazon VPC",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
@@ -28,7 +28,7 @@
       "topics": [
         "AWS Cloud Map"
       ],
-      "description": "Creates a public namespace based on DNS, which will be visible on the internet.",
+      "description": "Grants permission to create a public namespace based on DNS, which will be visible\n                                                on the internet",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
@@ -39,7 +39,7 @@
       "topics": [
         "AWS Cloud Map"
       ],
-      "description": "Creates a service.",
+      "description": "Grants permission to create a service",
       "accessLevel": "Write",
       "resourceTypes": [
         "namespace*"
@@ -52,7 +52,7 @@
       "topics": [
         "AWS Cloud Map"
       ],
-      "description": "Deletes a specified namespace.",
+      "description": "Grants permission to delete a specified namespace",
       "accessLevel": "Write",
       "resourceTypes": [
         "namespace*"
@@ -65,7 +65,7 @@
       "topics": [
         "AWS Cloud Map"
       ],
-      "description": "Deletes a specified service.",
+      "description": "Grants permission to delete a specified service",
       "accessLevel": "Write",
       "resourceTypes": [
         "service*"
@@ -78,7 +78,7 @@
       "topics": [
         "AWS Cloud Map"
       ],
-      "description": "Deletes the records and the health check, if any, that Amazon Route 53 created for\n                                                the specified instance.",
+      "description": "Grants permission to delete the records and the health check, if any, that Amazon\n                                                Route 53 created for the specified instance",
       "accessLevel": "Write",
       "resourceTypes": [
         "service*"
@@ -91,7 +91,7 @@
       "topics": [
         "AWS Cloud Map"
       ],
-      "description": "Discovers registered instances for a specified namespace and service.",
+      "description": "Grants permission to discover registered instances for a specified namespace and service",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "servicediscovery:NamespaceName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      servicediscovery:ServiceName",
@@ -102,7 +102,7 @@
       "topics": [
         "AWS Cloud Map"
       ],
-      "description": "Gets information about a specified instance.",
+      "description": "Grants permission to get information about a specified instance",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "servicediscovery:ServiceArn",
@@ -113,7 +113,7 @@
       "topics": [
         "AWS Cloud Map"
       ],
-      "description": "Gets the current health status (Healthy, Unhealthy, or Unknown) of one or more instances.",
+      "description": "Grants permission to get the current health status (Healthy, Unhealthy, or Unknown)\n                                                of one or more instances",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "servicediscovery:ServiceArn",
@@ -124,7 +124,7 @@
       "topics": [
         "AWS Cloud Map"
       ],
-      "description": "Gets information about a namespace.",
+      "description": "Grants permission to get information about a namespace",
       "accessLevel": "Read",
       "resourceTypes": [
         "namespace*"
@@ -137,7 +137,7 @@
       "topics": [
         "AWS Cloud Map"
       ],
-      "description": "Gets information about a specific operation.",
+      "description": "Grants permission to get information about a specific operation",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -148,7 +148,7 @@
       "topics": [
         "AWS Cloud Map"
       ],
-      "description": "Gets the settings for a specified service.",
+      "description": "Grants permission to get the settings for a specified service",
       "accessLevel": "Read",
       "resourceTypes": [
         "service*"
@@ -161,7 +161,7 @@
       "topics": [
         "AWS Cloud Map"
       ],
-      "description": "Gets summary information about the instances that were registered with a specified\n                                                service.",
+      "description": "Grants permission to get summary information about the instances that were registered\n                                                with a specified service",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "servicediscovery:ServiceArn",
@@ -172,7 +172,7 @@
       "topics": [
         "AWS Cloud Map"
       ],
-      "description": "Gets information about the namespaces.",
+      "description": "Grants permission to get information about the namespaces",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -183,7 +183,7 @@
       "topics": [
         "AWS Cloud Map"
       ],
-      "description": "Lists operations that match the criteria that you specify.",
+      "description": "Grants permission to list operations that match the criteria that you specify",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -194,7 +194,7 @@
       "topics": [
         "AWS Cloud Map"
       ],
-      "description": "Gets settings for all the services that match specified filters.",
+      "description": "Grants permission to get settings for all the services that match specified filters",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -205,7 +205,7 @@
       "topics": [
         "AWS Cloud Map"
       ],
-      "description": "Lists tags for the specified resource.",
+      "description": "Grants permission to lists tags for the specified resource",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -216,7 +216,7 @@
       "topics": [
         "AWS Cloud Map"
       ],
-      "description": "Registers an instance based on the settings in a specified service.",
+      "description": "Grants permission to register an instance based on the settings in a specified service",
       "accessLevel": "Write",
       "resourceTypes": [
         "service*"
@@ -229,7 +229,7 @@
       "topics": [
         "AWS Cloud Map"
       ],
-      "description": "Adds one or more tags to the specified resource.",
+      "description": "Grants permission to add one or more tags to the specified resource",
       "accessLevel": "Tagging",
       "resourceTypes": [],
       "conditionKeys": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
@@ -240,7 +240,7 @@
       "topics": [
         "AWS Cloud Map"
       ],
-      "description": "Removes one or more tags from the specified resource.",
+      "description": "Grants permission to remove one or more tags from the specified resource",
       "accessLevel": "Tagging",
       "resourceTypes": [],
       "conditionKeys": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
@@ -251,7 +251,7 @@
       "topics": [
         "AWS Cloud Map"
       ],
-      "description": "Updates the current health status for an instance that has a custom health check.",
+      "description": "Grants permission to update the current health status for an instance that has a custom\n                                                health check",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "servicediscovery:ServiceArn",
@@ -262,7 +262,7 @@
       "topics": [
         "AWS Cloud Map"
       ],
-      "description": "Updates the settings in a specified service.",
+      "description": "Grants permission to update the settings in a specified service",
       "accessLevel": "Write",
       "resourceTypes": [
         "service*"

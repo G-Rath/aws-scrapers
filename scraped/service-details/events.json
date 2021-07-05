@@ -27,6 +27,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "CreateApiDestination": {
+      "name": "CreateApiDestination",
+      "topics": [
+        "Amazon EventBridge"
+      ],
+      "description": "Grants permission to create a new api destination",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "api-destination*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "CreateArchive": {
       "name": "CreateArchive",
       "topics": [
@@ -36,6 +49,19 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "archive*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateConnection": {
+      "name": "CreateConnection",
+      "topics": [
+        "Amazon EventBridge"
+      ],
+      "description": "Grants permission to create a new connection",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "connection*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -79,6 +105,32 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeauthorizeConnection": {
+      "name": "DeauthorizeConnection",
+      "topics": [
+        "Amazon EventBridge"
+      ],
+      "description": "Grants permission to deauthorize a connection, deleting its stored authorization secrets",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "connection*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteApiDestination": {
+      "name": "DeleteApiDestination",
+      "topics": [
+        "Amazon EventBridge"
+      ],
+      "description": "Grants permission to delete an api destination",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "api-destination*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteArchive": {
       "name": "DeleteArchive",
       "topics": [
@@ -88,6 +140,19 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "archive*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteConnection": {
+      "name": "DeleteConnection",
+      "topics": [
+        "Amazon EventBridge"
+      ],
+      "description": "Grants permission to delete a connection",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "connection*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -131,6 +196,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DescribeApiDestination": {
+      "name": "DescribeApiDestination",
+      "topics": [
+        "Amazon EventBridge"
+      ],
+      "description": "Grants permission to retrieve details about an api destination",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "api-destination*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DescribeArchive": {
       "name": "DescribeArchive",
       "topics": [
@@ -140,6 +218,19 @@
       "accessLevel": "Read",
       "resourceTypes": [
         "archive*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeConnection": {
+      "name": "DescribeConnection",
+      "topics": [
+        "Amazon EventBridge"
+      ],
+      "description": "Grants permission to retrieve details about a conection",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "connection*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -235,12 +326,47 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "InvokeApiDestination": {
+      "name": "InvokeApiDestination",
+      "topics": [
+        "Amazon EventBridge"
+      ],
+      "description": "Grants permission to invoke an api destination",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "api-destination*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListApiDestinations": {
+      "name": "ListApiDestinations",
+      "topics": [
+        "Amazon EventBridge"
+      ],
+      "description": "Grants permission to retrieve a list of api destinations",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ListArchives": {
       "name": "ListArchives",
       "topics": [
         "Amazon EventBridge"
       ],
       "description": "Grants permission to retrieve a list of archives",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListConnections": {
+      "name": "ListConnections",
+      "topics": [
+        "Amazon EventBridge"
+      ],
+      "description": "Grants permission to retrieve a list of connections",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -381,7 +507,7 @@
         "Amazon EventBridge"
       ],
       "description": "Grants permission to use the PutPermission action to grants permission to another\n                                                AWS account to put events to your default event bus",
-      "accessLevel": "Write",
+      "accessLevel": "Permissions management",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -418,7 +544,7 @@
         "Amazon EventBridge"
       ],
       "description": "Grants permission to revoke the permission of another AWS account to put events to\n                                                your default event bus",
-      "accessLevel": "Write",
+      "accessLevel": "Permissions management",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -486,6 +612,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "UpdateApiDestination": {
+      "name": "UpdateApiDestination",
+      "topics": [
+        "Amazon EventBridge"
+      ],
+      "description": "Grants permission to update an api destination",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "api-destination*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "UpdateArchive": {
       "name": "UpdateArchive",
       "topics": [
@@ -495,6 +634,19 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "archive*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateConnection": {
+      "name": "UpdateConnection",
+      "topics": [
+        "Amazon EventBridge"
+      ],
+      "description": "Grants permission to update a connection",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "connection*"
       ],
       "conditionKeys": "",
       "dependentActions": ""

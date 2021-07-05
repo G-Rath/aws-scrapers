@@ -6,7 +6,7 @@
       "topics": [
         "AWS DeepComposer"
       ],
-      "description": "Associates a DeepComposer coupon (or DSN) with the account associated with the sender\n                                                of the request.",
+      "description": "Grants permission to associate a DeepComposer coupon (or DSN) with the account associated\n                                                with the sender of the request",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -17,10 +17,10 @@
       "topics": [
         "AWS DeepComposer"
       ],
-      "description": "Creates an audio file by converting the midi composition into a wav or mp3 file.",
+      "description": "Grants permission to create an audio file by converting the midi composition into\n                                                a wav or mp3 file",
       "accessLevel": "Write",
       "resourceTypes": [
-        "composition*"
+        "audio*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -30,10 +30,12 @@
       "topics": [
         "AWS DeepComposer"
       ],
-      "description": "Creates a multi-track midi composition.",
+      "description": "Grants permission to create a multi-track midi composition",
       "accessLevel": "Write",
-      "resourceTypes": [],
-      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "resourceTypes": [
+        "composition*"
+      ],
+      "conditionKeys": "",
       "dependentActions": ""
     },
     "CreateModel": {
@@ -41,10 +43,12 @@
       "topics": [
         "AWS DeepComposer"
       ],
-      "description": "Starts creating/training a generative-model that is able to perform inference against\n                                                the user-provided piano-melody to create a multi-track midi composition.",
+      "description": "Grants permission to start creating/training a generative-model that is able to perform\n                                                inference against the user-provided piano-melody to create a multi-track midi composition",
       "accessLevel": "Write",
-      "resourceTypes": [],
-      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "resourceTypes": [
+        "model*"
+      ],
+      "conditionKeys": "",
       "dependentActions": ""
     },
     "DeleteComposition": {
@@ -52,7 +56,7 @@
       "topics": [
         "AWS DeepComposer"
       ],
-      "description": "Deletes the composition.",
+      "description": "Grants permission to delete the composition",
       "accessLevel": "Write",
       "resourceTypes": [
         "composition*"
@@ -65,7 +69,7 @@
       "topics": [
         "AWS DeepComposer"
       ],
-      "description": "Deletes the model.",
+      "description": "Grants permission to delete the model",
       "accessLevel": "Write",
       "resourceTypes": [
         "model*"
@@ -78,7 +82,7 @@
       "topics": [
         "AWS DeepComposer"
       ],
-      "description": "Returns information about the composition.",
+      "description": "Grants permission to get information about the composition",
       "accessLevel": "Read",
       "resourceTypes": [
         "composition*"
@@ -91,7 +95,7 @@
       "topics": [
         "AWS DeepComposer"
       ],
-      "description": "Returns information about the model.",
+      "description": "Grants permission to get information about the model",
       "accessLevel": "Read",
       "resourceTypes": [
         "model*"
@@ -104,9 +108,11 @@
       "topics": [
         "AWS DeepComposer"
       ],
-      "description": "Returns information about the sample/pre-trained DeepComposer model.",
+      "description": "Grants permission to get information about the sample/pre-trained DeepComposer model",
       "accessLevel": "Read",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "model*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -115,9 +121,11 @@
       "topics": [
         "AWS DeepComposer"
       ],
-      "description": "Returns a list of all the compositions owned by the sender of the request.",
+      "description": "Grants permission to list all the compositions owned by the sender of the request",
       "accessLevel": "List",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "composition*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -126,9 +134,11 @@
       "topics": [
         "AWS DeepComposer"
       ],
-      "description": "Returns a list of all the models owned by the sender of the request.",
+      "description": "Grants permission to list all the models owned by the sender of the request",
       "accessLevel": "List",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "model*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -137,9 +147,11 @@
       "topics": [
         "AWS DeepComposer"
       ],
-      "description": "Returns a list of all the sample/pre-trained models provided by the DeepComposer service.",
+      "description": "Grants permission to list all the sample/pre-trained models provided by the DeepComposer\n                                                service",
       "accessLevel": "List",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "model*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -148,7 +160,7 @@
       "topics": [
         "AWS DeepComposer"
       ],
-      "description": "Grants permission to lists tag for a resource.",
+      "description": "Grants permission to list tags for a resource",
       "accessLevel": "List",
       "resourceTypes": [
         "composition"
@@ -161,9 +173,11 @@
       "topics": [
         "AWS DeepComposer"
       ],
-      "description": "Returns a list of all the training options or topic for creating/training a model.",
+      "description": "Grants permission to list all the training options or topic for creating/training\n                                                a model",
       "accessLevel": "List",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "model*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -172,7 +186,7 @@
       "topics": [
         "AWS DeepComposer"
       ],
-      "description": "Grants permission to tag a resource.",
+      "description": "Grants permission to tag a resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "composition"
@@ -185,7 +199,7 @@
       "topics": [
         "AWS DeepComposer"
       ],
-      "description": "Grants permission to untag a resource.",
+      "description": "Grants permission to untag a resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "composition"
@@ -198,7 +212,7 @@
       "topics": [
         "AWS DeepComposer"
       ],
-      "description": "Modifies the mutable properties associated with a composition.",
+      "description": "Grants permission to modify the mutable properties associated with a composition",
       "accessLevel": "Write",
       "resourceTypes": [
         "composition*"
@@ -211,7 +225,7 @@
       "topics": [
         "AWS DeepComposer"
       ],
-      "description": "Modifies the mutable properties associated with a model.",
+      "description": "Grants permission to to modify the mutable properties associated with a model",
       "accessLevel": "Write",
       "resourceTypes": [
         "model*"

@@ -4,9 +4,33 @@
     "ApplyArchiveRule": {
       "name": "ApplyArchiveRule",
       "topics": [
-        "IAM Access Analyzer"
+        "AWS IAM Access Analyzer"
       ],
-      "description": "Grants permission to apply an archive rule.",
+      "description": "Grants permission to apply an archive rule",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Analyzer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CancelPolicyGeneration": {
+      "name": "CancelPolicyGeneration",
+      "topics": [
+        "AWS IAM Access Analyzer"
+      ],
+      "description": "Grants permission to cancel a policy generation",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAccessPreview": {
+      "name": "CreateAccessPreview",
+      "topics": [
+        "AWS IAM Access Analyzer"
+      ],
+      "description": "Grants permission to create an access preview for the specified analyzer",
       "accessLevel": "Write",
       "resourceTypes": [
         "Analyzer*"
@@ -17,25 +41,25 @@
     "CreateAnalyzer": {
       "name": "CreateAnalyzer",
       "topics": [
-        "IAM Access Analyzer"
+        "AWS IAM Access Analyzer"
       ],
-      "description": "Grants permission to create an analyzer.",
+      "description": "Grants permission to create an analyzer",
       "accessLevel": "Write",
       "resourceTypes": [
         "Analyzer*"
       ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "iam:CreateServiceLinkedRole"
     },
     "CreateArchiveRule": {
       "name": "CreateArchiveRule",
       "topics": [
-        "IAM Access Analyzer"
+        "AWS IAM Access Analyzer"
       ],
-      "description": "Grants permission to create an archive rule for the specified analyzer.",
+      "description": "Grants permission to create an archive rule for the specified analyzer",
       "accessLevel": "Write",
       "resourceTypes": [
-        "Analyzer*"
+        "ArchiveRule*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -43,9 +67,9 @@
     "DeleteAnalyzer": {
       "name": "DeleteAnalyzer",
       "topics": [
-        "IAM Access Analyzer"
+        "AWS IAM Access Analyzer"
       ],
-      "description": "Grants permission to delete the specified analyzer.",
+      "description": "Grants permission to delete the specified analyzer",
       "accessLevel": "Write",
       "resourceTypes": [
         "Analyzer*"
@@ -56,10 +80,23 @@
     "DeleteArchiveRule": {
       "name": "DeleteArchiveRule",
       "topics": [
-        "IAM Access Analyzer"
+        "AWS IAM Access Analyzer"
       ],
-      "description": "Grants permission to delete archive rules for the specified analyzer.",
+      "description": "Grants permission to delete archive rules for the specified analyzer",
       "accessLevel": "Write",
+      "resourceTypes": [
+        "ArchiveRule*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAccessPreview": {
+      "name": "GetAccessPreview",
+      "topics": [
+        "AWS IAM Access Analyzer"
+      ],
+      "description": "Grants permission to retrieve information about an access preview",
+      "accessLevel": "Read",
       "resourceTypes": [
         "Analyzer*"
       ],
@@ -69,20 +106,22 @@
     "GetAnalyzedResource": {
       "name": "GetAnalyzedResource",
       "topics": [
-        "IAM Access Analyzer"
+        "AWS IAM Access Analyzer"
       ],
-      "description": "Grants permission to retrieve information about an analyzed resource.",
+      "description": "Grants permission to retrieve information about an analyzed resource",
       "accessLevel": "Read",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "Analyzer*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
     "GetAnalyzer": {
       "name": "GetAnalyzer",
       "topics": [
-        "IAM Access Analyzer"
+        "AWS IAM Access Analyzer"
       ],
-      "description": "Grants permission to retrieve information about analyzers.",
+      "description": "Grants permission to retrieve information about analyzers",
       "accessLevel": "Read",
       "resourceTypes": [
         "Analyzer*"
@@ -93,12 +132,12 @@
     "GetArchiveRule": {
       "name": "GetArchiveRule",
       "topics": [
-        "IAM Access Analyzer"
+        "AWS IAM Access Analyzer"
       ],
-      "description": "Grants permission to retrieve information about archive rules for the specified analyzer.",
+      "description": "Grants permission to retrieve information about archive rules for the specified analyzer",
       "accessLevel": "Read",
       "resourceTypes": [
-        "Analyzer*"
+        "ArchiveRule*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -106,31 +145,72 @@
     "GetFinding": {
       "name": "GetFinding",
       "topics": [
-        "IAM Access Analyzer"
+        "AWS IAM Access Analyzer"
       ],
-      "description": "Grants permission to retrieve findings.",
+      "description": "Grants permission to retrieve findings",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Analyzer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetGeneratedPolicy": {
+      "name": "GetGeneratedPolicy",
+      "topics": [
+        "AWS IAM Access Analyzer"
+      ],
+      "description": "Grants permission to retrieve a policy that was generated using StartPolicyGeneration",
       "accessLevel": "Read",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAccessPreviewFindings": {
+      "name": "ListAccessPreviewFindings",
+      "topics": [
+        "AWS IAM Access Analyzer"
+      ],
+      "description": "Grants permission to retrieve a list of findings from an access preview",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Analyzer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAccessPreviews": {
+      "name": "ListAccessPreviews",
+      "topics": [
+        "AWS IAM Access Analyzer"
+      ],
+      "description": "Grants permission to retrieve a list of access previews",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "Analyzer*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
     "ListAnalyzedResources": {
       "name": "ListAnalyzedResources",
       "topics": [
-        "IAM Access Analyzer"
+        "AWS IAM Access Analyzer"
       ],
-      "description": "Grants permission to retrieve a list of resources that have been analyzed.",
+      "description": "Grants permission to retrieve a list of resources that have been analyzed",
       "accessLevel": "Read",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "Analyzer*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
     "ListAnalyzers": {
       "name": "ListAnalyzers",
       "topics": [
-        "IAM Access Analyzer"
+        "AWS IAM Access Analyzer"
       ],
-      "description": "Grants permission to retrieves a list of analyzers.",
+      "description": "Grants permission to retrieves a list of analyzers",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -139,9 +219,9 @@
     "ListArchiveRules": {
       "name": "ListArchiveRules",
       "topics": [
-        "IAM Access Analyzer"
+        "AWS IAM Access Analyzer"
       ],
-      "description": "Grants permission to retrieve a list of archive rules from an analyzer.",
+      "description": "Grants permission to retrieve a list of archive rules from an analyzer",
       "accessLevel": "List",
       "resourceTypes": [
         "Analyzer*"
@@ -152,9 +232,22 @@
     "ListFindings": {
       "name": "ListFindings",
       "topics": [
-        "IAM Access Analyzer"
+        "AWS IAM Access Analyzer"
       ],
-      "description": "Grants permission to retrieve a list of findings from an analyzer.",
+      "description": "Grants permission to retrieve a list of findings from an analyzer",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Analyzer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPolicyGenerations": {
+      "name": "ListPolicyGenerations",
+      "topics": [
+        "AWS IAM Access Analyzer"
+      ],
+      "description": "Grants permission to list all the recently started policy generations",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -163,9 +256,9 @@
     "ListTagsForResource": {
       "name": "ListTagsForResource",
       "topics": [
-        "IAM Access Analyzer"
+        "AWS IAM Access Analyzer"
       ],
-      "description": "Grants permission to retrieve a list of tags applied to a resource.",
+      "description": "Grants permission to retrieve a list of tags applied to a resource",
       "accessLevel": "Read",
       "resourceTypes": [
         "Analyzer"
@@ -173,23 +266,36 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "StartPolicyGeneration": {
+      "name": "StartPolicyGeneration",
+      "topics": [
+        "AWS IAM Access Analyzer"
+      ],
+      "description": "Grants permission to start a policy generation",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "StartResourceScan": {
       "name": "StartResourceScan",
       "topics": [
-        "IAM Access Analyzer"
+        "AWS IAM Access Analyzer"
       ],
-      "description": "Grants permission to start a scan of the policies applied to a resource.",
+      "description": "Grants permission to start a scan of the policies applied to a resource",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "Analyzer*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
     "TagResource": {
       "name": "TagResource",
       "topics": [
-        "IAM Access Analyzer"
+        "AWS IAM Access Analyzer"
       ],
-      "description": "Grants permission to add a tag to a resource.",
+      "description": "Grants permission to add a tag to a resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "Analyzer"
@@ -200,9 +306,9 @@
     "UntagResource": {
       "name": "UntagResource",
       "topics": [
-        "IAM Access Analyzer"
+        "AWS IAM Access Analyzer"
       ],
-      "description": "Grants permission to remove a tag from a resource.",
+      "description": "Grants permission to remove a tag from a resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "Analyzer"
@@ -213,12 +319,12 @@
     "UpdateArchiveRule": {
       "name": "UpdateArchiveRule",
       "topics": [
-        "IAM Access Analyzer"
+        "AWS IAM Access Analyzer"
       ],
-      "description": "Grants permission to modify an archive rule.",
+      "description": "Grants permission to modify an archive rule",
       "accessLevel": "Write",
       "resourceTypes": [
-        "Analyzer*"
+        "ArchiveRule*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -226,16 +332,29 @@
     "UpdateFindings": {
       "name": "UpdateFindings",
       "topics": [
-        "IAM Access Analyzer"
+        "AWS IAM Access Analyzer"
       ],
-      "description": "Grants permission to modify findings.",
+      "description": "Grants permission to modify findings",
       "accessLevel": "Write",
+      "resourceTypes": [
+        "Analyzer*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ValidatePolicy": {
+      "name": "ValidatePolicy",
+      "topics": [
+        "AWS IAM Access Analyzer"
+      ],
+      "description": "Grants permission to validate a policy",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     }
   },
   "topics": [
-    "IAM Access Analyzer"
+    "AWS IAM Access Analyzer"
   ]
 }

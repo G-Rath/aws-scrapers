@@ -1,0 +1,134 @@
+{
+  "servicePrefix": "aps",
+  "actions": {
+    "CreateWorkspace": {
+      "name": "CreateWorkspace",
+      "topics": [
+        "Amazon Managed Service for Prometheus"
+      ],
+      "description": "Grants permission to create a workspace",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteWorkspace": {
+      "name": "DeleteWorkspace",
+      "topics": [
+        "Amazon Managed Service for Prometheus"
+      ],
+      "description": "Grants permission to delete a workspace",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workspace*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeWorkspace": {
+      "name": "DescribeWorkspace",
+      "topics": [
+        "Amazon Managed Service for Prometheus"
+      ],
+      "description": "Grants permission to describe a workspace",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "workspace*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLabels": {
+      "name": "GetLabels",
+      "topics": [
+        "Amazon Managed Service for Prometheus"
+      ],
+      "description": "Grants permission to retrieve AMP workspace labels",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "workspace*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetMetricMetadata": {
+      "name": "GetMetricMetadata",
+      "topics": [
+        "Amazon Managed Service for Prometheus"
+      ],
+      "description": "Grants permission to retrieve the metadata for AMP workspace metrics",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "workspace*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSeries": {
+      "name": "GetSeries",
+      "topics": [
+        "Amazon Managed Service for Prometheus"
+      ],
+      "description": "Grants permission to retrieve AMP workspace time series data",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "workspace*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListWorkspaces": {
+      "name": "ListWorkspaces",
+      "topics": [
+        "Amazon Managed Service for Prometheus"
+      ],
+      "description": "Grants permission to list workspaces",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "QueryMetrics": {
+      "name": "QueryMetrics",
+      "topics": [
+        "Amazon Managed Service for Prometheus"
+      ],
+      "description": "Grants permission to run a query on AMP workspace metrics",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "workspace*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemoteWrite": {
+      "name": "RemoteWrite",
+      "topics": [
+        "Amazon Managed Service for Prometheus"
+      ],
+      "description": "Grants permission to perform a remote write operation to initiate the streaming of\n                                                metrics to AMP workspace",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workspace*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateWorkspaceAlias": {
+      "name": "UpdateWorkspaceAlias",
+      "topics": [
+        "Amazon Managed Service for Prometheus"
+      ],
+      "description": "Grants permission to modify the alias of existing AMP workspace",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "workspace*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "Amazon Managed Service for Prometheus"
+  ]
+}

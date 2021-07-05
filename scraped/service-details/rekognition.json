@@ -398,6 +398,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "Amazon Rekognition"
+      ],
+      "description": "Returns a list of tags associated with a resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "projectversion*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "RecognizeCelebrities": {
       "name": "RecognizeCelebrities",
       "topics": [
@@ -573,6 +586,32 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "streamprocessor*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "Amazon Rekognition"
+      ],
+      "description": "Adds one or more tags to a resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "projectversion*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "Amazon Rekognition"
+      ],
+      "description": "Removes one or more tags from a resource.",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "projectversion*"
       ],
       "conditionKeys": "",
       "dependentActions": ""

@@ -6,7 +6,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Attaches one or more EC2 instances to the specified Auto Scaling group.",
+      "description": "Grants permission to attach one or more EC2 instances to the specified Auto Scaling\n                                                group",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -19,7 +19,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Attaches one or more target groups to the specified Auto Scaling group.",
+      "description": "Grants permission to attach one or more target groups to the specified Auto Scaling\n                                                group",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -32,7 +32,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Attaches one or more load balancers to the specified Auto Scaling group.",
+      "description": "Grants permission to attach one or more load balancers to the specified Auto Scaling\n                                                group",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -45,7 +45,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Deletes the specified scheduled actions.",
+      "description": "Grants permission to delete the specified scheduled actions",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -58,7 +58,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Creates or updates multiple scheduled scaling actions for an Auto Scaling group.",
+      "description": "Grants permission to create or update multiple scheduled scaling actions for an Auto\n                                                Scaling group",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -84,7 +84,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Completes the lifecycle action for the specified token or instance with the specified\n                                                result.",
+      "description": "Grants permission to complete the lifecycle action for the specified token or instance\n                                                with the specified result",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -97,8 +97,8 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Creates an Auto Scaling group with the specified name and attributes.",
-      "accessLevel": "Tagging",
+      "description": "Grants permission to create an Auto Scaling group with the specified name and attributes",
+      "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
       ],
@@ -110,7 +110,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Creates a launch configuration.",
+      "description": "Grants permission to create a launch configuration",
       "accessLevel": "Write",
       "resourceTypes": [
         "launchConfiguration*"
@@ -123,7 +123,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Creates or updates tags for the specified Auto Scaling group.",
+      "description": "Grants permission to create or update tags for the specified Auto Scaling group",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -136,7 +136,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Deletes the specified Auto Scaling group.",
+      "description": "Grants permission to delete the specified Auto Scaling group",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -149,7 +149,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Deletes the specified launch configuration.",
+      "description": "Grants permission to delete the specified launch configuration",
       "accessLevel": "Write",
       "resourceTypes": [
         "launchConfiguration*"
@@ -162,7 +162,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Deletes the specified lifecycle hook.",
+      "description": "Grants permission to deletes the specified lifecycle hook",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -175,7 +175,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Deletes the specified notification.",
+      "description": "Grants permission to delete the specified notification",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -188,7 +188,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Deletes the specified Auto Scaling policy.",
+      "description": "Grants permission to delete the specified Auto Scaling policy",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -201,7 +201,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Deletes the specified scheduled action.",
+      "description": "Grants permission to delete the specified scheduled action",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -214,8 +214,21 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Deletes the specified tags.",
+      "description": "Grants permission to delete the specified tags",
       "accessLevel": "Tagging",
+      "resourceTypes": [
+        "autoScalingGroup*"
+      ],
+      "conditionKeys": "autoscaling:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
+      "dependentActions": ""
+    },
+    "DeleteWarmPool": {
+      "name": "DeleteWarmPool",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
+      "description": "Grants permission to delete the warm pool associated with the Auto Scaling group",
+      "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
       ],
@@ -227,7 +240,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Describes the current Auto Scaling resource limits for your AWS account.",
+      "description": "Grants permission to describe the current Auto Scaling resource limits for your AWS\n                                                account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -238,7 +251,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Describes the policy adjustment types for use with PutScalingPolicy.",
+      "description": "Grants permission to describe the policy adjustment types for use with PutScalingPolicy",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -249,7 +262,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Describes one or more Auto Scaling groups. If a list of names is not provided, the\n                                                call describes all Auto Scaling groups.",
+      "description": "Grants permission to describe one or more Auto Scaling groups. If a list of names\n                                                is not provided, the call describes all Auto Scaling groups",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -260,7 +273,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Describes one or more Auto Scaling instances. If a list is not provided, the call\n                                                describes all instances.",
+      "description": "Grants permission to describe one or more Auto Scaling instances. If a list is not\n                                                provided, the call describes all instances",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -271,7 +284,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Describes the notification types that are supported by Auto Scaling.",
+      "description": "Grants permission to describe the notification types that are supported by Auto Scaling",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -293,7 +306,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Describes one or more launch configurations. If you omit the list of names, then the\n                                                call describes all launch configurations.",
+      "description": "Grants permission to describe one or more launch configurations. If you omit the list\n                                                of names, then the call describes all launch configurations",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -304,7 +317,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Describes the available types of lifecycle hooks.",
+      "description": "Grants permission to describe the available types of lifecycle hooks",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -315,7 +328,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Describes the lifecycle hooks for the specified Auto Scaling group.",
+      "description": "Grants permission to describe the lifecycle hooks for the specified Auto Scaling group",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -326,7 +339,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Describes the target groups for the specified Auto Scaling group.",
+      "description": "Grants permission to describe the target groups for the specified Auto Scaling group",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -337,7 +350,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Describes the load balancers for the specified Auto Scaling group.",
+      "description": "Grants permission to describe the load balancers for the specified Auto Scaling group",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -348,7 +361,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Describes the available CloudWatch metrics for Auto Scaling.",
+      "description": "Grants permission to describe the available CloudWatch metrics for Auto Scaling",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -359,7 +372,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Describes the notification actions associated with the specified Auto Scaling group.",
+      "description": "Grants permission to describe the notification actions associated with the specified\n                                                Auto Scaling group",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -370,7 +383,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Describes the policies for the specified Auto Scaling group.",
+      "description": "Grants permission to describe the policies for the specified Auto Scaling group",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -381,7 +394,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Describes one or more scaling activities for the specified Auto Scaling group.",
+      "description": "Grants permission to describe one or more scaling activities for the specified Auto\n                                                Scaling group",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -392,7 +405,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Describes the scaling process types for use with ResumeProcesses and SuspendProcesses.",
+      "description": "Grants permission to describe the scaling process types for use with ResumeProcesses\n                                                and SuspendProcesses",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -403,7 +416,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Describes the actions scheduled for your Auto Scaling group that haven't run.",
+      "description": "Grants permission to describe the actions scheduled for your Auto Scaling group that\n                                                haven't run",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -414,7 +427,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Describes the specified tags.",
+      "description": "Grants permission to describe the specified tags",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -425,7 +438,18 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Describes the termination policies supported by Auto Scaling.",
+      "description": "Grants permission to describe the termination policies supported by Auto Scaling",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeWarmPool": {
+      "name": "DescribeWarmPool",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
+      "description": "Grants permission to describe the warm pool associated with the Auto Scaling group",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -436,7 +460,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Removes one or more instances from the specified Auto Scaling group.",
+      "description": "Grants permission to remove one or more instances from the specified Auto Scaling\n                                                group",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -449,7 +473,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Detaches one or more target groups from the specified Auto Scaling group.",
+      "description": "Grants permission to detach one or more target groups from the specified Auto Scaling\n                                                group",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -462,7 +486,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Removes one or more load balancers from the specified Auto Scaling group.",
+      "description": "Grants permission to remove one or more load balancers from the specified Auto Scaling\n                                                group",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -475,7 +499,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Disables monitoring of the specified metrics for the specified Auto Scaling group.",
+      "description": "Grants permission to disable monitoring of the specified metrics for the specified\n                                                Auto Scaling group",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -488,7 +512,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Enables monitoring of the specified metrics for the specified Auto Scaling group.",
+      "description": "Grants permission to enable monitoring of the specified metrics for the specified\n                                                Auto Scaling group",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -501,7 +525,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Moves the specified instances into Standby mode.",
+      "description": "Grants permission to move the specified instances into Standby mode",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -514,7 +538,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Executes the specified policy.",
+      "description": "Grants permission to execute the specified policy",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -527,7 +551,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Moves the specified instances out of Standby mode.",
+      "description": "Grants permission to move the specified instances out of Standby mode",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -540,7 +564,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Creates or updates a lifecycle hook for the specified Auto Scaling Group.",
+      "description": "Grants permission to create or update a lifecycle hook for the specified Auto Scaling\n                                                Group",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -553,7 +577,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Configures an Auto Scaling group to send notifications when specified events take\n                                                place.",
+      "description": "Grants permission to configure an Auto Scaling group to send notifications when specified\n                                                events take place",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -566,7 +590,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Creates or updates a policy for an Auto Scaling group.",
+      "description": "Grants permission to create or update a policy for an Auto Scaling group",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -579,7 +603,20 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Creates or updates a scheduled scaling action for an Auto Scaling group.",
+      "description": "Grants permission to create or update a scheduled scaling action for an Auto Scaling\n                                                group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "autoScalingGroup*"
+      ],
+      "conditionKeys": "autoscaling:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:ResourceTag/${TagKey}",
+      "dependentActions": ""
+    },
+    "PutWarmPool": {
+      "name": "PutWarmPool",
+      "topics": [
+        "Amazon EC2 Auto Scaling"
+      ],
+      "description": "Grants permission to create or update the warm pool associated with the specified\n                                                Auto Scaling group",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -592,7 +629,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Records a heartbeat for the lifecycle action associated with the specified token or\n                                                instance.",
+      "description": "Grants permission to record a heartbeat for the lifecycle action associated with the\n                                                specified token or instance",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -605,7 +642,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Resumes the specified suspended Auto Scaling processes, or all suspended process,\n                                                for the specified Auto Scaling group.",
+      "description": "Grants permission to resume the specified suspended Auto Scaling processes, or all\n                                                suspended process, for the specified Auto Scaling group",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -618,7 +655,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Sets the size of the specified Auto Scaling group.",
+      "description": "Grants permission to set the size of the specified Auto Scaling group",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -631,7 +668,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Sets the health status of the specified instance.",
+      "description": "Grants permission to set the health status of the specified instance",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -644,7 +681,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Updates the instance protection settings of the specified instances.",
+      "description": "Grants permission to update the instance protection settings of the specified instances",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -670,7 +707,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Suspends the specified Auto Scaling processes, or all processes, for the specified\n                                                Auto Scaling group.",
+      "description": "Grants permission to suspend the specified Auto Scaling processes, or all processes,\n                                                for the specified Auto Scaling group",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -683,7 +720,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Terminates the specified instance and optionally adjusts the desired group size.",
+      "description": "Grants permission to terminate the specified instance and optionally adjust the desired\n                                                group size",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"
@@ -696,7 +733,7 @@
       "topics": [
         "Amazon EC2 Auto Scaling"
       ],
-      "description": "Updates the configuration for the specified Auto Scaling group.",
+      "description": "Grants permission to update the configuration for the specified Auto Scaling group",
       "accessLevel": "Write",
       "resourceTypes": [
         "autoScalingGroup*"

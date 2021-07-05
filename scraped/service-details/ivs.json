@@ -6,7 +6,7 @@
       "topics": [
         "Amazon Interactive Video Service"
       ],
-      "description": "Grants permission to get multiple channels simultaneously by channel ARN.",
+      "description": "Grants permission to get multiple channels simultaneously by channel ARN",
       "accessLevel": "Read",
       "resourceTypes": [
         "Channel*"
@@ -19,7 +19,7 @@
       "topics": [
         "Amazon Interactive Video Service"
       ],
-      "description": "Grants permission to get multiple stream keys simultaneously by stream key ARN.",
+      "description": "Grants permission to get multiple stream keys simultaneously by stream key ARN",
       "accessLevel": "Read",
       "resourceTypes": [
         "Stream-Key*"
@@ -32,10 +32,23 @@
       "topics": [
         "Amazon Interactive Video Service"
       ],
-      "description": "Grants permission to create a new channel and an associated stream key.",
+      "description": "Grants permission to create a new channel and an associated stream key",
       "accessLevel": "Write",
       "resourceTypes": [
         "Channel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateRecordingConfiguration": {
+      "name": "CreateRecordingConfiguration",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
+      "description": "Grants permission to create a a new recording configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Recording-Configuration*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -45,7 +58,7 @@
       "topics": [
         "Amazon Interactive Video Service"
       ],
-      "description": "Grants permission to create a stream key.",
+      "description": "Grants permission to create a stream key",
       "accessLevel": "Write",
       "resourceTypes": [
         "Stream-Key*"
@@ -58,7 +71,7 @@
       "topics": [
         "Amazon Interactive Video Service"
       ],
-      "description": "Grants permission to delete a channel and channel's stream keys.",
+      "description": "Grants permission to delete a channel and channel's stream keys",
       "accessLevel": "Write",
       "resourceTypes": [
         "Channel*"
@@ -75,6 +88,19 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "Playback-Key-Pair*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRecordingConfiguration": {
+      "name": "DeleteRecordingConfiguration",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
+      "description": "Grants permission to delete a recording configuration for the specified ARN",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Recording-Configuration*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -118,6 +144,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "GetRecordingConfiguration": {
+      "name": "GetRecordingConfiguration",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
+      "description": "Grants permission to get the recording configuration for the specified ARN",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "Recording-Configuration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "GetStream": {
       "name": "GetStream",
       "topics": [
@@ -149,7 +188,7 @@
       "topics": [
         "Amazon Interactive Video Service"
       ],
-      "description": "Grants permission to import the public key.",
+      "description": "Grants permission to import the public key",
       "accessLevel": "Write",
       "resourceTypes": [
         "Playback-Key-Pair*"
@@ -179,6 +218,19 @@
       "accessLevel": "List",
       "resourceTypes": [
         "Playback-Key-Pair*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRecordingConfigurations": {
+      "name": "ListRecordingConfigurations",
+      "topics": [
+        "Amazon Interactive Video Service"
+      ],
+      "description": "Grants permission to get summary information about recording configurations",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "Recording-Configuration*"
       ],
       "conditionKeys": "",
       "dependentActions": ""

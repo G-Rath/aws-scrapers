@@ -1,12 +1,23 @@
 {
   "servicePrefix": "appsync",
   "actions": {
+    "CreateApiCache": {
+      "name": "CreateApiCache",
+      "topics": [
+        "AWS AppSync"
+      ],
+      "description": "Grants permissions to create an API cache in AppSync",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "CreateApiKey": {
       "name": "CreateApiKey",
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Creates a unique key that you can distribute to clients who are executing your API.",
+      "description": "Grants permissions to create a unique key that you can distribute to clients who are\n                                                executing your API",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -17,7 +28,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Creates a DataSource object.",
+      "description": "Grants permissions to create a DataSource object",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -28,7 +39,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Create a new Function object.",
+      "description": "Grants permissions to create a new Function object",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -39,7 +50,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Creates a GraphqlApi object, which is the top level AppSync resource.",
+      "description": "Grants permissions to creates a GraphqlApi object, which is the top level AppSync\n                                                resource",
       "accessLevel": "Tagging",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -50,7 +61,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Creates a Resolver object. A resolver converts incoming requests into a format that\n                                                a data source can understand, and converts the data source's responses into GraphQL.",
+      "description": "Grants permissions to create a Resolver object. A resolver converts incoming requests\n                                                into a format that a data source can understand, and converts the data source's responses\n                                                into GraphQL",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -61,7 +72,18 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Creates a Type object.",
+      "description": "Grants permissions to create a Type object",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteApiCache": {
+      "name": "DeleteApiCache",
+      "topics": [
+        "AWS AppSync"
+      ],
+      "description": "Grants permissions to delete an API cache in AppSync",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -72,7 +94,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Deletes an API key.",
+      "description": "Grants permissions to delete an API key",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -83,7 +105,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Deletes a DataSource object.",
+      "description": "Grants permissions to delete a DataSource object",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -94,7 +116,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Deletes a Function object.",
+      "description": "Grants permissions to delete a Function object",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -105,7 +127,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Deletes a GraphqlApi object. This will also clean up every AppSync resource below\n                                                that API.",
+      "description": "Grants permissions to delete a GraphqlApi object. This will also clean up every AppSync\n                                                resource below that API",
       "accessLevel": "Write",
       "resourceTypes": [
         "graphqlapi*"
@@ -118,7 +140,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Deletes a Resolver object.",
+      "description": "Grants permissions to delete a Resolver object",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -129,8 +151,30 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Deletes a Type object.",
+      "description": "Grants permissions to delete a Type object",
       "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "FlushApiCache": {
+      "name": "FlushApiCache",
+      "topics": [
+        "AWS AppSync"
+      ],
+      "description": "Grants permissions to flush an API cache in AppSync",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetApiCache": {
+      "name": "GetApiCache",
+      "topics": [
+        "AWS AppSync"
+      ],
+      "description": "Grants permissions to read information about an API cache in AppSync",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -140,7 +184,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Retrieves a DataSource object.",
+      "description": "Grants permissions to retrieve a DataSource object",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -151,7 +195,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Retrieves a Function object.",
+      "description": "Grants permissions to retrieve a Function object",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -162,7 +206,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Retrieves a GraphqlApi object.",
+      "description": "Grants permissions to retrieve a GraphqlApi object",
       "accessLevel": "Read",
       "resourceTypes": [
         "graphqlapi*"
@@ -175,7 +219,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Retrieves the introspection schema for a GraphQL API.",
+      "description": "Grants permissions to retrieve the introspection schema for a GraphQL API",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -186,7 +230,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Retrieves a Resolver object.",
+      "description": "Grants permissions to retrieve a Resolver object",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -197,7 +241,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Retrieves the current status of a schema creation operation.",
+      "description": "Grants permissions to retrieve the current status of a schema creation operation",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -208,7 +252,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Retrieves a Type object.",
+      "description": "Grants permissions to retrieve a Type object",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -219,7 +263,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Sends a GraphQL query to a GraphQL API.",
+      "description": "Grants permissions to send a GraphQL query to a GraphQL API",
       "accessLevel": "Write",
       "resourceTypes": [
         "field*"
@@ -232,7 +276,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Lists the API keys for a given API.",
+      "description": "Grants permissions to list the API keys for a given API",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -243,7 +287,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Lists the data sources for a given API.",
+      "description": "Grants permissions to list the data sources for a given API",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -254,7 +298,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Lists the functions for a given API.",
+      "description": "Grants permissions to list the functions for a given API",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -265,7 +309,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Lists your GraphQL APIs.",
+      "description": "Grants permissions to list your GraphQL APIs",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -276,7 +320,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Lists the resolvers for a given API and type.",
+      "description": "Grants permissions to list the resolvers for a given API and type",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -287,7 +331,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "List the resolvers that are associated with a specific function.",
+      "description": "Grants permissions to list the resolvers that are associated with a specific function",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -298,7 +342,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "List the tags for a resource.",
+      "description": "Grants permissions to list the tags for a resource",
       "accessLevel": "Read",
       "resourceTypes": [
         "graphqlapi"
@@ -311,7 +355,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Lists the types for a given API.",
+      "description": "Grants permissions to list the types for a given API",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -322,7 +366,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Gives WebAcl permissions to WAF.",
+      "description": "Grants permissions to set web ACL",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -333,7 +377,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Adds a new schema to your GraphQL API. This operation is asynchronous - GetSchemaCreationStatus\n                                                can show when it has completed.",
+      "description": "Grants permissions to add a new schema to your GraphQL API. This operation is asynchronous\n                                                - GetSchemaCreationStatus can show when it has completed",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -344,7 +388,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Tag a resource.",
+      "description": "Grants permissions to tag a resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "graphqlapi"
@@ -357,11 +401,22 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Untag a resource.",
+      "description": "Grants permissions to untag a resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "graphqlapi"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateApiCache": {
+      "name": "UpdateApiCache",
+      "topics": [
+        "AWS AppSync"
+      ],
+      "description": "Grants permissions to update an API cache in AppSync",
+      "accessLevel": "Write",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -370,7 +425,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Updates an API key for a given API.",
+      "description": "Grants permissions to update an API key for a given API",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -381,7 +436,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Updates a DataSource object.",
+      "description": "Grants permissions to update a DataSource object",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -392,7 +447,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Updates an existing Function object.",
+      "description": "Grants permissions to update an existing Function object",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -403,7 +458,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Updates a GraphqlApi object.",
+      "description": "Grants permissions to updates a GraphqlApi object",
       "accessLevel": "Write",
       "resourceTypes": [
         "graphqlapi*"
@@ -416,7 +471,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Updates a Resolver object.",
+      "description": "Grants permissions to update a Resolver object",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -427,7 +482,7 @@
       "topics": [
         "AWS AppSync"
       ],
-      "description": "Updates a Type object.",
+      "description": "Grants permissions to update a Type object",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",

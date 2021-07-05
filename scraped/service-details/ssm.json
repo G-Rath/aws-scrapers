@@ -14,6 +14,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "AssociateOpsItemRelatedItem": {
+      "name": "AssociateOpsItemRelatedItem",
+      "topics": [
+        "AWS Systems Manager"
+      ],
+      "description": "Grants permission to associate RelatedItem to an OpsItem",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "opsitem*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "CancelCommand": {
       "name": "CancelCommand",
       "topics": [
@@ -105,7 +118,18 @@
       "description": "Grants permission to create an OpsItem in OpsCenter",
       "accessLevel": "Write",
       "resourceTypes": [],
-      "conditionKeys": "",
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateOpsMetadata": {
+      "name": "CreateOpsMetadata",
+      "topics": [
+        "AWS Systems Manager"
+      ],
+      "description": "Grants permission to create an OpsMetadata object for an AWS resource",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
       "dependentActions": ""
     },
     "CreatePatchBaseline": {
@@ -189,6 +213,19 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "maintenancewindow*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteOpsMetadata": {
+      "name": "DeleteOpsMetadata",
+      "topics": [
+        "AWS Systems Manager"
+      ],
+      "description": "Grants permission to delete an OpsMetadata object",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "opsmetadata*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -691,6 +728,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DisassociateOpsItemRelatedItem": {
+      "name": "DisassociateOpsItemRelatedItem",
+      "topics": [
+        "AWS Systems Manager"
+      ],
+      "description": "Grants permission to disassociate RelatedItem from an OpsItem",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "opsitem*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "GetAutomationExecution": {
       "name": "GetAutomationExecution",
       "topics": [
@@ -873,7 +923,22 @@
       ],
       "description": "Grants permission to view information about a specified OpsItem",
       "accessLevel": "Read",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "opsitem*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetOpsMetadata": {
+      "name": "GetOpsMetadata",
+      "topics": [
+        "AWS Systems Manager"
+      ],
+      "description": "Grants permission to retrieve an OpsMetadata object",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "opsmetadata*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -1060,6 +1125,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ListDocumentMetadataHistory": {
+      "name": "ListDocumentMetadataHistory",
+      "topics": [
+        "AWS Systems Manager"
+      ],
+      "description": "Grants permission to view metadata history about a specified SSM document",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "document*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ListDocumentVersions": {
       "name": "ListDocumentVersions",
       "topics": [
@@ -1103,6 +1181,39 @@
         "AWS Systems Manager"
       ],
       "description": "Grants permission to view a list of specified inventory types for a specified instance",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListOpsItemEvents": {
+      "name": "ListOpsItemEvents",
+      "topics": [
+        "AWS Systems Manager"
+      ],
+      "description": "Grants permission to view details about OpsItemEvents",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListOpsItemRelatedItems": {
+      "name": "ListOpsItemRelatedItems",
+      "topics": [
+        "AWS Systems Manager"
+      ],
+      "description": "Grants permission to view details about OpsItem RelatedItems",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListOpsMetadata": {
+      "name": "ListOpsMetadata",
+      "topics": [
+        "AWS Systems Manager"
+      ],
+      "description": "Grants permission to view a list of OpsMetadata objects",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1345,6 +1456,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "StartChangeRequestExecution": {
+      "name": "StartChangeRequestExecution",
+      "topics": [
+        "AWS Systems Manager"
+      ],
+      "description": "Grants permission to initiate the execution of an Automation Change Template document",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "automation-definition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "StartSession": {
       "name": "StartSession",
       "topics": [
@@ -1353,7 +1477,7 @@
       "description": "Grants permission to initiate a connection to a specified target for a Session Manager\n                                                session",
       "accessLevel": "Write",
       "resourceTypes": [
-        "instance*"
+        "document"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1374,7 +1498,7 @@
       "topics": [
         "AWS Systems Manager"
       ],
-      "description": "Grants permission to permanently end a Session Manager connection to an instance.",
+      "description": "Grants permission to permanently end a Session Manager connection to an instance",
       "accessLevel": "Write",
       "resourceTypes": [
         "session*"
@@ -1427,6 +1551,19 @@
         "AWS Systems Manager"
       ],
       "description": "Grants permission to change the default version of an SSM document",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "document*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDocumentMetadata": {
+      "name": "UpdateDocumentMetadata",
+      "topics": [
+        "AWS Systems Manager"
+      ],
+      "description": "Grants permission to update the metadata of an SSM document",
       "accessLevel": "Write",
       "resourceTypes": [
         "document*"
@@ -1517,7 +1654,22 @@
       ],
       "description": "Grants permission to edit or change an OpsItem",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "opsitem*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateOpsMetadata": {
+      "name": "UpdateOpsMetadata",
+      "topics": [
+        "AWS Systems Manager"
+      ],
+      "description": "Grants permission to update an OpsMetadata object",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "opsmetadata*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },

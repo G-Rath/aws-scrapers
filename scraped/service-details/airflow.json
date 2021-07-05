@@ -1,0 +1,149 @@
+{
+  "servicePrefix": "airflow",
+  "actions": {
+    "CreateCliToken": {
+      "name": "CreateCliToken",
+      "topics": [
+        "Amazon Managed Workflows for Apache Airflow"
+      ],
+      "description": "Grants permission to create a short-lived token that allows a user to invoke Airflow\n                                                CLI via an endpoint on the Apache Airflow Webserver",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateEnvironment": {
+      "name": "CreateEnvironment",
+      "topics": [
+        "Amazon Managed Workflows for Apache Airflow"
+      ],
+      "description": "Grants permission to create an Amazon MWAA environment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateWebLoginToken": {
+      "name": "CreateWebLoginToken",
+      "topics": [
+        "Amazon Managed Workflows for Apache Airflow"
+      ],
+      "description": "Grants permission to create a short-lived token that allows a user to log into Apache\n                                                Airflow web UI",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "rbac-role*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteEnvironment": {
+      "name": "DeleteEnvironment",
+      "topics": [
+        "Amazon Managed Workflows for Apache Airflow"
+      ],
+      "description": "Grants permission to delete an Amazon MWAA environment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEnvironment": {
+      "name": "GetEnvironment",
+      "topics": [
+        "Amazon Managed Workflows for Apache Airflow"
+      ],
+      "description": "Grants permission to view details about an Amazon MWAA environment",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "environment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEnvironments": {
+      "name": "ListEnvironments",
+      "topics": [
+        "Amazon Managed Workflows for Apache Airflow"
+      ],
+      "description": "Grants permission to list the Amazon MWAA environments in your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "Amazon Managed Workflows for Apache Airflow"
+      ],
+      "description": "Grants permission to lists tag for an Amazon MWAA environment",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "environment"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PublishMetrics": {
+      "name": "PublishMetrics",
+      "topics": [
+        "Amazon Managed Workflows for Apache Airflow"
+      ],
+      "description": "Grants permission to publish metrics for an Amazon MWAA environment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "Amazon Managed Workflows for Apache Airflow"
+      ],
+      "description": "Grants permission to tag an Amazon MWAA environment",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "environment"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "Amazon Managed Workflows for Apache Airflow"
+      ],
+      "description": "Grants permission to untag an Amazon MWAA environment",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "environment"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateEnvironment": {
+      "name": "UpdateEnvironment",
+      "topics": [
+        "Amazon Managed Workflows for Apache Airflow"
+      ],
+      "description": "Grants permission to modify an Amazon MWAA environment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "Amazon Managed Workflows for Apache Airflow"
+  ]
+}

@@ -6,7 +6,7 @@
       "topics": [
         "Database Query Metadata Service"
       ],
-      "description": "Creates a new favorite query",
+      "description": "Grants permission to create a new favorite query",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -17,7 +17,18 @@
       "topics": [
         "Database Query Metadata Service"
       ],
-      "description": "Add a query to the history",
+      "description": "Grants permission to add a query to the history",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateTab": {
+      "name": "CreateTab",
+      "topics": [
+        "Database Query Metadata Service"
+      ],
+      "description": "Grants permission to create a new query tab",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -28,7 +39,7 @@
       "topics": [
         "Database Query Metadata Service"
       ],
-      "description": "Delete saved queries",
+      "description": "Grants permission to delete saved queries",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -39,7 +50,18 @@
       "topics": [
         "Database Query Metadata Service"
       ],
-      "description": "Delete a historical query",
+      "description": "Grants permission to delete a historical query",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteTab": {
+      "name": "DeleteTab",
+      "topics": [
+        "Database Query Metadata Service"
+      ],
+      "description": "Grants permission to delete query tab",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -50,7 +72,7 @@
       "topics": [
         "Database Query Metadata Service"
       ],
-      "description": "List saved queries and associated metadata",
+      "description": "Grants permission to list saved queries and associated metadata",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -61,7 +83,18 @@
       "topics": [
         "Database Query Metadata Service"
       ],
-      "description": "List history of queries that were run",
+      "description": "Grants permission to list history of queries that were run",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeTabs": {
+      "name": "DescribeTabs",
+      "topics": [
+        "Database Query Metadata Service"
+      ],
+      "description": "Grants permission to list query tabs and associated metadata",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -72,7 +105,7 @@
       "topics": [
         "Database Query Metadata Service"
       ],
-      "description": "Retrieve favorite or history query string by id",
+      "description": "Grants permission to retrieve favorite or history query string by id",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -83,7 +116,7 @@
       "topics": [
         "Database Query Metadata Service"
       ],
-      "description": "Update saved query and description",
+      "description": "Grants permission to update saved query and description",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -94,7 +127,18 @@
       "topics": [
         "Database Query Metadata Service"
       ],
-      "description": "Update the query history",
+      "description": "Grants permission to update the query history",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateTab": {
+      "name": "UpdateTab",
+      "topics": [
+        "Database Query Metadata Service"
+      ],
+      "description": "Grants permission to update query tab",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",

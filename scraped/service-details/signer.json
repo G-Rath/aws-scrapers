@@ -1,12 +1,25 @@
 {
   "servicePrefix": "signer",
   "actions": {
+    "AddProfilePermission": {
+      "name": "AddProfilePermission",
+      "topics": [
+        "AWS Signer"
+      ],
+      "description": "Grants permission to add cross-account permissions to a Signing Profile",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "signing-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "CancelSigningProfile": {
       "name": "CancelSigningProfile",
       "topics": [
-        "AWS Code Signing for Amazon FreeRTOS"
+        "AWS Signer"
       ],
-      "description": "Cancels a signing profile.",
+      "description": "Grants permission to change the state of a Signing Profile to CANCELED",
       "accessLevel": "Write",
       "resourceTypes": [
         "signing-profile*"
@@ -17,9 +30,9 @@
     "DescribeSigningJob": {
       "name": "DescribeSigningJob",
       "topics": [
-        "AWS Code Signing for Amazon FreeRTOS"
+        "AWS Signer"
       ],
-      "description": "Describe a signing job.",
+      "description": "Grants permission to return information about a specific Signing Job",
       "accessLevel": "Read",
       "resourceTypes": [
         "signing-job*"
@@ -30,9 +43,9 @@
     "GetSigningPlatform": {
       "name": "GetSigningPlatform",
       "topics": [
-        "AWS Code Signing for Amazon FreeRTOS"
+        "AWS Signer"
       ],
-      "description": "Retrieves a signing platform.",
+      "description": "Grants permission to return information about a specific Signing Platform",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -41,9 +54,22 @@
     "GetSigningProfile": {
       "name": "GetSigningProfile",
       "topics": [
-        "AWS Code Signing for Amazon FreeRTOS"
+        "AWS Signer"
       ],
-      "description": "Retrieves a signing profile.",
+      "description": "Grants permission to return information about a specific Signing Profile",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "signing-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProfilePermissions": {
+      "name": "ListProfilePermissions",
+      "topics": [
+        "AWS Signer"
+      ],
+      "description": "Grants permission to list the cross-account permissions associated with a Signing\n                                                Profile",
       "accessLevel": "Read",
       "resourceTypes": [
         "signing-profile*"
@@ -54,9 +80,9 @@
     "ListSigningJobs": {
       "name": "ListSigningJobs",
       "topics": [
-        "AWS Code Signing for Amazon FreeRTOS"
+        "AWS Signer"
       ],
-      "description": "List signing jobs.",
+      "description": "Grants permission to list all Signing Jobs in your account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -65,9 +91,9 @@
     "ListSigningPlatforms": {
       "name": "ListSigningPlatforms",
       "topics": [
-        "AWS Code Signing for Amazon FreeRTOS"
+        "AWS Signer"
       ],
-      "description": "List all signing platforms.",
+      "description": "Grants permission to list all available Signing Platforms",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -76,9 +102,9 @@
     "ListSigningProfiles": {
       "name": "ListSigningProfiles",
       "topics": [
-        "AWS Code Signing for Amazon FreeRTOS"
+        "AWS Signer"
       ],
-      "description": "List all signing profile associated with the account.",
+      "description": "Grants permission to list all Signing Profiles in your account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -87,10 +113,10 @@
     "ListTagsForResource": {
       "name": "ListTagsForResource",
       "topics": [
-        "AWS Code Signing for Amazon FreeRTOS"
+        "AWS Signer"
       ],
-      "description": "Lists the tags associated with the Signing Profile resource.",
-      "accessLevel": "List",
+      "description": "Grants permission to list the tags associated with a Signing Profile",
+      "accessLevel": "Read",
       "resourceTypes": [
         "signing-profile*"
       ],
@@ -100,20 +126,59 @@
     "PutSigningProfile": {
       "name": "PutSigningProfile",
       "topics": [
-        "AWS Code Signing for Amazon FreeRTOS"
+        "AWS Signer"
       ],
-      "description": "Creates a new signing profile if not exists.",
+      "description": "Grants permission to create a new Signing Profile",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
       "dependentActions": ""
     },
+    "RemoveProfilePermission": {
+      "name": "RemoveProfilePermission",
+      "topics": [
+        "AWS Signer"
+      ],
+      "description": "Grants permission to remove cross-account permissions from a Signing Profile",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "signing-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RevokeSignature": {
+      "name": "RevokeSignature",
+      "topics": [
+        "AWS Signer"
+      ],
+      "description": "Grants permission to change the state of a Signing Job to REVOKED",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "signing-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RevokeSigningProfile": {
+      "name": "RevokeSigningProfile",
+      "topics": [
+        "AWS Signer"
+      ],
+      "description": "Grants permission to change the state of a Signing Profile to REVOKED",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "signing-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "StartSigningJob": {
       "name": "StartSigningJob",
       "topics": [
-        "AWS Code Signing for Amazon FreeRTOS"
+        "AWS Signer"
       ],
-      "description": "Starts a code signing request.",
+      "description": "Grants permission to initiate a Signing Job on the provided code",
       "accessLevel": "Write",
       "resourceTypes": [
         "signing-profile*"
@@ -124,9 +189,9 @@
     "TagResource": {
       "name": "TagResource",
       "topics": [
-        "AWS Code Signing for Amazon FreeRTOS"
+        "AWS Signer"
       ],
-      "description": "Adds one or more tags to an Signing Profile resource",
+      "description": "Grants permission to add one or more tags to a Signing Profile",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "signing-profile*"
@@ -137,9 +202,9 @@
     "UntagResource": {
       "name": "UntagResource",
       "topics": [
-        "AWS Code Signing for Amazon FreeRTOS"
+        "AWS Signer"
       ],
-      "description": "Removes one or more tags from an Signing Profile resource",
+      "description": "Grants permission to remove one or more tags from a Signing Profile",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "signing-profile*"
@@ -149,6 +214,6 @@
     }
   },
   "topics": [
-    "AWS Code Signing for Amazon FreeRTOS"
+    "AWS Signer"
   ]
 }

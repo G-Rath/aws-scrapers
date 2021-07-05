@@ -306,7 +306,7 @@
       "description": "Grants permission to start an asynchronous job to transcribe speech to text.",
       "accessLevel": "Write",
       "resourceTypes": [],
-      "conditionKeys": "transcribe:OutputBucketName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      transcribe:OutputEncryptionKMSKeyId",
+      "conditionKeys": "transcribe:OutputBucketName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      transcribe:OutputEncryptionKMSKeyId\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      transcribe:OutputKey",
       "dependentActions": "s3:GetObject"
     },
     "UpdateMedicalVocabulary": {

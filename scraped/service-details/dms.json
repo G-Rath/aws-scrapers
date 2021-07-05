@@ -6,7 +6,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Adds metadata tags to a DMS resource, including replication instance, endpoint, security\n                                                group, and migration task",
+      "description": "Grants permission to add metadata tags to DMS resources, including replication instances,\n                                                endpoints, security groups, and migration tasks",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "Certificate"
@@ -19,10 +19,23 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Applies a pending maintenance action to a resource (for example, to a replication\n                                                instance).",
+      "description": "Grants permission to apply a pending maintenance action to a resource (for example,\n                                                to a replication instance)",
       "accessLevel": "Write",
       "resourceTypes": [
         "ReplicationInstance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CancelReplicationTaskAssessmentRun": {
+      "name": "CancelReplicationTaskAssessmentRun",
+      "topics": [
+        "AWS Database Migration Service"
+      ],
+      "description": "Grants permission to cancel a single premigration assessment run",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ReplicationTaskAssessmentRun*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -32,7 +45,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Creates an endpoint using the provided settings",
+      "description": "Grants permission to create an endpoint using the provided settings",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dms:req-tag/${TagKey}",
@@ -43,7 +56,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Creates an AWS DMS event notification subscription.",
+      "description": "Grants permission to create an AWS DMS event notification subscription",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dms:req-tag/${TagKey}",
@@ -54,7 +67,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Creates the replication instance using the specified parameters",
+      "description": "Grants permission to create a replication instance using the specified parameters",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dms:req-tag/${TagKey}",
@@ -65,7 +78,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Creates a replication subnet group given a list of the subnet IDs in a VPC",
+      "description": "Grants permission to create a replication subnet group given a list of the subnet\n                                                IDs in a VPC",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      dms:req-tag/${TagKey}",
@@ -76,7 +89,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Creates a replication task using the specified parameters",
+      "description": "Grants permission to create a replication task using the specified parameters",
       "accessLevel": "Write",
       "resourceTypes": [
         "Endpoint*"
@@ -89,10 +102,23 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Deletes the specified certificate",
+      "description": "Grants permission to delete the specified certificate",
       "accessLevel": "Write",
       "resourceTypes": [
         "Certificate*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteConnection": {
+      "name": "DeleteConnection",
+      "topics": [
+        "AWS Database Migration Service"
+      ],
+      "description": "Grants permission to delete the specified connection between a replication instance\n                                                and an endpoint",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "Endpoint*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -102,7 +128,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Deletes the specified endpoint",
+      "description": "Grants permission to delete the specified endpoint",
       "accessLevel": "Write",
       "resourceTypes": [
         "Endpoint*"
@@ -115,7 +141,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Deletes an AWS DMS event subscription.",
+      "description": "Grants permission to delete an AWS DMS event subscription",
       "accessLevel": "Write",
       "resourceTypes": [
         "EventSubscription*"
@@ -128,7 +154,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Deletes the specified replication instance",
+      "description": "Grants permission to delete the specified replication instance",
       "accessLevel": "Write",
       "resourceTypes": [
         "ReplicationInstance*"
@@ -141,7 +167,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Deletes a subnet group",
+      "description": "Grants permission to deletes a subnet group",
       "accessLevel": "Write",
       "resourceTypes": [
         "ReplicationSubnetGroup*"
@@ -154,10 +180,23 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Deletes the specified replication task",
+      "description": "Grants permission to delete the specified replication task",
       "accessLevel": "Write",
       "resourceTypes": [
         "ReplicationTask*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteReplicationTaskAssessmentRun": {
+      "name": "DeleteReplicationTaskAssessmentRun",
+      "topics": [
+        "AWS Database Migration Service"
+      ],
+      "description": "Grants permission to delete the record of a single premigration assessment run",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ReplicationTaskAssessmentRun*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -167,9 +206,22 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Lists all of the AWS DMS attributes for a customer account",
+      "description": "Grants permission to list all of the AWS DMS attributes for a customer account",
       "accessLevel": "Read",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeApplicableIndividualAssessments": {
+      "name": "DescribeApplicableIndividualAssessments",
+      "topics": [
+        "AWS Database Migration Service"
+      ],
+      "description": "Grants permission to list individual assessments that you can specify for a new premigration\n                                                assessment run",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ReplicationInstance"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -178,7 +230,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Provides a description of the certificate.",
+      "description": "Grants permission to provide a description of the certificate",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -189,7 +241,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Describes the status of the connections that have been made between the replication\n                                                instance and an endpoint",
+      "description": "Grants permission to describe the status of the connections that have been made between\n                                                the replication instance and an endpoint",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -200,7 +252,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Returns information about the type of endpoints available",
+      "description": "Grants permission to return information about the type of endpoints available",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -211,7 +263,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Returns information about the endpoints for your account in the current region",
+      "description": "Grants permission to return information about the endpoints for your account in the\n                                                current region",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -222,7 +274,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Lists categories for all event source types, or, if specified, for a specified source\n                                                type.",
+      "description": "Grants permission to list categories for all event source types, or, if specified,\n                                                for a specified source type",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -233,7 +285,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Lists all the event subscriptions for a customer account.",
+      "description": "Grants permission to list all the event subscriptions for a customer account",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -244,7 +296,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Lists events for a given source identifier and source type.",
+      "description": "Grants permission to list events for a given source identifier and source type",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -255,7 +307,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Returns information about the replication instance types that can be created in the\n                                                specified region",
+      "description": "Grants permission to return information about the replication instance types that\n                                                can be created in the specified region",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -266,7 +318,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Returns the status of the RefreshSchemas operation",
+      "description": "Grants permission to returns the status of the RefreshSchemas operation",
       "accessLevel": "Read",
       "resourceTypes": [
         "Endpoint*"
@@ -279,7 +331,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Returns information about the task logs for the specified task.",
+      "description": "Grants permission to return information about the task logs for the specified task",
       "accessLevel": "Read",
       "resourceTypes": [
         "ReplicationInstance*"
@@ -292,7 +344,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Returns information about replication instances for your account in the current region",
+      "description": "Grants permission to return information about replication instances for your account\n                                                in the current region",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -303,7 +355,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Returns information about the replication subnet groups",
+      "description": "Grants permission to return information about the replication subnet groups",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -314,7 +366,33 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Returns the task assessment results from Amazon S3. This action always returns the\n                                                latest results.",
+      "description": "Grants permission to return the latest task assessment results from Amazon S3",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ReplicationTask"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeReplicationTaskAssessmentRuns": {
+      "name": "DescribeReplicationTaskAssessmentRuns",
+      "topics": [
+        "AWS Database Migration Service"
+      ],
+      "description": "Grants permission to return a paginated list of premigration assessment runs based\n                                                on filter settings",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "ReplicationInstance"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeReplicationTaskIndividualAssessments": {
+      "name": "DescribeReplicationTaskIndividualAssessments",
+      "topics": [
+        "AWS Database Migration Service"
+      ],
+      "description": "Grants permission to return a paginated list of individual assessments based on filter\n                                                settings",
       "accessLevel": "Read",
       "resourceTypes": [
         "ReplicationTask"
@@ -327,7 +405,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Returns information about replication tasks for your account in the current region",
+      "description": "Grants permission to return information about replication tasks for your account in\n                                                the current region",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -338,7 +416,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Returns information about the schema for the specified endpoint",
+      "description": "Grants permission to return information about the schema for the specified endpoint",
       "accessLevel": "Read",
       "resourceTypes": [
         "Endpoint*"
@@ -351,7 +429,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Returns table statistics on the database migration task, including table name, rows\n                                                inserted, rows updated, and rows deleted",
+      "description": "Grants permission to return table statistics on the database migration task, including\n                                                table name, rows inserted, rows updated, and rows deleted",
       "accessLevel": "Read",
       "resourceTypes": [
         "ReplicationTask*"
@@ -364,7 +442,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Uploads the specified certificate.",
+      "description": "Grants permission to upload the specified certificate",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -375,7 +453,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Lists all tags for an AWS DMS resource",
+      "description": "Grants permission to list all tags for an AWS DMS resource",
       "accessLevel": "List",
       "resourceTypes": [
         "Certificate"
@@ -388,7 +466,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Modifies the specified endpoint",
+      "description": "Grants permission to modify the specified endpoint",
       "accessLevel": "Write",
       "resourceTypes": [
         "Endpoint*"
@@ -401,7 +479,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Modifies an existing AWS DMS event notification subscription.",
+      "description": "Grants permission to modify an existing AWS DMS event notification subscription",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -412,7 +490,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Modifies the replication instance to apply new settings",
+      "description": "Grants permission to modify the replication instance to apply new settings",
       "accessLevel": "Write",
       "resourceTypes": [
         "ReplicationInstance*"
@@ -425,7 +503,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Modifies the settings for the specified replication subnet group",
+      "description": "Grants permission to modify the settings for the specified replication subnet group",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -436,10 +514,23 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Modifies the specified replication task.",
+      "description": "Grants permission to modify the specified replication task",
       "accessLevel": "Write",
       "resourceTypes": [
         "ReplicationTask*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "MoveReplicationTask": {
+      "name": "MoveReplicationTask",
+      "topics": [
+        "AWS Database Migration Service"
+      ],
+      "description": "Grants permission to move the specified replication task to a different replication\n                                                instance",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ReplicationInstance*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -449,7 +540,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Reboots a replication instance. Rebooting results in a momentary outage, until the\n                                                replication instance becomes available again.",
+      "description": "Grants permission to reboot a replication instance. Rebooting results in a momentary\n                                                outage, until the replication instance becomes available again",
       "accessLevel": "Write",
       "resourceTypes": [
         "ReplicationInstance*"
@@ -462,7 +553,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Populates the schema for the specified endpoint",
+      "description": "Grants permission to populate the schema for the specified endpoint",
       "accessLevel": "Write",
       "resourceTypes": [
         "Endpoint*"
@@ -475,7 +566,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Reloads the target database table with the source data.",
+      "description": "Grants permission to reload the target database table with the source data",
       "accessLevel": "Write",
       "resourceTypes": [
         "ReplicationTask*"
@@ -488,7 +579,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Removes metadata tags from a DMS resource",
+      "description": "Grants permission to remove metadata tags from a DMS resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "Certificate"
@@ -501,7 +592,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Starts the replication task",
+      "description": "Grants permission to start the replication task",
       "accessLevel": "Write",
       "resourceTypes": [
         "ReplicationTask*"
@@ -514,7 +605,20 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Starts the replication task assessment for unsupported data types in the source database.",
+      "description": "Grants permission to start the replication task assessment for unsupported data types\n                                                in the source database",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "ReplicationTask*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartReplicationTaskAssessmentRun": {
+      "name": "StartReplicationTaskAssessmentRun",
+      "topics": [
+        "AWS Database Migration Service"
+      ],
+      "description": "Grants permission to start a new premigration assessment run for one or more individual\n                                                assessments of a migration task",
       "accessLevel": "Write",
       "resourceTypes": [
         "ReplicationTask*"
@@ -527,7 +631,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Stops the replication task",
+      "description": "Grants permission to stop the replication task",
       "accessLevel": "Write",
       "resourceTypes": [
         "ReplicationTask*"
@@ -540,7 +644,7 @@
       "topics": [
         "AWS Database Migration Service"
       ],
-      "description": "Tests the connection between the replication instance and the endpoint",
+      "description": "Grants permission to test the connection between the replication instance and the\n                                                endpoint",
       "accessLevel": "Read",
       "resourceTypes": [
         "Endpoint*"

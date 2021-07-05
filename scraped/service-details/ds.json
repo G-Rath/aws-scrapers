@@ -27,6 +27,19 @@
       "conditionKeys": "",
       "dependentActions": "ec2:AuthorizeSecurityGroupEgress\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:AuthorizeSecurityGroupIngress\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeSecurityGroups"
     },
+    "AddRegion": {
+      "name": "AddRegion",
+      "topics": [
+        "AWS Directory Service"
+      ],
+      "description": "Adds two domain controllers in the specified Region for the specified directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "AddTagsToResource": {
       "name": "AddTagsToResource",
       "topics": [
@@ -366,6 +379,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DescribeRegions": {
+      "name": "DescribeRegions",
+      "topics": [
+        "AWS Directory Service"
+      ],
+      "description": "Provides information about the Regions that are configured for multi-Region replication.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DescribeSharedDirectories": {
       "name": "DescribeSharedDirectories",
       "topics": [
@@ -401,6 +427,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DisableClientAuthentication": {
+      "name": "DisableClientAuthentication",
+      "topics": [
+        "AWS Directory Service"
+      ],
+      "description": "Disables alternative client authentication methods for the specified directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DisableLDAPS": {
       "name": "DisableLDAPS",
       "topics": [
@@ -433,6 +472,19 @@
         "AWS Directory Service"
       ],
       "description": "Disables single-sign on for a directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "EnableClientAuthentication": {
+      "name": "EnableClientAuthentication",
+      "topics": [
+        "AWS Directory Service"
+      ],
+      "description": "Enables alternative client authentication methods for the specified directory.",
       "accessLevel": "Write",
       "resourceTypes": [
         "directory*"
@@ -637,6 +689,19 @@
         "AWS Directory Service"
       ],
       "description": "Removes IP address blocks from a directory.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "directory*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RemoveRegion": {
+      "name": "RemoveRegion",
+      "topics": [
+        "AWS Directory Service"
+      ],
+      "description": "Stops all replication and removes the domain controllers from the specified Region.\n                                                You cannot remove the primary Region with this operation.",
       "accessLevel": "Write",
       "resourceTypes": [
         "directory*"

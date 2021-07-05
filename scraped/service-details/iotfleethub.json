@@ -1,0 +1,108 @@
+{
+  "servicePrefix": "iotfleethub",
+  "actions": {
+    "CreateApplication": {
+      "name": "CreateApplication",
+      "topics": [
+        "AWS IoT Fleet Hub for Device Management"
+      ],
+      "description": "Grants permission to create an application",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": "sso:CreateManagedApplicationInstance\n                                                   \n                                                \n                                                \n                                                \n                                                   sso:DescribeRegisteredRegions"
+    },
+    "DeleteApplication": {
+      "name": "DeleteApplication",
+      "topics": [
+        "AWS IoT Fleet Hub for Device Management"
+      ],
+      "description": "Grants permission to delete an application",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "sso:DeleteManagedApplicationInstance"
+    },
+    "DescribeApplication": {
+      "name": "DescribeApplication",
+      "topics": [
+        "AWS IoT Fleet Hub for Device Management"
+      ],
+      "description": "Grants permission to describe an application",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListApplications": {
+      "name": "ListApplications",
+      "topics": [
+        "AWS IoT Fleet Hub for Device Management"
+      ],
+      "description": "Grants permission to list all applications",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "AWS IoT Fleet Hub for Device Management"
+      ],
+      "description": "Grants permission to list all tags for a resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "application"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "AWS IoT Fleet Hub for Device Management"
+      ],
+      "description": "Grants permission to tag a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "application"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "AWS IoT Fleet Hub for Device Management"
+      ],
+      "description": "Grants permission to untag a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "application"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateApplication": {
+      "name": "UpdateApplication",
+      "topics": [
+        "AWS IoT Fleet Hub for Device Management"
+      ],
+      "description": "Grants permission to update an application",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "AWS IoT Fleet Hub for Device Management"
+  ]
+}

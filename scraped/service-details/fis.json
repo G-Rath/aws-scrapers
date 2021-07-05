@@ -1,0 +1,223 @@
+{
+  "servicePrefix": "fis",
+  "actions": {
+    "CreateExperimentTemplate": {
+      "name": "CreateExperimentTemplate",
+      "topics": [
+        "AWS Fault Injection Simulator"
+      ],
+      "description": "Grants permission to create an AWS FIS experiment template",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "action*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteExperimentTemplate": {
+      "name": "DeleteExperimentTemplate",
+      "topics": [
+        "AWS Fault Injection Simulator"
+      ],
+      "description": "Grants permission to delete the AWS FIS experiment template",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "experiment-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAction": {
+      "name": "GetAction",
+      "topics": [
+        "AWS Fault Injection Simulator"
+      ],
+      "description": "Grants permission to retrieve an AWS FIS action",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "action*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetExperiment": {
+      "name": "GetExperiment",
+      "topics": [
+        "AWS Fault Injection Simulator"
+      ],
+      "description": "Grants permission to retrieve an AWS FIS experiment",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "experiment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetExperimentTemplate": {
+      "name": "GetExperimentTemplate",
+      "topics": [
+        "AWS Fault Injection Simulator"
+      ],
+      "description": "Grants permission to retrieve an AWS FIS Experiment Template",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "experiment-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "InjectApiInternalError": {
+      "name": "InjectApiInternalError",
+      "topics": [
+        "AWS Fault Injection Simulator"
+      ],
+      "description": "Grants permission to inject an API internal error on the provided AWS service from\n                                                an FIS Experiment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "experiment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "InjectApiThrottleError": {
+      "name": "InjectApiThrottleError",
+      "topics": [
+        "AWS Fault Injection Simulator"
+      ],
+      "description": "Grants permission to inject an API throttle error on the provided AWS service from\n                                                an FIS Experiment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "experiment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "InjectApiUnavailableError": {
+      "name": "InjectApiUnavailableError",
+      "topics": [
+        "AWS Fault Injection Simulator"
+      ],
+      "description": "Grants permission to inject an API unavailable error on the provided AWS service from\n                                                an FIS Experiment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "experiment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListActions": {
+      "name": "ListActions",
+      "topics": [
+        "AWS Fault Injection Simulator"
+      ],
+      "description": "Grants permission to list all available AWS FIS actions",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListExperimentTemplates": {
+      "name": "ListExperimentTemplates",
+      "topics": [
+        "AWS Fault Injection Simulator"
+      ],
+      "description": "Grants permission to list all available AWS FIS experiment templates",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListExperiments": {
+      "name": "ListExperiments",
+      "topics": [
+        "AWS Fault Injection Simulator"
+      ],
+      "description": "Grants permission to list all available AWS FIS experiments",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "AWS Fault Injection Simulator"
+      ],
+      "description": "Grants permission to list the tags for an AWS FIS resource.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "action"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartExperiment": {
+      "name": "StartExperiment",
+      "topics": [
+        "AWS Fault Injection Simulator"
+      ],
+      "description": "Grants permission to run an AWS FIS experiment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "experiment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:CreateServiceLinkedRole"
+    },
+    "StopExperiment": {
+      "name": "StopExperiment",
+      "topics": [
+        "AWS Fault Injection Simulator"
+      ],
+      "description": "Grants permission to stop an AWS FIS experiment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "experiment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "AWS Fault Injection Simulator"
+      ],
+      "description": "Grants permission to tag AWS FIS resources",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "action"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "AWS Fault Injection Simulator"
+      ],
+      "description": "Grants permission to untag AWS FIS resources",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "action"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateExperimentTemplate": {
+      "name": "UpdateExperimentTemplate",
+      "topics": [
+        "AWS Fault Injection Simulator"
+      ],
+      "description": "Grants permission to update the specified AWS FIS experiment template",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "experiment-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "AWS Fault Injection Simulator"
+  ]
+}

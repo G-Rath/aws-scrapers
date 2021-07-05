@@ -1,15 +1,106 @@
 {
   "servicePrefix": "lex",
   "actions": {
+    "BuildBotLocale": {
+      "name": "BuildBotLocale",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to build an existing bot locale in a bot",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateBot": {
+      "name": "CreateBot",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to create a new bot and a test bot alias pointing to the DRAFT bot\n                                                version",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateBotAlias": {
+      "name": "CreateBotAlias",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to create a new bot alias in a bot",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot alias*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateBotChannel": {
+      "name": "CreateBotChannel",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to create a bot channel in an existing bot",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateBotLocale": {
+      "name": "CreateBotLocale",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to create a new bot locale in an existing bot",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "CreateBotVersion": {
       "name": "CreateBotVersion",
       "topics": [
-        "Amazon Lex"
+        "Amazon Lex V2"
       ],
-      "description": "Creates a new version based on the $LATEST version of the specified bot.",
+      "description": "Grants permission to create a new version of an existing bot",
       "accessLevel": "Write",
       "resourceTypes": [
-        "bot version*"
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateExport": {
+      "name": "CreateExport",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to create an export for an existing resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateIntent": {
+      "name": "CreateIntent",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to create a new intent in an existing bot locale",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -27,6 +118,45 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "CreateResourcePolicy": {
+      "name": "CreateResourcePolicy",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to create a new resource policy for a Lex resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateSlot": {
+      "name": "CreateSlot",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to create a new slot in an intent",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateSlotType": {
+      "name": "CreateSlotType",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to create a new slot type in an existing bot locale",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "CreateSlotTypeVersion": {
       "name": "CreateSlotTypeVersion",
       "topics": [
@@ -40,28 +170,52 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "CreateUploadUrl": {
+      "name": "CreateUploadUrl",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to create an upload url for import file",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteBot": {
       "name": "DeleteBot",
       "topics": [
-        "Amazon Lex"
+        "Amazon Lex V2"
       ],
-      "description": "Deletes all versions of a bot.",
+      "description": "Grants permission to delete an existing bot",
       "accessLevel": "Write",
       "resourceTypes": [
-        "bot version*"
+        "bot*"
       ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "lex:DeleteBotAlias\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:DeleteBotChannel\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:DeleteBotLocale\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:DeleteBotVersion\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:DeleteIntent\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:DeleteSlot\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:DeleteSlotType"
     },
     "DeleteBotAlias": {
       "name": "DeleteBotAlias",
       "topics": [
-        "Amazon Lex"
+        "Amazon Lex V2"
       ],
-      "description": "Deletes an alias for a specific bot.",
+      "description": "Grants permission to delete an existing bot alias in a bot",
       "accessLevel": "Write",
       "resourceTypes": [
         "bot alias*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteBotChannel": {
+      "name": "DeleteBotChannel",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to delete an existing bot channel",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -79,15 +233,54 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeleteBotLocale": {
+      "name": "DeleteBotLocale",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to delete an existing bot locale in a bot",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "lex:DeleteIntent\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:DeleteSlot\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:DeleteSlotType"
+    },
     "DeleteBotVersion": {
       "name": "DeleteBotVersion",
       "topics": [
-        "Amazon Lex"
+        "Amazon Lex V2"
       ],
-      "description": "Deletes a specific version of a bot.",
+      "description": "Grants permission to delete an existing bot version",
       "accessLevel": "Write",
       "resourceTypes": [
-        "bot version*"
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteExport": {
+      "name": "DeleteExport",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to delete an existing export",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteImport": {
+      "name": "DeleteImport",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to delete an existing import",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -95,12 +288,12 @@
     "DeleteIntent": {
       "name": "DeleteIntent",
       "topics": [
-        "Amazon Lex"
+        "Amazon Lex V2"
       ],
-      "description": "Deletes all versions of an intent.",
+      "description": "Grants permission to delete an existing intent in a bot locale",
       "accessLevel": "Write",
       "resourceTypes": [
-        "intent version*"
+        "bot*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -118,15 +311,41 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeleteResourcePolicy": {
+      "name": "DeleteResourcePolicy",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to delete an existing resource policy for a Lex resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteSession": {
       "name": "DeleteSession",
       "topics": [
-        "Amazon Lex"
+        "Amazon Lex V2"
       ],
-      "description": "Removes session information for a specified bot, alias, and user ID.",
+      "description": "Grants permission to delete session information for a bot alias and user ID",
       "accessLevel": "Write",
       "resourceTypes": [
-        "bot alias"
+        "bot alias*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteSlot": {
+      "name": "DeleteSlot",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to delete an existing slot in an intent",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -134,12 +353,12 @@
     "DeleteSlotType": {
       "name": "DeleteSlotType",
       "topics": [
-        "Amazon Lex"
+        "Amazon Lex V2"
       ],
-      "description": "Deletes all versions of a slot type.",
+      "description": "Grants permission to delete an existing slot type in a bot locale",
       "accessLevel": "Write",
       "resourceTypes": [
-        "slottype version*"
+        "bot*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -166,6 +385,149 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "bot version*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeBot": {
+      "name": "DescribeBot",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to retrieve an existing bot",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeBotAlias": {
+      "name": "DescribeBotAlias",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to retrieve an existing bot alias",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bot alias*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeBotChannel": {
+      "name": "DescribeBotChannel",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to retrieve an existing bot channel",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeBotLocale": {
+      "name": "DescribeBotLocale",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to retrieve an existing bot locale",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeBotVersion": {
+      "name": "DescribeBotVersion",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to retrieve an existing bot version.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeExport": {
+      "name": "DescribeExport",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to retrieve an existing export",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "lex:DescribeBot\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:DescribeBotLocale\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:DescribeIntent\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:DescribeSlot\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:DescribeSlotType\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:ListBotLocales\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:ListIntents\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:ListSlotTypes\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:ListSlots"
+    },
+    "DescribeImport": {
+      "name": "DescribeImport",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to retrieve an existing import",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeIntent": {
+      "name": "DescribeIntent",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to retrieve an existing intent",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeResourcePolicy": {
+      "name": "DescribeResourcePolicy",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to retrieve an existing resource policy for a Lex resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bot"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeSlot": {
+      "name": "DescribeSlot",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to retrieve an existing slot",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeSlotType": {
+      "name": "DescribeSlotType",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to retrieve an existing slot type",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "bot*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -233,6 +595,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "GetBots": {
+      "name": "GetBots",
+      "topics": [
+        "Amazon Lex"
+      ],
+      "description": "Returns information for the $LATEST version of all bots, subject to filters provided\n                                                by the client.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "GetBotVersions": {
       "name": "GetBotVersions",
       "topics": [
@@ -243,17 +616,6 @@
       "resourceTypes": [
         "bot version*"
       ],
-      "conditionKeys": "",
-      "dependentActions": ""
-    },
-    "GetBots": {
-      "name": "GetBots",
-      "topics": [
-        "Amazon Lex"
-      ],
-      "description": "Returns information for the $LATEST version of all bots, subject to filters provided\n                                                by the client.",
-      "accessLevel": "List",
-      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -327,6 +689,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "GetIntents": {
+      "name": "GetIntents",
+      "topics": [
+        "Amazon Lex"
+      ],
+      "description": "Returns information for the $LATEST version of all intents, subject to filters provided\n                                                by the client.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "GetIntentVersions": {
       "name": "GetIntentVersions",
       "topics": [
@@ -340,26 +713,15 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
-    "GetIntents": {
-      "name": "GetIntents",
-      "topics": [
-        "Amazon Lex"
-      ],
-      "description": "Returns information for the $LATEST version of all intents, subject to filters provided\n                                                by the client.",
-      "accessLevel": "List",
-      "resourceTypes": [],
-      "conditionKeys": "",
-      "dependentActions": ""
-    },
     "GetSession": {
       "name": "GetSession",
       "topics": [
-        "Amazon Lex"
+        "Amazon Lex V2"
       ],
-      "description": "Returns session information for a specified bot, alias, and user ID.",
+      "description": "Grants permission to retrieve session information for a bot alias and user ID",
       "accessLevel": "Read",
       "resourceTypes": [
-        "bot alias"
+        "bot alias*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -377,6 +739,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "GetSlotTypes": {
+      "name": "GetSlotTypes",
+      "topics": [
+        "Amazon Lex"
+      ],
+      "description": "Returns information for the $LATEST version of all slot types, subject to filters\n                                                provided by the client.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "GetSlotTypeVersions": {
       "name": "GetSlotTypeVersions",
       "topics": [
@@ -387,17 +760,6 @@
       "resourceTypes": [
         "slottype version*"
       ],
-      "conditionKeys": "",
-      "dependentActions": ""
-    },
-    "GetSlotTypes": {
-      "name": "GetSlotTypes",
-      "topics": [
-        "Amazon Lex"
-      ],
-      "description": "Returns information for the $LATEST version of all slot types, subject to filters\n                                                provided by the client.",
-      "accessLevel": "List",
-      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -414,12 +776,158 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ListBotAliases": {
+      "name": "ListBotAliases",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to list bot aliases in an bot",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListBotChannels": {
+      "name": "ListBotChannels",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to list bot channels",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListBotLocales": {
+      "name": "ListBotLocales",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to list bot locales in a bot",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListBots": {
+      "name": "ListBots",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to list existing bots",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListBotVersions": {
+      "name": "ListBotVersions",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to list existing bot versions",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListBuiltInIntents": {
+      "name": "ListBuiltInIntents",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to list built-in intents",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListBuiltInSlotTypes": {
+      "name": "ListBuiltInSlotTypes",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to list built-in slot types",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListExports": {
+      "name": "ListExports",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to list existing exports",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListImports": {
+      "name": "ListImports",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to list existing imports",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListIntents": {
+      "name": "ListIntents",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to list intents in a bot",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSlots": {
+      "name": "ListSlots",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to list slots in an intent",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListSlotTypes": {
+      "name": "ListSlotTypes",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to list slot types in a bot",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
       "topics": [
-        "Amazon Lex"
+        "Amazon Lex V2"
       ],
-      "description": "Lists tags for a Lex resource",
+      "description": "Grants permission to lists tags for a Lex resource",
       "accessLevel": "Read",
       "resourceTypes": [
         "bot"
@@ -495,12 +1003,12 @@
     "PutSession": {
       "name": "PutSession",
       "topics": [
-        "Amazon Lex"
+        "Amazon Lex V2"
       ],
-      "description": "Creates a new session or modifies an existing session with an Amazon Lex bot.",
+      "description": "Grants permission to create a new session or modify an existing session for a bot\n                                                alias and user ID",
       "accessLevel": "Write",
       "resourceTypes": [
-        "bot alias"
+        "bot alias*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -518,23 +1026,64 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "RecognizeSpeech": {
+      "name": "RecognizeSpeech",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to send user input (text or speech) to an bot alias",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot alias*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RecognizeText": {
+      "name": "RecognizeText",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to send user input (text-only) to an bot alias",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot alias*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartConversation": {
+      "name": "StartConversation",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to stream user input (speech/text/DTMF) to a bot alias",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot alias*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "StartImport": {
       "name": "StartImport",
       "topics": [
-        "Amazon Lex"
+        "Amazon Lex V2"
       ],
-      "description": "Starts a job to import a resource to Amazon Lex.",
+      "description": "Grants permission to start a new import with the uploaded import file",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "bot"
+      ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "lex:CreateBot\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:CreateBotLocale\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:CreateIntent\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:CreateSlot\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:CreateSlotType\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:DeleteBotLocale\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:DeleteIntent\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:DeleteSlot\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:DeleteSlotType\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:UpdateBot\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:UpdateBotLocale\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:UpdateIntent\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:UpdateSlot\n                                                   \n                                                \n                                                \n                                                \n                                                   lex:UpdateSlotType"
     },
     "TagResource": {
       "name": "TagResource",
       "topics": [
-        "Amazon Lex"
+        "Amazon Lex V2"
       ],
-      "description": "Adds or overwrites tags to a Lex resource",
+      "description": "Grants permission to add or overwrite tags of a Lex resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "bot"
@@ -545,18 +1094,123 @@
     "UntagResource": {
       "name": "UntagResource",
       "topics": [
-        "Amazon Lex"
+        "Amazon Lex V2"
       ],
-      "description": "Removes tags from a Lex resource",
+      "description": "Grants permission to remove tags from a Lex resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "bot"
       ],
       "conditionKeys": "",
       "dependentActions": ""
+    },
+    "UpdateBot": {
+      "name": "UpdateBot",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to update an existing bot",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateBotAlias": {
+      "name": "UpdateBotAlias",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to update an existing bot alias",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot alias*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateBotLocale": {
+      "name": "UpdateBotLocale",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to update an existing bot locale",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateExport": {
+      "name": "UpdateExport",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to update an existing export",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateIntent": {
+      "name": "UpdateIntent",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to update an existing intent",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateResourcePolicy": {
+      "name": "UpdateResourcePolicy",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to update an existing resource policy for a Lex resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSlot": {
+      "name": "UpdateSlot",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to update an existing slot",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateSlotType": {
+      "name": "UpdateSlotType",
+      "topics": [
+        "Amazon Lex V2"
+      ],
+      "description": "Grants permission to update an existing slot type",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "bot*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
     }
   },
   "topics": [
-    "Amazon Lex"
+    "Amazon Lex",
+    "Amazon Lex V2"
   ]
 }

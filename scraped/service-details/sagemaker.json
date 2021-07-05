@@ -1,6 +1,19 @@
 {
   "servicePrefix": "sagemaker",
   "actions": {
+    "AddAssociation": {
+      "name": "AddAssociation",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to associate a lineage entity (artifact, context, action, experiment,\n                                                experiment-trial-component) to another.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "action*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "AddTags": {
       "name": "AddTags",
       "topics": [
@@ -9,7 +22,7 @@
       "description": "Adds or overwrites one or more tags for the specified Amazon SageMaker resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
-        "app"
+        "action"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -40,6 +53,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "BatchGetRecord": {
+      "name": "BatchGetRecord",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to get a batch of records from one or more feature groups.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "feature-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "BatchPutMetrics": {
       "name": "BatchPutMetrics",
       "topics": [
@@ -53,12 +79,25 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "CreateAction": {
+      "name": "CreateAction",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to create an action.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "action*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "CreateAlgorithm": {
       "name": "CreateAlgorithm",
       "topics": [
         "Amazon SageMaker"
       ],
-      "description": "Create an algorithm.",
+      "description": "Grants permission to create an algorithm.",
       "accessLevel": "Write",
       "resourceTypes": [
         "algorithm*"
@@ -92,6 +131,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "CreateArtifact": {
+      "name": "CreateArtifact",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to create an artifact.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "artifact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "CreateAutoMLJob": {
       "name": "CreateAutoMLJob",
       "topics": [
@@ -110,7 +162,7 @@
       "topics": [
         "Amazon SageMaker"
       ],
-      "description": "Create a code repository.",
+      "description": "Grants permission to create a CodeRepository.",
       "accessLevel": "Write",
       "resourceTypes": [
         "code-repository*"
@@ -131,6 +183,45 @@
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
     },
+    "CreateContext": {
+      "name": "CreateContext",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to create a context.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "context*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDataQualityJobDefinition": {
+      "name": "CreateDataQualityJobDefinition",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to create a data quality job definition.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "data-quality-job-definition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "CreateDeviceFleet": {
+      "name": "CreateDeviceFleet",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to create a device fleet",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "device-fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
     "CreateDomain": {
       "name": "CreateDomain",
       "topics": [
@@ -143,6 +234,19 @@
       ],
       "conditionKeys": "",
       "dependentActions": "iam:CreateServiceLinkedRole\n                                                   \n                                                \n                                                \n                                                \n                                                   iam:PassRole"
+    },
+    "CreateEdgePackagingJob": {
+      "name": "CreateEdgePackagingJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to create an edge packaging job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "edge-packaging-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
     },
     "CreateEndpoint": {
       "name": "CreateEndpoint",
@@ -182,6 +286,19 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
+    },
+    "CreateFeatureGroup": {
+      "name": "CreateFeatureGroup",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Creates feature group.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "feature-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
     },
     "CreateFlowDefinition": {
       "name": "CreateFlowDefinition",
@@ -274,25 +391,77 @@
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
     },
+    "CreateModelBiasJobDefinition": {
+      "name": "CreateModelBiasJobDefinition",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to create a model bias job definition.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model-bias-job-definition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "CreateModelExplainabilityJobDefinition": {
+      "name": "CreateModelExplainabilityJobDefinition",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to create a model explainability job definition.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model-explainability-job-definition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
     "CreateModelPackage": {
       "name": "CreateModelPackage",
       "topics": [
         "Amazon SageMaker"
       ],
-      "description": "Create a model package.",
+      "description": "Grants permission to create a ModelPackage.",
       "accessLevel": "Write",
       "resourceTypes": [
-        "model-package*"
+        "model-package"
       ],
       "conditionKeys": "",
       "dependentActions": ""
+    },
+    "CreateModelPackageGroup": {
+      "name": "CreateModelPackageGroup",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to create a ModelPackageGroup.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model-package-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateModelQualityJobDefinition": {
+      "name": "CreateModelQualityJobDefinition",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to create a model quality job definition.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model-quality-job-definition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
     },
     "CreateMonitoringSchedule": {
       "name": "CreateMonitoringSchedule",
       "topics": [
         "Amazon SageMaker"
       ],
-      "description": "Creates a monitoring schedule.",
+      "description": "Grants permission to create a monitoring schedule.",
       "accessLevel": "Write",
       "resourceTypes": [
         "monitoring-schedule*"
@@ -325,6 +494,19 @@
       ],
       "conditionKeys": "",
       "dependentActions": ""
+    },
+    "CreatePipeline": {
+      "name": "CreatePipeline",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to create a pipeline.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "pipeline*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
     },
     "CreatePresignedDomainUrl": {
       "name": "CreatePresignedDomainUrl",
@@ -364,6 +546,19 @@
       ],
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
+    },
+    "CreateProject": {
+      "name": "CreateProject",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to create a Project.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
     },
     "CreateTrainingJob": {
       "name": "CreateTrainingJob",
@@ -456,12 +651,25 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeleteAction": {
+      "name": "DeleteAction",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to delete an action.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "action*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteAlgorithm": {
       "name": "DeleteAlgorithm",
       "topics": [
         "Amazon SageMaker"
       ],
-      "description": "Deletes an algorithm.",
+      "description": "Grants permission to delete an algorithm.",
       "accessLevel": "Write",
       "resourceTypes": [
         "algorithm*"
@@ -495,15 +703,80 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeleteArtifact": {
+      "name": "DeleteArtifact",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to delete an artifact.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "artifact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAssociation": {
+      "name": "DeleteAssociation",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to delete the association from a lineage entity (artifact, context,\n                                                action, experiment, experiment-trial-component) to another.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "action*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteCodeRepository": {
       "name": "DeleteCodeRepository",
       "topics": [
         "Amazon SageMaker"
       ],
-      "description": "Deletes a code repository.",
+      "description": "Grants permission to delete a CodeRepository.",
       "accessLevel": "Write",
       "resourceTypes": [
         "code-repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteContext": {
+      "name": "DeleteContext",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to delete a context.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "context*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDataQualityJobDefinition": {
+      "name": "DeleteDataQualityJobDefinition",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to delete the data quality job definition created using the CreateDataQualityJobDefinition\n                                                API.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "data-quality-job-definition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDeviceFleet": {
+      "name": "DeleteDeviceFleet",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to delete a device fleet",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "device-fleet*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -560,6 +833,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeleteFeatureGroup": {
+      "name": "DeleteFeatureGroup",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Deletes a feature group.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "feature-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteFlowDefinition": {
       "name": "DeleteFlowDefinition",
       "topics": [
@@ -582,6 +868,19 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "human-loop*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteHumanTaskUi": {
+      "name": "DeleteHumanTaskUi",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Deletes the specified human task user interface (worker task template).",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "human-task-ui*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -625,15 +924,80 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeleteModelBiasJobDefinition": {
+      "name": "DeleteModelBiasJobDefinition",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to delete the model bias job definition created using the CreateModelBiasJobDefinition\n                                                API.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model-bias-job-definition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteModelExplainabilityJobDefinition": {
+      "name": "DeleteModelExplainabilityJobDefinition",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to delete the model explainability job definition created using\n                                                the CreateModelExplainabilityJobDefinition API.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model-explainability-job-definition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteModelPackage": {
       "name": "DeleteModelPackage",
       "topics": [
         "Amazon SageMaker"
       ],
-      "description": "Deletes a model package.",
+      "description": "Grants permission to delete a ModelPackage.",
       "accessLevel": "Write",
       "resourceTypes": [
         "model-package*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteModelPackageGroup": {
+      "name": "DeleteModelPackageGroup",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to delete a ModelPackageGroup.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model-package-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteModelPackageGroupPolicy": {
+      "name": "DeleteModelPackageGroupPolicy",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to delete a ModelPackageGroup policy.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model-package-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteModelQualityJobDefinition": {
+      "name": "DeleteModelQualityJobDefinition",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to delete the model quality job definition created using the CreateModelQualityJobDefinition\n                                                API.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model-quality-job-definition*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -643,7 +1007,7 @@
       "topics": [
         "Amazon SageMaker"
       ],
-      "description": "Deletes a monitoring schedule. Amazon SageMaker will no longer run the scheduled monitoring.",
+      "description": "Grants permission to delete a monitoring schedule.",
       "accessLevel": "Write",
       "resourceTypes": [
         "monitoring-schedule*"
@@ -677,6 +1041,45 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeletePipeline": {
+      "name": "DeletePipeline",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to delete a pipeline.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "pipeline*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteProject": {
+      "name": "DeleteProject",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to delete a project.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "project*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteRecord": {
+      "name": "DeleteRecord",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to delete a record from a feature group.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "feature-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteTags": {
       "name": "DeleteTags",
       "topics": [
@@ -685,7 +1088,7 @@
       "description": "Deletes the specified set of tags from an Amazon SageMaker resource.",
       "accessLevel": "Tagging",
       "resourceTypes": [
-        "app"
+        "action"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -755,12 +1158,38 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeregisterDevices": {
+      "name": "DeregisterDevices",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to deregister a set of devices",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAction": {
+      "name": "DescribeAction",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to get information about an action.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "action*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DescribeAlgorithm": {
       "name": "DescribeAlgorithm",
       "topics": [
         "Amazon SageMaker"
       ],
-      "description": "Returns information about an algorithm.",
+      "description": "Grants permission to describe an algorithm.",
       "accessLevel": "Read",
       "resourceTypes": [
         "algorithm*"
@@ -794,6 +1223,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DescribeArtifact": {
+      "name": "DescribeArtifact",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to get information about an artifact.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "artifact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DescribeAutoMLJob": {
       "name": "DescribeAutoMLJob",
       "topics": [
@@ -812,7 +1254,7 @@
       "topics": [
         "Amazon SageMaker"
       ],
-      "description": "Returns information about a code repository.",
+      "description": "Grants permission to describe a CodeRepository.",
       "accessLevel": "Read",
       "resourceTypes": [
         "code-repository*"
@@ -833,6 +1275,58 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DescribeContext": {
+      "name": "DescribeContext",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to get information about a context.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "context*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDataQualityJobDefinition": {
+      "name": "DescribeDataQualityJobDefinition",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to return information about a data quality job definition.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "data-quality-job-definition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDevice": {
+      "name": "DescribeDevice",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to access information about a device",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDeviceFleet": {
+      "name": "DescribeDeviceFleet",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to access information about a device fleet",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "device-fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DescribeDomain": {
       "name": "DescribeDomain",
       "topics": [
@@ -842,6 +1336,19 @@
       "accessLevel": "Read",
       "resourceTypes": [
         "domain*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeEdgePackagingJob": {
+      "name": "DescribeEdgePackagingJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to access information about an edge packaging job",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "edge-packaging-job*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -881,6 +1388,19 @@
       "accessLevel": "Read",
       "resourceTypes": [
         "experiment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeFeatureGroup": {
+      "name": "DescribeFeatureGroup",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Returns information about a feature group.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "feature-group*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -989,15 +1509,67 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DescribeModelBiasJobDefinition": {
+      "name": "DescribeModelBiasJobDefinition",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to return information about a model bias job definition.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "model-bias-job-definition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeModelExplainabilityJobDefinition": {
+      "name": "DescribeModelExplainabilityJobDefinition",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to return information about a model explainability job definition.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "model-explainability-job-definition*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DescribeModelPackage": {
       "name": "DescribeModelPackage",
       "topics": [
         "Amazon SageMaker"
       ],
-      "description": "Returns information about a model package.",
+      "description": "Grants permission to describe a ModelPackage.",
       "accessLevel": "Read",
       "resourceTypes": [
         "model-package*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeModelPackageGroup": {
+      "name": "DescribeModelPackageGroup",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to describe a ModelPackageGroup.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "model-package-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeModelQualityJobDefinition": {
+      "name": "DescribeModelQualityJobDefinition",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to return information about a model quality job definition.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "model-quality-job-definition*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1007,7 +1579,7 @@
       "topics": [
         "Amazon SageMaker"
       ],
-      "description": "Returns information about a monitoring schedule.",
+      "description": "Grants permission to return information about a monitoring schedule.",
       "accessLevel": "Read",
       "resourceTypes": [
         "monitoring-schedule*"
@@ -1041,6 +1613,45 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DescribePipeline": {
+      "name": "DescribePipeline",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to get information about a pipeline.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "pipeline*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribePipelineDefinitionForExecution": {
+      "name": "DescribePipelineDefinitionForExecution",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to get the pipeline definition for a pipeline execution.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "pipeline-execution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribePipelineExecution": {
+      "name": "DescribePipelineExecution",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to get information about a pipeline execution.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "pipeline-execution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DescribeProcessingJob": {
       "name": "DescribeProcessingJob",
       "topics": [
@@ -1050,6 +1661,19 @@
       "accessLevel": "Read",
       "resourceTypes": [
         "processing-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeProject": {
+      "name": "DescribeProject",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to describe a project.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "project*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1158,6 +1782,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DisableSagemakerServicecatalogPortfolio": {
+      "name": "DisableSagemakerServicecatalogPortfolio",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to disable a SageMaker Service Catalog Portfolio.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DisassociateTrialComponent": {
       "name": "DisassociateTrialComponent",
       "topics": [
@@ -1168,6 +1803,80 @@
       "resourceTypes": [
         "experiment-trial*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "EnableSagemakerServicecatalogPortfolio": {
+      "name": "EnableSagemakerServicecatalogPortfolio",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to enable a SageMaker Service Catalog Portfolio.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDeviceFleetReport": {
+      "name": "GetDeviceFleetReport",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to access a summary of the devices in a device fleet",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "device-fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDeviceRegistration": {
+      "name": "GetDeviceRegistration",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to get device registration. After you deploy a model onto edge devices\n                                                this api is used to get current device registration",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetModelPackageGroupPolicy": {
+      "name": "GetModelPackageGroupPolicy",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to get a ModelPackageGroup policy.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "model-package-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetRecord": {
+      "name": "GetRecord",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to get a record from a feature group.",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "feature-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetSagemakerServicecatalogPortfolioStatus": {
+      "name": "GetSagemakerServicecatalogPortfolioStatus",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to get a SageMaker Service Catalog Portfolio.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -1195,12 +1904,23 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ListActions": {
+      "name": "ListActions",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to list actions.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ListAlgorithms": {
       "name": "ListAlgorithms",
       "topics": [
         "Amazon SageMaker"
       ],
-      "description": "Lists algorithms.",
+      "description": "Grants permission to list Algorithms.",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1223,6 +1943,28 @@
         "Amazon SageMaker"
       ],
       "description": "Grants permission to list the Apps in your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListArtifacts": {
+      "name": "ListArtifacts",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to list artifacts.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAssociations": {
+      "name": "ListAssociations",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to list associations.",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1255,7 +1997,7 @@
       "topics": [
         "Amazon SageMaker"
       ],
-      "description": "Lists code repositories.",
+      "description": "Grants permission to list code repositories.",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1272,12 +2014,67 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ListContexts": {
+      "name": "ListContexts",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to list contexts.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDataQualityJobDefinitions": {
+      "name": "ListDataQualityJobDefinitions",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to list data quality job definitions.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDeviceFleets": {
+      "name": "ListDeviceFleets",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to list device fleets",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDevices": {
+      "name": "ListDevices",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to list devices.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ListDomains": {
       "name": "ListDomains",
       "topics": [
         "Amazon SageMaker"
       ],
       "description": "Grants permission to list the Domains in your account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEdgePackagingJobs": {
+      "name": "ListEdgePackagingJobs",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to list edge packaging jobs",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1311,6 +2108,17 @@
         "Amazon SageMaker"
       ],
       "description": "Lists experiments.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListFeatureGroups": {
+      "name": "ListFeatureGroups",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Lists feature groups.",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1408,12 +2216,56 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ListModelBiasJobDefinitions": {
+      "name": "ListModelBiasJobDefinitions",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to list model bias job definitions.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListModelExplainabilityJobDefinitions": {
+      "name": "ListModelExplainabilityJobDefinitions",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to list model explainability job definitions.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListModelPackageGroups": {
+      "name": "ListModelPackageGroups",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to list ModelPackageGroups.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ListModelPackages": {
       "name": "ListModelPackages",
       "topics": [
         "Amazon SageMaker"
       ],
-      "description": "Lists model packages.",
+      "description": "Grants permission to list ModelPackages.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListModelQualityJobDefinitions": {
+      "name": "ListModelQualityJobDefinitions",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to list model quality job definitions.",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1435,7 +2287,7 @@
       "topics": [
         "Amazon SageMaker"
       ],
-      "description": "Lists monitoring executions.",
+      "description": "Grants permission to list monitoring executions.",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1446,7 +2298,7 @@
       "topics": [
         "Amazon SageMaker"
       ],
-      "description": "Lists monitoring schedules.",
+      "description": "Grants permission to list monitoring schedules.",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1474,12 +2326,73 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ListPipelineExecutionSteps": {
+      "name": "ListPipelineExecutionSteps",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to list steps for a pipeline execution",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "pipeline-execution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPipelineExecutions": {
+      "name": "ListPipelineExecutions",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to list executions for a pipeline",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "pipeline*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPipelineParametersForExecution": {
+      "name": "ListPipelineParametersForExecution",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to list parameters for a pipeline execution",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "pipeline-execution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPipelines": {
+      "name": "ListPipelines",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to list pipelines.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ListProcessingJobs": {
       "name": "ListProcessingJobs",
       "topics": [
         "Amazon SageMaker"
       ],
       "description": "Lists processing jobs.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListProjects": {
+      "name": "ListProjects",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to list Projects.",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -1504,7 +2417,7 @@
       "description": "Returns the tag set associated with the specified resource.",
       "accessLevel": "List",
       "resourceTypes": [
-        "app"
+        "action"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1599,6 +2512,45 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "PutModelPackageGroupPolicy": {
+      "name": "PutModelPackageGroupPolicy",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to put a ModelPackageGroup policy.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model-package-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutRecord": {
+      "name": "PutRecord",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to put a record to a feature group.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "feature-group*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "RegisterDevices": {
+      "name": "RegisterDevices",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to register a set of devices",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "RenderUiTemplate": {
       "name": "RenderUiTemplate",
       "topics": [
@@ -1618,6 +2570,19 @@
       "description": "Search for SageMaker objects.",
       "accessLevel": "Read",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendHeartbeat": {
+      "name": "SendHeartbeat",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to publish heartbeat data from devices. After you deploy a model\n                                                onto edge devices this api is used to report device status",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "device*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -1660,6 +2625,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "StartPipelineExecution": {
+      "name": "StartPipelineExecution",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to start a pipeline execution.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "pipeline*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "StopAutoMLJob": {
       "name": "StopAutoMLJob",
       "topics": [
@@ -1682,6 +2660,19 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "compilation-job*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopEdgePackagingJob": {
+      "name": "StopEdgePackagingJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to stop an edge packaging job",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "edge-packaging-job*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1751,6 +2742,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "StopPipelineExecution": {
+      "name": "StopPipelineExecution",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to stop a pipeline execution.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "pipeline-execution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "StopProcessingJob": {
       "name": "StopProcessingJob",
       "topics": [
@@ -1790,6 +2794,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "UpdateAction": {
+      "name": "UpdateAction",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to update an action.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "action*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "UpdateAppImageConfig": {
       "name": "UpdateAppImageConfig",
       "topics": [
@@ -1803,15 +2820,67 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "UpdateArtifact": {
+      "name": "UpdateArtifact",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to update an artifact.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "artifact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "UpdateCodeRepository": {
       "name": "UpdateCodeRepository",
       "topics": [
         "Amazon SageMaker"
       ],
-      "description": "Updates a code repository.",
+      "description": "Grants permission to update a CodeRepository.",
       "accessLevel": "Write",
       "resourceTypes": [
         "code-repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateContext": {
+      "name": "UpdateContext",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to update a context.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "context*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDeviceFleet": {
+      "name": "UpdateDeviceFleet",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to update a device fleet",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "device-fleet*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDevices": {
+      "name": "UpdateDevices",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to update a set of devices",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "device*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -1881,6 +2950,19 @@
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
     },
+    "UpdateModelPackage": {
+      "name": "UpdateModelPackage",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to update a ModelPackage.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model-package*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "UpdateMonitoringSchedule": {
       "name": "UpdateMonitoringSchedule",
       "topics": [
@@ -1916,6 +2998,45 @@
       "accessLevel": "Write",
       "resourceTypes": [
         "notebook-instance-lifecycle-config*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdatePipeline": {
+      "name": "UpdatePipeline",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to update a pipeline.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "pipeline*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "UpdatePipelineExecution": {
+      "name": "UpdatePipelineExecution",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Grants permission to update a pipeline execution.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "pipeline-execution*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateTrainingJob": {
+      "name": "UpdateTrainingJob",
+      "topics": [
+        "Amazon SageMaker"
+      ],
+      "description": "Updates a training job.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "training-job*"
       ],
       "conditionKeys": "",
       "dependentActions": ""

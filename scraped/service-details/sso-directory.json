@@ -23,6 +23,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "CompleteWebAuthnDeviceRegistration": {
+      "name": "CompleteWebAuthnDeviceRegistration",
+      "topics": [
+        "AWS SSO Directory"
+      ],
+      "description": "Grants permission to complete the registration process of a WebAuthn device",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "CreateAlias": {
       "name": "CreateAlias",
       "topics": [
@@ -177,13 +188,35 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DescribeGroup": {
+      "name": "DescribeGroup",
+      "topics": [
+        "AWS SSO Directory"
+      ],
+      "description": "Grants permission to query the group data, not including user and group members",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DescribeGroups": {
       "name": "DescribeGroups",
       "topics": [
         "AWS SSO Directory"
       ],
-      "description": "Grants permission to retrieve information about a group from the directory that AWS\n                                                SSO provides by default",
-      "accessLevel": "List",
+      "description": "Grants permission to retrieve information about groups from the directory that AWS\n                                                SSO provides by default",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeProvisioningTenant": {
+      "name": "DescribeProvisioningTenant",
+      "topics": [
+        "AWS SSO Directory"
+      ],
+      "description": "Grants permission to describes the provisioning tenant",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -199,13 +232,24 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DescribeUserByUniqueAttribute": {
+      "name": "DescribeUserByUniqueAttribute",
+      "topics": [
+        "AWS SSO Directory"
+      ],
+      "description": "Grants permission to describe user with a valid unique attribute represented for the\n                                                user",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DescribeUsers": {
       "name": "DescribeUsers",
       "topics": [
         "AWS SSO Directory"
       ],
       "description": "Grants permission to retrieve information about user from the directory that AWS SSO\n                                                provides by default",
-      "accessLevel": "List",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -265,6 +309,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "GetUserPoolInfo": {
+      "name": "GetUserPoolInfo",
+      "topics": [
+        "AWS SSO Directory"
+      ],
+      "description": "Grants permission to get UserPool Info",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ImportExternalIdPCertificate": {
       "name": "ImportExternalIdPCertificate",
       "topics": [
@@ -293,7 +348,7 @@
         "AWS SSO Directory"
       ],
       "description": "Grants permission to list bearer tokens for a given provisioning tenant",
-      "accessLevel": "List",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -304,7 +359,7 @@
         "AWS SSO Directory"
       ],
       "description": "Grants permission to list the external IdP certificates of a given directory and IdP",
-      "accessLevel": "List",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -315,7 +370,18 @@
         "AWS SSO Directory"
       ],
       "description": "Grants permission to list all the External Identity Provider configurations created\n                                                for the directory",
-      "accessLevel": "List",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGroupsForMember": {
+      "name": "ListGroupsForMember",
+      "topics": [
+        "AWS SSO Directory"
+      ],
+      "description": "Grants permission to list groups of the target member",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -326,7 +392,7 @@
         "AWS SSO Directory"
       ],
       "description": "Grants permission to list groups for a user from the directory that AWS SSO provides\n                                                by default",
-      "accessLevel": "List",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -337,7 +403,7 @@
         "AWS SSO Directory"
       ],
       "description": "Grants permission to retrieve all members that are part of a group in the directory\n                                                that AWS SSO provides by default",
-      "accessLevel": "List",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -348,7 +414,7 @@
         "AWS SSO Directory"
       ],
       "description": "Grants permission to list all active MFA devices and their MFA device metadata for\n                                                a user",
-      "accessLevel": "List",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -359,7 +425,7 @@
         "AWS SSO Directory"
       ],
       "description": "Grants permission to list provisioning tenants for a given directory",
-      "accessLevel": "List",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -408,6 +474,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "StartWebAuthnDeviceRegistration": {
+      "name": "StartWebAuthnDeviceRegistration",
+      "topics": [
+        "AWS SSO Directory"
+      ],
+      "description": "Grants permission to begin the registration process of a WebAuthn device",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "UpdateExternalIdPConfigurationForDirectory": {
       "name": "UpdateExternalIdPConfigurationForDirectory",
       "topics": [
@@ -430,6 +507,28 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "UpdateGroupDisplayName": {
+      "name": "UpdateGroupDisplayName",
+      "topics": [
+        "AWS SSO Directory"
+      ],
+      "description": "Grants permission to update group display name update group display name response",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateMfaDeviceForUser": {
+      "name": "UpdateMfaDeviceForUser",
+      "topics": [
+        "AWS SSO Directory"
+      ],
+      "description": "Grants permission to update MFA device information",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "UpdatePassword": {
       "name": "UpdatePassword",
       "topics": [
@@ -447,6 +546,17 @@
         "AWS SSO Directory"
       ],
       "description": "Grants permission to update user information in the directory that AWS SSO provides\n                                                by default",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateUserName": {
+      "name": "UpdateUserName",
+      "topics": [
+        "AWS SSO Directory"
+      ],
+      "description": "Grants permission to update user name update user name response",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",

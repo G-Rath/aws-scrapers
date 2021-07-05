@@ -114,7 +114,7 @@
         "cluster-pg*"
       ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "rds:AddTagsToResource"
     },
     "CopyDBClusterSnapshot": {
       "name": "CopyDBClusterSnapshot",
@@ -127,7 +127,7 @@
         "cluster-snapshot*"
       ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "rds:AddTagsToResource"
     },
     "CopyDBParameterGroup": {
       "name": "CopyDBParameterGroup",
@@ -140,7 +140,7 @@
         "pg*"
       ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "rds:AddTagsToResource"
     },
     "CopyDBSnapshot": {
       "name": "CopyDBSnapshot",
@@ -153,7 +153,7 @@
         "snapshot*"
       ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "rds:AddTagsToResource"
     },
     "CopyOptionGroup": {
       "name": "CopyOptionGroup",
@@ -165,6 +165,17 @@
       "resourceTypes": [
         "og*"
       ],
+      "conditionKeys": "",
+      "dependentActions": "rds:AddTagsToResource"
+    },
+    "CreateCustomAvailabilityZone": {
+      "name": "CreateCustomAvailabilityZone",
+      "topics": [
+        "Amazon RDS"
+      ],
+      "description": "Grants permission to create a new custom availability zone",
+      "accessLevel": "Write",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -179,7 +190,7 @@
         "cluster*"
       ],
       "conditionKeys": "",
-      "dependentActions": "iam:PassRole"
+      "dependentActions": "iam:PassRole\n                                                   \n                                                \n                                                \n                                                \n                                                   rds:AddTagsToResource"
     },
     "CreateDBClusterEndpoint": {
       "name": "CreateDBClusterEndpoint",
@@ -192,7 +203,7 @@
         "cluster*"
       ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "rds:AddTagsToResource"
     },
     "CreateDBClusterParameterGroup": {
       "name": "CreateDBClusterParameterGroup",
@@ -205,7 +216,7 @@
         "cluster-pg*"
       ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "rds:AddTagsToResource"
     },
     "CreateDBClusterSnapshot": {
       "name": "CreateDBClusterSnapshot",
@@ -218,7 +229,7 @@
         "cluster*"
       ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "rds:AddTagsToResource"
     },
     "CreateDBInstance": {
       "name": "CreateDBInstance",
@@ -231,7 +242,7 @@
         "db*"
       ],
       "conditionKeys": "",
-      "dependentActions": "iam:PassRole"
+      "dependentActions": "iam:PassRole\n                                                   \n                                                \n                                                \n                                                \n                                                   rds:AddTagsToResource"
     },
     "CreateDBInstanceReadReplica": {
       "name": "CreateDBInstanceReadReplica",
@@ -244,7 +255,7 @@
         "db*"
       ],
       "conditionKeys": "",
-      "dependentActions": "iam:PassRole"
+      "dependentActions": "iam:PassRole\n                                                   \n                                                \n                                                \n                                                \n                                                   rds:AddTagsToResource"
     },
     "CreateDBParameterGroup": {
       "name": "CreateDBParameterGroup",
@@ -257,7 +268,7 @@
         "pg*"
       ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "rds:AddTagsToResource"
     },
     "CreateDBProxy": {
       "name": "CreateDBProxy",
@@ -270,6 +281,19 @@
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
       "dependentActions": "iam:PassRole"
     },
+    "CreateDBProxyEndpoint": {
+      "name": "CreateDBProxyEndpoint",
+      "topics": [
+        "Amazon RDS"
+      ],
+      "description": "Grants permission to create a database proxy endpoint",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "proxy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "CreateDBSecurityGroup": {
       "name": "CreateDBSecurityGroup",
       "topics": [
@@ -281,7 +305,7 @@
         "secgrp*"
       ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "rds:AddTagsToResource"
     },
     "CreateDBSnapshot": {
       "name": "CreateDBSnapshot",
@@ -294,7 +318,7 @@
         "db*"
       ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "rds:AddTagsToResource"
     },
     "CreateDBSubnetGroup": {
       "name": "CreateDBSubnetGroup",
@@ -307,7 +331,7 @@
         "subgrp*"
       ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "rds:AddTagsToResource"
     },
     "CreateEventSubscription": {
       "name": "CreateEventSubscription",
@@ -320,7 +344,7 @@
         "es*"
       ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "rds:AddTagsToResource"
     },
     "CreateGlobalCluster": {
       "name": "CreateGlobalCluster",
@@ -346,7 +370,7 @@
         "og*"
       ],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "rds:AddTagsToResource"
     },
     "CrossRegionCommunication": {
       "name": "CrossRegionCommunication",
@@ -354,6 +378,17 @@
         "Amazon RDS"
       ],
       "description": "Grants permission to access a resource in the remote Region when executing cross-Region\n                                                operations, such as cross-Region snapshot copy or cross-Region read replica creation",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteCustomAvailabilityZone": {
+      "name": "DeleteCustomAvailabilityZone",
+      "topics": [
+        "Amazon RDS"
+      ],
+      "description": "Grants permission to delete a custom availability zone",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -461,6 +496,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeleteDBProxyEndpoint": {
+      "name": "DeleteDBProxyEndpoint",
+      "topics": [
+        "Amazon RDS"
+      ],
+      "description": "Grants permission to delete a database proxy endpoint",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "proxy-endpoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteDBSecurityGroup": {
       "name": "DeleteDBSecurityGroup",
       "topics": [
@@ -526,6 +574,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DeleteInstallationMedia": {
+      "name": "DeleteInstallationMedia",
+      "topics": [
+        "Amazon RDS"
+      ],
+      "description": "Grants permission to delete an installation media",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DeleteOptionGroup": {
       "name": "DeleteOptionGroup",
       "topics": [
@@ -569,6 +628,17 @@
         "Amazon RDS"
       ],
       "description": "Lists the set of CA certificates provided by Amazon RDS for this AWS account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeCustomAvailabilityZones": {
+      "name": "DescribeCustomAvailabilityZones",
+      "topics": [
+        "Amazon RDS"
+      ],
+      "description": "Grants permission to return information about provisioned custom availability zones",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -754,6 +824,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DescribeDBProxyEndpoints": {
+      "name": "DescribeDBProxyEndpoints",
+      "topics": [
+        "Amazon RDS"
+      ],
+      "description": "Grants permission to view proxy endpoints",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "proxy*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DescribeDBProxyTargetGroups": {
       "name": "DescribeDBProxyTargetGroups",
       "topics": [
@@ -913,6 +996,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DescribeInstallationMedia": {
+      "name": "DescribeInstallationMedia",
+      "topics": [
+        "Amazon RDS"
+      ],
+      "description": "Grants permission to return information about available installation media",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DescribeOptionGroupOptions": {
       "name": "DescribeOptionGroupOptions",
       "topics": [
@@ -1037,6 +1131,30 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "FailoverGlobalCluster": {
+      "name": "FailoverGlobalCluster",
+      "topics": [
+        "Amazon RDS"
+      ],
+      "description": "Grants permission to failover a global cluster",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ImportInstallationMedia": {
+      "name": "ImportInstallationMedia",
+      "topics": [
+        "Amazon RDS"
+      ],
+      "description": "Grants permission to import an installation media for a DB engine",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
       "topics": [
@@ -1047,6 +1165,17 @@
       "resourceTypes": [
         "db"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ModifyCertificates": {
+      "name": "ModifyCertificates",
+      "topics": [
+        "Amazon RDS"
+      ],
+      "description": "Grants permission to modify the system-default Secure Sockets Layer/Transport Layer\n                                                Security (SSL/TLS) certificate for Amazon RDS for new DB instances",
+      "accessLevel": "Write",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -1153,6 +1282,19 @@
       ],
       "conditionKeys": "",
       "dependentActions": "iam:PassRole"
+    },
+    "ModifyDBProxyEndpoint": {
+      "name": "ModifyDBProxyEndpoint",
+      "topics": [
+        "Amazon RDS"
+      ],
+      "description": "Grants permission to modify database proxy endpoint",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "proxy-endpoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
     },
     "ModifyDBProxyTargetGroup": {
       "name": "ModifyDBProxyTargetGroup",
@@ -1412,7 +1554,7 @@
         "cluster*"
       ],
       "conditionKeys": "",
-      "dependentActions": "iam:PassRole"
+      "dependentActions": "iam:PassRole\n                                                   \n                                                \n                                                \n                                                \n                                                   rds:AddTagsToResource"
     },
     "RestoreDBClusterFromSnapshot": {
       "name": "RestoreDBClusterFromSnapshot",
@@ -1425,7 +1567,7 @@
         "cluster*"
       ],
       "conditionKeys": "",
-      "dependentActions": "iam:PassRole"
+      "dependentActions": "iam:PassRole\n                                                   \n                                                \n                                                \n                                                \n                                                   rds:AddTagsToResource"
     },
     "RestoreDBClusterToPointInTime": {
       "name": "RestoreDBClusterToPointInTime",
@@ -1438,7 +1580,7 @@
         "cluster*"
       ],
       "conditionKeys": "",
-      "dependentActions": "iam:PassRole"
+      "dependentActions": "iam:PassRole\n                                                   \n                                                \n                                                \n                                                \n                                                   rds:AddTagsToResource"
     },
     "RestoreDBInstanceFromDBSnapshot": {
       "name": "RestoreDBInstanceFromDBSnapshot",
@@ -1451,7 +1593,7 @@
         "db*"
       ],
       "conditionKeys": "",
-      "dependentActions": "iam:PassRole"
+      "dependentActions": "iam:PassRole\n                                                   \n                                                \n                                                \n                                                \n                                                   rds:AddTagsToResource"
     },
     "RestoreDBInstanceFromS3": {
       "name": "RestoreDBInstanceFromS3",
@@ -1464,7 +1606,7 @@
         "db*"
       ],
       "conditionKeys": "",
-      "dependentActions": "iam:PassRole"
+      "dependentActions": "iam:PassRole\n                                                   \n                                                \n                                                \n                                                \n                                                   rds:AddTagsToResource"
     },
     "RestoreDBInstanceToPointInTime": {
       "name": "RestoreDBInstanceToPointInTime",
@@ -1477,7 +1619,7 @@
         "db*"
       ],
       "conditionKeys": "",
-      "dependentActions": "iam:PassRole"
+      "dependentActions": "iam:PassRole\n                                                   \n                                                \n                                                \n                                                \n                                                   rds:AddTagsToResource"
     },
     "RevokeDBSecurityGroupIngress": {
       "name": "RevokeDBSecurityGroupIngress",
@@ -1531,6 +1673,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "StartDBInstanceAutomatedBackupsReplication": {
+      "name": "StartDBInstanceAutomatedBackupsReplication",
+      "topics": [
+        "Amazon RDS"
+      ],
+      "description": "Grants permission to start replication of automated backups to a different AWS Region",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "db*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "StartExportTask": {
       "name": "StartExportTask",
       "topics": [
@@ -1574,6 +1729,19 @@
         "Amazon RDS"
       ],
       "description": "Grants permission to stop the DB instance",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "db*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopDBInstanceAutomatedBackupsReplication": {
+      "name": "StopDBInstanceAutomatedBackupsReplication",
+      "topics": [
+        "Amazon RDS"
+      ],
+      "description": "Grants permission to stop automated backup replication for a DB instance",
       "accessLevel": "Write",
       "resourceTypes": [
         "db*"

@@ -6,7 +6,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Creates a new capacity provider. Capacity providers are associated with an Amazon\n                                                ECS cluster and are used in capacity provider strategies to facilitate cluster auto\n                                                scaling.",
+      "description": "Grants permission to create a new capacity provider. Capacity providers are associated\n                                                with an Amazon ECS cluster and are used in capacity provider strategies to facilitate\n                                                cluster auto scaling",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -17,7 +17,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Creates a new Amazon ECS cluster.",
+      "description": "Grants permission to create a new Amazon ECS cluster",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "ecs:capacity-provider\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -28,7 +28,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Runs and maintains a desired number of tasks from a specified task definition.",
+      "description": "Grants permission to run and maintain a desired number of tasks from a specified task\n                                                definition via service creation",
       "accessLevel": "Write",
       "resourceTypes": [
         "service*"
@@ -41,10 +41,10 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Creates a new Amazon ECS task set.",
+      "description": "Grants permission to create a new Amazon ECS task set",
       "accessLevel": "Write",
       "resourceTypes": [],
-      "conditionKeys": "ecs:cluster\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ecs:service\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ecs:task-definition",
+      "conditionKeys": "ecs:cluster\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ecs:capacity-provider\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ecs:service\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ecs:task-definition",
       "dependentActions": ""
     },
     "DeleteAccountSetting": {
@@ -52,7 +52,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Modifies the ARN and resource ID format of a resource for a specified IAM user, IAM\n                                                role, or the root user for an account. You can specify whether the new ARN and resource\n                                                ID format are disabled for new resources that are created.",
+      "description": "Grants permission to modify the ARN and resource ID format of a resource for a specified\n                                                IAM user, IAM role, or the root user for an account. You can specify whether the new\n                                                ARN and resource ID format are disabled for new resources that are created",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -63,7 +63,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Deletes one or more custom attributes from an Amazon ECS resource.",
+      "description": "Grants permission to delete one or more custom attributes from an Amazon ECS resource",
       "accessLevel": "Write",
       "resourceTypes": [
         "container-instance*"
@@ -76,7 +76,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Deletes the specified capacity provider.",
+      "description": "Grants permission to delete the specified capacity provider",
       "accessLevel": "Write",
       "resourceTypes": [
         "capacity-provider*"
@@ -89,7 +89,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Deletes the specified cluster.",
+      "description": "Grants permission to delete the specified cluster",
       "accessLevel": "Write",
       "resourceTypes": [
         "cluster*"
@@ -102,7 +102,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Deletes a specified service within a cluster.",
+      "description": "Grants permission to delete a specified service within a cluster",
       "accessLevel": "Write",
       "resourceTypes": [
         "service*"
@@ -115,7 +115,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Deletes the specified task set.",
+      "description": "Grants permission to delete the specified task set",
       "accessLevel": "Write",
       "resourceTypes": [
         "task-set*"
@@ -128,7 +128,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Deregisters an Amazon ECS container instance from the specified cluster.",
+      "description": "Grants permission to deregister an Amazon ECS container instance from the specified\n                                                cluster",
       "accessLevel": "Write",
       "resourceTypes": [
         "cluster*"
@@ -141,7 +141,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Deregisters the specified task definition by family and revision.",
+      "description": "Grants permission to deregister the specified task definition by family and revision",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -152,7 +152,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Describes one or more Amazon ECS capacity providers.",
+      "description": "Grants permission to describe one or more Amazon ECS capacity providers",
       "accessLevel": "Read",
       "resourceTypes": [
         "capacity-provider*"
@@ -165,7 +165,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Describes one or more of your clusters.",
+      "description": "Grants permission to describes one or more of your clusters",
       "accessLevel": "Read",
       "resourceTypes": [
         "cluster*"
@@ -178,7 +178,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Describes Amazon ECS container instances.",
+      "description": "Grants permission to describes Amazon ECS container instances",
       "accessLevel": "Read",
       "resourceTypes": [
         "container-instance*"
@@ -191,7 +191,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Describes the specified services running in your cluster.",
+      "description": "Grants permission to describe the specified services running in your cluster",
       "accessLevel": "Read",
       "resourceTypes": [
         "service*"
@@ -204,7 +204,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Describes a task definition. You can specify a family and revision to find information\n                                                about a specific task definition, or you can simply specify the family to find the\n                                                latest ACTIVE revision in that family.",
+      "description": "Grants permission to describe a task definition. You can specify a family and revision\n                                                to find information about a specific task definition, or you can simply specify the\n                                                family to find the latest ACTIVE revision in that family",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -215,7 +215,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Describes Amazon ECS task sets.",
+      "description": "Grants permission to describe Amazon ECS task sets",
       "accessLevel": "Read",
       "resourceTypes": [
         "task-set*"
@@ -228,7 +228,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Describes a specified task or tasks.",
+      "description": "Grants permission to describe a specified task or tasks",
       "accessLevel": "Read",
       "resourceTypes": [
         "task*"
@@ -241,9 +241,22 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Returns an endpoint for the Amazon ECS agent to poll for updates.",
+      "description": "Grants permission to get an endpoint for the Amazon ECS agent to poll for updates",
       "accessLevel": "Write",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ExecuteCommand": {
+      "name": "ExecuteCommand",
+      "topics": [
+        "Amazon Elastic Container Service"
+      ],
+      "description": "Grants permission to run a command remotely on an Amazon ECS container",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cluster"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -252,8 +265,8 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Lists the account settings for an Amazon ECS resource for a specified principal.",
-      "accessLevel": "List",
+      "description": "Grants permission to list the account settings for an Amazon ECS resource for a specified\n                                                principal",
+      "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -263,7 +276,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Lists the attributes for Amazon ECS resources within a specified target type and cluster.",
+      "description": "Grants permission to lists the attributes for Amazon ECS resources within a specified\n                                                target type and cluster",
       "accessLevel": "List",
       "resourceTypes": [
         "cluster*"
@@ -276,7 +289,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Returns a list of existing clusters.",
+      "description": "Grants permission to get a list of existing clusters",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -287,7 +300,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Returns a list of container instances in a specified cluster.",
+      "description": "Grants permission to get a list of container instances in a specified cluster",
       "accessLevel": "List",
       "resourceTypes": [
         "cluster*"
@@ -300,7 +313,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Lists the services that are running in a specified cluster.",
+      "description": "Grants permission to get a list of services that are running in a specified cluster",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "ecs:cluster",
@@ -311,8 +324,8 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "List tags for the specified resource.",
-      "accessLevel": "List",
+      "description": "Grants permission to get a list of tags for the specified resource",
+      "accessLevel": "Read",
       "resourceTypes": [
         "cluster"
       ],
@@ -324,7 +337,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Returns a list of task definition families that are registered to your account (which\n                                                may include task definition families that no longer have any ACTIVE task definitions).",
+      "description": "Grants permission to get a list of task definition families that are registered to\n                                                your account (which may include task definition families that no longer have any ACTIVE\n                                                task definitions)",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -335,7 +348,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Returns a list of task definitions that are registered to your account.",
+      "description": "Grants permission to get a list of task definitions that are registered to your account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -346,7 +359,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Returns a list of tasks for a specified cluster.",
+      "description": "Grants permission to get a list of tasks for a specified cluster",
       "accessLevel": "List",
       "resourceTypes": [
         "container-instance*"
@@ -359,7 +372,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Grants permission to an agent to connect with the Amazon ECS service to report status\n                                                and get commands.",
+      "description": "Grants permission to an agent to connect with the Amazon ECS service to report status\n                                                and get commands",
       "accessLevel": "Write",
       "resourceTypes": [
         "container-instance*"
@@ -372,7 +385,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Modifies the ARN and resource ID format of a resource for a specified IAM user, IAM\n                                                role, or the root user for an account. You can specify whether the new ARN and resource\n                                                ID format are enabled for new resources that are created. Enabling this setting is\n                                                required to use new Amazon ECS features such as resource tagging.",
+      "description": "Grants permission to modify the ARN and resource ID format of a resource for a specified\n                                                IAM user, IAM role, or the root user for an account. You can specify whether the new\n                                                ARN and resource ID format are enabled for new resources that are created. Enabling\n                                                this setting is required to use new Amazon ECS features such as resource tagging",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -383,7 +396,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Modifies the ARN and resource ID format of a resource type for all IAM users on an\n                                                account for which no individual account setting has been set. Enabling this setting\n                                                is required to use new Amazon ECS features such as resource tagging.",
+      "description": "Grants permission to modify the ARN and resource ID format of a resource type for\n                                                all IAM users on an account for which no individual account setting has been set.\n                                                Enabling this setting is required to use new Amazon ECS features such as resource\n                                                tagging",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -394,7 +407,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Create or update an attribute on an Amazon ECS resource.",
+      "description": "Grants permission to create or update an attribute on an Amazon ECS resource",
       "accessLevel": "Write",
       "resourceTypes": [
         "container-instance*"
@@ -407,7 +420,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Modifies the available capacity providers and the default capacity provider strategy\n                                                for a cluster.",
+      "description": "Grants permission to modify the available capacity providers and the default capacity\n                                                provider strategy for a cluster",
       "accessLevel": "Write",
       "resourceTypes": [
         "capacity-provider*"
@@ -420,7 +433,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Registers an EC2 instance into the specified cluster.",
+      "description": "Grants permission to register an EC2 instance into the specified cluster",
       "accessLevel": "Write",
       "resourceTypes": [
         "cluster*"
@@ -433,7 +446,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Registers a new task definition from the supplied family and containerDefinitions.",
+      "description": "Grants permission to register a new task definition from the supplied family and containerDefinitions",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -444,7 +457,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Start a task using random placement and the default Amazon ECS scheduler.",
+      "description": "Grants permission to start a task using random placement and the default Amazon ECS\n                                                scheduler",
       "accessLevel": "Write",
       "resourceTypes": [
         "task-definition*"
@@ -457,7 +470,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Starts a new task from the specified task definition on the specified container instance\n                                                or instances.",
+      "description": "Grants permission to start a new task from the specified task definition on the specified\n                                                container instance or instances",
       "accessLevel": "Write",
       "resourceTypes": [
         "task-definition*"
@@ -470,7 +483,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Grants permission to start a telemetry session.",
+      "description": "Grants permission to start a telemetry session",
       "accessLevel": "Write",
       "resourceTypes": [
         "container-instance*"
@@ -483,7 +496,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Stops a running task.",
+      "description": "Grants permission to stop a running task",
       "accessLevel": "Write",
       "resourceTypes": [
         "task*"
@@ -496,7 +509,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Sent to acknowledge that attachments changed states.",
+      "description": "Grants permission to send an acknowledgement that attachments changed states",
       "accessLevel": "Write",
       "resourceTypes": [
         "cluster*"
@@ -509,7 +522,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Sent to acknowledge that a container changed states.",
+      "description": "Grants permission to send an acknowledgement that a container changed states",
       "accessLevel": "Write",
       "resourceTypes": [
         "cluster*"
@@ -522,7 +535,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Sent to acknowledge that a task changed states.",
+      "description": "Grants permission to send an acknowledgement that a task changed states",
       "accessLevel": "Write",
       "resourceTypes": [
         "cluster*"
@@ -535,7 +548,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Tags the specified resource.",
+      "description": "Grants permission to tag the specified resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "cluster"
@@ -548,10 +561,36 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Untags the specified resource.",
+      "description": "Grants permission to untag the specified resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "cluster"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateCapacityProvider": {
+      "name": "UpdateCapacityProvider",
+      "topics": [
+        "Amazon Elastic Container Service"
+      ],
+      "description": "Grants permission to update the specified capacity provider",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "capacity-provider*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateCluster": {
+      "name": "UpdateCluster",
+      "topics": [
+        "Amazon Elastic Container Service"
+      ],
+      "description": "Grants permission to modify the configuration or settings to use for a cluster",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "cluster*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -561,7 +600,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Modifies the settings to use for a cluster.",
+      "description": "Grants permission to modify the settings to use for a cluster",
       "accessLevel": "Write",
       "resourceTypes": [
         "cluster*"
@@ -574,7 +613,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Updates the Amazon ECS container agent on a specified container instance.",
+      "description": "Grants permission to update the Amazon ECS container agent on a specified container\n                                                instance",
       "accessLevel": "Write",
       "resourceTypes": [
         "container-instance*"
@@ -587,7 +626,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Enables the user to modify the status of an Amazon ECS container instance.",
+      "description": "Grants permission to the user to modify the status of an Amazon ECS container instance",
       "accessLevel": "Write",
       "resourceTypes": [
         "container-instance*"
@@ -600,7 +639,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Modifies the parameters of a service.",
+      "description": "Grants permission to modify the parameters of a service",
       "accessLevel": "Write",
       "resourceTypes": [
         "service*"
@@ -613,7 +652,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Modifies the primary task set used in a service.",
+      "description": "Grants permission to modify the primary task set used in a service",
       "accessLevel": "Write",
       "resourceTypes": [
         "service*"
@@ -626,7 +665,7 @@
       "topics": [
         "Amazon Elastic Container Service"
       ],
-      "description": "Updates the specified task set.",
+      "description": "Grants permission to update the specified task set",
       "accessLevel": "Write",
       "resourceTypes": [
         "task-set*"

@@ -1,0 +1,375 @@
+{
+  "servicePrefix": "ssm-incidents",
+  "actions": {
+    "CreateReplicationSet": {
+      "name": "CreateReplicationSet",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to create a replication set",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "iam:CreateServiceLinkedRole"
+    },
+    "CreateResponsePlan": {
+      "name": "CreateResponsePlan",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to create a response plan",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "CreateTimelineEvent": {
+      "name": "CreateTimelineEvent",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to create a timeline event for an incident record",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "incident-record*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteIncidentRecord": {
+      "name": "DeleteIncidentRecord",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to delete an incident record",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "incident-record*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteReplicationSet": {
+      "name": "DeleteReplicationSet",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to delete a replication set",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "replication-set*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteResourcePolicy": {
+      "name": "DeleteResourcePolicy",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to delete resource policy from a response plan",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "response-plan*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteResponsePlan": {
+      "name": "DeleteResponsePlan",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to delete a response plan",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "response-plan*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteTimelineEvent": {
+      "name": "DeleteTimelineEvent",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to delete a timeline event",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "incident-record*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetIncidentRecord": {
+      "name": "GetIncidentRecord",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to view the contents of an incident record",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "incident-record*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetReplicationSet": {
+      "name": "GetReplicationSet",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to view the replication set",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "replication-set*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetResourcePolicies": {
+      "name": "GetResourcePolicies",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to view resource policies of a response plan",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "response-plan*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetResponsePlan": {
+      "name": "GetResponsePlan",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to view the contents of a specified response plan",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "response-plan*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetTimelineEvent": {
+      "name": "GetTimelineEvent",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to view a timeline event",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "incident-record*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListIncidentRecords": {
+      "name": "ListIncidentRecords",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to list the contents of all incident records",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListRelatedItems": {
+      "name": "ListRelatedItems",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to list related items of an incident records",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "incident-record*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListReplicationSets": {
+      "name": "ListReplicationSets",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to list all replication sets",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListResponsePlans": {
+      "name": "ListResponsePlans",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to list all response plans",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to view a list of resource tags for a specified resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "response-plan*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTimelineEvents": {
+      "name": "ListTimelineEvents",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to list all timeline events for an incident record",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "incident-record*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutResourcePolicy": {
+      "name": "PutResourcePolicy",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to put resource policy on a response plan",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "response-plan*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartIncident": {
+      "name": "StartIncident",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to start a new incident using a response plan",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "response-plan*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to add tags to a response plan",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "response-plan*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to remove tags from a response plan",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "response-plan*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDeletionProtection": {
+      "name": "UpdateDeletionProtection",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to update replication set deletion protection",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "replication-set*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateIncidentRecord": {
+      "name": "UpdateIncidentRecord",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to update the contents of an incident record",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "incident-record*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateRelatedItems": {
+      "name": "UpdateRelatedItems",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to update related items of an incident record",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "incident-record*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateReplicationSet": {
+      "name": "UpdateReplicationSet",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to update a replication set",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "replication-set*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateResponsePlan": {
+      "name": "UpdateResponsePlan",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to update the contents of a response plan",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "response-plan*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "UpdateTimelineEvent": {
+      "name": "UpdateTimelineEvent",
+      "topics": [
+        "AWS Systems Manager Incident Manager"
+      ],
+      "description": "Grants permission to update a timeline event",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "incident-record*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "AWS Systems Manager Incident Manager"
+  ]
+}

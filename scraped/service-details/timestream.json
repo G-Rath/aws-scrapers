@@ -4,7 +4,7 @@
     "CancelQuery": {
       "name": "CancelQuery",
       "topics": [
-        "AWS Timestream"
+        "Amazon Timestream"
       ],
       "description": "Grants Permission to cancel queries in your account",
       "accessLevel": "Write",
@@ -15,7 +15,7 @@
     "CreateDatabase": {
       "name": "CreateDatabase",
       "topics": [
-        "AWS Timestream"
+        "Amazon Timestream"
       ],
       "description": "Grants permissions to create a database in your account.",
       "accessLevel": "Write",
@@ -28,7 +28,7 @@
     "CreateTable": {
       "name": "CreateTable",
       "topics": [
-        "AWS Timestream"
+        "Amazon Timestream"
       ],
       "description": "Grants permissions to create a table in your account.",
       "accessLevel": "Write",
@@ -41,7 +41,7 @@
     "DeleteDatabase": {
       "name": "DeleteDatabase",
       "topics": [
-        "AWS Timestream"
+        "Amazon Timestream"
       ],
       "description": "Grants permissions to delete a database in your account.",
       "accessLevel": "Write",
@@ -54,7 +54,7 @@
     "DeleteTable": {
       "name": "DeleteTable",
       "topics": [
-        "AWS Timestream"
+        "Amazon Timestream"
       ],
       "description": "Grants permissions to delete a table in your account.",
       "accessLevel": "Write",
@@ -67,7 +67,7 @@
     "DescribeDatabase": {
       "name": "DescribeDatabase",
       "topics": [
-        "AWS Timestream"
+        "Amazon Timestream"
       ],
       "description": "Grants permissions to describe a database in your account.",
       "accessLevel": "Read",
@@ -80,7 +80,7 @@
     "DescribeEndpoints": {
       "name": "DescribeEndpoints",
       "topics": [
-        "AWS Timestream"
+        "Amazon Timestream"
       ],
       "description": "Grants permissions to describe timestream endpoints.",
       "accessLevel": "List",
@@ -91,7 +91,7 @@
     "DescribeTable": {
       "name": "DescribeTable",
       "topics": [
-        "AWS Timestream"
+        "Amazon Timestream"
       ],
       "description": "Grants Permissions to describe a table in your account",
       "accessLevel": "Read",
@@ -104,7 +104,7 @@
     "ListDatabases": {
       "name": "ListDatabases",
       "topics": [
-        "AWS Timestream"
+        "Amazon Timestream"
       ],
       "description": "Grants Permission to list databases in your account",
       "accessLevel": "List",
@@ -115,7 +115,7 @@
     "ListMeasures": {
       "name": "ListMeasures",
       "topics": [
-        "AWS Timestream"
+        "Amazon Timestream"
       ],
       "description": "Grants Permissions to list measures of a table in your account",
       "accessLevel": "List",
@@ -128,18 +128,20 @@
     "ListTables": {
       "name": "ListTables",
       "topics": [
-        "AWS Timestream"
+        "Amazon Timestream"
       ],
       "description": "Grants Permission to list tables in your account",
       "accessLevel": "List",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "database*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
     "ListTagsForResource": {
       "name": "ListTagsForResource",
       "topics": [
-        "AWS Timestream"
+        "Amazon Timestream"
       ],
       "description": "Grants permissions to list tags of a resource in your account.",
       "accessLevel": "List",
@@ -152,7 +154,7 @@
     "Select": {
       "name": "Select",
       "topics": [
-        "AWS Timestream"
+        "Amazon Timestream"
       ],
       "description": "Grants Permission to issue 'select from table' queries",
       "accessLevel": "Read",
@@ -165,7 +167,7 @@
     "SelectValues": {
       "name": "SelectValues",
       "topics": [
-        "AWS Timestream"
+        "Amazon Timestream"
       ],
       "description": "Grants Permissions to issue 'select 1' queries",
       "accessLevel": "Read",
@@ -176,7 +178,7 @@
     "TagResource": {
       "name": "TagResource",
       "topics": [
-        "AWS Timestream"
+        "Amazon Timestream"
       ],
       "description": "Grants permissions to add tags to a resource.",
       "accessLevel": "Tagging",
@@ -189,7 +191,7 @@
     "UntagResource": {
       "name": "UntagResource",
       "topics": [
-        "AWS Timestream"
+        "Amazon Timestream"
       ],
       "description": "Grants permissions to remove a tag from a resource.",
       "accessLevel": "Tagging",
@@ -202,7 +204,7 @@
     "UpdateDatabase": {
       "name": "UpdateDatabase",
       "topics": [
-        "AWS Timestream"
+        "Amazon Timestream"
       ],
       "description": "Grants permissions to update a database in your account.",
       "accessLevel": "Write",
@@ -215,7 +217,7 @@
     "UpdateTable": {
       "name": "UpdateTable",
       "topics": [
-        "AWS Timestream"
+        "Amazon Timestream"
       ],
       "description": "Grants permissions to update a table in your account.",
       "accessLevel": "Write",
@@ -228,7 +230,7 @@
     "WriteRecords": {
       "name": "WriteRecords",
       "topics": [
-        "AWS Timestream"
+        "Amazon Timestream"
       ],
       "description": "Grants permissions to ingest data to a table in your account.",
       "accessLevel": "Write",
@@ -240,6 +242,6 @@
     }
   },
   "topics": [
-    "AWS Timestream"
+    "Amazon Timestream"
   ]
 }

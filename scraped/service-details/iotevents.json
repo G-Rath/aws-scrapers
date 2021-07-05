@@ -1,12 +1,77 @@
 {
   "servicePrefix": "iotevents",
   "actions": {
+    "BatchAcknowledgeAlarm": {
+      "name": "BatchAcknowledgeAlarm",
+      "topics": [
+        "AWS IoT Events"
+      ],
+      "description": "Grants permission to send one or more acknowledge action requests to AWS IoT Events",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "input*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchDisableAlarm": {
+      "name": "BatchDisableAlarm",
+      "topics": [
+        "AWS IoT Events"
+      ],
+      "description": "Grants permission to disable one or more alarm instances",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "input*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchEnableAlarm": {
+      "name": "BatchEnableAlarm",
+      "topics": [
+        "AWS IoT Events"
+      ],
+      "description": "Grants permission to enable one or more alarm instances",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "input*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "BatchPutMessage": {
       "name": "BatchPutMessage",
       "topics": [
         "AWS IoT Events"
       ],
-      "description": "Sends a set of messages to the AWS IoT Events system.",
+      "description": "Grants permission to send a set of messages to the AWS IoT Events system",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "input*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchResetAlarm": {
+      "name": "BatchResetAlarm",
+      "topics": [
+        "AWS IoT Events"
+      ],
+      "description": "Grants permission to reset one or more alarm instances",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "input*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "BatchSnoozeAlarm": {
+      "name": "BatchSnoozeAlarm",
+      "topics": [
+        "AWS IoT Events"
+      ],
+      "description": "Grants permission to change one or more alarm instances to the snooze mode",
       "accessLevel": "Write",
       "resourceTypes": [
         "input*"
@@ -19,10 +84,23 @@
       "topics": [
         "AWS IoT Events"
       ],
-      "description": "Update an detector within the AWS IoT Events system.",
+      "description": "Grants permission to update a detector instance within the AWS IoT Events system",
       "accessLevel": "Write",
       "resourceTypes": [
         "input*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAlarmModel": {
+      "name": "CreateAlarmModel",
+      "topics": [
+        "AWS IoT Events"
+      ],
+      "description": "Grants permission to create an alarm model to monitor an AWS IoT Events input attribute\n                                                or an AWS IoT SiteWise asset property",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "alarmModel*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -32,7 +110,7 @@
       "topics": [
         "AWS IoT Events"
       ],
-      "description": "Creates a detector model.",
+      "description": "Grants permission to create a detector model to monitor an AWS IoT Events input attribute",
       "accessLevel": "Write",
       "resourceTypes": [
         "detectorModel*"
@@ -45,10 +123,23 @@
       "topics": [
         "AWS IoT Events"
       ],
-      "description": "Creates an input.",
+      "description": "Grants permission to create an Input in IotEvents",
       "accessLevel": "Write",
       "resourceTypes": [
         "input*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAlarmModel": {
+      "name": "DeleteAlarmModel",
+      "topics": [
+        "AWS IoT Events"
+      ],
+      "description": "Grants permission to delete an alarm model",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "alarmModel*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -58,7 +149,7 @@
       "topics": [
         "AWS IoT Events"
       ],
-      "description": "Deletes a detector model.",
+      "description": "Grants permission to delete a detector model",
       "accessLevel": "Write",
       "resourceTypes": [
         "detectorModel*"
@@ -71,10 +162,36 @@
       "topics": [
         "AWS IoT Events"
       ],
-      "description": "Deletes an input.",
+      "description": "Grants permission to delete an input",
       "accessLevel": "Write",
       "resourceTypes": [
         "input*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAlarm": {
+      "name": "DescribeAlarm",
+      "topics": [
+        "AWS IoT Events"
+      ],
+      "description": "Grants permission to retrieve information about an alarm instance",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "alarmModel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAlarmModel": {
+      "name": "DescribeAlarmModel",
+      "topics": [
+        "AWS IoT Events"
+      ],
+      "description": "Grants permission to retrieve information about an alarm model",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "alarmModel*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -84,7 +201,7 @@
       "topics": [
         "AWS IoT Events"
       ],
-      "description": "Returns information about the specified detector (instance).",
+      "description": "Grants permission to retriev information about a detector instance",
       "accessLevel": "Read",
       "resourceTypes": [
         "detectorModel*"
@@ -97,7 +214,7 @@
       "topics": [
         "AWS IoT Events"
       ],
-      "description": "Describes a detector model.",
+      "description": "Grants permission to retrieve information about a detector model",
       "accessLevel": "Read",
       "resourceTypes": [
         "detectorModel*"
@@ -110,7 +227,7 @@
       "topics": [
         "AWS IoT Events"
       ],
-      "description": "Describes an input.",
+      "description": "Grants permission to retrieve an information about Input",
       "accessLevel": "Read",
       "resourceTypes": [
         "input*"
@@ -123,9 +240,46 @@
       "topics": [
         "AWS IoT Events"
       ],
-      "description": "Retrieves the current settings of the AWS IoT Events logging options.",
+      "description": "Grants permission to retrieve the current settings of the AWS IoT Events logging options",
       "accessLevel": "Read",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAlarmModelVersions": {
+      "name": "ListAlarmModelVersions",
+      "topics": [
+        "AWS IoT Events"
+      ],
+      "description": "Grants permission to list all the versions of an alarm model",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "alarmModel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAlarmModels": {
+      "name": "ListAlarmModels",
+      "topics": [
+        "AWS IoT Events"
+      ],
+      "description": "Grants permission to list the alarm models that you created",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAlarms": {
+      "name": "ListAlarms",
+      "topics": [
+        "AWS IoT Events"
+      ],
+      "description": "Grants permission to retrieve information about all alarm instances per alarmModel",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "alarmModel*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -134,7 +288,7 @@
       "topics": [
         "AWS IoT Events"
       ],
-      "description": "Lists all the versions of a detector model. Only the metadata associated with each\n                                                detector model version is returned.",
+      "description": "Grants permission to list all the versions of a detector model",
       "accessLevel": "List",
       "resourceTypes": [
         "detectorModel*"
@@ -147,7 +301,7 @@
       "topics": [
         "AWS IoT Events"
       ],
-      "description": "Lists the detector models you have created. Only the metadata associated with each\n                                                detector model is returned.",
+      "description": "Grants permission to list the detector models that you created",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -158,11 +312,22 @@
       "topics": [
         "AWS IoT Events"
       ],
-      "description": "Lists detectors (the instances of a detector model).",
+      "description": "Grants permission to retrieve information about all detector instances per detectormodel",
       "accessLevel": "List",
       "resourceTypes": [
         "detectorModel*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListInputRoutings": {
+      "name": "ListInputRoutings",
+      "topics": [
+        "AWS IoT Events"
+      ],
+      "description": "Grants permission to list one or more input routings",
+      "accessLevel": "List",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -171,7 +336,7 @@
       "topics": [
         "AWS IoT Events"
       ],
-      "description": "Lists the inputs you have created.",
+      "description": "Grants permission to lists the inputs you have created",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -182,7 +347,7 @@
       "topics": [
         "AWS IoT Events"
       ],
-      "description": "Lists the tags (metadata) which you have assigned to the resource.",
+      "description": "Grants permission to list the tags (metadata) which you have assigned to the resource",
       "accessLevel": "Read",
       "resourceTypes": [
         "detectorModel"
@@ -195,7 +360,7 @@
       "topics": [
         "AWS IoT Events"
       ],
-      "description": "Sets or updates the AWS IoT Events logging options.",
+      "description": "Grants permission to set or update the AWS IoT Events logging options",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -206,7 +371,7 @@
       "topics": [
         "AWS IoT Events"
       ],
-      "description": "Adds to or modifies the tags of the given resource. Tags are metadata which can be\n                                                used to manage a resource.",
+      "description": "Grants permission to adds to or modifies the tags of the given resource.Tags are metadata\n                                                which can be used to manage a resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "detectorModel"
@@ -219,10 +384,23 @@
       "topics": [
         "AWS IoT Events"
       ],
-      "description": "Removes the given tags (metadata) from the resource.",
+      "description": "Grants permission to remove the given tags (metadata) from the resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "detectorModel"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAlarmModel": {
+      "name": "UpdateAlarmModel",
+      "topics": [
+        "AWS IoT Events"
+      ],
+      "description": "Grants permission to update an alarm model",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "alarmModel*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -232,7 +410,7 @@
       "topics": [
         "AWS IoT Events"
       ],
-      "description": "Updates a detector model.",
+      "description": "Grants permission to update a detector model",
       "accessLevel": "Write",
       "resourceTypes": [
         "detectorModel*"
@@ -245,7 +423,7 @@
       "topics": [
         "AWS IoT Events"
       ],
-      "description": "Updates an input.",
+      "description": "Grants permission to update an input",
       "accessLevel": "Write",
       "resourceTypes": [
         "input*"
@@ -258,7 +436,7 @@
       "topics": [
         "AWS IoT Events"
       ],
-      "description": "Updates input routing.",
+      "description": "Grants permission to update input routing",
       "accessLevel": "Write",
       "resourceTypes": [
         "input*"

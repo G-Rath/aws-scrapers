@@ -1,12 +1,38 @@
 {
   "servicePrefix": "fsx",
   "actions": {
+    "AssociateFileGateway": {
+      "name": "AssociateFileGateway",
+      "topics": [
+        "Amazon FSx"
+      ],
+      "description": "Grants permission to associate a File Gateway instance with an Amazon FSx for Windows\n                                                File Server file system",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociateFileSystemAliases": {
+      "name": "AssociateFileSystemAliases",
+      "topics": [
+        "Amazon FSx"
+      ],
+      "description": "Grants permission to associate DNS aliases with an Amazon FSx for Windows File Server\n                                                file system",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "CancelDataRepositoryTask": {
       "name": "CancelDataRepositoryTask",
       "topics": [
         "Amazon FSx"
       ],
-      "description": "This action cancels a data repository task",
+      "description": "Grants permission to cancel a data repository task",
       "accessLevel": "Write",
       "resourceTypes": [
         "task*"
@@ -14,12 +40,25 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "CopyBackup": {
+      "name": "CopyBackup",
+      "topics": [
+        "Amazon FSx"
+      ],
+      "description": "Grants permission to copy a backup",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "backup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "fsx:TagResource"
+    },
     "CreateBackup": {
       "name": "CreateBackup",
       "topics": [
         "Amazon FSx"
       ],
-      "description": "This action creates a new backup.",
+      "description": "Grants permission to create a new backup of an Amazon FSx file system",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "backup*"
@@ -32,7 +71,7 @@
       "topics": [
         "Amazon FSx"
       ],
-      "description": "This action creates a new task.",
+      "description": "Grants permission to create a new data respository task for an Amazon FSx for Lustre\n                                                file system",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "file-system*"
@@ -45,7 +84,7 @@
       "topics": [
         "Amazon FSx"
       ],
-      "description": "This action creates a new, empty, Amazon FSx file system",
+      "description": "Grants permission to create a new, empty, Amazon FSx file system",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "file-system*"
@@ -58,7 +97,7 @@
       "topics": [
         "Amazon FSx"
       ],
-      "description": "This action creates a new Amazon FSx file system from an existing backup.",
+      "description": "Grants permission to create a new Amazon FSx file system from an existing backup",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "backup*"
@@ -71,7 +110,7 @@
       "topics": [
         "Amazon FSx"
       ],
-      "description": "This action deletes a backup, deleting its contents. After deletion, the backup no\n                                                longer exists, and its data is gone.",
+      "description": "Grants permission to delete a backup, deleting its contents. After deletion, the backup\n                                                no longer exists, and its data is no longer available.",
       "accessLevel": "Write",
       "resourceTypes": [
         "backup*"
@@ -84,8 +123,21 @@
       "topics": [
         "Amazon FSx"
       ],
-      "description": "This action deletes a file system, deleting its contents.",
+      "description": "Grants permission to delete a file system, deleting its contents and any existing\n                                                automatic backups of the file system",
       "accessLevel": "Write",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAssociatedFileGateways": {
+      "name": "DescribeAssociatedFileGateways",
+      "topics": [
+        "Amazon FSx"
+      ],
+      "description": "Grants permission to describe the File Gateway instances associated with an Amazon\n                                                FSx for Windows File Server file system",
+      "accessLevel": "Read",
       "resourceTypes": [
         "file-system*"
       ],
@@ -97,7 +149,7 @@
       "topics": [
         "Amazon FSx"
       ],
-      "description": "This action returns the description of specific Amazon FSx backups, if one or more\n                                                BackupIds are provided for that backup. Otherwise, it returns all backups owned by\n                                                your AWS account in the AWS Region of the endpoint that you're calling.",
+      "description": "Grants permission to return the descriptions of all backups owned by your AWS account\n                                                in the AWS Region of the endpoint that you're calling",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -108,9 +160,22 @@
       "topics": [
         "Amazon FSx"
       ],
-      "description": "This action returns the description of specific Amazon FSx data repository task, if\n                                                one or more TaskIds are provided for that data repository task. Otherwise, it returns\n                                                all data repository task owned by your AWS account in the AWS Region of the endpoint\n                                                that you're calling.",
+      "description": "Grants permission to return the descriptions of all data repository task owned by\n                                                your AWS account in the AWS Region of the endpoint that you're calling",
       "accessLevel": "Read",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeFileSystemAliases": {
+      "name": "DescribeFileSystemAliases",
+      "topics": [
+        "Amazon FSx"
+      ],
+      "description": "Grants permission to return the description of all DNS aliases owned by your Amazon\n                                                FSx for Windows File Server file system",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "file-system*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -119,9 +184,35 @@
       "topics": [
         "Amazon FSx"
       ],
-      "description": "This action returns the description of specific Amazon FSx file systems, if a FileSystemIds\n                                                value is provided for that file system. Otherwise, it returns descriptions of all\n                                                file systems owned by your AWS account in the AWS Region of the endpoint that you're\n                                                calling.",
+      "description": "Grants permission to return the descriptions of all file systems owned by your AWS\n                                                account in the AWS Region of the endpoint that you're calling",
       "accessLevel": "Read",
       "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateFileGateway": {
+      "name": "DisassociateFileGateway",
+      "topics": [
+        "Amazon FSx"
+      ],
+      "description": "Grants permission to disassociate a File Gateway instance from an Amazon FSx for Windows\n                                                File Server file system",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "file-system*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateFileSystemAliases": {
+      "name": "DisassociateFileSystemAliases",
+      "topics": [
+        "Amazon FSx"
+      ],
+      "description": "Grants permission to disassociate file system aliases with an Amazon FSx for Windows\n                                                File Server file system",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "file-system*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -130,10 +221,23 @@
       "topics": [
         "Amazon FSx"
       ],
-      "description": "This action lists tags for an Amazon FSx resource.",
+      "description": "Grants permission to list tags for an Amazon FSx resource",
       "accessLevel": "Read",
       "resourceTypes": [
         "backup"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ManageBackupPrincipalAssociations": {
+      "name": "ManageBackupPrincipalAssociations",
+      "topics": [
+        "Amazon FSx"
+      ],
+      "description": "Grants permission to manage backup principal associations through AWS Backup",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "backup*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -143,7 +247,7 @@
       "topics": [
         "Amazon FSx"
       ],
-      "description": "This action tags an Amazon FSx resource.",
+      "description": "Grants permission to tag an Amazon FSx resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "backup"
@@ -156,7 +260,7 @@
       "topics": [
         "Amazon FSx"
       ],
-      "description": "This action removes a tag from an Amazon FSx resource.",
+      "description": "Grants permission to remove a tag from an Amazon FSx resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "backup"
@@ -169,7 +273,7 @@
       "topics": [
         "Amazon FSx"
       ],
-      "description": "This action updates file system configuration.",
+      "description": "Grants permission to update file system configuration",
       "accessLevel": "Write",
       "resourceTypes": [
         "file-system*"

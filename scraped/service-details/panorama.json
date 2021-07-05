@@ -1,0 +1,518 @@
+{
+  "servicePrefix": "panorama",
+  "actions": {
+    "CreateApp": {
+      "name": "CreateApp",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to create an AWS Panorama application",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "dependentActions": ""
+    },
+    "CreateAppDeployment": {
+      "name": "CreateAppDeployment",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to deploy an AWS Panorama application",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAppVersion": {
+      "name": "CreateAppVersion",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to create a version of an AWS Panorama application",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "appVersion*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDataSource": {
+      "name": "CreateDataSource",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to create an AWS Panorama datasource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDeploymentConfiguration": {
+      "name": "CreateDeploymentConfiguration",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to configure a deployment for an AWS Panorama application",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateDevice": {
+      "name": "CreateDevice",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to register an AWS Panorama Appliance",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "dependentActions": ""
+    },
+    "CreateDeviceUpdate": {
+      "name": "CreateDeviceUpdate",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to apply a software update to an AWS Panorama Appliance",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateInputs": {
+      "name": "CreateInputs",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to generate a list of cameras on the same network as an AWS Panorama\n                                                Appliance",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateModel": {
+      "name": "CreateModel",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to import a machine learning model into AWS Panorama",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:RequestTag/${TagKey}",
+      "dependentActions": ""
+    },
+    "CreateStreams": {
+      "name": "CreateStreams",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to generate a list of streams available to an AWS Panorama Appliance",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteApp": {
+      "name": "DeleteApp",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to delete an AWS Panorama application",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAppVersion": {
+      "name": "DeleteAppVersion",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to delete a version of an AWS Panorama application",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDataSource": {
+      "name": "DeleteDataSource",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to delete an AWS Panorama datasource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dataSource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDevice": {
+      "name": "DeleteDevice",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to deregister an AWS Panorama Appliance",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteModel": {
+      "name": "DeleteModel",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to delete a machine learning model from AWS Panorama",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeApp": {
+      "name": "DescribeApp",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to view details about an AWS Panorama application",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "app*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAppDeployment": {
+      "name": "DescribeAppDeployment",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to view details about a deployment for an AWS Panorama application",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAppVersion": {
+      "name": "DescribeAppVersion",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to view details about a version of an AWS Panorama application",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "app*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDataSource": {
+      "name": "DescribeDataSource",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to view details about a datasource in AWS Panorama",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "dataSource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDevice": {
+      "name": "DescribeDevice",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to view details about an AWS Panorama Appliance",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeDeviceUpdate": {
+      "name": "DescribeDeviceUpdate",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to view details about a software update for an AWS Panorama Appliance",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeModel": {
+      "name": "DescribeModel",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to view details about a machine learning model in AWS Panorama",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "model*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeSoftware": {
+      "name": "DescribeSoftware",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to view details about a software version for the AWS Panorama Appliance",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetDeploymentConfiguration": {
+      "name": "GetDeploymentConfiguration",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to view details about a deployment configuration for an AWS Panorama\n                                                application",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetInputs": {
+      "name": "GetInputs",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to retrieve a list of cameras generated with CreateInputs",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetStreams": {
+      "name": "GetStreams",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to retrieve a list of streams generated with CreateStreams",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetWebSocketURL": {
+      "name": "GetWebSocketURL",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to generate a WebSocket endpoint for communication with AWS Panorama",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAppDeploymentOperations": {
+      "name": "ListAppDeploymentOperations",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to retrieve a list of deployments for an AWS Panorama application",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAppVersions": {
+      "name": "ListAppVersions",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to retrieve a list of application versions in AWS Panorama",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "app*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListApps": {
+      "name": "ListApps",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to retrieve a list of applications in AWS Panorama",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDataSources": {
+      "name": "ListDataSources",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to retrieve a list of datasources in AWS Panorama",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDeploymentConfigurations": {
+      "name": "ListDeploymentConfigurations",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to retrieve a list of deployment configurations in AWS Panorama",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDeviceUpdates": {
+      "name": "ListDeviceUpdates",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to retrieve a list of software updates for an AWS Panorama Appliance",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDevices": {
+      "name": "ListDevices",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to retrieve a list of appliances in AWS Panorama",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListModels": {
+      "name": "ListModels",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to retrieve a list of models in AWS Panorama",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to retrieve a list of tags for a resource in AWS Panorama",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "app"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to add tags to a resource in AWS Panorama",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "app"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to remove tags from a resource in AWS Panorama",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "app"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateApp": {
+      "name": "UpdateApp",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to modify an AWS Panorama application",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAppConfiguration": {
+      "name": "UpdateAppConfiguration",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to modify the version-specific configuration of an AWS Panorama\n                                                application",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "app*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDataSource": {
+      "name": "UpdateDataSource",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to modify an AWS Panorama datasource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "dataSource*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateDevice": {
+      "name": "UpdateDevice",
+      "topics": [
+        "AWS Panorama"
+      ],
+      "description": "Grants permission to modify basic settings for an AWS Panorama Appliance",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "AWS Panorama"
+  ]
+}

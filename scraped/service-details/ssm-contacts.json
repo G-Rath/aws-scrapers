@@ -1,0 +1,342 @@
+{
+  "servicePrefix": "ssm-contacts",
+  "actions": {
+    "AcceptPage": {
+      "name": "AcceptPage",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to accept a page",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "page*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ActivateContactChannel": {
+      "name": "ActivateContactChannel",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to activate a contact's contact channel",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contactchannel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociateContact": {
+      "name": "AssociateContact",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to use a contact in an escalation plan",
+      "accessLevel": "Permissions management",
+      "resourceTypes": [
+        "contact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateContact": {
+      "name": "CreateContact",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to create a contact",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "ssm-contacts:AssociateContact"
+    },
+    "CreateContactChannel": {
+      "name": "CreateContactChannel",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to create a contact channel for a contact",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeactivateContactChannel": {
+      "name": "DeactivateContactChannel",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to deactivate a contact's contact channel",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contactchannel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteContact": {
+      "name": "DeleteContact",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to delete a contact",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteContactChannel": {
+      "name": "DeleteContactChannel",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to delete a contact's contact channel",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contactchannel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteContactPolicy": {
+      "name": "DeleteContactPolicy",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to delete a contact's resource policy",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeEngagement": {
+      "name": "DescribeEngagement",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to describe an engagement",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "engagement*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribePage": {
+      "name": "DescribePage",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to describe a page",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "page*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetContact": {
+      "name": "GetContact",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to get a contact",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "contact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetContactChannel": {
+      "name": "GetContactChannel",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to get a contact's contact channel",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "contactchannel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListContactChannels": {
+      "name": "ListContactChannels",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to list all of a contact's contact channels",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "contact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListContacts": {
+      "name": "ListContacts",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to list all contacts",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEngagements": {
+      "name": "ListEngagements",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to list all engagements",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPageReceipts": {
+      "name": "ListPageReceipts",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to list all receipts of a page",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "page*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPagesByContact": {
+      "name": "ListPagesByContact",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to list all pages sent to a contact",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "contact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListPagesByEngagement": {
+      "name": "ListPagesByEngagement",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to list all pages created in an engagement",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "engagement*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutContactPolicy": {
+      "name": "PutContactPolicy",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to add a resource policy to a contact",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendActivationCode": {
+      "name": "SendActivationCode",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to send the activation code of a contact's contact channel",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contactchannel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartEngagement": {
+      "name": "StartEngagement",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to start an engagement",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StopEngagement": {
+      "name": "StopEngagement",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to stop an engagement",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "engagement*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateContact": {
+      "name": "UpdateContact",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to update a contact",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "ssm-contacts:AssociateContact"
+    },
+    "UpdateContactChannel": {
+      "name": "UpdateContactChannel",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to update a contact's contact channel",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contactchannel*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateContactPolicy": {
+      "name": "UpdateContactPolicy",
+      "topics": [
+        "AWS Systems Manager Incident Manager Contacts"
+      ],
+      "description": "Grants permission to update a contact's resource policy",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "contact*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "AWS Systems Manager Incident Manager Contacts"
+  ]
+}

@@ -6,7 +6,7 @@
       "topics": [
         "AWS Certificate Manager"
       ],
-      "description": "Adds one or more tags to a certificate.",
+      "description": "Grants permission to add one or more tags to a certificate",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "certificate*"
@@ -19,7 +19,7 @@
       "topics": [
         "AWS Certificate Manager"
       ],
-      "description": "Deletes a certificate and its associated private key.",
+      "description": "Grants permission to delete a certificate and its associated private key",
       "accessLevel": "Write",
       "resourceTypes": [
         "certificate*"
@@ -32,7 +32,7 @@
       "topics": [
         "AWS Certificate Manager"
       ],
-      "description": "Returns a list of the fields contained in the specified certificate.",
+      "description": "Grants permission to retreive a certificates and its metadata",
       "accessLevel": "Read",
       "resourceTypes": [
         "certificate*"
@@ -45,11 +45,22 @@
       "topics": [
         "AWS Certificate Manager"
       ],
-      "description": "Exports a private certificate issued by a private certificate authority (CA) for use\n                                                anywhere.",
+      "description": "Grants permission to Export a private certificate issued by a private certificate\n                                                authority (CA) for use anywhere",
       "accessLevel": "Read",
       "resourceTypes": [
         "certificate*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAccountConfiguration": {
+      "name": "GetAccountConfiguration",
+      "topics": [
+        "AWS Certificate Manager"
+      ],
+      "description": "Grants permission to retrieve account level configuration from AWS Certificate Manager",
+      "accessLevel": "Read",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -58,7 +69,7 @@
       "topics": [
         "AWS Certificate Manager"
       ],
-      "description": "Retrieves a certificate and certificate chain for the certificate specified by an\n                                                ARN.",
+      "description": "Grants permission to to etrieves a certificate and certificate chain for a certificate\n                                                ARN",
       "accessLevel": "Read",
       "resourceTypes": [
         "certificate*"
@@ -71,7 +82,7 @@
       "topics": [
         "AWS Certificate Manager"
       ],
-      "description": "Imports a 3rd party SSL/TLS certificate into AWS Certificate Manager (ACM).",
+      "description": "Grants permission to imports a 3rd party certificate into AWS Certificate Manager\n                                                (ACM)",
       "accessLevel": "Write",
       "resourceTypes": [
         "certificate*"
@@ -84,7 +95,7 @@
       "topics": [
         "AWS Certificate Manager"
       ],
-      "description": "Retrieves a list of the certificate ARNs and the domain name for each ARN.",
+      "description": "Grants permission to retrieve a list of the certificate ARNs and the domain name for\n                                                each ARN",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -95,8 +106,19 @@
       "topics": [
         "AWS Certificate Manager"
       ],
-      "description": "Lists the tags that have been applied to the certificate.",
+      "description": "Grants permission to lists the tags that have been associated with a certificate",
       "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutAccountConfiguration": {
+      "name": "PutAccountConfiguration",
+      "topics": [
+        "AWS Certificate Manager"
+      ],
+      "description": "Grants permission to update account level configuration in AWS Certificate Manager",
+      "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -106,7 +128,7 @@
       "topics": [
         "AWS Certificate Manager"
       ],
-      "description": "Remove one or more tags from a certificate. A tag consists of a key-value pair",
+      "description": "Grants permission to remove one or more tags from a certificate",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "certificate*"
@@ -119,7 +141,7 @@
       "topics": [
         "AWS Certificate Manager"
       ],
-      "description": "Renews an eligable private certificate.",
+      "description": "Grants permission to renew an eligible private certificate",
       "accessLevel": "Write",
       "resourceTypes": [
         "certificate*"
@@ -132,7 +154,7 @@
       "topics": [
         "AWS Certificate Manager"
       ],
-      "description": "Requests a public or private certificate.",
+      "description": "Grants permission to requests a public or private certificate",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
@@ -143,7 +165,7 @@
       "topics": [
         "AWS Certificate Manager"
       ],
-      "description": "Resends an email to request domain ownership validation.",
+      "description": "Grants permission to resend an email to request domain ownership validation",
       "accessLevel": "Write",
       "resourceTypes": [
         "certificate*"
@@ -156,7 +178,7 @@
       "topics": [
         "AWS Certificate Manager"
       ],
-      "description": "Updates a certificate. Use to specify whether to opt in to or out of certificate transparency\n                                                logging.",
+      "description": "Grants permission to update a certificate configuration. Use this specify whether\n                                                to opt in to or out of certificate transparency logging",
       "accessLevel": "Write",
       "resourceTypes": [
         "certificate*"

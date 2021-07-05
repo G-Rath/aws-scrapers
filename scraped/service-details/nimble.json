@@ -1,0 +1,615 @@
+{
+  "servicePrefix": "nimble",
+  "actions": {
+    "AcceptEulas": {
+      "name": "AcceptEulas",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to accept EULAs",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "eula*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateLaunchProfile": {
+      "name": "CreateLaunchProfile",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to create a launch profile",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "studio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "ec2:CreateNetworkInterface\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:RunInstances"
+    },
+    "CreateStreamingImage": {
+      "name": "CreateStreamingImage",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to create a streaming image",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "studio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "ec2:DescribeImages\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeSnapshots\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:ModifyInstanceAttribute\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:ModifySnapshotAttribute\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:RegisterImage"
+    },
+    "CreateStreamingSession": {
+      "name": "CreateStreamingSession",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to create a streaming session",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "launch-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "ec2:CreateNetworkInterface\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:CreateNetworkInterfacePermission\n                                                   \n                                                \n                                                \n                                                \n                                                   nimble:GetLaunchProfile\n                                                   \n                                                \n                                                \n                                                \n                                                   nimble:GetLaunchProfileInitialization\n                                                   \n                                                \n                                                \n                                                \n                                                   nimble:ListEulaAcceptances"
+    },
+    "CreateStreamingSessionStream": {
+      "name": "CreateStreamingSessionStream",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to create a StreamingSessionStream",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "streaming-session*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateStudio": {
+      "name": "CreateStudio",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to create a studio",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "studio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole\n                                                   \n                                                \n                                                \n                                                \n                                                   sso:CreateManagedApplicationInstance"
+    },
+    "CreateStudioComponent": {
+      "name": "CreateStudioComponent",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to create a studio component. A studio component designates a network\n                                                resource to which a launch profile will provide access",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "studio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "ds:AuthorizeApplication\n                                                   \n                                                \n                                                \n                                                \n                                                   ds:DescribeDirectories\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeSecurityGroups\n                                                   \n                                                \n                                                \n                                                \n                                                   fsx:DescribeFileSystems"
+    },
+    "DeleteLaunchProfile": {
+      "name": "DeleteLaunchProfile",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to delete a launch profile",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "launch-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteLaunchProfileMember": {
+      "name": "DeleteLaunchProfileMember",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to delete a launch profile member",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "launch-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteStreamingImage": {
+      "name": "DeleteStreamingImage",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to delete a streaming image",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "streaming-image*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "ec2:DeleteSnapshot\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DeregisterImage\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:ModifyInstanceAttribute\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:ModifySnapshotAttribute"
+    },
+    "DeleteStreamingSession": {
+      "name": "DeleteStreamingSession",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to delete a streaming session",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "streaming-session*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "ec2:DeleteNetworkInterface"
+    },
+    "DeleteStudio": {
+      "name": "DeleteStudio",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to delete a studio",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "studio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "sso:DeleteManagedApplicationInstance"
+    },
+    "DeleteStudioComponent": {
+      "name": "DeleteStudioComponent",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to delete a studio component",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "studio-component*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "ds:UnauthorizeApplication"
+    },
+    "DeleteStudioMember": {
+      "name": "DeleteStudioMember",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to delete a studio member",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "studio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEula": {
+      "name": "GetEula",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to get a EULA",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "eula*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetFeatureMap": {
+      "name": "GetFeatureMap",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to allow Nimble Studio portal to show the appropriate features for\n                                                this account",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLaunchProfile": {
+      "name": "GetLaunchProfile",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to get a launch profile",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "launch-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLaunchProfileDetails": {
+      "name": "GetLaunchProfileDetails",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to get a launch profile's details, which includes the summary of\n                                                studio components and streaming images used by the launch profile",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "launch-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLaunchProfileInitialization": {
+      "name": "GetLaunchProfileInitialization",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to get a launch profile initialization. A launch profile initialization\n                                                is a dereferenced version of a launch profile, including attached studio component\n                                                connection information",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "launch-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "ds:DescribeDirectories\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeSecurityGroups\n                                                   \n                                                \n                                                \n                                                \n                                                   fsx:DescribeFileSystems"
+    },
+    "GetLaunchProfileMember": {
+      "name": "GetLaunchProfileMember",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to get a launch profile member",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "launch-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetStreamingImage": {
+      "name": "GetStreamingImage",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to get a streaming image",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "streaming-image*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetStreamingSession": {
+      "name": "GetStreamingSession",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to get a streaming session",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "streaming-session*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetStreamingSessionStream": {
+      "name": "GetStreamingSessionStream",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to get a streaming session stream",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "streaming-session*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetStudio": {
+      "name": "GetStudio",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to get a studio",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "studio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetStudioComponent": {
+      "name": "GetStudioComponent",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to get a studio component",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "studio-component*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetStudioMember": {
+      "name": "GetStudioMember",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to get a studio member",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "studio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEulaAcceptances": {
+      "name": "ListEulaAcceptances",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to list EULA acceptances",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "eula-acceptance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEulas": {
+      "name": "ListEulas",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to list EULAs",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "eula*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListLaunchProfileMembers": {
+      "name": "ListLaunchProfileMembers",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to list launch profile members",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "launch-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListLaunchProfiles": {
+      "name": "ListLaunchProfiles",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to list launch profiles",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "studio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListStreamingImages": {
+      "name": "ListStreamingImages",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to list streaming images",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "studio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListStreamingSessions": {
+      "name": "ListStreamingSessions",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to list streaming sessions",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "studio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListStudioComponents": {
+      "name": "ListStudioComponents",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to list studio components",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "studio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListStudioMembers": {
+      "name": "ListStudioMembers",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to list studio members",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "studio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListStudios": {
+      "name": "ListStudios",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to list all studios",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to list all tags on a Nimble Studio resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "launch-profile"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutLaunchProfileMembers": {
+      "name": "PutLaunchProfileMembers",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to add/update launch profile members",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "launch-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "sso-directory:DescribeUsers"
+    },
+    "PutStudioLogEvents": {
+      "name": "PutStudioLogEvents",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to report metrics and logs for the Nimble Studio portal to monitor\n                                                application health",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "studio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutStudioMembers": {
+      "name": "PutStudioMembers",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to add/update studio members",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "studio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "sso-directory:DescribeUsers"
+    },
+    "StartStudioSSOConfigurationRepair": {
+      "name": "StartStudioSSOConfigurationRepair",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to repair the studio's AWS SSO configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "studio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "sso:CreateManagedApplicationInstance\n                                                   \n                                                \n                                                \n                                                \n                                                   sso:GetManagedApplicationInstance"
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to add or overwrite one or more tags for the specified Nimble Studio\n                                                resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "launch-profile"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to disassociate one or more tags from the specified Nimble Studio\n                                                resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "launch-profile"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateLaunchProfile": {
+      "name": "UpdateLaunchProfile",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to update a launch profile",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "launch-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateLaunchProfileMember": {
+      "name": "UpdateLaunchProfileMember",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to update a launch profile member",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "launch-profile*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateStreamingImage": {
+      "name": "UpdateStreamingImage",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to update a streaming image",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "streaming-image*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateStudio": {
+      "name": "UpdateStudio",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to update a studio",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "studio*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "UpdateStudioComponent": {
+      "name": "UpdateStudioComponent",
+      "topics": [
+        "Amazon Nimble Studio"
+      ],
+      "description": "Grants permission to update a studio component",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "studio-component*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "ds:AuthorizeApplication\n                                                   \n                                                \n                                                \n                                                \n                                                   ds:DescribeDirectories\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeSecurityGroups\n                                                   \n                                                \n                                                \n                                                \n                                                   fsx:DescribeFileSystems"
+    }
+  },
+  "topics": [
+    "Amazon Nimble Studio"
+  ]
+}

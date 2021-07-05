@@ -9,7 +9,7 @@
       "description": "Grants permission to add an external connection to a repository",
       "accessLevel": "Write",
       "resourceTypes": [
-        "domain*"
+        "repository*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -35,7 +35,7 @@
       "description": "Grants permission to copy package versions from one repository to another repository\n                                                in the same domain.",
       "accessLevel": "Write",
       "resourceTypes": [
-        "repository*"
+        "package*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -47,10 +47,8 @@
       ],
       "description": "Grants permission to create a new domain",
       "accessLevel": "Write",
-      "resourceTypes": [
-        "domain*"
-      ],
-      "conditionKeys": "",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
       "dependentActions": ""
     },
     "CreateRepository": {
@@ -60,10 +58,8 @@
       ],
       "description": "Grants permission to create a new repository",
       "accessLevel": "Write",
-      "resourceTypes": [
-        "repository*"
-      ],
-      "conditionKeys": "",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
       "dependentActions": ""
     },
     "DeleteDomain": {
@@ -178,7 +174,7 @@
       "description": "Grants permission to disassociate an external connection from a repository",
       "accessLevel": "Write",
       "resourceTypes": [
-        "domain*"
+        "repository*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -361,6 +357,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
+      "description": "Grants permission to list tags for a CodeArtifact resource",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "domain"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "PublishPackageVersion": {
       "name": "PublishPackageVersion",
       "topics": [
@@ -422,6 +431,32 @@
       "accessLevel": "Read",
       "resourceTypes": [
         "repository*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
+      "description": "Grants permission to tag a CodeArtifact resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "domain"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "AWS CodeArtifact"
+      ],
+      "description": "Grants permission to remove a tag from a CodeArtifact resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "domain"
       ],
       "conditionKeys": "",
       "dependentActions": ""

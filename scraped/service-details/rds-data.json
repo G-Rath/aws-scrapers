@@ -6,9 +6,11 @@
       "topics": [
         "Amazon RDS Data API"
       ],
-      "description": "Runs a batch SQL statement over an array of data.",
+      "description": "Grants permission to run a batch SQL statement over an array of data",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "cluster*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -17,9 +19,11 @@
       "topics": [
         "Amazon RDS Data API"
       ],
-      "description": "Starts a SQL transaction.",
+      "description": "Grants permission to start a SQL transaction",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "cluster*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -28,9 +32,11 @@
       "topics": [
         "Amazon RDS Data API"
       ],
-      "description": "Ends a SQL transaction started with the BeginTransaction operation and commits the\n                                                changes.",
+      "description": "Grants permission to end a SQL transaction started with the BeginTransaction operation\n                                                and commits the changes",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "cluster*"
+      ],
       "conditionKeys": "",
       "dependentActions": "rds-data:BeginTransaction"
     },
@@ -39,9 +45,11 @@
       "topics": [
         "Amazon RDS Data API"
       ],
-      "description": "Runs one or more SQL statements. This operation is deprecated. Use the BatchExecuteStatement\n                                                or ExecuteStatement operation.",
+      "description": "Grants permission to run one or more SQL statements. This operation is deprecated.\n                                                Use the BatchExecuteStatement or ExecuteStatement operation",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "cluster*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -50,9 +58,11 @@
       "topics": [
         "Amazon RDS Data API"
       ],
-      "description": "Runs a SQL statement against a database.",
+      "description": "Grants permission to run a SQL statement against a database",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "cluster*"
+      ],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -61,9 +71,11 @@
       "topics": [
         "Amazon RDS Data API"
       ],
-      "description": "Performs a rollback of a transaction. Rolling back a transaction cancels its changes.",
+      "description": "Grants permission to perform a rollback of a transaction. Rolling back a transaction\n                                                cancels its changes",
       "accessLevel": "Write",
-      "resourceTypes": [],
+      "resourceTypes": [
+        "cluster*"
+      ],
       "conditionKeys": "",
       "dependentActions": "rds-data:BeginTransaction"
     }

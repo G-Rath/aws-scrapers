@@ -4,9 +4,9 @@
     "DescribeRecommendationExportJobs": {
       "name": "DescribeRecommendationExportJobs",
       "topics": [
-        "Compute Optimizer"
+        "AWS Compute Optimizer"
       ],
-      "description": "Grants permission to view the status of recommendation export jobs.",
+      "description": "Grants permission to view the status of recommendation export jobs",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -15,75 +15,97 @@
     "ExportAutoScalingGroupRecommendations": {
       "name": "ExportAutoScalingGroupRecommendations",
       "topics": [
-        "Compute Optimizer"
+        "AWS Compute Optimizer"
       ],
-      "description": "Grants permission to export autoscaling group recommendations to S3 for the provided\n                                                accounts.",
+      "description": "Grants permission to export autoscaling group recommendations to S3 for the provided\n                                                accounts",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "autoscaling:DescribeAutoScalingGroups\n                                                   \n                                                \n                                                \n                                                \n                                                   compute-optimizer:GetAutoScalingGroupRecommendations"
     },
     "ExportEC2InstanceRecommendations": {
       "name": "ExportEC2InstanceRecommendations",
       "topics": [
-        "Compute Optimizer"
+        "AWS Compute Optimizer"
       ],
-      "description": "Grants permission to export EC2 instance recommendations to S3 for the provided accounts.",
+      "description": "Grants permission to export EC2 instance recommendations to S3 for the provided accounts",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "compute-optimizer:GetEC2InstanceRecommendations\n                                                   \n                                                \n                                                \n                                                \n                                                   ec2:DescribeInstances"
     },
     "GetAutoScalingGroupRecommendations": {
       "name": "GetAutoScalingGroupRecommendations",
       "topics": [
-        "Compute Optimizer"
+        "AWS Compute Optimizer"
       ],
-      "description": "Grants permission to get recommendations for the provided autoscaling groups.",
+      "description": "Grants permission to get recommendations for the provided autoscaling groups",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "autoscaling:DescribeAutoScalingGroups"
+    },
+    "GetEBSVolumeRecommendations": {
+      "name": "GetEBSVolumeRecommendations",
+      "topics": [
+        "AWS Compute Optimizer"
+      ],
+      "description": "Grants permission to get recommendations for the provided ebs volumes",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "ec2:DescribeVolumes"
     },
     "GetEC2InstanceRecommendations": {
       "name": "GetEC2InstanceRecommendations",
       "topics": [
-        "Compute Optimizer"
+        "AWS Compute Optimizer"
       ],
-      "description": "Grants permission to get recommendations for the provided EC2 instances.",
+      "description": "Grants permission to get recommendations for the provided EC2 instances",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "ec2:DescribeInstances"
     },
     "GetEC2RecommendationProjectedMetrics": {
       "name": "GetEC2RecommendationProjectedMetrics",
       "topics": [
-        "Compute Optimizer"
+        "AWS Compute Optimizer"
       ],
-      "description": "Grants permission to get the recommendation projected metrics of the specified instance.",
+      "description": "Grants permission to get the recommendation projected metrics of the specified instance",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
-      "dependentActions": ""
+      "dependentActions": "ec2:DescribeInstances"
     },
     "GetEnrollmentStatus": {
       "name": "GetEnrollmentStatus",
       "topics": [
-        "Compute Optimizer"
+        "AWS Compute Optimizer"
       ],
-      "description": "Grants permission to get the enrollment status for the specified account.",
+      "description": "Grants permission to get the enrollment status for the specified account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "GetLambdaFunctionRecommendations": {
+      "name": "GetLambdaFunctionRecommendations",
+      "topics": [
+        "AWS Compute Optimizer"
+      ],
+      "description": "Grants permission to get recommendations for the provided lambda functions",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "lambda:ListFunctions\n                                                   \n                                                \n                                                \n                                                \n                                                   lambda:ListProvisionedConcurrencyConfigs"
+    },
     "GetRecommendationSummaries": {
       "name": "GetRecommendationSummaries",
       "topics": [
-        "Compute Optimizer"
+        "AWS Compute Optimizer"
       ],
-      "description": "Grants permission to get the recommendation summaries for the specified account(s).",
+      "description": "Grants permission to get the recommendation summaries for the specified account(s)",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -92,9 +114,9 @@
     "UpdateEnrollmentStatus": {
       "name": "UpdateEnrollmentStatus",
       "topics": [
-        "Compute Optimizer"
+        "AWS Compute Optimizer"
       ],
-      "description": "Grants permission to update the enrollment status.",
+      "description": "Grants permission to update the enrollment status",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -102,6 +124,6 @@
     }
   },
   "topics": [
-    "Compute Optimizer"
+    "AWS Compute Optimizer"
   ]
 }

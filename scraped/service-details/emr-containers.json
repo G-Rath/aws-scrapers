@@ -1,0 +1,199 @@
+{
+  "servicePrefix": "emr-containers",
+  "actions": {
+    "CancelJobRun": {
+      "name": "CancelJobRun",
+      "topics": [
+        "Amazon EMR on EKS (EMR Containers)"
+      ],
+      "description": "Grants permission to cancel a job run",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "jobRun*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateManagedEndpoint": {
+      "name": "CreateManagedEndpoint",
+      "topics": [
+        "Amazon EMR on EKS (EMR Containers)"
+      ],
+      "description": "Grants permission to create a managed endpoint",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "virtualCluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateVirtualCluster": {
+      "name": "CreateVirtualCluster",
+      "topics": [
+        "Amazon EMR on EKS (EMR Containers)"
+      ],
+      "description": "Grants permission to create a virtual cluster",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "DeleteManagedEndpoint": {
+      "name": "DeleteManagedEndpoint",
+      "topics": [
+        "Amazon EMR on EKS (EMR Containers)"
+      ],
+      "description": "Grants permission to delete a managed endpoint",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "managedEndpoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteVirtualCluster": {
+      "name": "DeleteVirtualCluster",
+      "topics": [
+        "Amazon EMR on EKS (EMR Containers)"
+      ],
+      "description": "Grants permission to delete a virtual cluster",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "virtualCluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeJobRun": {
+      "name": "DescribeJobRun",
+      "topics": [
+        "Amazon EMR on EKS (EMR Containers)"
+      ],
+      "description": "Grants permission to describe a job run",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "jobRun*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeManagedEndpoint": {
+      "name": "DescribeManagedEndpoint",
+      "topics": [
+        "Amazon EMR on EKS (EMR Containers)"
+      ],
+      "description": "Grants permission to describe a managed endpoint",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "managedEndpoint*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeVirtualCluster": {
+      "name": "DescribeVirtualCluster",
+      "topics": [
+        "Amazon EMR on EKS (EMR Containers)"
+      ],
+      "description": "Grants permission to describe a virtual cluster",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "virtualCluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListJobRuns": {
+      "name": "ListJobRuns",
+      "topics": [
+        "Amazon EMR on EKS (EMR Containers)"
+      ],
+      "description": "Grants permission to list job runs associated with a virtual cluster",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "virtualCluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListManagedEndpoints": {
+      "name": "ListManagedEndpoints",
+      "topics": [
+        "Amazon EMR on EKS (EMR Containers)"
+      ],
+      "description": "Grants permission to list managed endpoints associated with a virtual cluster",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "virtualCluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "Amazon EMR on EKS (EMR Containers)"
+      ],
+      "description": "Grants permission to list tags for the specified resource",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "jobRun"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListVirtualClusters": {
+      "name": "ListVirtualClusters",
+      "topics": [
+        "Amazon EMR on EKS (EMR Containers)"
+      ],
+      "description": "Grants permission to list virtual clusters",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartJobRun": {
+      "name": "StartJobRun",
+      "topics": [
+        "Amazon EMR on EKS (EMR Containers)"
+      ],
+      "description": "Grants permission to start a job run",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "virtualCluster*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "Amazon EMR on EKS (EMR Containers)"
+      ],
+      "description": "Grants permission to tag the specified resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "jobRun"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "Amazon EMR on EKS (EMR Containers)"
+      ],
+      "description": "Grants permission to untag the specified resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "jobRun"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "Amazon EMR on EKS (EMR Containers)"
+  ]
+}

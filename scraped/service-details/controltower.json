@@ -1,0 +1,327 @@
+{
+  "servicePrefix": "controltower",
+  "actions": {
+    "CreateManagedAccount": {
+      "name": "CreateManagedAccount",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to create an account managed by AWS Control Tower.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeregisterManagedAccount": {
+      "name": "DeregisterManagedAccount",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to deregister an account created through the account factory from\n                                                AWS Control Tower.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeregisterOrganizationalUnit": {
+      "name": "DeregisterOrganizationalUnit",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to deregister an organizational unit from AWS Control Tower management.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAccountFactoryConfig": {
+      "name": "DescribeAccountFactoryConfig",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to describe the current account factory configuration.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeCoreService": {
+      "name": "DescribeCoreService",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to describe resources managed by core accounts in AWS Control Tower.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeGuardrail": {
+      "name": "DescribeGuardrail",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to describe a guardrail.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeGuardrailForTarget": {
+      "name": "DescribeGuardrailForTarget",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to describe a guardrail for a organizational unit.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeManagedAccount": {
+      "name": "DescribeManagedAccount",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to describe an account created through account factory.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeManagedOrganizationalUnit": {
+      "name": "DescribeManagedOrganizationalUnit",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to describe an AWS Organizations organizational unit managed by\n                                                AWS Control Tower.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeSingleSignOn": {
+      "name": "DescribeSingleSignOn",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to describe the current AWS Control Tower SSO configuration.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisableGuardrail": {
+      "name": "DisableGuardrail",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to disable a guardrail from an organizational unit.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "EnableGuardrail": {
+      "name": "EnableGuardrail",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to enable a guardrail to an organizational unit.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAvailableUpdates": {
+      "name": "GetAvailableUpdates",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to list available updates for the current AWS Control Tower deployment.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetGuardrailComplianceStatus": {
+      "name": "GetGuardrailComplianceStatus",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to get the current compliance status of a guardrail.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetHomeRegion": {
+      "name": "GetHomeRegion",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to get the home region of the AWS Control Tower setup.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetLandingZoneStatus": {
+      "name": "GetLandingZoneStatus",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to get the current status of the landing zone setup.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListDirectoryGroups": {
+      "name": "ListDirectoryGroups",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to list the current directory groups available through SSO.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEnabledGuardrails": {
+      "name": "ListEnabledGuardrails",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to list currently enabled guardrails.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGuardrailViolations": {
+      "name": "ListGuardrailViolations",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to list existing guardrail violations.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGuardrails": {
+      "name": "ListGuardrails",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to list all available guardrails.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGuardrailsForTarget": {
+      "name": "ListGuardrailsForTarget",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to list guardrails and their current state for a organizational\n                                                unit.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListManagedAccounts": {
+      "name": "ListManagedAccounts",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to list accounts managed through AWS Control Tower.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListManagedAccountsForGuardrail": {
+      "name": "ListManagedAccountsForGuardrail",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to list managed accounts with a specified guardrail applied.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListManagedAccountsForParent": {
+      "name": "ListManagedAccountsForParent",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to list managed accounts under an organizational unit.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListManagedOrganizationalUnits": {
+      "name": "ListManagedOrganizationalUnits",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to list organizational units managed by AWS Control Tower.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListManagedOrganizationalUnitsForGuardrail": {
+      "name": "ListManagedOrganizationalUnitsForGuardrail",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to list managed organizational units that have a specified guardrail\n                                                applied.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ManageOrganizationalUnit": {
+      "name": "ManageOrganizationalUnit",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to set up an organizational unit to be managed by AWS Control Tower.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SetupLandingZone": {
+      "name": "SetupLandingZone",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to set up or update AWS Control Tower landing zone.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAccountFactoryConfig": {
+      "name": "UpdateAccountFactoryConfig",
+      "topics": [
+        "AWS Control Tower"
+      ],
+      "description": "Grants permission to update the account factory configuration.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "AWS Control Tower"
+  ]
+}

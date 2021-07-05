@@ -6,7 +6,20 @@
       "topics": [
         "Amazon EC2 Instance Connect"
       ],
-      "description": "Grants permission to push the SSH public key to the instance metadata where it remains\n                                                for 60 seconds.",
+      "description": "Grants access to push an SSH public key to the specified EC2 instance to be used for\n                                                standard SSH",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendSerialConsoleSSHPublicKey": {
+      "name": "SendSerialConsoleSSHPublicKey",
+      "topics": [
+        "Amazon EC2 Instance Connect"
+      ],
+      "description": "Grants access to push an SSH public key to the specified EC2 instance to be used for\n                                                serial console SSH",
       "accessLevel": "Write",
       "resourceTypes": [
         "instance*"

@@ -6,7 +6,7 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "Adds cloudwatch logging option to the application.",
+      "description": "Grants permission to add cloudwatch logging option to the application",
       "accessLevel": "Write",
       "resourceTypes": [
         "application*"
@@ -19,7 +19,7 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "Adds input to the application.",
+      "description": "Grants permission to add input to the application",
       "accessLevel": "Write",
       "resourceTypes": [
         "application*"
@@ -32,7 +32,7 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "Adds input processing configuration to the application.",
+      "description": "Grants permission to add input processing configuration to the application",
       "accessLevel": "Write",
       "resourceTypes": [
         "application*"
@@ -45,7 +45,7 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "Adds output to the application.",
+      "description": "Grants permission to add output to the application",
       "accessLevel": "Write",
       "resourceTypes": [
         "application*"
@@ -58,7 +58,7 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "Adds reference data source to the application.",
+      "description": "Grants permission to add reference data source to the application",
       "accessLevel": "Write",
       "resourceTypes": [
         "application*"
@@ -71,7 +71,7 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "Adds VPC configuration to the application.",
+      "description": "Grants permission to add VPC configuration to the application",
       "accessLevel": "Write",
       "resourceTypes": [
         "application*"
@@ -84,10 +84,23 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "Creates an application.",
+      "description": "Grants permission to create an application",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys",
+      "dependentActions": ""
+    },
+    "CreateApplicationPresignedUrl": {
+      "name": "CreateApplicationPresignedUrl",
+      "topics": [
+        "Amazon Kinesis Analytics V2"
+      ],
+      "description": "Grants permission to create and return a URL that you can use to connect to an application's\n                                                extension",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "application*"
+      ],
+      "conditionKeys": "",
       "dependentActions": ""
     },
     "CreateApplicationSnapshot": {
@@ -95,7 +108,7 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "Creates a snapshot for an application.",
+      "description": "Grants permission to create a snapshot for an application",
       "accessLevel": "Write",
       "resourceTypes": [
         "application*"
@@ -108,7 +121,7 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "Deletes the application.",
+      "description": "Grants permission to delete the application",
       "accessLevel": "Write",
       "resourceTypes": [
         "application*"
@@ -121,7 +134,7 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "Deletes the specified cloudwatch logging option of the application.",
+      "description": "Grants permission to delete the specified cloudwatch logging option of the application",
       "accessLevel": "Write",
       "resourceTypes": [
         "application*"
@@ -134,7 +147,7 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "Deletes the specified input processing configuration of the application.",
+      "description": "Grants permission to delete the specified input processing configuration of the application",
       "accessLevel": "Write",
       "resourceTypes": [
         "application*"
@@ -147,7 +160,7 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "Deletes the specified output of the application.",
+      "description": "Grants permission to delete the specified output of the application",
       "accessLevel": "Write",
       "resourceTypes": [
         "application*"
@@ -160,7 +173,7 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "Deletes the specified reference data source of the application.",
+      "description": "Grants permission to delete the specified reference data source of the application",
       "accessLevel": "Write",
       "resourceTypes": [
         "application*"
@@ -173,7 +186,7 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "Deletes a snapshot for an application.",
+      "description": "Grants permission to delete a snapshot for an application",
       "accessLevel": "Write",
       "resourceTypes": [
         "application*"
@@ -186,7 +199,7 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "Deletes the specified VPC configuration of the application.",
+      "description": "Grants permission to delete the specified VPC configuration of the application",
       "accessLevel": "Write",
       "resourceTypes": [
         "application*"
@@ -199,7 +212,7 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "Describes the specified application.",
+      "description": "Grants permission to describe the specified application",
       "accessLevel": "Read",
       "resourceTypes": [
         "application*"
@@ -212,7 +225,7 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "Describes an application snapshot.",
+      "description": "Grants permission to describe an application snapshot",
       "accessLevel": "Read",
       "resourceTypes": [
         "application*"
@@ -225,7 +238,7 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "Discovers the input schema for the application.",
+      "description": "Grants permission to discover the input schema for the application",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -249,7 +262,7 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "List applications for the account",
+      "description": "Grants permission to list applications for the account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -260,7 +273,7 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "Lists the snapshots for an application.",
+      "description": "Grants permission to list the snapshots for an application",
       "accessLevel": "Read",
       "resourceTypes": [
         "application*"
@@ -273,7 +286,7 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "Fetch the tags associated with the application.",
+      "description": "Grants permission to fetch the tags associated with the application",
       "accessLevel": "Read",
       "resourceTypes": [
         "application*"
@@ -286,7 +299,7 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "Starts the application.",
+      "description": "Grants permission to start the application",
       "accessLevel": "Write",
       "resourceTypes": [
         "application*"
@@ -299,7 +312,7 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "Stops the application.",
+      "description": "Grants permission to stop the application",
       "accessLevel": "Write",
       "resourceTypes": [
         "application*"
@@ -312,7 +325,7 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "Add tags to the application.",
+      "description": "Grants permission to add tags to the application",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "application*"
@@ -325,7 +338,7 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "Remove the specified tags from the application.",
+      "description": "Grants permission to remove the specified tags from the application",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "application*"
@@ -338,7 +351,7 @@
       "topics": [
         "Amazon Kinesis Analytics V2"
       ],
-      "description": "Updates the application.",
+      "description": "Grants permission to update the application",
       "accessLevel": "Write",
       "resourceTypes": [
         "application*"

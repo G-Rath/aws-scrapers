@@ -6,7 +6,7 @@
       "topics": [
         "AWS Resource Access Manager"
       ],
-      "description": "Accept the specified resource share invitation",
+      "description": "Grants permission to accept the specified resource share invitation",
       "accessLevel": "Write",
       "resourceTypes": [
         "resource-share-invitation*"
@@ -19,7 +19,7 @@
       "topics": [
         "AWS Resource Access Manager"
       ],
-      "description": "Associates resource(s) and/or principal(s) to a resource share",
+      "description": "Grants permission to associate resource(s) and/or principal(s) to a resource share",
       "accessLevel": "Write",
       "resourceTypes": [
         "resource-share*"
@@ -32,7 +32,7 @@
       "topics": [
         "AWS Resource Access Manager"
       ],
-      "description": "Associate a Permission with a Resource Share",
+      "description": "Grants permission to associate a Permission with a Resource Share",
       "accessLevel": "Write",
       "resourceTypes": [
         "permission*"
@@ -45,7 +45,7 @@
       "topics": [
         "AWS Resource Access Manager"
       ],
-      "description": "Create resource share with provided resource(s) and/or principal(s)",
+      "description": "Grants permission to create a resource share with provided resource(s) and/or principal(s)",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "aws:RequestTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      aws:TagKeys\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:RequestedResourceType\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:ResourceArn\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:RequestedAllowsExternalPrincipals\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:Principal",
@@ -56,7 +56,7 @@
       "topics": [
         "AWS Resource Access Manager"
       ],
-      "description": "Delete resource share",
+      "description": "Grants permission to delete resource share",
       "accessLevel": "Write",
       "resourceTypes": [
         "resource-share*"
@@ -69,7 +69,7 @@
       "topics": [
         "AWS Resource Access Manager"
       ],
-      "description": "Disassociates resource(s) and/or principal(s) from a resource share",
+      "description": "Grants permission to disassociate resource(s) and/or principal(s) from a resource\n                                                share",
       "accessLevel": "Write",
       "resourceTypes": [
         "resource-share*"
@@ -82,7 +82,7 @@
       "topics": [
         "AWS Resource Access Manager"
       ],
-      "description": "Disassociate a Permission from a Resource Share",
+      "description": "Grants permission to disassociate a Permission from a Resource Share",
       "accessLevel": "Write",
       "resourceTypes": [
         "permission*"
@@ -106,7 +106,7 @@
       "topics": [
         "AWS Resource Access Manager"
       ],
-      "description": "Gets the contents of an AWS RAM permission",
+      "description": "Grants permission to get the contents of an AWS RAM permission",
       "accessLevel": "Read",
       "resourceTypes": [
         "permission*"
@@ -119,7 +119,7 @@
       "topics": [
         "AWS Resource Access Manager"
       ],
-      "description": "Gets the policies for the specified resources that you own and have shared",
+      "description": "Grants permission to get the policies for the specified resources that you own and\n                                                have shared",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -130,7 +130,7 @@
       "topics": [
         "AWS Resource Access Manager"
       ],
-      "description": "Get a set of resource share associations from a provided list or with a specified\n                                                status of the specified type",
+      "description": "Grants permission to get a set of resource share associations from a provided list\n                                                or with a specified status of the specified type",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -141,7 +141,7 @@
       "topics": [
         "AWS Resource Access Manager"
       ],
-      "description": "Get resource share invitations by the specified invitation arn or those for the resource\n                                                share",
+      "description": "Grants permission to get resource share invitations by the specified invitation arn\n                                                or those for the resource share",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -152,7 +152,7 @@
       "topics": [
         "AWS Resource Access Manager"
       ],
-      "description": "Get a set of resource shares from a provided list or with a specified status",
+      "description": "Grants permission to get a set of resource shares from a provided list or with a specified\n                                                status",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -163,7 +163,7 @@
       "topics": [
         "AWS Resource Access Manager"
       ],
-      "description": "Lists the resources in a resource share that is shared with you but that the invitation\n                                                is still pending for",
+      "description": "Grants permission to list the resources in a resource share that is shared with you\n                                                but that the invitation is still pending for",
       "accessLevel": "Read",
       "resourceTypes": [
         "resource-share-invitation*"
@@ -176,7 +176,7 @@
       "topics": [
         "AWS Resource Access Manager"
       ],
-      "description": "Lists the AWS RAM permissions",
+      "description": "Grants permission to list the AWS RAM permissions",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -187,7 +187,7 @@
       "topics": [
         "AWS Resource Access Manager"
       ],
-      "description": "Lists the principals that you have shared resources with or that have shared resources\n                                                with you",
+      "description": "Grants permission to list the principals that you have shared resources with or that\n                                                have shared resources with you",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -198,7 +198,7 @@
       "topics": [
         "AWS Resource Access Manager"
       ],
-      "description": "List the Permissions associated with a Resource Share",
+      "description": "Grants permission to list the Permissions associated with a Resource Share",
       "accessLevel": "List",
       "resourceTypes": [
         "resource-share*"
@@ -211,7 +211,7 @@
       "topics": [
         "AWS Resource Access Manager"
       ],
-      "description": "Lists the shareable resource types supported by AWS RAM",
+      "description": "Grants permission to list the shareable resource types supported by AWS RAM",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -222,7 +222,7 @@
       "topics": [
         "AWS Resource Access Manager"
       ],
-      "description": "Lists the resources that you added to a resource shares or the resources that are\n                                                shared with you",
+      "description": "Grants permission to list the resources that you added to resource shares or the resources\n                                                that are shared with you",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -233,12 +233,12 @@
       "topics": [
         "AWS Resource Access Manager"
       ],
-      "description": "Use this API action to promote the resource share",
+      "description": "Grants permission to promote the specified resource share",
       "accessLevel": "Write",
       "resourceTypes": [
         "resource-share*"
       ],
-      "conditionKeys": "aws:ResourceTag/${TagKey}\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:ResourceShareName\n                                                      \n                                                   \n                                                \n                                                \n                                                \n                                                   \n                                                      ram:AllowsExternalPrincipals",
+      "conditionKeys": "",
       "dependentActions": ""
     },
     "RejectResourceShareInvitation": {
@@ -246,7 +246,7 @@
       "topics": [
         "AWS Resource Access Manager"
       ],
-      "description": "Reject the specified resource share invitation",
+      "description": "Grants permission to reject the specified resource share invitation",
       "accessLevel": "Write",
       "resourceTypes": [
         "resource-share-invitation*"
@@ -259,8 +259,8 @@
       "topics": [
         "AWS Resource Access Manager"
       ],
-      "description": "Tag the specified resources share",
-      "accessLevel": "Write",
+      "description": "Grants permission to tag the specified resource share",
+      "accessLevel": "Tagging",
       "resourceTypes": [
         "resource-share*"
       ],
@@ -272,8 +272,8 @@
       "topics": [
         "AWS Resource Access Manager"
       ],
-      "description": "Untag the specified resource share",
-      "accessLevel": "Write",
+      "description": "Grants permission to untag the specified resource share",
+      "accessLevel": "Tagging",
       "resourceTypes": [
         "resource-share*"
       ],
@@ -285,7 +285,7 @@
       "topics": [
         "AWS Resource Access Manager"
       ],
-      "description": "Update attributes of the resource share",
+      "description": "Grants permission to update attributes of the resource share",
       "accessLevel": "Write",
       "resourceTypes": [
         "resource-share*"

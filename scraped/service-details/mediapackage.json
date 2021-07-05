@@ -145,6 +145,19 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "RotateChannelCredentials": {
+      "name": "RotateChannelCredentials",
+      "topics": [
+        "AWS Elemental MediaPackage"
+      ],
+      "description": "Grants permission to rotate credentials for the first IngestEndpoint of a Channel\n                                                in AWS Elemental MediaPackage.",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "channels*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "RotateIngestEndpointCredentials": {
       "name": "RotateIngestEndpointCredentials",
       "topics": [
@@ -164,7 +177,7 @@
         "AWS Elemental MediaPackage"
       ],
       "description": "",
-      "accessLevel": "Write",
+      "accessLevel": "Tagging",
       "resourceTypes": [
         "channels"
       ],
@@ -177,7 +190,7 @@
         "AWS Elemental MediaPackage"
       ],
       "description": "Grants permission to delete tags to a Channel or OriginEndpoint.",
-      "accessLevel": "Write",
+      "accessLevel": "Tagging",
       "resourceTypes": [
         "channels"
       ],

@@ -1,0 +1,147 @@
+{
+  "servicePrefix": "app-integrations",
+  "actions": {
+    "CreateEventIntegration": {
+      "name": "CreateEventIntegration",
+      "topics": [
+        "Amazon AppIntegrations"
+      ],
+      "description": "Grants permissions to create a new EventIntegration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "event-integration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateEventIntegrationAssociation": {
+      "name": "CreateEventIntegrationAssociation",
+      "topics": [
+        "Amazon AppIntegrations"
+      ],
+      "description": "Grants permissions to create an EventIntegrationAssociation",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "event-integration-association*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "events:PutRule\n                                                   \n                                                \n                                                \n                                                \n                                                   events:PutTargets"
+    },
+    "DeleteEventIntegration": {
+      "name": "DeleteEventIntegration",
+      "topics": [
+        "Amazon AppIntegrations"
+      ],
+      "description": "Grants permissions to delete an EventIntegration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "event-integration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteEventIntegrationAssociation": {
+      "name": "DeleteEventIntegrationAssociation",
+      "topics": [
+        "Amazon AppIntegrations"
+      ],
+      "description": "Grants permissions to delete an EventIntegrationAssociation",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "event-integration-association*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "events:DeleteRule\n                                                   \n                                                \n                                                \n                                                \n                                                   events:ListTargetsByRule\n                                                   \n                                                \n                                                \n                                                \n                                                   events:RemoveTargets"
+    },
+    "GetEventIntegration": {
+      "name": "GetEventIntegration",
+      "topics": [
+        "Amazon AppIntegrations"
+      ],
+      "description": "Grants permissions to view details about EventIntegrations",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "event-integration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEventIntegrationAssociations": {
+      "name": "ListEventIntegrationAssociations",
+      "topics": [
+        "Amazon AppIntegrations"
+      ],
+      "description": "Grants permissions to list EventIntegrationAssociations",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEventIntegrations": {
+      "name": "ListEventIntegrations",
+      "topics": [
+        "Amazon AppIntegrations"
+      ],
+      "description": "Grants permissions to list EventIntegrations",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "Amazon AppIntegrations"
+      ],
+      "description": "Grants permission to lists tag for an Amazon AppIntegration resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "event-integration"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "Amazon AppIntegrations"
+      ],
+      "description": "Grants permission to tag an Amazon AppIntegration resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "event-integration"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "Amazon AppIntegrations"
+      ],
+      "description": "Grants permissions to untag an Amazon AppIntegration resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "event-integration"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateEventIntegration": {
+      "name": "UpdateEventIntegration",
+      "topics": [
+        "Amazon AppIntegrations"
+      ],
+      "description": "Grants permissions to modify an EventIntegration",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "event-integration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "Amazon AppIntegrations"
+  ]
+}

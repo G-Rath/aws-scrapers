@@ -6,7 +6,7 @@
       "topics": [
         "CloudWatch Application Insights"
       ],
-      "description": "Creates an application from a resource group",
+      "description": "Grants permission to create an application from a resource group",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -17,7 +17,18 @@
       "topics": [
         "CloudWatch Application Insights"
       ],
-      "description": "Creates a component from a group of resources",
+      "description": "Grants permission to create a component from a group of resources",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateLogPattern": {
+      "name": "CreateLogPattern",
+      "topics": [
+        "CloudWatch Application Insights"
+      ],
+      "description": "Grants permission to create log a pattern",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -28,7 +39,7 @@
       "topics": [
         "CloudWatch Application Insights"
       ],
-      "description": "Deletes an application",
+      "description": "Grants permission to delete an application",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -39,7 +50,18 @@
       "topics": [
         "CloudWatch Application Insights"
       ],
-      "description": "Deletes a component",
+      "description": "Grants permission to delete a component",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteLogPattern": {
+      "name": "DeleteLogPattern",
+      "topics": [
+        "CloudWatch Application Insights"
+      ],
+      "description": "Grants permission to delete a log pattern",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -50,7 +72,7 @@
       "topics": [
         "CloudWatch Application Insights"
       ],
-      "description": "Describes an application",
+      "description": "Grants permission to describe an application",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -61,7 +83,7 @@
       "topics": [
         "CloudWatch Application Insights"
       ],
-      "description": "Describes a component",
+      "description": "Grants permission to describe a component",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -72,7 +94,7 @@
       "topics": [
         "CloudWatch Application Insights"
       ],
-      "description": "Describes a component configuration",
+      "description": "Grants permission to describe a component's configuration",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -83,7 +105,18 @@
       "topics": [
         "CloudWatch Application Insights"
       ],
-      "description": "Describe the recommended application component configuration",
+      "description": "Grants permission to describe the recommended application component configuration",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeLogPattern": {
+      "name": "DescribeLogPattern",
+      "topics": [
+        "CloudWatch Application Insights"
+      ],
+      "description": "Grants permission to describe a log pattern",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -94,7 +127,7 @@
       "topics": [
         "CloudWatch Application Insights"
       ],
-      "description": "Describes an observation",
+      "description": "Grants permission to describe an observation",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -105,7 +138,7 @@
       "topics": [
         "CloudWatch Application Insights"
       ],
-      "description": "Describes a problem",
+      "description": "Grants permission to describe a problem",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -116,7 +149,7 @@
       "topics": [
         "CloudWatch Application Insights"
       ],
-      "description": "Describes the observation in a problem",
+      "description": "Grants permission to describe the observation in a problem",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -127,7 +160,7 @@
       "topics": [
         "CloudWatch Application Insights"
       ],
-      "description": "Lists all applications",
+      "description": "Grants permission to list all applications",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -138,7 +171,40 @@
       "topics": [
         "CloudWatch Application Insights"
       ],
-      "description": "List an application's components",
+      "description": "Grants permission to list an application's components",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListConfigurationHistory": {
+      "name": "ListConfigurationHistory",
+      "topics": [
+        "CloudWatch Application Insights"
+      ],
+      "description": "Grants permission to list configuration history",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListLogPatternSets": {
+      "name": "ListLogPatternSets",
+      "topics": [
+        "CloudWatch Application Insights"
+      ],
+      "description": "Grants permission to list log pattern sets for an application",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListLogPatterns": {
+      "name": "ListLogPatterns",
+      "topics": [
+        "CloudWatch Application Insights"
+      ],
+      "description": "Grants permission to list log patterns",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -149,8 +215,41 @@
       "topics": [
         "CloudWatch Application Insights"
       ],
-      "description": "Lists the problems in an application",
+      "description": "Grants permission to list the problems in an application",
       "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "CloudWatch Application Insights"
+      ],
+      "description": "Grants permission to list tags for the resource",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "CloudWatch Application Insights"
+      ],
+      "description": "Grants permission to tag a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "CloudWatch Application Insights"
+      ],
+      "description": "Grants permission to untag a resource",
+      "accessLevel": "Tagging",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -160,7 +259,7 @@
       "topics": [
         "CloudWatch Application Insights"
       ],
-      "description": "Updates an application",
+      "description": "Grants permission to update an application",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -171,7 +270,7 @@
       "topics": [
         "CloudWatch Application Insights"
       ],
-      "description": "Updates a component",
+      "description": "Grants permission to update a component",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -182,7 +281,18 @@
       "topics": [
         "CloudWatch Application Insights"
       ],
-      "description": "Updates a component configuration",
+      "description": "Grants permission to update a component's configuration",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateLogPattern": {
+      "name": "UpdateLogPattern",
+      "topics": [
+        "CloudWatch Application Insights"
+      ],
+      "description": "Grants permission to update a log pattern",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",

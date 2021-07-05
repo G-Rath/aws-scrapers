@@ -56,6 +56,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "CreateReturnShippingLabel": {
+      "name": "CreateReturnShippingLabel",
+      "topics": [
+        "AWS Snowball"
+      ],
+      "description": "Creates a shipping label that will be used to return the Snow device to AWS.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "DescribeAddress": {
       "name": "DescribeAddress",
       "topics": [
@@ -100,6 +111,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "DescribeReturnShippingLabel": {
+      "name": "DescribeReturnShippingLabel",
+      "topics": [
+        "AWS Snowball"
+      ],
+      "description": "Information on the shipping label of a Snow device that is being returned to AWS.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "GetJobManifest": {
       "name": "GetJobManifest",
       "topics": [
@@ -133,6 +155,17 @@
       "conditionKeys": "",
       "dependentActions": ""
     },
+    "GetSoftwareUpdates": {
+      "name": "GetSoftwareUpdates",
+      "topics": [
+        "AWS Snowball"
+      ],
+      "description": "Returns an Amazon S3 presigned URL for an update file associated with a specified\n                                                JobId.",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
     "ListClusterJobs": {
       "name": "ListClusterJobs",
       "topics": [
@@ -150,6 +183,17 @@
         "AWS Snowball"
       ],
       "description": "Returns an array of ClusterListEntry objects of the specified length.",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListCompatibleImages": {
+      "name": "ListCompatibleImages",
+      "topics": [
+        "AWS Snowball"
+      ],
+      "description": "This action returns a list of the different Amazon EC2 Amazon Machine Images (AMIs)\n                                                that are owned by your AWS account that would be supported for use on a Snow device.",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -183,6 +227,17 @@
         "AWS Snowball"
       ],
       "description": "While a job's JobState value is New, you can update some of the information associated\n                                                with a job.",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateJobShipmentState": {
+      "name": "UpdateJobShipmentState",
+      "topics": [
+        "AWS Snowball"
+      ],
+      "description": "Updates the state when a the shipment states changes to a different state.",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",

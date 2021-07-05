@@ -1,0 +1,642 @@
+{
+  "servicePrefix": "proton",
+  "actions": {
+    "CreateEnvironment": {
+      "name": "CreateEnvironment",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to create an environment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "CreateEnvironmentTemplate": {
+      "name": "CreateEnvironmentTemplate",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to create an environment template",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateEnvironmentTemplateMajorVersion": {
+      "name": "CreateEnvironmentTemplateMajorVersion",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to create an environment template major version",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateEnvironmentTemplateMinorVersion": {
+      "name": "CreateEnvironmentTemplateMinorVersion",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to create an environment template minor version",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateService": {
+      "name": "CreateService",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to create a service",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "codestar-connections:PassConnection"
+    },
+    "CreateServiceTemplate": {
+      "name": "CreateServiceTemplate",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to create a service template",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateServiceTemplateMajorVersion": {
+      "name": "CreateServiceTemplateMajorVersion",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to create a service template major version",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateServiceTemplateMinorVersion": {
+      "name": "CreateServiceTemplateMinorVersion",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to create a service template minor version",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAccountRoles": {
+      "name": "DeleteAccountRoles",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to delete the account role settings",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteEnvironment": {
+      "name": "DeleteEnvironment",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to delete an environment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteEnvironmentTemplate": {
+      "name": "DeleteEnvironmentTemplate",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to delete an environment template",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteEnvironmentTemplateMajorVersion": {
+      "name": "DeleteEnvironmentTemplateMajorVersion",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to delete an environment template major version",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteEnvironmentTemplateMinorVersion": {
+      "name": "DeleteEnvironmentTemplateMinorVersion",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to delete an environment template minor version",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteService": {
+      "name": "DeleteService",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to delete a service",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteServiceTemplate": {
+      "name": "DeleteServiceTemplate",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to delete a service template",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteServiceTemplateMajorVersion": {
+      "name": "DeleteServiceTemplateMajorVersion",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to delete a service template major version",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteServiceTemplateMinorVersion": {
+      "name": "DeleteServiceTemplateMinorVersion",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to delete a service template minor version",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetAccountRoles": {
+      "name": "GetAccountRoles",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to describe the account role settings",
+      "accessLevel": "Read",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEnvironment": {
+      "name": "GetEnvironment",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to describe an environment",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "environment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEnvironmentTemplate": {
+      "name": "GetEnvironmentTemplate",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to describe an environment template",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "environment-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEnvironmentTemplateMajorVersion": {
+      "name": "GetEnvironmentTemplateMajorVersion",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to describe an environment template major version",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "environment-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetEnvironmentTemplateMinorVersion": {
+      "name": "GetEnvironmentTemplateMinorVersion",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to describe an environment template minor version",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "environment-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetService": {
+      "name": "GetService",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to describe a service",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "service*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetServiceInstance": {
+      "name": "GetServiceInstance",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to describe a service instance",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "service-instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetServiceTemplate": {
+      "name": "GetServiceTemplate",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to describe a service template",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "service-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetServiceTemplateMajorVersion": {
+      "name": "GetServiceTemplateMajorVersion",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to describe a service template major version",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "service-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetServiceTemplateMinorVersion": {
+      "name": "GetServiceTemplateMinorVersion",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to describe a service template minor version",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "service-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEnvironmentTemplateMajorVersions": {
+      "name": "ListEnvironmentTemplateMajorVersions",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to list environment template major versions",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "environment-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEnvironmentTemplateMinorVersions": {
+      "name": "ListEnvironmentTemplateMinorVersions",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to list environment template minor versions",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "environment-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEnvironmentTemplates": {
+      "name": "ListEnvironmentTemplates",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to list environment templates",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListEnvironments": {
+      "name": "ListEnvironments",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to list environments",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListServiceInstances": {
+      "name": "ListServiceInstances",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to list service instances",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListServiceTemplateMajorVersions": {
+      "name": "ListServiceTemplateMajorVersions",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to list service template major versions",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "service-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListServiceTemplateMinorVersions": {
+      "name": "ListServiceTemplateMinorVersions",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to list service template minor versions",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "service-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListServiceTemplates": {
+      "name": "ListServiceTemplates",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to list service templates",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListServices": {
+      "name": "ListServices",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to list services",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permissions to list tags of a resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "environment"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permissions to add tags to a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "environment"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permissions to remove tags from a resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "environment"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateAccountRoles": {
+      "name": "UpdateAccountRoles",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to update the account role settings",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "UpdateEnvironment": {
+      "name": "UpdateEnvironment",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to update an environment",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": "iam:PassRole"
+    },
+    "UpdateEnvironmentTemplate": {
+      "name": "UpdateEnvironmentTemplate",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to update an environment template",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateEnvironmentTemplateMajorVersion": {
+      "name": "UpdateEnvironmentTemplateMajorVersion",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to update an environment template major version",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateEnvironmentTemplateMinorVersion": {
+      "name": "UpdateEnvironmentTemplateMinorVersion",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to update an environment template minor version",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "environment-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateService": {
+      "name": "UpdateService",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to update a service",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateServiceInstance": {
+      "name": "UpdateServiceInstance",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to update a service instance",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service-instance*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateServicePipeline": {
+      "name": "UpdateServicePipeline",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to update a service pipeline",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateServiceTemplate": {
+      "name": "UpdateServiceTemplate",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to update a service template",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateServiceTemplateMajorVersion": {
+      "name": "UpdateServiceTemplateMajorVersion",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to update a service template major version",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateServiceTemplateMinorVersion": {
+      "name": "UpdateServiceTemplateMinorVersion",
+      "topics": [
+        "AWS Proton"
+      ],
+      "description": "Grants permission to update a service template minor version",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service-template*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "AWS Proton"
+  ]
+}

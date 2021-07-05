@@ -1,0 +1,301 @@
+{
+  "servicePrefix": "apprunner",
+  "actions": {
+    "AssociateCustomDomain": {
+      "name": "AssociateCustomDomain",
+      "topics": [
+        "AWS App Runner"
+      ],
+      "description": "Grants permission to associate your own domain name with the AWS App Runner subdomain\n                                                URL of your App Runner service",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateAutoScalingConfiguration": {
+      "name": "CreateAutoScalingConfiguration",
+      "topics": [
+        "AWS App Runner"
+      ],
+      "description": "Grants permission to create an AWS App Runner automatic scaling configuration resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "autoscalingconfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateConnection": {
+      "name": "CreateConnection",
+      "topics": [
+        "AWS App Runner"
+      ],
+      "description": "Grants permission to create an AWS App Runner connection resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "connection*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateService": {
+      "name": "CreateService",
+      "topics": [
+        "AWS App Runner"
+      ],
+      "description": "Grants permission to create an AWS App Runner service",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteAutoScalingConfiguration": {
+      "name": "DeleteAutoScalingConfiguration",
+      "topics": [
+        "AWS App Runner"
+      ],
+      "description": "Grants permission to delete an AWS App Runner automatic scaling configuration resource",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "autoscalingconfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteConnection": {
+      "name": "DeleteConnection",
+      "topics": [
+        "AWS App Runner"
+      ],
+      "description": "Grants permission to delete an AWS App Runner connection",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "connection*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteService": {
+      "name": "DeleteService",
+      "topics": [
+        "AWS App Runner"
+      ],
+      "description": "Grants permission to delete an AWS App Runner service",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeAutoScalingConfiguration": {
+      "name": "DescribeAutoScalingConfiguration",
+      "topics": [
+        "AWS App Runner"
+      ],
+      "description": "Grants permission to retrieve descriptions of an AWS App Runner automatic scaling\n                                                configuration resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "autoscalingconfiguration*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeCustomDomains": {
+      "name": "DescribeCustomDomains",
+      "topics": [
+        "AWS App Runner"
+      ],
+      "description": "Grants permission to retrieve descriptions of custom domain names associated with\n                                                an AWS App Runner service",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "service*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeOperation": {
+      "name": "DescribeOperation",
+      "topics": [
+        "AWS App Runner"
+      ],
+      "description": "Grants permission to retrieve description of an operation that occurred on an AWS\n                                                App Runner service",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "service*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DescribeService": {
+      "name": "DescribeService",
+      "topics": [
+        "AWS App Runner"
+      ],
+      "description": "Grants permission to retrieve description of an AWS App Runner service",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "service*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DisassociateCustomDomain": {
+      "name": "DisassociateCustomDomain",
+      "topics": [
+        "AWS App Runner"
+      ],
+      "description": "Grants permission to disassociate a custom domain name from an AWS App Runner service",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListAutoScalingConfigurations": {
+      "name": "ListAutoScalingConfigurations",
+      "topics": [
+        "AWS App Runner"
+      ],
+      "description": "Grants permission to retrieve a list of AWS App Runner automatic scaling configurations\n                                                in your AWS account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListConnections": {
+      "name": "ListConnections",
+      "topics": [
+        "AWS App Runner"
+      ],
+      "description": "Grants permission to retrieve a list of AWS App Runner connections associated with\n                                                your AWS account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListOperations": {
+      "name": "ListOperations",
+      "topics": [
+        "AWS App Runner"
+      ],
+      "description": "Grants permission to retrieve a list of operations that occurred on an AWS App Runner\n                                                service",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "service*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListServices": {
+      "name": "ListServices",
+      "topics": [
+        "AWS App Runner"
+      ],
+      "description": "Grants permission to retrieve a list of running AWS App Runner services in your AWS\n                                                account",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListTagsForResource": {
+      "name": "ListTagsForResource",
+      "topics": [
+        "AWS App Runner"
+      ],
+      "description": "Grants permission to list tags associated with an AWS App Runner resource",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "autoscalingconfiguration"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PauseService": {
+      "name": "PauseService",
+      "topics": [
+        "AWS App Runner"
+      ],
+      "description": "Grants permission to pause an active AWS App Runner service",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ResumeService": {
+      "name": "ResumeService",
+      "topics": [
+        "AWS App Runner"
+      ],
+      "description": "Grants permission to resume an active AWS App Runner service",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "StartDeployment": {
+      "name": "StartDeployment",
+      "topics": [
+        "AWS App Runner"
+      ],
+      "description": "Grants permission to initiate a manual deployemnt to an AWS App Runner service",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "TagResource": {
+      "name": "TagResource",
+      "topics": [
+        "AWS App Runner"
+      ],
+      "description": "Grants permission to add tags to, or update tag values of, an App Runner resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "autoscalingconfiguration"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UntagResource": {
+      "name": "UntagResource",
+      "topics": [
+        "AWS App Runner"
+      ],
+      "description": "Grants permission to remove tags from an App Runner resource",
+      "accessLevel": "Tagging",
+      "resourceTypes": [
+        "autoscalingconfiguration"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateService": {
+      "name": "UpdateService",
+      "topics": [
+        "AWS App Runner"
+      ],
+      "description": "Grants permission to update an AWS App Runner service",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "service*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    }
+  },
+  "topics": [
+    "AWS App Runner"
+  ]
+}

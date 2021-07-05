@@ -6,7 +6,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Associates a skill with the organization under the customer's AWS account. If a skill\n                                                is private, the user implicitly accepts access to this skill during enablement.",
+      "description": "Grants permission to associate a skill with the organization under the customer's\n                                                AWS account",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -17,10 +17,23 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Associates a contact with a given address book.",
+      "description": "Grants permission to associate a contact with a given address book",
       "accessLevel": "Write",
       "resourceTypes": [
         "addressbook*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "AssociateDeviceWithNetworkProfile": {
+      "name": "AssociateDeviceWithNetworkProfile",
+      "topics": [
+        "Alexa for Business"
+      ],
+      "description": "Grants permission to associate a device with the specified network profile",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "device*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -30,7 +43,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Associates device with given room.",
+      "description": "Grants permission to associate device with given room",
       "accessLevel": "Write",
       "resourceTypes": [
         "device*"
@@ -43,7 +56,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Associates the skill group with given room. SkillGroup ARN and Room ARN must be specified.",
+      "description": "Grants permission to associate the skill group with given room",
       "accessLevel": "Write",
       "resourceTypes": [
         "room*"
@@ -56,7 +69,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Associates a skill with a skill group.",
+      "description": "Grants permission to associate a skill with a skill group",
       "accessLevel": "Write",
       "resourceTypes": [
         "skillgroup*"
@@ -69,7 +82,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Makes a private skill available for enrolled users to enable on their devices.",
+      "description": "Grants permission to make a private skill available for enrolled users to enable on\n                                                their devices",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -80,7 +93,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Completes the operation of registering an Alexa device.",
+      "description": "Grants permission to complete the operation of registering an Alexa device",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -91,7 +104,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Creates an address book with the specified details.",
+      "description": "Grants permission to create an address book with the specified details",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -102,7 +115,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Creates a recurring schedule for usage reports to deliver to the specified S3 location\n                                                with a specified daily or weekly interval.",
+      "description": "Grants permission to create a recurring schedule for usage reports to deliver to the\n                                                specified S3 location with a specified daily or weekly interval",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -113,7 +126,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Adds a new conference provider under the user's AWS account.",
+      "description": "Grants permission to add a new conference provider under the user's AWS account",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -124,7 +137,29 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Creates a contact with the specified details.",
+      "description": "Grants permission to create a contact with the specified details",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateGatewayGroup": {
+      "name": "CreateGatewayGroup",
+      "topics": [
+        "Alexa for Business"
+      ],
+      "description": "Grants permission to create a gateway group with the specified details",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "CreateNetworkProfile": {
+      "name": "CreateNetworkProfile",
+      "topics": [
+        "Alexa for Business"
+      ],
+      "description": "Grants permission to create a network profile with the specified details",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -135,7 +170,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Creates a new profile.",
+      "description": "Grants permission to create a new profile",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -146,7 +181,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Create room with the specified details.",
+      "description": "Grants permission to create room with the specified details",
       "accessLevel": "Write",
       "resourceTypes": [
         "profile*"
@@ -159,7 +194,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Creates a skill group with given name and description.",
+      "description": "Grants permission to create a skill group with given name and description",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -170,7 +205,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Creates a user.",
+      "description": "Grants permission to create a user",
       "accessLevel": "Write",
       "resourceTypes": [
         "user*"
@@ -183,7 +218,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Deletes an address book by the address book ARN.",
+      "description": "Grants permission to delete an address book by the address book ARN",
       "accessLevel": "Write",
       "resourceTypes": [
         "addressbook*"
@@ -196,7 +231,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Deletes the recurring report delivery schedule with the specified schedule ARN.",
+      "description": "Grants permission to delete the recurring report delivery schedule with the specified\n                                                schedule ARN",
       "accessLevel": "Write",
       "resourceTypes": [
         "schedule*"
@@ -209,7 +244,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Deletes a conference provider.",
+      "description": "Grants permission to delete a conference provider",
       "accessLevel": "Write",
       "resourceTypes": [
         "conferenceprovider*"
@@ -222,7 +257,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Deletes a contact by the contact ARN.",
+      "description": "Grants permission to delete a contact by the contact ARN",
       "accessLevel": "Write",
       "resourceTypes": [
         "contact*"
@@ -235,10 +270,49 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Removes a device from Alexa For Business.",
+      "description": "Grants permission to remove a device from Alexa For Business",
       "accessLevel": "Write",
       "resourceTypes": [
         "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteDeviceUsageData": {
+      "name": "DeleteDeviceUsageData",
+      "topics": [
+        "Alexa for Business"
+      ],
+      "description": "Grants permission to delete the device's entire previous history of voice input data\n                                                and associated response data",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteGatewayGroup": {
+      "name": "DeleteGatewayGroup",
+      "topics": [
+        "Alexa for Business"
+      ],
+      "description": "Grants permission to delete a gateway group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gatewaygroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "DeleteNetworkProfile": {
+      "name": "DeleteNetworkProfile",
+      "topics": [
+        "Alexa for Business"
+      ],
+      "description": "Grants permission to delete a network profile by the network profile ARN",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "networkprofile*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -248,7 +322,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Delete profile by profile ARN.",
+      "description": "Grants permission to delete profile by profile ARN",
       "accessLevel": "Write",
       "resourceTypes": [
         "profile*"
@@ -261,7 +335,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Delete room.",
+      "description": "Grants permission to delete room",
       "accessLevel": "Write",
       "resourceTypes": [
         "room*"
@@ -274,7 +348,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Delete a parameter from a skill and room.",
+      "description": "Grants permission to delete a parameter from a skill and room",
       "accessLevel": "Write",
       "resourceTypes": [
         "room*"
@@ -287,7 +361,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Unlinks a third-party account from a skill.",
+      "description": "Grants permission to unlink a third-party account from a skill",
       "accessLevel": "Write",
       "resourceTypes": [
         "room*"
@@ -300,7 +374,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Deletes skill group with skill group ARN. Skillgroup ARN must be specified.",
+      "description": "Grants permission to delete skill group with skill group ARN",
       "accessLevel": "Write",
       "resourceTypes": [
         "skillgroup*"
@@ -313,7 +387,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Delete a user.",
+      "description": "Grants permission to delete a user",
       "accessLevel": "Write",
       "resourceTypes": [
         "user*"
@@ -326,7 +400,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Disassociates a contact from a given address book.",
+      "description": "Grants permission to disassociate a contact from a given address book",
       "accessLevel": "Write",
       "resourceTypes": [
         "addressbook*"
@@ -339,7 +413,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Disassociates device from its current room.",
+      "description": "Grants permission to disassociate device from its current room",
       "accessLevel": "Write",
       "resourceTypes": [
         "device*"
@@ -352,7 +426,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Disassociates a skill from a skill group.",
+      "description": "Grants permission to disassociate a skill from a skill group",
       "accessLevel": "Write",
       "resourceTypes": [
         "skillgroup*"
@@ -365,7 +439,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Makes a private skill unavailable for enrolled users and prevents them from enabling\n                                                it on their devices.",
+      "description": "Grants permission to make a private skill unavailable for enrolled users and prevent\n                                                them from enabling it on their devices",
       "accessLevel": "Write",
       "resourceTypes": [
         "user*"
@@ -378,7 +452,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Disassociates the skill group from given room. SkillGroup ARN and Room ARN must be\n                                                specified.",
+      "description": "Grants permission to disassociate the skill group from given room",
       "accessLevel": "Write",
       "resourceTypes": [
         "room*"
@@ -391,7 +465,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Forgets smart home appliances associated to a room.",
+      "description": "Grants permission to forget smart home appliances associated to a room",
       "accessLevel": "Write",
       "resourceTypes": [
         "room*"
@@ -404,7 +478,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Gets the address book details by the address book ARN.",
+      "description": "Grants permission to get the address book details by the address book ARN",
       "accessLevel": "Read",
       "resourceTypes": [
         "addressbook*"
@@ -417,7 +491,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Retrieves the existing conference preferences.",
+      "description": "Grants permission to retrieve the existing conference preferences",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -428,7 +502,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Gets details about a specific conference provider.",
+      "description": "Grants permission to get details about a specific conference provider",
       "accessLevel": "Read",
       "resourceTypes": [
         "conferenceprovider*"
@@ -441,7 +515,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Gets the contact details by the contact ARN.",
+      "description": "Grants permission to get the contact details by the contact ARN",
       "accessLevel": "Read",
       "resourceTypes": [
         "contact*"
@@ -454,11 +528,48 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Get device details.",
+      "description": "Grants permission to get device details",
       "accessLevel": "Read",
       "resourceTypes": [
         "device*"
       ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetGateway": {
+      "name": "GetGateway",
+      "topics": [
+        "Alexa for Business"
+      ],
+      "description": "Grants permission to retrieve the details of a gateway",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetGatewayGroup": {
+      "name": "GetGatewayGroup",
+      "topics": [
+        "Alexa for Business"
+      ],
+      "description": "Grants permission to retrieve the details of a gateway group",
+      "accessLevel": "Read",
+      "resourceTypes": [
+        "gatewaygroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "GetInvitationConfiguration": {
+      "name": "GetInvitationConfiguration",
+      "topics": [
+        "Alexa for Business"
+      ],
+      "description": "Grants permission to retrieve the configured values for the user enrollment invitation\n                                                email template",
+      "accessLevel": "Read",
+      "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
     },
@@ -467,7 +578,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Gets the network profile details by the network profile ARN.",
+      "description": "Grants permission to get the network profile details by the network profile ARN",
       "accessLevel": "Read",
       "resourceTypes": [
         "networkprofile*"
@@ -480,7 +591,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Gets profile when provided with Profile ARN.",
+      "description": "Grants permission to get profile when provided with Profile ARN",
       "accessLevel": "Read",
       "resourceTypes": [
         "profile*"
@@ -493,7 +604,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Get room details.",
+      "description": "Grants permission to get room details",
       "accessLevel": "Read",
       "resourceTypes": [
         "room*"
@@ -506,7 +617,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Get an existing parameter that has been set for a skill and room.",
+      "description": "Grants permission to get an existing parameter that has been set for a skill and room",
       "accessLevel": "Read",
       "resourceTypes": [
         "room*"
@@ -519,7 +630,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Gets skill group details with skill group ARN. Skillgroup ARN must be specified.",
+      "description": "Grants permission to get skill group details with skill group ARN",
       "accessLevel": "Read",
       "resourceTypes": [
         "skillgroup*"
@@ -532,7 +643,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Lists the details of the schedules that a user configured.",
+      "description": "Grants permission to list the details of the schedules that a user configured",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -543,7 +654,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Lists conference providers under a specific AWS account.",
+      "description": "Grants permission to list conference providers under a specific AWS account",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -554,10 +665,34 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Lists the device event history, including device connection status, for up to 30 days.",
+      "description": "Grants permission to list the device event history, including device connection status,\n                                                for up to 30 days",
       "accessLevel": "List",
       "resourceTypes": [
         "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGatewayGroups": {
+      "name": "ListGatewayGroups",
+      "topics": [
+        "Alexa for Business"
+      ],
+      "description": "Grants permission to list gateway group summaries",
+      "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "ListGateways": {
+      "name": "ListGateways",
+      "topics": [
+        "Alexa for Business"
+      ],
+      "description": "Grants permission to list gateway summaries",
+      "accessLevel": "List",
+      "resourceTypes": [
+        "gatewaygroup*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -567,7 +702,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Lists skills.",
+      "description": "Grants permission to list skills",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -578,7 +713,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Lists all categories in the Alexa skill store.",
+      "description": "Grants permission to list all categories in the Alexa skill store",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -589,7 +724,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Lists all skills in the Alexa skill store by category.",
+      "description": "Grants permission to list all skills in the Alexa skill store by category",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -600,7 +735,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Lists all of the smart home appliances associated with a room.",
+      "description": "Grants permission to list all of the smart home appliances associated with a room",
       "accessLevel": "List",
       "resourceTypes": [
         "room*"
@@ -613,7 +748,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Lists all tags on a resource.",
+      "description": "Grants permission to list all tags on a resource",
       "accessLevel": "Read",
       "resourceTypes": [
         "device"
@@ -626,7 +761,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Sets the conference preferences on a specific conference provider at the account level.",
+      "description": "Grants permission to set the conference preferences on a specific conference provider\n                                                at the account level",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -637,7 +772,18 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Publishes Alexa device setup events.",
+      "description": "Grants permission to publish Alexa device setup events",
+      "accessLevel": "Write",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "PutInvitationConfiguration": {
+      "name": "PutInvitationConfiguration",
+      "topics": [
+        "Alexa for Business"
+      ],
+      "description": "Grants permission to configure the email template for the user enrollment invitation\n                                                with the specified attributes",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -648,7 +794,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Put a room specific parameter for a skill.",
+      "description": "Grants permission to put a room specific parameter for a skill",
       "accessLevel": "Write",
       "resourceTypes": [
         "room*"
@@ -661,7 +807,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Links a user's account to a third-party skill provider. If this API operation is called\n                                                by an assumed IAM role, the skill being linked must be a private skill. Also, the\n                                                skill must be owned by the AWS account that assumed the IAM role.",
+      "description": "Grants permission to link a user's account to a third-party skill provider",
       "accessLevel": "Write",
       "resourceTypes": [
         "room*"
@@ -674,7 +820,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Registers an Alexa-enabled device built by an Original Equipment Manufacturer (OEM)\n                                                using Alexa Voice Service (AVS).",
+      "description": "Grants permission to register an Alexa-enabled device built by an Original Equipment\n                                                Manufacturer (OEM) using Alexa Voice Service (AVS)",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -685,7 +831,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Registers an Alexa device.",
+      "description": "Grants permission to register an Alexa device",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -696,7 +842,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Disassociates a skill from the organization under a user's AWS account. If the skill\n                                                is a private skill, it moves to an AcceptStatus of PENDING.",
+      "description": "Grants permission to disassociate a skill from the organization under a user's AWS\n                                                account",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -707,7 +853,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Returns resolved room information.",
+      "description": "Grants permission to resolve room information",
       "accessLevel": "Read",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -718,7 +864,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Revoke an invitation.",
+      "description": "Grants permission to revoke an invitation",
       "accessLevel": "Write",
       "resourceTypes": [
         "user*"
@@ -731,7 +877,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Searches address books and lists the ones that meet a set of filter and sort criteria.",
+      "description": "Grants permission to search address books and list the ones that meet a set of filter\n                                                and sort criteria",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -742,7 +888,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Searches contacts and lists the ones that meet a set of filter and sort criteria.",
+      "description": "Grants permission to search contacts and list the ones that meet a set of filter and\n                                                sort criteria",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -753,7 +899,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Search for devices.",
+      "description": "Grants permission to search for devices",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -764,7 +910,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Searches network profiles and lists the ones that meet a set of filter and sort criteria.",
+      "description": "Grants permission to search network profiles and list the ones that meet a set of\n                                                filter and sort criteria",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -775,7 +921,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Search for profiles.",
+      "description": "Grants permission to search for profiles",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -786,7 +932,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Search for rooms.",
+      "description": "Grants permission to search for rooms",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -797,7 +943,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Search for skill groups.",
+      "description": "Grants permission to search for skill groups",
       "accessLevel": "List",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -808,8 +954,19 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Search for users.",
+      "description": "Grants permission to search for users",
       "accessLevel": "List",
+      "resourceTypes": [],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "SendAnnouncement": {
+      "name": "SendAnnouncement",
+      "topics": [
+        "Alexa for Business"
+      ],
+      "description": "Grants permission to trigger an asynchronous flow to send text, SSML, or audio announcements\n                                                to rooms that are identified by a search or filter",
+      "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
       "dependentActions": ""
@@ -819,7 +976,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Send an invitation to a user.",
+      "description": "Grants permission to send an invitation to a user",
       "accessLevel": "Write",
       "resourceTypes": [
         "user*"
@@ -832,7 +989,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Restore the device and its account to its known, default settings by clearing all\n                                                information and settings set by its previous users.",
+      "description": "Grants permission to restore the device and its account to its known, default settings\n                                                by clearing all information and settings set by its previous users",
       "accessLevel": "Write",
       "resourceTypes": [],
       "conditionKeys": "",
@@ -843,7 +1000,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Initiates the discovery of any smart home appliances associated with the room.",
+      "description": "Grants permission to initiate the discovery of any smart home appliances associated\n                                                with the room",
       "accessLevel": "Read",
       "resourceTypes": [
         "room*"
@@ -856,7 +1013,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Adds metadata tags to a resource.",
+      "description": "Grants permission to add metadata tags to a resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "device"
@@ -869,7 +1026,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Removes metadata tags from a resource.",
+      "description": "Grants permission to remove metadata tags from a resource",
       "accessLevel": "Tagging",
       "resourceTypes": [
         "device"
@@ -882,7 +1039,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Updates address book details by the address book ARN.",
+      "description": "Grants permission to update address book details by the address book ARN",
       "accessLevel": "Write",
       "resourceTypes": [
         "addressbook*"
@@ -895,7 +1052,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Updates the configuration of the report delivery schedule with the specified schedule\n                                                ARN.",
+      "description": "Grants permission to update the configuration of the report delivery schedule with\n                                                the specified schedule ARN",
       "accessLevel": "Write",
       "resourceTypes": [
         "schedule*"
@@ -908,7 +1065,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Updates an existing conference provider's settings.",
+      "description": "Grants permission to update an existing conference provider's settings",
       "accessLevel": "Write",
       "resourceTypes": [
         "conferenceprovider*"
@@ -921,7 +1078,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Updates the contact details by the contact ARN.",
+      "description": "Grants permission to update the contact details by the contact ARN",
       "accessLevel": "Write",
       "resourceTypes": [
         "contact*"
@@ -934,10 +1091,49 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Updates device name.",
+      "description": "Grants permission to update device name",
       "accessLevel": "Write",
       "resourceTypes": [
         "device*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateGateway": {
+      "name": "UpdateGateway",
+      "topics": [
+        "Alexa for Business"
+      ],
+      "description": "Grants permission to update the details of a gateway",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gateway*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateGatewayGroup": {
+      "name": "UpdateGatewayGroup",
+      "topics": [
+        "Alexa for Business"
+      ],
+      "description": "Grants permission to update the details of a gateway group",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "gatewaygroup*"
+      ],
+      "conditionKeys": "",
+      "dependentActions": ""
+    },
+    "UpdateNetworkProfile": {
+      "name": "UpdateNetworkProfile",
+      "topics": [
+        "Alexa for Business"
+      ],
+      "description": "Grants permission to update a network profile by the network profile ARN",
+      "accessLevel": "Write",
+      "resourceTypes": [
+        "networkprofile*"
       ],
       "conditionKeys": "",
       "dependentActions": ""
@@ -947,7 +1143,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Updates an existing profile.",
+      "description": "Grants permission to update an existing profile",
       "accessLevel": "Write",
       "resourceTypes": [
         "profile*"
@@ -960,7 +1156,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Update room details.",
+      "description": "Grants permission to update room details",
       "accessLevel": "Write",
       "resourceTypes": [
         "room*"
@@ -973,7 +1169,7 @@
       "topics": [
         "Alexa for Business"
       ],
-      "description": "Updates skill group details with skill group ARN. Skillgroup ARN must be specified.",
+      "description": "Grants permission to update skill group details with skill group ARN",
       "accessLevel": "Write",
       "resourceTypes": [
         "skillgroup*"
